@@ -1,0 +1,156 @@
+<div class="information">
+<!--  <div class="code-block">-->
+<!--  <app-css-rule [selectors]="['.main-grid-container','.main-grid-header','.main-grid-content','.main-grid-footer']"-->
+<!--                [properties]="[{'property': 'display', 'value': 'grid'},-->
+<!--                {'property': 'grid-gap', 'value': '5px'}]"/>-->
+<!--  </div>-->
+  <div class="header">This page demonstrates the scroll region</div>
+  <div class="description">
+    Notice that the header is fixed at the top of the page and the footer is fixed at the bottom of the page, while
+    the rest of the content scrolls. This is achieved by using grid-template-areas. The header is defined as "header"
+    in the grid-template-areas property. The footer is defined as "footer", and the rest of the content is defined as
+    "content". The grid-template-areas property is set to "header content" to define the layout.
+  </div>
+  <div class="code-block">
+    <code>
+      <span class="html-tag">&lt;div&nbsp;<span class="html-attribute-name">class</span><span class="html-attribute-value">="grid-container"</span><span class="html-tag">&gt;</span></span><br/>
+      &nbsp;&nbsp;&nbsp;<span class="html-tag">&lt;div&nbsp;<span class="html-attribute-name">class</span><span class="html-attribute-value">="header"</span><span class="html-tag">&gt;<span class="html-inner-text">Header</span>&lt;/div&gt;</span></span><br/>
+      &nbsp;&nbsp;&nbsp;<span class="html-tag">&lt;div&nbsp;<span class="html-attribute-name">class</span><span class="html-attribute-value">="content"</span><span class="html-tag">&gt;<span class="html-inner-text">Content</span>&lt;/div&gt;</span></span><br/>
+      &nbsp;&nbsp;&nbsp;<span class="html-tag">&lt;div&nbsp;<span class="html-attribute-name">class</span><span class="html-attribute-value">="footer"</span><span class="html-tag">&gt;<span class="html-inner-text">Footer</span>&lt;/div&gt;</span></span><br/>
+      &nbsp;<span class="html-tag">&lt;/div&gt;</span>
+    </code>
+  </div>
+  <div class="code-block">
+    <code>
+      <span class="dot">.</span><span class="class-name">main-grid-container</span>&nbsp;<span class="parenthesis">&#123;</span><br/>
+      &nbsp;&nbsp;&nbsp;<span class="property-name">position:</span>
+      &nbsp;<span class="property-value">fixed</span><span class="semicolon">;</span>
+      <br/>
+      &nbsp;&nbsp;&nbsp;<span class="property-name">top:</span>&nbsp;<span class="property-number">0</span><span class="semicolon">;</span><br/>
+      &nbsp;&nbsp;&nbsp;<span class="property-name">left:</span>&nbsp;<span class="property-number">0</span><span class="semicolon">;</span><br/>
+      &nbsp;&nbsp;&nbsp;<span class="property-name">width:</span>&nbsp;<span class="property-number">100</span><span class="operation-sign">%</span><span class="semicolon">;</span><br/>
+      &nbsp;&nbsp;&nbsp;<span class="property-name">display:</span>&nbsp;<span class="property-value">grid</span><span class="semicolon">;</span><br/>
+      &nbsp;&nbsp;&nbsp;<span class="property-name">grid-template-areas:</span><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="property-value">"header"</span><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="property-value">"content"</span><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="property-value">"footer"</span><span class="semicolon">;</span>
+      <br/>
+      &nbsp;&nbsp;&nbsp;<span class="property-name">gap:</span>&nbsp;<span class="property-number">5</span><span class="property-unit">px</span><span class="semicolon">;</span><br/>
+      <br/>
+      &nbsp;&nbsp;&nbsp;<span class="dot">.</span><span class="class-name">main-grid-header</span>&nbsp;<span class="parenthesis">&#123;</span><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="property-name">grid-area:</span>&nbsp;<span class="property-value">header</span><span class="semicolon">;</span><br/>
+      &nbsp;&nbsp;&nbsp;<span class="parenthesis">&#125;</span><br/>
+      <br/>
+      &nbsp;&nbsp;&nbsp;<span class="dot">.</span><span class="class-name">main-grid-content</span>&nbsp;<span class="parenthesis">&#123;</span><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="property-name">grid-area:</span>&nbsp;<span class="property-value">content</span><span class="semicolon">;</span><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="property-name">overflow-y:</span>&nbsp;<span class="property-value">auto</span><span class="semicolon">;</span><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="property-name">padding:</span>&nbsp;<span class="property-number">10</span><span class="property-unit">px</span><span class="semicolon">;</span><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="property-name">max-height:</span>
+      &nbsp;<span class="css-function">calc</span>
+      <span class="parenthesis">(</span>
+      <span class="property-number">100</span>
+      <span class="property-unit">vh</span>
+      &nbsp;<span class="operation-sign">-</span>
+      &nbsp;<span class="property-number">113</span>
+      <span class="property-unit">px</span>
+      <span class="parenthesis">)</span>
+      <span class="semicolon">;</span><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="property-name">height:</span>&nbsp;<span class="property-number">100</span><span class="property-unit">vh</span><span class="semicolon">;</span><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="property-name">background-color:</span>&nbsp;<span class="property-value-hex">#f5f5f5</span><span class="semicolon">;</span><br/>
+      &nbsp;&nbsp;&nbsp;<span class="parenthesis">&#125;</span><br/>
+      <br/>
+      &nbsp;&nbsp;&nbsp;<span class="dot">.</span><span class="class-name">main-grid-footer</span>&nbsp;<span class="parenthesis">&#123;</span><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="property-name">grid-area:</span>&nbsp;<span class="property-value">footer</span><span class="semicolon">;</span><br/>
+      &nbsp;&nbsp;&nbsp;<span class="parenthesis">&#125;</span><br/>
+      &nbsp;<span class="parenthesis">&#125;</span>
+    </code>
+  </div>
+</div>
+
+<!-- display the cssCode -->
+<!--<div class="css-code">-->
+<!--  <div class="header">CSS Code</div>-->
+<!--  <div class="code-block">-->
+<!--    <code>-->
+<!--      <ng-container *ngFor="let css of cssCode">-->
+<!--        {{css}}<br/>-->
+<!--      </ng-container>-->
+<!--    </code>-->
+<!--  </div>-->
+<!--</div>-->
+
+
+<div class="lorem-ipsum">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto delectus, dicta dolorem et eum facere nam natus
+  necessitatibus repellendus, sed similique suscipit! Cupiditate ducimus nam natus odit omnis, sunt voluptatem.
+  Accusamus blanditiis esse ipsam iusto magni? Ab animi aut cumque ex id, ipsa itaque natus nostrum possimus praesentium
+  quae repellat sapiente sed soluta tempore temporibus?
+  lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto delectus, dicta dolorem et eum facere nam natus
+  necessitatibus repellendus, sed similique suscipit! Cupiditate ducimus nam natus odit omnis, sunt voluptatem.
+  Accusamus blanditiis esse ipsam iusto magni? Ab animi aut cumque ex id, ipsa itaque natus nostrum possimus praesentium
+  quae repellat sapiente sed soluta tempore temporibus?
+  lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto delectus, dicta dolorem et eum facere nam natus
+  necessitatibus repellendus, sed similique suscipit! Cupiditate ducimus nam natus odit omnis, sunt voluptatem.
+  Accusamus blanditiis esse ipsam iusto magni? Ab animi aut cumque ex id, ipsa itaque natus nostrum possimus praesentium
+  quae repellat sapiente sed soluta tempore temporibus?
+</div>
+
+<div class="lorem-ipsum">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto delectus, dicta dolorem et eum facere nam natus
+  necessitatibus repellendus, sed similique suscipit! Cupiditate ducimus nam natus odit omnis, sunt voluptatem.
+  Accusamus blanditiis esse ipsam iusto magni? Ab animi aut cumque ex id, ipsa itaque natus nostrum possimus praesentium
+  quae repellat sapiente sed soluta tempore temporibus?
+  lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto delectus, dicta dolorem et eum facere nam natus
+  necessitatibus repellendus, sed similique suscipit! Cupiditate ducimus nam natus odit omnis, sunt voluptatem.
+  Accusamus blanditiis esse ipsam iusto magni? Ab animi aut cumque ex id, ipsa itaque natus nostrum possimus praesentium
+  quae repellat sapiente sed soluta tempore temporibus?
+  lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto delectus, dicta dolorem et eum facere nam natus
+  necessitatibus repellendus, sed similique suscipit! Cupiditate ducimus nam natus odit omnis, sunt voluptatem.
+  Accusamus blanditiis esse ipsam iusto magni? Ab animi aut cumque ex id, ipsa itaque natus nostrum possimus praesentium
+  quae repellat sapiente sed soluta tempore temporibus?
+</div>
+
+<div class="lorem-ipsum">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto delectus, dicta dolorem et eum facere nam natus
+  necessitatibus repellendus, sed similique suscipit! Cupiditate ducimus nam natus odit omnis, sunt voluptatem.
+  Accusamus blanditiis esse ipsam iusto magni? Ab animi aut cumque ex id, ipsa itaque natus nostrum possimus praesentium
+  quae repellat sapiente sed soluta tempore temporibus?
+  lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto delectus, dicta dolorem et eum facere nam natus
+  necessitatibus repellendus, sed similique suscipit! Cupiditate ducimus nam natus odit omnis, sunt voluptatem.
+  Accusamus blanditiis esse ipsam iusto magni? Ab animi aut cumque ex id, ipsa itaque natus nostrum possimus praesentium
+  quae repellat sapiente sed soluta tempore temporibus?
+  lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto delectus, dicta dolorem et eum facere nam natus
+  necessitatibus repellendus, sed similique suscipit! Cupiditate ducimus nam natus odit omnis, sunt voluptatem.
+  Accusamus blanditiis esse ipsam iusto magni? Ab animi aut cumque ex id, ipsa itaque natus nostrum possimus praesentium
+  quae repellat sapiente sed soluta tempore temporibus?
+</div>
+
+<div class="lorem-ipsum">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto delectus, dicta dolorem et eum facere nam natus
+  necessitatibus repellendus, sed similique suscipit! Cupiditate ducimus nam natus odit omnis, sunt voluptatem.
+  Accusamus blanditiis esse ipsam iusto magni? Ab animi aut cumque ex id, ipsa itaque natus nostrum possimus praesentium
+  quae repellat sapiente sed soluta tempore temporibus?
+  lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto delectus, dicta dolorem et eum facere nam natus
+  necessitatibus repellendus, sed similique suscipit! Cupiditate ducimus nam natus odit omnis, sunt voluptatem.
+  Accusamus blanditiis esse ipsam iusto magni? Ab animi aut cumque ex id, ipsa itaque natus nostrum possimus praesentium
+  quae repellat sapiente sed soluta tempore temporibus?
+  lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto delectus, dicta dolorem et eum facere nam natus
+  necessitatibus repellendus, sed similique suscipit! Cupiditate ducimus nam natus odit omnis, sunt voluptatem.
+  Accusamus blanditiis esse ipsam iusto magni? Ab animi aut cumque ex id, ipsa itaque natus nostrum possimus praesentium
+  quae repellat sapiente sed soluta tempore temporibus?
+</div>
+
+<div class="lorem-ipsum">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto delectus, dicta dolorem et eum facere nam natus
+  necessitatibus repellendus, sed similique suscipit! Cupiditate ducimus nam natus odit omnis, sunt voluptatem.
+  Accusamus blanditiis esse ipsam iusto magni? Ab animi aut cumque ex id, ipsa itaque natus nostrum possimus praesentium
+  quae repellat sapiente sed soluta tempore temporibus?
+  lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto delectus, dicta dolorem et eum facere nam natus
+  necessitatibus repellendus, sed similique suscipit! Cupiditate ducimus nam natus odit omnis, sunt voluptatem.
+  Accusamus blanditiis esse ipsam iusto magni? Ab animi aut cumque ex id, ipsa itaque natus nostrum possimus praesentium
+  quae repellat sapiente sed soluta tempore temporibus?
+  lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto delectus, dicta dolorem et eum facere nam natus
+  necessitatibus repellendus, sed similique suscipit! Cupiditate ducimus nam natus odit omnis, sunt voluptatem.
+  Accusamus blanditiis esse ipsam iusto magni? Ab animi aut cumque ex id, ipsa itaque natus nostrum possimus praesentium
+  quae repellat sapiente sed soluta tempore temporibus?
+</div>

@@ -1,0 +1,54 @@
+.input-container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .input-group {
+    display: flex;
+    flex-direction: row;
+
+    label {
+      flex-basis: 160px;
+      font-weight: bold;
+      text-align: right;
+      padding: 5px 10px;
+    }
+
+    input[type=text] {
+      width: fit-content;
+      min-width: 100px;
+    }
+  }
+
+  .test-data-group {
+    input[type=text] {
+      width: fit-content;
+      min-width: 100px;
+    }
+  }
+}
+
+.invalid {
+  outline: 1px solid red;
+}
+
+.results-container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  .result {
+    display: flex;
+    flex-direction: row;
+    font-size: 1em;
+
+    .label {
+      flex-basis: 160px;
+      font-weight: bold;
+      text-align: right;
+      padding-right: 10px;
+    }
+  }
+}

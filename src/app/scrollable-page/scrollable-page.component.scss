@@ -1,0 +1,110 @@
+.information {
+  padding: 10px;
+  background-color: var(--color-information-background-color);
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px var(--color-information-box-shadow);
+  margin-bottom: 10px;
+
+  .header {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .description {
+    font-size: 1em;
+  }
+
+  .code-block {
+    background-color: var(--color-code-background-color);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    max-width: 400px;
+
+    code {
+      padding: 2px 5px;
+      border-radius: 3px;
+      font-size: 0.7em;
+      font-family: monospace;
+
+      .class-name {
+        color: var(--color-css-class-name);
+      }
+
+      .dot {
+        color: var(--color-css-dot);
+      }
+
+      .attribute-name {
+        color: var(--color-css-attribute-name);
+      }
+
+      .parenthesis {
+        color: var(--color-css-parenthesis);
+      }
+
+      .property-name {
+        color: var(--color-css-property-name);
+      }
+
+      .property-value {
+        color: var(--color-css-property-value);
+      }
+
+      .semicolon {
+        color: var(--color-css-semicolon);
+      }
+
+      .property-number {
+        color: var(--color-css-number);
+      }
+
+      .property-unit {
+        color: var(--color-css-unit);
+      }
+
+      .property-value-hex {
+        color: var(--color-css-hex);
+      }
+
+      .css-function {
+        color: var(--color-css-function);
+      }
+
+      .operation-sign {
+        color: var(--color-css-operation-sign);
+      }
+
+      .html-tag {
+        color: var(--color-html-tag);
+      }
+
+      .html-attribute-name {
+        color: var(--color-html-attribute-name);
+      }
+
+      .html-attribute-value {
+        color: var(--color-html-attribute-value);
+      }
+
+      .html-comment {
+        color: var(--color-html-comment);
+      }
+
+      .html-entity-reference {
+        color: var(--color-html-entity-reference);
+      }
+
+      .html-inner-text {
+        color: var(--color-html-inner-text);
+      }
+    }
+  }
+}
+
+.lorem-ipsum {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 1.7em;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,38 @@
+.main-grid-container {
+  position: fixed;
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+  gap: 4px;
+  background-color: var(--p-surface-100);
+
+  .main-grid-header {
+    grid-area: header;
+  }
+
+  .main-grid-content {
+    grid-area: content;
+    overflow-y: auto;
+    padding: 10px;
+    max-height: calc(100vh - 111px);
+    height: 100vh;
+    background-color: var(--p-surface-100);
+  }
+
+  .main-grid-footer {
+    grid-area: footer;
+  }
+}
+
+:root[class='dark-theme'] {
+  .main-grid-container {
+    background-color: var(--p-surface-600);
+
+    .main-grid-content {
+      background-color: var(--p-surface-600);
+    }
+  }
+}

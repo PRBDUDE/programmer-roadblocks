@@ -1,0 +1,20 @@
+.css-rule {
+  color: var(--p-orange-200);
+
+  &-selector {
+    color: var(--color-css-identifier);
+  }
+
+  &-open,
+  &-close {
+    color: var(--color-css-parenthesis);
+  }
+
+  &-comma {
+    color: var(--color-css-comma);
+  }
+
+  &-semicolon {
+    color: var(--color-css-semicolon);
+  }
+}

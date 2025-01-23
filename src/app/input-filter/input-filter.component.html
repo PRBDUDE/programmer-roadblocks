@@ -1,0 +1,84 @@
+<div class="input-group">
+  <label for="phone">Phone Number: </label>
+  <p-inputMask
+         [(ngModel)]="phoneNumber"
+         id="phone"
+         name="phone"
+         (focusin)="phoneNumberHasFocus()"
+         (focusout)="phoneNumberLostFocus()"
+         autoClear="false"
+         mask="(999) 999-9999"
+         placeholder="(123) 456-7890"/>
+  <div *ngIf="isInvalidPhoneNumber()" class="invalid-message">
+    Errors:
+    <ol>
+      <li *ngFor="let message of phoneNumberErrorMessage()">
+        {{ message }}
+      </li>
+    </ol>
+  </div>
+</div>
+
+<div class="input-group">
+  <label for="ssn">SSN: </label>
+  <p-inputMask
+         [(ngModel)]="ssn"
+         id="ssn"
+         name="ssn"
+         (focusin)="ssnHasFocus()"
+         (focusout)="ssnLostFocus()"
+         placeholder="123-45-6789"
+         mask="999-99-9999"/>
+  <div *ngIf="isInvalidSsn()" class="invalid-message">
+    Errors:
+    <ol>
+      <li *ngFor="let message of ssnErrorMessage()">
+        {{ message }}
+      </li>
+    </ol>
+  </div>
+</div>
+
+<div class="input-group">
+  <label for="vin">VIN: </label>
+  <input type="text"
+         pInputText
+         [(ngModel)]="vin"
+         id="vin"
+         name="vin"
+         maxlength="17"
+         (focusin)="vinHasFocus()"
+         (focusout)="vinLostFocus()"
+         placeholder="Enter VIN here"
+         pattern="[A-HJ-NPR-Z0-9]{17}">
+  <div *ngIf="isInvalidVin()" class="invalid-message">
+    Errors:
+    <ol>
+      <li *ngFor="let message of vinErrorMessage()">
+        {{ message }}
+      </li>
+    </ol>
+  </div>
+</div>
+
+<div class="input-group">
+  <label for="email">Email: </label>
+  <input type="text"
+         pInputText
+         [(ngModel)]="email"
+         id="email"
+         name="email"
+         maxlength="30"
+         (focusin)="emailHasFocus()"
+         (focusout)="emailLostFocus()"
+         placeholder="Enter Email here"
+         pattern="[A-Za-z\d\.\-_]*@[A-za-z\d\.\-_]*\.[A-Za-z]{3}">
+  <div *ngIf="isInvalidEmail()" class="invalid-message">
+    Errors:
+    <ol>
+      <li *ngFor="let message of emailErrorMessage()">
+        {{ message }}
+      </li>
+    </ol>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+.roadblock-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--p-surface-400);
+  color: var(--p-surface-0);
+  padding: 10px 10px;
+
+  .roadblock-footer-text {
+    font-size: 1em;
+    color: var(--p-surface-0);
+  }
+}

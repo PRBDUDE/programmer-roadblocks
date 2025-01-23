@@ -1,0 +1,58 @@
+.header-banner {
+  display: flex;
+  gap: 25px;
+  padding: 5px 10px;
+  background-color: var(--header-background-color);
+  height: 65px;
+  box-shadow: 0 0 10px var(--header-drop-shadow-color);
+
+  .header-text {
+    display: flex;
+    align-items: center;
+    font-family: "Comic Sans MS", serif;
+    font-size: 2.2em;
+    color: var(--title-color);
+    filter: drop-shadow(0 0 5px var(--header-text-drop-shadow-color));
+
+    .roadblocks-logo {
+      position: relative;
+      height: 2.3rem;
+      width: 2.3rem;
+      filter: drop-shadow(0 0 5px var(--title-color));
+      animation-name: shadow;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      margin: 0 10px;
+    }
+
+    .roadblocks-text {
+      font-family: "Comic Sans MS", serif;
+      font-size: 1.2em;
+      color: var(--title-color);
+      letter-spacing: 0.1rem;
+    }
+  }
+
+  .header-menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-options {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+    align-items: center;
+  }
+}
+
+@keyframes shadow {
+  0%, 100% {
+    filter: drop-shadow(0 0 10px var(--header-logo-shadow-color-100));
+    scale: 1.2;
+  }
+  50% {
+    filter: drop-shadow(0 0 2px var(--header-logo-shadow-color-50));
+    scale: 1;
+  }
+}

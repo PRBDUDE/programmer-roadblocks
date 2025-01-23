@@ -1,0 +1,42 @@
+<div class="header-banner">
+  <div class="header-text">
+    <span class="roadblocks-text">Programmer</span>
+    <img ngSrc="assets/images/roadblocks-logo.png" alt="Roadblocks Logo" class="roadblocks-logo" height="43"
+         width="43"/>
+    <span class="roadblocks-text">Roadblocks</span>
+  </div>
+  <div class="header-menu">
+    <p-megaMenu [model]="menuItems" orientation="horizontal"
+                styleClass="mega-menu">
+      <ng-template pTemplate="item" let-item>
+        <ng-container *ngIf="item.root; else submenuTemplate">
+          <div>{{ item.label }}</div>
+        </ng-container>
+        <ng-template #submenuTemplate>
+          <ng-container *ngIf="item.route; else linkTemplate">
+            <a [routerLink]="item.route" class="gap-2">{{ item.label }}</a>
+          </ng-container>
+          <ng-template #linkTemplate>
+            <a href="{{ item.url }}" target="{{ item.target }}" class="gap-2">{{ item.label }}</a>
+          </ng-template>
+        </ng-template>
+      </ng-template>
+    </p-megaMenu>
+  </div>
+  <div class="header-options">
+    <p-button icon="pi pi-sun"
+              (click)="toggleDarkMode()"
+              class="btn btn-outline-secondary"
+              severity="secondary"
+              size="small"
+              rounded="true"
+              *ngIf="!isDarkMode()"/>
+    <p-button icon="pi pi-moon"
+              (click)="toggleDarkMode()"
+              class="btn btn-outline-secondary"
+              severity="secondary"
+              size="small"
+              rounded="true"
+              *ngIf="isDarkMode()"/>
+  </div>
+</div>

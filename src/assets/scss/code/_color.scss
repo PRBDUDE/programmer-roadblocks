@@ -1,0 +1,95 @@
+:root {
+  --color-css-ampersand-selector: var(--p-amber-500);
+  --color-css-at-keyword: var(--p-amber-500);
+  --color-css-attribute-name: var(--p-amber-500);
+  --color-css-bad-character: var(--p-red-500);
+  --color-css-braces: var(--p-surface-0);
+  --color-css-brackets: var(--p-surface-0);
+  --color-css-class-name: var(--p-amber-500);
+  --color-css-colon: var(--p-surface-100);
+  --color-css-comma: var(--p-amber-500);
+  --color-css-comment: var(--p-cyan-100);
+  --color-css-dot: var(--p-surface-100);
+  --color-css-function: var(--p-amber-500);
+  --color-css-hex: var(--p-sky-300);
+  --color-css-id-selector: var(--p-amber-500);
+  --color-css-identifier: var(--p-amber-500);
+  --color-css-important: var(--p-amber-600);
+  --color-css-number: var(--p-cyan-200);
+  --color-css-operation-sign: var(--p-surface-100);
+  --color-css-parenthesis: var(--p-surface-100);
+  --color-css-property-name: var(--p-surface-0);
+  --color-css-property-value: var(--p-green-400);
+  --color-css-pseudo-selector: var(--p-amber-500);
+  --color-css-semicolon: var(--p-amber-500);
+  --color-css-string: var(--p-green-400);
+  --color-css-tag-name: var(--p-amber-500);
+  --color-css-unicode-range: var(--p-amber-500);
+  --color-css-unit: var(--p-green-400);
+  --color-css-url: var(--p-green-400);
+  --color-css-variable: var(--p-sky-300);
+
+  --color-html-attribute-name: var(--p-surface-0);
+  --color-html-attribute-value: var(--p-green-400);
+  --color-html-comment: var(--p-cyan-100);
+  --color-html-custom-tag-name: var(--p-teal-300);
+  --color-html-entity-reference: var(--p-sky-300);
+  --color-html-code: var(--p-surface-100);
+  --color-html-injected-language-fragment: var(--p-green-900);
+  --color-html-tag: var(--p-amber-500);
+  --color-html-tag-tree: var(--p-amber-500);
+  --color-html-inner-text: var(--p-surface-0);
+  --color-html-link-text: var(--p-surface-0);
+
+  --color-information-background-color: var(--p-surface-300);
+  --color-information-box-shadow: var(--p-surface-500);
+  --color-code-background-color: var(--p-surface-800);
+}
+
+:root[class="dark-theme"] {
+  --color-css-ampersand-selector: var(--p-amber-600);
+  --color-css-at-keyword: var(--p-amber-600);
+  --color-css-attribute-name: var(--p-amber-600);
+  --color-css-bad-character: var(--p-red-600);
+  --color-css-braces: var(--p-surface-100);
+  --color-css-brackets: var(--p-surface-100);
+  --color-css-class-name: var(--p-amber-600);
+  --color-css-colon: var(--p-surface-200);
+  --color-css-comma: var(--p-amber-600);
+  --color-css-comment: var(--p-cyan-200);
+  --color-css-dot: var(--p-surface-200);
+  --color-css-function: var(--p-amber-600);
+  --color-css-hex: var(--p-sky-400);
+  --color-css-id-selector: var(--p-amber-600);
+  --color-css-identifier: var(--p-amber-600);
+  --color-css-important: var(--p-amber-700);
+  --color-css-number: var(--p-cyan-300);
+  --color-css-operation-sign: var(--p-surface-200);
+  --color-css-parenthesis: var(--p-surface-200);
+  --color-css-property-name: var(--p-surface-100);
+  --color-css-property-value: var(--p-green-500);
+  --color-css-pseudo-selector: var(--p-amber-600);
+  --color-css-semicolon: var(--p-amber-600);
+  --color-css-string: var(--p-green-500);
+  --color-css-tag-name: var(--p-amber-600);
+  --color-css-unicode-range: var(--p-amber-600);
+  --color-css-unit: var(--p-green-500);
+  --color-css-url: var(--p-green-500);
+  --color-css-variable: var(--p-sky-400);
+
+  --color-html-attribute-name: var(--p-surface-100);
+  --color-html-attribute-value: var(--p-green-500);
+  --color-html-comment: var(--p-cyan-200);
+  --color-html-custom-tag-name: var(--p-teal-400);
+  --color-html-entity-reference: var(--p-sky-400);
+  --color-html-code: var(--p-surface-200);
+  --color-html-injected-language-fragment: var(--p-green-950);
+  --color-html-tag: var(--p-amber-600);
+  --color-html-tag-tree: var(--p-amber-600);
+  --color-html-inner-text: var(--p-surface-100);
+  --color-html-link-text: var(--p-surface-100);
+
+  --color-information-background-color: var(--p-surface-800);
+  --color-information-box-shadow: var(--p-surface-300);
+  --color-code-background-color: var(--p-surface-700);
+}

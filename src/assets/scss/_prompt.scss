@@ -1,0 +1,16 @@
+.prompt-text {
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--p-surface-700);
+    margin-bottom: 10px;
+}
+
+.prompt-input {
+    font-size: 1em;
+    color: var(--p-surface-700);
+    padding: 5px;
+    border: 1px solid var(--p-surface-100);
+    border-radius: 3px;
+    width: 100%;
+    margin-bottom: 10px;
+}

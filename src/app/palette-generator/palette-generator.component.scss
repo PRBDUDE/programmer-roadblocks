@@ -1,0 +1,84 @@
+.palette-generator-container {
+  padding: 0.2em;
+  font-size: 0.9em;
+
+  :hover {
+    font-size: 1.1em;
+  }
+
+  .input-group {
+    position: relative;
+    font-family: "Comic Sans MS", serif;
+    margin-bottom: 0.6em;
+    font-size: inherit;
+    width: fit-content;
+
+    label {
+      display: block;
+      font-weight: bold;
+      font-size: inherit;
+      margin-bottom: 5px;
+
+      .color-name {
+        font-family: "Book Antiqua", serif;
+      }
+    }
+
+    input[type=text] {
+      width: 6.2rem;
+      height: 1.8rem;
+      font-size: inherit;
+    }
+
+    input[type=color] {
+      height: 26px;
+      width: 26px;
+      margin-top: -4px;
+      margin-right: 10px;
+      padding: 0;
+      border: none;
+      cursor: pointer;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background-color: transparent;
+    }
+  }
+
+  .color-palette-button {
+    position: relative;
+  }
+
+  .palette-container {
+    position: relative;
+  }
+
+  .palette-cell {
+    color: var(--p-surface-950);
+
+    .color-swatch {
+      min-width: 50px;
+      height: 20px;
+      margin-right: 10px;
+      border: 1px solid var(--p-surface-950);
+    }
+  }
+
+  tr {
+    font-size: 0.8em;
+
+    th, td {
+      padding: 0.2em 0.4em;
+      border: 1px solid var(--p-datatable-header-border-color);
+    }
+
+    td {
+      padding: 0.2em 0.4em;
+
+      &.center-cell {
+        text-align: center;
+      }
+    }
+  }
+}
+
