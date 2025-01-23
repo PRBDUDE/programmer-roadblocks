@@ -1,5 +1,5 @@
 <div class="input-group">
-  <label for="phone">Phone Number: </label>
+  <span class="input-label">Phone Number:</span>
   <p-inputMask
          [(ngModel)]="phoneNumber"
          id="phone"
@@ -8,7 +8,7 @@
          (focusout)="phoneNumberLostFocus()"
          autoClear="false"
          mask="(999) 999-9999"
-         placeholder="(123) 456-7890"/>
+         placeholder="(123) 456-7890"></p-inputMask>
   <div *ngIf="isInvalidPhoneNumber()" class="invalid-message">
     Errors:
     <ol>
@@ -20,7 +20,7 @@
 </div>
 
 <div class="input-group">
-  <label for="ssn">SSN: </label>
+  <span class="input-label">SSN:</span>
   <p-inputMask
          [(ngModel)]="ssn"
          id="ssn"
@@ -28,7 +28,7 @@
          (focusin)="ssnHasFocus()"
          (focusout)="ssnLostFocus()"
          placeholder="123-45-6789"
-         mask="999-99-9999"/>
+         mask="999-99-9999"></p-inputMask>
   <div *ngIf="isInvalidSsn()" class="invalid-message">
     Errors:
     <ol>
@@ -40,7 +40,7 @@
 </div>
 
 <div class="input-group">
-  <label for="vin">VIN: </label>
+  <label for="vin" class="input-label">VIN: </label>
   <input type="text"
          pInputText
          [(ngModel)]="vin"
@@ -62,7 +62,7 @@
 </div>
 
 <div class="input-group">
-  <label for="email">Email: </label>
+  <label for="email" class="input-label">Email: </label>
   <input type="text"
          pInputText
          [(ngModel)]="email"
