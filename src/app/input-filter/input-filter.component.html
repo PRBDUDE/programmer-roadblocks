@@ -1,21 +1,14 @@
 <div class="input-group">
   <span class="input-label">Phone Number:</span>
   <p-inputMask
-         [(ngModel)]="phoneNumber"
+         [(ngModel)]="phoneNumber.phoneNumber"
          name="phone"
-         (focusin)="phoneNumberHasFocus()"
-         (focusout)="phoneNumberLostFocus()"
+         (focusin)="phoneNumber.hasFocus()"
+         (focusout)="phoneNumber.lostFocus()"
          autoClear="false"
          mask="(999) 999-9999"
          placeholder="(123) 456-7890"></p-inputMask>
-  <div *ngIf="isInvalidPhoneNumber()" class="invalid-message">
-    Errors:
-    <ol>
-      <li *ngFor="let message of phoneNumberErrorMessage()">
-        {{ message }}
-      </li>
-    </ol>
-  </div>
+  <app-input-error [errorComponent]="phoneNumber"></app-input-error>
 </div>
 
 <div class="input-group">
@@ -23,60 +16,39 @@
   <p-inputMask
          [(ngModel)]="ssn"
          name="ssn"
-         (focusin)="ssnHasFocus()"
-         (focusout)="ssnLostFocus()"
+         (focusin)="ssn.hasFocus()"
+         (focusout)="ssn.lostFocus()"
          placeholder="123-45-6789"
          mask="999-99-9999"></p-inputMask>
-  <div *ngIf="isInvalidSsn()" class="invalid-message">
-    Errors:
-    <ol>
-      <li *ngFor="let message of ssnErrorMessage()">
-        {{ message }}
-      </li>
-    </ol>
-  </div>
+  <app-input-error [errorComponent]="ssn"></app-input-error>
 </div>
 
 <div class="input-group">
   <label for="vin" class="input-label">VIN: </label>
   <input type="text"
          pInputText
-         [(ngModel)]="vin"
+         [(ngModel)]="vin.vin"
          id="vin"
          name="vin"
          maxlength="17"
-         (focusin)="vinHasFocus()"
-         (focusout)="vinLostFocus()"
+         (focusin)="vin.hasFocus()"
+         (focusout)="vin.lostFocus()"
          placeholder="Enter VIN here"
          pattern="[A-HJ-NPR-Z0-9]{17}">
-  <div *ngIf="isInvalidVin()" class="invalid-message">
-    Errors:
-    <ol>
-      <li *ngFor="let message of vinErrorMessage()">
-        {{ message }}
-      </li>
-    </ol>
-  </div>
+  <app-input-error [errorComponent]="vin"></app-input-error>
 </div>
 
 <div class="input-group">
   <label for="email" class="input-label">Email: </label>
   <input type="text"
          pInputText
-         [(ngModel)]="email"
+         [(ngModel)]="email.email"
          id="email"
          name="email"
          maxlength="30"
-         (focusin)="emailHasFocus()"
-         (focusout)="emailLostFocus()"
+         (focusin)="email.hasFocus()"
+         (focusout)="email.lostFocus()"
          placeholder="Enter Email here"
          pattern="[A-Za-z\d\.\-_]*@[A-za-z\d\.\-_]*\.[A-Za-z]{3}">
-  <div *ngIf="isInvalidEmail()" class="invalid-message">
-    Errors:
-    <ol>
-      <li *ngFor="let message of emailErrorMessage()">
-        {{ message }}
-      </li>
-    </ol>
-  </div>
+  <app-input-error [errorComponent]="email"></app-input-error>
 </div>
