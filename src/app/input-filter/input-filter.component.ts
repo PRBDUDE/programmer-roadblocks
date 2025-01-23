@@ -1,7 +1,6 @@
 import {Component} from '@angular/core';
 import {InputTextModule} from "primeng/inputtext";
 import {FormsModule} from "@angular/forms";
-import {NgForOf, NgIf} from "@angular/common";
 import {InputMaskModule} from "primeng/inputmask";
 import {PhoneNumberFilter} from "../filter-types/phone-number-filter";
 import {SsnFilter} from "../filter-types/ssn-filter";
@@ -15,8 +14,6 @@ import {InputErrorComponent} from "../input-error/input-error.component";
   imports: [
     InputTextModule,
     FormsModule,
-    NgIf,
-    NgForOf,
     InputMaskModule,
     InputErrorComponent
   ],
