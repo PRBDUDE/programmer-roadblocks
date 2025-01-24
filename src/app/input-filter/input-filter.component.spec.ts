@@ -24,47 +24,47 @@ describe('InputFilterComponent', () => {
 
   describe('Validate VIN checks', () => {
     beforeEach(() => {
-      component.vinActive = true;
+      component.vin.hasFocus();
     });
 
     describe('Validate empty VIN', () => {
       beforeEach(() => {
-        component.vin = '';
+        component.vin.vin = '';
       });
 
       it('should return false', () => {
-        expect(component.isInvalidVin()).toBeFalse();
+        expect(component.vin.isInvalid()).toBeFalse();
       });
 
       it('should return no error messages', () => {
-        expect(component.vinErrorMessage().length).toEqual(0);
+        expect(component.vin.getErrorMessages().length).toEqual(0);
       });
     })
     describe('Validate valid VIN', () => {
       beforeEach(() => {
-        component.vin = '1WWER345LGPYU4366'
+        component.vin.vin = '1WWER345LGPYU4366'
       });
 
       it('should return false when VIN is valid', () => {
-        expect(component.isInvalidVin()).toBeFalse();
+        expect(component.vin.isInvalid()).toBeFalse();
       });
 
       it('should return empty error array', () => {
-        expect(component.vinErrorMessage().length).toEqual(0);
+        expect(component.vin.getErrorMessages().length).toEqual(0);
       });
     });
 
     describe('Validate invalid vin containing \'I\', \'O\' and \'Q\'', () => {
       beforeEach(() => {
-        component.vin = '1QEOPUI3456673455';
+        component.vin.vin = '1QEOPUI3456673455';
       });
 
       it('should return true when VIN is invalid', () => {
-        expect(component.isInvalidVin()).toBeTrue();
+        expect(component.vin.isInvalid()).toBeTrue();
       });
 
       it('should return 3 error messages', () => {
-        const errors = component.vinErrorMessage();
+        const errors = component.vin.getErrorMessages();
         expect(errors.length).toEqual(3);
         expect(errors[0]).toEqual('may not contain \'I\'');
         expect(errors[1]).toEqual('may not contain \'O\'');
@@ -74,15 +74,15 @@ describe('InputFilterComponent', () => {
 
     describe('Validate VIN with lowercase letters', () => {
       beforeEach(() => {
-        component.vin = '3Erw45TYuwdf5466a';
+        component.vin.vin = '3Erw45TYuwdf5466a';
       });
 
       it('should return true when VIN is invalid', () => {
-        expect(component.isInvalidVin()).toBeTrue();
+        expect(component.vin.isInvalid()).toBeTrue();
       });
 
       it('should return 6 error messages', () => {
-        const errors = component.vinErrorMessage();
+        const errors = component.vin.getErrorMessages();
         expect(errors.length).toEqual(6);
         expect(errors[0]).toEqual('may not contain lowercase letter \'a\'');
         expect(errors[1]).toEqual('may not contain lowercase letter \'d\'');
@@ -96,50 +96,50 @@ describe('InputFilterComponent', () => {
 
   describe('Validate Email address', () => {
     beforeEach(() => {
-      component.emailActive = true;
+      component.email.hasFocus();
     });
 
     describe('Validate empty Email address', () => {
       beforeEach(() => {
-        component.email = '';
+        component.email.email = '';
       });
 
       it('should return false when Email is empty', () => {
-        expect(component.isInvalidEmail()).toBeFalse();
+        expect(component.email.isInvalid()).toBeFalse();
       });
 
       it('should return empty error message array', () => {
-        expect(component.emailErrorMessage.length).toEqual(0);
+        expect(component.email.getErrorMessages().length).toEqual(0);
       });
     });
 
     describe('Validate valid email', () => {
       beforeEach(() => {
-        component.email = 'test-34_5@e-mail.com';
+        component.email.email = 'test-34_5@e-mail.com';
       });
 
       it('should return false when Email is valid', () => {
-        expect(component.isInvalidEmail()).toBeFalse();
+        expect(component.email.isInvalid()).toBeFalse();
       });
 
       it('should return empty error message array', () => {
-        const errors = component.emailErrorMessage();
+        const errors = component.email.getErrorMessages();
         console.log('errors: ', errors);
-        expect(component.emailErrorMessage().length).toEqual(1);
+        expect(component.email.getErrorMessages().length).toEqual(1);
       });
     });
 
     describe('Validate invalid email with no domain', () => {
       beforeEach(() => {
-        component.email = 'wer';
+        component.email.email = 'wer';
       });
 
       it('should return true for invalid email', () => {
-        expect(component.isInvalidEmail()).toBeTrue();
+        expect(component.email.isInvalid()).toBeTrue();
       });
 
       it('should return error messages', () => {
-        const errors = component.emailErrorMessage();
+        const errors = component.email.getErrorMessages();
         console.log('errors: ', errors);
         expect(errors.length).toEqual(2);
         expect(errors[0]).toEqual('must contain \'@\'');
@@ -149,15 +149,15 @@ describe('InputFilterComponent', () => {
 
     describe('Validate invalid email with no top level domain', () => {
       beforeEach(() => {
-        component.email = 'name@email.';
+        component.email.email = 'name@email.';
       });
 
       it('should return true for invalid email', () => {
-        expect(component.isInvalidEmail()).toBeTrue();
+        expect(component.email.isInvalid()).toBeTrue();
       });
 
       it('should return error message', () => {
-        const errors = component.emailErrorMessage();
+        const errors = component.email.getErrorMessages();
         console.log('errors: ', errors);
         expect(errors.length).toEqual(2);
         expect(errors[0]).toEqual('must contain top level domain');
@@ -166,15 +166,15 @@ describe('InputFilterComponent', () => {
 
     describe('Validate invalid email with invalid characters', () => {
       beforeEach(() => {
-        component.email = 'na!#$%^&*()=+,<>/?e@email.com';
+        component.email.email = 'na!#$%^&*()=+,<>/?e@email.com';
       });
 
       it('should return true for invalid email', () => {
-        expect(component.isInvalidEmail()).toBeTrue();
+        expect(component.email.isInvalid()).toBeTrue();
       });
 
       it('should return error messages', () => {
-        const errors = component.emailErrorMessage();
+        const errors = component.email.getErrorMessages();
         expect(errors.length).toEqual(1);
         expect(errors[0]).toEqual('email contains invalid characters');
       });

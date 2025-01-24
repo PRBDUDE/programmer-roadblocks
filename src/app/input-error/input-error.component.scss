@@ -1,0 +1,19 @@
+.invalid-message {
+  color: var(--p-red-700);
+  position: fixed;
+  width: max-content;
+  padding: 5px;
+  left: 114px;
+  z-index: 10;
+  font-size: 1.1em;
+  border-radius: 10px;
+  line-height: 1;
+  border: 3px solid var(--p-red-100);
+  background-color: var(--p-surface-0);
+
+  ol {
+    li {
+      font-size: 0.8em;
+    }
+  }
+}
