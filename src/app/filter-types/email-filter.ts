@@ -5,6 +5,9 @@ export class EmailFilter extends BaseFilterType {
 
   getErrorMessages(): string[] {
     const errors: string[] = [];
+    if (!this.email) {
+      return errors;
+    }
     const atSymb = this.email.indexOf('@');
     const period = this.email.lastIndexOf('\.');
 
