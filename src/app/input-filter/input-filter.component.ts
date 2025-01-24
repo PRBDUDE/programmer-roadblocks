@@ -21,7 +21,6 @@ import {InputErrorComponent} from "../input-error/input-error.component";
   styleUrl: './input-filter.component.scss'
 })
 export class InputFilterComponent {
-  emailActive = false;
   phoneNumber: PhoneNumberFilter = new PhoneNumberFilter();
   ssn: SsnFilter = new SsnFilter();
   vin: VinFilter = new VinFilter();
