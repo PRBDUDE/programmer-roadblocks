@@ -3,13 +3,12 @@ import {PaletteGeneratorComponent} from "../palette-generator/palette-generator.
 import {$dt} from "@primeng/themes";
 
 @Component({
-  selector: 'app-color-palette',
-  standalone: true,
-  imports: [
-    PaletteGeneratorComponent
-  ],
-  templateUrl: './color-palette.component.html',
-  styleUrl: './color-palette.component.scss'
+    selector: 'app-color-palette',
+    imports: [
+        PaletteGeneratorComponent
+    ],
+    templateUrl: './color-palette.component.html',
+    styleUrl: './color-palette.component.scss'
 })
 export class ColorPaletteComponent {
   primaryColor = $dt('primary.500').value;

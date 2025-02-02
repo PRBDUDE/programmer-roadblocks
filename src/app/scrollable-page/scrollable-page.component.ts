@@ -2,16 +2,10 @@ import {Component, OnInit} from '@angular/core';
 import {parse} from '@adobe/css-tools'
 import {cssPropertyValue} from "../utility/css-property-value";
 import {cssPropertyName} from "../utility/css-property-name";
-import {NgForOf} from "@angular/common";
-import {CssRuleComponent} from "../utility/css-property/css-rule.component";
 
 @Component({
   selector: 'app-scrollable-page',
-  standalone: true,
-  imports: [
-    NgForOf,
-    CssRuleComponent
-  ],
+  imports: [],
   templateUrl: './scrollable-page.component.html',
   styleUrl: './scrollable-page.component.scss'
 })

@@ -6,17 +6,16 @@ import {RouterLink} from "@angular/router";
 import {Button} from "primeng/button";
 
 @Component({
-  selector: 'app-roadblock-header',
-  standalone: true,
-  imports: [
-    NgOptimizedImage,
-    MegaMenuModule,
-    NgIf,
-    RouterLink,
-    Button
-  ],
-  templateUrl: './roadblock-header.component.html',
-  styleUrl: './roadblock-header.component.scss'
+    selector: 'app-roadblock-header',
+    imports: [
+        NgOptimizedImage,
+        MegaMenuModule,
+        NgIf,
+        RouterLink,
+        Button
+    ],
+    templateUrl: './roadblock-header.component.html',
+    styleUrl: './roadblock-header.component.scss'
 })
 export class RoadblockHeaderComponent implements OnInit {
   menuItems: MegaMenuItem[] | undefined;

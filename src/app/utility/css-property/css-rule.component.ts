@@ -5,16 +5,15 @@ import {CssPropertyValueComponent} from "./css-property-value/css-property-value
 import {NgForOf, NgIf} from "@angular/common";
 
 @Component({
-  selector: 'app-css-rule',
-  standalone: true,
-  imports: [
-    CssPropertyNameComponent,
-    CssPropertyValueComponent,
-    NgForOf,
-    NgIf
-  ],
-  templateUrl: './css-rule.component.html',
-  styleUrl: './css-rule.component.scss'
+    selector: 'app-css-rule',
+    imports: [
+        CssPropertyNameComponent,
+        CssPropertyValueComponent,
+        NgForOf,
+        NgIf
+    ],
+    templateUrl: './css-rule.component.html',
+    styleUrl: './css-rule.component.scss'
 })
 export class CssRuleComponent implements OnInit {
   @Input() selectors: string[] = [];
