@@ -2,16 +2,13 @@ import {Component, Input} from '@angular/core';
 import {palette} from "@primeng/themes";
 import {InputText} from "primeng/inputtext";
 import {FormsModule} from "@angular/forms";
-import {NgForOf} from "@angular/common";
 import {TableModule} from "primeng/table";
 
 @Component({
   selector: 'app-palette-generator',
-  standalone: true,
   imports: [
     InputText,
     FormsModule,
-    NgForOf,
     TableModule
   ],
   templateUrl: './palette-generator.component.html',

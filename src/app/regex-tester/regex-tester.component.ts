@@ -1,13 +1,11 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {FormsModule} from "@angular/forms";
-import {NgClass, NgIf} from "@angular/common";
+import {NgClass} from "@angular/common";
 
 @Component({
   selector: 'app-regex-tester',
-  standalone: true,
   imports: [
     FormsModule,
-    NgIf,
     NgClass
   ],
   templateUrl: './regex-tester.component.html',
@@ -35,6 +33,7 @@ export class RegexTesterComponent {
   get pattern() {
     return this._pattern;
   }
+
   _testData = '';
 
   set testData(data: string) {
@@ -58,7 +57,7 @@ export class RegexTesterComponent {
   listMatches() {
     const matches = this.testData.match(this.pattern);
     matches?.forEach((match, index) => {
-      console.log('match[' + index +']', match);
+      console.log('match[' + index + ']', match);
     })
   }
 }

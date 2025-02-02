@@ -4,15 +4,14 @@ import {ToggleSwitch} from "primeng/toggleswitch";
 import {FormsModule} from "@angular/forms";
 
 @Component({
-  selector: 'app-button-demo',
-  standalone: true,
-  imports: [
-    Button,
-    ToggleSwitch,
-    FormsModule
-  ],
-  templateUrl: './button-demo.component.html',
-  styleUrl: './button-demo.component.scss'
+    selector: 'app-button-demo',
+    imports: [
+        Button,
+        ToggleSwitch,
+        FormsModule
+    ],
+    templateUrl: './button-demo.component.html',
+    styleUrl: './button-demo.component.scss'
 })
 export class ButtonDemoComponent {
   raised: boolean = false;
