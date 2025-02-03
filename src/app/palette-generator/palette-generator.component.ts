@@ -1,8 +1,10 @@
 import {Component, Input} from '@angular/core';
-import {palette} from "@primeng/themes";
+import {palette, updatePreset} from "@primeng/themes";
 import {InputText} from "primeng/inputtext";
 import {FormsModule} from "@angular/forms";
 import {TableModule} from "primeng/table";
+
+export type PaletteShades = { [p: string]: any };
 
 @Component({
   selector: 'app-palette-generator',
@@ -30,7 +32,7 @@ export class PaletteGeneratorComponent {
   }
 
   shades: string[] = [];
-  colorValues: { [p: string]: any } = {};
+  colorValues: PaletteShades = {};
 
   tableData = {
     datatable: {

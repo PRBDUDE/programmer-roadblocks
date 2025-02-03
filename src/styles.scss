@@ -1,10 +1,4 @@
-@import "../public/assets/scss/code/color";
-@import "../public/assets/scss/main-grid";
-@import "../public/assets/scss/menu";
-@import "../public/assets/scss/input";
-@import "../public/assets/scss/prompt";
-@import "../public/assets/scss/table";
-@import "../public/assets/scss/tooltip";
+@use "base";
 @import "../node_modules/primeicons/primeicons.css";
 
 * {

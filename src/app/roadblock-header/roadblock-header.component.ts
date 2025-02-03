@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {NgIf, NgOptimizedImage} from "@angular/common";
+import {NgIf} from "@angular/common";
 import {MegaMenuModule} from "primeng/megamenu";
 import {MegaMenuItem} from "primeng/api";
 import {RouterLink} from "@angular/router";
@@ -7,13 +7,12 @@ import {Button} from "primeng/button";
 
 @Component({
     selector: 'app-roadblock-header',
-    imports: [
-        NgOptimizedImage,
-        MegaMenuModule,
-        NgIf,
-        RouterLink,
-        Button
-    ],
+  imports: [
+    MegaMenuModule,
+    NgIf,
+    RouterLink,
+    Button
+  ],
     templateUrl: './roadblock-header.component.html',
     styleUrl: './roadblock-header.component.scss'
 })
