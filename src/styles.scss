@@ -1,0 +1,33 @@
+@import "../public/assets/scss/code/color";
+@import "../public/assets/scss/main-grid";
+@import "../public/assets/scss/menu";
+@import "../public/assets/scss/input";
+@import "../public/assets/scss/prompt";
+@import "../public/assets/scss/table";
+@import "../public/assets/scss/tooltip";
+@import "../node_modules/primeicons/primeicons.css";
+
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  font-size: 11pt;
+}
+
+body {
+  margin: 0;
+}
+
+.p-inputtext {
+  padding: 0.3rem;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
