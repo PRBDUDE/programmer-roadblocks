@@ -23,8 +23,6 @@ export class AppComponent implements OnInit {
       overlay: 10000,
       menu: 10000,
       tooltip: 10000
-      // toast: 10000,
-      // dropdown: 10000
     }
     this.primeng.filterMatchModeOptions = {
       text: ['contains', 'notcontains', 'equals', 'notequals', 'in', 'notin'],
