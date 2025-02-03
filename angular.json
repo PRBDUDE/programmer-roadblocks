@@ -36,9 +36,9 @@
                 "output": "/"
               },
               {
-                "glob": "roadblocks-logo.png",
+                "glob": "**.png",
                 "input": "public/assets/images",
-                "output": "/"
+                "output": "assets/images"
               }
             ],
             "stylePreprocessorOptions": {
@@ -121,9 +121,9 @@
                 "output": "/"
               },
               {
-                "glob": "roadblocks-logo.png",
+                "glob": "**.png",
                 "input": "public/assets/images",
-                "output": "/"
+                "output": "assets/images"
               }
             ],
             "stylePreprocessorOptions": {
