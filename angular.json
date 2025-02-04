@@ -67,7 +67,57 @@
                   "maximumError": "4kb"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.production.ts"
+                }
+              ]
+            },
+            "stage": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all",
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.stage.ts"
+                }
+              ]
+
+            },
+            "qat": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.qat.ts"
+                }
+              ]
+            },
+            "sit": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.sit.ts"
+                }
+              ]
             },
             "development": {
               "optimization": false,
@@ -88,6 +138,15 @@
           "configurations": {
             "production": {
               "buildTarget": "programmer-roadblocks:build:production"
+            },
+            "stage": {
+              "buildTarget": "programmer-roadblocks:build:stage"
+            },
+            "qat": {
+              "buildTarget": "programmer-roadblocks:build:qat"
+            },
+            "sit": {
+              "buildTarget": "programmer-roadblocks:build:sit"
             },
             "development": {
               "buildTarget": "programmer-roadblocks:build:development"
