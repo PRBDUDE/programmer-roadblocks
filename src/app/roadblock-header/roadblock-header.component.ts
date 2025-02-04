@@ -22,6 +22,24 @@ export class RoadblockHeaderComponent implements OnInit {
   ngOnInit() {
     this.menuItems = [
       {
+        label: 'Reactive Forms',
+        root: true,
+        items: [
+          [
+            {
+              label: 'Entry Form',
+              items: [
+                {
+                  label: 'Entry Form',
+                  subtext: 'Create a new entry',
+                  route: '/reactive-forms/entry-form'
+                }
+              ]
+            }
+          ]
+        ]
+      },
+      {
         label: 'Demos',
         root: true,
         items: [
