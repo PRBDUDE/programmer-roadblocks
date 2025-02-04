@@ -6,15 +6,15 @@ import {RouterLink} from "@angular/router";
 import {Button} from "primeng/button";
 
 @Component({
-    selector: 'app-roadblock-header',
+  selector: 'app-roadblock-header',
   imports: [
     MegaMenuModule,
     NgIf,
     RouterLink,
     Button
   ],
-    templateUrl: './roadblock-header.component.html',
-    styleUrl: './roadblock-header.component.scss'
+  templateUrl: './roadblock-header.component.html',
+  styleUrl: './roadblock-header.component.scss'
 })
 export class RoadblockHeaderComponent implements OnInit {
   menuItems: MegaMenuItem[] | undefined;
@@ -113,68 +113,37 @@ export class RoadblockHeaderComponent implements OnInit {
           ],
           [
             {
-              label: 'Menu',
+              label: 'Typescript',
               items: [
                 {
-                  label: 'Breadcrumb',
-                  subtext: 'Breadcrumb documentation',
-                  url: 'https://v18.primeng.org/breadcrumb',
+                  label: 'Language Reference',
+                  subtext: 'TypeScript official documentation',
+                  url: 'https://www.typescriptlang.org/docs/',
                   target: '_blank'
                 },
                 {
-                  label: 'ContextMenu',
-                  subtext: 'ContextMenu documentation',
-                  url: 'https://v18.primeng.org/contextmenu',
+                  label: 'Tutorial',
+                  subtext: 'TypeScript Tutorial',
+                  url: 'https://www.w3schools.com/typescript/index.php',
+                  target: '_blank'
+                }
+              ]
+            },
+            {
+              label: 'Node',
+              items: [
+                {
+                  label: 'Documentation',
+                  subtext: 'Node.js official documentation',
+                  url: 'https://nodejs.org/docs/latest/api/',
                   target: '_blank'
                 },
                 {
-                  label: 'Dock',
-                  subtext: 'Dock documentation',
-                  url: 'https://v18.primeng.org/dock',
+                  label: 'Tutorial',
+                  subtext: 'Angular Tutorial',
+                  url: 'https://www.w3schools.com/angular/',
                   target: '_blank'
-                },
-                {
-                  label: 'Menu',
-                  subtext: 'Menu documentation',
-                  url: 'https://v18.primeng.org/menu',
-                  target: '_blank'
-                },
-                {
-                  label: 'Menubar',
-                  subtext: 'Menubar documentation',
-                  url: 'https://v18.primeng.org/menubar',
-                  target: '_blank'
-                },
-                {
-                  label: 'Megamenu',
-                  subtext: 'Megamenu documentation',
-                  url: 'https://v18.primeng.org/megamenu',
-                  target: '_blank'
-                },
-                {
-                  label: 'PanelMenu',
-                  subtext: 'PanelMenu documentation',
-                  url: 'https://v18.primeng.org/panelmenu',
-                  target: '_blank'
-                },
-                {
-                  label: 'Steps',
-                  subtext: 'Steps documentation',
-                  url: 'https://v18.primeng.org/steps/personal',
-                  target: '_blank'
-                },
-                {
-                  label: 'TabMenu',
-                  subtext: 'TabMenu documentation',
-                  url: 'https://v18.primeng.org/tabmenu',
-                  target: '_blank'
-                },
-                {
-                  label: 'TieredMenu',
-                  subtext: 'TieredMenu documentation',
-                  url: 'https://v18.primeng.org/tieredmenu',
-                  target: '_blank'
-                },
+                }
               ]
             }
           ]
