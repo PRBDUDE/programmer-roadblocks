@@ -8,7 +8,6 @@ import {ColorPaletteComponent} from "./color-palette/color-palette.component";
 export const routes: Routes = [
   {path: '', redirectTo: '/regex-tester', pathMatch: 'full'},
   {path: 'input-filter', component: InputFilterComponent, title: 'Input Filter'},
-  // {path: 'regex-tester', component: RegexTesterComponent, title: 'Regex Tester'},
   {path: 'scrollable-page', component: ScrollablePageComponent, title: 'Scrollable Page'},
   {path: 'button-demo', component: ButtonDemoComponent, title: 'Button Demo'},
   {path: 'message-demo', component: MessageDemoComponent, title: 'Message Demo'},

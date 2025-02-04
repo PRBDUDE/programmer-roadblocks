@@ -29,11 +29,6 @@ export class RoadblockHeaderComponent implements OnInit {
             {
               label: 'Input',
               items: [
-                // {
-                //   label: 'Regex Tester',
-                //   subtext: 'Test your regular expressions',
-                //   route: '/regex-tester'
-                // },
                 {
                   label: 'Input Filter',
                   subtext: 'Test your input fields',
