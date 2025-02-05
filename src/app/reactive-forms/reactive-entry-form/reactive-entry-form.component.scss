@@ -1,0 +1,61 @@
+#entry-container {
+  float: left;
+  width: fit-content;
+  margin-right: 4rem;
+
+  form {
+    margin-left: 1em;
+
+    .form-group {
+      display: grid;
+      grid-template-columns: 90px 200px;
+      margin-bottom: 1rem;
+    }
+
+    label {
+      text-align: right;
+      padding-right: 1em;
+    }
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.output-container {
+  position: relative;
+  width: fit-content;
+  padding: 1em;
+  float: left;
+  margin-top: 2rem;
+  line-height: 1.3em;
+  letter-spacing: 0.2em;
+  border-radius: 10px;
+  background: var(--p-stone-700);
+  box-shadow: var(--p-gray-200) 0 0 10px;
+}
+
+input.ng-touched {
+  &.ng-invalid {
+    border: 5px solid red;
+  }
+
+  &.ng-valid {
+    border: 5px solid green;
+  }
+}
+//.ng-touched {
+//  border: 1px solid blue;
+//}
+//.ng-untouched {
+//  border: 1px solid gray;
+//}
+//.ng-dirty {
+//  border: 1px solid orange;
+//}
+//.ng-pristine {
+//  border: 1px solid purple;
+//}
