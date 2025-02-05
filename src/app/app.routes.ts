@@ -4,6 +4,7 @@ import {ScrollablePageComponent} from "./scrollable-page/scrollable-page.compone
 import {ButtonDemoComponent} from "./button-demo/button-demo.component";
 import {MessageDemoComponent} from "./message-demo/message-demo.component";
 import {ColorPaletteComponent} from "./color-palette/color-palette.component";
+import {ReactiveEntryFormComponent} from "./reactive-forms/reactive-entry-form/reactive-entry-form.component";
 
 export const routes: Routes = [
   {path: '', redirectTo: '/regex-tester', pathMatch: 'full'},
@@ -12,5 +13,6 @@ export const routes: Routes = [
   {path: 'button-demo', component: ButtonDemoComponent, title: 'Button Demo'},
   {path: 'message-demo', component: MessageDemoComponent, title: 'Message Demo'},
   {path: 'color-palette', component: ColorPaletteComponent, title: 'Color Palette'},
+  {path: 'reactive-forms/entry-form', component: ReactiveEntryFormComponent, title: 'Reactive Entry Form'},
   {path: '**', redirectTo: '/color-palette', pathMatch: 'full'}
 ];
