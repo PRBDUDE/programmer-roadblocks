@@ -21,7 +21,15 @@
     "lib": [
       "ES2022",
       "dom"
-    ]
+    ],
+    "baseUrl": "./",
+    "paths": {
+      "@utility/*": [
+        "./src/app/utility/css-property/*",
+        "./src/app/utility/debug-output-card/*",
+        "./src/app/utility/functions/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

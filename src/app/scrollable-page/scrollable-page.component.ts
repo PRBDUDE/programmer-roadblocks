@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {parse} from '@adobe/css-tools'
-import {cssPropertyValue} from "../utility/functions/css-property-value";
-import {cssPropertyName} from "../utility/functions/css-property-name";
+import {cssPropertyValue} from "@utility/css-property-value";
+import {cssPropertyName} from "@utility/css-property-name";
 
 @Component({
   selector: 'app-scrollable-page',

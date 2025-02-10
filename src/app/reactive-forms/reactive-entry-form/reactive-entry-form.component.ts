@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {FormControl, FormGroup, ReactiveFormsModule, Validators} from "@angular/forms";
-import {DebugOutputCardComponent} from "../../utility/debug-output-card/debug-output-card.component";
+import {DebugOutputCardComponent} from "@utility/debug-output-card.component";
 
 @Component({
   selector: 'app-reactive-entry-form',
