@@ -1,5 +1,4 @@
-#entry-container {
-  float: left;
+.entry-container {
   width: fit-content;
   margin-right: 4rem;
 
@@ -23,19 +22,6 @@
     flex-direction: row;
     justify-content: space-around;
   }
-}
-
-.output-container {
-  position: relative;
-  width: fit-content;
-  padding: 1em;
-  float: left;
-  margin-top: 2rem;
-  line-height: 1.3em;
-  letter-spacing: 0.2em;
-  border-radius: 10px;
-  background: var(--p-stone-700);
-  box-shadow: var(--p-gray-200) 0 0 10px;
 }
 
 input.ng-touched {
