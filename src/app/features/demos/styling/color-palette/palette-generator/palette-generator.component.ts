@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {palette, updatePreset} from "@primeng/themes";
+import {palette} from "@primeng/themes";
 import {InputText} from "primeng/inputtext";
 import {FormsModule} from "@angular/forms";
 import {TableModule} from "primeng/table";
