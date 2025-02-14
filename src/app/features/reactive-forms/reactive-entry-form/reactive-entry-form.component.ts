@@ -1,10 +1,12 @@
 import {Component} from '@angular/core';
 import {FormControl, FormGroup, ReactiveFormsModule, Validators} from "@angular/forms";
+import {DebugOutputCardComponent} from "@utility/debug-output-card.component";
 
 @Component({
   selector: 'app-reactive-entry-form',
   imports: [
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    DebugOutputCardComponent
   ],
   templateUrl: './reactive-entry-form.component.html',
   styleUrl: './reactive-entry-form.component.scss'
