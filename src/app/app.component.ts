@@ -5,10 +5,15 @@ import {PrimeNG} from "primeng/config";
 import {RoadblockFooterComponent} from "@rootComponents/roadblock-footer.component";
 
 @Component({
-    selector: 'app-root',
-    imports: [RouterOutlet, RoadblockHeaderComponent, RoadblockFooterComponent],
-    templateUrl: './app.component.html',
-    styleUrl: './app.component.scss'
+  selector: 'app-root',
+  imports: [
+    RouterOutlet,
+    RoadblockHeaderComponent,
+    RoadblockFooterComponent,
+    RoadblockHeaderComponent
+  ],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit {
   title = 'programmer-roadblocks';

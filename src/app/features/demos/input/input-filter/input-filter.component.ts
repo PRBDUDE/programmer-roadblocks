@@ -10,12 +10,13 @@ import {InputErrorComponent} from "@errorHandlers/input-error.component";
 
 @Component({
     selector: 'app-input-filter',
-    imports: [
-        InputTextModule,
-        FormsModule,
-        InputMaskModule,
-        InputErrorComponent
-    ],
+  imports: [
+    InputTextModule,
+    FormsModule,
+    InputMaskModule,
+    InputErrorComponent,
+    InputErrorComponent
+  ],
     templateUrl: './input-filter.component.html',
     styleUrl: './input-filter.component.scss'
 })
