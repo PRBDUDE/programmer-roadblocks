@@ -1,7 +1,7 @@
 import {ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {ColorPaletteComponent} from './color-palette.component';
-import {PaletteGeneratorComponent} from "../palette-generator/palette-generator.component";
+import {PaletteGeneratorComponent} from "./palette-generator/palette-generator.component";
 import {InputText} from "primeng/inputtext";
 import {NgForOf} from "@angular/common";
 import {FormsModule} from "@angular/forms";

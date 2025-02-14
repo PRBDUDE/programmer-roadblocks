@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
-import {RoadblockHeaderComponent} from "./roadblock-header/roadblock-header.component";
+import {RoadblockHeaderComponent} from "./core/roadblock-header/roadblock-header.component";
 import {PrimeNG} from "primeng/config";
-import {RoadblockFooterComponent} from "./roadblock-footer/roadblock-footer.component";
+import {RoadblockFooterComponent} from "./core/roadblock-footer/roadblock-footer.component";
 
 @Component({
     selector: 'app-root',
