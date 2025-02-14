@@ -6,6 +6,7 @@ import {DebugOutputCardComponent} from "@utility/debug-output-card.component";
   selector: 'app-reactive-entry-form',
   imports: [
     ReactiveFormsModule,
+    DebugOutputCardComponent,
     DebugOutputCardComponent
   ],
   templateUrl: './reactive-entry-form.component.html',

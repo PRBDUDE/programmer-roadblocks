@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {BaseFilterType} from "../filter-types/base-filter-type";
+import {BaseFilterType} from "@filters/base-filter-type";
 import {NgForOf, NgIf} from "@angular/common";
 
 @Component({

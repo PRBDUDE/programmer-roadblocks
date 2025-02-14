@@ -1,14 +1,14 @@
-import { Component } from '@angular/core';
-import {PaletteGeneratorComponent} from "../palette-generator/palette-generator.component";
+import {Component} from '@angular/core';
 import {$dt} from "@primeng/themes";
+import {PaletteGeneratorComponent} from "./palette-generator/palette-generator.component";
 
 @Component({
-    selector: 'app-color-palette',
-    imports: [
-        PaletteGeneratorComponent
-    ],
-    templateUrl: './color-palette.component.html',
-    styleUrl: './color-palette.component.scss'
+  selector: 'app-color-palette',
+  imports: [
+    PaletteGeneratorComponent
+  ],
+  templateUrl: './color-palette.component.html',
+  styleUrl: './color-palette.component.scss'
 })
 export class ColorPaletteComponent {
   primaryColor = $dt('primary.500').value;

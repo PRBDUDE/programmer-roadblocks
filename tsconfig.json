@@ -25,9 +25,19 @@
     "baseUrl": "./",
     "paths": {
       "@utility/*": [
-        "./src/app/utility/css-property/*",
-        "./src/app/utility/debug-output-card/*",
-        "./src/app/utility/functions/*"
+        "./src/app/core/utility/css-property/*",
+        "./src/app/core/utility/debug-output-card/*",
+        "./src/app/core/utility/functions/*"
+      ],
+      "@rootComponents/*": [
+        "./src/app/core/roadblock-header/*",
+        "./src/app/core/roadblock-footer/*",
+      ],
+      "@filters/*": [
+        "./src/app/core/filter-types/*"
+      ],
+      "@errorHandlers/*": [
+        "./src/app/core/error-handlers/input-error/*"
       ]
     }
   },

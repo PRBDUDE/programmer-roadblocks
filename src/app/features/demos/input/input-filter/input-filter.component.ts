@@ -2,20 +2,21 @@ import {Component} from '@angular/core';
 import {InputTextModule} from "primeng/inputtext";
 import {FormsModule} from "@angular/forms";
 import {InputMaskModule} from "primeng/inputmask";
-import {PhoneNumberFilter} from "../filter-types/phone-number-filter";
-import {SsnFilter} from "../filter-types/ssn-filter";
-import {VinFilter} from "../filter-types/vin-filter";
-import {EmailFilter} from "../filter-types/email-filter";
-import {InputErrorComponent} from "../input-error/input-error.component";
+import {PhoneNumberFilter} from "@filters/phone-number-filter";
+import {SsnFilter} from "@filters/ssn-filter";
+import {VinFilter} from "@filters/vin-filter";
+import {EmailFilter} from "@filters/email-filter";
+import {InputErrorComponent} from "@errorHandlers/input-error.component";
 
 @Component({
     selector: 'app-input-filter',
-    imports: [
-        InputTextModule,
-        FormsModule,
-        InputMaskModule,
-        InputErrorComponent
-    ],
+  imports: [
+    InputTextModule,
+    FormsModule,
+    InputMaskModule,
+    InputErrorComponent,
+    InputErrorComponent
+  ],
     templateUrl: './input-filter.component.html',
     styleUrl: './input-filter.component.scss'
 })
