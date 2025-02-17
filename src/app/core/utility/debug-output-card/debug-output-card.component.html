@@ -1,6 +1,7 @@
 <div [attr.id]="debugOutputId"
      [ngClass]="{'flat': flat}"
-     class="debug-output-container">
+     class="debug-output-container"
+     *ngIf="!isProduction()">
   <div *ngIf="title.length > 0" class="debug-header">
     {{ title }}
   </div>

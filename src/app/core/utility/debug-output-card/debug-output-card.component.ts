@@ -1,5 +1,6 @@
-import {AfterViewInit, Component, Input} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {JsonPipe, NgClass, NgIf} from "@angular/common";
+import {isProduction} from "@utility/is-production";
 
 let uniqueId = 0;
 
@@ -13,7 +14,7 @@ let uniqueId = 0;
   templateUrl: './debug-output-card.component.html',
   styleUrl: './debug-output-card.component.scss'
 })
-export class DebugOutputCardComponent implements AfterViewInit {
+export class DebugOutputCardComponent {
   @Input('title') title: string = '';
   @Input('json') jsonValue!: object;
   @Input('string') stringValue!: string;
@@ -23,33 +24,7 @@ export class DebugOutputCardComponent implements AfterViewInit {
   @Input('variableName') variableName: string = '';
   @Input('flat') flat: boolean = false;
 
-  private _rightPosition: string = '50px';
-  private _topPosition: string = '100px';
-  @Input('right')
-  set right(rightPosition: string) {
-    this._rightPosition = rightPosition;
-  }
-
-  @Input('top')
-  set top(topPosition: string) {
-    this._topPosition = topPosition;
-  }
-
   debugOutputId = `debug_output_${uniqueId++}`;
-
-  ngAfterViewInit(): void {
-    console.log('AfterViewInit');
-    const div = document.getElementById(this.debugOutputId);
-    console.log(this.title + ' - id:', this.debugOutputId);
-    if (div) {
-      console.log('div:', div);
-      div.style.right = this._rightPosition;
-      console.log(this.title + ' - right:', this._rightPosition, this.debugOutputId);
-      div.style.top = this._topPosition;
-      console.log(this.title + ' - top:', this._topPosition, this.debugOutputId);
-    }
-    console.log(this.title + ' - div.style:', div?.style.right, div?.style.top);
-  }
 
   isJson(): boolean {
     return this.jsonValue !== undefined;
@@ -70,4 +45,6 @@ export class DebugOutputCardComponent implements AfterViewInit {
   isRegex(): boolean {
     return this.regexValue !== undefined;
   }
+
+  protected readonly isProduction = isProduction;
 }

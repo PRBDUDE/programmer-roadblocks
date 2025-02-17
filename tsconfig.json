@@ -38,6 +38,9 @@
       ],
       "@errorHandlers/*": [
         "./src/app/core/error-handlers/input-error/*"
+      ],
+      "@environments/*": [
+        "./src/environments/*"
       ]
     }
   },
