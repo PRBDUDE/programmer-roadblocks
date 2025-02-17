@@ -6,7 +6,7 @@
   --debug-variable-background-color: var(--p-surface-200);
 }
 
-:root[class="dark-theme"] {
+:root[class*="dark-theme"] {
   --debug-background-color: var(--p-surface-700);
   --debug-text-color: var(--p-surface-100);
   --debug-border-color: var(--p-surface-100);

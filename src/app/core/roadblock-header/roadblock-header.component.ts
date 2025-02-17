@@ -192,4 +192,14 @@ export class RoadblockHeaderComponent implements OnInit {
     const element = document.querySelector('html');
     return element?.classList.contains('dark-theme');
   }
+
+  toggleDebugMode() {
+    const element = document.querySelector('html');
+    element?.classList.toggle('debug-mode');
+  }
+
+  isDebugMode() {
+    const element = document.querySelector('html');
+    return element?.classList.contains('debug-mode');
+  }
 }

@@ -10,6 +10,6 @@
   --debug-box-shadow: var(--p-yellow-100) 0 0 10px, var(--p-orange-300) 0 0 10px, var(--p-red-400) 0 0 10px;
 }
 
-:root[class="dark-theme"] {
+:root[class*="dark-theme"] {
   --debug-box-shadow: var(--p-yellow-200) 0 0 10px, var(--p-orange-400) 0 0 10px, var(--p-red-500) 0 0 10px;
 }

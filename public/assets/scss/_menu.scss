@@ -7,7 +7,7 @@
   --header-logo-shadow-color-50: var(--p-red-800);
 }
 
-:root[class="dark-theme"] {
+:root[class*="dark-theme"] {
   --title-color: var(--p-red-700);
   --header-background-color: var(--p-neutral-400);
   --header-drop-shadow-color: var(--p-slate-400);

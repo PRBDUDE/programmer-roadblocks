@@ -46,7 +46,7 @@
   --color-code-background-color: var(--p-surface-800);
 }
 
-:root[class="dark-theme"] {
+:root[class*="dark-theme"] {
   --color-css-ampersand-selector: var(--p-amber-600);
   --color-css-at-keyword: var(--p-amber-600);
   --color-css-attribute-name: var(--p-amber-600);

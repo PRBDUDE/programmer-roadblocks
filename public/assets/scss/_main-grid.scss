@@ -27,7 +27,7 @@
   }
 }
 
-:root[class='dark-theme'] {
+:root[class*='dark-theme'] {
   .main-grid-container {
     background-color: var(--p-surface-600);
 

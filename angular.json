@@ -39,12 +39,18 @@
                 "glob": "**.png",
                 "input": "public/assets/images",
                 "output": "assets/images"
+              },
+              {
+                "glob": "**.css",
+                "input": "public/assets/font-awesome-4.7.0/css",
+                "output": "assets/font-awesome/css"
               }
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
                 "public/assets/scss",
                 "public/assets/scss/code",
+                "public/assets/font-awesome-4.7.0/scss",
                 "."
               ]
             },
@@ -183,11 +189,18 @@
                 "glob": "**.png",
                 "input": "public/assets/images",
                 "output": "assets/images"
+              },
+              {
+                "glob": "**.css",
+                "input": "public/assets/font-awesome-4.7.0/css",
+                "output": "assets/font-awesome/css"
               }
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
                 "public/assets/scss",
+                "public/assets/scss/code",
+                "public/assets/font-awesome-4.7.0/scss",
                 "."
               ]
             },
