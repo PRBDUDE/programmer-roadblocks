@@ -1,25 +1,25 @@
 <div class="input-group">
   <span class="input-label">Phone Number:</span>
   <p-inputMask
-         [(ngModel)]="phoneNumber.phoneNumber"
-         name="phone"
-         (focusin)="phoneNumber.hasFocus()"
-         (focusout)="phoneNumber.lostFocus()"
-         autoClear="false"
-         mask="(999) 999-9999"
-         placeholder="(123) 456-7890"></p-inputMask>
+    [(ngModel)]="phoneNumber.phoneNumber"
+    name="phone"
+    (focusin)="phoneNumber.hasFocus()"
+    (focusout)="phoneNumber.lostFocus()"
+    autoClear="false"
+    mask="(999) 999-9999"
+    placeholder="(123) 456-7890"></p-inputMask>
   <app-input-error [errorComponent]="phoneNumber"></app-input-error>
 </div>
 
 <div class="input-group">
   <span class="input-label">SSN:</span>
   <p-inputMask
-         [(ngModel)]="ssn"
-         name="ssn"
-         (focusin)="ssn.hasFocus()"
-         (focusout)="ssn.lostFocus()"
-         placeholder="123-45-6789"
-         mask="999-99-9999"></p-inputMask>
+    [(ngModel)]="ssn"
+    name="ssn"
+    (focusin)="ssn.hasFocus()"
+    (focusout)="ssn.lostFocus()"
+    placeholder="123-45-6789"
+    mask="999-99-9999"></p-inputMask>
   <app-input-error [errorComponent]="ssn"></app-input-error>
 </div>
 
@@ -52,3 +52,24 @@
          pattern="[A-Za-z\d\.\-_]*@[A-za-z\d\.\-_]*\.[A-Za-z]{3}">
   <app-input-error [errorComponent]="email"></app-input-error>
 </div>
+
+<ng-container *ngIf="isDebugMode()">
+  <div class="filter-debug-output-container">
+    <app-debug-output-card
+      [title]="'Debug Output'"
+      [variableName]="'phoneNumber'"
+      [json]="phoneNumber"/>
+    <app-debug-output-card
+      [title]="'Debug Output'"
+      [variableName]="'SSN'"
+      [json]="ssn"/>
+    <app-debug-output-card
+      [title]="'Debug Output'"
+      [variableName]="'VIN'"
+      [json]="vin"/>
+    <app-debug-output-card
+      [title]="'Debug Output'"
+      [variableName]="'email'"
+      [json]="email"/>
+  </div>
+</ng-container>

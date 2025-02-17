@@ -1,82 +1,64 @@
 <h1>Reactive Entry Form</h1>
 <div class="entry-container">
-    <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
-        <div [formGroupName]="'name'">
-            <div class="form-group">
-                <label for="firstname">First Name</label>
-                <input id="firstname" type="text" class="form-control" [formControlName]="'first'"/>
-            </div>
+  <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+    <div [formGroupName]="'name'">
+      <div class="form-group">
+        <label for="firstname">First Name</label>
+        <input id="firstname" type="text" class="form-control" [formControlName]="'first'"/>
+      </div>
 
-            <div class="form-group">
-                <label for="lastname">Last Name</label>
-                <input id="lastname" type="text" class="form-control" [formControlName]="'last'"/>
-            </div>
-        </div>
+      <div class="form-group">
+        <label for="lastname">Last Name</label>
+        <input id="lastname" type="text" class="form-control" [formControlName]="'last'"/>
+      </div>
+    </div>
 
-        <div [formGroupName]="'address'">
-            <div class="form-group">
-                <label for="street">Street</label>
-                <input id="street" type="text" class="form-control" [formControlName]="'street'"/>
-            </div>
+    <div [formGroupName]="'address'">
+      <div class="form-group">
+        <label for="street">Street</label>
+        <input id="street" type="text" class="form-control" [formControlName]="'street'"/>
+      </div>
 
-            <div class="form-group">
-                <label for="city">City</label>
-                <input id="city" type="text" class="form-control" [formControlName]="'city'"/>
-            </div>
+      <div class="form-group">
+        <label for="city">City</label>
+        <input id="city" type="text" class="form-control" [formControlName]="'city'"/>
+      </div>
 
-            <div class="form-group">
-                <label for="state">State</label>
-                <input id="state" type="text" class="form-control" [formControlName]="'state'"/>
-            </div>
+      <div class="form-group">
+        <label for="state">State</label>
+        <input id="state" type="text" class="form-control" [formControlName]="'state'"/>
+      </div>
 
-            <div class="form-group">
-                <label for="zip">Zip</label>
-                <input id="zip" type="text" class="form-control" [formControlName]="'zip'"/>
-            </div>
-        </div>
+      <div class="form-group">
+        <label for="zip">Zip</label>
+        <input id="zip" type="text" class="form-control" [formControlName]="'zip'"/>
+      </div>
+    </div>
 
-        <div [formGroupName]="'contact'">
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input id="email" type="email" class="form-control" [formControlName]="'email'"/>
-            </div>
+    <div [formGroupName]="'contact'">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" type="email" class="form-control" [formControlName]="'email'"/>
+      </div>
 
-            <div class="form-group">
-                <label for="phone">Phone</label>
-                <input id="phone" type="tel" class="form-control" [formControlName]="'phone'"/>
-            </div>
-        </div>
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input id="phone" type="tel" class="form-control" [formControlName]="'phone'"/>
+      </div>
+    </div>
 
-        <div class="button-container">
-            <button type="submit" class="btn btn-primary" [disabled]="isValid()">Submit</button>
-            <button type="reset" class="btn btn-secondary">Reset</button>
-        </div>
-    </form>
+    <div class="button-container">
+      <button type="submit" class="btn btn-primary" [disabled]="isValid()">Submit</button>
+      <button type="reset" class="btn btn-secondary">Reset</button>
+    </div>
+  </form>
 </div>
 
-<!--<div [hidden]="isValid()">-->
-<!--    <app-debug-output-card-->
-<!--            [title]="'Debug Output 1'"-->
-<!--            [variableName]="'entryForm.value'"-->
-<!--            [right]="'550px'"-->
-<!--            [top]="'100px'"-->
-<!--            [json]="entryForm.value"/>-->
-<!--    <app-debug-output-card-->
-<!--            [title]="'Debug Output 1'"-->
-<!--            [variableName]="'zipCodePattern'"-->
-<!--            [top]="'150px'"-->
-<!--            [right]="'950px'"-->
-<!--            [regex]="zipCodePattern"/>-->
-<!--    <app-debug-output-card-->
-<!--            [title]="'Debug Output 2'"-->
-<!--            [variableName]="'entryForm.value'"-->
-<!--            [right]="'350px'"-->
-<!--            [top]="'100px'"-->
-<!--            [json]="entryForm.value"/>-->
+<ng-container *ngIf="isDebugMode()">
+  <div class="reactive-debug-output-container">
     <app-debug-output-card
-            [title]="'Debug Output 3'"
-            [variableName]="'entryForm.value'"
-            [right]="'150px'"
-            [top]="'100px'"
-            [json]="entryForm.value"/>
-<!--</div>-->
+      [title]="'Debug Output'"
+      [variableName]="'entryForm.value'"
+      [json]="entryForm.value"/>
+  </div>
+</ng-container>

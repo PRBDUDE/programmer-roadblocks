@@ -4,6 +4,9 @@ import {MegaMenuModule} from "primeng/megamenu";
 import {MegaMenuItem} from "primeng/api";
 import {RouterLink} from "@angular/router";
 import {Button} from "primeng/button";
+import {isDebugMode} from "@utility/is-debug-mode";
+import {Tooltip} from "primeng/tooltip";
+import {isProduction} from "@utility/is-production";
 
 @Component({
   selector: 'app-roadblock-header',
@@ -11,12 +14,16 @@ import {Button} from "primeng/button";
     MegaMenuModule,
     NgIf,
     RouterLink,
-    Button
+    Button,
+    Tooltip
   ],
   templateUrl: './roadblock-header.component.html',
   styleUrl: './roadblock-header.component.scss'
 })
 export class RoadblockHeaderComponent implements OnInit {
+  protected readonly isDebugMode = isDebugMode;
+  protected readonly isProduction = isProduction;
+
   menuItems: MegaMenuItem[] | undefined;
 
   ngOnInit() {
@@ -196,10 +203,5 @@ export class RoadblockHeaderComponent implements OnInit {
   toggleDebugMode() {
     const element = document.querySelector('html');
     element?.classList.toggle('debug-mode');
-  }
-
-  isDebugMode() {
-    const element = document.querySelector('html');
-    return element?.classList.contains('debug-mode');
   }
 }
