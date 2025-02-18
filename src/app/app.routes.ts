@@ -7,34 +7,8 @@ export const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'input-filter',
-    loadComponent: () => import('./features/demos/input/input-filter/input-filter.component')
-      .then(m => m.InputFilterComponent),
-    title: 'Input Filter'
-  },
-  {
-    path: 'scrollable-page',
-    loadComponent: () => import('./features/demos/scrolling/scrollable-page/scrollable-page.component')
-      .then(m => m.ScrollablePageComponent),
-    title: 'Scrollable Page'
-  },
-  {
-    path: 'button-demo',
-    loadComponent: () => import('./features/demos/styling/button-demo/button-demo.component')
-      .then(m => m.ButtonDemoComponent),
-    title: 'Button Demo'
-  },
-  {
-    path: 'message-demo',
-    loadComponent: () => import('./features/demos/styling/message-demo/message-demo.component')
-      .then(m => m.MessageDemoComponent),
-    title: 'Message Demo'
-  },
-  {
-    path: 'color-palette',
-    loadComponent: () => import('./features/demos/styling/color-palette/color-palette.component')
-      .then(m => m.ColorPaletteComponent),
-    title: 'Color Palette'
+    path: 'demo',
+    loadChildren: () => import('./features/demos/demo-routes').then(m => m.demo_routes),
   },
   {
     path: 'reactive-forms/entry-form',
