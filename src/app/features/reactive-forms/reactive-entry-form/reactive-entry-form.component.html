@@ -54,11 +54,11 @@
   </form>
 </div>
 
-<ng-container *ngIf="isDebugMode()">
+@if (isDebugMode()) {
   <div class="reactive-debug-output-container">
     <app-debug-output-card
       [title]="'Debug Output'"
       [variableName]="'entryForm.value'"
       [json]="entryForm.value"/>
   </div>
-</ng-container>
+}
