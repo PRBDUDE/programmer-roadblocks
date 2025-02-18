@@ -6,6 +6,7 @@ import {Button} from "primeng/button";
 import {isDebugMode} from "@utility/is-debug-mode";
 import {Tooltip} from "primeng/tooltip";
 import {isProduction} from "@utility/is-production";
+import {NgOptimizedImage} from "@angular/common";
 
 @Component({
   selector: 'app-roadblock-header',
@@ -13,7 +14,8 @@ import {isProduction} from "@utility/is-production";
     MegaMenuModule,
     RouterLink,
     Button,
-    Tooltip
+    Tooltip,
+    NgOptimizedImage
   ],
   templateUrl: './roadblock-header.component.html',
   styleUrl: './roadblock-header.component.scss'
