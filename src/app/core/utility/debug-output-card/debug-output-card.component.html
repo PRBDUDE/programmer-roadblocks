@@ -2,19 +2,31 @@
   <div [attr.id]="debugOutputId"
        [ngClass]="{'flat': flat}"
        class="debug-output-container">
-    <div *ngIf="title.length > 0" class="debug-header">
-      {{ title }}
-    </div>
-    <div *ngIf="variableName.length > 0" class="debug-variable-name-container">
-      <span class="debug-variable-name-label">Variable:&nbsp;</span>
-      <span class="debug-variable-name">{{ variableName }}</span>
-    </div>
+    @if (title.length > 0) {
+      <div class="debug-header">{{ title }}</div>
+    }
+    @if (variableName.length > 0) {
+      <div class="debug-variable-name-container">
+        <span class="debug-variable-name-label">Variable:&nbsp;</span>
+        <span class="debug-variable-name">{{ variableName }}</span>
+      </div>
+    }
     <div class="debug-content">
-      <pre *ngIf="isJson()">{{ jsonValue | json }}</pre>
-      <span *ngIf="isString()">{{ this.stringValue }}</span>
-      <span *ngIf="isNumber()">{{ this.numberValue }}</span>
-      <span *ngIf="isBoolean()">{{ this.booleanValue }}</span>
-      <span *ngIf="isRegex()">{{ this.regexValue }}</span>
+      @if (isJson()) {
+        <pre>{{ jsonValue | json }}</pre>
+      }
+      @if (isString()) {
+        {{ this.stringValue }}
+      }
+      @if (isNumber()) {
+        {{ this.numberValue }}
+      }
+      @if (isBoolean()) {
+        {{ this.booleanValue }}
+      }
+      @if (isRegex()) {
+        {{ this.regexValue }}
+      }
     </div>
   </div>
 }

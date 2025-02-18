@@ -9,7 +9,6 @@ import {EmailFilter} from "@filters/email-filter";
 import {InputErrorComponent} from "@errorHandlers/input-error.component";
 import {isDebugMode} from "@utility/is-debug-mode";
 import {DebugOutputCardComponent} from "@utility/debug-output-card.component";
-import {NgIf} from "@angular/common";
 
 @Component({
     selector: 'app-input-filter',
@@ -19,8 +18,7 @@ import {NgIf} from "@angular/common";
     InputMaskModule,
     InputErrorComponent,
     InputErrorComponent,
-    DebugOutputCardComponent,
-    NgIf
+    DebugOutputCardComponent
   ],
     templateUrl: './input-filter.component.html',
     styleUrl: './input-filter.component.scss'
