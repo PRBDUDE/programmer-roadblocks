@@ -1,8 +1,12 @@
 <ng-container *ngFor="let selector of selectors; let i = index">
   <div class="css-rule-selector">
     {{ selector }}
-    <span *ngIf="i < selectors.length - 1" class="css-rule-comma">,</span>
-    <span *ngIf="i === selectors.length - 1" class="css-rule-open">&nbsp;&#123;</span>
+    @if (i < selectors.length - 1) {
+      <span class="css-rule-comma">,</span>
+    }
+    @if (i === selectors.length - 1) {
+      <span class="css-rule-open">&nbsp;&#123;</span>
+    }
   </div>
 </ng-container>
 <ng-container *ngFor="let property of properties">
