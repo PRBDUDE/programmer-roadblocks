@@ -1,9 +1,11 @@
 <div *ngIf="errorComponent?.isInvalid()" class="invalid-message">
   Errors:
   <ol>
-    <li *ngFor="let message of errorComponent?.getErrorMessages()">
-      {{ message }}
-    </li>
+    @for (message of errorComponent?.getErrorMessages(); track message) {
+      <li>
+        {{ message }}
+      </li>
+    }
   </ol>
 </div>
 
