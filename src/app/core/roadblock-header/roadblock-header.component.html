@@ -26,38 +26,40 @@
   </div>
   <div class="header-options">
     @if (!isProduction()) {
-      <p-button icon="fa fa-bug"
-                (click)="toggleDebugMode()"
-                class="btn btn-outline-secondary"
-                severity="secondary"
-                size="small"
-                rounded="true"
-                pTooltip="Debug Mode"
-                tooltipPosition="bottom"
-                *ngIf="!isDebugMode()"/>
-      <p-button icon="fa fa-check-circle-o"
-                (click)="toggleDebugMode()"
-                class="btn btn-outline-secondary"
-                severity="secondary"
-                size="small"
-                rounded="true"
-                pTooltip="Normal Mode"
-                tooltipPosition="bottom"
-                *ngIf="isDebugMode()"/>
+      @if (!isDebugMode()) {
+        <p-button icon="fa fa-bug"
+                  (click)="toggleDebugMode()"
+                  class="btn btn-outline-secondary"
+                  severity="secondary"
+                  size="small"
+                  rounded="true"
+                  pTooltip="Debug Mode"
+                  tooltipPosition="bottom"/>
+      } @else {
+        <p-button icon="fa fa-check-circle-o"
+                  (click)="toggleDebugMode()"
+                  class="btn btn-outline-secondary"
+                  severity="secondary"
+                  size="small"
+                  rounded="true"
+                  pTooltip="Normal Mode"
+                  tooltipPosition="bottom"/>
+      }
     }
-    <p-button icon="pi pi-sun"
-              (click)="toggleDarkMode()"
-              class="btn btn-outline-secondary"
-              severity="secondary"
-              size="small"
-              rounded="true"
-              *ngIf="!isDarkMode()"/>
-    <p-button icon="pi pi-moon"
-              (click)="toggleDarkMode()"
-              class="btn btn-outline-secondary"
-              severity="secondary"
-              size="small"
-              rounded="true"
-              *ngIf="isDarkMode()"/>
+    @if (!isDarkMode()) {
+      <p-button icon="pi pi-sun"
+                (click)="toggleDarkMode()"
+                class="btn btn-outline-secondary"
+                severity="secondary"
+                size="small"
+                rounded="true"/>
+    } @else {
+      <p-button icon="pi pi-moon"
+                (click)="toggleDarkMode()"
+                class="btn btn-outline-secondary"
+                severity="secondary"
+                size="small"
+                rounded="true"/>
+    }
   </div>
 </div>
