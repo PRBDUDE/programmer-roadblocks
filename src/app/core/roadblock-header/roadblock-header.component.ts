@@ -57,7 +57,7 @@ export class RoadblockHeaderComponent implements OnInit {
                 {
                   label: 'Input Filter',
                   subtext: 'Test your input fields',
-                  route: '/input-filter'
+                  route: '/demo/input-filter'
                 }
               ]
             },
@@ -67,7 +67,7 @@ export class RoadblockHeaderComponent implements OnInit {
                 {
                   label: 'Scrollable Page',
                   subtext: 'Test scrollable page',
-                  route: '/scrollable-page'
+                  route: '/demo/scrollable-page'
                 }
               ]
             }
@@ -79,17 +79,17 @@ export class RoadblockHeaderComponent implements OnInit {
                 {
                   label: 'Color Palette',
                   subtext: 'Color palettes',
-                  route: '/color-palette'
+                  route: '/demo/color-palette'
                 },
                 {
                   label: 'Button Styles',
                   subtext: 'Primary, Secondary and Tertiary buttons',
-                  route: '/button-demo'
+                  route: '/demo/button-demo'
                 },
                 {
                   label: 'Message Styles',
                   subtext: 'Success, Info, Warning and Error messages',
-                  route: '/message-demo'
+                  route: '/demo/message-demo'
                 }
               ]
             }

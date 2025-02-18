@@ -1,0 +1,9 @@
+:root {
+  --page-not-found-background-color: var(--p-surface-200);
+  --page-not-found-text-color: var(--p-red-500);
+}
+
+:root[class*="dark-theme"] {
+  --page-not-found-background-color: var(--p-surface-700);
+  --page-not-found-text-color: var(--p-red-400);
+}

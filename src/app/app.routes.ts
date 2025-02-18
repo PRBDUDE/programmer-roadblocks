@@ -1,36 +1,14 @@
 import {Routes} from '@angular/router';
 
 export const routes: Routes = [
-  {path: '', redirectTo: '/regex-tester', pathMatch: 'full'},
   {
-    path: 'input-filter',
-    loadComponent: () => import('./features/demos/input/input-filter/input-filter.component')
-      .then(m => m.InputFilterComponent),
-    title: 'Input Filter'
+    path: '',
+    redirectTo: '/color-palette',
+    pathMatch: 'full'
   },
   {
-    path: 'scrollable-page',
-    loadComponent: () => import('./features/demos/scrolling/scrollable-page/scrollable-page.component')
-    .then(m => m.ScrollablePageComponent),
-    title: 'Scrollable Page'
-  },
-  {
-    path: 'button-demo',
-    loadComponent: () => import('./features/demos/styling/button-demo/button-demo.component')
-      .then(m => m.ButtonDemoComponent),
-    title: 'Button Demo'
-  },
-  {
-    path: 'message-demo',
-    loadComponent: () => import('./features/demos/styling/message-demo/message-demo.component')
-      .then(m => m.MessageDemoComponent),
-    title: 'Message Demo'
-  },
-  {
-    path: 'color-palette',
-    loadComponent: () => import('./features/demos/styling/color-palette/color-palette.component')
-      .then(m => m.ColorPaletteComponent),
-    title: 'Color Palette'
+    path: 'demo',
+    loadChildren: () => import('./features/demos/demo-routes').then(m => m.demo_routes),
   },
   {
     path: 'reactive-forms/entry-form',
@@ -38,5 +16,14 @@ export const routes: Routes = [
       .then(m => m.ReactiveEntryFormComponent),
     title: 'Reactive Entry Form'
   },
-  {path: '**', redirectTo: '/color-palette', pathMatch: 'full'}
+  {
+    path: 'page-not-found',
+    loadComponent: () => import('./core/error-handlers/page-not-found/page-not-found.component')
+      .then(m => m.PageNotFoundComponent),
+  },
+  {
+    path: '**',
+    redirectTo: '/page-not-found',
+    pathMatch: 'full'
+  }
 ];
