@@ -1,7 +1,11 @@
 import {Routes} from '@angular/router';
 
 export const routes: Routes = [
-  {path: '', redirectTo: '/regex-tester', pathMatch: 'full'},
+  {
+    path: '',
+    redirectTo: '/color-palette',
+    pathMatch: 'full'
+  },
   {
     path: 'input-filter',
     loadComponent: () => import('./features/demos/input/input-filter/input-filter.component')
@@ -11,7 +15,7 @@ export const routes: Routes = [
   {
     path: 'scrollable-page',
     loadComponent: () => import('./features/demos/scrolling/scrollable-page/scrollable-page.component')
-    .then(m => m.ScrollablePageComponent),
+      .then(m => m.ScrollablePageComponent),
     title: 'Scrollable Page'
   },
   {
@@ -38,5 +42,14 @@ export const routes: Routes = [
       .then(m => m.ReactiveEntryFormComponent),
     title: 'Reactive Entry Form'
   },
-  {path: '**', redirectTo: '/color-palette', pathMatch: 'full'}
+  {
+    path: 'page-not-found',
+    loadComponent: () => import('./core/error-handlers/page-not-found/page-not-found.component')
+      .then(m => m.PageNotFoundComponent),
+  },
+  {
+    path: '**',
+    redirectTo: '/page-not-found',
+    pathMatch: 'full'
+  }
 ];

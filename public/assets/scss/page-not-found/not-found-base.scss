@@ -1,0 +1,15 @@
+@forward "page-not-found/color";
+
+:root {
+  --page-not-found-width: 50%;
+  --page-not-found-min-width: 400px;
+  --page-not-found-margin: 40px auto;
+  --page-not-found-padding: 30px 0;
+  --page-not-found-border-radius: 10px;
+  --page-not-found-font-size: 1.2rem;
+  --page-not-found-shadow: var(--p-orange-300) 0 0 10px, var(--p-red-400) 0 0 10px;
+}
+
+:root[class*="dark-theme"] {
+  --page-not-found-shadow: var(--p-orange-400) 0 0 10px, var(--p-red-500) 0 0 10px;
+}
