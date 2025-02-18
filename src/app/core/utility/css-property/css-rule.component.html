@@ -1,15 +1,19 @@
-<ng-container *ngFor="let selector of selectors; let i = index">
+@for (selector of selectors; track selector; let i = $index) {
   <div class="css-rule-selector">
     {{ selector }}
-    <span *ngIf="i < selectors.length - 1" class="css-rule-comma">,</span>
-    <span *ngIf="i === selectors.length - 1" class="css-rule-open">&nbsp;&#123;</span>
+    @if (i < selectors.length - 1) {
+      <span class="css-rule-comma">,</span>
+    }
+    @if (i === selectors.length - 1) {
+      <span class="css-rule-open">&nbsp;&#123;</span>
+    }
   </div>
-</ng-container>
-<ng-container *ngFor="let property of properties">
+}
+@for (property of properties; track property) {
   <div>&nbsp;&nbsp;
     <app-css-property-name [property]="property.property"/>
     <app-css-property-value [value]="property.value"/>
     <span class="css-rule-semicolon">;</span>
   </div>
-</ng-container>
+}
 <div class="css-rule-close">&#125;</div>

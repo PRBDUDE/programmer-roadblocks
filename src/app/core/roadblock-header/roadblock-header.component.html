@@ -12,54 +12,54 @@
     <p-megaMenu [model]="menuItems" orientation="horizontal"
                 styleClass="mega-menu">
       <ng-template pTemplate="item" let-item>
-        <ng-container *ngIf="item.root; else submenuTemplate">
+        @if (item.root) {
           <div>{{ item.label }}</div>
-        </ng-container>
-        <ng-template #submenuTemplate>
-          <ng-container *ngIf="item.route; else linkTemplate">
+        } @else {
+          @if (item.route) {
             <a [routerLink]="item.route" class="gap-2">{{ item.label }}</a>
-          </ng-container>
-          <ng-template #linkTemplate>
+          } @else {
             <a href="{{ item.url }}" target="{{ item.target }}" class="gap-2">{{ item.label }}</a>
-          </ng-template>
-        </ng-template>
+          }
+        }
       </ng-template>
     </p-megaMenu>
   </div>
   <div class="header-options">
-    <ng-container *ngIf="!isProduction()">
-      <p-button icon="fa fa-bug"
-                (click)="toggleDebugMode()"
+    @if (!isProduction()) {
+      @if (!isDebugMode()) {
+        <p-button icon="fa fa-bug"
+                  (click)="toggleDebugMode()"
+                  class="btn btn-outline-secondary"
+                  severity="secondary"
+                  size="small"
+                  rounded="true"
+                  pTooltip="Debug Mode"
+                  tooltipPosition="bottom"/>
+      } @else {
+        <p-button icon="fa fa-check-circle-o"
+                  (click)="toggleDebugMode()"
+                  class="btn btn-outline-secondary"
+                  severity="secondary"
+                  size="small"
+                  rounded="true"
+                  pTooltip="Normal Mode"
+                  tooltipPosition="bottom"/>
+      }
+    }
+    @if (!isDarkMode()) {
+      <p-button icon="pi pi-sun"
+                (click)="toggleDarkMode()"
                 class="btn btn-outline-secondary"
                 severity="secondary"
                 size="small"
-                rounded="true"
-                pTooltip="Debug Mode"
-                tooltipPosition="bottom"
-                *ngIf="!isDebugMode()"/>
-      <p-button icon="fa fa-check-circle-o"
-                (click)="toggleDebugMode()"
+                rounded="true"/>
+    } @else {
+      <p-button icon="pi pi-moon"
+                (click)="toggleDarkMode()"
                 class="btn btn-outline-secondary"
                 severity="secondary"
                 size="small"
-                rounded="true"
-                pTooltip="Normal Mode"
-                tooltipPosition="bottom"
-                *ngIf="isDebugMode()"/>
-    </ng-container>
-    <p-button icon="pi pi-sun"
-              (click)="toggleDarkMode()"
-              class="btn btn-outline-secondary"
-              severity="secondary"
-              size="small"
-              rounded="true"
-              *ngIf="!isDarkMode()"/>
-    <p-button icon="pi pi-moon"
-              (click)="toggleDarkMode()"
-              class="btn btn-outline-secondary"
-              severity="secondary"
-              size="small"
-              rounded="true"
-              *ngIf="isDarkMode()"/>
+                rounded="true"/>
+    }
   </div>
 </div>

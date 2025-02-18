@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {NgIf} from "@angular/common";
 import {MegaMenuModule} from "primeng/megamenu";
 import {MegaMenuItem} from "primeng/api";
 import {RouterLink} from "@angular/router";
@@ -12,7 +11,6 @@ import {isProduction} from "@utility/is-production";
   selector: 'app-roadblock-header',
   imports: [
     MegaMenuModule,
-    NgIf,
     RouterLink,
     Button,
     Tooltip

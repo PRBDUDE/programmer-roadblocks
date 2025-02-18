@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {JsonPipe, NgClass, NgIf} from "@angular/common";
+import {JsonPipe, NgClass} from "@angular/common";
 import {isProduction} from "@utility/is-production";
 
 let uniqueId = 0;
@@ -8,7 +8,6 @@ let uniqueId = 0;
   selector: 'app-debug-output-card',
   imports: [
     JsonPipe,
-    NgIf,
     NgClass
   ],
   templateUrl: './debug-output-card.component.html',

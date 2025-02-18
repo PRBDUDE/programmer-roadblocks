@@ -1,13 +1,9 @@
 import {Component, Input} from '@angular/core';
 import {BaseFilterType} from "@filters/base-filter-type";
-import {NgForOf, NgIf} from "@angular/common";
 
 @Component({
     selector: 'app-input-error',
-    imports: [
-        NgForOf,
-        NgIf
-    ],
+  imports: [],
     templateUrl: './input-error.component.html',
     styleUrl: './input-error.component.scss'
 })

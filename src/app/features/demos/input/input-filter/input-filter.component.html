@@ -53,7 +53,7 @@
   <app-input-error [errorComponent]="email"></app-input-error>
 </div>
 
-<ng-container *ngIf="isDebugMode()">
+@if (isDebugMode()) {
   <div class="filter-debug-output-container">
     <app-debug-output-card
       [title]="'Debug Output'"
@@ -72,4 +72,4 @@
       [variableName]="'email'"
       [json]="email"/>
   </div>
-</ng-container>
+}
