@@ -3,7 +3,7 @@ import {Routes} from '@angular/router';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: '/color-palette',
+    redirectTo: '/demo/color-palette',
     pathMatch: 'full'
   },
   {
