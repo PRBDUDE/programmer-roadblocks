@@ -5232,7 +5232,10 @@ export const CyanAuraPreset = definePreset(Aura, {
     },
     tooltip: {
       root: {
-        maxWidth: "12.5rem",
+        extend: {
+          // maxWidth: "12.5rem",
+          maxWidth: "25rem",
+        },
         gutter: "0.25rem",
         shadow: "{overlay.popover.shadow}",
         padding: "0.5rem 0.75rem",

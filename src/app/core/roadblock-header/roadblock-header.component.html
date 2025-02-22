@@ -33,17 +33,25 @@
                   severity="secondary"
                   size="small"
                   rounded="true"
-                  pTooltip="Debug Mode"
-                  tooltipPosition="bottom"/>
+                  [pTooltip]="toDebugMode"
+                  showDelay="1000"
+                  tooltipPosition="left"/>
+        <ng-template #toDebugMode>
+          <i>Click icon</i> to switch to Debug Mode
+        </ng-template>
       } @else {
-        <p-button icon="fa fa-check-circle-o"
+        <p-button icon="fa fa-bug fa-rotate-270"
                   (click)="toggleDebugMode()"
-                  class="btn btn-outline-secondary"
-                  severity="secondary"
+                  class="btn btn-outline-primary"
+                  severity="primary"
                   size="small"
                   rounded="true"
-                  pTooltip="Normal Mode"
-                  tooltipPosition="bottom"/>
+                  [pTooltip]="toNormalMode"
+                  showDelay="1000"
+                  tooltipPosition="left"/>
+        <ng-template #toNormalMode>
+          <i>Click icon</i> to switch to Normal Mode
+        </ng-template>
       }
     }
     @if (!isDarkMode()) {
@@ -52,14 +60,22 @@
                 class="btn btn-outline-secondary"
                 severity="secondary"
                 size="small"
-                rounded="true"/>
+                rounded="true"
+                pTooltip="<i>Click icon</i> to switch to Dark Mode"
+                showDelay="1000"
+                escape="false"
+                tooltipPosition="left"/>
     } @else {
       <p-button icon="pi pi-moon"
                 (click)="toggleDarkMode()"
                 class="btn btn-outline-secondary"
                 severity="secondary"
                 size="small"
-                rounded="true"/>
+                rounded="true"
+                pTooltip="<i>Click icon</i> to switch to Light Mode"
+                showDelay="1000"
+                escape="false"
+                tooltipPosition="left"/>
     }
   </div>
 </div>
