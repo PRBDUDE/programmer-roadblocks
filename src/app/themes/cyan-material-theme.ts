@@ -371,7 +371,7 @@ export const CyanMaterialPreset = definePreset(Material, {
         padding: "0.5rem 0",
         extend: {
           // gap: "0"
-          gap: "10px"
+          gap: "8px"
         }
       },
       item: {
@@ -647,7 +647,10 @@ export const CyanMaterialPreset = definePreset(Material, {
         },
         navigation: {
           item: {
-            focusBackground: "{surface.800}",
+            extend: {
+              // focusBackground: "{surface.800}",
+              focusBackground: "{surface.600}",
+            },
             activeBackground: "{surface.800}",
             color: "{text.color}",
             focusColor: "{text.hover.color}",
@@ -659,8 +662,12 @@ export const CyanMaterialPreset = definePreset(Material, {
             }
           },
           submenuLabel: {
-            background: "transparent",
-            color: "{text.color}"
+            extend: {
+              // background: "transparent",
+              // color: "{text.color}"
+              background: "{surface.500}",
+              color: "{text.color}"
+            }
           },
           submenuIcon: {
             color: "{surface.500}",

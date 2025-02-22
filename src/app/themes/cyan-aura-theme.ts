@@ -371,8 +371,8 @@ export const CyanAuraPreset = definePreset(Aura, {
       list: {
         padding: "0.25rem 0.25rem",
         extend: {
-          gap: "10px"
           // gap: "2px"
+          gap: "10px"
         }
       },
       item: {
