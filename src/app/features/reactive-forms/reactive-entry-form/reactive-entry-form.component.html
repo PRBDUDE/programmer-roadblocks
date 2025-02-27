@@ -3,53 +3,142 @@
   <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
     <div [formGroupName]="'name'">
       <div class="form-group">
-        <label for="firstname">First Name</label>
-        <input id="firstname" type="text" class="form-control" [formControlName]="'first'"/>
+        <label for="firstname" class="form-group-label"
+               [ngClass]="{'required': firstNameControl.hasValidator(Validators.required)}">First Name</label>
+        <input id="firstname" type="text" class="form-input" [formControlName]="'first'"
+               placeholder="enter first name"/>
+        @if (firstNameControl.touched &&
+        (firstNameControl.dirty || firstNameControl.invalid)) {
+          <div class="validation-feedback">
+            Please enter a valid first name.
+          </div>
+        }
       </div>
 
       <div class="form-group">
-        <label for="lastname">Last Name</label>
-        <input id="lastname" type="text" class="form-control" [formControlName]="'last'"/>
+        <label for="lastname" class="form-group-label"
+               [ngClass]="{'required': lastNameControl.hasValidator(Validators.required)}">Last Name</label>
+        <input id="lastname" type="text" class="form-input" [formControlName]="'last'" placeholder="enter last name"/>
+        @if (lastNameControl.touched &&
+        (lastNameControl.dirty || lastNameControl.invalid)) {
+          <div class="validation-feedback">
+            Please enter a valid last name.
+          </div>
+        }
+      </div>
+    </div>
+
+    <div [formGroupName]="'personal'">
+      <div class="form-group">
+        <label for="dob" class="form-group-label"
+               [ngClass]="{'required': birthdateControl.hasValidator(Validators.required)}">Date of Birth</label>
+        <input id="dob" type="date" class="form-input" [formControlName]="'birthdate'"/>
       </div>
     </div>
 
     <div [formGroupName]="'address'">
       <div class="form-group">
-        <label for="street">Street</label>
-        <input id="street" type="text" class="form-control" [formControlName]="'street'"/>
+        <label for="street" class="form-group-label"
+               [ngClass]="{'required': streetControl.hasValidator(Validators.required)}">Street</label>
+        <input id="street" type="text" class="form-input" [formControlName]="'street'"
+               placeholder="enter street address"/>
+        @if (streetControl.touched &&
+        (streetControl.dirty || streetControl.invalid)) {
+          <div class="validation-feedback">
+            Please enter a valid street.
+          </div>
+        }
       </div>
 
       <div class="form-group">
-        <label for="city">City</label>
-        <input id="city" type="text" class="form-control" [formControlName]="'city'"/>
+        <label for="city" class="form-group-label"
+               [ngClass]="{'required': cityControl.hasValidator(Validators.required)}">City</label>
+        <input id="city" type="text" class="form-input" [formControlName]="'city'" placeholder="enter city name"/>
+        @if (cityControl.touched &&
+        (cityControl.dirty || cityControl.invalid)) {
+          <div class="validation-feedback">
+            Please enter a valid city.
+          </div>
+        }
       </div>
 
       <div class="form-group">
-        <label for="state">State</label>
-        <input id="state" type="text" class="form-control" [formControlName]="'state'"/>
+        <label for="state" class="form-group-label"
+               [ngClass]="{'required': stateControl.hasValidator(Validators.required)}">State</label>
+        <input id="state" type="text" class="form-input uppercase" [formControlName]="'state'"
+               placeholder="enter state code"/>
+        @if (stateControl.touched &&
+        (stateControl.dirty || stateControl.invalid)) {
+          <div class="validation-feedback">
+            Please enter a valid state.
+          </div>
+        }
       </div>
 
       <div class="form-group">
-        <label for="zip">Zip</label>
-        <input id="zip" type="text" class="form-control" [formControlName]="'zip'"/>
+        <label for="zip" class="form-group-label"
+               [ngClass]="{'required': zipControl.hasValidator(Validators.required)}">Zip</label>
+        <input id="zip" type="text" class="form-input" [formControlName]="'zip'" placeholder="enter ZIP code"/>
+        @if (zipControl.touched &&
+        (zipControl.dirty || zipControl.invalid)) {
+          <div class="validation-feedback">
+            Please enter a valid zip code.
+            @if (zipControl.errors?.['required']) {
+              <br>Zip code is required.
+            }
+            @if (zipControl.errors?.['pattern']) {
+              <br>Zip code must be in the format 12345.
+            }
+          </div>
+        }
       </div>
     </div>
 
     <div [formGroupName]="'contact'">
       <div class="form-group">
-        <label for="email">Email</label>
-        <input id="email" type="email" class="form-control" [formControlName]="'email'"/>
+        <label for="email" class="form-group-label"
+               [ngClass]="{'required': emailControl.hasValidator(Validators.required)}">Email</label>
+        <input id="email" type="email" class="form-input" [formControlName]="'email'"
+               placeholder="some.name@example.com"/>
+        @if (emailControl.touched &&
+        (emailControl.dirty || emailControl.invalid)) {
+          <div class="validation-feedback">
+            Please enter a valid email address.
+            @if (emailControl.errors?.['required']) {
+              <br>Email is required.
+            }
+            @if (emailControl.errors?.['email']) {
+              <br>Email must be a valid email address.
+            }
+          </div>
+        }
       </div>
 
       <div class="form-group">
-        <label for="phone">Phone</label>
-        <input id="phone" type="tel" class="form-control" [formControlName]="'phone'"/>
+        <label for="phone" class="form-group-label"
+               [ngClass]="{'required': phoneControl.hasValidator(Validators.required)}">Phone</label>
+        <input id="phone" type="tel" class="form-input form-group-input" [formControlName]="'phone'"
+               placeholder="(999) 999-9999"/>
+        @if (phoneControl.touched &&
+        (phoneControl.dirty || phoneControl.invalid)) {
+          <div class="validation-feedback">
+            Please enter a valid phone number.
+            @if (phoneControl.errors?.['required']) {
+              <br>Phone number is required.
+            }
+            @if (phoneControl.errors?.['pattern']) {
+              <br>Phone number must be in one of these formats
+              <br>999-999-9999<br>(999) 999-9999<br>999 999-9999<br>9999999999.
+              <br>phoneControl?.errors?.['pattern'].value
+            }
+          </div>
+        }
       </div>
     </div>
 
     <div class="button-container">
-      <button type="submit" class="btn btn-primary" [disabled]="isValid()">Submit</button>
-      <button type="reset" class="btn btn-secondary">Reset</button>
+      <p-button type="submit" class="btn btn-primary" [size]="'small'" [disabled]="isValid()">Submit</p-button>
+      <p-button type="reset" class="btn btn-secondary" [size]="'small'">Reset</p-button>
     </div>
   </form>
 </div>
@@ -58,7 +147,12 @@
   <div class="reactive-debug-output-container">
     <app-debug-output-card
       [title]="'Debug Output'"
+      [flat]="true"
       [variableName]="'entryForm.value'"
       [json]="entryForm.value"/>
+    <app-debug-output-card
+      [flat]="true"
+      [variableName]="'phoneControl'"
+      [json]="phoneControl.value"/>
   </div>
 }

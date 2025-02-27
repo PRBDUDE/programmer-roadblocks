@@ -7,8 +7,43 @@
 
     .form-group {
       display: grid;
-      grid-template-columns: 90px 200px;
+      grid-template-areas:
+        "label input"
+        "feedback feedback";
+      grid-template-columns: 98px 200px;
       margin-bottom: 1rem;
+
+      .form-group-label {
+        grid-area: label;
+
+        &.required::after {
+          content: "*";
+          color: var(--p-red-500);
+        }
+      }
+
+      .form-group-input {
+        grid-area: input;
+      }
+
+      .form-input {
+        &.uppercase {
+          text-transform: uppercase;
+        }
+      }
+
+      .validation-feedback {
+        grid-area: feedback;
+        background-color: var(--p-gray-300);
+        color: red;
+        font-size: 0.7rem;
+        border: 1px solid red;
+        border-radius: 5px;
+        margin: 0.2em auto;
+        padding: 0.2em;
+        text-align: center;
+        width: fit-content;
+      }
     }
 
     label {
@@ -27,13 +62,14 @@
 
 input.ng-touched {
   &.ng-invalid {
-    border: 5px solid red;
+    border: 1px solid red;
   }
 
   &.ng-valid {
-    border: 5px solid green;
+    border: 1px solid green;
   }
 }
+
 //.ng-touched {
 //  border: 1px solid blue;
 //}
