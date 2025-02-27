@@ -1,0 +1,16 @@
+<div class="form-group">
+  <label
+    for="{{_rfInputId}}"
+    class="form-group-label">{{ label }}</label>
+<!--  <label-->
+<!--    for="{{_rfInputId}}"-->
+<!--    class="form-group-label"-->
+<!--    [ngClass]="{'required': formControl.get(name).hasValidator(Validators.required)}">{{ label }}</label>-->
+  <input
+    id="{{_rfInputId}}"
+    class="form-input"
+    [type]="type"
+    [formControlName]="name"
+    [disabled]="disabled"
+    [placeholder]="placeholder"/>
+</div>
