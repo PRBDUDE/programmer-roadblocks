@@ -16,10 +16,6 @@
   input {
     width: 20rem;
     font-size: inherit;
-
-    &.ng-invalid {
-      background-color: var(--p-surface-0);
-    }
   }
 }
 
