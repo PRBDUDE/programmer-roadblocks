@@ -8,5 +8,12 @@ import {BaseFilterType} from "@filters/base-filter-type";
     styleUrl: './input-error.component.scss'
 })
 export class InputErrorComponent {
-  @Input() errorComponent?: BaseFilterType;
+  /**
+   * Title of the box.
+   */
+  @Input() title!: string;
+  /**
+   * Filter type to display error message for.
+   */
+  @Input() filterType?: BaseFilterType;
 }

@@ -1,8 +1,22 @@
 import {BaseFilterType} from "./base-filter-type";
 
+/**
+ * A filter type for VINs.
+ * @class VinFilter
+ * @extends BaseFilterType
+ */
 export class VinFilter extends BaseFilterType {
+  /**
+   * Creates an instance of VIN.
+   * @group Props
+   * @type {string}
+   */
   vin: string = "";
 
+  /**
+   * Gets the error messages for the VIN.
+   * @returns {string[]} The error messages as a string array.
+   */
   getErrorMessages(): string[] {
     const errors: string[] = [];
 

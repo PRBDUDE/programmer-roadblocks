@@ -1,8 +1,25 @@
 import {BaseFilterType} from "./base-filter-type";
 
+/**
+ * A filter type for phone numbers.
+ * @class PhoneNumberFilter
+ * @extends {BaseFilterType}
+ *
+ * @property {string} phoneNumber - The phone number to be filtered.
+ *
+ * @method getErrorMessages - Returns an array of error messages for the phone number.
+ * @method isInvalid - Returns true if the phone number is invalid, false otherwise.
+ */
 export class PhoneNumberFilter extends BaseFilterType {
+  /**
+   * Creates an instance of PhoneNumber.
+   * @property {string} phoneNumber - The phone number to be filtered.
+   */
   phoneNumber: string = '';
 
+  /**
+   * @returns {string[]} An array of error messages for the phone number.
+   */
   getErrorMessages(): string[] {
     const errors: string[] = [];
 
@@ -17,6 +34,9 @@ export class PhoneNumberFilter extends BaseFilterType {
     return errors;
   }
 
+  /**
+   * @returns {boolean} Returns true if the phone number is invalid, false otherwise.
+   */
   isInvalid(): boolean {
     if (!this.phoneNumber || !this._isActive) {
       return false;

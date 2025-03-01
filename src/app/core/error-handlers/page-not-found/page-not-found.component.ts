@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 
+/**
+ * Page Not Found Component
+ */
 @Component({
   selector: 'app-page-not-found',
   imports: [],

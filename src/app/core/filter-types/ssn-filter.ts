@@ -1,5 +1,10 @@
 import {BaseFilterType} from "./base-filter-type";
 
+/**
+ * A filter type for SSN input.
+ * The SSN filter type is responsible for validating and formatting SSN input.
+ * @extends BaseFilterType
+ */
 export class SsnFilter extends BaseFilterType {
   ssn: string = "";
 

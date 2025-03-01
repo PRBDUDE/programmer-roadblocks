@@ -1,8 +1,27 @@
 import {BaseFilterType} from "./base-filter-type";
 
+/**
+ * Email filter type
+ * @class EmailFilter
+ * @extends {BaseFilterType}
+ *
+ * @property {string} email - email address
+ *
+ * @method getErrorMessages - returns an array of error messages
+ * @method isInvalid - returns true if email is invalid, false otherwise
+ */
 export class EmailFilter extends BaseFilterType {
+  /**
+   * Creates an instance of email.
+   * @group props
+   * @type {string}
+   */
   email: string = '';
 
+  /**
+   * Gets an array of error messages for the email
+   * @returns {string[]} an array of error messages
+   */
   getErrorMessages(): string[] {
     const errors: string[] = [];
     if (!this.email) {
@@ -30,6 +49,9 @@ export class EmailFilter extends BaseFilterType {
     return errors;
   }
 
+  /**
+   * @returns {boolean} true if email is invalid, false otherwise
+   */
   isInvalid(): boolean {
     if (!this.email || !this._isActive) {
       return false;
