@@ -1,13 +1,19 @@
-@if (errorComponent?.isInvalid()) {
+@if (filterType?.isInvalid()) {
   <div class="invalid-message">
-    Errors:
-    <ol>
-      @for (message of errorComponent?.getErrorMessages(); track message) {
-        <li>
-          {{ message }}
-        </li>
-      }
-    </ol>
+    @if (title) {
+      <div class="invalid-title">
+        {{ title }}
+      </div>
+    }
+    <div class="invalid-description">
+      <ul>
+        @for (message of filterType?.getErrorMessages(); track message) {
+          <li>
+            {{ message }}
+          </li>
+        }
+      </ul>
+    </div>
   </div>
 }
 

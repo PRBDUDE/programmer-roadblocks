@@ -1,19 +1,29 @@
 .invalid-message {
+  display: block;
   color: var(--p-red-700);
   position: fixed;
   width: max-content;
-  padding: 5px;
   left: 114px;
   z-index: 10;
-  font-size: 1.1em;
-  border-radius: 10px;
+  font-size: 0.8em;
+  border-radius: 5px;
   line-height: 1;
   border: 3px solid var(--p-red-100);
   background-color: var(--p-surface-0);
 
-  ol {
-    li {
-      font-size: 0.8em;
+  .invalid-title {
+    font-weight: bold;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+
+  .invalid-description {
+    ul {
+      li {
+        list-style-type: none;
+        font-size: 0.8em;
+        padding: 5px;
+      }
     }
   }
 }
