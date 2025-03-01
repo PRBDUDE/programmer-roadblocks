@@ -8,7 +8,8 @@
         <input id="firstname" type="text" class="form-input" [formControlName]="'first'"
                placeholder="enter first name"/>
         @if (firstNameControl.touched &&
-        (firstNameControl.dirty || firstNameControl.invalid)) {
+        firstNameControl.dirty &&
+        firstNameControl.invalid) {
           <div class="validation-feedback">
             Please enter a valid first name.
           </div>
@@ -20,7 +21,8 @@
                [ngClass]="{'required': lastNameControl.hasValidator(Validators.required)}">Last Name</label>
         <input id="lastname" type="text" class="form-input" [formControlName]="'last'" placeholder="enter last name"/>
         @if (lastNameControl.touched &&
-        (lastNameControl.dirty || lastNameControl.invalid)) {
+        lastNameControl.dirty &&
+        lastNameControl.invalid) {
           <div class="validation-feedback">
             Please enter a valid last name.
           </div>
@@ -43,7 +45,8 @@
         <input id="street" type="text" class="form-input" [formControlName]="'street'"
                placeholder="enter street address"/>
         @if (streetControl.touched &&
-        (streetControl.dirty || streetControl.invalid)) {
+        streetControl.dirty &&
+        streetControl.invalid) {
           <div class="validation-feedback">
             Please enter a valid street.
           </div>
@@ -55,7 +58,8 @@
                [ngClass]="{'required': cityControl.hasValidator(Validators.required)}">City</label>
         <input id="city" type="text" class="form-input" [formControlName]="'city'" placeholder="enter city name"/>
         @if (cityControl.touched &&
-        (cityControl.dirty || cityControl.invalid)) {
+        cityControl.dirty &&
+        cityControl.invalid) {
           <div class="validation-feedback">
             Please enter a valid city.
           </div>
@@ -68,7 +72,8 @@
         <input id="state" type="text" class="form-input uppercase" [formControlName]="'state'"
                placeholder="enter state code"/>
         @if (stateControl.touched &&
-        (stateControl.dirty || stateControl.invalid)) {
+        stateControl.dirty &&
+        stateControl.invalid) {
           <div class="validation-feedback">
             Please enter a valid state.
           </div>
@@ -80,7 +85,8 @@
                [ngClass]="{'required': zipControl.hasValidator(Validators.required)}">Zip</label>
         <input id="zip" type="text" class="form-input" [formControlName]="'zip'" placeholder="enter ZIP code"/>
         @if (zipControl.touched &&
-        (zipControl.dirty || zipControl.invalid)) {
+        zipControl.dirty &&
+        zipControl.invalid) {
           <div class="validation-feedback">
             Please enter a valid zip code.
             @if (zipControl.errors?.['required']) {
@@ -101,7 +107,8 @@
         <input id="email" type="email" class="form-input" [formControlName]="'email'"
                placeholder="some.name@example.com"/>
         @if (emailControl.touched &&
-        (emailControl.dirty || emailControl.invalid)) {
+        emailControl.dirty &&
+        emailControl.invalid) {
           <div class="validation-feedback">
             Please enter a valid email address.
             @if (emailControl.errors?.['required']) {
@@ -120,7 +127,8 @@
         <input id="phone" type="tel" class="form-input form-group-input" [formControlName]="'phone'"
                placeholder="(999) 999-9999"/>
         @if (phoneControl.touched &&
-        (phoneControl.dirty || phoneControl.invalid)) {
+        phoneControl.dirty &&
+        phoneControl.invalid) {
           <div class="validation-feedback">
             Please enter a valid phone number.
             @if (phoneControl.errors?.['required']) {
