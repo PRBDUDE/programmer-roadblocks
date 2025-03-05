@@ -1,14 +1,40 @@
-.entry-container {
+.prb-entry-container {
   width: fit-content;
   margin-right: 4rem;
 
   form {
     margin-left: 1em;
 
-    .form-group {
+    .prb-form-group {
       display: grid;
-      grid-template-columns: 90px 200px;
+      grid-template-areas:
+        "label input"
+        "filler feedback";
+      grid-template-columns: 98px 250px;
       margin-bottom: 1rem;
+
+      .prb-form-group-label {
+        grid-area: label;
+
+        &.required::after {
+          content: "*";
+          color: var(--p-red-500);
+        }
+      }
+
+      .prb-form-group-input {
+        grid-area: input;
+      }
+
+      .prb-form-input {
+        &.uppercase {
+          text-transform: uppercase;
+        }
+      }
+
+      .prb-validation-feedback {
+        grid-area: feedback;
+      }
     }
 
     label {
@@ -18,7 +44,7 @@
     }
   }
 
-  .button-container {
+  .prb-button-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -27,27 +53,15 @@
 
 input.ng-touched {
   &.ng-invalid {
-    border: 5px solid red;
+    border: 1px solid var(--p-red-500);
   }
 
   &.ng-valid {
-    border: 5px solid green;
+    border: 1px solid var(--p-green-500);
   }
 }
-//.ng-touched {
-//  border: 1px solid blue;
-//}
-//.ng-untouched {
-//  border: 1px solid gray;
-//}
-//.ng-dirty {
-//  border: 1px solid orange;
-//}
-//.ng-pristine {
-//  border: 1px solid purple;
-//}
 
-.reactive-debug-output-container {
+.prb-reactive-debug-output-container {
   position: absolute;
   top: 100px;
   right: 100px;
