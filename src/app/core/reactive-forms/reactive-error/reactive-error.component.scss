@@ -1,0 +1,11 @@
+.reactive-error {
+  background-color: var(--p-gray-300);
+  color: var(--p-red-500);
+  font-size: 0.7rem;
+  border: 1px solid var(--p-red-500);
+  border-radius: 5px;
+  margin: 0.2em 0;
+  padding: 0.2em;
+  text-align: left;
+  width: fit-content;
+}

@@ -1,11 +1,11 @@
-.entry-container {
+.prb-entry-container {
   width: fit-content;
   margin-right: 4rem;
 
   form {
     margin-left: 1em;
 
-    .form-group {
+    .prb-form-group {
       display: grid;
       grid-template-areas:
         "label input"
@@ -13,7 +13,7 @@
       grid-template-columns: 98px 250px;
       margin-bottom: 1rem;
 
-      .form-group-label {
+      .prb-form-group-label {
         grid-area: label;
 
         &.required::after {
@@ -22,27 +22,18 @@
         }
       }
 
-      .form-group-input {
+      .prb-form-group-input {
         grid-area: input;
       }
 
-      .form-input {
+      .prb-form-input {
         &.uppercase {
           text-transform: uppercase;
         }
       }
 
-      .validation-feedback {
+      .prb-validation-feedback {
         grid-area: feedback;
-        background-color: var(--p-gray-300);
-        color: var(--p-red-500);
-        font-size: 0.7rem;
-        border: 1px solid var(--p-red-500);
-        border-radius: 5px;
-        margin: 0.2em 0;
-        padding: 0.2em;
-        text-align: left;
-        width: fit-content;
       }
     }
 
@@ -53,7 +44,7 @@
     }
   }
 
-  .button-container {
+  .prb-button-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -70,7 +61,7 @@ input.ng-touched {
   }
 }
 
-.reactive-debug-output-container {
+.prb-reactive-debug-output-container {
   position: absolute;
   top: 100px;
   right: 100px;

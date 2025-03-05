@@ -1,0 +1,10 @@
+@if (hasErrorMessages()) {
+  <div class="reactive-error">
+    @for(message of getErrorMessages(); track $index) {
+      @if ($index > 0) {
+        <br>
+      }
+      {{ message }}
+    }
+  </div>
+}

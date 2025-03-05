@@ -4,7 +4,7 @@ import {ControlValueAccessor, NG_VALUE_ACCESSOR, ReactiveFormsModule, Validators
 let uniqueId = 0;
 
 @Component({
-  selector: 'app-reactive-input',
+  selector: 'prb-reactive-input',
   imports: [
     ReactiveFormsModule
   ],

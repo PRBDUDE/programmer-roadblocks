@@ -4,6 +4,11 @@ import {DebugOutputCardComponent} from "@utility/debug-output-card.component";
 import {isDebugMode} from "@utility/is-debug-mode";
 import {NgClass} from "@angular/common";
 import {Button} from "primeng/button";
+import {InputMask} from "primeng/inputmask";
+import {InputText} from "primeng/inputtext";
+import {DatePicker} from "primeng/datepicker";
+import {ReactiveErrorComponent} from "../../../core/reactive-forms/reactive-error/reactive-error.component";
+import {ReactivePatterns} from "../../../core/reactive-forms/reactive-patterns";
 
 @Component({
   selector: 'app-reactive-entry-form',
@@ -12,17 +17,17 @@ import {Button} from "primeng/button";
     DebugOutputCardComponent,
     DebugOutputCardComponent,
     NgClass,
-    Button
+    Button,
+    InputMask,
+    InputText,
+    DatePicker,
+    ReactiveErrorComponent
   ],
   templateUrl: './reactive-entry-form.component.html',
   styleUrl: './reactive-entry-form.component.scss'
 })
-export class ReactiveEntryFormComponent implements OnInit {
+export class ReactiveEntryFormComponent extends ReactivePatterns implements OnInit {
   protected readonly isDebugMode = isDebugMode;
-
-  readonly validStateCodesPattern = /AL|AK|AZ|AR|CA|CO|CT|DE|FL|GA|HI|ID|IL|IN|IA|KS|KY|LA|ME|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|OH|OK|OR|PA|RI|SC|SD|TN|TX|UT|VT|VA|WA|WV|WI|WY/i;
-  readonly zipCodePattern = /^\d{5}(-\d{4})?$/;
-  readonly phonePattern = /^\(?(\d{3})\)?[-. ]?(\d{3})[-. ]?(\d{4})$/;
 
   fb = inject(FormBuilder);
   entryForm!: FormGroup;
@@ -53,8 +58,12 @@ export class ReactiveEntryFormComponent implements OnInit {
     console.log(this.entryForm.value);
   }
 
-  isValid() {
+  isFormValid(): boolean {
     return !this.entryForm.valid;
+  }
+
+  isFormTouched(): boolean {
+    return !this.entryForm.touched;
   }
 
   get firstNameControl(): FormControl {

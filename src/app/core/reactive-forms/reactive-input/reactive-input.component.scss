@@ -1,4 +1,4 @@
-.form-group {
+.prb-form-group {
   display: grid;
   grid-template-areas:
         "label input"
@@ -6,7 +6,7 @@
   grid-template-columns: 98px 200px;
   margin-bottom: 1rem;
 
-  .form-group-label {
+  .prb-form-group-label {
     grid-area: label;
 
     &.required::after {
@@ -15,17 +15,17 @@
     }
   }
 
-  .form-group-input {
+  .prb-form-group-input {
     grid-area: input;
   }
 
-  .form-input {
+  .prb-form-input {
     &.uppercase {
       text-transform: uppercase;
     }
   }
 
-  .validation-feedback {
+  .prb-validation-feedback {
     grid-area: feedback;
     background-color: var(--p-gray-300);
     color: red;
