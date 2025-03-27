@@ -5,7 +5,7 @@ import {PrimeNG} from "primeng/config";
 import {RoadblockFooterComponent} from "@rootComponents/roadblock-footer.component";
 
 @Component({
-  selector: 'app-root',
+  selector: 'prb-root',
   imports: [
     RouterOutlet,
     RoadblockHeaderComponent,

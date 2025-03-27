@@ -15,7 +15,7 @@ export class SsnFilter extends BaseFilterType {
     }
 
     if (!/^\d{3}-\d{2}-\d{4}$/.test(this.ssn)) {
-      errors.push(`must be in the format of \'XXX-XX-XXXX\'`);
+      errors.push(`must be in the format of 'XXX-XX-XXXX'`);
     }
 
     return errors;

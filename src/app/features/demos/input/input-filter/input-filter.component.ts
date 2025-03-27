@@ -11,7 +11,7 @@ import {isDebugMode} from "@utility/is-debug-mode";
 import {DebugOutputCardComponent} from "@utility/debug-output-card.component";
 
 @Component({
-    selector: 'app-input-filter',
+    selector: 'prb-input-filter',
   imports: [
     InputTextModule,
     FormsModule,

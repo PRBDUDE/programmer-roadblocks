@@ -28,21 +28,21 @@ export class EmailFilter extends BaseFilterType {
       return errors;
     }
     const atSymb = this.email.indexOf('@');
-    const period = this.email.lastIndexOf('\.');
+    const period = this.email.lastIndexOf('.');
 
     if (atSymb === -1) {
-      errors.push(`must contain \'@\'`);
+      errors.push(`must contain '@'`);
     }
 
     if (atSymb === -1 && period === -1) {
-      errors.push(`must contain \'.\' in domain`);
+      errors.push(`must contain '.' in domain`);
     }
 
     if ((atSymb < period) && ((this.email.length - 1) - period) !== 3) {
       errors.push(`must contain top level domain`);
     }
 
-    if (atSymb !== -1 && /([^A-Za-z\d\.\-_]*)@/.test(this.email)) {
+    if (atSymb !== -1 && /([^A-Za-z\d\\.\-_]*)@/.test(this.email)) {
       errors.push(`email contains invalid characters`);
     }
 
@@ -56,6 +56,6 @@ export class EmailFilter extends BaseFilterType {
     if (!this.email || !this._isActive) {
       return false;
     }
-    return !/^[A-Za-z\d\.\-_]*@[A-Za-z\d\.\-_]*\.[A-Za-z]{3}$/.test(this.email);
+    return !/^[A-Za-z\d\\.\-_]*@[A-Za-z\d\\.\-_]*\.[A-Za-z]{3}$/.test(this.email);
   }
 }

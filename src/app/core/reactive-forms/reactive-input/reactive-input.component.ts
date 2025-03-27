@@ -30,28 +30,28 @@ export class ReactiveInputComponent implements ControlValueAccessor {
    * @group Props
    * The type of the input element.
    */
-  @Input('type') type: string = 'text';
+  @Input() type: string = 'text';
   /**
    * @Input required: boolean = false
    * @group Props
    * Whether the input is required.
    */
-  @Input('placeholder') placeholder: string | undefined;
-  @Input('label') label: string | undefined;
-  @Input('name') name!: string;
+  @Input() placeholder: string | undefined;
+  @Input() label: string | undefined;
+  @Input() name!: string;
   @Input() tabindex: string | undefined;
 
-  model: any = '';
+  model = '';
   focused: boolean = false;
   disabled: boolean = false;
-  onModelChange: (_:any) => void = () => {};
+  onModelChange: () => void = () => {};
   onModelTouched: () => void = () => {};
 
-  writeValue(value: any): void {
+  writeValue(value: string): void {
     this._renderer2.setProperty(this._elementRef.nativeElement, 'value', value);
   }
 
-  registerOnChange(fn: (_:any) => void): void {
+  registerOnChange(fn: () => void): void {
     this.onModelChange = fn;
   }
 

@@ -5,7 +5,7 @@ import {isProduction} from "@utility/is-production";
 let uniqueId = 0;
 
 @Component({
-  selector: 'app-debug-output-card',
+  selector: 'prb-debug-output-card',
   imports: [
     JsonPipe,
     NgClass
@@ -14,14 +14,14 @@ let uniqueId = 0;
   styleUrl: './debug-output-card.component.scss'
 })
 export class DebugOutputCardComponent {
-  @Input('title') title: string = '';
-  @Input('json') jsonValue!: object;
-  @Input('string') stringValue!: string;
-  @Input('number') numberValue!: number;
-  @Input('boolean') booleanValue!: boolean;
-  @Input('regex') regexValue!: RegExp;
-  @Input('variableName') variableName: string = '';
-  @Input('flat') flat: boolean = false;
+  @Input() title: string = '';
+  @Input() jsonValue!: object;
+  @Input() stringValue!: string;
+  @Input() numberValue!: number;
+  @Input() booleanValue!: boolean;
+  @Input() regexValue!: RegExp;
+  @Input() variableName: string = '';
+  @Input() flat: boolean = false;
 
   debugOutputId = `debug_output_${uniqueId++}`;
 

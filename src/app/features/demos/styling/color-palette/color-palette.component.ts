@@ -3,7 +3,7 @@ import {$dt} from "@primeng/themes";
 import {PaletteGeneratorComponent} from "./palette-generator/palette-generator.component";
 
 @Component({
-  selector: 'app-color-palette',
+  selector: 'prb-color-palette',
   imports: [
     PaletteGeneratorComponent
   ],

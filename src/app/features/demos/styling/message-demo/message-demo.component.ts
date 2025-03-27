@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import {Message} from "primeng/message";
 
 @Component({
-    selector: 'app-message-demo',
+    selector: 'prb-message-demo',
     imports: [
         Message
     ],

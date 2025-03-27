@@ -1,11 +1,11 @@
 const propertyHexColorRegex = /(#[0-9a-fA-F]{3,6})/g;
-const propertyNumberUnitRegex = /(-?[\d|\.|,]+)(px|em|vw|vh|rem|deg)/g;
-const propertyNumberCommaRegex = /(-?[\d|\.]+)(,)/g;
-const propertyNumberRegex = /(-?[\d|\.]+)/g;
+const propertyNumberUnitRegex = /(-?[\d|\\.|,]+)(px|em|vw|vh|rem|deg)/g;
+const propertyNumberCommaRegex = /(-?[\d|\\.]+)(,)/g;
+const propertyNumberRegex = /(-?[\d|\\.]+)/g;
 const propertyPercentageRegex = /(\d+)(%)/g;
-const propertyWordQuoteRegex = /(\"[\w| |:|,|\.|\-|]+\")/g;
-const propertyWordRegex = /([\w| |:|,|\.|\-|]+)/g;
-const propertySignRegex = /(-|\+|\/|\*)/g;
+const propertyWordQuoteRegex = /(\\"[\w| |:|,|\\.|\-|]+\\")/g;
+const propertyWordRegex = /([\w| |:|,|\\.|\-|]+)/g;
+const propertySignRegex = /(-|\\+|\/|\*)/g;
 
 export function cssPropertyValue(value: string): string {
   if (value.includes('(')) {

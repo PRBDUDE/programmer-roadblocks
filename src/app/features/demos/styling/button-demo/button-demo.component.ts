@@ -4,7 +4,7 @@ import {ToggleSwitch} from "primeng/toggleswitch";
 import {FormsModule} from "@angular/forms";
 
 @Component({
-    selector: 'app-button-demo',
+    selector: 'prb-button-demo',
     imports: [
         Button,
         ToggleSwitch,

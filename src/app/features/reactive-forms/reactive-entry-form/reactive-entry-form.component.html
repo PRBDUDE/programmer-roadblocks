@@ -92,12 +92,12 @@
 
 @if (isDebugMode()) {
   <div class="prb-reactive-debug-output-container">
-    <app-debug-output-card
+    <prb-debug-output-card
       [title]="'Debug Output'"
       [flat]="true"
       [variableName]="'entryForm.value'"
       [json]="entryForm.value"/>
-    <app-debug-output-card
+    <prb-debug-output-card
       [flat]="true"
       [variableName]="'phoneControl'"
       [json]="phoneControl.value"/>

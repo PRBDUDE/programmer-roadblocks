@@ -1,9 +1,4 @@
 import {Routes} from "@angular/router";
-import {InputFilterComponent} from "./input/input-filter/input-filter.component";
-import {ScrollablePageComponent} from "./scrolling/scrollable-page/scrollable-page.component";
-import {ButtonDemoComponent} from "./styling/button-demo/button-demo.component";
-import {MessageDemoComponent} from "./styling/message-demo/message-demo.component";
-import {ColorPaletteComponent} from "./styling/color-palette/color-palette.component";
 
 export const demo_routes: Routes = [
   {

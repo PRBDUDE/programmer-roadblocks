@@ -11,7 +11,7 @@ import {ReactiveErrorComponent} from "../../../core/reactive-forms/reactive-erro
 import {ReactivePatterns} from "../../../core/reactive-forms/reactive-patterns";
 
 @Component({
-  selector: 'app-reactive-entry-form',
+  selector: 'prb-reactive-entry-form',
   imports: [
     ReactiveFormsModule,
     DebugOutputCardComponent,
@@ -51,7 +51,7 @@ export class ReactiveEntryFormComponent extends ReactivePatterns implements OnIn
         email: ['', [Validators.required, Validators.email]],
         phone: ['', [Validators.required, Validators.pattern(this.phonePattern)]],
       })
-    } as any);
+    });
   }
 
   onSubmit() {

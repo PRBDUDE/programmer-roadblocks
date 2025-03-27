@@ -8,7 +8,7 @@
     autoClear="false"
     mask="(999) 999-9999"
     placeholder="(123) 456-7890"></p-inputMask>
-  <app-input-error [title]="'Phone Number'"
+  <prb-input-error [title]="'Phone Number'"
                    [filterType]="phoneNumber"/>
 </div>
 
@@ -21,7 +21,7 @@
     (focusout)="ssn.lostFocus()"
     placeholder="123-45-6789"
     mask="999-99-9999"></p-inputMask>
-  <app-input-error [filterType]="ssn"></app-input-error>
+  <prb-input-error [filterType]="ssn"></prb-input-error>
 </div>
 
 <div class="input-group">
@@ -36,7 +36,7 @@
          (focusout)="vin.lostFocus()"
          placeholder="Enter VIN here"
          pattern="[A-HJ-NPR-Z0-9]{17}">
-  <app-input-error [filterType]="vin"></app-input-error>
+  <prb-input-error [filterType]="vin"></prb-input-error>
 </div>
 
 <div class="input-group">
@@ -51,24 +51,24 @@
          (focusout)="email.lostFocus()"
          placeholder="Enter Email here"
          pattern="[A-Za-z\d\.\-_]*@[A-za-z\d\.\-_]*\.[A-Za-z]{3}">
-  <app-input-error [filterType]="email"></app-input-error>
+  <prb-input-error [filterType]="email"></prb-input-error>
 </div>
 
 @if (isDebugMode()) {
   <div class="filter-debug-output-container">
-    <app-debug-output-card
+    <prb-debug-output-card
       [variableName]="'phoneNumber'"
       [flat]="true"
       [json]="phoneNumber"/>
-    <app-debug-output-card
+    <prb-debug-output-card
       [variableName]="'SSN'"
       [flat]="true"
       [json]="ssn"/>
-    <app-debug-output-card
+    <prb-debug-output-card
       [variableName]="'VIN'"
       [flat]="true"
       [json]="vin"/>
-    <app-debug-output-card
+    <prb-debug-output-card
       [variableName]="'email'"
       [flat]="true"
       [json]="email"/>

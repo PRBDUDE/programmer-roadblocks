@@ -4,7 +4,7 @@ import {cssPropertyValue} from "@utility/css-property-value";
 import {cssPropertyName} from "@utility/css-property-name";
 
 @Component({
-  selector: 'app-scrollable-page',
+  selector: 'prb-scrollable-page',
   imports: [],
   templateUrl: './scrollable-page.component.html',
   styleUrl: './scrollable-page.component.scss'

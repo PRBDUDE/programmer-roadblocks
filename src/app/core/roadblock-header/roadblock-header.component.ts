@@ -9,7 +9,7 @@ import {isProduction} from "@utility/is-production";
 import {NgOptimizedImage} from "@angular/common";
 
 @Component({
-  selector: 'app-roadblock-header',
+  selector: 'prb-roadblock-header',
   imports: [
     MegaMenuModule,
     RouterLink,

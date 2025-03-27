@@ -28,7 +28,7 @@ export class PhoneNumberFilter extends BaseFilterType {
     }
 
     if (!/^\(\d{3}\) \d{3}-\d{4}$/.test(this.phoneNumber)) {
-      errors.push(`must be in the format of \'(XXX) XXX-XXXX\'`);
+      errors.push(`must be in the format of '(XXX) XXX-XXXX'`);
     }
 
     return errors;

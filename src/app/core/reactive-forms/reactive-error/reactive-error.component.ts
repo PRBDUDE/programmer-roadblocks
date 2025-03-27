@@ -18,9 +18,9 @@ import {ReactivePatterns} from "../reactive-patterns";
 export class ReactiveErrorComponent extends ReactivePatterns implements ControlValueAccessor {
 
   value: string | null | undefined;
-  onChanged: any = () => {
+  onChanged = () => {
   };
-  onTouched: any = () => {
+  onTouched = () => {
   };
   disabled: boolean = false;
 
@@ -32,7 +32,7 @@ export class ReactiveErrorComponent extends ReactivePatterns implements ControlV
     }
   }
 
-  registerOnChange(fn: (_: any) => void): void {
+  registerOnChange(fn: () => void): void {
     this.onChanged = fn;
   }
 
@@ -62,21 +62,21 @@ export class ReactiveErrorComponent extends ReactivePatterns implements ControlV
     }
     if (this.formControl.hasError('pattern')) {
       if (this.formControl.getError('pattern').requiredPattern == this.zipCodePattern) {
-        errors.push('Valid pattern is \"' + this.zipCodePlainTextPattern + '\".');
+        errors.push('Valid pattern is "' + this.zipCodePlainTextPattern + '".');
       } else if (this.formControl.getError('pattern').requiredPattern == this.phonePattern) {
-        errors.push('Valid pattern is \"' + this.phonePlainTextPattern + '\".');
+        errors.push('Valid pattern is "' + this.phonePlainTextPattern + '".');
       } else if (this.formControl.getError('pattern').requiredPattern == this.validStateCodesPattern) {
         const validStateCodes = this.validStateCodesPlainTextPattern.split('|')
           .filter(s => s.includes(this.formControl.getError('pattern').actualValue.toUpperCase()));
         if (validStateCodes.length > 0) {
-          errors.push('Valid state codes are \"' + validStateCodes.join('\", \"') + '\".');
+          errors.push('Valid state codes are "' + validStateCodes.join('", "') + '".');
         } else {
-          errors.push('Valid state codes are \"' + this.validStateCodesPlainTextPattern.split('|').join('\", \"') + '\".');
+          errors.push('Valid state codes are "' + this.validStateCodesPlainTextPattern.split('|').join('", "') + '".');
         }
       } else {
         errors.push('Valid pattern ' + this.formControl.getError('pattern').requiredPattern);
       }
-      errors.push('Actual Value \"' + this.formControl.getError('pattern').actualValue.toUpperCase() + '\" is invalid.');
+      errors.push('Actual Value "' + this.formControl.getError('pattern').actualValue.toUpperCase() + '" is invalid.');
     }
     return errors;
   }

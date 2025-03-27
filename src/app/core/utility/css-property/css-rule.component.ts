@@ -4,7 +4,7 @@ import {CssPropertyNameComponent} from "./css-property-name/css-property-name.co
 import {CssPropertyValueComponent} from "./css-property-value/css-property-value.component";
 
 @Component({
-  selector: 'app-css-rule',
+  selector: 'prb-css-rule',
   imports: [
     CssPropertyNameComponent,
     CssPropertyValueComponent

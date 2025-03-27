@@ -4,10 +4,10 @@ import {InputText} from "primeng/inputtext";
 import {FormsModule} from "@angular/forms";
 import {TableModule} from "primeng/table";
 
-export type PaletteShades = { [p: string]: any };
+export type PaletteShades = { [p: string]: string };
 
 @Component({
-  selector: 'app-palette-generator',
+  selector: 'prb-palette-generator',
   imports: [
     InputText,
     FormsModule,
@@ -21,7 +21,7 @@ export class PaletteGeneratorComponent {
 
   _baseColor: string = '#3cf8fb';
 
-  @Input('baseColor')
+  @Input()
   set baseColor(value: string) {
     this._baseColor = value;
     this.generatePalette();
