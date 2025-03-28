@@ -5,7 +5,7 @@ const propertyNumberRegex = /(-?[\d|\\.]+)/g;
 const propertyPercentageRegex = /(\d+)(%)/g;
 const propertyWordQuoteRegex = /(\\"[\w| |:|,|\\.|\-|]+\\")/g;
 const propertyWordRegex = /([\w| |:|,|\\.|\-|]+)/g;
-const propertySignRegex = /(-|\\+|\/|\*)/g;
+const propertySignRegex = /(\\-|\+|\/|\*)/g;
 
 export function cssPropertyValue(value: string): string {
   if (value.includes('(')) {
