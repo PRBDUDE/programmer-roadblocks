@@ -1,24 +1,98 @@
+.options-container {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1em;
+  gap: 1em;
+
+  .prompt-container {
+    padding: 5px 0;
+  }
+}
+
 .vertical-timeline-group {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   margin-bottom: 2em;
-  flex-wrap: wrap;
-  gap: 1em;
   margin-top: 1em;
+  gap: 1em;
 
   .vertical-timeline-item {
     h2 {
-      margin-top: -1.3em;
+      margin-top: -1.25em;
       margin-bottom: 0.5em;
-      font-size: 1.2em;
+      font-size: 1.1em;
       font-weight: bold;
       background-color: #ddd;
       padding: 2px 5px;
       width: fit-content;
       color: black;
+      border-radius: 5px;
     }
+
     padding: 10px;
-    min-width: 350px;
+    min-width: 400px;
     border: 1px solid #ddd;
+    border-radius: 5px;
+
+    .vertical-timeline-content {
+      max-height: 60vh;
+      overflow-y: auto;
+    }
+  }
+}
+
+.text-xs {
+  font-size: 0.75em;
+}
+
+.tl-date {
+  font-size: 0.85em;
+}
+
+.tl-time {
+  font-size: 0.75em;
+}
+
+.tl-marker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--p-timeline-event-marker-border-radius);
+  width: 20px;
+  height: 20px;
+  box-shadow: 0 0.5px 0 0 rgba(0, 0, 0, 0.06), 0 5px 5px 0 rgba(0, 0, 0, 0.12);
+
+  i {
+    scale: 75%;
+  }
+}
+
+.tl-initiate {
+  background-color: var(--timeline-background-color-initiate);
+  color: var(--timeline-color-initiate);
+
+  .p-card-title {
+      color: var(--timeline-color-initiate);
+      background-color: var(--timeline-background-color-initiate);
+  }
+}
+
+.tl-transmitting {
+  background-color: var(--timeline-background-color-transmitting);
+  color: var(--timeline-color-transmitting);
+}
+
+.tl-checksum {
+  background-color: var(--timeline-background-color-checksum);
+  color: var(--timeline-color-checksum);
+}
+
+.tl-complete {
+  background-color: var(--timeline-background-color-final);
+  color: var(--timeline-color-final);
+
+  > .p-card-title {
+      color: var(--timeline-color-final);
+      background-color: var(--timeline-background-color-final);
   }
 }

@@ -32,9 +32,15 @@ export const demo_routes: Routes = [
     title: 'Color Palette'
   },
   {
-    path: 'timeline',
+    path: 'vertical-timeline',
     loadComponent: () => import('./timeline/vertical-timeline/vertical-timeline.component')
       .then(m => m.VerticalTimelineComponent),
-    title: 'Color Palette'
+    title: 'Vertical Timeline'
+  },
+  {
+    path: 'horizontal-timeline',
+    loadComponent: () => import('./timeline/horizontal-timeline/horizontal-timeline.component')
+      .then(m => m.HorizontalTimelineComponent),
+    title: 'Horizontal Timeline'
   }
 ]

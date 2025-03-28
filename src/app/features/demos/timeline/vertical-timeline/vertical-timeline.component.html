@@ -1,43 +1,117 @@
+<div class="options-container">
+  <div class="prompt-container">
+    <p-dropdown
+      [options]="alignmentItems"
+      [(ngModel)]="selectedAlignmentItem"/>
+  </div>
+
+  <div class="show-option-container">
+    <div class="prompt-container">
+      <p-checkbox id="minimal" [(ngModel)]="showMinimal" [binary]="true"/>
+      <label for="minimal"> Show Minimal</label>
+    </div>
+
+    <div class="prompt-container">
+      <p-checkbox id="addIcon" [(ngModel)]="showAddIcon" [binary]="true"/>
+      <label for="addIcon"> Show Icon</label>
+    </div>
+  </div>
+
+  <div class="show-option-container">
+    <div class="prompt-container">
+      <p-checkbox id="addDateTime" [(ngModel)]="showAddDateTime" [binary]="true"/>
+      <label for="addDateTime"> Show Date Time</label>
+    </div>
+
+    <div class="prompt-container">
+      <p-checkbox id="addCardWithDetails" [(ngModel)]="showCardWithDetails" [binary]="true"/>
+      <label for="addCardWithDetails"> Show Card with Details</label>
+    </div>
+  </div>
+</div>
+
 <div class="vertical-timeline-group">
-  <div class="vertical-timeline-item">
-    <h2>Minimal</h2>
-    <p-timeline [value]="timelineItems">
-      <ng-template #content let-event>
-        {{ event.status }}
-      </ng-template>
-    </p-timeline>
-  </div>
-  <div class="vertical-timeline-item">
-    <h2>Add Icon</h2>
-    <p-timeline [value]="timelineItems">
-      <ng-template #marker let-event>
-        <span class="flex w-8 h-8 items-center justify-center text-white rounded-full z-10 shadow-sm"
-              [style]="{ 'background-color': event.color }">
-          <i class="{{event.icon}}"></i>
-        </span>
-      </ng-template>
-      <ng-template #content let-event>
-        {{ event.status }}
-      </ng-template>
-    </p-timeline>
-  </div>
-  <div class="vertical-timeline-item">
-    <h2>Add Date/Time</h2>
-    <p-timeline [value]="timelineItems">
-      <ng-template #marker let-event>
-        <span class="flex w-8 h-8 items-center justify-center text-white rounded-full z-10 shadow-sm"
-              [style]="{ 'background-color': event.color }">
-          <i class="{{event.icon}}"></i>
-        </span>
-      </ng-template>
-      <ng-template #content let-event>
-        {{ event.status }}
-      </ng-template>
-      <ng-template #opposite let-event>
-        <span class="text-gray-400 text-xs" style="font-size: 0.8em;">
-          {{ event.date | date:'medium' }}
-        </span>
-      </ng-template>
-    </p-timeline>
-  </div>
+  @if (showMinimal) {
+    <div class="vertical-timeline-item">
+      <h2>Minimal</h2>
+      <div class="vertical-timeline-content">
+        <p-timeline [value]="timelineItems" align="{{selectedAlignmentItem}}">
+          <ng-template #content let-event>
+            {{ event.status }}
+          </ng-template>
+        </p-timeline>
+      </div>
+    </div>
+  }
+  @if (showAddIcon) {
+    <div class="vertical-timeline-item">
+      <h2>Add Icon</h2>
+      <div class="vertical-timeline-content">
+        <p-timeline [value]="timelineItems" align="{{selectedAlignmentItem}}">
+          <ng-template #marker let-event>
+            <div class="tl-marker"
+                 [ngClass]="getEventClass(event)">
+              <i class="{{event.icon}}"></i>
+            </div>
+          </ng-template>
+          <ng-template #content let-event>
+            {{ event.status }}
+          </ng-template>
+        </p-timeline>
+      </div>
+    </div>
+  }
+  @if (showAddDateTime) {
+    <div class="vertical-timeline-item">
+      <h2>Add Date/Time</h2>
+      <div class="vertical-timeline-content">
+        <p-timeline [value]="timelineItems" align="{{selectedAlignmentItem}}">
+          <ng-template #marker let-event>
+            <div class="tl-marker"
+                 [ngClass]="getEventClass(event)">
+              <i class="{{event.icon}}"></i>
+            </div>
+          </ng-template>
+          <ng-template #content let-event>
+            {{ event.status }}
+          </ng-template>
+          <ng-template #opposite let-event>
+            <div class="tl-date">
+              {{ event.date | date:'longDate' }}
+            </div>
+            <div class="tl-time">
+              {{ event.date | date:'hh:mm:ss.SSS a' }}
+            </div>
+          </ng-template>
+        </p-timeline>
+      </div>
+    </div>
+  }
+  @if (showCardWithDetails) {
+    <div class="vertical-timeline-item">
+      <h2>Add Card with Details</h2>
+      <div class="vertical-timeline-content">
+        <p-timeline [value]="timelineItems" align="{{selectedAlignmentItem}}">
+          <ng-template #marker let-event>
+            <div class="tl-marker"
+                 [ngClass]="getEventClass(event)">
+              <i class="{{event.icon}}"></i>
+            </div>
+          </ng-template>
+          <ng-template #content let-event>
+            <p-card [header]="event.status"
+                    [ngClass]="getEventClass(event)">
+              <div class="tl-date">
+                {{ event.date | date:'longDate' }}
+              </div>
+              <div class="tl-time">
+                {{ event.date | date:'hh:mm:ss.SSS a' }}
+              </div>
+              <p>{{ event.description }}</p>
+            </p-card>
+          </ng-template>
+        </p-timeline>
+      </div>
+    </div>
+  }
 </div>

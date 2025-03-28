@@ -1,0 +1,27 @@
+:root {
+  --timeline-color-initiate: #dddddd;
+  --timeline-background-color-initiate: #007bff;
+
+  --timeline-color-transmitting: #dddddd;
+  --timeline-background-color-transmitting: #0633c7;
+
+  --timeline-color-checksum: #dddddd;
+  --timeline-background-color-checksum: #04b404;
+
+  --timeline-color-final: #dddddd;
+  --timeline-background-color-final: #04b404;
+}
+
+:root[class*="dark-theme"] {
+  --timeline-color-initiate: #dddddd;
+  --timeline-background-color-initiate: #007bff;
+
+  --timeline-color-transmitting: #dddddd;
+  --timeline-background-color-transmitting: #0633c7;
+
+  --timeline-color-checksum: #dddddd;
+  --timeline-background-color-checksum: #04b404;
+
+  --timeline-color-final: #dddddd;
+  --timeline-background-color-final: #04b404;
+}
