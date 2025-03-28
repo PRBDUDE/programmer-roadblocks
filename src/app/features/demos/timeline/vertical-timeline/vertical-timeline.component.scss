@@ -1,0 +1,24 @@
+.vertical-timeline-group {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2em;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-top: 1em;
+
+  .vertical-timeline-item {
+    h2 {
+      margin-top: -1.3em;
+      margin-bottom: 0.5em;
+      font-size: 1.2em;
+      font-weight: bold;
+      background-color: #ddd;
+      padding: 2px 5px;
+      width: fit-content;
+      color: black;
+    }
+    padding: 10px;
+    min-width: 350px;
+    border: 1px solid #ddd;
+  }
+}

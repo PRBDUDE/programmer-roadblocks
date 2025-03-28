@@ -30,5 +30,11 @@ export const demo_routes: Routes = [
     loadComponent: () => import('./styling/color-palette/color-palette.component')
       .then(m => m.ColorPaletteComponent),
     title: 'Color Palette'
+  },
+  {
+    path: 'timeline',
+    loadComponent: () => import('./timeline/vertical-timeline/vertical-timeline.component')
+      .then(m => m.VerticalTimelineComponent),
+    title: 'Color Palette'
   }
 ]
