@@ -15,7 +15,8 @@ let uniqueId = 0;
 })
 export class DebugOutputCardComponent {
   @Input() title: string = '';
-  @Input() jsonValue!: object;
+  /* eslint-disable-next-line @angular-eslint/no-input-rename */
+  @Input('json') jsonValue!: object;
   @Input() stringValue!: string;
   @Input() numberValue!: number;
   @Input() booleanValue!: boolean;
