@@ -13,3 +13,35 @@
 :root[class*="dark-theme"] {
   --debug-box-shadow: var(--p-yellow-200) 0 0 10px, var(--p-orange-400) 0 0 10px, var(--p-red-500) 0 0 10px;
 }
+
+.prb-debug-container-group {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 0 10px;
+
+  .prb-debug-output-container {
+    //width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    //align-items: flex-end;
+    //gap: 10px;
+
+    prb-debug-output-card {
+      //width: 100%;
+      //display: block;
+    }
+  }
+
+  .prb-debug-output-top {
+    position: absolute;
+    top: 100px;
+    right: 0;
+  }
+
+  .prb-debug-output-fixed-50 {
+    max-height: 50vh;
+    overflow-y: auto;
+  }
+}

@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, input, Input} from '@angular/core';
 import {JsonPipe, NgClass} from "@angular/common";
 import {isProduction} from "@utility/is-production";
 
@@ -14,15 +14,18 @@ let uniqueId = 0;
   styleUrl: './debug-output-card.component.scss'
 })
 export class DebugOutputCardComponent {
-  @Input() title: string = '';
+
+  protected readonly isProduction = isProduction;
+
+  title = input<string>();
   /* eslint-disable-next-line @angular-eslint/no-input-rename */
-  @Input('json') jsonValue!: object;
-  @Input() stringValue!: string;
-  @Input() numberValue!: number;
-  @Input() booleanValue!: boolean;
-  @Input() regexValue!: RegExp;
-  @Input() variableName: string = '';
-  @Input() flat: boolean = false;
+  jsonValue = input<object>(undefined, {alias: 'json'});
+  stringValue = input<string>();
+  numberValue = input<number>();
+  booleanValue = input<boolean>();
+  regexValue = input<RegExp>();
+  variableName = input<string>();
+  flat = input<boolean>(false);
 
   debugOutputId = `debug_output_${uniqueId++}`;
 
@@ -31,7 +34,7 @@ export class DebugOutputCardComponent {
   }
 
   isString(): boolean {
-    return this.stringValue !== undefined;
+    return this.stringValue() !== undefined;
   }
 
   isNumber(): boolean {
@@ -39,12 +42,10 @@ export class DebugOutputCardComponent {
   }
 
   isBoolean(): boolean {
-    return this.booleanValue !== undefined;
+    return this.booleanValue() !== undefined;
   }
 
   isRegex(): boolean {
     return this.regexValue !== undefined;
   }
-
-  protected readonly isProduction = isProduction;
 }
