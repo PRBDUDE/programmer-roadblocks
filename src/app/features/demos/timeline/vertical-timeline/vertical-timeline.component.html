@@ -1,41 +1,18 @@
-<div class="options-container">
-  <div class="prompt-container">
-    <p-dropdown
-      [options]="alignmentItems"
-      [(ngModel)]="selectedAlignmentItem"/>
-  </div>
-
-  <div class="show-option-container">
-    <div class="prompt-container">
-      <p-checkbox id="minimal" [(ngModel)]="showMinimal" [binary]="true"/>
-      <label for="minimal"> Show Minimal</label>
-    </div>
-
-    <div class="prompt-container">
-      <p-checkbox id="addIcon" [(ngModel)]="showAddIcon" [binary]="true"/>
-      <label for="addIcon"> Show Icon</label>
-    </div>
-  </div>
-
-  <div class="show-option-container">
-    <div class="prompt-container">
-      <p-checkbox id="addDateTime" [(ngModel)]="showAddDateTime" [binary]="true"/>
-      <label for="addDateTime"> Show Date Time</label>
-    </div>
-
-    <div class="prompt-container">
-      <p-checkbox id="addCardWithDetails" [(ngModel)]="showCardWithDetails" [binary]="true"/>
-      <label for="addCardWithDetails"> Show Card with Details</label>
-    </div>
-  </div>
-</div>
+<prb-timeline-options
+  [alignmentItems]="alignmentItems()"
+  [(selectedAlignmentItem)]="selectedAlignmentItem"
+  [(showMinimal)]="showMinimal"
+  [(showAddIcon)]="showAddIcon"
+  [(showAddDateTime)]="showAddDateTime"
+  [(showCardWithDetails)]="showCardWithDetails">
+</prb-timeline-options>
 
 <div class="vertical-timeline-group">
-  @if (showMinimal) {
+  @if (showMinimal()) {
     <div class="vertical-timeline-item">
-      <h2>Minimal</h2>
+      <h2>Show Minimal</h2>
       <div class="vertical-timeline-content">
-        <p-timeline [value]="timelineItems" align="{{selectedAlignmentItem}}">
+        <p-timeline [value]="timelineItems()" align="{{selectedAlignmentItem()}}">
           <ng-template #content let-event>
             {{ event.status }}
           </ng-template>
@@ -43,15 +20,15 @@
       </div>
     </div>
   }
-  @if (showAddIcon) {
+  @if (showAddIcon()) {
     <div class="vertical-timeline-item">
-      <h2>Add Icon</h2>
+      <h2>Show Icon</h2>
       <div class="vertical-timeline-content">
-        <p-timeline [value]="timelineItems" align="{{selectedAlignmentItem}}">
+        <p-timeline [value]="timelineItems()" align="{{selectedAlignmentItem()}}">
           <ng-template #marker let-event>
             <div class="tl-marker"
                  [ngClass]="getEventClass(event)">
-              <i class="{{event.icon}}"></i>
+              <i class="{{getIcon(event)}}"></i>
             </div>
           </ng-template>
           <ng-template #content let-event>
@@ -61,15 +38,15 @@
       </div>
     </div>
   }
-  @if (showAddDateTime) {
+  @if (showAddDateTime()) {
     <div class="vertical-timeline-item">
-      <h2>Add Date/Time</h2>
+      <h2>Show Date/Time</h2>
       <div class="vertical-timeline-content">
-        <p-timeline [value]="timelineItems" align="{{selectedAlignmentItem}}">
+        <p-timeline [value]="timelineItems()" align="{{selectedAlignmentItem()}}">
           <ng-template #marker let-event>
             <div class="tl-marker"
                  [ngClass]="getEventClass(event)">
-              <i class="{{event.icon}}"></i>
+              <i class="{{getIcon(event)}}"></i>
             </div>
           </ng-template>
           <ng-template #content let-event>
@@ -87,31 +64,72 @@
       </div>
     </div>
   }
-  @if (showCardWithDetails) {
+  @if (showCardWithDetails()) {
     <div class="vertical-timeline-item">
-      <h2>Add Card with Details</h2>
+      <h2>Show Card with Description</h2>
       <div class="vertical-timeline-content">
-        <p-timeline [value]="timelineItems" align="{{selectedAlignmentItem}}">
+        <p-timeline [value]="timelineItems()" align="{{selectedAlignmentItem()}}">
           <ng-template #marker let-event>
             <div class="tl-marker"
                  [ngClass]="getEventClass(event)">
-              <i class="{{event.icon}}"></i>
+              <i class="{{getIcon(event)}}"></i>
             </div>
           </ng-template>
           <ng-template #content let-event>
-            <p-card [header]="event.status"
-                    [ngClass]="getEventClass(event)">
-              <div class="tl-date">
-                {{ event.date | date:'longDate' }}
+            <p-card>
+              <ng-template #header>
+                <div class="card-top" [ngClass]="getEventClass(event)">
+                  {{ event.status }}
+                </div>
+              </ng-template>
+              <div>
+                <p class="tl-description">{{ event.description }}</p>
               </div>
-              <div class="tl-time">
-                {{ event.date | date:'hh:mm:ss.SSS a' }}
-              </div>
-              <p>{{ event.description }}</p>
             </p-card>
+          </ng-template>
+          <ng-template #opposite let-event>
+            <div class="tl-date">
+              {{ event.date | date:'longDate' }}
+            </div>
+            <div class="tl-time">
+              {{ event.date | date:'hh:mm:ss.SSS a' }}
+            </div>
           </ng-template>
         </p-timeline>
       </div>
     </div>
   }
 </div>
+
+@if (isDebugMode()) {
+  <div class="prb-debug-container-group">
+    <div class="prb-debug-output-container">
+      <prb-debug-output-card
+        [variableName]="'Alignment'"
+        [flat]="true"
+        [stringValue]="this.selectedAlignmentItem()"/>
+      <prb-debug-output-card
+        [variableName]="'Show Minimal'"
+        [flat]="true"
+        [booleanValue]="this.showMinimal()"/>
+      <prb-debug-output-card
+        [variableName]="'Show Icon'"
+        [flat]="true"
+        [booleanValue]="this.showAddIcon()"/>
+      <prb-debug-output-card
+        [variableName]="'Show Date/Time'"
+        [flat]="true"
+        [booleanValue]="this.showAddDateTime()"/>
+      <prb-debug-output-card
+        [variableName]="'Show Card with Details'"
+        [flat]="true"
+        [booleanValue]="this.showCardWithDetails()"/>
+    </div>
+    <div class="prb-debug-output-container prb-debug-output-fixed-50">
+      <prb-debug-output-card
+        [variableName]="'Input Data'"
+        [flat]="true"
+        [json]="this.timelineItems()"/>
+    </div>
+  </div>
+}

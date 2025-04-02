@@ -1,27 +1,74 @@
 :root {
-  --timeline-color-initiate: #dddddd;
+  --timeline-color-initiate: #eeeeee;
   --timeline-background-color-initiate: #007bff;
 
-  --timeline-color-transmitting: #dddddd;
+  --timeline-color-transmitting: #eeeeee;
   --timeline-background-color-transmitting: #0633c7;
 
-  --timeline-color-checksum: #dddddd;
+  --timeline-color-checksum: #303030;
   --timeline-background-color-checksum: #04b404;
 
-  --timeline-color-final: #dddddd;
+  --timeline-color-final: #303030;
   --timeline-background-color-final: #04b404;
+
+  --timeline-color-warning: #303030;
+  --timeline-background-color-warning: #f1ed1f;
+
+  --timeline-color-error: #f8f8f8;
+  --timeline-background-color-error: #fc1148;
+
+  --timeline-color-unknown: #fcfcfc;
+  --timeline-background-color-unknown: #e511fc;
+
+  --timeline-group-border-color: #575757;
+  --timeline-group-header-background-color: #8c8c8c;
+  --timeline-group-header-text-color: white;
+
+  --timeline-horizontal-height: 3rem;
 }
 
 :root[class*="dark-theme"] {
   --timeline-color-initiate: #dddddd;
-  --timeline-background-color-initiate: #007bff;
 
   --timeline-color-transmitting: #dddddd;
-  --timeline-background-color-transmitting: #0633c7;
 
   --timeline-color-checksum: #dddddd;
-  --timeline-background-color-checksum: #04b404;
 
   --timeline-color-final: #dddddd;
-  --timeline-background-color-final: #04b404;
+
+  --timeline-group-border-color: #dddddd;
+  --timeline-group-header-background-color: #dddddd;
+  --timeline-group-header-text-color: black;
+}
+
+.p-timeline.p-timeline-alternate.p-timeline-horizontal {
+  .p-timeline-event-content,
+  .p-timeline-event-opposite {
+    min-height: 10em;
+    padding-left: 0.5em;
+    //background-color:var(--p-surface-500);
+    //margin-left: 0.5em;
+  }
+
+  //.p-timeline-event-opposite {
+  //  background-color: var(--p-surface-300);
+  //  color: var(--p-surface-900);
+  //  border-radius: 10px;
+  //}
+}
+
+.p-timeline.p-timeline-alternate.p-timeline-vertical {
+  .p-timeline-event-content,
+  .p-timeline-event-opposite {
+    //min-width: 10em;
+    //padding-bottom: 5em;
+    //background-color:var(--p-surface-500);
+    //margin-left: 0.5em;
+  }
+
+  //.p-timeline-event-opposite {
+  //  background-color: var(--p-surface-300);
+  //  color: var(--p-surface-900);
+  //  border-radius: 10px;
+  //}
 }
