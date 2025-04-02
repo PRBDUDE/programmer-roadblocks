@@ -13,7 +13,7 @@
     grid-area: header;
   }
 
-  .main-grid-content {
+  .prb-main-grid-content {
     grid-area: content;
     overflow-y: auto;
     padding: 10px;
@@ -22,7 +22,7 @@
     background-color: var(--p-surface-100);
   }
 
-  .main-grid-footer {
+  .prb-main-grid-footer {
     grid-area: footer;
   }
 }
@@ -31,7 +31,7 @@
   .prb-main-grid-container {
     background-color: var(--p-surface-600);
 
-    .main-grid-content {
+    .prb-main-grid-content {
       background-color: var(--p-surface-600);
     }
   }
