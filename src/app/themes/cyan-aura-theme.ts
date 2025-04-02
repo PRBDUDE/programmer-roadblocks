@@ -4580,12 +4580,18 @@ export const CyanAuraPreset = definePreset(Aura, {
       },
       horizontal: {
         eventContent: {
-          padding: "1rem 0"
+          extend: {
+            padding: "1rem 0.75rem 1rem 0"
+            // padding: "1rem 0"
+          }
         }
       },
       vertical: {
         eventContent: {
-          padding: "0 1rem"
+          extend: {
+            padding: "0 1rem 0.75rem 1rem"
+            // padding: "0 1rem"
+          }
         }
       },
       eventMarker: {

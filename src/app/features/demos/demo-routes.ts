@@ -30,5 +30,17 @@ export const demo_routes: Routes = [
     loadComponent: () => import('./styling/color-palette/color-palette.component')
       .then(m => m.ColorPaletteComponent),
     title: 'Color Palette'
+  },
+  {
+    path: 'vertical-timeline',
+    loadComponent: () => import('./timeline/vertical-timeline/vertical-timeline.component')
+      .then(m => m.VerticalTimelineComponent),
+    title: 'Vertical Timeline'
+  },
+  {
+    path: 'horizontal-timeline',
+    loadComponent: () => import('./timeline/horizontal-timeline/horizontal-timeline.component')
+      .then(m => m.HorizontalTimelineComponent),
+    title: 'Horizontal Timeline'
   }
 ]

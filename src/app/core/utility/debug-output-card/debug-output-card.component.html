@@ -1,31 +1,31 @@
 @if (!isProduction()) {
   <div [attr.id]="debugOutputId"
-       [ngClass]="{'flat': flat}"
+       [ngClass]="{'flat': flat()}"
        class="debug-output-container">
-    @if (title.length > 0) {
-      <div class="debug-header">{{ title }}</div>
+    @if (title()) {
+      <div class="debug-header">{{ title() }}</div>
     }
-    @if (variableName.length > 0) {
+    @if (variableName()) {
       <div class="debug-variable-name-container">
         <span class="debug-variable-name-label">Variable:&nbsp;</span>
-        <span class="debug-variable-name">{{ variableName }}</span>
+        <span class="debug-variable-name">{{ variableName() }}</span>
       </div>
     }
     <div class="debug-content">
       @if (isJson()) {
-        <pre>{{ jsonValue | json }}</pre>
+        <pre>{{ jsonValue() | json }}</pre>
       }
       @if (isString()) {
-        {{ this.stringValue }}
+        {{ this.stringValue() }}
       }
       @if (isNumber()) {
-        {{ this.numberValue }}
+        {{ this.numberValue() }}
       }
       @if (isBoolean()) {
-        {{ this.booleanValue }}
+        {{ this.booleanValue() }}
       }
       @if (isRegex()) {
-        {{ this.regexValue }}
+        {{ this.regexValue() }}
       }
     </div>
   </div>

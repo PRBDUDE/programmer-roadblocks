@@ -1,0 +1,40 @@
+@use '../timeline-base' as base;
+
+.vertical-timeline-group {
+  display: flex;
+  margin: 1em 0 2em 0;
+  gap: 1em;
+  flex-flow: row wrap;
+
+  .vertical-timeline-item {
+    h2 {
+      @include base.tl-group-header();
+    }
+
+    @include base.tl-group-body();
+    min-width: 400px;
+
+    .vertical-timeline-content {
+      max-height: 65vh;
+      overflow-y: auto;
+    }
+  }
+}
+
+.text-xs {
+  font-size: 0.75em;
+}
+
+.tl-date {
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+}
+
+.tl-time {
+  font-size: 0.75em;
+}
+
+.tl-description {
+  font-size: 0.8em;
+}

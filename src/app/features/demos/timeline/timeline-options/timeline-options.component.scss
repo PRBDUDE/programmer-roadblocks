@@ -1,0 +1,12 @@
+@use "../timeline-base";
+
+.options-container {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1em;
+  gap: 1em;
+
+  .prompt-container {
+    padding: 5px 0;
+  }
+}

@@ -86,9 +86,9 @@ describe('PropertyValue', () => {
     expect(generatedValue).toEqual('<span class="property-number">100</span><span class="property-unit">vh</span> * <span class="property-number">113</span><span class="property-unit">px</span>');
   });
 
-  xit('should return \'<span class="property-number">100</span><span class="property-unit">vh</span> <span class="property-value">+</span> <span class="property-number">113</span><span class="property-unit">px</span>\'\'', () => {
+  it('should return \'<span class="property-number">100</span><span class="property-unit">vh</span> <span class="property-value">+</span> <span class="property-number">113</span><span class="property-unit">px</span>\'\'', () => {
     const generatedValue = cssPropertyValue('100vh + 113px');
-    expect(generatedValue).toEqual('<span class="property-number">100</span><span class="property-unit">vh</span> <span class="property-value">+</span>  <span class="property-number">113</span><span class="property-unit">px</span>');
+    expect(generatedValue).toEqual('<span class="property-number">100</span><span class="property-unit">vh</span> + <span class="property-number">113</span><span class="property-unit">px</span>');
   });
 
   it('should return \'<span class="property-number">100</span><span class="property-unit">vh</span> / <span class="property-number">113</span><span class="property-unit">px</span>\'\'', () => {
