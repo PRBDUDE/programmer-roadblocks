@@ -1,4 +1,4 @@
-.main-grid-container {
+.prb-main-grid-container {
   position: fixed;
   width: 100%;
   display: grid;
@@ -28,7 +28,7 @@
 }
 
 :root[class*="dark-theme"] {
-  .main-grid-container {
+  .prb-main-grid-container {
     background-color: var(--p-surface-600);
 
     .main-grid-content {

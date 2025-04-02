@@ -14,7 +14,7 @@ export class ScrollablePageComponent implements OnInit {
 
   ngOnInit() {
     const cssString =
-      '.main-grid-container {' +
+      '.prb-main-grid-container {' +
       ' display: grid;' +
       ' grid-template-areas: "header" "content" "footer";' +
       '}' +
