@@ -56,3 +56,15 @@
     scale: 1;
   }
 }
+
+@media screen and (max-width: 968px) {
+  .header-text {
+    .roadblocks-text {
+      font-size: 0.9em !important;
+    }
+    .roadblocks-logo {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+  }
+}
