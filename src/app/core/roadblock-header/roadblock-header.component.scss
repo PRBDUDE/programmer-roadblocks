@@ -57,14 +57,26 @@
   }
 }
 
+@media screen and (max-width: 1064px) {
+  .header-text {
+    .roadblocks-text {
+      font-size: 1em !important;
+    }
+    .roadblocks-logo {
+      height: 1.6rem !important;
+      width: 1.6rem !important;
+    }
+  }
+}
+
 @media screen and (max-width: 968px) {
   .header-text {
     .roadblocks-text {
-      font-size: 0.9em !important;
+      font-size: 0.9rem !important;
     }
     .roadblocks-logo {
-      height: 1.5rem;
-      width: 1.5rem;
+      height: 1rem !important;
+      width: 1rem !important;
     }
   }
 }

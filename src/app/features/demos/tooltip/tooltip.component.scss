@@ -1,0 +1,35 @@
+.prb-tooltip-separator {
+  border: 2px solid var(--p-gray-300);
+  margin: 5px 10px;
+}
+
+span[tooltipPosition="top"] {
+  background-color: #667377;
+}
+
+span[tooltipPosition="bottom"] {
+  background-color: #857777;
+}
+
+span[tooltipPosition] {
+  padding: 8px;
+  border-radius: 50%;
+}
+
+p {
+  margin-bottom: 4em;
+  line-height: 1.5em;
+
+  &:first-child {
+    margin-top: 6em;
+  }
+}
+
+div {
+  p {
+    margin-bottom: 4px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}

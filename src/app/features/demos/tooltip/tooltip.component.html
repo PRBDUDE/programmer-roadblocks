@@ -1,0 +1,24 @@
+Click Counter: {{ counter() }}
+
+<p>This text has a tooltip -
+  <span [pTooltip]="tooltipContent" tooltipPosition="top"
+        autoHide="false">
+    Hover Here
+  </span>
+  to see the tooltip - you can click on this tooltip button.
+</p>
+
+<p>This text has a tooltip -
+  <span [pTooltip]="tooltipContent" tooltipPosition="bottom">
+    Hover Here
+  </span>
+  to see the tooltip - you can't click on this tooltip button.
+</p>
+
+<ng-template #tooltipContent>
+  <div>
+    <p>This is the tooltip content</p>
+    <div class="prb-tooltip-separator"></div>
+    <p-button (click)="clickCounter()">Click Here</p-button>
+  </div>
+</ng-template>
