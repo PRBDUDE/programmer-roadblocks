@@ -1,3 +1,3 @@
 export function cssPropertyName(name: string) {
-  return '<span class="property">' + name + '</span>';
+  return '<span class="prb-property">' + name + '</span>';
 }

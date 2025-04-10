@@ -1,4 +1,4 @@
-.invalid-message {
+.prb-invalid-message {
   display: block;
   color: var(--p-red-700);
   position: fixed;
@@ -11,13 +11,13 @@
   border: 3px solid var(--p-red-100);
   background-color: var(--p-surface-0);
 
-  .invalid-title {
+  .prb-invalid-title {
     font-weight: bold;
     padding: 5px;
     margin-bottom: 5px;
   }
 
-  .invalid-description {
+  .prb-invalid-description {
     ul {
       li {
         list-style-type: none;

@@ -1,11 +1,11 @@
 @for (selector of selectors; track selector; let i = $index) {
-  <div class="css-rule-selector">
+  <div class="prb-css-rule-selector">
     {{ selector }}
     @if (i < selectors.length - 1) {
-      <span class="css-rule-comma">,</span>
+      <span class="prb-css-rule-comma">,</span>
     }
     @if (i === selectors.length - 1) {
-      <span class="css-rule-open">&nbsp;&#123;</span>
+      <span class="prb-css-rule-open">&nbsp;&#123;</span>
     }
   </div>
 }
@@ -13,7 +13,7 @@
   <div>&nbsp;&nbsp;
     <prb-css-property-name [property]="property.property"/>
     <prb-css-property-value [value]="property.value"/>
-    <span class="css-rule-semicolon">;</span>
+    <span class="prb-css-rule-semicolon">;</span>
   </div>
 }
-<div class="css-rule-close">&#125;</div>
+<div class="prb-css-rule-close">&#125;</div>

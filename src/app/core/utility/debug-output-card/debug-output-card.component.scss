@@ -1,4 +1,4 @@
-.debug-output-container {
+.prb-debug-output-container {
   //position: absolute;
   //top: 100px;
   //right: 500px;
@@ -13,7 +13,7 @@
     box-shadow: var(--debug-box-shadow);
   }
 
-  .debug-header {
+  .prb-debug-header {
     font-size: 1.2em;
     padding: var(--debug-header-padding);
     text-align: center;
@@ -23,7 +23,7 @@
     border-bottom: 2px solid var(--debug-border-color);
   }
 
-  .debug-variable-name-container {
+  .prb-debug-variable-name-container {
     padding: var(--debug-variable-padding);
     border-bottom: 1px solid var(--debug-border-color);
     font-size: 0.6em;
@@ -31,16 +31,16 @@
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
 
-    .debug-variable-name-label {
+    .prb-debug-variable-name-label {
       letter-spacing: unset;
     }
 
-    .debug-variable-name {
+    .prb-debug-variable-name {
       font-weight: bold;
     }
   }
 
-  .debug-content {
+  .prb-debug-content {
     padding: var(--debug-content-padding);
     overflow-y: auto;
     letter-spacing: var(--debug-letter-spacing);

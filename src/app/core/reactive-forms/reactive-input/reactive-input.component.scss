@@ -9,7 +9,7 @@
   .prb-form-group-label {
     grid-area: label;
 
-    &.required::after {
+    &.prb-required::after {
       content: "*";
       color: var(--p-red-500);
     }
@@ -20,7 +20,7 @@
   }
 
   .prb-form-input {
-    &.uppercase {
+    &.prb-uppercase {
       text-transform: uppercase;
     }
   }

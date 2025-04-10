@@ -1,17 +1,17 @@
 @if (!isProduction()) {
   <div [attr.id]="debugOutputId"
        [ngClass]="{'flat': flat()}"
-       class="debug-output-container">
+       class="prb-debug-output-container">
     @if (title()) {
-      <div class="debug-header">{{ title() }}</div>
+      <div class="prb-debug-header">{{ title() }}</div>
     }
     @if (variableName()) {
-      <div class="debug-variable-name-container">
-        <span class="debug-variable-name-label">Variable:&nbsp;</span>
-        <span class="debug-variable-name">{{ variableName() }}</span>
+      <div class="prb-debug-variable-name-container">
+        <span class="prb-debug-variable-name-label">Variable:&nbsp;</span>
+        <span class="prb-debug-variable-name">{{ variableName() }}</span>
       </div>
     }
-    <div class="debug-content">
+    <div class="prb-debug-content">
       @if (isJson()) {
         <pre>{{ jsonValue() | json }}</pre>
       }

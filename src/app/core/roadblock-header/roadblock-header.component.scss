@@ -1,44 +1,44 @@
-.header-banner {
+.prb-header-banner {
   display: flex;
   gap: 25px;
   padding: 5px 10px;
-  background-color: var(--header-background-color);
+  background-color: var(--prb-header-background-color);
   height: 65px;
-  box-shadow: 0 0 10px var(--header-drop-shadow-color);
+  box-shadow: 0 0 10px var(--prb-header-drop-shadow-color);
 
-  .header-text {
+  .prb-header-text {
     display: flex;
     align-items: center;
     font-family: "Comic Sans MS", serif;
     font-size: 2.2em;
-    color: var(--title-color);
-    filter: drop-shadow(0 0 5px var(--header-text-drop-shadow-color));
+    color: var(--prb-title-color);
+    filter: drop-shadow(0 0 5px var(--prb-header-text-drop-shadow-color));
 
-    .roadblocks-logo {
+    .prb-roadblocks-logo {
       position: relative;
       height: 2.3rem;
       width: 2.3rem;
-      filter: drop-shadow(0 0 5px var(--title-color));
+      filter: drop-shadow(0 0 5px var(--prb-title-color));
       animation-name: shadow;
       animation-duration: 4s;
       animation-iteration-count: infinite;
       margin: 0 10px;
     }
 
-    .roadblocks-text {
+    .prb-roadblocks-text {
       font-family: "Comic Sans MS", serif;
       font-size: 1.2em;
-      color: var(--title-color);
+      color: var(--prb-title-color);
       letter-spacing: 0.1rem;
     }
   }
 
-  .header-menu {
+  .prb-header-menu {
     display: flex;
     align-items: center;
   }
 
-  .header-options {
+  .prb-header-options {
     display: flex;
     gap: 10px;
     margin-left: auto;
@@ -48,21 +48,21 @@
 
 @keyframes shadow {
   0%, 100% {
-    filter: drop-shadow(0 0 10px var(--header-logo-shadow-color-100));
+    filter: drop-shadow(0 0 10px var(--prb-header-logo-shadow-color-100));
     scale: 1.2;
   }
   50% {
-    filter: drop-shadow(0 0 2px var(--header-logo-shadow-color-50));
+    filter: drop-shadow(0 0 2px var(--prb-header-logo-shadow-color-50));
     scale: 1;
   }
 }
 
 @media screen and (max-width: 1064px) {
-  .header-text {
-    .roadblocks-text {
+  .prb-header-text {
+    .prb-roadblocks-text {
       font-size: 1em !important;
     }
-    .roadblocks-logo {
+    .prb-roadblocks-logo {
       height: 1.6rem !important;
       width: 1.6rem !important;
     }
@@ -70,11 +70,11 @@
 }
 
 @media screen and (max-width: 968px) {
-  .header-text {
-    .roadblocks-text {
+  .prb-header-text {
+    .prb-roadblocks-text {
       font-size: 0.9rem !important;
     }
-    .roadblocks-logo {
+    .prb-roadblocks-logo {
       height: 1rem !important;
       width: 1rem !important;
     }

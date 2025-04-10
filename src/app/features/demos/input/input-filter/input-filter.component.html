@@ -1,5 +1,5 @@
-<div class="input-group">
-  <span class="input-label">Phone Number:</span>
+<div class="prb-input-group">
+  <span class="prb-input-label">Phone Number:</span>
   <p-inputMask
     [(ngModel)]="phoneNumber.phoneNumber"
     name="phone"
@@ -12,8 +12,8 @@
                    [filterType]="phoneNumber"/>
 </div>
 
-<div class="input-group">
-  <span class="input-label">SSN:</span>
+<div class="prb-input-group">
+  <span class="prb-input-label">SSN:</span>
   <p-inputMask
     [(ngModel)]="ssn"
     name="ssn"
@@ -24,8 +24,8 @@
   <prb-input-error [filterType]="ssn"></prb-input-error>
 </div>
 
-<div class="input-group">
-  <label for="vin" class="input-label">VIN: </label>
+<div class="prb-input-group">
+  <label for="vin" class="prb-input-label">VIN: </label>
   <input type="text"
          pInputText
          [(ngModel)]="vin.vin"
@@ -39,8 +39,8 @@
   <prb-input-error [filterType]="vin"></prb-input-error>
 </div>
 
-<div class="input-group">
-  <label for="email" class="input-label">Email: </label>
+<div class="prb-input-group">
+  <label for="email" class="prb-input-label">Email: </label>
   <input type="text"
          pInputText
          [(ngModel)]="email.email"
@@ -55,7 +55,7 @@
 </div>
 
 @if (isDebugMode()) {
-  <div class="filter-debug-output-container">
+  <div class="prb-filter-debug-output-container">
     <prb-debug-output-card
       [variableName]="'phoneNumber'"
       [flat]="true"

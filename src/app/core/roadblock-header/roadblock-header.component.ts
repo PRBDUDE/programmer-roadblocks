@@ -39,12 +39,12 @@ export class RoadblockHeaderComponent implements OnInit {
 
   toggleDarkMode() {
     const element = document.querySelector('html');
-    element?.classList.toggle('dark-theme');
+    element?.classList.toggle('prb-dark-theme');
   }
 
   isDarkMode() {
     const element = document.querySelector('html');
-    return element?.classList.contains('dark-theme');
+    return element?.classList.contains('prb-dark-theme');
   }
 
   toggleDebugMode() {
