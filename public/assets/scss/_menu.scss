@@ -1,19 +1,18 @@
 :root {
-  --title-color: var(--p-red-600);
-  --header-background-color: var(--p-neutral-200);
-  --header-drop-shadow-color: var(--p-slate-400);
-  --header-text-drop-shadow-color: var(--p-red-700);
-  --header-logo-shadow-color-100: var(--p-red-700);
-  --header-logo-shadow-color-50: var(--p-red-800);
+  --prb-title-color: var(--p-red-600);
+  --prb-header-background-color: var(--p-neutral-200);
+  --prb-header-drop-shadow-color: var(--p-slate-400);
+  --prb-header-text-drop-shadow-color: var(--p-red-700);
+  --prb-header-logo-shadow-color-100: var(--p-red-700);
+  --prb-header-logo-shadow-color-50: var(--p-red-800);
 }
 
 :root[class*="dark-theme"] {
-  --title-color: var(--p-red-700);
-  --header-background-color: var(--p-neutral-400);
-  --header-drop-shadow-color: var(--p-slate-400);
-  --header-text-drop-shadow-color: var(--p-red-400);
-  --header-logo-shadow-color-100: var(--p-red-500);
-  --header-logo-shadow-color-50: var(--p-red-100);
+  --prb-title-color: var(--p-red-700);
+  --prb-header-background-color: var(--p-neutral-400);
+  --prb-header-text-drop-shadow-color: var(--p-red-400);
+  --prb-header-logo-shadow-color-100: var(--p-red-500);
+  --prb-header-logo-shadow-color-50: var(--p-red-100);
 }
 
 @layer primeng {
@@ -39,5 +38,9 @@
         }
       }
     }
+  }
+
+  .p-megamenu-overlay {
+    z-index: 10000 !important;
   }
 }
