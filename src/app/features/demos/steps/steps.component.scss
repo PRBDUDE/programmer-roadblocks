@@ -1,0 +1,61 @@
+.prb-options-container {
+  min-height: 3em;
+  width: fit-content;
+  margin: 1em auto;
+
+  .prb-options-label {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--prb-options-label-color);
+
+    .prb-options-label-text {
+      margin-right: 0.5em;
+    }
+  }
+}
+
+.prb-steps-container {
+  max-width: var(--prb-step-container-max-width);
+  margin: var(--prb-step-container-margin);
+
+  .prb-step-content {
+    width: var(--prb-step-content-width);
+    min-height: var(--prb-step-content-min-height);
+    font-size: var(--prb-step-content-text-font-size);
+    color: var(--prb-step-content-text-color);
+    background-color: var(--prb-step-content-background-color);
+    border-radius: var(--prb-step-content-border-radius);
+    border: var(--prb-step-content-border);
+    padding: var(--prb-step-content-padding);
+    margin: var(--prb-step-content-margin);
+  }
+
+  .prb-button-container {
+    display: flex;
+    justify-content: space-between;
+
+    .prb-prev-button {}
+    .prb-next-button {}
+  }
+}
+
+.prb-step-component {
+  .prb-step-label {
+    position: relative;
+    top: var(--prb-step-label-top);
+    width: fit-content;
+    padding: var(--prb-step-label-padding);
+    border-radius: var(--prb-step-label-border-radius);
+    border: var(--prb-step-label-border);
+    outline: var(--prb-step-label-outline);
+    color: var(--prb-step-label-color);
+    background-color: var(--prb-step-label-background-color);
+    font-size: var(--prb-step-label-font-size);
+    font-weight: var(--prb-step-label-font-weight);
+    margin: var(--prb-step-label-margin);
+    letter-spacing: var(--prb-step-label-letter-spacing);
+  }
+}
