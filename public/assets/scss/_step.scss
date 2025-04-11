@@ -1,0 +1,42 @@
+:root {
+  --prb-step-container-max-width: 800px;
+  --prb-step-container-margin: 0 auto;
+
+  --prb-step-content-background-color: var(--p-surface-200);
+  --prb-step-content-border-color: var(--p-surface-700);
+  --prb-step-content-text-color: var(--p-surface-800);
+  --prb-step-content-border: 1px solid var(--prb-step-content-border-color);
+  --prb-step-content-width: 100%;
+  --prb-step-content-min-height: 200px;
+  --prb-step-content-border-radius: 10px;
+  --prb-step-content-padding: 16px;
+  --prb-step-content-margin: 30px 0 20px 0;
+  --prb-step-content-text-font-size: 10pt;
+
+  --prb-step-label-background-color: var(--p-surface-100);
+  --prb-step-label-top: -30px;
+  --prb-step-label-padding: 3px 8px;
+  --prb-step-label-border-radius: 10px;
+  --prb-step-label-border: 1px solid var(--prb-step-content-border-color);
+  --prb-step-label-outline: 2px solid var(--prb-step-content-border-color);
+
+  --prb-step-label-color: var(--p-primary-500);
+  --prb-step-label-font-size: 14pt;
+  --prb-step-label-font-weight: 700;
+  --prb-step-label-margin: 0 0 10px 0;
+  --prb-step-label-letter-spacing: 0.05em;
+}
+
+:root[class*="prb-dark-theme"] {
+  --prb-step-content-background-color: var(--p-surface-700);
+  --prb-step-content-border-color: var(--p-surface-400);
+  --prb-step-content-text-color: var(--p-surface-100);
+
+  --prb-step-label-background-color: var(--p-surface-700);
+}
+
+@layer primeng {
+  .p-step-title {
+    font-size: 12pt;
+  }
+}
