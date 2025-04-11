@@ -1,15 +1,24 @@
 :root {
-  --debug-background-color: var(--p-stone-200);
-  --debug-text-color: var(--p-surface-950);
-  --debug-border-color: var(--p-surface-600);
-  --debug-header-background-color: var(--p-surface-300);
-  --debug-variable-background-color: var(--p-surface-200);
+  --prb-debug-background-color: var(--p-stone-200);
+  --prb-debug-text-color: var(--p-surface-950);
+  --prb-debug-border-color: var(--p-surface-600);
+  --prb-debug-header-background-color: var(--p-surface-300);
+  --prb-debug-variable-background-color: var(--p-surface-200);
+  --prb-debug-type-color: var(--p-surface-900);
+  --prb-debug-type-font-size: 0.7em;
+  --prb-debug-type-margin: 0.2em 0 0 0;
+  --prb-debug-value-font-size: 0.7em;
+  --prb-debug-content-margin: 0.5em 0;
+  --prb-debug-variable-name-label-color: var(--p-surface-900);
+  --prb-debug-variable-name-label-font-weight: 900;
 }
 
 :root[class*="prb-dark-theme"] {
-  --debug-background-color: var(--p-surface-700);
-  --debug-text-color: var(--p-surface-100);
-  --debug-border-color: var(--p-surface-100);
-  --debug-header-background-color: var(--p-surface-800);
-  --debug-variable-background-color: var(--p-surface-900);
+  --prb-debug-background-color: var(--p-surface-700);
+  --prb-debug-text-color: var(--p-surface-100);
+  --prb-debug-border-color: var(--p-surface-100);
+  --prb-debug-header-background-color: var(--p-surface-800);
+  --prb-debug-variable-background-color: var(--p-surface-900);
+  --prb-debug-type-color: var(--p-primary-400);
+  --prb-debug-variable-name-label-color: var(--p-surface-300);
 }
