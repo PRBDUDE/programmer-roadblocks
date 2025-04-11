@@ -1,6 +1,7 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { StepsComponent } from './steps.component';
+import {StepsComponent} from './steps.component';
+import {ActivatedRoute, convertToParamMap} from "@angular/router";
 
 describe('StepsComponent', () => {
   let component: StepsComponent;
@@ -8,10 +9,23 @@ describe('StepsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [StepsComponent]
-    })
-    .compileComponents();
+      imports: [
+        StepsComponent
+      ],
+      providers: [
+        {
+          provide: ActivatedRoute,
+          useValue: {
+            snapshot: {
+              paramMap: convertToParamMap({id: 123})
+            }
+          }
+        }
+      ]
+    }).compileComponents();
+  });
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(StepsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
