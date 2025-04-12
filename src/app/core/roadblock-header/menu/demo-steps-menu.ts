@@ -3,7 +3,7 @@ export function demoStepsMenu() {
     label: 'Steps',
     items: [
       {
-        label: 'Demo Steps',
+        label: 'Steps',
         subtext: 'Demo Steps',
         route: '/demo/steps',
       }

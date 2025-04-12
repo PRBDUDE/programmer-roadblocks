@@ -3,7 +3,7 @@ export function demoStepperMenu() {
     label: 'Stepper',
     items: [
       {
-        label: 'Demo Stepper',
+        label: 'Stepper',
         subtext: 'Demo Stepper',
         route: '/demo/stepper',
       }
