@@ -1,11 +1,11 @@
 <div class="prb-options-container">
   <div class="prb-options-label">
-    <span class="prb-options-label-text">Toggle switch to change the raised state of the buttons</span>
+    <span class="prb-options-label-text">Toggle switch to change the inline mode:</span>
     <p-toggle-switch [(ngModel)]="inline"></p-toggle-switch>
     @if (inline()) {
       <span class="prb-options-inline-mode">(Inline)</span>
     } @else {
-      <span class="prb-options-inline-mode">(Injected Component)</span>
+      <span class="prb-options-inline-mode">(Injected)</span>
     }
   </div>
 </div>
