@@ -7,11 +7,11 @@
   [(showCardWithDetails)]="showCardWithDetails">
 </prb-timeline-options>
 
-<div class="vertical-timeline-group">
+<div class="prb-vertical-timeline-group">
   @if (showMinimal()) {
-    <div class="vertical-timeline-item">
+    <div class="prb-vertical-timeline-item">
       <h2>Show Minimal</h2>
-      <div class="vertical-timeline-content">
+      <div class="prb-vertical-timeline-content">
         <p-timeline [value]="timelineItems()" align="{{selectedAlignmentItem()}}">
           <ng-template #content let-event>
             {{ event.status }}
@@ -21,12 +21,12 @@
     </div>
   }
   @if (showAddIcon()) {
-    <div class="vertical-timeline-item">
+    <div class="prb-vertical-timeline-item">
       <h2>Show Icon</h2>
-      <div class="vertical-timeline-content">
+      <div class="prb-vertical-timeline-content">
         <p-timeline [value]="timelineItems()" align="{{selectedAlignmentItem()}}">
           <ng-template #marker let-event>
-            <div class="tl-marker"
+            <div class="prb-tl-marker"
                  [ngClass]="getEventClass(event)">
               <i class="{{getIcon(event)}}"></i>
             </div>
@@ -39,12 +39,12 @@
     </div>
   }
   @if (showAddDateTime()) {
-    <div class="vertical-timeline-item">
+    <div class="prb-vertical-timeline-item">
       <h2>Show Date/Time</h2>
-      <div class="vertical-timeline-content">
+      <div class="prb-vertical-timeline-content">
         <p-timeline [value]="timelineItems()" align="{{selectedAlignmentItem()}}">
           <ng-template #marker let-event>
-            <div class="tl-marker"
+            <div class="prb-tl-marker"
                  [ngClass]="getEventClass(event)">
               <i class="{{getIcon(event)}}"></i>
             </div>
@@ -53,10 +53,10 @@
             {{ event.status }}
           </ng-template>
           <ng-template #opposite let-event>
-            <div class="tl-date">
+            <div class="prb-tl-date">
               {{ event.date | date:'longDate' }}
             </div>
-            <div class="tl-time">
+            <div class="prb-tl-time">
               {{ event.date | date:'hh:mm:ss.SSS a' }}
             </div>
           </ng-template>
@@ -65,12 +65,12 @@
     </div>
   }
   @if (showCardWithDetails()) {
-    <div class="vertical-timeline-item">
+    <div class="prb-vertical-timeline-item">
       <h2>Show Card with Description</h2>
-      <div class="vertical-timeline-content">
+      <div class="prb-vertical-timeline-content">
         <p-timeline [value]="timelineItems()" align="{{selectedAlignmentItem()}}">
           <ng-template #marker let-event>
-            <div class="tl-marker"
+            <div class="prb-tl-marker"
                  [ngClass]="getEventClass(event)">
               <i class="{{getIcon(event)}}"></i>
             </div>
@@ -78,7 +78,7 @@
           <ng-template #content let-event>
             <p-card>
               <ng-template #header>
-                <div class="card-top" [ngClass]="getEventClass(event)">
+                <div class="prb-card-top" [ngClass]="getEventClass(event)">
                   {{ event.status }}
                 </div>
               </ng-template>
@@ -88,10 +88,10 @@
             </p-card>
           </ng-template>
           <ng-template #opposite let-event>
-            <div class="tl-date">
+            <div class="prb-tl-date">
               {{ event.date | date:'longDate' }}
             </div>
-            <div class="tl-time">
+            <div class="prb-tl-time">
               {{ event.date | date:'hh:mm:ss.SSS a' }}
             </div>
           </ng-template>

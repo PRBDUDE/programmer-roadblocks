@@ -13,19 +13,19 @@ export class TimelineCore {
 
   getEventClass(event: TimelineEventItem): string {
     if (event.status === 'Initiate Transmission') {
-      return 'tl-initiate';
+      return 'prb-tl-initiate';
     } else if (event.status === 'Transmitting Packets') {
-      return 'tl-transmitting';
+      return 'prb-tl-transmitting';
     } else if (event.status === 'Verify Checksum') {
-      return 'tl-checksum';
+      return 'prb-tl-checksum';
     } else if (event.status === 'End Transmission') {
-      return 'tl-complete';
+      return 'prb-tl-complete';
     } else if (event.status === 'Warning') {
-      return 'tl-warning';
+      return 'prb-tl-warning';
     } else if (event.status === 'Error') {
-      return 'tl-error';
+      return 'prb-tl-error';
     }
-    return 'tl-unknown';
+    return 'prb-tl-unknown';
   }
 
   getIcon(event: TimelineEventItem): string {

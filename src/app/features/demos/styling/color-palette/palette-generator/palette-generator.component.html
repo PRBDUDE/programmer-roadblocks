@@ -1,6 +1,6 @@
-<div class="palette-generator-container">
-  <div class="input-group">
-    <label for="color-palette-input">Color Code: <span class="color-name">{{ colorName }}</span></label>
+<div class="prb-palette-generator-container">
+  <div class="prb-input-group">
+    <label for="color-palette-input">Color Code: <span class="prb-color-name">{{ colorName }}</span></label>
     <input type="color" [(ngModel)]="baseColor"/>
     <input
       type="text"
@@ -22,9 +22,9 @@
     </ng-template>
     <ng-template #body let-shade>
       <tr>
-        <td class="center-cell">{{ shade }}</td>
+        <td class="prb-center-cell">{{ shade }}</td>
         <td [style.background-color]="colorValues[shade]"></td>
-        <td class="center-cell">{{ colorValues[shade] }}</td>
+        <td class="prb-center-cell">{{ colorValues[shade] }}</td>
       </tr>
     </ng-template>
   </p-table>

@@ -1,4 +1,4 @@
-.input-group {
+.prb-input-group {
   position: relative;
   top: 20px;
   left: 20px;
@@ -7,7 +7,7 @@
   font-size: 1em;
   width: fit-content;
 
-  .input-label {
+  .prb-input-label {
     display: block;
     font-weight: bold;
     font-size: inherit;
@@ -19,7 +19,7 @@
   }
 }
 
-.filter-debug-output-container {
+.prb-filter-debug-output-container {
   position: absolute;
   top: 100px;
   right: 0;

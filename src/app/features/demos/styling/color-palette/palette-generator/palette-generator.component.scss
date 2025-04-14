@@ -1,4 +1,4 @@
-.palette-generator-container {
+.prb-palette-generator-container {
   padding: 0.2em;
   font-size: 0.9em;
 
@@ -6,7 +6,7 @@
     font-size: 1.1em;
   }
 
-  .input-group {
+  .prb-input-group {
     position: relative;
     font-family: "Comic Sans MS", serif;
     margin-bottom: 0.6em;
@@ -19,7 +19,7 @@
       font-size: inherit;
       margin-bottom: 5px;
 
-      .color-name {
+      .prb-color-name {
         font-family: "Book Antiqua", serif;
       }
     }
@@ -45,18 +45,18 @@
     }
   }
 
-  .color-palette-button {
+  .prb-color-palette-button {
     position: relative;
   }
 
-  .palette-container {
+  .prb-palette-container {
     position: relative;
   }
 
-  .palette-cell {
+  .prb-palette-cell {
     color: var(--p-surface-950);
 
-    .color-swatch {
+    .prb-color-swatch {
       min-width: 50px;
       height: 20px;
       margin-right: 10px;
@@ -75,7 +75,7 @@
     td {
       padding: 0.2em 0.4em;
 
-      &.center-cell {
+      &.prb-center-cell {
         text-align: center;
       }
     }

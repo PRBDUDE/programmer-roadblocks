@@ -1,0 +1,74 @@
+.prb-options-container {
+  min-height: 3em;
+  width: fit-content;
+  margin: 1em auto;
+
+  &.prb-options-center {
+    margin: 0 auto;
+  }
+
+  .prb-options-label {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--prb-options-label-color);
+
+    .prb-options-label-text {
+      margin-right: 0.5em;
+    }
+
+    .prb-options-inline-mode {
+      margin-left: 0.5em;
+      font-size: 0.8em;
+      font-weight: normal;
+    }
+  }
+}
+
+.prb-stepper-container {
+  max-width: var(--prb-stepper-container-max-width);
+  margin: var(--prb-stepper-container-margin);
+
+  .prb-stepper-content {
+    width: var(--prb-stepper-content-width);
+    min-height: var(--prb-stepper-content-min-height);
+    border: var(--prb-stepper-content-border);
+    background-color: var(--prb-stepper-content-background-color);
+    border-radius: var(--prb-stepper-content-border-radius);
+    padding: var(--prb-stepper-content-padding);
+    margin: var(--prb-stepper-content-margin);
+
+    .prb-stepper-label-tag {
+      position: relative;
+      margin: var(--prb-stepper-label-margin);
+      top: var(--prb-stepper-label-top);
+      width: fit-content;
+      padding: var(--prb-stepper-label-padding);
+      border-radius: var(--prb-stepper-label-border-radius);
+      border: var(--prb-stepper-label-border);
+      outline: var(--prb-stepper-label-outline);
+      background-color: var(--prb-stepper-label-background-color);
+      color: var(--prb-stepper-label-text-color);
+      font-size: var(--prb-stepper-label-font-size);
+      font-weight: var(--prb-stepper-label-font-weight);
+      letter-spacing: var(--prb-stepper-label-letter-spacing);
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .prb-button-container {
+    display: flex;
+    justify-content: space-between;
+
+    .prb-previous-button {
+    }
+
+    .prb-next-button {
+    }
+  }
+}

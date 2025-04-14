@@ -1,31 +1,50 @@
 @if (!isProduction()) {
   <div [attr.id]="debugOutputId"
        [ngClass]="{'flat': flat()}"
-       class="debug-output-container">
+       class="prb-debug-output-container">
     @if (title()) {
-      <div class="debug-header">{{ title() }}</div>
+      <div class="prb-debug-header">{{ title() }}</div>
     }
     @if (variableName()) {
-      <div class="debug-variable-name-container">
-        <span class="debug-variable-name-label">Variable:&nbsp;</span>
-        <span class="debug-variable-name">{{ variableName() }}</span>
+      <div class="prb-debug-variable-name-container">
+        <span class="prb-debug-variable-name-label">Variable:&nbsp;</span>
+        <span class="prb-debug-variable-name">{{ variableName() }}</span>
       </div>
     }
-    <div class="debug-content">
-      @if (isJson()) {
-        <pre>{{ jsonValue() | json }}</pre>
-      }
+    <div class="prb-debug-content">
       @if (isString()) {
-        {{ this.stringValue() }}
-      }
-      @if (isNumber()) {
-        {{ this.numberValue() }}
-      }
-      @if (isBoolean()) {
-        {{ this.booleanValue() }}
-      }
-      @if (isRegex()) {
-        {{ this.regexValue() }}
+        <div class="prb-debug-type">
+          &lt;string&gt;
+        </div>
+        <div class="prb-debug-value">
+          {{ this.stringValue() }}
+        </div>
+      } @else if (isNumber()) {
+        <div class="prb-debug-type">
+          &lt;number&gt;
+        </div>
+        <div class="prb-debug-value">
+          {{ this.numberValue() }}
+        </div>
+      } @else if (isBoolean()) {
+        <div class="prb-debug-type">
+          &lt;boolean&gt;
+        </div>
+        <div class="prb-debug-value">
+          {{ this.booleanValue() }}
+        </div>
+      } @else if (isJson()) {
+        <div class="prb-debug-type">
+          &lt;JSON&gt;
+        </div>
+        <pre>{{ jsonValue() | json }}</pre>
+      } @else if (isRegex()) {
+        <div class="prb-debug-type">
+          &lt;RegExp&gt;
+        </div>
+        <div class="prb-debug-value">
+          {{ this.regexValue() }}
+        </div>
       }
     </div>
   </div>

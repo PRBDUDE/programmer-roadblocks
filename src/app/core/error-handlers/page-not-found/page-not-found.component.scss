@@ -1,21 +1,21 @@
-.not-found-container {
+.prb-not-found-container {
   position: relative;
-  width: var(--page-not-found-width);
-  min-width: var(--page-not-found-min-width);
-  margin: var(--page-not-found-margin);
-  padding: var(--page-not-found-padding);
+  width: var(--prb-page-not-found-width);
+  min-width: var(--prb-page-not-found-min-width);
+  margin: var(--prb-page-not-found-margin);
+  padding: var(--prb-page-not-found-padding);
   text-align: center;
-  background-color: var(--page-not-found-background-color);
-  border-radius: var(--page-not-found-border-radius);
-  box-shadow: var(--page-not-found-shadow);
+  background-color: var(--prb-page-not-found-background-color);
+  border-radius: var(--prb-page-not-found-border-radius);
+  box-shadow: var(--prb-page-not-found-shadow);
 
   h1 {
-    color: var(--page-not-found-text-color);
+    color: var(--prb-page-not-found-text-color);
   }
 
   p {
-    color: var(--page-not-found-text-color);
-    font-size: var(--page-not-found-font-size);
+    color: var(--prb-page-not-found-text-color);
+    font-size: var(--prb-page-not-found-font-size);
   }
 }
 

@@ -3,7 +3,7 @@ export function demoTooltipMenu() {
     label: 'Tooltip',
     items: [
       {
-        label: 'Demo Tooltip',
+        label: 'Tooltip',
         subtext: 'Demo Tooltip',
         route: '/demo/tooltip',
       }

@@ -1,16 +1,16 @@
-<div class="header-banner">
-  <div class="header-text">
-    <span class="roadblocks-text">Programmer</span>
+<div class="prb-header-banner">
+  <div class="prb-header-text">
+    <span class="prb-roadblocks-text">Programmer</span>
     <img ngSrc="/assets/images/roadblocks-logo.png"
          alt="Roadblocks Logo"
-         class="roadblocks-logo"
+         class="prb-roadblocks-logo"
          height="45"
          width="43"/>
-    <span class="roadblocks-text">Roadblocks</span>
+    <span class="prb-roadblocks-text">Roadblocks</span>
   </div>
-  <div class="header-menu">
+  <div class="prb-header-menu">
     <p-megaMenu [model]="menuItems" orientation="horizontal"
-                styleClass="mega-menu">
+                styleClass="prb-mega-menu">
       <ng-template pTemplate="item" let-item>
         @if (item.root) {
           <div>{{ item.label }}</div>
@@ -24,7 +24,7 @@
       </ng-template>
     </p-megaMenu>
   </div>
-  <div class="header-options">
+  <div class="prb-header-options">
     @if (!isProduction()) {
       @if (!isDebugMode()) {
         <p-button icon="fa fa-bug"

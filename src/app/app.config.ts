@@ -14,7 +14,7 @@ export const appConfig: ApplicationConfig = {
       theme: {
         preset: CyanAuraPreset,
         options: {
-          darkModeSelector: '.dark-theme'
+          darkModeSelector: '.prb-dark-theme'
         }
       },
       ripple: true

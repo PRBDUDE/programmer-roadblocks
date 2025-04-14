@@ -1,44 +1,44 @@
 :root {
-  --timeline-color-initiate: #eeeeee;
-  --timeline-background-color-initiate: #007bff;
+  --prb-timeline-color-initiate: #eeeeee;
+  --prb-timeline-background-color-initiate: #007bff;
 
-  --timeline-color-transmitting: #eeeeee;
-  --timeline-background-color-transmitting: #0633c7;
+  --prb-timeline-color-transmitting: #eeeeee;
+  --prb-timeline-background-color-transmitting: #0633c7;
 
-  --timeline-color-checksum: #303030;
-  --timeline-background-color-checksum: #04b404;
+  --prb-timeline-color-checksum: #303030;
+  --prb-timeline-background-color-checksum: #04b404;
 
-  --timeline-color-final: #303030;
-  --timeline-background-color-final: #04b404;
+  --prb-timeline-color-final: #303030;
+  --prb-timeline-background-color-final: #04b404;
 
-  --timeline-color-warning: #303030;
-  --timeline-background-color-warning: #f1ed1f;
+  --prb-timeline-color-warning: #303030;
+  --prb-timeline-background-color-warning: #f1ed1f;
 
-  --timeline-color-error: #f8f8f8;
-  --timeline-background-color-error: #fc1148;
+  --prb-timeline-color-error: #f8f8f8;
+  --prb-timeline-background-color-error: #fc1148;
 
-  --timeline-color-unknown: #fcfcfc;
-  --timeline-background-color-unknown: #e511fc;
+  --prb-timeline-color-unknown: #fcfcfc;
+  --prb-timeline-background-color-unknown: #e511fc;
 
-  --timeline-group-border-color: #575757;
-  --timeline-group-header-background-color: #8c8c8c;
-  --timeline-group-header-text-color: white;
+  --prb-timeline-group-border-color: #575757;
+  --prb-timeline-group-header-background-color: #8c8c8c;
+  --prb-timeline-group-header-text-color: white;
 
-  --timeline-horizontal-height: 3rem;
+  --prb-timeline-horizontal-height: 3rem;
 }
 
-:root[class*="dark-theme"] {
-  --timeline-color-initiate: #dddddd;
+:root[class*="prb-dark-theme"] {
+  --prb-timeline-color-initiate: #dddddd;
 
-  --timeline-color-transmitting: #dddddd;
+  --prb-timeline-color-transmitting: #dddddd;
 
-  --timeline-color-checksum: #dddddd;
+  --prb-timeline-color-checksum: #dddddd;
 
-  --timeline-color-final: #dddddd;
+  --prb-timeline-color-final: #dddddd;
 
-  --timeline-group-border-color: #dddddd;
-  --timeline-group-header-background-color: #dddddd;
-  --timeline-group-header-text-color: black;
+  --prb-timeline-group-border-color: #dddddd;
+  --prb-timeline-group-header-background-color: #dddddd;
+  --prb-timeline-group-header-text-color: black;
 }
 
 .p-timeline.p-timeline-alternate.p-timeline-horizontal {

@@ -19,18 +19,18 @@ export class DebugOutputCardComponent {
 
   title = input<string>();
   /* eslint-disable-next-line @angular-eslint/no-input-rename */
-  jsonValue = input<object>(undefined, {alias: 'json'});
-  stringValue = input<string>();
-  numberValue = input<number>();
-  booleanValue = input<boolean>();
-  regexValue = input<RegExp>();
-  variableName = input<string>();
+  jsonValue = input<object | undefined>(undefined, {alias: 'json'});
+  stringValue = input<string | undefined>();
+  numberValue = input<number | undefined>();
+  booleanValue = input<boolean | undefined>();
+  regexValue = input<RegExp | undefined>();
+  variableName = input<string | undefined>();
   flat = input<boolean>(false);
 
   debugOutputId = `debug_output_${uniqueId++}`;
 
   isJson(): boolean {
-    return this.jsonValue !== undefined;
+    return this.jsonValue() !== undefined;
   }
 
   isString(): boolean {
@@ -38,7 +38,7 @@ export class DebugOutputCardComponent {
   }
 
   isNumber(): boolean {
-    return this.numberValue !== undefined;
+    return this.numberValue() !== undefined;
   }
 
   isBoolean(): boolean {
@@ -46,6 +46,6 @@ export class DebugOutputCardComponent {
   }
 
   isRegex(): boolean {
-    return this.regexValue !== undefined;
+    return this.regexValue() !== undefined;
   }
 }

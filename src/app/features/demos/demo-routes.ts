@@ -44,6 +44,18 @@ export const demo_routes: Routes = [
     title: 'Horizontal Timeline'
   },
   {
+    path: 'stepper',
+    loadComponent: () => import('./stepper/stepper.component')
+      .then(m => m.StepperComponent),
+    title: 'Stepper'
+  },
+  {
+    path: 'steps',
+    loadComponent: () => import('./steps/steps.component')
+      .then(m => m.StepsComponent),
+    title: 'Steps'
+  },
+  {
     path: 'tooltip',
     loadComponent: () => import('./tooltip/tooltip.component')
       .then(m => m.TooltipComponent),

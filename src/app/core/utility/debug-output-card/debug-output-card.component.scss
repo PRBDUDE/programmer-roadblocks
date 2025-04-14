@@ -1,53 +1,63 @@
-.debug-output-container {
+.prb-debug-output-container {
   //position: absolute;
   //top: 100px;
   //right: 500px;
   width: fit-content;
   min-width: 200px;
   line-height: var(--debug-line-height);
-  background: var(--debug-background-color);
-  border: 1px solid var(--debug-border-color);
+  background: var(--prb-debug-background-color);
+  border: 1px solid var(--prb-debug-border-color);
 
   &:not(.flat) {
     border-radius: var(--debug-border-radius);
     box-shadow: var(--debug-box-shadow);
   }
 
-  .debug-header {
+  .prb-debug-header {
     font-size: 1.2em;
     padding: var(--debug-header-padding);
     text-align: center;
-    background-color: var(--debug-header-background-color);
+    background-color: var(--prb-debug-header-background-color);
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
-    border-bottom: 2px solid var(--debug-border-color);
+    border-bottom: 2px solid var(--prb-debug-border-color);
   }
 
-  .debug-variable-name-container {
+  .prb-debug-variable-name-container {
     padding: var(--debug-variable-padding);
-    border-bottom: 1px solid var(--debug-border-color);
+    border-bottom: 1px solid var(--prb-debug-border-color);
     font-size: 0.6em;
-    background-color: var(--debug-variable-background-color);
+    background-color: var(--prb-debug-variable-background-color);
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
 
-    .debug-variable-name-label {
+    .prb-debug-variable-name-label {
       letter-spacing: unset;
+      color: var(--prb-debug-variable-name-label-color);
+      font-weight: var(--prb-debug-variable-name-label-font-weight);
     }
 
-    .debug-variable-name {
+    .prb-debug-variable-name {
       font-weight: bold;
     }
   }
 
-  .debug-content {
+  .prb-debug-content {
     padding: var(--debug-content-padding);
     overflow-y: auto;
     letter-spacing: var(--debug-letter-spacing);
+    margin: var(--prb-debug-content-margin);
 
-    pre, span {
-      font-size: 0.8em;
-      color: var(--debug-text-color);
+    pre,
+    .prb-debug-value {
+      font-size: var(--prb-debug-value-font-size);
+      color: var(--prb-debug-text-color);
+    }
+
+    .prb-debug-type {
+      margin: var(--prb-debug-type-margin);
+      font-size: var(--prb-debug-type-font-size);
+      color: var(--prb-debug-type-color);
     }
   }
 }

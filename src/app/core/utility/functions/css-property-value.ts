@@ -30,19 +30,19 @@ export function cssPropertyValue(value: string): string {
       const functionEnd = propValue.slice(propValue.lastIndexOf(')'));
       retValue.push(`<span class="property-function">${functionName}</span>(${cssPropertyValue(args)}${functionEnd}`);
     } else if (propertyPercentageRegex.test(propValue)) {
-      retValue.push(propValue.replace(propertyPercentageRegex, '<span class="property-number">$1</span><span class="property-percentage-unit">$2</span>'));
+      retValue.push(propValue.replace(propertyPercentageRegex, '<span class="prb-property-number">$1</span><span class="property-percentage-unit">$2</span>'));
     } else if (propertyHexColorRegex.test(propValue)) {
-      retValue.push(propValue.replace(propertyHexColorRegex, '<span class="property-number">$1</span>'));
+      retValue.push(propValue.replace(propertyHexColorRegex, '<span class="prb-property-number">$1</span>'));
     } else if (propertyNumberUnitRegex.test(propValue)) {
-      retValue.push(propValue.replace(propertyNumberUnitRegex, '<span class="property-number">$1</span><span class="property-unit">$2</span>'));
+      retValue.push(propValue.replace(propertyNumberUnitRegex, '<span class="prb-property-number">$1</span><span class="prb-property-unit">$2</span>'));
     } else if (propertyNumberRegex.test(propValue)) {
-      retValue.push(propValue.replace(propertyNumberRegex, '<span class="property-number">$1</span>'));
+      retValue.push(propValue.replace(propertyNumberRegex, '<span class="prb-property-number">$1</span>'));
     } else if (propertyNumberCommaRegex.test(propValue)) {
-      retValue.push(propValue.replace(propertyNumberCommaRegex, '<span class="property-number">$1</span>$2'));
+      retValue.push(propValue.replace(propertyNumberCommaRegex, '<span class="prb-property-number">$1</span>$2'));
     } else if (propertyWordQuoteRegex.test(propValue)) {
-      retValue.push(propValue.replace(propertyWordQuoteRegex, '<span class="property-value">$1</span>'));
+      retValue.push(propValue.replace(propertyWordQuoteRegex, '<span class="prb-property-value">$1</span>'));
     } else if (propertyWordRegex.test(propValue)) {
-      retValue.push(propValue.replace(propertyWordRegex, '<span class="property-value">$1</span>'));
+      retValue.push(propValue.replace(propertyWordRegex, '<span class="prb-property-value">$1</span>'));
     } else if (propertySignRegex.test(propValue)) {
       retValue.push(propValue.replace(propertySignRegex, '$1'));
     }

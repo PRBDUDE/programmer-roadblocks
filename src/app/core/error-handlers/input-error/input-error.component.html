@@ -1,11 +1,11 @@
 @if (filterType?.isInvalid()) {
-  <div class="invalid-message">
+  <div class="prb-invalid-message">
     @if (title) {
-      <div class="invalid-title">
+      <div class="prb-invalid-title">
         {{ title }}
       </div>
     }
-    <div class="invalid-description">
+    <div class="prb-invalid-description">
       <ul>
         @for (message of filterType?.getErrorMessages(); track message) {
           <li>
