@@ -3,6 +3,10 @@
   width: fit-content;
   margin: 1em auto;
 
+  &.prb-options-center {
+    margin: 0 auto;
+  }
+
   .prb-options-label {
     display: inline-flex;
     align-items: center;
@@ -13,6 +17,12 @@
 
     .prb-options-label-text {
       margin-right: 0.5em;
+    }
+
+    .prb-options-inline-mode {
+      margin-left: 0.5em;
+      font-size: 0.8em;
+      font-weight: normal;
     }
   }
 }
@@ -36,9 +46,13 @@
   .prb-button-container {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 
-    .prb-prev-button {}
-    .prb-next-button {}
+    .prb-prev-button {
+    }
+
+    .prb-next-button {
+    }
   }
 }
 

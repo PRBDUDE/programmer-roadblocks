@@ -2,6 +2,11 @@
   <div class="prb-options-label">
     <span class="prb-options-label-text">Toggle switch to change the raised state of the buttons</span>
     <p-toggle-switch [(ngModel)]="inline"></p-toggle-switch>
+    @if (inline()) {
+      <span class="prb-options-inline-mode">(Inline)</span>
+    } @else {
+      <span class="prb-options-inline-mode">(Injected Component)</span>
+    }
   </div>
 </div>
 
@@ -18,7 +23,7 @@
         <div class="prb-step-component">
           <h3 class="prb-step-label">Step One</h3>
           <p>This is the first step of the demo.</p>
-          <p>Inlined content goes here.</p>
+          <p>This is inlined content.</p>
           lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, sapien vel tincidunt bibendum,
         </div>
       }
@@ -30,7 +35,7 @@
         <div class="prb-step-component">
           <h3 class="prb-step-label">Step Two</h3>
           <p>This is the second step of the demo.</p>
-          <p>Inlined content goes here.</p>
+          <p>This is inlined content.</p>
           lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, sapien vel tincidunt bibendum,
         </div>
       }
@@ -42,7 +47,7 @@
         <div class="prb-step-component">
           <h3 class="prb-step-label">Step Three</h3>
           <p>This is the third step of the demo.</p>
-          <p>Inlined content goes here.</p>
+          <p>This is inlined content.</p>
           lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, sapien vel tincidunt bibendum,
         </div>
       }
@@ -54,7 +59,7 @@
         <div class="prb-step-component">
           <h3 class="prb-step-label">Step Four</h3>
           <p>This is the fourth step of the demo.</p>
-          <p>Inlined content goes here.</p>
+          <p>This is inlined content.</p>
           lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, sapien vel tincidunt bibendum,
         </div>
       }

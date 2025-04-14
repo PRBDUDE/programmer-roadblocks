@@ -3,6 +3,10 @@
   width: fit-content;
   margin: 1em auto;
 
+  &.prb-options-center {
+    margin: 0 auto;
+  }
+
   .prb-options-label {
     display: inline-flex;
     align-items: center;
@@ -17,6 +21,8 @@
 
     .prb-options-inline-mode {
       margin-left: 0.5em;
+      font-size: 0.8em;
+      font-weight: normal;
     }
   }
 }
@@ -26,12 +32,13 @@
   margin: var(--prb-stepper-container-margin);
 
   .prb-stepper-content {
+    width: var(--prb-stepper-content-width);
+    min-height: var(--prb-stepper-content-min-height);
     border: var(--prb-stepper-content-border);
     background-color: var(--prb-stepper-content-background-color);
     border-radius: var(--prb-stepper-content-border-radius);
     padding: var(--prb-stepper-content-padding);
     margin: var(--prb-stepper-content-margin);
-    min-height: var(--prb-stepper-content-min-height);
 
     .prb-stepper-label-tag {
       position: relative;

@@ -3,10 +3,11 @@
     <span class="prb-options-label-text">Toggle switch to change the inline mode:</span>
     <p-toggle-switch [(ngModel)]="inline"></p-toggle-switch>
     @if (inline()) {
-      <span class="prb-options-inline-mode">Inline mode is enabled.</span>
+      <span class="prb-options-inline-mode">(Inline)</span>
     } @else {
-      <span class="prb-options-inline-mode">Inline mode is disabled.</span>
+      <span class="prb-options-inline-mode">(Injected Component)</span>
     }
+  </div>
 </div>
 
 <div class="prb-stepper-container">
