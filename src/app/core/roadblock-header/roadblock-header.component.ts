@@ -49,6 +49,6 @@ export class RoadblockHeaderComponent implements OnInit {
 
   toggleDebugMode() {
     const element = document.querySelector('html');
-    element?.classList.toggle('debug-mode');
+    element?.classList.toggle('prb-debug-mode');
   }
 }

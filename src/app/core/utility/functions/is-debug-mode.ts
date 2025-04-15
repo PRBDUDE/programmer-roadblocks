@@ -3,5 +3,5 @@ export function isDebugMode(): boolean {
   if (!element) {
     return false;
   }
-  return element.classList.contains('debug-mode');
+  return element.classList.contains('prb-debug-mode');
 }
