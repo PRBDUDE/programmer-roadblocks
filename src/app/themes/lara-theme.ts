@@ -1,7 +1,7 @@
 import Lara from "@primeng/themes/lara";
 import {definePreset} from "@primeng/themes";
 
-export const CyanLaraPreset = definePreset(Lara, {
+export const LaraPreset = definePreset(Lara, {
   primitive: {
     borderRadius: {
       none: "0",
@@ -296,6 +296,48 @@ export const CyanLaraPreset = definePreset(Lara, {
       800: "#292524",
       900: "#1c1917",
       950: "#0c0a09"
+    },
+    soho: {
+      0: '#ffffff',
+      50: '#ececec',
+      100: '#dedfdf',
+      200: '#c4c4c6',
+      300: '#adaeb0',
+      400: '#97979b',
+      500: '#7f8084',
+      600: '#6a6b70',
+      700: '#55565b',
+      800: '#3f4046',
+      900: '#2c2c34',
+      950: '#16161d',
+    },
+    viva: {
+      0: '#ffffff',
+      50: '#f3f3f3',
+      100: '#e7e7e8',
+      200: '#cfd0d0',
+      300: '#b7b8b9',
+      400: '#9fa1a1',
+      500: '#87898a',
+      600: '#6e7173',
+      700: '#565a5b',
+      800: '#3e4244',
+      900: '#262b2c',
+      950: '#0e1315',
+    },
+    ocean: {
+      0: '#ffffff',
+      50: '#fbfcfc',
+      100: '#F7F9F8',
+      200: '#EFF3F2',
+      300: '#DADEDD',
+      400: '#B1B7B6',
+      500: '#828787',
+      600: '#5F7274',
+      700: '#415B61',
+      800: '#29444E',
+      900: '#183240',
+      950: '#0c1920',
     }
   },
   semantic: {
@@ -4565,6 +4607,7 @@ export const CyanLaraPreset = definePreset(Lara, {
         background: "{form.field.background}",
         disabledBackground: "{form.field.disabled.background}",
         filledBackground: "{form.field.filled.background}",
+        filledHoverBackground: "{form.field.filled.hover.background}",
         filledFocusBackground: "{form.field.filled.focus.background}",
         borderColor: "{form.field.border.color}",
         hoverBorderColor: "{form.field.hover.border.color}",

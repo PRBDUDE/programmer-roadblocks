@@ -1,7 +1,7 @@
-import Material from "@primeng/themes/material";
+import Aura from "@primeng/themes/aura";
 import {definePreset} from "@primeng/themes";
 
-export const CyanMaterialPreset = definePreset(Material, {
+export const AuraPreset = definePreset(Aura, {
   primitive: {
     borderRadius: {
       none: "0",
@@ -296,15 +296,58 @@ export const CyanMaterialPreset = definePreset(Material, {
       800: "#292524",
       900: "#1c1917",
       950: "#0c0a09"
+    },
+    soho: {
+      0: '#ffffff',
+      50: '#ececec',
+      100: '#dedfdf',
+      200: '#c4c4c6',
+      300: '#adaeb0',
+      400: '#97979b',
+      500: '#7f8084',
+      600: '#6a6b70',
+      700: '#55565b',
+      800: '#3f4046',
+      900: '#2c2c34',
+      950: '#16161d',
+    },
+    viva: {
+      0: '#ffffff',
+      50: '#f3f3f3',
+      100: '#e7e7e8',
+      200: '#cfd0d0',
+      300: '#b7b8b9',
+      400: '#9fa1a1',
+      500: '#87898a',
+      600: '#6e7173',
+      700: '#565a5b',
+      800: '#3e4244',
+      900: '#262b2c',
+      950: '#0e1315',
+    },
+    ocean: {
+      0: '#ffffff',
+      50: '#fbfcfc',
+      100: '#F7F9F8',
+      200: '#EFF3F2',
+      300: '#DADEDD',
+      400: '#B1B7B6',
+      500: '#828787',
+      600: '#5F7274',
+      700: '#415B61',
+      800: '#29444E',
+      900: '#183240',
+      950: '#0c1920',
     }
   },
   semantic: {
     transitionDuration: "0.2s",
     focusRing: {
-      width: "0",
-      style: "none",
-      color: "transparent",
-      offset: "0"
+      width: "1px",
+      style: "solid",
+      color: "{primary.color}",
+      offset: "2px",
+      shadow: "none"
     },
     disabledOpacity: "0.6",
     iconSize: "1rem",
@@ -324,39 +367,39 @@ export const CyanMaterialPreset = definePreset(Material, {
     },
     formField: {
       paddingX: "0.75rem",
-      paddingY: "0.625rem",
+      paddingY: "0.5rem",
       sm: {
         fontSize: "0.875rem",
         paddingX: "0.625rem",
-        paddingY: "0.5rem"
+        paddingY: "0.375rem"
       },
       lg: {
         fontSize: "1.125rem",
         paddingX: "0.875rem",
-        paddingY: "0.75rem"
+        paddingY: "0.625rem"
       },
       borderRadius: "{border.radius.md}",
       focusRing: {
-        width: "{focus.ring.width}",
-        style: "{focus.ring.style}",
-        color: "{focus.ring.color}",
-        offset: "{focus.ring.offset}",
-        shadow: "{focus.ring.shadow}"
+        width: "0",
+        style: "none",
+        color: "transparent",
+        offset: "0",
+        shadow: "none"
       },
       transitionDuration: "{transition.duration}"
     },
     list: {
-      padding: "0.5rem 0",
-      gap: "0",
+      padding: "0.25rem 0.25rem",
+      gap: "2px",
       header: {
-        padding: "0.625rem 1rem 0 1rem"
+        padding: "0.5rem 1rem 0.25rem 1rem"
       },
       option: {
-        padding: "0.625rem 1rem",
-        borderRadius: "0"
+        padding: "0.5rem 0.75rem",
+        borderRadius: "{border.radius.sm}"
       },
       optionGroup: {
-        padding: "0.625rem 1rem",
+        padding: "0.5rem 0.75rem",
         fontWeight: "600"
       }
     },
@@ -368,19 +411,19 @@ export const CyanMaterialPreset = definePreset(Material, {
     },
     navigation: {
       list: {
-        padding: "0.5rem 0",
+        padding: "0.25rem 0.25rem",
         extend: {
-          // gap: "0"
-          gap: "8px"
+          gap: "10px"
+          // gap: "2px"
         }
       },
       item: {
-        padding: "0.625rem 1rem",
-        borderRadius: "0",
+        padding: "0.5rem 0.75rem",
+        borderRadius: "{border.radius.sm}",
         gap: "0.5rem"
       },
       submenuLabel: {
-        padding: "0.625rem 1rem",
+        padding: "0.5rem 0.75rem",
         fontWeight: "600"
       },
       submenuIcon: {
@@ -390,20 +433,20 @@ export const CyanMaterialPreset = definePreset(Material, {
     overlay: {
       select: {
         borderRadius: "{border.radius.md}",
-        shadow: "0 2px 12px 0 rgba(0, 0, 0, 0.1)"
+        shadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1)"
       },
       popover: {
         borderRadius: "{border.radius.md}",
-        padding: "1rem",
-        shadow: "0 1px 3px rgba(0, 0, 0, 0.1)"
+        padding: "0.75rem",
+        shadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1)"
       },
       modal: {
         borderRadius: "{border.radius.xl}",
-        padding: "1.5rem",
-        shadow: "0 1px 3px rgba(0, 0, 0, 0.3)"
+        padding: "1.25rem",
+        shadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1)"
       },
       navigation: {
-        shadow: "0 2px 12px 0 rgba(0, 0, 0, 0.1)"
+        shadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1)"
       }
     },
     colorScheme: {
@@ -434,9 +477,6 @@ export const CyanMaterialPreset = definePreset(Material, {
           color: "{primary.700}",
           focusColor: "{primary.800}"
         },
-        focusRing: {
-          shadow: "0 0 0 0.2rem {primary.200}"
-        },
         mask: {
           background: "rgba(0,0,0,0.4)",
           color: "{surface.200}"
@@ -446,9 +486,9 @@ export const CyanMaterialPreset = definePreset(Material, {
           disabledBackground: "{surface.200}",
           filledBackground: "{surface.50}",
           filledHoverBackground: "{surface.50}",
-          filledFocusBackground: "{surface.0}",
+          filledFocusBackground: "{surface.50}",
           borderColor: "{surface.300}",
-          hoverBorderColor: "{primary.color}",
+          hoverBorderColor: "{surface.400}",
           focusBorderColor: "{primary.color}",
           invalidBorderColor: "{red.400}",
           color: "{surface.700}",
@@ -459,8 +499,8 @@ export const CyanMaterialPreset = definePreset(Material, {
           floatLabelFocusColor: "{primary.600}",
           floatLabelActiveColor: "{surface.500}",
           floatLabelInvalidColor: "{form.field.invalid.placeholder.color}",
-          iconColor: "{surface.500}",
-          shadow: "none"
+          iconColor: "{surface.400}",
+          shadow: "0 0 #0000, 0 0 #0000, 0 1px 2px 0 rgba(18, 18, 23, 0.05)"
         },
         text: {
           color: "{surface.700}",
@@ -508,7 +548,7 @@ export const CyanMaterialPreset = definePreset(Material, {
           },
           optionGroup: {
             background: "transparent",
-            color: "{text.color}"
+            color: "{text.muted.color}"
           }
         },
         navigation: {
@@ -532,7 +572,7 @@ export const CyanMaterialPreset = definePreset(Material, {
               // background: "transparent",
               background: "{surface.200}",
             },
-            color: "{text.color}"
+            color: "{text.muted.color}"
           },
           submenuIcon: {
             color: "{surface.400}",
@@ -568,9 +608,6 @@ export const CyanMaterialPreset = definePreset(Material, {
           color: "rgba(255,255,255,.87)",
           focusColor: "rgba(255,255,255,.87)"
         },
-        focusRing: {
-          shadow: "0 0 0 0.2rem color-mix(in srgb, {primary.color}, transparent 80%)"
-        },
         mask: {
           background: "rgba(0,0,0,0.6)",
           color: "{surface.200}"
@@ -580,9 +617,9 @@ export const CyanMaterialPreset = definePreset(Material, {
           disabledBackground: "{surface.700}",
           filledBackground: "{surface.800}",
           filledHoverBackground: "{surface.800}",
-          filledFocusBackground: "{surface.950}",
+          filledFocusBackground: "{surface.800}",
           borderColor: "{surface.600}",
-          hoverBorderColor: "{primary.color}",
+          hoverBorderColor: "{surface.500}",
           focusBorderColor: "{primary.color}",
           invalidBorderColor: "{red.300}",
           color: "{surface.0}",
@@ -594,7 +631,7 @@ export const CyanMaterialPreset = definePreset(Material, {
           floatLabelActiveColor: "{surface.400}",
           floatLabelInvalidColor: "{form.field.invalid.placeholder.color}",
           iconColor: "{surface.400}",
-          shadow: "none"
+          shadow: "0 0 #0000, 0 0 #0000, 0 1px 2px 0 rgba(18, 18, 23, 0.05)"
         },
         text: {
           color: "{surface.0}",
@@ -642,7 +679,7 @@ export const CyanMaterialPreset = definePreset(Material, {
           },
           optionGroup: {
             background: "transparent",
-            color: "{text.color}"
+            color: "{text.muted.color}"
           }
         },
         navigation: {
@@ -664,7 +701,7 @@ export const CyanMaterialPreset = definePreset(Material, {
           submenuLabel: {
             extend: {
               // background: "transparent",
-              // color: "{text.color}"
+              // color: "{text.muted.color}"
               background: "{surface.500}",
               color: "{text.color}"
             }
@@ -684,7 +721,7 @@ export const CyanMaterialPreset = definePreset(Material, {
         transitionDuration: "{transition.duration}"
       },
       panel: {
-        borderWidth: "0",
+        borderWidth: "0 0 1px 0",
         borderColor: "{content.border.color}"
       },
       header: {
@@ -692,16 +729,20 @@ export const CyanMaterialPreset = definePreset(Material, {
         hoverColor: "{text.color}",
         activeColor: "{text.color}",
         padding: "1.125rem",
-        fontWeight: "700",
+        fontWeight: "600",
         borderRadius: "0",
-        borderWidth: "0 1px 1px 1px",
+        borderWidth: "0",
         borderColor: "{content.border.color}",
+        background: "{content.background}",
+        hoverBackground: "{content.background}",
+        activeBackground: "{content.background}",
+        activeHoverBackground: "{content.background}",
         focusRing: {
           width: "{focus.ring.width}",
           style: "{focus.ring.style}",
           color: "{focus.ring.color}",
-          offset: "{focus.ring.offset}",
-          shadow: "inset {focus.ring.shadow}"
+          offset: "-1px",
+          shadow: "{focus.ring.shadow}"
         },
         toggleIcon: {
           color: "{text.muted.color}",
@@ -711,7 +752,7 @@ export const CyanMaterialPreset = definePreset(Material, {
         },
         first: {
           topBorderRadius: "{content.border.radius}",
-          borderWidth: "1px"
+          borderWidth: "0"
         },
         last: {
           bottomBorderRadius: "{content.border.radius}",
@@ -719,29 +760,11 @@ export const CyanMaterialPreset = definePreset(Material, {
         }
       },
       content: {
-        borderWidth: "0 1px 1px 1px",
+        borderWidth: "0",
         borderColor: "{content.border.color}",
         background: "{content.background}",
         color: "{text.color}",
-        padding: "1.125rem"
-      },
-      colorScheme: {
-        light: {
-          header: {
-            background: "{surface.50}",
-            hoverBackground: "{surface.100}",
-            activeBackground: "{surface.50}",
-            activeHoverBackground: "{surface.100}"
-          }
-        },
-        dark: {
-          header: {
-            background: "{surface.800}",
-            hoverBackground: "{surface.700}",
-            activeBackground: "{surface.800}",
-            activeHoverBackground: "{surface.700}"
-          }
-        }
+        padding: "0 1.125rem 1.125rem 1.125rem"
       }
     },
     autocomplete: {
@@ -758,6 +781,7 @@ export const CyanMaterialPreset = definePreset(Material, {
         color: "{form.field.color}",
         disabledColor: "{form.field.disabled.color}",
         placeholderColor: "{form.field.placeholder.color}",
+        invalidPlaceholderColor: "{form.field.invalid.placeholder.color}",
         shadow: "{form.field.shadow}",
         paddingX: "{form.field.padding.x}",
         paddingY: "{form.field.padding.y}",
@@ -812,11 +836,11 @@ export const CyanMaterialPreset = definePreset(Material, {
         activeBorderColor: "{form.field.border.color}",
         borderRadius: "{form.field.border.radius}",
         focusRing: {
-          width: "{form.field.focus.ring.width}",
-          style: "{form.field.focus.ring.style}",
-          color: "{form.field.focus.ring.color}",
-          offset: "{form.field.focus.ring.offset}",
-          shadow: "{form.field.focus.ring.shadow}"
+          width: "{focus.ring.width}",
+          style: "{focus.ring.style}",
+          color: "{focus.ring.color}",
+          offset: "{focus.ring.offset}",
+          shadow: "{focus.ring.shadow}"
         }
       },
       chip: {
@@ -832,9 +856,9 @@ export const CyanMaterialPreset = definePreset(Material, {
             focusColor: "{surface.800}"
           },
           dropdown: {
-            background: "{surface.50}",
-            hoverBackground: "{surface.100}",
-            activeBackground: "{surface.200}",
+            background: "{surface.100}",
+            hoverBackground: "{surface.200}",
+            activeBackground: "{surface.300}",
             color: "{surface.600}",
             hoverColor: "{surface.700}",
             activeColor: "{surface.800}"
@@ -889,6 +913,9 @@ export const CyanMaterialPreset = definePreset(Material, {
         fontSize: "2rem",
         icon: {
           size: "2rem"
+        },
+        group: {
+          offset: "-1.5rem"
         }
       }
     },
@@ -989,7 +1016,7 @@ export const CyanMaterialPreset = definePreset(Material, {
     },
     breadcrumb: {
       root: {
-        padding: "1.25rem",
+        padding: "1rem",
         background: "{content.background}",
         gap: "0.5rem",
         transitionDuration: "{transition.duration}"
@@ -1020,9 +1047,9 @@ export const CyanMaterialPreset = definePreset(Material, {
         borderRadius: "{form.field.border.radius}",
         roundedBorderRadius: "2rem",
         gap: "0.5rem",
-        paddingX: "1rem",
+        paddingX: "{form.field.padding.x}",
         paddingY: "{form.field.padding.y}",
-        iconOnlyWidth: "2.75rem",
+        iconOnlyWidth: "2.5rem",
         sm: {
           fontSize: "{form.field.sm.font.size}",
           paddingX: "{form.field.sm.padding.x}",
@@ -1034,13 +1061,13 @@ export const CyanMaterialPreset = definePreset(Material, {
           paddingY: "{form.field.lg.padding.y}"
         },
         label: {
-          fontWeight: "600"
+          fontWeight: "500"
         },
         raisedShadow: "0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12)",
         focusRing: {
-          width: "{form.field.focus.ring.width}",
-          style: "{form.field.focus.ring.style}",
-          offset: "{form.field.focus.ring.offset}"
+          width: "{focus.ring.width}",
+          style: "{focus.ring.style}",
+          offset: "{focus.ring.offset}"
         },
         badgeSize: "1rem",
         transitionDuration: "{form.field.transition.duration}"
@@ -1059,8 +1086,8 @@ export const CyanMaterialPreset = definePreset(Material, {
               hoverColor: "{primary.contrast.color}",
               activeColor: "{primary.contrast.color}",
               focusRing: {
-                color: "transparent",
-                shadow: "0 0 0 0.2rem {primary.200}"
+                color: "{primary.color}",
+                shadow: "none"
               }
             },
             secondary: {
@@ -1082,8 +1109,8 @@ export const CyanMaterialPreset = definePreset(Material, {
               hoverColor: "{surface.700}",
               activeColor: "{surface.800}",
               focusRing: {
-                color: "transparent",
-                shadow: "0 0 0 0.2rem {surface.200}"
+                color: "{surface.600}",
+                shadow: "none"
               }
             },
             info: {
@@ -1097,8 +1124,8 @@ export const CyanMaterialPreset = definePreset(Material, {
               hoverColor: "#ffffff",
               activeColor: "#ffffff",
               focusRing: {
-                color: "transparent",
-                shadow: "0 0 0 0.2rem {sky.200}"
+                color: "{sky.500}",
+                shadow: "none"
               }
             },
             success: {
@@ -1112,8 +1139,8 @@ export const CyanMaterialPreset = definePreset(Material, {
               hoverColor: "#ffffff",
               activeColor: "#ffffff",
               focusRing: {
-                color: "transparent",
-                shadow: "0 0 0 0.2rem {green.200}"
+                color: "{green.500}",
+                shadow: "none"
               }
             },
             warn: {
@@ -1127,8 +1154,8 @@ export const CyanMaterialPreset = definePreset(Material, {
               hoverColor: "#ffffff",
               activeColor: "#ffffff",
               focusRing: {
-                color: "transparent",
-                shadow: "0 0 0 0.2rem {orange.200}"
+                color: "{orange.500}",
+                shadow: "none"
               }
             },
             help: {
@@ -1142,8 +1169,8 @@ export const CyanMaterialPreset = definePreset(Material, {
               hoverColor: "#ffffff",
               activeColor: "#ffffff",
               focusRing: {
-                color: "transparent",
-                shadow: "0 0 0 0.2rem {purple.200}"
+                color: "{purple.500}",
+                shadow: "none"
               }
             },
             danger: {
@@ -1157,8 +1184,8 @@ export const CyanMaterialPreset = definePreset(Material, {
               hoverColor: "#ffffff",
               activeColor: "#ffffff",
               focusRing: {
-                color: "transparent",
-                shadow: "0 0 0 0.2rem {red.200}"
+                color: "{red.500}",
+                shadow: "none"
               }
             },
             contrast: {
@@ -1172,8 +1199,8 @@ export const CyanMaterialPreset = definePreset(Material, {
               hoverColor: "{surface.0}",
               activeColor: "{surface.0}",
               focusRing: {
-                color: "transparent",
-                shadow: "0 0 0 0.2rem {surface.400}"
+                color: "{surface.950}",
+                shadow: "none"
               }
             }
           },
@@ -1240,9 +1267,9 @@ export const CyanMaterialPreset = definePreset(Material, {
               color: "{primary.color}"
             },
             secondary: {
-              hoverBackground: "{surface.100}",
-              activeBackground: "{surface.200}",
-              color: "{surface.600}"
+              hoverBackground: "{surface.50}",
+              activeBackground: "{surface.100}",
+              color: "{surface.500}"
             },
             success: {
               hoverBackground: "{green.50}",
@@ -1288,6 +1315,9 @@ export const CyanMaterialPreset = definePreset(Material, {
         },
         dark: {
           root: {
+            extend: {
+              raisedShadow: "0 4px 2px -3px rgba(255, 255, 255, 0.2), 0 3px 4px 0 rgba(255, 255, 255, 0.14), 0 2px 7px 0 rgba(255, 255, 255, 0.12)",
+            },
             primary: {
               background: "{primary.color}",
               hoverBackground: "{primary.hover.color}",
@@ -1299,8 +1329,8 @@ export const CyanMaterialPreset = definePreset(Material, {
               hoverColor: "{primary.contrast.color}",
               activeColor: "{primary.contrast.color}",
               focusRing: {
-                color: "transparent",
-                shadow: "0 0 0 0.2rem color-mix(in srgb, {primary.color}, transparent 80%)"
+                color: "{primary.color}",
+                shadow: "none"
               }
             },
             secondary: {
@@ -1314,8 +1344,8 @@ export const CyanMaterialPreset = definePreset(Material, {
               hoverColor: "{surface.200}",
               activeColor: "{surface.100}",
               focusRing: {
-                color: "transparent",
-                shadow: "0 0 0 0.2rem color-mix(in srgb, {surface.300}, transparent 80%)"
+                color: "{surface.300}",
+                shadow: "none"
               }
             },
             info: {
@@ -1329,8 +1359,8 @@ export const CyanMaterialPreset = definePreset(Material, {
               hoverColor: "{sky.950}",
               activeColor: "{sky.950}",
               focusRing: {
-                color: "transparent",
-                shadow: "0 0 0 0.2rem color-mix(in srgb, {sky.400}, transparent 80%)"
+                color: "{sky.400}",
+                shadow: "none"
               }
             },
             success: {
@@ -1344,8 +1374,8 @@ export const CyanMaterialPreset = definePreset(Material, {
               hoverColor: "{green.950}",
               activeColor: "{green.950}",
               focusRing: {
-                color: "transparent",
-                shadow: "0 0 0 0.2rem color-mix(in srgb, {green.400}, transparent 80%)"
+                color: "{green.400}",
+                shadow: "none"
               }
             },
             warn: {
@@ -1359,8 +1389,8 @@ export const CyanMaterialPreset = definePreset(Material, {
               hoverColor: "{orange.950}",
               activeColor: "{orange.950}",
               focusRing: {
-                color: "transparent",
-                shadow: "0 0 0 0.2rem color-mix(in srgb, {orange.400}, transparent 80%)"
+                color: "{orange.400}",
+                shadow: "none"
               }
             },
             help: {
@@ -1374,8 +1404,8 @@ export const CyanMaterialPreset = definePreset(Material, {
               hoverColor: "{purple.950}",
               activeColor: "{purple.950}",
               focusRing: {
-                color: "transparent",
-                shadow: "0 0 0 0.2rem color-mix(in srgb, {purple.400}, transparent 80%)"
+                color: "{purple.400}",
+                shadow: "none"
               }
             },
             danger: {
@@ -1389,8 +1419,8 @@ export const CyanMaterialPreset = definePreset(Material, {
               hoverColor: "{red.950}",
               activeColor: "{red.950}",
               focusRing: {
-                color: "transparent",
-                shadow: "0 0 0 0.2rem color-mix(in srgb, {red.400}, transparent 80%)"
+                color: "{red.400}",
+                shadow: "none"
               }
             },
             contrast: {
@@ -1404,8 +1434,8 @@ export const CyanMaterialPreset = definePreset(Material, {
               hoverColor: "{surface.950}",
               activeColor: "{surface.950}",
               focusRing: {
-                color: "transparent",
-                shadow: "0 0 0 0.2rem color-mix(in srgb, {surface.0}, transparent 80%)"
+                color: "{surface.0}",
+                shadow: "none"
               }
             }
           },
@@ -1441,14 +1471,14 @@ export const CyanMaterialPreset = definePreset(Material, {
               color: "{orange.400}"
             },
             help: {
-              hoverBackground: "color-mix(in srgb, {help.400}, transparent 96%)",
-              activeBackground: "color-mix(in srgb, {help.400}, transparent 84%)",
+              hoverBackground: "color-mix(in srgb, {purple.400}, transparent 96%)",
+              activeBackground: "color-mix(in srgb, {purple.400}, transparent 84%)",
               borderColor: "{purple.700}",
               color: "{purple.400}"
             },
             danger: {
-              hoverBackground: "color-mix(in srgb, {danger.400}, transparent 96%)",
-              activeBackground: "color-mix(in srgb, {danger.400}, transparent 84%)",
+              hoverBackground: "color-mix(in srgb, {red.400}, transparent 96%)",
+              activeBackground: "color-mix(in srgb, {red.400}, transparent 84%)",
               borderColor: "{red.700}",
               color: "{red.400}"
             },
@@ -1472,9 +1502,9 @@ export const CyanMaterialPreset = definePreset(Material, {
               color: "{primary.color}"
             },
             secondary: {
-              hoverBackground: "{surface.700}",
-              activeBackground: "{surface.600}",
-              color: "{surface.300}"
+              hoverBackground: "{surface.800}",
+              activeBackground: "{surface.700}",
+              color: "{surface.400}"
             },
             success: {
               hoverBackground: "color-mix(in srgb, {green.400}, transparent 96%)",
@@ -1536,11 +1566,11 @@ export const CyanMaterialPreset = definePreset(Material, {
         background: "{content.background}",
         borderColor: "{content.border.color}",
         color: "{content.color}",
-        padding: "0 0 0.75rem 0"
+        padding: "0 0 0.5rem 0"
       },
       title: {
         gap: "0.5rem",
-        fontWeight: "700"
+        fontWeight: "500"
       },
       dropdown: {
         width: "2.5rem",
@@ -1555,11 +1585,11 @@ export const CyanMaterialPreset = definePreset(Material, {
         activeBorderColor: "{form.field.border.color}",
         borderRadius: "{form.field.border.radius}",
         focusRing: {
-          width: "{form.field.focus.ring.width}",
-          style: "{form.field.focus.ring.style}",
-          color: "{form.field.focus.ring.color}",
-          offset: "{form.field.focus.ring.offset}",
-          shadow: "{form.field.focus.ring.shadow}"
+          width: "{focus.ring.width}",
+          style: "{focus.ring.style}",
+          color: "{focus.ring.color}",
+          offset: "{focus.ring.offset}",
+          shadow: "{focus.ring.shadow}"
         }
       },
       inputIcon: {
@@ -1569,14 +1599,14 @@ export const CyanMaterialPreset = definePreset(Material, {
         hoverBackground: "{content.hover.background}",
         color: "{content.color}",
         hoverColor: "{content.hover.color}",
-        padding: "0.375rem 0.625rem",
+        padding: "0.25rem 0.5rem",
         borderRadius: "{content.border.radius}"
       },
       selectYear: {
         hoverBackground: "{content.hover.background}",
         color: "{content.color}",
         hoverColor: "{content.hover.color}",
-        padding: "0.375rem 0.625rem",
+        padding: "0.25rem 0.5rem",
         borderRadius: "{content.border.radius}"
       },
       group: {
@@ -1584,11 +1614,11 @@ export const CyanMaterialPreset = definePreset(Material, {
         gap: "{overlay.popover.padding}"
       },
       dayView: {
-        margin: "0.75rem 0 0 0"
+        margin: "0.5rem 0 0 0"
       },
       weekDay: {
-        padding: "0.375rem",
-        fontWeight: "700",
+        padding: "0.25rem",
+        fontWeight: "500",
         color: "{content.color}"
       },
       date: {
@@ -1599,38 +1629,38 @@ export const CyanMaterialPreset = definePreset(Material, {
         hoverColor: "{content.hover.color}",
         selectedColor: "{primary.contrast.color}",
         rangeSelectedColor: "{highlight.color}",
-        width: "2.5rem",
-        height: "2.5rem",
+        width: "2rem",
+        height: "2rem",
         borderRadius: "50%",
-        padding: "0.375rem",
+        padding: "0.25rem",
         focusRing: {
-          width: "{form.field.focus.ring.width}",
-          style: "{form.field.focus.ring.style}",
-          color: "{form.field.focus.ring.color}",
-          offset: "{form.field.focus.ring.offset}",
-          shadow: "{form.field.focus.ring.shadow}"
+          width: "{focus.ring.width}",
+          style: "{focus.ring.style}",
+          color: "{focus.ring.color}",
+          offset: "{focus.ring.offset}",
+          shadow: "{focus.ring.shadow}"
         }
       },
       monthView: {
-        margin: "0.75rem 0 0 0"
+        margin: "0.5rem 0 0 0"
       },
       month: {
-        padding: "0.5rem",
+        padding: "0.375rem",
         borderRadius: "{content.border.radius}"
       },
       yearView: {
-        margin: "0.75rem 0 0 0"
+        margin: "0.5rem 0 0 0"
       },
       year: {
-        padding: "0.5rem",
+        padding: "0.375rem",
         borderRadius: "{content.border.radius}"
       },
       buttonbar: {
-        padding: "0.75rem 0 0 0",
+        padding: "0.5rem 0 0 0",
         borderColor: "{content.border.color}"
       },
       timePicker: {
-        padding: "0.75rem 0 0 0",
+        padding: "0.5rem 0 0 0",
         borderColor: "{content.border.color}",
         gap: "0.5rem",
         buttonGap: "0.25rem"
@@ -1638,9 +1668,9 @@ export const CyanMaterialPreset = definePreset(Material, {
       colorScheme: {
         light: {
           dropdown: {
-            background: "{surface.50}",
-            hoverBackground: "{surface.100}",
-            activeBackground: "{surface.200}",
+            background: "{surface.100}",
+            hoverBackground: "{surface.200}",
+            activeBackground: "{surface.300}",
             color: "{surface.600}",
             hoverColor: "{surface.700}",
             activeColor: "{surface.800}"
@@ -1669,20 +1699,20 @@ export const CyanMaterialPreset = definePreset(Material, {
     card: {
       root: {
         background: "{content.background}",
-        borderRadius: "{border.radius.lg}",
+        borderRadius: "{border.radius.xl}",
         color: "{content.color}",
-        shadow: "0 .125rem .25rem rgba(0,0,0,.075)"
+        shadow: "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1)"
       },
       body: {
-        padding: "1.5rem",
-        gap: "0.75rem"
+        padding: "1.25rem",
+        gap: "0.5rem"
       },
       caption: {
         gap: "0.5rem"
       },
       title: {
         fontSize: "1.25rem",
-        fontWeight: "700"
+        fontWeight: "500"
       },
       subtitle: {
         color: "{text.muted.color}"
@@ -1700,9 +1730,9 @@ export const CyanMaterialPreset = definePreset(Material, {
         gap: "0.5rem"
       },
       indicator: {
-        width: "1rem",
-        height: "1rem",
-        borderRadius: "50",
+        width: "2rem",
+        height: "0.5rem",
+        borderRadius: "{content.border.radius}",
         focusRing: {
           width: "{focus.ring.width}",
           style: "{focus.ring.style}",
@@ -1780,7 +1810,7 @@ export const CyanMaterialPreset = definePreset(Material, {
       list: {
         padding: "{list.padding}",
         gap: "{list.gap}",
-        mobileIndent: "1.25rem"
+        mobileIndent: "1rem"
       },
       option: {
         focusBackground: "{list.option.focus.background}",
@@ -1805,8 +1835,8 @@ export const CyanMaterialPreset = definePreset(Material, {
     checkbox: {
       root: {
         borderRadius: "{border.radius.sm}",
-        width: "1.5rem",
-        height: "1.5rem",
+        width: "1.25rem",
+        height: "1.25rem",
         background: "{form.field.background}",
         checkedBackground: "{primary.color}",
         checkedHoverBackground: "{primary.hover.color}",
@@ -1814,7 +1844,7 @@ export const CyanMaterialPreset = definePreset(Material, {
         filledBackground: "{form.field.filled.background}",
         borderColor: "{form.field.border.color}",
         hoverBorderColor: "{form.field.hover.border.color}",
-        focusBorderColor: "{form.field.focus.border.color}",
+        focusBorderColor: "{form.field.border.color}",
         checkedBorderColor: "{primary.color}",
         checkedHoverBorderColor: "{primary.hover.color}",
         checkedFocusBorderColor: "{primary.color}",
@@ -1822,24 +1852,24 @@ export const CyanMaterialPreset = definePreset(Material, {
         invalidBorderColor: "{form.field.invalid.border.color}",
         shadow: "{form.field.shadow}",
         focusRing: {
-          width: "{form.field.focus.ring.width}",
-          style: "{form.field.focus.ring.style}",
-          color: "{form.field.focus.ring.color}",
-          offset: "{form.field.focus.ring.offset}",
-          shadow: "{form.field.focus.ring.shadow}"
+          width: "{focus.ring.width}",
+          style: "{focus.ring.style}",
+          color: "{focus.ring.color}",
+          offset: "{focus.ring.offset}",
+          shadow: "{focus.ring.shadow}"
         },
         transitionDuration: "{form.field.transition.duration}",
         sm: {
-          width: "1.25rem",
-          height: "1.25rem"
+          width: "1rem",
+          height: "1rem"
         },
         lg: {
-          width: "1.75rem",
-          height: "1.75rem"
+          width: "1.5rem",
+          height: "1.5rem"
         }
       },
       icon: {
-        size: "1rem",
+        size: "0.875rem",
         color: "{form.field.color}",
         checkedColor: "{primary.contrast.color}",
         checkedHoverColor: "{primary.contrast.color}",
@@ -1848,15 +1878,15 @@ export const CyanMaterialPreset = definePreset(Material, {
           size: "0.75rem"
         },
         lg: {
-          size: "1.25rem"
+          size: "1rem"
         }
       }
     },
     chip: {
       root: {
         borderRadius: "16px",
-        paddingX: "0.875rem",
-        paddingY: "0.625rem",
+        paddingX: "0.75rem",
+        paddingY: "0.5rem",
         gap: "0.5rem",
         transitionDuration: "{transition.duration}"
       },
@@ -1874,7 +1904,7 @@ export const CyanMaterialPreset = definePreset(Material, {
           style: "{focus.ring.style}",
           color: "{focus.ring.color}",
           offset: "{focus.ring.offset}",
-          shadow: "{focus.ring.shadow}"
+          shadow: "{form.field.focus.ring.shadow}"
         }
       },
       colorScheme: {
@@ -1909,15 +1939,15 @@ export const CyanMaterialPreset = definePreset(Material, {
         transitionDuration: "{transition.duration}"
       },
       preview: {
-        width: "1.75rem",
-        height: "1.75rem",
+        width: "1.5rem",
+        height: "1.5rem",
         borderRadius: "{form.field.border.radius}",
         focusRing: {
-          width: "{form.field.focus.ring.width}",
-          style: "{form.field.focus.ring.style}",
-          color: "{form.field.focus.ring.color}",
-          offset: "{form.field.focus.ring.offset}",
-          shadow: "{form.field.focus.ring.shadow}"
+          width: "{focus.ring.width}",
+          style: "{focus.ring.style}",
+          color: "{focus.ring.color}",
+          offset: "{focus.ring.offset}",
+          shadow: "{focus.ring.shadow}"
         }
       },
       panel: {
@@ -2006,16 +2036,7 @@ export const CyanMaterialPreset = definePreset(Material, {
         }
       },
       submenu: {
-        mobileIndent: "1.25rem"
-      },
-      submenuLabel: {
-        padding: "{navigation.submenu.label.padding}",
-        fontWeight: "{navigation.submenu.label.font.weight}",
-        extend: {
-          // background: "{navigation.submenu.label.background.}",
-          background: "{navigation.submenu.label.background}",
-        },
-        color: "{navigation.submenu.label.color}"
+        mobileIndent: "1rem"
       },
       submenuIcon: {
         size: "{navigation.submenu.icon.size}",
@@ -2029,16 +2050,18 @@ export const CyanMaterialPreset = definePreset(Material, {
     },
     dataview: {
       root: {
-        borderColor: "{content.border.color}",
-        borderWidth: "1px",
-        borderRadius: "4px",
+        borderColor: "transparent",
+        borderWidth: "0",
+        borderRadius: "0",
         padding: "0"
       },
       header: {
+        background: "{content.background}",
+        color: "{content.color}",
         borderColor: "{content.border.color}",
         borderWidth: "0 0 1px 0",
-        padding: "0.875rem 1.125rem",
-        borderRadius: "5px 5px 0 0"
+        padding: "0.75rem 1rem",
+        borderRadius: "0"
       },
       content: {
         background: "{content.background}",
@@ -2046,15 +2069,15 @@ export const CyanMaterialPreset = definePreset(Material, {
         borderColor: "transparent",
         borderWidth: "0",
         padding: "0",
-        borderRadius: "5px"
+        borderRadius: "0"
       },
       footer: {
         background: "{content.background}",
         color: "{content.color}",
         borderColor: "{content.border.color}",
         borderWidth: "1px 0 0 0",
-        padding: "0.875rem 1.125rem",
-        borderRadius: "0 0 5px 5px"
+        padding: "0.75rem 1rem",
+        borderRadius: "0"
       },
       paginatorTop: {
         borderColor: "{content.border.color}",
@@ -2063,20 +2086,6 @@ export const CyanMaterialPreset = definePreset(Material, {
       paginatorBottom: {
         borderColor: "{content.border.color}",
         borderWidth: "1px 0 0 0"
-      },
-      colorScheme: {
-        light: {
-          header: {
-            background: "{surface.50}",
-            color: "{text.color}"
-          }
-        },
-        dark: {
-          header: {
-            background: "{surface.800}",
-            color: "{text.color}"
-          }
-        }
       }
     },
     datatable: {
@@ -2084,13 +2093,18 @@ export const CyanMaterialPreset = definePreset(Material, {
         transitionDuration: "{transition.duration}"
       },
       header: {
+        background: "{content.background}",
         borderColor: "{datatable.border.color}",
-        borderWidth: "1px 0 1px 0",
+        color: "{content.color}",
+        borderWidth: "0 0 1px 0",
         padding: "0.75rem 1rem"
       },
       headerCell: {
+        background: "{content.background}",
+        hoverBackground: "{content.hover.background}",
         selectedBackground: "{highlight.background}",
         borderColor: "{datatable.border.color}",
+        color: "{content.color}",
         hoverColor: "{content.hover.color}",
         selectedColor: "{highlight.color}",
         gap: "0.5rem",
@@ -2099,12 +2113,12 @@ export const CyanMaterialPreset = definePreset(Material, {
           width: "{focus.ring.width}",
           style: "{focus.ring.style}",
           color: "{focus.ring.color}",
-          offset: "{focus.ring.offset}",
-          shadow: "inset {focus.ring.shadow}"
+          offset: "-1px",
+          shadow: "{focus.ring.shadow}"
         }
       },
       columnTitle: {
-        fontWeight: "700"
+        fontWeight: "600"
       },
       row: {
         background: "{content.background}",
@@ -2117,8 +2131,8 @@ export const CyanMaterialPreset = definePreset(Material, {
           width: "{focus.ring.width}",
           style: "{focus.ring.style}",
           color: "{focus.ring.color}",
-          offset: "{focus.ring.offset}",
-          shadow: "inset {focus.ring.shadow}"
+          offset: "-1px",
+          shadow: "{focus.ring.shadow}"
         }
       },
       bodyCell: {
@@ -2126,14 +2140,18 @@ export const CyanMaterialPreset = definePreset(Material, {
         padding: "0.75rem 1rem"
       },
       footerCell: {
+        background: "{content.background}",
         borderColor: "{datatable.border.color}",
+        color: "{content.color}",
         padding: "0.75rem 1rem"
       },
       columnFooter: {
-        fontWeight: "700"
+        fontWeight: "600"
       },
       footer: {
+        background: "{content.background}",
         borderColor: "{datatable.border.color}",
+        color: "{content.color}",
         borderWidth: "0 0 1px 0",
         padding: "0.75rem 1rem"
       },
@@ -2222,23 +2240,6 @@ export const CyanMaterialPreset = definePreset(Material, {
           root: {
             borderColor: "{content.border.color}"
           },
-          header: {
-            background: "{surface.50}",
-            color: "{text.color}"
-          },
-          headerCell: {
-            background: "{surface.50}",
-            hoverBackground: "{surface.100}",
-            color: "{text.color}"
-          },
-          footer: {
-            background: "{surface.50}",
-            color: "{text.color}"
-          },
-          footerCell: {
-            background: "{surface.50}",
-            color: "{text.color}"
-          },
           row: {
             stripedBackground: "{surface.50}"
           },
@@ -2248,24 +2249,11 @@ export const CyanMaterialPreset = definePreset(Material, {
         },
         dark: {
           root: {
-            borderColor: "{surface.800}"
-          },
-          header: {
-            background: "{surface.800}",
-            color: "{text.color}"
-          },
-          headerCell: {
-            background: "{surface.800}",
-            hoverBackground: "{surface.700}",
-            color: "{text.color}"
-          },
-          footer: {
-            background: "{surface.800}",
-            color: "{text.color}"
-          },
-          footerCell: {
-            background: "{surface.800}",
-            color: "{text.color}"
+            extend: {
+              // Table border color - DARK mode
+              // borderColor: "{surface.800}"
+              borderColor: "{surface.500}"
+            }
           },
           row: {
             stripedBackground: "{surface.950}"
@@ -2309,17 +2297,17 @@ export const CyanMaterialPreset = definePreset(Material, {
         color: "{text.color}"
       },
       horizontal: {
-        margin: "1.125rem 0",
-        padding: "0 1.125rem",
+        margin: "1rem 0",
+        padding: "0 1rem",
         content: {
-          padding: "0 0.625rem"
+          padding: "0 0.5rem"
         }
       },
       vertical: {
-        margin: "0 1.125rem",
-        padding: "1.125rem 0",
+        margin: "0 1rem",
+        padding: "0.5rem 0",
         content: {
-          padding: "0.625rem 0"
+          padding: "0.5rem 0"
         }
       }
     },
@@ -2328,7 +2316,7 @@ export const CyanMaterialPreset = definePreset(Material, {
         background: "rgba(255, 255, 255, 0.1)",
         borderColor: "rgba(255, 255, 255, 0.2)",
         padding: "0.5rem",
-        borderRadius: "{border.radius.lg}"
+        borderRadius: "{border.radius.xl}"
       },
       item: {
         borderRadius: "{content.border.radius}",
@@ -2366,6 +2354,7 @@ export const CyanMaterialPreset = definePreset(Material, {
     },
     editor: {
       toolbar: {
+        background: "{content.background}",
         borderColor: "{content.border.color}",
         borderRadius: "{content.border.radius}"
       },
@@ -2394,18 +2383,6 @@ export const CyanMaterialPreset = definePreset(Material, {
         borderColor: "{content.border.color}",
         color: "{content.color}",
         borderRadius: "{content.border.radius}"
-      },
-      colorScheme: {
-        light: {
-          toolbar: {
-            background: "{surface.50}"
-          }
-        },
-        dark: {
-          toolbar: {
-            background: "{surface.800}"
-          }
-        }
       }
     },
     fieldset: {
@@ -2414,16 +2391,20 @@ export const CyanMaterialPreset = definePreset(Material, {
         borderColor: "{content.border.color}",
         borderRadius: "{content.border.radius}",
         color: "{content.color}",
-        padding: "0.75rem 1.125rem 1.125rem 1.125rem",
+        padding: "0 1.125rem 1.125rem 1.125rem",
         transitionDuration: "{transition.duration}"
       },
       legend: {
+        background: "{content.background}",
+        hoverBackground: "{content.hover.background}",
+        color: "{content.color}",
+        hoverColor: "{content.hover.color}",
         borderRadius: "{content.border.radius}",
         borderWidth: "1px",
-        borderColor: "{content.border.color}",
-        padding: "0.625rem 0.875rem",
+        borderColor: "transparent",
+        padding: "0.5rem 0.75rem",
         gap: "0.5rem",
-        fontWeight: "700",
+        fontWeight: "600",
         focusRing: {
           width: "{focus.ring.width}",
           style: "{focus.ring.style}",
@@ -2438,24 +2419,6 @@ export const CyanMaterialPreset = definePreset(Material, {
       },
       content: {
         padding: "0"
-      },
-      colorScheme: {
-        light: {
-          legend: {
-            background: "{surface.50}",
-            hoverBackground: "{surface.100}",
-            color: "{text.color}",
-            hoverColor: "{text.hover.color}"
-          }
-        },
-        dark: {
-          legend: {
-            background: "{surface.800}",
-            hoverBackground: "{surface.700}",
-            color: "{text.color}",
-            hoverColor: "{text.hover.color}"
-          }
-        }
       }
     },
     fileupload: {
@@ -2467,15 +2430,17 @@ export const CyanMaterialPreset = definePreset(Material, {
         transitionDuration: "{transition.duration}"
       },
       header: {
-        borderWidth: "0 0 1px 0",
-        borderColor: "{content.border.color}",
+        background: "transparent",
+        color: "{text.color}",
         padding: "1.125rem",
-        borderRadius: "5px 5px 0 0",
+        borderColor: "unset",
+        borderWidth: "0",
+        borderRadius: "0",
         gap: "0.5rem"
       },
       content: {
         highlightBorderColor: "{primary.color}",
-        padding: "1.125rem",
+        padding: "0 1.125rem 1.125rem 1.125rem",
         gap: "1rem"
       },
       file: {
@@ -2494,20 +2459,6 @@ export const CyanMaterialPreset = definePreset(Material, {
       },
       basic: {
         gap: "0.5rem"
-      },
-      colorScheme: {
-        light: {
-          header: {
-            background: "{surface.50}",
-            color: "{text.color}"
-          }
-        },
-        dark: {
-          header: {
-            background: "{surface.800}",
-            color: "{text.color}"
-          }
-        }
       }
     },
     iftalabel: {
@@ -2522,7 +2473,7 @@ export const CyanMaterialPreset = definePreset(Material, {
         fontWeight: "400"
       },
       input: {
-        paddingTop: "1.875rem",
+        paddingTop: "1.5rem",
         paddingBottom: "{form.field.padding.y}"
       }
     },
@@ -2543,12 +2494,12 @@ export const CyanMaterialPreset = definePreset(Material, {
       },
       over: {
         active: {
-          top: "-1.375rem"
+          top: "-1.25rem"
         }
       },
       in: {
         input: {
-          paddingTop: "1.875rem",
+          paddingTop: "1.5rem",
           paddingBottom: "{form.field.padding.y}"
         },
         active: {
@@ -2576,12 +2527,12 @@ export const CyanMaterialPreset = definePreset(Material, {
         color: "{surface.100}",
         hoverColor: "{surface.0}",
         size: "3rem",
-        gutter: "0",
+        gutter: "0.5rem",
         prev: {
-          borderRadius: "0 12px 12px 0"
+          borderRadius: "50%"
         },
         next: {
-          borderRadius: "12px 0 0 12px"
+          borderRadius: "50%"
         },
         focusRing: {
           width: "{focus.ring.width}",
@@ -2595,6 +2546,7 @@ export const CyanMaterialPreset = definePreset(Material, {
         size: "1.5rem"
       },
       thumbnailsContent: {
+        background: "{content.background}",
         padding: "1rem 0.25rem"
       },
       thumbnailNavButton: {
@@ -2663,9 +2615,6 @@ export const CyanMaterialPreset = definePreset(Material, {
       },
       colorScheme: {
         light: {
-          thumbnailsContent: {
-            background: "{surface.50}"
-          },
           thumbnailNavButton: {
             hoverBackground: "{surface.100}",
             color: "{surface.600}",
@@ -2677,9 +2626,6 @@ export const CyanMaterialPreset = definePreset(Material, {
           }
         },
         dark: {
-          thumbnailsContent: {
-            background: "{surface.800}"
-          },
           thumbnailNavButton: {
             hoverBackground: "{surface.700}",
             color: "{surface.400}",
@@ -2721,7 +2667,7 @@ export const CyanMaterialPreset = definePreset(Material, {
         background: "rgba(255,255,255,0.1)",
         borderColor: "rgba(255,255,255,0.2)",
         borderWidth: "1px",
-        borderRadius: "{content.border.radius}",
+        borderRadius: "30px",
         padding: ".5rem",
         gap: "0.5rem"
       },
@@ -2731,7 +2677,7 @@ export const CyanMaterialPreset = definePreset(Material, {
         hoverColor: "{surface.0}",
         size: "3rem",
         iconSize: "1.5rem",
-        borderRadius: "{content.border.radius}",
+        borderRadius: "50%",
         focusRing: {
           width: "{focus.ring.width}",
           style: "{focus.ring.style}",
@@ -2747,9 +2693,9 @@ export const CyanMaterialPreset = definePreset(Material, {
         hoverSize: "30px",
         background: "rgba(255,255,255,0.3)",
         hoverBackground: "rgba(255,255,255,0.3)",
-        borderColor: "rgba(255,255,255,0.3)",
-        hoverBorderColor: "rgba(255,255,255,0.3)",
-        borderWidth: "3px",
+        borderColor: "unset",
+        hoverBorderColor: "unset",
+        borderWidth: "0",
         borderRadius: "50%",
         transitionDuration: "{transition.duration}",
         focusRing: {
@@ -2771,83 +2717,83 @@ export const CyanMaterialPreset = definePreset(Material, {
         fontWeight: "500"
       },
       icon: {
-        size: "1.125rem"
+        size: "1rem"
       },
       colorScheme: {
         light: {
           info: {
             background: "color-mix(in srgb, {blue.50}, transparent 5%)",
-            borderColor: "color-mix(in srgb, {blue.50}, transparent 5%)",
+            borderColor: "{blue.200}",
             color: "{blue.600}",
-            shadow: "none"
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {blue.500}, transparent 96%)"
           },
           success: {
             background: "color-mix(in srgb, {green.50}, transparent 5%)",
-            borderColor: "color-mix(in srgb, {green.50}, transparent 5%)",
+            borderColor: "{green.200}",
             color: "{green.600}",
-            shadow: "none"
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {green.500}, transparent 96%)"
           },
           warn: {
             background: "color-mix(in srgb,{yellow.50}, transparent 5%)",
-            borderColor: "color-mix(in srgb,{yellow.50}, transparent 5%)",
+            borderColor: "{yellow.200}",
             color: "{yellow.600}",
-            shadow: "none"
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {yellow.500}, transparent 96%)"
           },
           error: {
             background: "color-mix(in srgb, {red.50}, transparent 5%)",
-            borderColor: "color-mix(in srgb, {red.50}, transparent 5%)",
+            borderColor: "{red.200}",
             color: "{red.600}",
-            shadow: "none"
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {red.500}, transparent 96%)"
           },
           secondary: {
             background: "{surface.100}",
-            borderColor: "{surface.100}",
+            borderColor: "{surface.200}",
             color: "{surface.600}",
-            shadow: "none"
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {surface.500}, transparent 96%)"
           },
           contrast: {
             background: "{surface.900}",
-            borderColor: "{surface.900}",
+            borderColor: "{surface.950}",
             color: "{surface.50}",
-            shadow: "none"
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {surface.950}, transparent 96%)"
           }
         },
         dark: {
           info: {
             background: "color-mix(in srgb, {blue.500}, transparent 84%)",
-            borderColor: "color-mix(in srgb, {blue.500}, transparent 84%)",
+            borderColor: "color-mix(in srgb, {blue.700}, transparent 64%)",
             color: "{blue.500}",
-            shadow: "none"
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {blue.500}, transparent 96%)"
           },
           success: {
             background: "color-mix(in srgb, {green.500}, transparent 84%)",
-            borderColor: "color-mix(in srgb, {green.500}, transparent 84%)",
+            borderColor: "color-mix(in srgb, {green.700}, transparent 64%)",
             color: "{green.500}",
-            shadow: "none"
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {green.500}, transparent 96%)"
           },
           warn: {
             background: "color-mix(in srgb, {yellow.500}, transparent 84%)",
-            borderColor: "color-mix(in srgb, {yellow.500}, transparent 84%)",
+            borderColor: "color-mix(in srgb, {yellow.700}, transparent 64%)",
             color: "{yellow.500}",
-            shadow: "none"
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {yellow.500}, transparent 96%)"
           },
           error: {
             background: "color-mix(in srgb, {red.500}, transparent 84%)",
-            borderColor: "color-mix(in srgb, {red.500}, transparent 84%)",
+            borderColor: "color-mix(in srgb, {red.700}, transparent 64%)",
             color: "{red.500}",
-            shadow: "none"
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {red.500}, transparent 96%)"
           },
           secondary: {
             background: "{surface.800}",
-            borderColor: "{surface.800}",
+            borderColor: "{surface.700}",
             color: "{surface.300}",
-            shadow: "none"
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {surface.500}, transparent 96%)"
           },
           contrast: {
             background: "{surface.0}",
-            borderColor: "{surface.0}",
+            borderColor: "{surface.100}",
             color: "{surface.950}",
-            shadow: "none"
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {surface.950}, transparent 96%)"
           }
         }
       }
@@ -2916,25 +2862,12 @@ export const CyanMaterialPreset = definePreset(Material, {
     },
     inputgroup: {
       addon: {
+        background: "{form.field.background}",
+        borderColor: "{form.field.border.color}",
+        color: "{form.field.icon.color}",
         borderRadius: "{form.field.border.radius}",
-        padding: "0.625rem 0.5rem",
-        minWidth: "2.75rem"
-      },
-      colorScheme: {
-        light: {
-          addon: {
-            background: "{surface.50}",
-            borderColor: "{form.field.border.color}",
-            color: "{text.muted.color}"
-          }
-        },
-        dark: {
-          addon: {
-            background: "{surface.800}",
-            borderColor: "{form.field.border.color}",
-            color: "{text.muted.color}"
-          }
-        }
+        padding: "0.5rem",
+        minWidth: "2.5rem"
       }
     },
     inputnumber: {
@@ -2949,28 +2882,28 @@ export const CyanMaterialPreset = definePreset(Material, {
       colorScheme: {
         light: {
           button: {
-            background: "{surface.100}",
-            hoverBackground: "{surface.200}",
-            activeBackground: "{surface.300}",
+            background: "transparent",
+            hoverBackground: "{surface.100}",
+            activeBackground: "{surface.200}",
             borderColor: "{form.field.border.color}",
             hoverBorderColor: "{form.field.border.color}",
             activeBorderColor: "{form.field.border.color}",
-            color: "{surface.600}",
-            hoverColor: "{surface.700}",
-            activeColor: "{surface.800}"
+            color: "{surface.400}",
+            hoverColor: "{surface.500}",
+            activeColor: "{surface.600}"
           }
         },
         dark: {
           button: {
-            background: "{surface.800}",
-            hoverBackground: "{surface.700}",
-            activeBackground: "{surface.500}",
+            background: "transparent",
+            hoverBackground: "{surface.800}",
+            activeBackground: "{surface.700}",
             borderColor: "{form.field.border.color}",
             hoverBorderColor: "{form.field.border.color}",
             activeBorderColor: "{form.field.border.color}",
-            color: "{surface.300}",
-            hoverColor: "{surface.200}",
-            activeColor: "{surface.100}"
+            color: "{surface.400}",
+            hoverColor: "{surface.300}",
+            activeColor: "{surface.200}"
           }
         }
       }
@@ -3087,8 +3020,8 @@ export const CyanMaterialPreset = definePreset(Material, {
       },
       checkmark: {
         color: "{list.option.color}",
-        gutterStart: "-0.5rem",
-        gutterEnd: "0.5rem"
+        gutterStart: "-0.375rem",
+        gutterEnd: "0.375rem"
       },
       emptyMessage: {
         padding: "{list.option.padding}"
@@ -3108,7 +3041,8 @@ export const CyanMaterialPreset = definePreset(Material, {
     },
     megamenu: {
       root: {
-        borderColor: "transparent",
+        background: "{content.background}",
+        borderColor: "{content.border.color}",
         borderRadius: "{content.border.radius}",
         color: "{content.color}",
         gap: "0.5rem",
@@ -3117,8 +3051,9 @@ export const CyanMaterialPreset = definePreset(Material, {
           gap: "{navigation.list.gap}"
         },
         horizontalOrientation: {
-          padding: "0.75rem 1rem",
           extend: {
+            // padding: "0.5rem 0.75rem",
+            padding: "0.8rem 0.75rem",
             // gap: "0.5rem"
             gap: "1.5rem"
           }
@@ -3127,7 +3062,7 @@ export const CyanMaterialPreset = definePreset(Material, {
       },
       baseItem: {
         borderRadius: "{content.border.radius}",
-        padding: "0.75rem 1rem"
+        padding: "{navigation.item.padding}"
       },
       item: {
         focusBackground: "{navigation.item.focus.background}",
@@ -3177,7 +3112,7 @@ export const CyanMaterialPreset = definePreset(Material, {
       },
       mobileButton: {
         borderRadius: "50%",
-        size: "2rem",
+        size: "1.75rem",
         color: "{text.muted.color}",
         hoverColor: "{text.hover.muted.color}",
         hoverBackground: "{content.hover.background}",
@@ -3187,18 +3122,6 @@ export const CyanMaterialPreset = definePreset(Material, {
           color: "{focus.ring.color}",
           offset: "{focus.ring.offset}",
           shadow: "{focus.ring.shadow}"
-        }
-      },
-      colorScheme: {
-        light: {
-          root: {
-            background: "{surface.50}"
-          }
-        },
-        dark: {
-          root: {
-            background: "{surface.800}"
-          }
         }
       }
     },
@@ -3230,10 +3153,7 @@ export const CyanMaterialPreset = definePreset(Material, {
       submenuLabel: {
         padding: "{navigation.submenu.label.padding}",
         fontWeight: "{navigation.submenu.label.font.weight}",
-        extend: {
-          // background: "{navigation.submenu.label.background.}",
-          background: "{navigation.submenu.label.background}",
-        },
+        background: "{navigation.submenu.label.background}",
         color: "{navigation.submenu.label.color}"
       },
       separator: {
@@ -3242,16 +3162,17 @@ export const CyanMaterialPreset = definePreset(Material, {
     },
     menubar: {
       root: {
-        borderColor: "transparent",
+        background: "{content.background}",
+        borderColor: "{content.border.color}",
         borderRadius: "{content.border.radius}",
         color: "{content.color}",
         gap: "0.5rem",
-        padding: "0.75rem 1rem",
+        padding: "0.5rem 0.75rem",
         transitionDuration: "{transition.duration}"
       },
       baseItem: {
         borderRadius: "{content.border.radius}",
-        padding: "0.75rem 1rem"
+        padding: "{navigation.item.padding}"
       },
       item: {
         focusBackground: "{navigation.item.focus.background}",
@@ -3275,7 +3196,7 @@ export const CyanMaterialPreset = definePreset(Material, {
         borderColor: "{content.border.color}",
         borderRadius: "{content.border.radius}",
         shadow: "{overlay.navigation.shadow}",
-        mobileIndent: "1.25rem",
+        mobileIndent: "1rem",
         icon: {
           size: "{navigation.submenu.icon.size}",
           color: "{navigation.submenu.icon.color}",
@@ -3288,7 +3209,7 @@ export const CyanMaterialPreset = definePreset(Material, {
       },
       mobileButton: {
         borderRadius: "50%",
-        size: "2rem",
+        size: "1.75rem",
         color: "{text.muted.color}",
         hoverColor: "{text.hover.muted.color}",
         hoverBackground: "{content.hover.background}",
@@ -3299,18 +3220,6 @@ export const CyanMaterialPreset = definePreset(Material, {
           offset: "{focus.ring.offset}",
           shadow: "{focus.ring.shadow}"
         }
-      },
-      colorScheme: {
-        light: {
-          root: {
-            background: "{surface.50}"
-          }
-        },
-        dark: {
-          root: {
-            background: "{surface.800}"
-          }
-        }
       }
     },
     message: {
@@ -3320,13 +3229,13 @@ export const CyanMaterialPreset = definePreset(Material, {
         transitionDuration: "{transition.duration}"
       },
       content: {
-        padding: "0.75rem 1rem",
+        padding: "0.5rem 0.75rem",
         gap: "0.5rem",
         sm: {
-          padding: "0.5rem 0.625rem"
+          padding: "0.375rem 0.625rem"
         },
         lg: {
-          padding: "0.75rem 0.875rem"
+          padding: "0.625rem 0.875rem"
         }
       },
       text: {
@@ -3340,17 +3249,17 @@ export const CyanMaterialPreset = definePreset(Material, {
         }
       },
       icon: {
-        size: "1.25rem",
+        size: "1.125rem",
         sm: {
           size: "1rem"
         },
         lg: {
-          size: "1.5rem"
+          size: "1.25rem"
         }
       },
       closeButton: {
-        width: "2rem",
-        height: "2rem",
+        width: "1.75rem",
+        height: "1.75rem",
         borderRadius: "50%",
         focusRing: {
           width: "{focus.ring.width}",
@@ -3361,10 +3270,10 @@ export const CyanMaterialPreset = definePreset(Material, {
       closeIcon: {
         size: "1rem",
         sm: {
-          fontSize: "0.875rem"
+          size: "0.875rem"
         },
         lg: {
-          fontSize: "1.125rem"
+          size: "1.125rem"
         }
       },
       outlined: {
@@ -3381,14 +3290,14 @@ export const CyanMaterialPreset = definePreset(Material, {
         light: {
           info: {
             background: "color-mix(in srgb, {blue.50}, transparent 5%)",
-            borderColor: "transparent",
+            borderColor: "{blue.200}",
             color: "{blue.600}",
-            shadow: "none",
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {blue.500}, transparent 96%)",
             closeButton: {
               hoverBackground: "{blue.100}",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem {blue.200}"
+                color: "{blue.600}",
+                shadow: "none"
               }
             },
             outlined: {
@@ -3401,14 +3310,14 @@ export const CyanMaterialPreset = definePreset(Material, {
           },
           success: {
             background: "color-mix(in srgb, {green.50}, transparent 5%)",
-            borderColor: "transparent",
+            borderColor: "{green.200}",
             color: "{green.600}",
-            shadow: "none",
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {green.500}, transparent 96%)",
             closeButton: {
               hoverBackground: "{green.100}",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem {green.200}"
+                color: "{green.600}",
+                shadow: "none"
               }
             },
             outlined: {
@@ -3421,14 +3330,14 @@ export const CyanMaterialPreset = definePreset(Material, {
           },
           warn: {
             background: "color-mix(in srgb,{yellow.50}, transparent 5%)",
-            borderColor: "transparent",
+            borderColor: "{yellow.200}",
             color: "{yellow.600}",
-            shadow: "none",
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {yellow.500}, transparent 96%)",
             closeButton: {
               hoverBackground: "{yellow.100}",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem {yellow.200}"
+                color: "{yellow.600}",
+                shadow: "none"
               }
             },
             outlined: {
@@ -3441,14 +3350,14 @@ export const CyanMaterialPreset = definePreset(Material, {
           },
           error: {
             background: "color-mix(in srgb, {red.50}, transparent 5%)",
-            borderColor: "transparent",
+            borderColor: "{red.200}",
             color: "{red.600}",
-            shadow: "none",
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {red.500}, transparent 96%)",
             closeButton: {
               hoverBackground: "{red.100}",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem {red.200}"
+                color: "{red.600}",
+                shadow: "none"
               }
             },
             outlined: {
@@ -3461,14 +3370,14 @@ export const CyanMaterialPreset = definePreset(Material, {
           },
           secondary: {
             background: "{surface.100}",
-            borderColor: "transparent",
+            borderColor: "{surface.200}",
             color: "{surface.600}",
-            shadow: "none",
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {surface.500}, transparent 96%)",
             closeButton: {
               hoverBackground: "{surface.200}",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem {surface.200}"
+                color: "{surface.600}",
+                shadow: "none"
               }
             },
             outlined: {
@@ -3481,36 +3390,39 @@ export const CyanMaterialPreset = definePreset(Material, {
           },
           contrast: {
             background: "{surface.900}",
-            borderColor: "transparent",
+            borderColor: "{surface.950}",
             color: "{surface.50}",
-            shadow: "none",
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {surface.950}, transparent 96%)",
             closeButton: {
               hoverBackground: "{surface.800}",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem {surface.400}"
+                color: "{surface.50}",
+                shadow: "none"
               }
             },
             outlined: {
-              color: "{surface.900}",
-              borderColor: "{surface.900}"
+              color: "{surface.950}",
+              borderColor: "{surface.950}"
             },
             simple: {
-              color: "{surface.900}"
+              color: "{surface.950}"
             }
           }
         },
         dark: {
           info: {
             background: "color-mix(in srgb, {blue.500}, transparent 84%)",
-            borderColor: "transparent",
-            color: "{blue.500}",
-            shadow: "none",
+            borderColor: "color-mix(in srgb, {blue.700}, transparent 64%)",
+            extend: {
+              // color: "{blue.500}",
+              color: "{blue.300}",
+            },
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {blue.500}, transparent 96%)",
             closeButton: {
               hoverBackground: "rgba(255, 255, 255, 0.05)",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem color-mix(in srgb, {blue.500}, transparent 80%)"
+                color: "{blue.500}",
+                shadow: "none"
               }
             },
             outlined: {
@@ -3523,14 +3435,17 @@ export const CyanMaterialPreset = definePreset(Material, {
           },
           success: {
             background: "color-mix(in srgb, {green.500}, transparent 84%)",
-            borderColor: "transparent",
-            color: "{green.500}",
-            shadow: "none",
+            borderColor: "color-mix(in srgb, {green.700}, transparent 64%)",
+            extend: {
+              // color: "{green.500}",
+              color: "{green.300}",
+            },
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {green.500}, transparent 96%)",
             closeButton: {
               hoverBackground: "rgba(255, 255, 255, 0.05)",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem color-mix(in srgb, {green.500}, transparent 80%)"
+                color: "{green.500}",
+                shadow: "none"
               }
             },
             outlined: {
@@ -3543,14 +3458,17 @@ export const CyanMaterialPreset = definePreset(Material, {
           },
           warn: {
             background: "color-mix(in srgb, {yellow.500}, transparent 84%)",
-            borderColor: "transparent",
-            color: "{yellow.500}",
-            shadow: "none",
+            borderColor: "color-mix(in srgb, {yellow.700}, transparent 64%)",
+            extend: {
+              // color: "{yellow.500}",
+              color: "{yellow.300}",
+            },
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {yellow.500}, transparent 96%)",
             closeButton: {
               hoverBackground: "rgba(255, 255, 255, 0.05)",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem color-mix(in srgb, {yellow.500}, transparent 80%)"
+                color: "{yellow.500}",
+                shadow: "none"
               }
             },
             outlined: {
@@ -3563,14 +3481,17 @@ export const CyanMaterialPreset = definePreset(Material, {
           },
           error: {
             background: "color-mix(in srgb, {red.500}, transparent 84%)",
-            borderColor: "transparent",
-            color: "{red.500}",
-            shadow: "none",
+            borderColor: "color-mix(in srgb, {red.700}, transparent 64%)",
+            extend: {
+              // color: "{red.500}",
+              color: "{red.400}",
+            },
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {red.500}, transparent 96%)",
             closeButton: {
               hoverBackground: "rgba(255, 255, 255, 0.05)",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem color-mix(in srgb, {red.500}, transparent 80%)"
+                color: "{red.500}",
+                shadow: "none"
               }
             },
             outlined: {
@@ -3583,14 +3504,14 @@ export const CyanMaterialPreset = definePreset(Material, {
           },
           secondary: {
             background: "{surface.800}",
-            borderColor: "transparent",
+            borderColor: "{surface.700}",
             color: "{surface.300}",
-            shadow: "none",
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {surface.500}, transparent 96%)",
             closeButton: {
               hoverBackground: "{surface.700}",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem color-mix(in srgb, {surface.300}, transparent 80%)"
+                color: "{surface.300}",
+                shadow: "none"
               }
             },
             outlined: {
@@ -3603,14 +3524,14 @@ export const CyanMaterialPreset = definePreset(Material, {
           },
           contrast: {
             background: "{surface.0}",
-            borderColor: "transparent",
+            borderColor: "{surface.100}",
             color: "{surface.950}",
-            shadow: "none",
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {surface.950}, transparent 96%)",
             closeButton: {
               hoverBackground: "{surface.100}",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem color-mix(in srgb, {surface.950}, transparent 80%)"
+                color: "{surface.950}",
+                shadow: "none"
               }
             },
             outlined: {
@@ -3631,7 +3552,7 @@ export const CyanMaterialPreset = definePreset(Material, {
       },
       meters: {
         background: "{content.border.color}",
-        size: "0.625rem"
+        size: "0.5rem"
       },
       label: {
         gap: "0.5rem"
@@ -3752,8 +3673,8 @@ export const CyanMaterialPreset = definePreset(Material, {
         color: "{content.color}",
         selectedColor: "{highlight.color}",
         hoverColor: "{content.hover.color}",
-        padding: "1rem 1.25rem",
-        toggleablePadding: "1rem 1.25rem 1.5rem 1.25rem",
+        padding: "0.75rem 1rem",
+        toggleablePadding: "0.75rem 1rem 1.25rem 1rem",
         borderRadius: "{content.border.radius}"
       },
       nodeToggleButton: {
@@ -3762,7 +3683,7 @@ export const CyanMaterialPreset = definePreset(Material, {
         borderColor: "{content.border.color}",
         color: "{text.muted.color}",
         hoverColor: "{text.color}",
-        size: "1.75rem",
+        size: "1.5rem",
         borderRadius: "50%",
         focusRing: {
           width: "{focus.ring.width}",
@@ -3852,7 +3773,7 @@ export const CyanMaterialPreset = definePreset(Material, {
         shadow: "{overlay.popover.shadow}"
       },
       content: {
-        gap: "0.75rem"
+        gap: "0.5rem"
       },
       colorScheme: {
         light: {
@@ -3873,45 +3794,35 @@ export const CyanMaterialPreset = definePreset(Material, {
     },
     panel: {
       root: {
+        background: "{content.background}",
         borderColor: "{content.border.color}",
+        color: "{content.color}",
         borderRadius: "{content.border.radius}"
       },
       header: {
-        borderWidth: "0 0 1px 0",
-        borderColor: "{content.border.color}",
+        background: "transparent",
+        color: "{text.color}",
         padding: "1.125rem",
-        borderRadius: "5px 5px 0 0"
+        borderColor: "{content.border.color}",
+        borderWidth: "0",
+        borderRadius: "0"
       },
       toggleableHeader: {
-        padding: "0.25rem 1.125rem"
+        padding: "0.375rem 1.125rem"
       },
       title: {
-        fontWeight: "700"
+        fontWeight: "600"
       },
       content: {
-        padding: "1.125rem"
+        padding: "0 1.125rem 1.125rem 1.125rem"
       },
       footer: {
-        padding: "1.125rem"
-      },
-      colorScheme: {
-        light: {
-          header: {
-            background: "{surface.50}",
-            color: "{text.color}"
-          }
-        },
-        dark: {
-          header: {
-            background: "{surface.800}",
-            color: "{text.color}"
-          }
-        }
+        padding: "0 1.125rem 1.125rem 1.125rem"
       }
     },
     panelmenu: {
       root: {
-        gap: "0",
+        gap: "0.5rem",
         transitionDuration: "{transition.duration}"
       },
       panel: {
@@ -3920,13 +3831,13 @@ export const CyanMaterialPreset = definePreset(Material, {
         borderWidth: "1px",
         color: "{content.color}",
         padding: "0.25rem 0.25rem",
-        borderRadius: "0",
+        borderRadius: "{content.border.radius}",
         first: {
-          borderWidth: "1px 1px 0 1px",
+          borderWidth: "1px",
           topBorderRadius: "{content.border.radius}"
         },
         last: {
-          borderWidth: "0 1px 1px 1px",
+          borderWidth: "1px",
           bottomBorderRadius: "{content.border.radius}"
         }
       },
@@ -3962,14 +3873,14 @@ export const CyanMaterialPreset = definePreset(Material, {
       root: {
         background: "{content.border.color}",
         borderRadius: "{content.border.radius}",
-        height: "1.5rem"
+        height: "1.25rem"
       },
       value: {
         background: "{primary.color}"
       },
       label: {
         color: "{primary.contrast.color}",
-        fontSize: "0.875rem",
+        fontSize: "0.75rem",
         fontWeight: "600"
       }
     },
@@ -3977,26 +3888,26 @@ export const CyanMaterialPreset = definePreset(Material, {
       colorScheme: {
         light: {
           root: {
-            "color.1": "{pink.500}",
-            "color.2": "{sky.500}",
-            "color.3": "{emerald.500}",
-            "color.4": "{amber.500}"
+            "color.1": "{red.500}",
+            "color.2": "{blue.500}",
+            "color.3": "{green.500}",
+            "color.4": "{yellow.500}"
           }
         },
         dark: {
           root: {
-            "color.1": "{pink.400}",
-            "color.2": "{sky.400}",
-            "color.3": "{emerald.400}",
-            "color.4": "{amber.400}"
+            "color.1": "{red.400}",
+            "color.2": "{blue.400}",
+            "color.3": "{green.400}",
+            "color.4": "{yellow.400}"
           }
         }
       }
     },
     radiobutton: {
       root: {
-        width: "1.5rem",
-        height: "1.5rem",
+        width: "1.25rem",
+        height: "1.25rem",
         background: "{form.field.background}",
         checkedBackground: "{primary.color}",
         checkedHoverBackground: "{primary.hover.color}",
@@ -4004,7 +3915,7 @@ export const CyanMaterialPreset = definePreset(Material, {
         filledBackground: "{form.field.filled.background}",
         borderColor: "{form.field.border.color}",
         hoverBorderColor: "{form.field.hover.border.color}",
-        focusBorderColor: "{form.field.focus.border.color}",
+        focusBorderColor: "{form.field.border.color}",
         checkedBorderColor: "{primary.color}",
         checkedHoverBorderColor: "{primary.hover.color}",
         checkedFocusBorderColor: "{primary.color}",
@@ -4012,32 +3923,32 @@ export const CyanMaterialPreset = definePreset(Material, {
         invalidBorderColor: "{form.field.invalid.border.color}",
         shadow: "{form.field.shadow}",
         focusRing: {
-          width: "{form.field.focus.ring.width}",
-          style: "{form.field.focus.ring.style}",
-          color: "{form.field.focus.ring.color}",
-          offset: "{form.field.focus.ring.offset}",
-          shadow: "{form.field.focus.ring.shadow}"
+          width: "{focus.ring.width}",
+          style: "{focus.ring.style}",
+          color: "{focus.ring.color}",
+          offset: "{focus.ring.offset}",
+          shadow: "{focus.ring.shadow}"
         },
         transitionDuration: "{form.field.transition.duration}",
         sm: {
-          width: "1.25rem",
-          height: "1.25rem"
+          width: "1rem",
+          height: "1rem"
         },
         lg: {
-          width: "1.75rem",
-          height: "1.75rem"
+          width: "1.5rem",
+          height: "1.5rem"
         }
       },
       icon: {
-        size: "1rem",
+        size: "0.75rem",
         checkedColor: "{primary.contrast.color}",
         checkedHoverColor: "{primary.contrast.color}",
         disabledColor: "{form.field.disabled.color}",
         sm: {
-          size: "0.75rem"
+          size: "0.5rem"
         },
         lg: {
-          size: "1.25rem"
+          size: "1rem"
         }
       }
     },
@@ -4054,7 +3965,7 @@ export const CyanMaterialPreset = definePreset(Material, {
         }
       },
       icon: {
-        size: "1.25rem",
+        size: "1rem",
         color: "{text.muted.color}",
         hoverColor: "{primary.color}",
         activeColor: "{primary.color}"
@@ -4078,12 +3989,12 @@ export const CyanMaterialPreset = definePreset(Material, {
       colorScheme: {
         light: {
           bar: {
-            background: "{surface.200}"
+            background: "{surface.100}"
           }
         },
         dark: {
           bar: {
-            background: "{surface.700}"
+            background: "{surface.800}"
           }
         }
       }
@@ -4166,8 +4077,8 @@ export const CyanMaterialPreset = definePreset(Material, {
       },
       checkmark: {
         color: "{list.option.color}",
-        gutterStart: "-0.5rem",
-        gutterEnd: "0.5rem"
+        gutterStart: "-0.375rem",
+        gutterEnd: "0.375rem"
       },
       emptyMessage: {
         padding: "{list.option.padding}"
@@ -4222,24 +4133,24 @@ export const CyanMaterialPreset = definePreset(Material, {
         background: "{primary.color}"
       },
       handle: {
-        width: "16px",
-        height: "16px",
+        width: "20px",
+        height: "20px",
         borderRadius: "50%",
-        background: "{primary.color}",
-        hoverBackground: "{primary.color}",
+        background: "{content.border.color}",
+        hoverBackground: "{content.border.color}",
         content: {
           borderRadius: "50%",
-          hoverBackground: "{primary.color}",
-          width: "12px",
-          height: "12px",
-          shadow: "none"
+          hoverBackground: "{content.background}",
+          width: "16px",
+          height: "16px",
+          shadow: "0px 0.5px 0px 0px rgba(0, 0, 0, 0.08), 0px 1px 1px 0px rgba(0, 0, 0, 0.14)"
         },
         focusRing: {
-          width: "{form.field.focus.ring.width}",
-          style: "{form.field.focus.ring.style}",
-          color: "{form.field.focus.ring.color}",
-          offset: "{form.field.focus.ring.offset}",
-          shadow: "{form.field.focus.ring.shadow}"
+          width: "{focus.ring.width}",
+          style: "{focus.ring.style}",
+          color: "{focus.ring.color}",
+          offset: "{focus.ring.offset}",
+          shadow: "{focus.ring.shadow}"
         }
       },
       colorScheme: {
@@ -4273,6 +4184,7 @@ export const CyanMaterialPreset = definePreset(Material, {
       },
       handle: {
         size: "24px",
+        background: "transparent",
         borderRadius: "{content.border.radius}",
         focusRing: {
           width: "{focus.ring.width}",
@@ -4280,18 +4192,6 @@ export const CyanMaterialPreset = definePreset(Material, {
           color: "{focus.ring.color}",
           offset: "{focus.ring.offset}",
           shadow: "{focus.ring.shadow}"
-        }
-      },
-      colorScheme: {
-        light: {
-          handle: {
-            background: "{surface.400}"
-          }
-        },
-        dark: {
-          handle: {
-            background: "{surface.600}"
-          }
         }
       }
     },
@@ -4335,16 +4235,16 @@ export const CyanMaterialPreset = definePreset(Material, {
       },
       stepNumber: {
         background: "{content.background}",
-        activeBackground: "{primary.color}",
+        activeBackground: "{content.background}",
         borderColor: "{content.border.color}",
-        activeBorderColor: "{primary.color}",
+        activeBorderColor: "{content.border.color}",
         color: "{text.muted.color}",
-        activeColor: "{primary.contrast.color}",
-        size: "2.25rem",
-        fontSize: "1.125rem",
+        activeColor: "{primary.color}",
+        size: "2rem",
+        fontSize: "1.143rem",
         fontWeight: "500",
         borderRadius: "50%",
-        shadow: "none"
+        shadow: "0px 0.5px 0px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12)"
       },
       steppanels: {
         padding: "0.875rem 0.5rem 1.125rem 0.5rem"
@@ -4381,16 +4281,16 @@ export const CyanMaterialPreset = definePreset(Material, {
       },
       itemNumber: {
         background: "{content.background}",
-        activeBackground: "{primary.color}",
+        activeBackground: "{content.background}",
         borderColor: "{content.border.color}",
-        activeBorderColor: "{primary.color}",
+        activeBorderColor: "{content.border.color}",
         color: "{text.muted.color}",
-        activeColor: "{primary.contrast.color}",
-        size: "2.25rem",
-        fontSize: "1.125rem",
+        activeColor: "{primary.color}",
+        size: "2rem",
+        fontSize: "1.143rem",
         fontWeight: "500",
         borderRadius: "50%",
-        shadow: "none"
+        shadow: "0px 0.5px 0px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12)"
       }
     },
     tabmenu: {
@@ -4398,21 +4298,24 @@ export const CyanMaterialPreset = definePreset(Material, {
         transitionDuration: "{transition.duration}"
       },
       tablist: {
-        borderWidth: "0",
+        borderWidth: "0 0 1px 0",
         background: "{content.background}",
         borderColor: "{content.border.color}"
       },
       item: {
-        borderWidth: "2px 0 0 0",
-        borderColor: "transparent",
-        hoverBorderColor: "transparent",
+        background: "transparent",
+        hoverBackground: "transparent",
+        activeBackground: "transparent",
+        borderWidth: "0 0 1px 0",
+        borderColor: "{content.border.color}",
+        hoverBorderColor: "{content.border.color}",
         activeBorderColor: "{primary.color}",
         color: "{text.muted.color}",
         hoverColor: "{text.color}",
         activeColor: "{primary.color}",
-        padding: "1rem 1.25rem",
+        padding: "1rem 1.125rem",
         fontWeight: "600",
-        margin: "0",
+        margin: "0 0 -1px 0",
         gap: "0.5rem",
         focusRing: {
           width: "{focus.ring.width}",
@@ -4428,25 +4331,9 @@ export const CyanMaterialPreset = definePreset(Material, {
         activeColor: "{primary.color}"
       },
       activeBar: {
-        height: "0",
-        bottom: "0",
-        background: "transparent"
-      },
-      colorScheme: {
-        light: {
-          item: {
-            background: "{surface.50}",
-            hoverBackground: "{surface.100}",
-            activeBackground: "{surface.0}"
-          }
-        },
-        dark: {
-          item: {
-            background: "{surface.800}",
-            hoverBackground: "{surface.700}",
-            activeBackground: "{surface.900}"
-          }
-        }
+        height: "1px",
+        bottom: "-1px",
+        background: "{primary.color}"
       }
     },
     tabs: {
@@ -4454,27 +4341,31 @@ export const CyanMaterialPreset = definePreset(Material, {
         transitionDuration: "{transition.duration}"
       },
       tablist: {
-        borderWidth: "0",
+        borderWidth: "0 0 1px 0",
         background: "{content.background}",
         borderColor: "{content.border.color}"
       },
       tab: {
-        borderWidth: "2px 0 0 0",
-        borderColor: "transparent",
-        hoverBorderColor: "transparent",
+        background: "transparent",
+        hoverBackground: "transparent",
+        activeBackground: "transparent",
+        borderWidth: "0 0 1px 0",
+        borderColor: "{content.border.color}",
+        hoverBorderColor: "{content.border.color}",
         activeBorderColor: "{primary.color}",
         color: "{text.muted.color}",
         hoverColor: "{text.color}",
         activeColor: "{primary.color}",
-        padding: "1rem 1.25rem",
-        fontWeight: "700",
-        margin: "0",
+        padding: "1rem 1.125rem",
+        fontWeight: "600",
+        margin: "0 0 -1px 0",
+        gap: "0.5rem",
         focusRing: {
           width: "{focus.ring.width}",
           style: "{focus.ring.style}",
           color: "{focus.ring.color}",
-          offset: "{focus.ring.offset}",
-          shadow: "inset {focus.ring.shadow}"
+          offset: "-1px",
+          shadow: "{focus.ring.shadow}"
         }
       },
       tabpanel: {
@@ -4498,34 +4389,24 @@ export const CyanMaterialPreset = definePreset(Material, {
           width: "{focus.ring.width}",
           style: "{focus.ring.style}",
           color: "{focus.ring.color}",
-          offset: "{focus.ring.offset}",
-          shadow: "inset {focus.ring.shadow}"
+          offset: "-1px",
+          shadow: "{focus.ring.shadow}"
         }
       },
       activeBar: {
-        height: "0",
-        bottom: "0",
-        background: "transparent"
+        height: "1px",
+        bottom: "-1px",
+        background: "{primary.color}"
       },
       colorScheme: {
         light: {
           navButton: {
             shadow: "0px 0px 10px 50px rgba(255, 255, 255, 0.6)"
-          },
-          tab: {
-            background: "{surface.50}",
-            hoverBackground: "{surface.100}",
-            activeBackground: "{surface.0}"
           }
         },
         dark: {
           navButton: {
             shadow: "0px 0px 10px 50px color-mix(in srgb, {content.background}, transparent 50%)"
-          },
-          tab: {
-            background: "{surface.800}",
-            hoverBackground: "{surface.700}",
-            activeBackground: "{surface.900}"
           }
         }
       }
@@ -4572,6 +4453,7 @@ export const CyanMaterialPreset = definePreset(Material, {
         background: "{form.field.background}",
         disabledBackground: "{form.field.disabled.background}",
         filledBackground: "{form.field.filled.background}",
+        filledHoverBackground: "{form.field.filled.hover.background}",
         filledFocusBackground: "{form.field.filled.focus.background}",
         borderColor: "{form.field.border.color}",
         hoverBorderColor: "{form.field.hover.border.color}",
@@ -4634,7 +4516,7 @@ export const CyanMaterialPreset = definePreset(Material, {
         }
       },
       submenu: {
-        mobileIndent: "1.25rem"
+        mobileIndent: "1rem"
       },
       submenuIcon: {
         size: "{navigation.submenu.icon.size}",
@@ -4661,28 +4543,28 @@ export const CyanMaterialPreset = definePreset(Material, {
       colorScheme: {
         light: {
           primary: {
-            background: "{primary.color}",
-            color: "{primary.contrast.color}"
+            background: "{primary.100}",
+            color: "{primary.700}"
           },
           secondary: {
             background: "{surface.100}",
             color: "{surface.600}"
           },
           success: {
-            background: "{green.500}",
-            color: "{surface.0}"
+            background: "{green.100}",
+            color: "{green.700}"
           },
           info: {
-            background: "{sky.500}",
-            color: "{surface.0}"
+            background: "{sky.100}",
+            color: "{sky.700}"
           },
           warn: {
-            background: "{orange.500}",
-            color: "{surface.0}"
+            background: "{orange.100}",
+            color: "{orange.700}"
           },
           danger: {
-            background: "{red.500}",
-            color: "{surface.0}"
+            background: "{red.100}",
+            color: "{red.700}"
           },
           contrast: {
             background: "{surface.950}",
@@ -4691,28 +4573,28 @@ export const CyanMaterialPreset = definePreset(Material, {
         },
         dark: {
           primary: {
-            background: "{primary.color}",
-            color: "{primary.contrast.color}"
+            background: "color-mix(in srgb, {primary.500}, transparent 84%)",
+            color: "{primary.300}"
           },
           secondary: {
             background: "{surface.800}",
             color: "{surface.300}"
           },
           success: {
-            background: "{green.400}",
-            color: "{green.950}"
+            background: "color-mix(in srgb, {green.500}, transparent 84%)",
+            color: "{green.300}"
           },
           info: {
-            background: "{sky.400}",
-            color: "{sky.950}"
+            background: "color-mix(in srgb, {sky.500}, transparent 84%)",
+            color: "{sky.300}"
           },
           warn: {
-            background: "{orange.400}",
-            color: "{orange.950}"
+            background: "color-mix(in srgb, {orange.500}, transparent 84%)",
+            color: "{orange.300}"
           },
           danger: {
-            background: "{red.400}",
-            color: "{red.950}"
+            background: "color-mix(in srgb, {red.500}, transparent 84%)",
+            color: "{red.300}"
           },
           contrast: {
             background: "{surface.0}",
@@ -4743,12 +4625,18 @@ export const CyanMaterialPreset = definePreset(Material, {
       },
       horizontal: {
         eventContent: {
-          padding: "1rem 0"
+          extend: {
+            padding: "1rem 0.75rem 1rem 0"
+            // padding: "1rem 0"
+          }
         }
       },
       vertical: {
         eventContent: {
-          padding: "0 1rem"
+          extend: {
+            padding: "0 1rem 0.75rem 1rem"
+            // padding: "0 1rem"
+          }
         }
       },
       eventMarker: {
@@ -4756,12 +4644,12 @@ export const CyanMaterialPreset = definePreset(Material, {
         borderRadius: "50%",
         borderWidth: "2px",
         background: "{content.background}",
-        borderColor: "{primary.color}",
+        borderColor: "{content.border.color}",
         content: {
           borderRadius: "50%",
           size: "0.375rem",
-          background: "transparent",
-          insetShadow: "none"
+          background: "{primary.color}",
+          insetShadow: "0px 0.5px 0px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12)"
         }
       },
       eventConnector: {
@@ -4771,76 +4659,95 @@ export const CyanMaterialPreset = definePreset(Material, {
     },
     togglebutton: {
       root: {
-        padding: "0.625rem 1rem",
+        padding: "0.5rem 1rem",
         borderRadius: "{content.border.radius}",
         gap: "0.5rem",
         fontWeight: "500",
-        background: "{form.field.background}",
-        borderColor: "{form.field.border.color}",
-        color: "{form.field.color}",
-        hoverColor: "{form.field.color}",
-        checkedBackground: "{highlight.background}",
-        checkedColor: "{highlight.color}",
-        checkedBorderColor: "{form.field.border.color}",
         disabledBackground: "{form.field.disabled.background}",
         disabledBorderColor: "{form.field.disabled.background}",
         disabledColor: "{form.field.disabled.color}",
         invalidBorderColor: "{form.field.invalid.border.color}",
         focusRing: {
-          width: "{form.field.focus.ring.width}",
-          style: "{form.field.focus.ring.style}",
-          color: "{form.field.focus.ring.color}",
-          offset: "{form.field.focus.ring.offset}",
-          shadow: "{form.field.focus.ring.shadow}"
+          width: "{focus.ring.width}",
+          style: "{focus.ring.style}",
+          color: "{focus.ring.color}",
+          offset: "{focus.ring.offset}",
+          shadow: "{focus.ring.shadow}"
         },
         transitionDuration: "{form.field.transition.duration}",
         sm: {
           fontSize: "{form.field.sm.font.size}",
-          padding: "0.5rem 0.75rem"
+          padding: "0.375rem 0.75rem"
         },
         lg: {
           fontSize: "{form.field.lg.font.size}",
-          padding: "0.75rem 1.25rem"
+          padding: "0.625rem 1.25rem"
         }
       },
       icon: {
-        color: "{text.muted.color}",
-        hoverColor: "{text.muted.color}",
-        checkedColor: "{highlight.color}",
         disabledColor: "{form.field.disabled.color}"
       },
       content: {
         left: "0.25rem",
         top: "0.25rem",
-        checkedBackground: "transparent",
-        checkedShadow: "none"
+        checkedShadow: "0px 1px 2px 0px rgba(0, 0, 0, 0.02), 0px 1px 2px 0px rgba(0, 0, 0, 0.04)"
       },
       colorScheme: {
         light: {
           root: {
-            hoverBackground: "{surface.100}"
+            background: "{surface.100}",
+            checkedBackground: "{surface.100}",
+            hoverBackground: "{surface.100}",
+            borderColor: "{surface.100}",
+            color: "{surface.500}",
+            hoverColor: "{surface.700}",
+            checkedColor: "{surface.900}",
+            checkedBorderColor: "{surface.100}"
+          },
+          content: {
+            checkedBackground: "{surface.0}"
+          },
+          icon: {
+            color: "{surface.500}",
+            hoverColor: "{surface.700}",
+            checkedColor: "{surface.900}"
           }
         },
         dark: {
           root: {
-            hoverBackground: "{surface.800}"
+            background: "{surface.950}",
+            checkedBackground: "{surface.950}",
+            hoverBackground: "{surface.950}",
+            borderColor: "{surface.950}",
+            color: "{surface.400}",
+            hoverColor: "{surface.300}",
+            checkedColor: "{surface.0}",
+            checkedBorderColor: "{surface.950}"
+          },
+          content: {
+            checkedBackground: "{surface.800}"
+          },
+          icon: {
+            color: "{surface.400}",
+            hoverColor: "{surface.300}",
+            checkedColor: "{surface.0}"
           }
         }
       }
     },
     toggleswitch: {
       root: {
-        width: "3rem",
-        height: "1.75rem",
+        width: "2.5rem",
+        height: "1.5rem",
         borderRadius: "30px",
         gap: "0.25rem",
         shadow: "{form.field.shadow}",
         focusRing: {
-          width: "{form.field.focus.ring.width}",
-          style: "{form.field.focus.ring.style}",
-          color: "{form.field.focus.ring.color}",
-          offset: "{form.field.focus.ring.offset}",
-          shadow: "{form.field.focus.ring.shadow}"
+          width: "{focus.ring.width}",
+          style: "{focus.ring.style}",
+          color: "{focus.ring.color}",
+          offset: "{focus.ring.offset}",
+          shadow: "{focus.ring.shadow}"
         },
         borderWidth: "1px",
         borderColor: "transparent",
@@ -4853,7 +4760,7 @@ export const CyanMaterialPreset = definePreset(Material, {
       },
       handle: {
         borderRadius: "50%",
-        size: "1.25rem"
+        size: "1rem"
       },
       colorScheme: {
         light: {
@@ -4908,7 +4815,7 @@ export const CyanMaterialPreset = definePreset(Material, {
         transitionDuration: "{transition.duration}"
       },
       node: {
-        padding: "0.375rem 0.625rem",
+        padding: "0.25rem 0.5rem",
         borderRadius: "{content.border.radius}",
         hoverBackground: "{content.hover.background}",
         selectedBackground: "{highlight.background}",
@@ -4919,8 +4826,8 @@ export const CyanMaterialPreset = definePreset(Material, {
           width: "{focus.ring.width}",
           style: "{focus.ring.style}",
           color: "{focus.ring.color}",
-          offset: "{focus.ring.offset}",
-          shadow: "inset {focus.ring.shadow}"
+          offset: "-1px",
+          shadow: "{focus.ring.shadow}"
         },
         gap: "0.25rem"
       },
@@ -5019,13 +4926,18 @@ export const CyanMaterialPreset = definePreset(Material, {
         transitionDuration: "{transition.duration}"
       },
       header: {
+        background: "{content.background}",
         borderColor: "{treetable.border.color}",
-        borderWidth: "1px 0 1px 0",
+        color: "{content.color}",
+        borderWidth: "0 0 1px 0",
         padding: "0.75rem 1rem"
       },
       headerCell: {
+        background: "{content.background}",
+        hoverBackground: "{content.hover.background}",
         selectedBackground: "{highlight.background}",
         borderColor: "{treetable.border.color}",
+        color: "{content.color}",
         hoverColor: "{content.hover.color}",
         selectedColor: "{highlight.color}",
         gap: "0.5rem",
@@ -5034,26 +4946,26 @@ export const CyanMaterialPreset = definePreset(Material, {
           width: "{focus.ring.width}",
           style: "{focus.ring.style}",
           color: "{focus.ring.color}",
-          offset: "{focus.ring.offset}",
-          shadow: "inset {focus.ring.shadow}"
+          offset: "-1px",
+          shadow: "{focus.ring.shadow}"
         }
       },
       columnTitle: {
-        fontWeight: "700"
+        fontWeight: "600"
       },
       row: {
         background: "{content.background}",
         hoverBackground: "{content.hover.background}",
         selectedBackground: "{highlight.background}",
         color: "{content.color}",
-        hoverColor: "{sr.hover.color}",
+        hoverColor: "{content.hover.color}",
         selectedColor: "{highlight.color}",
         focusRing: {
           width: "{focus.ring.width}",
           style: "{focus.ring.style}",
           color: "{focus.ring.color}",
-          offset: "{focus.ring.offset}",
-          shadow: "inset {focus.ring.shadow}"
+          offset: "-1px",
+          shadow: "{focus.ring.shadow}"
         }
       },
       bodyCell: {
@@ -5062,14 +4974,18 @@ export const CyanMaterialPreset = definePreset(Material, {
         gap: "0.5rem"
       },
       footerCell: {
+        background: "{content.background}",
         borderColor: "{treetable.border.color}",
+        color: "{content.color}",
         padding: "0.75rem 1rem"
       },
       columnFooter: {
-        fontWeight: "700"
+        fontWeight: "600"
       },
       footer: {
+        background: "{content.background}",
         borderColor: "{treetable.border.color}",
+        color: "{content.color}",
         borderWidth: "0 0 1px 0",
         padding: "0.75rem 1rem"
       },
@@ -5115,23 +5031,6 @@ export const CyanMaterialPreset = definePreset(Material, {
           root: {
             borderColor: "{content.border.color}"
           },
-          header: {
-            background: "{surface.50}",
-            color: "{text.color}"
-          },
-          headerCell: {
-            background: "{surface.50}",
-            hoverBackground: "{surface.100}",
-            color: "{text.color}"
-          },
-          footer: {
-            background: "{surface.50}",
-            color: "{text.color}"
-          },
-          footerCell: {
-            background: "{surface.50}",
-            color: "{text.color}"
-          },
           bodyCell: {
             selectedBorderColor: "{primary.100}"
           }
@@ -5139,23 +5038,6 @@ export const CyanMaterialPreset = definePreset(Material, {
         dark: {
           root: {
             borderColor: "{surface.800}"
-          },
-          header: {
-            background: "{surface.800}",
-            color: "{text.color}"
-          },
-          headerCell: {
-            background: "{surface.800}",
-            hoverBackground: "{surface.700}",
-            color: "{text.color}"
-          },
-          footer: {
-            background: "{surface.800}",
-            color: "{text.color}"
-          },
-          footerCell: {
-            background: "{surface.800}",
-            color: "{text.color}"
           },
           bodyCell: {
             selectedBorderColor: "{primary.900}"
@@ -5167,11 +5049,11 @@ export const CyanMaterialPreset = definePreset(Material, {
       root: {
         width: "25rem",
         borderRadius: "{content.border.radius}",
-        borderWidth: "0 0 0 6px",
+        borderWidth: "1px",
         transitionDuration: "{transition.duration}"
       },
       icon: {
-        size: "1.25rem"
+        size: "1.125rem"
       },
       content: {
         padding: "{overlay.popover.padding}",
@@ -5189,8 +5071,8 @@ export const CyanMaterialPreset = definePreset(Material, {
         fontSize: "0.875rem"
       },
       closeButton: {
-        width: "2rem",
-        height: "2rem",
+        width: "1.75rem",
+        height: "1.75rem",
         borderRadius: "50%",
         focusRing: {
           width: "{focus.ring.width}",
@@ -5206,85 +5088,85 @@ export const CyanMaterialPreset = definePreset(Material, {
           blur: "1.5px",
           info: {
             background: "color-mix(in srgb, {blue.50}, transparent 5%)",
-            borderColor: "{blue.500}",
+            borderColor: "{blue.200}",
             color: "{blue.600}",
             detailColor: "{surface.700}",
-            shadow: "{overlay.popover.shadow}",
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {blue.500}, transparent 96%)",
             closeButton: {
               hoverBackground: "{blue.100}",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem {blue.200}"
+                color: "{blue.600}",
+                shadow: "none"
               }
             }
           },
           success: {
             background: "color-mix(in srgb, {green.50}, transparent 5%)",
-            borderColor: "{green.500}",
+            borderColor: "{green.200}",
             color: "{green.600}",
             detailColor: "{surface.700}",
-            shadow: "{overlay.popover.shadow}",
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {green.500}, transparent 96%)",
             closeButton: {
               hoverBackground: "{green.100}",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem {green.200}"
+                color: "{green.600}",
+                shadow: "none"
               }
             }
           },
           warn: {
             background: "color-mix(in srgb,{yellow.50}, transparent 5%)",
-            borderColor: "{yellow.500}",
+            borderColor: "{yellow.200}",
             color: "{yellow.600}",
             detailColor: "{surface.700}",
-            shadow: "{overlay.popover.shadow}",
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {yellow.500}, transparent 96%)",
             closeButton: {
               hoverBackground: "{yellow.100}",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem {yellow.200}"
+                color: "{yellow.600}",
+                shadow: "none"
               }
             }
           },
           error: {
             background: "color-mix(in srgb, {red.50}, transparent 5%)",
-            borderColor: "{red.500}",
+            borderColor: "{red.200}",
             color: "{red.600}",
             detailColor: "{surface.700}",
-            shadow: "{overlay.popover.shadow}",
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {red.500}, transparent 96%)",
             closeButton: {
               hoverBackground: "{red.100}",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem {red.200}"
+                color: "{red.600}",
+                shadow: "none"
               }
             }
           },
           secondary: {
             background: "{surface.100}",
-            borderColor: "{surface.500}",
+            borderColor: "{surface.200}",
             color: "{surface.600}",
             detailColor: "{surface.700}",
-            shadow: "{overlay.popover.shadow}",
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {surface.500}, transparent 96%)",
             closeButton: {
               hoverBackground: "{surface.200}",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem {surface.200}"
+                color: "{surface.600}",
+                shadow: "none"
               }
             }
           },
           contrast: {
             background: "{surface.900}",
-            borderColor: "{primary.color}",
+            borderColor: "{surface.950}",
             color: "{surface.50}",
             detailColor: "{surface.0}",
-            shadow: "{overlay.popover.shadow}",
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {surface.950}, transparent 96%)",
             closeButton: {
               hoverBackground: "{surface.800}",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem {surface.400}"
+                color: "{surface.50}",
+                shadow: "none"
               }
             }
           }
@@ -5296,12 +5178,12 @@ export const CyanMaterialPreset = definePreset(Material, {
             borderColor: "color-mix(in srgb, {blue.700}, transparent 64%)",
             color: "{blue.500}",
             detailColor: "{surface.0}",
-            shadow: "{overlay.popover.shadow}",
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {blue.500}, transparent 96%)",
             closeButton: {
               hoverBackground: "rgba(255, 255, 255, 0.05)",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem color-mix(in srgb, {blue.500}, transparent 80%)"
+                color: "{blue.500}",
+                shadow: "none"
               }
             }
           },
@@ -5310,12 +5192,12 @@ export const CyanMaterialPreset = definePreset(Material, {
             borderColor: "color-mix(in srgb, {green.700}, transparent 64%)",
             color: "{green.500}",
             detailColor: "{surface.0}",
-            shadow: "{overlay.popover.shadow}",
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {green.500}, transparent 96%)",
             closeButton: {
               hoverBackground: "rgba(255, 255, 255, 0.05)",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem color-mix(in srgb, {green.500}, transparent 80%)"
+                color: "{green.500}",
+                shadow: "none"
               }
             }
           },
@@ -5324,12 +5206,12 @@ export const CyanMaterialPreset = definePreset(Material, {
             borderColor: "color-mix(in srgb, {yellow.700}, transparent 64%)",
             color: "{yellow.500}",
             detailColor: "{surface.0}",
-            shadow: "{overlay.popover.shadow}",
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {yellow.500}, transparent 96%)",
             closeButton: {
               hoverBackground: "rgba(255, 255, 255, 0.05)",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem color-mix(in srgb, {yellow.500}, transparent 80%)"
+                color: "{yellow.500}",
+                shadow: "none"
               }
             }
           },
@@ -5338,12 +5220,12 @@ export const CyanMaterialPreset = definePreset(Material, {
             borderColor: "color-mix(in srgb, {red.700}, transparent 64%)",
             color: "{red.500}",
             detailColor: "{surface.0}",
-            shadow: "{overlay.popover.shadow}",
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {red.500}, transparent 96%)",
             closeButton: {
               hoverBackground: "rgba(255, 255, 255, 0.05)",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem color-mix(in srgb, {red.500}, transparent 80%)"
+                color: "{red.500}",
+                shadow: "none"
               }
             }
           },
@@ -5352,12 +5234,12 @@ export const CyanMaterialPreset = definePreset(Material, {
             borderColor: "{surface.700}",
             color: "{surface.300}",
             detailColor: "{surface.0}",
-            shadow: "{overlay.popover.shadow}",
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {surface.500}, transparent 96%)",
             closeButton: {
               hoverBackground: "{surface.700}",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem color-mix(in srgb, {surface.300}, transparent 80%)"
+                color: "{surface.300}",
+                shadow: "none"
               }
             }
           },
@@ -5366,12 +5248,12 @@ export const CyanMaterialPreset = definePreset(Material, {
             borderColor: "{surface.100}",
             color: "{surface.950}",
             detailColor: "{surface.950}",
-            shadow: "{overlay.popover.shadow}",
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {surface.950}, transparent 96%)",
             closeButton: {
               hoverBackground: "{surface.100}",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem color-mix(in srgb, {surface.950}, transparent 80%)"
+                color: "{surface.950}",
+                shadow: "none"
               }
             }
           }
@@ -5386,20 +5268,6 @@ export const CyanMaterialPreset = definePreset(Material, {
         color: "{content.color}",
         gap: "0.5rem",
         padding: "0.75rem"
-      },
-      colorScheme: {
-        light: {
-          root: {
-            background: "{surface.50}",
-            color: "{content.color}"
-          }
-        },
-        dark: {
-          root: {
-            background: "{surface.800}",
-            color: "{content.color}"
-          }
-        }
       }
     },
     virtualscroller: {
@@ -5415,10 +5283,13 @@ export const CyanMaterialPreset = definePreset(Material, {
     },
     tooltip: {
       root: {
-        maxWidth: "12.5rem",
+        extend: {
+          // maxWidth: "12.5rem",
+          maxWidth: "25rem",
+        },
         gutter: "0.25rem",
         shadow: "{overlay.popover.shadow}",
-        padding: "0.625rem 0.75rem",
+        padding: "0.5rem 0.75rem",
         borderRadius: "{overlay.popover.border.radius}"
       },
       colorScheme: {

@@ -1,7 +1,7 @@
-import Aura from "@primeng/themes/aura";
+import Material from "@primeng/themes/material";
 import {definePreset} from "@primeng/themes";
 
-export const EmeraldAuraPreset = definePreset(Aura, {
+export const MaterialPreset = definePreset(Material, {
   primitive: {
     borderRadius: {
       none: "0",
@@ -12,225 +12,225 @@ export const EmeraldAuraPreset = definePreset(Aura, {
       xl: "12px"
     },
     emerald: {
-      50: "#ecfdf5",
-      100: "#d1fae5",
-      200: "#a7f3d0",
-      300: "#6ee7b7",
-      400: "#34d399",
-      500: "#10b981",
-      600: "#059669",
-      700: "#047857",
-      800: "#065f46",
-      900: "#064e3b",
-      950: "#022c22"
+      50: "#E8F6F1",
+      100: "#C5EBE1",
+      200: "#9EDFCF",
+      300: "#76D3BD",
+      400: "#58C9AF",
+      500: "#3BBFA1",
+      600: "#35AF94",
+      700: "#2D9B83",
+      800: "#268873",
+      900: "#1A6657",
+      950: "#0d3329"
     },
     green: {
-      50: "#f0fdf4",
-      100: "#dcfce7",
-      200: "#bbf7d0",
-      300: "#86efac",
-      400: "#4ade80",
-      500: "#22c55e",
-      600: "#16a34a",
-      700: "#15803d",
-      800: "#166534",
-      900: "#14532d",
-      950: "#052e16"
+      50: "#E8F5E9",
+      100: "#C8E6C9",
+      200: "#A5D6A7",
+      300: "#81C784",
+      400: "#66BB6A",
+      500: "#4CAF50",
+      600: "#43A047",
+      700: "#388E3C",
+      800: "#2E7D32",
+      900: "#1B5E20",
+      950: "#0e2f10"
     },
     lime: {
-      50: "#f7fee7",
-      100: "#ecfccb",
-      200: "#d9f99d",
-      300: "#bef264",
-      400: "#a3e635",
-      500: "#84cc16",
-      600: "#65a30d",
-      700: "#4d7c0f",
-      800: "#3f6212",
-      900: "#365314",
-      950: "#1a2e05"
+      50: "#F9FBE7",
+      100: "#F0F4C3",
+      200: "#E6EE9C",
+      300: "#DCE775",
+      400: "#D4E157",
+      500: "#CDDC39",
+      600: "#C0CA33",
+      700: "#AFB42B",
+      800: "#9E9D24",
+      900: "#827717",
+      950: "#413c0c"
     },
     red: {
-      50: "#fef2f2",
-      100: "#fee2e2",
-      200: "#fecaca",
-      300: "#fca5a5",
-      400: "#f87171",
-      500: "#ef4444",
-      600: "#dc2626",
-      700: "#b91c1c",
-      800: "#991b1b",
-      900: "#7f1d1d",
-      950: "#450a0a"
+      50: "#FFEBEE",
+      100: "#FFCDD2",
+      200: "#EF9A9A",
+      300: "#E57373",
+      400: "#EF5350",
+      500: "#F44336",
+      600: "#E53935",
+      700: "#D32F2F",
+      800: "#C62828",
+      900: "#B71C1C",
+      950: "#5c0e0e"
     },
     orange: {
-      50: "#fff7ed",
-      100: "#ffedd5",
-      200: "#fed7aa",
-      300: "#fdba74",
-      400: "#fb923c",
-      500: "#f97316",
-      600: "#ea580c",
-      700: "#c2410c",
-      800: "#9a3412",
-      900: "#7c2d12",
-      950: "#431407"
+      50: "#FFF3E0",
+      100: "#FFE0B2",
+      200: "#FFCC80",
+      300: "#FFB74D",
+      400: "#FFA726",
+      500: "#FF9800",
+      600: "#FB8C00",
+      700: "#F57C00",
+      800: "#EF6C00",
+      900: "#E65100",
+      950: "#732900"
     },
     amber: {
-      50: "#fffbeb",
-      100: "#fef3c7",
-      200: "#fde68a",
-      300: "#fcd34d",
-      400: "#fbbf24",
-      500: "#f59e0b",
-      600: "#d97706",
-      700: "#b45309",
-      800: "#92400e",
-      900: "#78350f",
-      950: "#451a03"
+      50: "#FFF8E1",
+      100: "#FFECB3",
+      200: "#FFE082",
+      300: "#FFD54F",
+      400: "#FFCA28",
+      500: "#FFC107",
+      600: "#FFB300",
+      700: "#FFA000",
+      800: "#FF8F00",
+      900: "#FF6F00",
+      950: "#803800"
     },
     yellow: {
-      50: "#fefce8",
-      100: "#fef9c3",
-      200: "#fef08a",
-      300: "#fde047",
-      400: "#facc15",
-      500: "#eab308",
-      600: "#ca8a04",
-      700: "#a16207",
-      800: "#854d0e",
-      900: "#713f12",
-      950: "#422006"
+      50: "#FFFDE7",
+      100: "#FFF9C4",
+      200: "#FFF59D",
+      300: "#FFF176",
+      400: "#FFEE58",
+      500: "#FFEB3B",
+      600: "#FDD835",
+      700: "#FBC02D",
+      800: "#F9A825",
+      900: "#F57F17",
+      950: "#7b400c"
     },
     teal: {
-      50: "#f0fdfa",
-      100: "#ccfbf1",
-      200: "#99f6e4",
-      300: "#5eead4",
-      400: "#2dd4bf",
-      500: "#14b8a6",
-      600: "#0d9488",
-      700: "#0f766e",
-      800: "#115e59",
-      900: "#134e4a",
-      950: "#042f2e"
+      50: "#E0F2F1",
+      100: "#B2DFDB",
+      200: "#80CBC4",
+      300: "#4DB6AC",
+      400: "#26A69A",
+      500: "#009688",
+      600: "#00897B",
+      700: "#00796B",
+      800: "#00695C",
+      900: "#004D40",
+      950: "#002720"
     },
     cyan: {
-      50: "#ecfeff",
-      100: "#cffafe",
-      200: "#a5f3fc",
-      300: "#67e8f9",
-      400: "#22d3ee",
-      500: "#06b6d4",
-      600: "#0891b2",
-      700: "#0e7490",
-      800: "#155e75",
-      900: "#164e63",
-      950: "#083344"
+      50: "#E0F7FA",
+      100: "#B2EBF2",
+      200: "#80DEEA",
+      300: "#4DD0E1",
+      400: "#26C6DA",
+      500: "#00BCD4",
+      600: "#00ACC1",
+      700: "#0097A7",
+      800: "#00838F",
+      900: "#006064",
+      950: "#003032"
     },
     sky: {
-      50: "#f0f9ff",
-      100: "#e0f2fe",
-      200: "#bae6fd",
-      300: "#7dd3fc",
-      400: "#38bdf8",
-      500: "#0ea5e9",
-      600: "#0284c7",
-      700: "#0369a1",
-      800: "#075985",
-      900: "#0c4a6e",
-      950: "#082f49"
+      50: "#E1F5FE",
+      100: "#B3E5FC",
+      200: "#81D4FA",
+      300: "#4FC3F7",
+      400: "#29B6F6",
+      500: "#03A9F4",
+      600: "#039BE5",
+      700: "#0288D1",
+      800: "#0277BD",
+      900: "#01579B",
+      950: "#012c4e"
     },
     blue: {
-      50: "#eff6ff",
-      100: "#dbeafe",
-      200: "#bfdbfe",
-      300: "#93c5fd",
-      400: "#60a5fa",
-      500: "#3b82f6",
-      600: "#2563eb",
-      700: "#1d4ed8",
-      800: "#1e40af",
-      900: "#1e3a8a",
-      950: "#172554"
+      50: "#E3F2FD",
+      100: "#BBDEFB",
+      200: "#90CAF9",
+      300: "#64B5F6",
+      400: "#42A5F5",
+      500: "#2196F3",
+      600: "#1E88E5",
+      700: "#1976D2",
+      800: "#1565C0",
+      900: "#0D47A1",
+      950: "#072451"
     },
     indigo: {
-      50: "#eef2ff",
-      100: "#e0e7ff",
-      200: "#c7d2fe",
-      300: "#a5b4fc",
-      400: "#818cf8",
-      500: "#6366f1",
-      600: "#4f46e5",
-      700: "#4338ca",
-      800: "#3730a3",
-      900: "#312e81",
-      950: "#1e1b4b"
+      50: "#E8EAF6",
+      100: "#C5CAE9",
+      200: "#9FA8DA",
+      300: "#7986CB",
+      400: "#5C6BC0",
+      500: "#3F51B5",
+      600: "#3949AB",
+      700: "#303F9F",
+      800: "#283593",
+      900: "#1A237E",
+      950: "#0d123f"
     },
     violet: {
-      50: "#f5f3ff",
-      100: "#ede9fe",
-      200: "#ddd6fe",
-      300: "#c4b5fd",
-      400: "#a78bfa",
-      500: "#8b5cf6",
-      600: "#7c3aed",
-      700: "#6d28d9",
-      800: "#5b21b6",
-      900: "#4c1d95",
-      950: "#2e1065"
+      50: "#EDE7F6",
+      100: "#D1C4E9",
+      200: "#B39DDB",
+      300: "#9575CD",
+      400: "#7E57C2",
+      500: "#673AB7",
+      600: "#5E35B1",
+      700: "#512DA8",
+      800: "#4527A0",
+      900: "#311B92",
+      950: "#190e49"
     },
     purple: {
-      50: "#faf5ff",
-      100: "#f3e8ff",
-      200: "#e9d5ff",
-      300: "#d8b4fe",
-      400: "#c084fc",
-      500: "#a855f7",
-      600: "#9333ea",
-      700: "#7e22ce",
-      800: "#6b21a8",
-      900: "#581c87",
-      950: "#3b0764"
+      50: "#F3E5F5",
+      100: "#E1BEE7",
+      200: "#CE93D8",
+      300: "#BA68C8",
+      400: "#AB47BC",
+      500: "#9C27B0",
+      600: "#8E24AA",
+      700: "#7B1FA2",
+      800: "#6A1B9A",
+      900: "#4A148C",
+      950: "#250a46"
     },
     fuchsia: {
-      50: "#fdf4ff",
-      100: "#fae8ff",
-      200: "#f5d0fe",
-      300: "#f0abfc",
-      400: "#e879f9",
-      500: "#d946ef",
-      600: "#c026d3",
-      700: "#a21caf",
-      800: "#86198f",
-      900: "#701a75",
-      950: "#4a044e"
+      50: "#FDE6F3",
+      100: "#FBC1E3",
+      200: "#F897D1",
+      300: "#F56DBF",
+      400: "#F34DB2",
+      500: "#F12DA5",
+      600: "#E0289D",
+      700: "#CC2392",
+      800: "#B81E88",
+      900: "#951777",
+      950: "#4b0c3c"
     },
     pink: {
-      50: "#fdf2f8",
-      100: "#fce7f3",
-      200: "#fbcfe8",
-      300: "#f9a8d4",
-      400: "#f472b6",
-      500: "#ec4899",
-      600: "#db2777",
-      700: "#be185d",
-      800: "#9d174d",
-      900: "#831843",
-      950: "#500724"
+      50: "#FCE4EC",
+      100: "#F8BBD0",
+      200: "#F48FB1",
+      300: "#F06292",
+      400: "#EC407A",
+      500: "#E91E63",
+      600: "#D81B60",
+      700: "#C2185B",
+      800: "#AD1457",
+      900: "#880E4F",
+      950: "#440728"
     },
     rose: {
-      50: "#fff1f2",
-      100: "#ffe4e6",
-      200: "#fecdd3",
-      300: "#fda4af",
-      400: "#fb7185",
-      500: "#f43f5e",
-      600: "#e11d48",
-      700: "#be123c",
-      800: "#9f1239",
-      900: "#881337",
-      950: "#4c0519"
+      50: "#FFF0F0",
+      100: "#FFD9D9",
+      200: "#FFC0C0",
+      300: "#FFA7A7",
+      400: "#FF8E8E",
+      500: "#FF7575",
+      600: "#FF5252",
+      700: "#FF3838",
+      800: "#F71C1C",
+      900: "#D50000",
+      950: "#3E0000"
     },
     slate: {
       50: "#f8fafc",
@@ -296,93 +296,134 @@ export const EmeraldAuraPreset = definePreset(Aura, {
       800: "#292524",
       900: "#1c1917",
       950: "#0c0a09"
+    },
+    soho: {
+      0: '#ffffff',
+      50: '#ececec',
+      100: '#dedfdf',
+      200: '#c4c4c6',
+      300: '#adaeb0',
+      400: '#97979b',
+      500: '#7f8084',
+      600: '#6a6b70',
+      700: '#55565b',
+      800: '#3f4046',
+      900: '#2c2c34',
+      950: '#16161d',
+    },
+    viva: {
+      0: '#ffffff',
+      50: '#f3f3f3',
+      100: '#e7e7e8',
+      200: '#cfd0d0',
+      300: '#b7b8b9',
+      400: '#9fa1a1',
+      500: '#87898a',
+      600: '#6e7173',
+      700: '#565a5b',
+      800: '#3e4244',
+      900: '#262b2c',
+      950: '#0e1315',
+    },
+    ocean: {
+      0: '#ffffff',
+      50: '#fbfcfc',
+      100: '#F7F9F8',
+      200: '#EFF3F2',
+      300: '#DADEDD',
+      400: '#B1B7B6',
+      500: '#828787',
+      600: '#5F7274',
+      700: '#415B61',
+      800: '#29444E',
+      900: '#183240',
+      950: '#0c1920',
     }
   },
   semantic: {
     transitionDuration: "0.2s",
     focusRing: {
-      width: "1px",
-      style: "solid",
-      color: "{primary.color}",
-      offset: "2px",
-      shadow: "none"
+      width: "0",
+      style: "none",
+      color: "unset",
+      offset: "0"
     },
-    disabledOpacity: "0.6",
+    disabledOpacity: "0.38",
     iconSize: "1rem",
-    anchorGutter: "2px",
+    anchorGutter: "0",
     primary: {
-      50: "#ecfdf5",
-      100: "#d1fae5",
-      200: "#a7f3d0",
-      300: "#6ee7b7",
-      400: "#34d399",
-      500: "#10b981",
-      600: "#059669",
-      700: "#047857",
-      800: "#065f46",
-      900: "#064e3b",
-      950: "#022c22"
+      50: "#E0F7FA",
+      100: "#B2EBF2",
+      200: "#80DEEA",
+      300: "#4DD0E1",
+      400: "#26C6DA",
+      500: "#00BCD4",
+      600: "#00ACC1",
+      700: "#0097A7",
+      800: "#00838F",
+      900: "#006064",
+      950: "#003032"
     },
     formField: {
       paddingX: "0.75rem",
-      paddingY: "0.5rem",
+      paddingY: "0.75rem",
       sm: {
         fontSize: "0.875rem",
         paddingX: "0.625rem",
-        paddingY: "0.375rem"
+        paddingY: "0.625rem"
       },
       lg: {
         fontSize: "1.125rem",
-        paddingX: "0.875rem",
-        paddingY: "0.625rem"
+        paddingX: "0.825rem",
+        paddingY: "0.825rem"
       },
-      borderRadius: "{border.radius.md}",
+      borderRadius: "{border.radius.sm}",
       focusRing: {
-        width: "0",
-        style: "none",
-        color: "transparent",
-        offset: "0",
+        width: "2px",
+        style: "solid",
+        color: "{primary.color}",
+        offset: "-2px",
         shadow: "none"
       },
       transitionDuration: "{transition.duration}"
     },
     list: {
-      padding: "0.25rem 0.25rem",
-      gap: "2px",
+      padding: "0.5rem 0",
+      gap: "0",
       header: {
-        padding: "0.5rem 1rem 0.25rem 1rem"
+        padding: "0.75rem 1rem"
       },
       option: {
-        padding: "0.5rem 0.75rem",
-        borderRadius: "{border.radius.sm}"
+        padding: "0.75rem 1rem",
+        borderRadius: "{border.radius.none}"
       },
       optionGroup: {
-        padding: "0.5rem 0.75rem",
-        fontWeight: "600"
+        padding: "0.75rem 1rem",
+        fontWeight: "700"
       }
     },
     content: {
-      borderRadius: "{border.radius.md}"
+      borderRadius: "{border.radius.sm}"
     },
     mask: {
       transitionDuration: "0.15s"
     },
     navigation: {
       list: {
-        padding: "0.25rem 0.25rem",
+        padding: "0.5rem 0",
         extend: {
-          gap: "10px"
-          // gap: "2px"
+          // gap: "0"
+          gap: "8px"
         }
       },
       item: {
-        padding: "0.5rem 0.75rem",
-        borderRadius: "{border.radius.sm}",
+        padding: "0.75rem 1rem",
+        borderRadius: "{border.radius.none}",
         gap: "0.5rem"
       },
       submenuLabel: {
-        padding: "0.5rem 0.75rem",
-        fontWeight: "600"
+        padding: "0.75rem 1rem",
+        fontWeight: "700"
       },
       submenuIcon: {
         size: "0.875rem"
@@ -390,25 +431,28 @@ export const EmeraldAuraPreset = definePreset(Aura, {
     },
     overlay: {
       select: {
-        borderRadius: "{border.radius.md}",
-        shadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1)"
+        borderRadius: "{border.radius.sm}",
+        shadow: "0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12)"
       },
       popover: {
-        borderRadius: "{border.radius.md}",
-        padding: "0.75rem",
-        shadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1)"
+        borderRadius: "{border.radius.sm}",
+        padding: "1rem",
+        shadow: "0 11px 15px -7px rgba(0,0,0,.2), 0 24px 38px 3px rgba(0,0,0,.14), 0 9px 46px 8px rgba(0,0,0,.12)"
       },
       modal: {
-        borderRadius: "{border.radius.xl}",
-        padding: "1.25rem",
-        shadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1)"
+        borderRadius: "{border.radius.sm}",
+        padding: "1.5rem",
+        shadow: "0 11px 15px -7px rgba(0,0,0,.2), 0 24px 38px 3px rgba(0,0,0,.14), 0 9px 46px 8px rgba(0,0,0,.12)"
       },
       navigation: {
-        shadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1)"
+        shadow: "0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12)"
       }
     },
     colorScheme: {
       light: {
+        focusRing: {
+          shadow: "0 0 1px 4px {surface.200}"
+        },
         surface: {
           0: "#ffffff",
           50: "#f8fafc",
@@ -426,67 +470,67 @@ export const EmeraldAuraPreset = definePreset(Aura, {
         primary: {
           color: "{primary.500}",
           contrastColor: "#ffffff",
-          hoverColor: "{primary.600}",
-          activeColor: "{primary.700}"
+          hoverColor: "{primary.400}",
+          activeColor: "{primary.300}"
         },
         highlight: {
-          background: "{primary.50}",
-          focusBackground: "{primary.100}",
+          background: "color-mix(in srgb, {primary.color}, transparent 88%)",
+          focusBackground: "color-mix(in srgb, {primary.color}, transparent 76%)",
           color: "{primary.700}",
           focusColor: "{primary.800}"
         },
         mask: {
-          background: "rgba(0,0,0,0.4)",
+          background: "rgba(0,0,0,0.32)",
           color: "{surface.200}"
         },
         formField: {
           background: "{surface.0}",
-          disabledBackground: "{surface.200}",
-          filledBackground: "{surface.50}",
-          filledHoverBackground: "{surface.50}",
-          filledFocusBackground: "{surface.50}",
-          borderColor: "{surface.300}",
-          hoverBorderColor: "{surface.400}",
+          disabledBackground: "{surface.300}",
+          filledBackground: "{surface.100}",
+          filledHoverBackground: "{surface.200}",
+          filledFocusBackground: "{surface.100}",
+          borderColor: "{surface.400}",
+          hoverBorderColor: "{surface.900}",
           focusBorderColor: "{primary.color}",
-          invalidBorderColor: "{red.400}",
-          color: "{surface.700}",
-          disabledColor: "{surface.500}",
-          placeholderColor: "{surface.500}",
-          invalidPlaceholderColor: "{red.600}",
-          floatLabelColor: "{surface.500}",
+          invalidBorderColor: "{red.800}",
+          color: "{surface.900}",
+          disabledColor: "{surface.600}",
+          placeholderColor: "{surface.600}",
+          invalidPlaceholderColor: "{red.800}",
+          floatLabelColor: "{surface.600}",
           floatLabelFocusColor: "{primary.600}",
-          floatLabelActiveColor: "{surface.500}",
+          floatLabelActiveColor: "{surface.600}",
           floatLabelInvalidColor: "{form.field.invalid.placeholder.color}",
-          iconColor: "{surface.400}",
-          shadow: "0 0 #0000, 0 0 #0000, 0 1px 2px 0 rgba(18, 18, 23, 0.05)"
+          iconColor: "{surface.600}",
+          shadow: "none"
         },
         text: {
-          color: "{surface.700}",
-          hoverColor: "{surface.800}",
-          mutedColor: "{surface.500}",
+          color: "{surface.900}",
+          hoverColor: "{surface.900}",
+          mutedColor: "{surface.600}",
           hoverMutedColor: "{surface.600}"
         },
         content: {
           background: "{surface.0}",
           hoverBackground: "{surface.100}",
-          borderColor: "{surface.200}",
+          borderColor: "{surface.300}",
           color: "{text.color}",
           hoverColor: "{text.hover.color}"
         },
         overlay: {
           select: {
             background: "{surface.0}",
-            borderColor: "{surface.200}",
+            borderColor: "{surface.0}",
             color: "{text.color}"
           },
           popover: {
             background: "{surface.0}",
-            borderColor: "{surface.200}",
+            borderColor: "{surface.0}",
             color: "{text.color}"
           },
           modal: {
             background: "{surface.0}",
-            borderColor: "{surface.200}",
+            borderColor: "{surface.0}",
             color: "{text.color}"
           }
         },
@@ -500,13 +544,13 @@ export const EmeraldAuraPreset = definePreset(Aura, {
             selectedColor: "{highlight.color}",
             selectedFocusColor: "{highlight.focus.color}",
             icon: {
-              color: "{surface.400}",
-              focusColor: "{surface.500}"
+              color: "{surface.600}",
+              focusColor: "{surface.600}"
             }
           },
           optionGroup: {
             background: "transparent",
-            color: "{text.muted.color}"
+            color: "{text.color}"
           }
         },
         navigation: {
@@ -515,14 +559,14 @@ export const EmeraldAuraPreset = definePreset(Aura, {
               // focusBackground: "{surface.100}",
               focusBackground: "{surface.200}",
             },
-            activeBackground: "{surface.100}",
+            activeBackground: "{surface.200}",
             color: "{text.color}",
             focusColor: "{text.hover.color}",
             activeColor: "{text.hover.color}",
             icon: {
-              color: "{surface.400}",
-              focusColor: "{surface.500}",
-              activeColor: "{surface.500}"
+              color: "{surface.600}",
+              focusColor: "{surface.600}",
+              activeColor: "{surface.600}"
             }
           },
           submenuLabel: {
@@ -530,16 +574,19 @@ export const EmeraldAuraPreset = definePreset(Aura, {
               // background: "transparent",
               background: "{surface.200}",
             },
-            color: "{text.muted.color}"
+            color: "{text.color}"
           },
           submenuIcon: {
-            color: "{surface.400}",
-            focusColor: "{surface.500}",
-            activeColor: "{surface.500}"
+            color: "{surface.600}",
+            focusColor: "{surface.600}",
+            activeColor: "{surface.600}"
           }
         }
       },
       dark: {
+        focusRing: {
+          shadow: "0 0 1px 4px {surface.700}"
+        },
         surface: {
           0: "#ffffff",
           50: "#fafafa",
@@ -574,28 +621,28 @@ export const EmeraldAuraPreset = definePreset(Aura, {
           background: "{surface.950}",
           disabledBackground: "{surface.700}",
           filledBackground: "{surface.800}",
-          filledHoverBackground: "{surface.800}",
+          filledHoverBackground: "{surface.700}",
           filledFocusBackground: "{surface.800}",
           borderColor: "{surface.600}",
-          hoverBorderColor: "{surface.500}",
+          hoverBorderColor: "{surface.400}",
           focusBorderColor: "{primary.color}",
           invalidBorderColor: "{red.300}",
           color: "{surface.0}",
           disabledColor: "{surface.400}",
           placeholderColor: "{surface.400}",
-          invalidPlaceholderColor: "{red.400}",
+          invalidPlaceholderColor: "{red.300}",
           floatLabelColor: "{surface.400}",
           floatLabelFocusColor: "{primary.color}",
           floatLabelActiveColor: "{surface.400}",
           floatLabelInvalidColor: "{form.field.invalid.placeholder.color}",
           iconColor: "{surface.400}",
-          shadow: "0 0 #0000, 0 0 #0000, 0 1px 2px 0 rgba(18, 18, 23, 0.05)"
+          shadow: "none"
         },
         text: {
           color: "{surface.0}",
           hoverColor: "{surface.0}",
           mutedColor: "{surface.400}",
-          hoverMutedColor: "{surface.300}"
+          hoverMutedColor: "{surface.400}"
         },
         content: {
           background: "{surface.900}",
@@ -607,17 +654,17 @@ export const EmeraldAuraPreset = definePreset(Aura, {
         overlay: {
           select: {
             background: "{surface.900}",
-            borderColor: "{surface.700}",
+            borderColor: "{surface.900}",
             color: "{text.color}"
           },
           popover: {
             background: "{surface.900}",
-            borderColor: "{surface.700}",
+            borderColor: "{surface.900}",
             color: "{text.color}"
           },
           modal: {
             background: "{surface.900}",
-            borderColor: "{surface.700}",
+            borderColor: "{surface.900}",
             color: "{text.color}"
           }
         },
@@ -631,7 +678,7 @@ export const EmeraldAuraPreset = definePreset(Aura, {
             selectedColor: "{highlight.color}",
             selectedFocusColor: "{highlight.focus.color}",
             icon: {
-              color: "{surface.500}",
+              color: "{surface.400}",
               focusColor: "{surface.400}"
             }
           },
@@ -642,23 +689,29 @@ export const EmeraldAuraPreset = definePreset(Aura, {
         },
         navigation: {
           item: {
-            focusBackground: "{surface.800}",
-            activeBackground: "{surface.800}",
+            extend: {
+              // focusBackground: "{surface.800}",
+              focusBackground: "{surface.600}",
+            },
+            activeBackground: "{surface.700}",
             color: "{text.color}",
             focusColor: "{text.hover.color}",
             activeColor: "{text.hover.color}",
             icon: {
-              color: "{surface.500}",
+              color: "{surface.400}",
               focusColor: "{surface.400}",
               activeColor: "{surface.400}"
             }
           },
           submenuLabel: {
-            background: "transparent",
+            extend: {
+              // background: "transparent",
+              background: "{surface.500}"
+            },
             color: "{text.muted.color}"
           },
           submenuIcon: {
-            color: "{surface.500}",
+            color: "{surface.400}",
             focusColor: "{surface.400}",
             activeColor: "{surface.400}"
           }
@@ -672,34 +725,34 @@ export const EmeraldAuraPreset = definePreset(Aura, {
         transitionDuration: "{transition.duration}"
       },
       panel: {
-        borderWidth: "0 0 1px 0",
+        borderWidth: "0",
         borderColor: "{content.border.color}"
       },
       header: {
-        color: "{text.muted.color}",
+        color: "{text.color}",
         hoverColor: "{text.color}",
         activeColor: "{text.color}",
-        padding: "1.125rem",
+        padding: "1.25rem",
         fontWeight: "600",
         borderRadius: "0",
         borderWidth: "0",
         borderColor: "{content.border.color}",
         background: "{content.background}",
-        hoverBackground: "{content.background}",
+        hoverBackground: "{content.hover.background}",
         activeBackground: "{content.background}",
         activeHoverBackground: "{content.background}",
         focusRing: {
-          width: "{focus.ring.width}",
-          style: "{focus.ring.style}",
-          color: "{focus.ring.color}",
-          offset: "-1px",
-          shadow: "{focus.ring.shadow}"
+          width: "0",
+          style: "none",
+          color: "unset",
+          offset: "0",
+          shadow: "none"
         },
         toggleIcon: {
           color: "{text.muted.color}",
-          hoverColor: "{text.color}",
-          activeColor: "{text.color}",
-          activeHoverColor: "{text.color}"
+          hoverColor: "{text.muted.color}",
+          activeColor: "{text.muted.color}",
+          activeHoverColor: "{text.muted.color}"
         },
         first: {
           topBorderRadius: "{content.border.radius}",
@@ -715,7 +768,7 @@ export const EmeraldAuraPreset = definePreset(Aura, {
         borderColor: "{content.border.color}",
         background: "{content.background}",
         color: "{text.color}",
-        padding: "0 1.125rem 1.125rem 1.125rem"
+        padding: "0 1.25rem 1.25rem 1.25rem"
       }
     },
     autocomplete: {
@@ -732,7 +785,6 @@ export const EmeraldAuraPreset = definePreset(Aura, {
         color: "{form.field.color}",
         disabledColor: "{form.field.disabled.color}",
         placeholderColor: "{form.field.placeholder.color}",
-        invalidPlaceholderColor: "{form.field.invalid.placeholder.color}",
         shadow: "{form.field.shadow}",
         paddingX: "{form.field.padding.x}",
         paddingY: "{form.field.padding.y}",
@@ -775,23 +827,23 @@ export const EmeraldAuraPreset = definePreset(Aura, {
         padding: "{list.option.group.padding}"
       },
       dropdown: {
-        width: "2.5rem",
+        width: "3rem",
         sm: {
-          width: "2rem"
+          width: "2.5rem"
         },
         lg: {
-          width: "3rem"
+          width: "3.5rem"
         },
         borderColor: "{form.field.border.color}",
         hoverBorderColor: "{form.field.border.color}",
         activeBorderColor: "{form.field.border.color}",
         borderRadius: "{form.field.border.radius}",
         focusRing: {
-          width: "{focus.ring.width}",
-          style: "{focus.ring.style}",
-          color: "{focus.ring.color}",
-          offset: "{focus.ring.offset}",
-          shadow: "{focus.ring.shadow}"
+          width: "0",
+          style: "none",
+          color: "unset",
+          offset: "0",
+          shadow: "none"
         }
       },
       chip: {
@@ -803,8 +855,8 @@ export const EmeraldAuraPreset = definePreset(Aura, {
       colorScheme: {
         light: {
           chip: {
-            focusBackground: "{surface.200}",
-            focusColor: "{surface.800}"
+            focusBackground: "{surface.300}",
+            focusColor: "{surface.950}"
           },
           dropdown: {
             background: "{surface.100}",
@@ -817,7 +869,7 @@ export const EmeraldAuraPreset = definePreset(Aura, {
         },
         dark: {
           chip: {
-            focusBackground: "{surface.700}",
+            focusBackground: "{surface.600}",
             focusColor: "{surface.0}"
           },
           dropdown: {
@@ -998,9 +1050,9 @@ export const EmeraldAuraPreset = definePreset(Aura, {
         borderRadius: "{form.field.border.radius}",
         roundedBorderRadius: "2rem",
         gap: "0.5rem",
-        paddingX: "{form.field.padding.x}",
-        paddingY: "{form.field.padding.y}",
-        iconOnlyWidth: "2.5rem",
+        paddingX: "1rem",
+        paddingY: "0.625rem",
+        iconOnlyWidth: "3rem",
         sm: {
           fontSize: "{form.field.sm.font.size}",
           paddingX: "{form.field.sm.padding.x}",
@@ -1014,7 +1066,7 @@ export const EmeraldAuraPreset = definePreset(Aura, {
         label: {
           fontWeight: "500"
         },
-        raisedShadow: "0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12)",
+        raisedShadow: "0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12)",
         focusRing: {
           width: "{focus.ring.width}",
           style: "{focus.ring.style}",
@@ -1066,11 +1118,11 @@ export const EmeraldAuraPreset = definePreset(Aura, {
             },
             info: {
               background: "{sky.500}",
-              hoverBackground: "{sky.600}",
-              activeBackground: "{sky.700}",
+              hoverBackground: "{sky.400}",
+              activeBackground: "{sky.300}",
               borderColor: "{sky.500}",
-              hoverBorderColor: "{sky.600}",
-              activeBorderColor: "{sky.700}",
+              hoverBorderColor: "{sky.400}",
+              activeBorderColor: "{sky.300}",
               color: "#ffffff",
               hoverColor: "#ffffff",
               activeColor: "#ffffff",
@@ -1081,11 +1133,11 @@ export const EmeraldAuraPreset = definePreset(Aura, {
             },
             success: {
               background: "{green.500}",
-              hoverBackground: "{green.600}",
-              activeBackground: "{green.700}",
+              hoverBackground: "{green.400}",
+              activeBackground: "{green.300}",
               borderColor: "{green.500}",
-              hoverBorderColor: "{green.600}",
-              activeBorderColor: "{green.700}",
+              hoverBorderColor: "{green.400}",
+              activeBorderColor: "{green.300}",
               color: "#ffffff",
               hoverColor: "#ffffff",
               activeColor: "#ffffff",
@@ -1096,11 +1148,11 @@ export const EmeraldAuraPreset = definePreset(Aura, {
             },
             warn: {
               background: "{orange.500}",
-              hoverBackground: "{orange.600}",
-              activeBackground: "{orange.700}",
+              hoverBackground: "{orange.400}",
+              activeBackground: "{orange.300}",
               borderColor: "{orange.500}",
-              hoverBorderColor: "{orange.600}",
-              activeBorderColor: "{orange.700}",
+              hoverBorderColor: "{orange.400}",
+              activeBorderColor: "{orange.300}",
               color: "#ffffff",
               hoverColor: "#ffffff",
               activeColor: "#ffffff",
@@ -1111,11 +1163,11 @@ export const EmeraldAuraPreset = definePreset(Aura, {
             },
             help: {
               background: "{purple.500}",
-              hoverBackground: "{purple.600}",
-              activeBackground: "{purple.700}",
+              hoverBackground: "{purple.400}",
+              activeBackground: "{purple.300}",
               borderColor: "{purple.500}",
-              hoverBorderColor: "{purple.600}",
-              activeBorderColor: "{purple.700}",
+              hoverBorderColor: "{purple.400}",
+              activeBorderColor: "{purple.300}",
               color: "#ffffff",
               hoverColor: "#ffffff",
               activeColor: "#ffffff",
@@ -1126,11 +1178,11 @@ export const EmeraldAuraPreset = definePreset(Aura, {
             },
             danger: {
               background: "{red.500}",
-              hoverBackground: "{red.600}",
-              activeBackground: "{red.700}",
+              hoverBackground: "{red.400}",
+              activeBackground: "{red.300}",
               borderColor: "{red.500}",
-              hoverBorderColor: "{red.600}",
-              activeBorderColor: "{red.700}",
+              hoverBorderColor: "{red.400}",
+              activeBorderColor: "{red.300}",
               color: "#ffffff",
               hoverColor: "#ffffff",
               activeColor: "#ffffff",
@@ -1141,11 +1193,11 @@ export const EmeraldAuraPreset = definePreset(Aura, {
             },
             contrast: {
               background: "{surface.950}",
-              hoverBackground: "{surface.900}",
-              activeBackground: "{surface.800}",
+              hoverBackground: "{surface.800}",
+              activeBackground: "{surface.700}",
               borderColor: "{surface.950}",
-              hoverBorderColor: "{surface.900}",
-              activeBorderColor: "{surface.800}",
+              hoverBorderColor: "{surface.800}",
+              activeBorderColor: "{surface.700}",
               color: "{surface.0}",
               hoverColor: "{surface.0}",
               activeColor: "{surface.0}",
@@ -1159,56 +1211,56 @@ export const EmeraldAuraPreset = definePreset(Aura, {
             primary: {
               hoverBackground: "{primary.50}",
               activeBackground: "{primary.100}",
-              borderColor: "{primary.200}",
+              borderColor: "{primary.color}",
               color: "{primary.color}"
             },
             secondary: {
               hoverBackground: "{surface.50}",
               activeBackground: "{surface.100}",
-              borderColor: "{surface.200}",
-              color: "{surface.500}"
+              borderColor: "{surface.600}",
+              color: "{surface.600}"
             },
             success: {
               hoverBackground: "{green.50}",
               activeBackground: "{green.100}",
-              borderColor: "{green.200}",
+              borderColor: "{green.500}",
               color: "{green.500}"
             },
             info: {
               hoverBackground: "{sky.50}",
               activeBackground: "{sky.100}",
-              borderColor: "{sky.200}",
+              borderColor: "{sky.500}",
               color: "{sky.500}"
             },
             warn: {
               hoverBackground: "{orange.50}",
               activeBackground: "{orange.100}",
-              borderColor: "{orange.200}",
+              borderColor: "{orange.500}",
               color: "{orange.500}"
             },
             help: {
               hoverBackground: "{purple.50}",
               activeBackground: "{purple.100}",
-              borderColor: "{purple.200}",
+              borderColor: "{purple.500}",
               color: "{purple.500}"
             },
             danger: {
               hoverBackground: "{red.50}",
               activeBackground: "{red.100}",
-              borderColor: "{red.200}",
+              borderColor: "{red.500}",
               color: "{red.500}"
             },
             contrast: {
               hoverBackground: "{surface.50}",
               activeBackground: "{surface.100}",
-              borderColor: "{surface.700}",
+              borderColor: "{surface.950}",
               color: "{surface.950}"
             },
             plain: {
               hoverBackground: "{surface.50}",
               activeBackground: "{surface.100}",
-              borderColor: "{surface.200}",
-              color: "{surface.700}"
+              borderColor: "{surface.900}",
+              color: "{surface.900}"
             }
           },
           text: {
@@ -1220,7 +1272,7 @@ export const EmeraldAuraPreset = definePreset(Aura, {
             secondary: {
               hoverBackground: "{surface.50}",
               activeBackground: "{surface.100}",
-              color: "{surface.500}"
+              color: "{surface.600}"
             },
             success: {
               hoverBackground: "{green.50}",
@@ -1255,7 +1307,7 @@ export const EmeraldAuraPreset = definePreset(Aura, {
             plain: {
               hoverBackground: "{surface.50}",
               activeBackground: "{surface.100}",
-              color: "{surface.700}"
+              color: "{surface.900}"
             }
           },
           link: {
@@ -1508,7 +1560,7 @@ export const EmeraldAuraPreset = definePreset(Aura, {
         color: "{content.color}",
         borderRadius: "{content.border.radius}",
         shadow: "{overlay.popover.shadow}",
-        padding: "{overlay.popover.padding}"
+        padding: "0.5rem"
       },
       header: {
         background: "{content.background}",
@@ -1518,26 +1570,26 @@ export const EmeraldAuraPreset = definePreset(Aura, {
       },
       title: {
         gap: "0.5rem",
-        fontWeight: "500"
+        fontWeight: "700"
       },
       dropdown: {
-        width: "2.5rem",
+        width: "3rem",
         sm: {
-          width: "2rem"
+          width: "2.5rem"
         },
         lg: {
-          width: "3rem"
+          width: "3.5rem"
         },
         borderColor: "{form.field.border.color}",
         hoverBorderColor: "{form.field.border.color}",
         activeBorderColor: "{form.field.border.color}",
         borderRadius: "{form.field.border.radius}",
         focusRing: {
-          width: "{focus.ring.width}",
-          style: "{focus.ring.style}",
-          color: "{focus.ring.color}",
-          offset: "{focus.ring.offset}",
-          shadow: "{focus.ring.shadow}"
+          width: "0",
+          style: "none",
+          color: "unset",
+          offset: "0",
+          shadow: "nıne"
         }
       },
       inputIcon: {
@@ -1547,14 +1599,14 @@ export const EmeraldAuraPreset = definePreset(Aura, {
         hoverBackground: "{content.hover.background}",
         color: "{content.color}",
         hoverColor: "{content.hover.color}",
-        padding: "0.25rem 0.5rem",
+        padding: "0.5rem 0.75rem",
         borderRadius: "{content.border.radius}"
       },
       selectYear: {
         hoverBackground: "{content.hover.background}",
         color: "{content.color}",
         hoverColor: "{content.hover.color}",
-        padding: "0.25rem 0.5rem",
+        padding: "0.5rem 0.75rem",
         borderRadius: "{content.border.radius}"
       },
       group: {
@@ -1565,8 +1617,8 @@ export const EmeraldAuraPreset = definePreset(Aura, {
         margin: "0.5rem 0 0 0"
       },
       weekDay: {
-        padding: "0.25rem",
-        fontWeight: "500",
+        padding: "0.5rem",
+        fontWeight: "700",
         color: "{content.color}"
       },
       date: {
@@ -1577,10 +1629,10 @@ export const EmeraldAuraPreset = definePreset(Aura, {
         hoverColor: "{content.hover.color}",
         selectedColor: "{primary.contrast.color}",
         rangeSelectedColor: "{highlight.color}",
-        width: "2rem",
-        height: "2rem",
+        width: "2.5rem",
+        height: "2.5rem",
         borderRadius: "50%",
-        padding: "0.25rem",
+        padding: "0.125rem",
         focusRing: {
           width: "{focus.ring.width}",
           style: "{focus.ring.style}",
@@ -1593,14 +1645,14 @@ export const EmeraldAuraPreset = definePreset(Aura, {
         margin: "0.5rem 0 0 0"
       },
       month: {
-        padding: "0.375rem",
+        padding: "0.625rem",
         borderRadius: "{content.border.radius}"
       },
       yearView: {
         margin: "0.5rem 0 0 0"
       },
       year: {
-        padding: "0.375rem",
+        padding: "0.625rem",
         borderRadius: "{content.border.radius}"
       },
       buttonbar: {
@@ -1647,13 +1699,13 @@ export const EmeraldAuraPreset = definePreset(Aura, {
     card: {
       root: {
         background: "{content.background}",
-        borderRadius: "{border.radius.xl}",
+        borderRadius: "{content.border.radius}",
         color: "{content.color}",
-        shadow: "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1)"
+        shadow: "0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12)"
       },
       body: {
-        padding: "1.25rem",
-        gap: "0.5rem"
+        padding: "1.5rem",
+        gap: "0.75rem"
       },
       caption: {
         gap: "0.5rem"
@@ -1675,18 +1727,18 @@ export const EmeraldAuraPreset = definePreset(Aura, {
       },
       indicatorList: {
         padding: "1rem",
-        gap: "0.5rem"
+        gap: "1rem"
       },
       indicator: {
-        width: "2rem",
-        height: "0.5rem",
-        borderRadius: "{content.border.radius}",
+        width: "1.25rem",
+        height: "1.25rem",
+        borderRadius: "50%",
         focusRing: {
-          width: "{focus.ring.width}",
-          style: "{focus.ring.style}",
-          color: "{focus.ring.color}",
-          offset: "{focus.ring.offset}",
-          shadow: "{focus.ring.shadow}"
+          width: "0",
+          style: "none",
+          color: "unset",
+          offset: "0",
+          shadow: "none"
         }
       },
       colorScheme: {
@@ -1782,38 +1834,38 @@ export const EmeraldAuraPreset = definePreset(Aura, {
     },
     checkbox: {
       root: {
-        borderRadius: "{border.radius.sm}",
-        width: "1.25rem",
-        height: "1.25rem",
+        borderRadius: "{border.radius.xs}",
+        width: "18px",
+        height: "18px",
         background: "{form.field.background}",
         checkedBackground: "{primary.color}",
-        checkedHoverBackground: "{primary.hover.color}",
+        checkedHoverBackground: "{primary.color}",
         disabledBackground: "{form.field.disabled.background}",
         filledBackground: "{form.field.filled.background}",
         borderColor: "{form.field.border.color}",
         hoverBorderColor: "{form.field.hover.border.color}",
-        focusBorderColor: "{form.field.border.color}",
+        focusBorderColor: "{form.field.focus.border.color}",
         checkedBorderColor: "{primary.color}",
-        checkedHoverBorderColor: "{primary.hover.color}",
+        checkedHoverBorderColor: "{primary.color}",
         checkedFocusBorderColor: "{primary.color}",
         checkedDisabledBorderColor: "{form.field.border.color}",
         invalidBorderColor: "{form.field.invalid.border.color}",
         shadow: "{form.field.shadow}",
         focusRing: {
-          width: "{focus.ring.width}",
-          style: "{focus.ring.style}",
-          color: "{focus.ring.color}",
-          offset: "{focus.ring.offset}",
-          shadow: "{focus.ring.shadow}"
+          width: "0",
+          style: "none",
+          color: "unset",
+          offset: "0",
+          shadow: "none"
         },
         transitionDuration: "{form.field.transition.duration}",
         sm: {
-          width: "1rem",
-          height: "1rem"
+          width: "14px",
+          height: "14px"
         },
         lg: {
-          width: "1.5rem",
-          height: "1.5rem"
+          width: "22px",
+          height: "22px"
         }
       },
       icon: {
@@ -1832,15 +1884,15 @@ export const EmeraldAuraPreset = definePreset(Aura, {
     },
     chip: {
       root: {
-        borderRadius: "16px",
+        borderRadius: "2rem",
         paddingX: "0.75rem",
-        paddingY: "0.5rem",
+        paddingY: "0.75rem",
         gap: "0.5rem",
         transitionDuration: "{transition.duration}"
       },
       image: {
-        width: "2rem",
-        height: "2rem"
+        width: "2.25rem",
+        height: "2.25rem"
       },
       icon: {
         size: "1rem"
@@ -1851,33 +1903,38 @@ export const EmeraldAuraPreset = definePreset(Aura, {
           width: "{focus.ring.width}",
           style: "{focus.ring.style}",
           color: "{focus.ring.color}",
-          offset: "{focus.ring.offset}",
-          shadow: "{form.field.focus.ring.shadow}"
+          offset: "{focus.ring.offset}"
         }
       },
       colorScheme: {
         light: {
           root: {
-            background: "{surface.100}",
-            color: "{surface.800}"
+            background: "{surface.200}",
+            color: "{surface.900}"
           },
           icon: {
-            color: "{surface.800}"
+            color: "{surface.600}"
           },
           removeIcon: {
-            color: "{surface.800}"
+            color: "{surface.600}",
+            focusRing: {
+              shadow: "0 0 1px 4px {surface.300}"
+            }
           }
         },
         dark: {
           root: {
-            background: "{surface.800}",
+            background: "{surface.700}",
             color: "{surface.0}"
           },
           icon: {
             color: "{surface.0}"
           },
           removeIcon: {
-            color: "{surface.0}"
+            color: "{surface.0}",
+            focusRing: {
+              shadow: "0 0 1px 4px {surface.600}"
+            }
           }
         }
       }
@@ -1887,8 +1944,8 @@ export const EmeraldAuraPreset = definePreset(Aura, {
         transitionDuration: "{transition.duration}"
       },
       preview: {
-        width: "1.5rem",
-        height: "1.5rem",
+        width: "2rem",
+        height: "2rem",
         borderRadius: "{form.field.border.radius}",
         focusRing: {
           width: "{focus.ring.width}",
@@ -1958,7 +2015,7 @@ export const EmeraldAuraPreset = definePreset(Aura, {
     contextmenu: {
       root: {
         background: "{content.background}",
-        borderColor: "{content.border.color}",
+        borderColor: "transparent",
         color: "{content.color}",
         borderRadius: "{content.border.radius}",
         shadow: "{overlay.navigation.shadow}",
@@ -2335,7 +2392,7 @@ export const EmeraldAuraPreset = definePreset(Aura, {
         borderColor: "{content.border.color}",
         borderRadius: "{content.border.radius}",
         color: "{content.color}",
-        padding: "0 1.125rem 1.125rem 1.125rem",
+        padding: "0 1.25rem 1.25rem 1.25rem",
         transitionDuration: "{transition.duration}"
       },
       legend: {
@@ -2346,15 +2403,15 @@ export const EmeraldAuraPreset = definePreset(Aura, {
         borderRadius: "{content.border.radius}",
         borderWidth: "1px",
         borderColor: "transparent",
-        padding: "0.5rem 0.75rem",
+        padding: "0.75rem 1rem",
         gap: "0.5rem",
         fontWeight: "600",
         focusRing: {
-          width: "{focus.ring.width}",
-          style: "{focus.ring.style}",
-          color: "{focus.ring.color}",
-          offset: "{focus.ring.offset}",
-          shadow: "{focus.ring.shadow}"
+          width: "0",
+          style: "none",
+          color: "unset",
+          offset: "0",
+          shadow: "none"
         }
       },
       toggleIcon: {
@@ -2376,7 +2433,7 @@ export const EmeraldAuraPreset = definePreset(Aura, {
       header: {
         background: "transparent",
         color: "{text.color}",
-        padding: "1.125rem",
+        padding: "1.25rem",
         borderColor: "unset",
         borderWidth: "0",
         borderRadius: "0",
@@ -2384,7 +2441,7 @@ export const EmeraldAuraPreset = definePreset(Aura, {
       },
       content: {
         highlightBorderColor: "{primary.color}",
-        padding: "0 1.125rem 1.125rem 1.125rem",
+        padding: "0 1.25rem 1.25rem 1.25rem",
         gap: "1rem"
       },
       file: {
@@ -2412,13 +2469,13 @@ export const EmeraldAuraPreset = definePreset(Aura, {
         invalidColor: "{form.field.float.label.invalid.color}",
         transitionDuration: "0.2s",
         positionX: "{form.field.padding.x}",
-        top: "{form.field.padding.y}",
+        top: "0.5rem",
         fontSize: "0.75rem",
         fontWeight: "400"
       },
       input: {
         paddingTop: "1.5rem",
-        paddingBottom: "{form.field.padding.y}"
+        paddingBottom: "0.5rem"
       }
     },
     floatlabel: {
@@ -2444,10 +2501,10 @@ export const EmeraldAuraPreset = definePreset(Aura, {
       in: {
         input: {
           paddingTop: "1.5rem",
-          paddingBottom: "{form.field.padding.y}"
+          paddingBottom: "0.5rem"
         },
         active: {
-          top: "{form.field.padding.y}"
+          top: "0.5rem"
         }
       },
       on: {
@@ -2495,7 +2552,7 @@ export const EmeraldAuraPreset = definePreset(Aura, {
       },
       thumbnailNavButton: {
         size: "2rem",
-        borderRadius: "{content.border.radius}",
+        borderRadius: "50%",
         gutter: "0.5rem",
         focusRing: {
           width: "{focus.ring.width}",
@@ -2633,10 +2690,10 @@ export const EmeraldAuraPreset = definePreset(Aura, {
     },
     imagecompare: {
       handle: {
-        size: "15px",
-        hoverSize: "30px",
-        background: "rgba(255,255,255,0.3)",
-        hoverBackground: "rgba(255,255,255,0.3)",
+        size: "20px",
+        hoverSize: "40px",
+        background: "rgba(255,255,255,0.4)",
+        hoverBackground: "rgba(255,255,255,0.6)",
         borderColor: "unset",
         hoverBorderColor: "unset",
         borderWidth: "0",
@@ -2810,8 +2867,8 @@ export const EmeraldAuraPreset = definePreset(Aura, {
         borderColor: "{form.field.border.color}",
         color: "{form.field.icon.color}",
         borderRadius: "{form.field.border.radius}",
-        padding: "0.5rem",
-        minWidth: "2.5rem"
+        padding: "0.75rem",
+        minWidth: "3rem"
       }
     },
     inputnumber: {
@@ -2819,7 +2876,7 @@ export const EmeraldAuraPreset = definePreset(Aura, {
         transitionDuration: "{transition.duration}"
       },
       button: {
-        width: "2.5rem",
+        width: "3rem",
         borderRadius: "{form.field.border.radius}",
         verticalPadding: "{form.field.padding.y}"
       },
@@ -2857,12 +2914,12 @@ export const EmeraldAuraPreset = definePreset(Aura, {
         gap: "0.5rem"
       },
       input: {
-        width: "2.5rem",
+        width: "3rem",
         sm: {
-          width: "2rem"
+          width: "2.5rem"
         },
         lg: {
-          width: "3rem"
+          width: "3.5rem"
         }
       }
     },
@@ -2995,9 +3052,8 @@ export const EmeraldAuraPreset = definePreset(Aura, {
           gap: "{navigation.list.gap}"
         },
         horizontalOrientation: {
+          padding: "0.5rem 0.75rem",
           extend: {
-            // padding: "0.5rem 0.75rem",
-            padding: "0.8rem 0.75rem",
             // gap: "0.5rem"
             gap: "1.5rem"
           }
@@ -3026,7 +3082,7 @@ export const EmeraldAuraPreset = definePreset(Aura, {
       overlay: {
         padding: "0",
         background: "{content.background}",
-        borderColor: "{content.border.color}",
+        borderColor: "transparent",
         borderRadius: "{content.border.radius}",
         color: "{content.color}",
         shadow: "{overlay.navigation.shadow}",
@@ -3056,16 +3112,16 @@ export const EmeraldAuraPreset = definePreset(Aura, {
       },
       mobileButton: {
         borderRadius: "50%",
-        size: "1.75rem",
+        size: "2.5rem",
         color: "{text.muted.color}",
         hoverColor: "{text.hover.muted.color}",
         hoverBackground: "{content.hover.background}",
         focusRing: {
-          width: "{focus.ring.width}",
-          style: "{focus.ring.style}",
-          color: "{focus.ring.color}",
-          offset: "{focus.ring.offset}",
-          shadow: "{focus.ring.shadow}"
+          width: "0",
+          style: "none",
+          color: "unset",
+          offset: "0",
+          shadow: "none"
         }
       }
     },
@@ -3137,7 +3193,7 @@ export const EmeraldAuraPreset = definePreset(Aura, {
         padding: "{navigation.list.padding}",
         gap: "{navigation.list.gap}",
         background: "{content.background}",
-        borderColor: "{content.border.color}",
+        borderColor: "transparent",
         borderRadius: "{content.border.radius}",
         shadow: "{overlay.navigation.shadow}",
         mobileIndent: "1rem",
@@ -3153,33 +3209,33 @@ export const EmeraldAuraPreset = definePreset(Aura, {
       },
       mobileButton: {
         borderRadius: "50%",
-        size: "1.75rem",
+        size: "2.5rem",
         color: "{text.muted.color}",
         hoverColor: "{text.hover.muted.color}",
         hoverBackground: "{content.hover.background}",
         focusRing: {
-          width: "{focus.ring.width}",
-          style: "{focus.ring.style}",
-          color: "{focus.ring.color}",
-          offset: "{focus.ring.offset}",
-          shadow: "{focus.ring.shadow}"
+          width: "0",
+          style: "none",
+          color: "unset",
+          offset: "0",
+          shadow: "none"
         }
       }
     },
     message: {
       root: {
         borderRadius: "{content.border.radius}",
-        borderWidth: "1px",
+        borderWidth: "0",
         transitionDuration: "{transition.duration}"
       },
       content: {
-        padding: "0.5rem 0.75rem",
+        padding: "1rem 1.25rem",
         gap: "0.5rem",
         sm: {
-          padding: "0.375rem 0.625rem"
+          padding: "0.625rem 0.625rem"
         },
         lg: {
-          padding: "0.625rem 0.875rem"
+          padding: "0.825rem 0.825rem"
         }
       },
       text: {
@@ -3193,17 +3249,17 @@ export const EmeraldAuraPreset = definePreset(Aura, {
         }
       },
       icon: {
-        size: "1.125rem",
+        size: "1.25rem",
         sm: {
           size: "1rem"
         },
         lg: {
-          size: "1.25rem"
+          size: "1.5rem"
         }
       },
       closeButton: {
-        width: "1.75rem",
-        height: "1.75rem",
+        width: "2rem",
+        height: "2rem",
         borderRadius: "50%",
         focusRing: {
           width: "{focus.ring.width}",
@@ -3214,10 +3270,10 @@ export const EmeraldAuraPreset = definePreset(Aura, {
       closeIcon: {
         size: "1rem",
         sm: {
-          size: "0.875rem"
+          fontSize: "0.875rem"
         },
         lg: {
-          size: "1.125rem"
+          fontSize: "1.125rem"
         }
       },
       outlined: {
@@ -3236,7 +3292,7 @@ export const EmeraldAuraPreset = definePreset(Aura, {
             background: "color-mix(in srgb, {blue.50}, transparent 5%)",
             borderColor: "{blue.200}",
             color: "{blue.600}",
-            shadow: "0px 4px 8px 0px color-mix(in srgb, {blue.500}, transparent 96%)",
+            shadow: "none",
             closeButton: {
               hoverBackground: "{blue.100}",
               focusRing: {
@@ -3256,7 +3312,7 @@ export const EmeraldAuraPreset = definePreset(Aura, {
             background: "color-mix(in srgb, {green.50}, transparent 5%)",
             borderColor: "{green.200}",
             color: "{green.600}",
-            shadow: "0px 4px 8px 0px color-mix(in srgb, {green.500}, transparent 96%)",
+            shadow: "none",
             closeButton: {
               hoverBackground: "{green.100}",
               focusRing: {
@@ -3275,8 +3331,8 @@ export const EmeraldAuraPreset = definePreset(Aura, {
           warn: {
             background: "color-mix(in srgb,{yellow.50}, transparent 5%)",
             borderColor: "{yellow.200}",
-            color: "{yellow.600}",
-            shadow: "0px 4px 8px 0px color-mix(in srgb, {yellow.500}, transparent 96%)",
+            color: "{yellow.900}",
+            shadow: "none",
             closeButton: {
               hoverBackground: "{yellow.100}",
               focusRing: {
@@ -3285,18 +3341,18 @@ export const EmeraldAuraPreset = definePreset(Aura, {
               }
             },
             outlined: {
-              color: "{yellow.600}",
-              borderColor: "{yellow.600}"
+              color: "{yellow.900}",
+              borderColor: "{yellow.900}"
             },
             simple: {
-              color: "{yellow.600}"
+              color: "{yellow.900}"
             }
           },
           error: {
             background: "color-mix(in srgb, {red.50}, transparent 5%)",
             borderColor: "{red.200}",
             color: "{red.600}",
-            shadow: "0px 4px 8px 0px color-mix(in srgb, {red.500}, transparent 96%)",
+            shadow: "none",
             closeButton: {
               hoverBackground: "{red.100}",
               focusRing: {
@@ -3316,7 +3372,7 @@ export const EmeraldAuraPreset = definePreset(Aura, {
             background: "{surface.100}",
             borderColor: "{surface.200}",
             color: "{surface.600}",
-            shadow: "0px 4px 8px 0px color-mix(in srgb, {surface.500}, transparent 96%)",
+            shadow: "none",
             closeButton: {
               hoverBackground: "{surface.200}",
               focusRing: {
@@ -3325,18 +3381,18 @@ export const EmeraldAuraPreset = definePreset(Aura, {
               }
             },
             outlined: {
-              color: "{surface.500}",
-              borderColor: "{surface.500}"
+              color: "{surface.600}",
+              borderColor: "{surface.600}"
             },
             simple: {
-              color: "{surface.500}"
+              color: "{surface.600}"
             }
           },
           contrast: {
             background: "{surface.900}",
             borderColor: "{surface.950}",
             color: "{surface.50}",
-            shadow: "0px 4px 8px 0px color-mix(in srgb, {surface.950}, transparent 96%)",
+            shadow: "none",
             closeButton: {
               hoverBackground: "{surface.800}",
               focusRing: {
@@ -3358,7 +3414,7 @@ export const EmeraldAuraPreset = definePreset(Aura, {
             background: "color-mix(in srgb, {blue.500}, transparent 84%)",
             borderColor: "color-mix(in srgb, {blue.700}, transparent 64%)",
             color: "{blue.500}",
-            shadow: "0px 4px 8px 0px color-mix(in srgb, {blue.500}, transparent 96%)",
+            shadow: "none",
             closeButton: {
               hoverBackground: "rgba(255, 255, 255, 0.05)",
               focusRing: {
@@ -3378,7 +3434,7 @@ export const EmeraldAuraPreset = definePreset(Aura, {
             background: "color-mix(in srgb, {green.500}, transparent 84%)",
             borderColor: "color-mix(in srgb, {green.700}, transparent 64%)",
             color: "{green.500}",
-            shadow: "0px 4px 8px 0px color-mix(in srgb, {green.500}, transparent 96%)",
+            shadow: "none",
             closeButton: {
               hoverBackground: "rgba(255, 255, 255, 0.05)",
               focusRing: {
@@ -3398,7 +3454,7 @@ export const EmeraldAuraPreset = definePreset(Aura, {
             background: "color-mix(in srgb, {yellow.500}, transparent 84%)",
             borderColor: "color-mix(in srgb, {yellow.700}, transparent 64%)",
             color: "{yellow.500}",
-            shadow: "0px 4px 8px 0px color-mix(in srgb, {yellow.500}, transparent 96%)",
+            shadow: "none",
             closeButton: {
               hoverBackground: "rgba(255, 255, 255, 0.05)",
               focusRing: {
@@ -3418,7 +3474,7 @@ export const EmeraldAuraPreset = definePreset(Aura, {
             background: "color-mix(in srgb, {red.500}, transparent 84%)",
             borderColor: "color-mix(in srgb, {red.700}, transparent 64%)",
             color: "{red.500}",
-            shadow: "0px 4px 8px 0px color-mix(in srgb, {red.500}, transparent 96%)",
+            shadow: "none",
             closeButton: {
               hoverBackground: "rgba(255, 255, 255, 0.05)",
               focusRing: {
@@ -3438,7 +3494,7 @@ export const EmeraldAuraPreset = definePreset(Aura, {
             background: "{surface.800}",
             borderColor: "{surface.700}",
             color: "{surface.300}",
-            shadow: "0px 4px 8px 0px color-mix(in srgb, {surface.500}, transparent 96%)",
+            shadow: "none",
             closeButton: {
               hoverBackground: "{surface.700}",
               focusRing: {
@@ -3458,7 +3514,7 @@ export const EmeraldAuraPreset = definePreset(Aura, {
             background: "{surface.0}",
             borderColor: "{surface.100}",
             color: "{surface.950}",
-            shadow: "0px 4px 8px 0px color-mix(in srgb, {surface.950}, transparent 96%)",
+            shadow: "none",
             closeButton: {
               hoverBackground: "{surface.100}",
               focusRing: {
@@ -3566,7 +3622,7 @@ export const EmeraldAuraPreset = definePreset(Aura, {
         selectedFocusColor: "{list.option.selected.focus.color}",
         padding: "{list.option.padding}",
         borderRadius: "{list.option.border.radius}",
-        gap: "0.5rem"
+        gap: "0.75rem"
       },
       optionGroup: {
         background: "{list.option.group.background}",
@@ -3574,11 +3630,11 @@ export const EmeraldAuraPreset = definePreset(Aura, {
         fontWeight: "{list.option.group.font.weight}",
         padding: "{list.option.group.padding}"
       },
-      clearIcon: {
-        color: "{form.field.icon.color}"
-      },
       chip: {
         borderRadius: "{border.radius.sm}"
+      },
+      clearIcon: {
+        color: "{form.field.icon.color}"
       },
       emptyMessage: {
         padding: "{list.option.padding}"
@@ -3605,8 +3661,8 @@ export const EmeraldAuraPreset = definePreset(Aura, {
         color: "{content.color}",
         selectedColor: "{highlight.color}",
         hoverColor: "{content.hover.color}",
-        padding: "0.75rem 1rem",
-        toggleablePadding: "0.75rem 1rem 1.25rem 1rem",
+        padding: "1rem 1.25rem",
+        toggleablePadding: "1rem 1.25rem 1.5rem 1.25rem",
         borderRadius: "{content.border.radius}"
       },
       nodeToggleButton: {
@@ -3615,7 +3671,7 @@ export const EmeraldAuraPreset = definePreset(Aura, {
         borderColor: "{content.border.color}",
         color: "{text.muted.color}",
         hoverColor: "{text.color}",
-        size: "1.5rem",
+        size: "1.75rem",
         borderRadius: "50%",
         focusRing: {
           width: "{focus.ring.width}",
@@ -3734,42 +3790,42 @@ export const EmeraldAuraPreset = definePreset(Aura, {
       header: {
         background: "transparent",
         color: "{text.color}",
-        padding: "1.125rem",
+        padding: "1.25rem",
         borderColor: "{content.border.color}",
         borderWidth: "0",
         borderRadius: "0"
       },
       toggleableHeader: {
-        padding: "0.375rem 1.125rem"
+        padding: "0.5rem 1.25rem"
       },
       title: {
         fontWeight: "600"
       },
       content: {
-        padding: "0 1.125rem 1.125rem 1.125rem"
+        padding: "0 1.25rem 1.25rem 1.25rem"
       },
       footer: {
-        padding: "0 1.125rem 1.125rem 1.125rem"
+        padding: "0 1.25rem 1.25rem 1.25rem"
       }
     },
     panelmenu: {
       root: {
-        gap: "0.5rem",
+        gap: "0",
         transitionDuration: "{transition.duration}"
       },
       panel: {
         background: "{content.background}",
         borderColor: "{content.border.color}",
-        borderWidth: "1px",
+        borderWidth: "0",
         color: "{content.color}",
-        padding: "0.25rem 0.25rem",
-        borderRadius: "{content.border.radius}",
+        padding: "0",
+        borderRadius: "0",
         first: {
-          borderWidth: "1px",
+          borderWidth: "0",
           topBorderRadius: "{content.border.radius}"
         },
         last: {
-          borderWidth: "1px",
+          borderWidth: "0",
           bottomBorderRadius: "{content.border.radius}"
         }
       },
@@ -3805,7 +3861,7 @@ export const EmeraldAuraPreset = definePreset(Aura, {
       root: {
         background: "{content.border.color}",
         borderRadius: "{content.border.radius}",
-        height: "1.25rem"
+        height: "1rem"
       },
       value: {
         background: "{primary.color}"
@@ -3838,66 +3894,66 @@ export const EmeraldAuraPreset = definePreset(Aura, {
     },
     radiobutton: {
       root: {
-        width: "1.25rem",
-        height: "1.25rem",
+        width: "20px",
+        height: "20px",
         background: "{form.field.background}",
-        checkedBackground: "{primary.color}",
-        checkedHoverBackground: "{primary.hover.color}",
+        checkedBackground: "{primary.contrast.color}",
+        checkedHoverBackground: "{primary.contrast.color}",
         disabledBackground: "{form.field.disabled.background}",
         filledBackground: "{form.field.filled.background}",
         borderColor: "{form.field.border.color}",
         hoverBorderColor: "{form.field.hover.border.color}",
-        focusBorderColor: "{form.field.border.color}",
+        focusBorderColor: "{form.field.focus.border.color}",
         checkedBorderColor: "{primary.color}",
-        checkedHoverBorderColor: "{primary.hover.color}",
+        checkedHoverBorderColor: "{primary.color}",
         checkedFocusBorderColor: "{primary.color}",
         checkedDisabledBorderColor: "{form.field.border.color}",
         invalidBorderColor: "{form.field.invalid.border.color}",
         shadow: "{form.field.shadow}",
         focusRing: {
-          width: "{focus.ring.width}",
-          style: "{focus.ring.style}",
-          color: "{focus.ring.color}",
-          offset: "{focus.ring.offset}",
-          shadow: "{focus.ring.shadow}"
+          width: "0",
+          style: "none",
+          color: "unset",
+          offset: "0",
+          shadow: "none"
         },
         transitionDuration: "{form.field.transition.duration}",
         sm: {
-          width: "1rem",
-          height: "1rem"
+          width: "16px",
+          height: "16px"
         },
         lg: {
-          width: "1.5rem",
-          height: "1.5rem"
+          width: "24px",
+          height: "24px"
         }
       },
       icon: {
-        size: "0.75rem",
-        checkedColor: "{primary.contrast.color}",
-        checkedHoverColor: "{primary.contrast.color}",
+        size: "10px",
+        checkedColor: "{primary.color}",
+        checkedHoverColor: "{primary.color}",
         disabledColor: "{form.field.disabled.color}",
         sm: {
-          size: "0.5rem"
+          size: "8px"
         },
         lg: {
-          size: "1rem"
+          size: "12px"
         }
       }
     },
     rating: {
       root: {
-        gap: "0.25rem",
+        gap: "0.5rem",
         transitionDuration: "{transition.duration}",
         focusRing: {
-          width: "{focus.ring.width}",
-          style: "{focus.ring.style}",
-          color: "{focus.ring.color}",
-          offset: "{focus.ring.offset}",
-          shadow: "{focus.ring.shadow}"
+          width: "0",
+          style: "none",
+          color: "unset",
+          offset: "0",
+          shadow: "none"
         }
       },
       icon: {
-        size: "1rem",
+        size: "1.125rem",
         color: "{text.muted.color}",
         hoverColor: "{primary.color}",
         activeColor: "{primary.color}"
@@ -3921,12 +3977,12 @@ export const EmeraldAuraPreset = definePreset(Aura, {
       colorScheme: {
         light: {
           bar: {
-            background: "{surface.100}"
+            background: "{surface.200}"
           }
         },
         dark: {
           bar: {
-            background: "{surface.800}"
+            background: "{surface.700}"
           }
         }
       }
@@ -4058,43 +4114,32 @@ export const EmeraldAuraPreset = definePreset(Aura, {
       },
       track: {
         background: "{content.border.color}",
-        borderRadius: "{content.border.radius}",
-        size: "3px"
+        borderRadius: "{border.radius.xs}",
+        size: "2px"
       },
       range: {
         background: "{primary.color}"
       },
       handle: {
-        width: "20px",
-        height: "20px",
+        width: "18px",
+        height: "18px",
         borderRadius: "50%",
-        background: "{content.border.color}",
-        hoverBackground: "{content.border.color}",
+        background: "{primary.color}",
+        hoverBackground: "{primary.color}",
         content: {
           borderRadius: "50%",
-          hoverBackground: "{content.background}",
-          width: "16px",
-          height: "16px",
-          shadow: "0px 0.5px 0px 0px rgba(0, 0, 0, 0.08), 0px 1px 1px 0px rgba(0, 0, 0, 0.14)"
+          contentBackground: "{primary.color}",
+          hoverBackground: "{primary.color}",
+          width: "18px",
+          height: "18px",
+          shadow: "0px 2px 1px -1px rgba(0, 0, 0, .2), 0px 1px 1px 0px rgba(0, 0, 0, .14), 0px 1px 3px 0px rgba(0, 0, 0, .12)"
         },
         focusRing: {
-          width: "{focus.ring.width}",
-          style: "{focus.ring.style}",
-          color: "{focus.ring.color}",
-          offset: "{focus.ring.offset}",
-          shadow: "{focus.ring.shadow}"
-        }
-      },
-      colorScheme: {
-        light: {
-          handle: {
-            contentBackground: "{surface.0}"
-          }
-        },
-        dark: {
-          handle: {
-            contentBackground: "{surface.950}"
-          }
+          width: "0",
+          style: "none",
+          color: "unset",
+          offset: "0",
+          shadow: "none"
         }
       }
     },
@@ -4149,34 +4194,31 @@ export const EmeraldAuraPreset = definePreset(Aura, {
         gap: "1rem"
       },
       stepHeader: {
-        padding: "0",
+        padding: "0.75rem 1rem",
         borderRadius: "{content.border.radius}",
         focusRing: {
-          width: "{focus.ring.width}",
-          style: "{focus.ring.style}",
-          color: "{focus.ring.color}",
-          offset: "{focus.ring.offset}",
-          shadow: "{focus.ring.shadow}"
+          width: "0",
+          style: "none",
+          color: "unset",
+          offset: "0",
+          shadow: "none"
         },
         gap: "0.5rem"
       },
       stepTitle: {
         color: "{text.muted.color}",
-        activeColor: "{primary.color}",
+        activeColor: "{text.color}",
         fontWeight: "500"
       },
       stepNumber: {
-        background: "{content.background}",
-        activeBackground: "{content.background}",
-        borderColor: "{content.border.color}",
-        activeBorderColor: "{content.border.color}",
-        color: "{text.muted.color}",
-        activeColor: "{primary.color}",
+        activeBackground: "{primary.color}",
+        activeBorderColor: "{primary.color}",
+        activeColor: "{primary.contrast.color}",
         size: "2rem",
         fontSize: "1.143rem",
         fontWeight: "500",
         borderRadius: "50%",
-        shadow: "0px 0.5px 0px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12)"
+        shadow: "none"
       },
       steppanels: {
         padding: "0.875rem 0.5rem 1.125rem 0.5rem"
@@ -4186,6 +4228,22 @@ export const EmeraldAuraPreset = definePreset(Aura, {
         color: "{content.color}",
         padding: "0",
         indent: "1rem"
+      },
+      colorScheme: {
+        light: {
+          stepNumber: {
+            background: "{surface.400}",
+            borderColor: "{surface.400}",
+            color: "{surface.0}"
+          }
+        },
+        dark: {
+          stepNumber: {
+            background: "{surface.200}",
+            borderColor: "{surface.200}",
+            color: "{surface.900}"
+          }
+        }
       }
     },
     steps: {
@@ -4279,68 +4337,57 @@ export const EmeraldAuraPreset = definePreset(Aura, {
       },
       tab: {
         background: "transparent",
-        hoverBackground: "transparent",
+        hoverBackground: "{content.hover.background}",
         activeBackground: "transparent",
         borderWidth: "0 0 1px 0",
         borderColor: "{content.border.color}",
         hoverBorderColor: "{content.border.color}",
         activeBorderColor: "{primary.color}",
-        color: "{text.muted.color}",
+        color: "{text.color}",
         hoverColor: "{text.color}",
         activeColor: "{primary.color}",
-        padding: "1rem 1.125rem",
+        padding: "1rem 1.25rem",
         fontWeight: "600",
         margin: "0 0 -1px 0",
         gap: "0.5rem",
         focusRing: {
-          width: "{focus.ring.width}",
-          style: "{focus.ring.style}",
-          color: "{focus.ring.color}",
-          offset: "-1px",
-          shadow: "{focus.ring.shadow}"
+          width: "0",
+          style: "none",
+          color: "unset",
+          offset: "0",
+          shadow: "none"
         }
       },
       tabpanel: {
         background: "{content.background}",
         color: "{content.color}",
-        padding: "0.875rem 1.125rem 1.125rem 1.125rem",
+        padding: "1.25rem 1.25rem 1.25rem 1.25rem",
         focusRing: {
-          width: "{focus.ring.width}",
-          style: "{focus.ring.style}",
-          color: "{focus.ring.color}",
-          offset: "{focus.ring.offset}",
-          shadow: "inset {focus.ring.shadow}"
+          width: "0",
+          style: "none",
+          color: "unset",
+          offset: "0",
+          shadow: "none"
         }
       },
       navButton: {
         background: "{content.background}",
         color: "{text.muted.color}",
         hoverColor: "{text.color}",
-        width: "2.5rem",
+        width: "3rem",
+        shadow: "none",
         focusRing: {
-          width: "{focus.ring.width}",
-          style: "{focus.ring.style}",
-          color: "{focus.ring.color}",
-          offset: "-1px",
-          shadow: "{focus.ring.shadow}"
+          width: "0",
+          style: "none",
+          color: "unset",
+          offset: "0",
+          shadow: "none"
         }
       },
       activeBar: {
-        height: "1px",
+        height: "2px",
         bottom: "-1px",
         background: "{primary.color}"
-      },
-      colorScheme: {
-        light: {
-          navButton: {
-            shadow: "0px 0px 10px 50px rgba(255, 255, 255, 0.6)"
-          }
-        },
-        dark: {
-          navButton: {
-            shadow: "0px 0px 10px 50px color-mix(in srgb, {content.background}, transparent 50%)"
-          }
-        }
       }
     },
     tabview: {
@@ -4385,6 +4432,7 @@ export const EmeraldAuraPreset = definePreset(Aura, {
         background: "{form.field.background}",
         disabledBackground: "{form.field.disabled.background}",
         filledBackground: "{form.field.filled.background}",
+        filledHoverBackground: "{form.field.filled.hover.background}",
         filledFocusBackground: "{form.field.filled.focus.background}",
         borderColor: "{form.field.border.color}",
         hoverBorderColor: "{form.field.hover.border.color}",
@@ -4474,28 +4522,28 @@ export const EmeraldAuraPreset = definePreset(Aura, {
       colorScheme: {
         light: {
           primary: {
-            background: "{primary.100}",
-            color: "{primary.700}"
+            background: "{primary.color}",
+            color: "{primary.contrast.color}"
           },
           secondary: {
             background: "{surface.100}",
             color: "{surface.600}"
           },
           success: {
-            background: "{green.100}",
-            color: "{green.700}"
+            background: "{green.500}",
+            color: "{surface.0}"
           },
           info: {
-            background: "{sky.100}",
-            color: "{sky.700}"
+            background: "{sky.500}",
+            color: "{surface.0}"
           },
           warn: {
-            background: "{orange.100}",
-            color: "{orange.700}"
+            background: "{orange.500}",
+            color: "{surface.0}"
           },
           danger: {
-            background: "{red.100}",
-            color: "{red.700}"
+            background: "{red.500}",
+            color: "{surface.0}"
           },
           contrast: {
             background: "{surface.950}",
@@ -4504,28 +4552,28 @@ export const EmeraldAuraPreset = definePreset(Aura, {
         },
         dark: {
           primary: {
-            background: "color-mix(in srgb, {primary.500}, transparent 84%)",
-            color: "{primary.300}"
+            background: "{primary.color}",
+            color: "{primary.contrast.color}"
           },
           secondary: {
             background: "{surface.800}",
             color: "{surface.300}"
           },
           success: {
-            background: "color-mix(in srgb, {green.500}, transparent 84%)",
-            color: "{green.300}"
+            background: "{green.400}",
+            color: "{green.950}"
           },
           info: {
-            background: "color-mix(in srgb, {sky.500}, transparent 84%)",
-            color: "{sky.300}"
+            background: "{sky.400}",
+            color: "{sky.950}"
           },
           warn: {
-            background: "color-mix(in srgb, {orange.500}, transparent 84%)",
-            color: "{orange.300}"
+            background: "{orange.400}",
+            color: "{orange.950}"
           },
           danger: {
-            background: "color-mix(in srgb, {red.500}, transparent 84%)",
-            color: "{red.300}"
+            background: "{red.400}",
+            color: "{red.950}"
           },
           contrast: {
             background: "{surface.0}",
@@ -4565,114 +4613,107 @@ export const EmeraldAuraPreset = definePreset(Aura, {
         }
       },
       eventMarker: {
-        size: "1.125rem",
+        size: "1.5rem",
         borderRadius: "50%",
         borderWidth: "2px",
-        background: "{content.background}",
-        borderColor: "{content.border.color}",
+        background: "{primary.color}",
         content: {
           borderRadius: "50%",
-          size: "0.375rem",
+          size: "0",
           background: "{primary.color}",
-          insetShadow: "0px 0.5px 0px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12)"
+          insetShadow: "none"
         }
       },
       eventConnector: {
         color: "{content.border.color}",
         size: "2px"
+      },
+      colorScheme: {
+        light: {
+          eventMarker: {
+            borderColor: "{surface.0}"
+          }
+        },
+        dark: {
+          eventMarker: {
+            borderColor: "{surface.900}"
+          }
+        }
       }
     },
     togglebutton: {
       root: {
-        padding: "0.5rem 1rem",
-        borderRadius: "{content.border.radius}",
+        padding: "0.75rem 1rem",
+        borderRadius: "{form.field.border.radius}",
         gap: "0.5rem",
         fontWeight: "500",
+        background: "{form.field.background}",
+        borderColor: "{form.field.border.color}",
+        color: "{form.field.color}",
+        hoverColor: "{form.field.color}",
+        checkedColor: "{form.field.color}",
+        checkedBorderColor: "{form.field.border.color}",
         disabledBackground: "{form.field.disabled.background}",
         disabledBorderColor: "{form.field.disabled.background}",
         disabledColor: "{form.field.disabled.color}",
         invalidBorderColor: "{form.field.invalid.border.color}",
         focusRing: {
-          width: "{focus.ring.width}",
-          style: "{focus.ring.style}",
-          color: "{focus.ring.color}",
-          offset: "{focus.ring.offset}",
-          shadow: "{focus.ring.shadow}"
+          width: "0",
+          style: "none",
+          offset: "0",
+          color: "unset",
+          shadow: "none"
         },
         transitionDuration: "{form.field.transition.duration}",
         sm: {
           fontSize: "{form.field.sm.font.size}",
-          padding: "0.375rem 0.75rem"
+          padding: "0.625rem 0.75rem"
         },
         lg: {
           fontSize: "{form.field.lg.font.size}",
-          padding: "0.625rem 1.25rem"
+          padding: "0.875rem 1.25rem"
         }
       },
       icon: {
+        color: "{text.muted.color}",
+        hoverColor: "{text.muted.color}",
+        checkedColor: "{text.muted.color}",
         disabledColor: "{form.field.disabled.color}"
       },
       content: {
         left: "0.25rem",
         top: "0.25rem",
-        checkedShadow: "0px 1px 2px 0px rgba(0, 0, 0, 0.02), 0px 1px 2px 0px rgba(0, 0, 0, 0.04)"
+        checkedBackground: "transparent",
+        checkedShadow: "none"
       },
       colorScheme: {
         light: {
           root: {
-            background: "{surface.100}",
-            checkedBackground: "{surface.100}",
             hoverBackground: "{surface.100}",
-            borderColor: "{surface.100}",
-            color: "{surface.500}",
-            hoverColor: "{surface.700}",
-            checkedColor: "{surface.900}",
-            checkedBorderColor: "{surface.100}"
-          },
-          content: {
-            checkedBackground: "{surface.0}"
-          },
-          icon: {
-            color: "{surface.500}",
-            hoverColor: "{surface.700}",
-            checkedColor: "{surface.900}"
+            checkedBackground: "{surface.200}"
           }
         },
         dark: {
           root: {
-            background: "{surface.950}",
-            checkedBackground: "{surface.950}",
-            hoverBackground: "{surface.950}",
-            borderColor: "{surface.950}",
-            color: "{surface.400}",
-            hoverColor: "{surface.300}",
-            checkedColor: "{surface.0}",
-            checkedBorderColor: "{surface.950}"
-          },
-          content: {
-            checkedBackground: "{surface.800}"
-          },
-          icon: {
-            color: "{surface.400}",
-            hoverColor: "{surface.300}",
-            checkedColor: "{surface.0}"
+            hoverBackground: "{surface.800}",
+            checkedBackground: "{surface.700}"
           }
         }
       }
     },
     toggleswitch: {
       root: {
-        width: "2.5rem",
-        height: "1.5rem",
+        width: "2.75rem",
+        height: "1rem",
         borderRadius: "30px",
-        gap: "0.25rem",
-        shadow: "{form.field.shadow}",
+        gap: "0px",
+        shadow: "none",
         focusRing: {
-          width: "{focus.ring.width}",
-          style: "{focus.ring.style}",
-          color: "{focus.ring.color}",
-          offset: "{focus.ring.offset}",
-          shadow: "{focus.ring.shadow}"
+          width: "0",
+          style: "none",
+          color: "unset",
+          offset: "0",
+          shadow: "none"
         },
         borderWidth: "1px",
         borderColor: "transparent",
@@ -4685,47 +4726,47 @@ export const EmeraldAuraPreset = definePreset(Aura, {
       },
       handle: {
         borderRadius: "50%",
-        size: "1rem"
+        size: "1.5rem"
       },
       colorScheme: {
         light: {
           root: {
             background: "{surface.300}",
-            disabledBackground: "{form.field.disabled.background}",
-            hoverBackground: "{surface.400}",
-            checkedBackground: "{primary.color}",
-            checkedHoverBackground: "{primary.hover.color}"
+            disabledBackground: "{surface.400}",
+            hoverBackground: "{surface.300}",
+            checkedBackground: "{primary.200}",
+            checkedHoverBackground: "{primary.200}"
           },
           handle: {
             background: "{surface.0}",
-            disabledBackground: "{form.field.disabled.color}",
+            disabledBackground: "{surface.200}",
             hoverBackground: "{surface.0}",
-            checkedBackground: "{surface.0}",
-            checkedHoverBackground: "{surface.0}",
+            checkedBackground: "{primary.color}",
+            checkedHoverBackground: "{primary.color}",
             color: "{text.muted.color}",
             hoverColor: "{text.color}",
-            checkedColor: "{primary.color}",
-            checkedHoverColor: "{primary.hover.color}"
+            checkedColor: "{primary.contrast.color}",
+            checkedHoverColor: "{primary.contrast.color}"
           }
         },
         dark: {
           root: {
             background: "{surface.700}",
             disabledBackground: "{surface.600}",
-            hoverBackground: "{surface.600}",
+            hoverBackground: "{surface.700}",
             checkedBackground: "{primary.color}",
-            checkedHoverBackground: "{primary.hover.color}"
+            checkedHoverBackground: "{primary.color}"
           },
           handle: {
             background: "{surface.400}",
-            disabledBackground: "{surface.900}",
+            disabledBackground: "{surface.500}",
             hoverBackground: "{surface.300}",
-            checkedBackground: "{surface.900}",
-            checkedHoverBackground: "{surface.900}",
-            color: "{surface.900}",
-            hoverColor: "{surface.800}",
-            checkedColor: "{primary.color}",
-            checkedHoverColor: "{primary.hover.color}"
+            checkedBackground: "{primary.200}",
+            checkedHoverBackground: "{primary.200}",
+            color: "{surface.800}",
+            hoverColor: "{surface.900}",
+            checkedColor: "{primary.contrast.color}",
+            checkedHoverColor: "{primary.contrast.color}"
           }
         }
       }
@@ -4736,12 +4777,12 @@ export const EmeraldAuraPreset = definePreset(Aura, {
         color: "{content.color}",
         padding: "1rem",
         gap: "2px",
-        indent: "1rem",
+        indent: "2rem",
         transitionDuration: "{transition.duration}"
       },
       node: {
-        padding: "0.25rem 0.5rem",
-        borderRadius: "{content.border.radius}",
+        padding: "0.5rem 0.75rem",
+        borderRadius: "{border.radius.xs}",
         hoverBackground: "{content.hover.background}",
         selectedBackground: "{highlight.background}",
         color: "{text.color}",
@@ -4754,7 +4795,7 @@ export const EmeraldAuraPreset = definePreset(Aura, {
           offset: "-1px",
           shadow: "{focus.ring.shadow}"
         },
-        gap: "0.25rem"
+        gap: "0.5rem"
       },
       nodeIcon: {
         color: "{text.muted.color}",
@@ -4763,7 +4804,7 @@ export const EmeraldAuraPreset = definePreset(Aura, {
       },
       nodeToggleButton: {
         borderRadius: "50%",
-        size: "1.75rem",
+        size: "2rem",
         hoverBackground: "{content.hover.background}",
         selectedHoverBackground: "{content.background}",
         color: "{text.muted.color}",
@@ -4781,7 +4822,7 @@ export const EmeraldAuraPreset = definePreset(Aura, {
         size: "2rem"
       },
       filter: {
-        margin: "0 0 0.5rem 0"
+        margin: "0 0 0.75rem 0"
       }
     },
     treeselect: {
@@ -4836,14 +4877,14 @@ export const EmeraldAuraPreset = definePreset(Aura, {
       tree: {
         padding: "{list.padding}"
       },
-      clearIcon: {
-        color: "{form.field.icon.color}"
-      },
       emptyMessage: {
         padding: "{list.option.padding}"
       },
       chip: {
         borderRadius: "{border.radius.sm}"
+      },
+      clearIcon: {
+        color: "{form.field.icon.color}"
       }
     },
     treetable: {
@@ -4974,11 +5015,11 @@ export const EmeraldAuraPreset = definePreset(Aura, {
       root: {
         width: "25rem",
         borderRadius: "{content.border.radius}",
-        borderWidth: "1px",
+        borderWidth: "0",
         transitionDuration: "{transition.duration}"
       },
       icon: {
-        size: "1.125rem"
+        size: "1.25rem"
       },
       content: {
         padding: "{overlay.popover.padding}",
@@ -4996,8 +5037,8 @@ export const EmeraldAuraPreset = definePreset(Aura, {
         fontSize: "0.875rem"
       },
       closeButton: {
-        width: "1.75rem",
-        height: "1.75rem",
+        width: "2rem",
+        height: "2rem",
         borderRadius: "50%",
         focusRing: {
           width: "{focus.ring.width}",
@@ -5010,13 +5051,13 @@ export const EmeraldAuraPreset = definePreset(Aura, {
       },
       colorScheme: {
         light: {
-          blur: "1.5px",
+          blur: "0",
           info: {
-            background: "color-mix(in srgb, {blue.50}, transparent 5%)",
+            background: "{blue.50}",
             borderColor: "{blue.200}",
             color: "{blue.600}",
             detailColor: "{surface.700}",
-            shadow: "0px 4px 8px 0px color-mix(in srgb, {blue.500}, transparent 96%)",
+            shadow: "0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12)",
             closeButton: {
               hoverBackground: "{blue.100}",
               focusRing: {
@@ -5026,11 +5067,11 @@ export const EmeraldAuraPreset = definePreset(Aura, {
             }
           },
           success: {
-            background: "color-mix(in srgb, {green.50}, transparent 5%)",
+            background: "{green.50}",
             borderColor: "{green.200}",
             color: "{green.600}",
             detailColor: "{surface.700}",
-            shadow: "0px 4px 8px 0px color-mix(in srgb, {green.500}, transparent 96%)",
+            shadow: "0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12)",
             closeButton: {
               hoverBackground: "{green.100}",
               focusRing: {
@@ -5040,11 +5081,11 @@ export const EmeraldAuraPreset = definePreset(Aura, {
             }
           },
           warn: {
-            background: "color-mix(in srgb,{yellow.50}, transparent 5%)",
+            background: "{yellow.50}",
             borderColor: "{yellow.200}",
-            color: "{yellow.600}",
+            color: "{yellow.900}",
             detailColor: "{surface.700}",
-            shadow: "0px 4px 8px 0px color-mix(in srgb, {yellow.500}, transparent 96%)",
+            shadow: "0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12)",
             closeButton: {
               hoverBackground: "{yellow.100}",
               focusRing: {
@@ -5054,11 +5095,11 @@ export const EmeraldAuraPreset = definePreset(Aura, {
             }
           },
           error: {
-            background: "color-mix(in srgb, {red.50}, transparent 5%)",
+            background: "{red.50}",
             borderColor: "{red.200}",
             color: "{red.600}",
             detailColor: "{surface.700}",
-            shadow: "0px 4px 8px 0px color-mix(in srgb, {red.500}, transparent 96%)",
+            shadow: "0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12)",
             closeButton: {
               hoverBackground: "{red.100}",
               focusRing: {
@@ -5072,7 +5113,7 @@ export const EmeraldAuraPreset = definePreset(Aura, {
             borderColor: "{surface.200}",
             color: "{surface.600}",
             detailColor: "{surface.700}",
-            shadow: "0px 4px 8px 0px color-mix(in srgb, {surface.500}, transparent 96%)",
+            shadow: "0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12)",
             closeButton: {
               hoverBackground: "{surface.200}",
               focusRing: {
@@ -5086,7 +5127,7 @@ export const EmeraldAuraPreset = definePreset(Aura, {
             borderColor: "{surface.950}",
             color: "{surface.50}",
             detailColor: "{surface.0}",
-            shadow: "0px 4px 8px 0px color-mix(in srgb, {surface.950}, transparent 96%)",
+            shadow: "0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12)",
             closeButton: {
               hoverBackground: "{surface.800}",
               focusRing: {
@@ -5099,11 +5140,11 @@ export const EmeraldAuraPreset = definePreset(Aura, {
         dark: {
           blur: "10px",
           info: {
-            background: "color-mix(in srgb, {blue.500}, transparent 84%)",
+            background: "color-mix(in srgb, {blue.500}, transparent 36%)",
             borderColor: "color-mix(in srgb, {blue.700}, transparent 64%)",
-            color: "{blue.500}",
-            detailColor: "{surface.0}",
-            shadow: "0px 4px 8px 0px color-mix(in srgb, {blue.500}, transparent 96%)",
+            color: "{surface.0}",
+            detailColor: "{blue.100}",
+            shadow: "0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12)",
             closeButton: {
               hoverBackground: "rgba(255, 255, 255, 0.05)",
               focusRing: {
@@ -5113,11 +5154,11 @@ export const EmeraldAuraPreset = definePreset(Aura, {
             }
           },
           success: {
-            background: "color-mix(in srgb, {green.500}, transparent 84%)",
+            background: "color-mix(in srgb, {green.500}, transparent 36%)",
             borderColor: "color-mix(in srgb, {green.700}, transparent 64%)",
-            color: "{green.500}",
-            detailColor: "{surface.0}",
-            shadow: "0px 4px 8px 0px color-mix(in srgb, {green.500}, transparent 96%)",
+            color: "{surface.0}",
+            detailColor: "{green.100}",
+            shadow: "0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12)",
             closeButton: {
               hoverBackground: "rgba(255, 255, 255, 0.05)",
               focusRing: {
@@ -5127,11 +5168,11 @@ export const EmeraldAuraPreset = definePreset(Aura, {
             }
           },
           warn: {
-            background: "color-mix(in srgb, {yellow.500}, transparent 84%)",
+            background: "color-mix(in srgb, {yellow.500}, transparent 36%)",
             borderColor: "color-mix(in srgb, {yellow.700}, transparent 64%)",
-            color: "{yellow.500}",
-            detailColor: "{surface.0}",
-            shadow: "0px 4px 8px 0px color-mix(in srgb, {yellow.500}, transparent 96%)",
+            color: "{surface.0}",
+            detailColor: "{yellow.50}",
+            shadow: "0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12)",
             closeButton: {
               hoverBackground: "rgba(255, 255, 255, 0.05)",
               focusRing: {
@@ -5141,11 +5182,11 @@ export const EmeraldAuraPreset = definePreset(Aura, {
             }
           },
           error: {
-            background: "color-mix(in srgb, {red.500}, transparent 84%)",
+            background: "color-mix(in srgb, {red.500}, transparent 36%)",
             borderColor: "color-mix(in srgb, {red.700}, transparent 64%)",
-            color: "{red.500}",
-            detailColor: "{surface.0}",
-            shadow: "0px 4px 8px 0px color-mix(in srgb, {red.500}, transparent 96%)",
+            color: "{surface.0}",
+            detailColor: "{red.100}",
+            shadow: "0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12)",
             closeButton: {
               hoverBackground: "rgba(255, 255, 255, 0.05)",
               focusRing: {
@@ -5159,7 +5200,7 @@ export const EmeraldAuraPreset = definePreset(Aura, {
             borderColor: "{surface.700}",
             color: "{surface.300}",
             detailColor: "{surface.0}",
-            shadow: "0px 4px 8px 0px color-mix(in srgb, {surface.500}, transparent 96%)",
+            shadow: "0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12)",
             closeButton: {
               hoverBackground: "{surface.700}",
               focusRing: {
@@ -5173,7 +5214,7 @@ export const EmeraldAuraPreset = definePreset(Aura, {
             borderColor: "{surface.100}",
             color: "{surface.950}",
             detailColor: "{surface.950}",
-            shadow: "0px 4px 8px 0px color-mix(in srgb, {surface.950}, transparent 96%)",
+            shadow: "0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12)",
             closeButton: {
               hoverBackground: "{surface.100}",
               focusRing: {
@@ -5187,12 +5228,24 @@ export const EmeraldAuraPreset = definePreset(Aura, {
     },
     toolbar: {
       root: {
-        background: "{content.background}",
-        borderColor: "{content.border.color}",
-        borderRadius: "{content.border.radius}",
         color: "{content.color}",
+        borderRadius: "{content.border.radius}",
         gap: "0.5rem",
-        padding: "0.75rem"
+        padding: "1rem"
+      },
+      colorScheme: {
+        light: {
+          root: {
+            background: "{surface.100}",
+            borderColor: "{surface.100}"
+          }
+        },
+        dark: {
+          root: {
+            background: "{surface.800}",
+            borderColor: "{surface.800}"
+          }
+        }
       }
     },
     virtualscroller: {
@@ -5208,25 +5261,13 @@ export const EmeraldAuraPreset = definePreset(Aura, {
     },
     tooltip: {
       root: {
+        background: "{surface.600}",
+        color: "{surface.0}",
         maxWidth: "12.5rem",
         gutter: "0.25rem",
         shadow: "{overlay.popover.shadow}",
         padding: "0.5rem 0.75rem",
         borderRadius: "{overlay.popover.border.radius}"
-      },
-      colorScheme: {
-        light: {
-          root: {
-            background: "{surface.700}",
-            color: "{surface.0}"
-          }
-        },
-        dark: {
-          root: {
-            background: "{surface.700}",
-            color: "{surface.0}"
-          }
-        }
       }
     },
     ripple: {
