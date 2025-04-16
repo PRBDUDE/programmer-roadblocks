@@ -338,6 +338,19 @@ export const MaterialPreset = definePreset(Material, {
       800: '#29444E',
       900: '#183240',
       950: '#0c1920',
+    },
+    beach: {
+      50: '#fafbfb',
+      100: '#e5eaea',
+      200: '#d1d9da',
+      300: '#bdc8c9',
+      400: '#a8b8b9',
+      500: '#94a7a8',
+      600: '#7e8e8f',
+      700: '#687576',
+      800: '#515c5c',
+      900: '#3b4343',
+      950: '#252a2a',
     }
   },
   semantic: {
