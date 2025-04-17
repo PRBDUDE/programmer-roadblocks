@@ -19,7 +19,7 @@ export type PaletteShades = { [p: string]: string };
 export class PaletteGeneratorComponent {
   @Input() colorName: string = '';
 
-  _baseColor: string = '#3cf8fb';
+  _baseColor: string = '#14b8a6';
 
   @Input()
   set baseColor(value: string) {
