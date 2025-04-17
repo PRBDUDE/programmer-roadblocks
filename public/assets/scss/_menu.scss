@@ -1,15 +1,21 @@
 :root {
   --prb-title-color: var(--p-red-600);
-  --prb-header-background-color: var(--p-neutral-200);
+  --prb-header-background-color: var(--p-surface-300);
   --prb-header-drop-shadow-color: var(--p-slate-400);
   --prb-header-text-drop-shadow-color: var(--p-red-700);
   --prb-header-logo-shadow-color-100: var(--p-red-700);
   --prb-header-logo-shadow-color-50: var(--p-red-800);
+  --prb-header-banner-padding: 5px 10px;
+  --prb-header-banner-height: 65px;
+  --prb-header-logo-height: 2.3rem;
+  --prb-header-logo-width: 2.3rem;
+  --prb-header-logo-margin: 0 10px;
+  --prb-header-letter-spacing: 0.1rem;
 }
 
 :root[class*="prb-dark-theme"] {
   --prb-title-color: var(--p-red-700);
-  --prb-header-background-color: var(--p-neutral-400);
+  --prb-header-background-color: var(--p-surface-400);
   --prb-header-text-drop-shadow-color: var(--p-red-400);
   --prb-header-logo-shadow-color-100: var(--p-red-500);
   --prb-header-logo-shadow-color-50: var(--p-red-100);

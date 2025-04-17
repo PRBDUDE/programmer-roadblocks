@@ -1,30 +1,42 @@
 <div class="prb-header-banner">
-  <div class="prb-header-text">
-    <span class="prb-roadblocks-text">Programmer</span>
-    <img ngSrc="/assets/images/roadblocks-logo.png"
-         alt="Roadblocks Logo"
-         class="prb-roadblocks-logo"
-         height="45"
-         width="43"/>
-    <span class="prb-roadblocks-text">Roadblocks</span>
-  </div>
-  <div class="prb-header-menu">
-    <p-megaMenu [model]="menuItems" orientation="horizontal"
-                styleClass="prb-mega-menu">
-      <ng-template pTemplate="item" let-item>
-        @if (item.root) {
-          <div>{{ item.label }}</div>
-        } @else {
-          @if (item.route) {
-            <a [routerLink]="item.route" class="gap-2">{{ item.label }}</a>
+  <div class="prb-header-logo-menu">
+    <div class="prb-header-text">
+      <span class="prb-roadblocks-text">Programmer</span>
+      <img ngSrc="/assets/images/roadblocks-logo.png"
+           alt="Roadblocks Logo"
+           class="prb-roadblocks-logo"
+           height="45"
+           width="43"/>
+      <span class="prb-roadblocks-text">Roadblocks</span>
+    </div>
+    <div class="prb-header-menu">
+      <p-megaMenu [model]="menuItems" orientation="horizontal"
+                  styleClass="prb-mega-menu">
+        <ng-template pTemplate="item" let-item>
+          @if (item.root) {
+            <div>{{ item.label }}</div>
           } @else {
-            <a href="{{ item.url }}" target="{{ item.target }}" class="gap-2">{{ item.label }}</a>
+            @if (item.route) {
+              <a [routerLink]="item.route" class="gap-2">{{ item.label }}</a>
+            } @else {
+              <a href="{{ item.url }}" target="{{ item.target }}" class="gap-2">{{ item.label }}</a>
+            }
           }
-        }
-      </ng-template>
-    </p-megaMenu>
+        </ng-template>
+      </p-megaMenu>
+    </div>
   </div>
   <div class="prb-header-options">
+    <p-button icon="pi pi-palette"
+              (click)="toggleColorPicker()"
+              [rounded]="true"
+              [pTooltip]="colorPicker"
+              showDelay="1000"
+              tooltipPosition="left"/>
+    <ng-template #colorPicker>
+      <i>Click icon</i> to select color scheme
+    </ng-template>
+    <prb-color-palette class="prb-color-picker"></prb-color-palette>
     @if (!isProduction()) {
       @if (!isDebugMode()) {
         <p-button icon="fa fa-bug"
@@ -32,7 +44,7 @@
                   class="btn btn-outline-secondary"
                   severity="secondary"
                   size="small"
-                  rounded="true"
+                  [rounded]="true"
                   [pTooltip]="toDebugMode"
                   showDelay="1000"
                   tooltipPosition="left"/>
@@ -45,7 +57,7 @@
                   class="btn btn-outline-primary"
                   severity="primary"
                   size="small"
-                  rounded="true"
+                  [rounded]="true"
                   [pTooltip]="toNormalMode"
                   showDelay="1000"
                   tooltipPosition="left"/>
@@ -60,8 +72,8 @@
                 class="btn btn-outline-secondary"
                 severity="secondary"
                 size="small"
-                rounded="true"
-                pTooltip="<i>Click icon</i> to switch to Dark Mode"
+                [rounded]="true"
+                [pTooltip]="'<i>Click icon</i> to switch to Dark Mode'"
                 showDelay="1000"
                 escape="false"
                 tooltipPosition="left"/>
@@ -71,8 +83,8 @@
                 class="btn btn-outline-secondary"
                 severity="secondary"
                 size="small"
-                rounded="true"
-                pTooltip="<i>Click icon</i> to switch to Light Mode"
+                [rounded]="true"
+                [pTooltip]="'<i>Click icon</i> to switch to Light Mode'"
                 showDelay="1000"
                 escape="false"
                 tooltipPosition="left"/>
