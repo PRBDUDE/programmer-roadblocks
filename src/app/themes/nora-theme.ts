@@ -246,6 +246,7 @@ const NoraPreset = definePreset(Nora, {
       950: "#4c0519"
     },
     slate: {
+      0: '#ffffff',
       50: "#f8fafc",
       100: "#f1f5f9",
       200: "#e2e8f0",
@@ -259,6 +260,7 @@ const NoraPreset = definePreset(Nora, {
       950: "#020617"
     },
     gray: {
+      0: '#ffffff',
       50: "#f9fafb",
       100: "#f3f4f6",
       200: "#e5e7eb",
@@ -272,6 +274,7 @@ const NoraPreset = definePreset(Nora, {
       950: "#030712"
     },
     zinc: {
+      0: '#ffffff',
       50: "#fafafa",
       100: "#f4f4f5",
       200: "#e4e4e7",
@@ -285,6 +288,7 @@ const NoraPreset = definePreset(Nora, {
       950: "#09090b"
     },
     neutral: {
+      0: '#ffffff',
       50: "#fafafa",
       100: "#f5f5f5",
       200: "#e5e5e5",
@@ -298,6 +302,7 @@ const NoraPreset = definePreset(Nora, {
       950: "#0a0a0a"
     },
     stone: {
+      0: '#ffffff',
       50: "#fafaf9",
       100: "#f5f5f4",
       200: "#e7e5e4",
@@ -353,6 +358,7 @@ const NoraPreset = definePreset(Nora, {
       950: '#0c1920',
     },
     beach: {
+      0: '#ffffff',
       50: '#fafbfb',
       100: '#e5eaea',
       200: '#d1d9da',
