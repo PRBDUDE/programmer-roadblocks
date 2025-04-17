@@ -2,19 +2,19 @@
   color: var(--p-orange-200);
 
   &-selector {
-    color: var(--color-css-identifier);
+    color: var(--prb-color-css-identifier);
   }
 
   &-open,
   &-close {
-    color: var(--color-css-parenthesis);
+    color: var(--prb-color-css-parenthesis);
   }
 
   &-comma {
-    color: var(--color-css-comma);
+    color: var(--prb-color-css-comma);
   }
 
   &-semicolon {
-    color: var(--color-css-semicolon);
+    color: var(--prb-color-css-semicolon);
   }
 }

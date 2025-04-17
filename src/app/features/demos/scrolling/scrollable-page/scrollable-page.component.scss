@@ -1,8 +1,8 @@
 .prb-information {
   padding: 10px;
-  background-color: var(--color-information-background-color);
+  background-color: var(--prb-color-information-background-color);
   border-radius: 5px;
-  box-shadow: 3px 3px 10px var(--color-information-box-shadow);
+  box-shadow: 3px 3px 10px var(--prb-color-information-box-shadow);
   margin-bottom: 10px;
 
   .prb-header {
@@ -16,7 +16,7 @@
   }
 
   .prb-code-block {
-    background-color: var(--color-code-background-color);
+    background-color: var(--prb-color-code-background-color);
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
@@ -29,75 +29,75 @@
       font-family: monospace;
 
       .prb-class-name {
-        color: var(--color-css-class-name);
+        color: var(--prb-color-css-class-name);
       }
 
       .prb-dot {
-        color: var(--color-css-dot);
+        color: var(--prb-color-css-dot);
       }
 
       .prb-attribute-name {
-        color: var(--color-css-attribute-name);
+        color: var(--prb-color-css-attribute-name);
       }
 
       .prb-parenthesis {
-        color: var(--color-css-parenthesis);
+        color: var(--prb-color-css-parenthesis);
       }
 
       .prb-property-name {
-        color: var(--color-css-property-name);
+        color: var(--prb-color-css-property-name);
       }
 
       .prb-property-value {
-        color: var(--color-css-property-value);
+        color: var(--prb-color-css-property-value);
       }
 
       .prb-semicolon {
-        color: var(--color-css-semicolon);
+        color: var(--prb-color-css-semicolon);
       }
 
       .prb-property-number {
-        color: var(--color-css-number);
+        color: var(--prb-color-css-number);
       }
 
       .prb-property-unit {
-        color: var(--color-css-unit);
+        color: var(--prb-color-css-unit);
       }
 
       .prb-property-value-hex {
-        color: var(--color-css-hex);
+        color: var(--prb-color-css-hex);
       }
 
       .prb-css-function {
-        color: var(--color-css-function);
+        color: var(--prb-color-css-function);
       }
 
       .prb-operation-sign {
-        color: var(--color-css-operation-sign);
+        color: var(--prb-color-css-operation-sign);
       }
 
       .prb-html-tag {
-        color: var(--color-html-tag);
+        color: var(--prb-color-html-tag);
       }
 
       .prb-html-attribute-name {
-        color: var(--color-html-attribute-name);
+        color: var(--prb-color-html-attribute-name);
       }
 
       .prb-html-attribute-value {
-        color: var(--color-html-attribute-value);
+        color: var(--prb-color-html-attribute-value);
       }
 
       .prb-html-comment {
-        color: var(--color-html-comment);
+        color: var(--prb-color-html-comment);
       }
 
       .prb-html-entity-reference {
-        color: var(--color-html-entity-reference);
+        color: var(--prb-color-html-entity-reference);
       }
 
       .prb-html-inner-text {
-        color: var(--color-html-inner-text);
+        color: var(--prb-color-html-inner-text);
       }
     }
   }
