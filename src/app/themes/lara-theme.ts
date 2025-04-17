@@ -63,6 +63,19 @@ export const LaraPreset = definePreset(Lara, {
       900: "#7f1d1d",
       950: "#450a0a"
     },
+    brown: {
+      50: '#fbf7f5',
+      100: '#ebdad0',
+      200: '#dbbdac',
+      300: '#cba087',
+      400: '#bb8262',
+      500: '#ab653d',
+      600: '#915634',
+      700: '#78472b',
+      800: '#5e3822',
+      900: '#442818',
+      950: '#2b190f'
+    },
     orange: {
       50: "#fff7ed",
       100: "#ffedd5",

@@ -63,6 +63,19 @@ export const AuraPreset = definePreset(Aura, {
       900: "#7f1d1d",
       950: "#450a0a"
     },
+    brown: {
+      50: '#fbf7f5',
+      100: '#ebdad0',
+      200: '#dbbdac',
+      300: '#cba087',
+      400: '#bb8262',
+      500: '#ab653d',
+      600: '#915634',
+      700: '#78472b',
+      800: '#5e3822',
+      900: '#442818',
+      950: '#2b190f'
+    },
     orange: {
       50: "#fff7ed",
       100: "#ffedd5",
@@ -233,6 +246,7 @@ export const AuraPreset = definePreset(Aura, {
       950: "#4c0519"
     },
     slate: {
+      0: '#ffffff',
       50: "#f8fafc",
       100: "#f1f5f9",
       200: "#e2e8f0",
@@ -246,6 +260,7 @@ export const AuraPreset = definePreset(Aura, {
       950: "#020617"
     },
     gray: {
+      0: '#ffffff',
       50: "#f9fafb",
       100: "#f3f4f6",
       200: "#e5e7eb",
@@ -259,6 +274,7 @@ export const AuraPreset = definePreset(Aura, {
       950: "#030712"
     },
     zinc: {
+      0: '#ffffff',
       50: "#fafafa",
       100: "#f4f4f5",
       200: "#e4e4e7",
@@ -272,6 +288,7 @@ export const AuraPreset = definePreset(Aura, {
       950: "#09090b"
     },
     neutral: {
+      0: '#ffffff',
       50: "#fafafa",
       100: "#f5f5f5",
       200: "#e5e5e5",
@@ -285,6 +302,7 @@ export const AuraPreset = definePreset(Aura, {
       950: "#0a0a0a"
     },
     stone: {
+      0: '#ffffff',
       50: "#fafaf9",
       100: "#f5f5f4",
       200: "#e7e5e4",
@@ -340,6 +358,7 @@ export const AuraPreset = definePreset(Aura, {
       950: '#0c1920',
     },
     beach: {
+      0: '#ffffff',
       50: '#fafbfb',
       100: '#e5eaea',
       200: '#d1d9da',
@@ -480,7 +499,7 @@ export const AuraPreset = definePreset(Aura, {
         },
         primary: {
           color: "{primary.500}",
-          contrastColor: "#ffffff",
+          contrastColor: "{surface.0}",
           hoverColor: "{primary.600}",
           activeColor: "{primary.700}"
         },
@@ -1133,9 +1152,9 @@ export const AuraPreset = definePreset(Aura, {
               borderColor: "{sky.500}",
               hoverBorderColor: "{sky.600}",
               activeBorderColor: "{sky.700}",
-              color: "#ffffff",
-              hoverColor: "#ffffff",
-              activeColor: "#ffffff",
+              color: "{surface.0}",
+              hoverColor: "{surface.0}",
+              activeColor: "{surface.0}",
               focusRing: {
                 color: "{sky.500}",
                 shadow: "none"
@@ -1148,9 +1167,9 @@ export const AuraPreset = definePreset(Aura, {
               borderColor: "{green.500}",
               hoverBorderColor: "{green.600}",
               activeBorderColor: "{green.700}",
-              color: "#ffffff",
-              hoverColor: "#ffffff",
-              activeColor: "#ffffff",
+              color: "{surface.0}",
+              hoverColor: "{surface.0}",
+              activeColor: "{surface.0}",
               focusRing: {
                 color: "{green.500}",
                 shadow: "none"
@@ -1163,9 +1182,9 @@ export const AuraPreset = definePreset(Aura, {
               borderColor: "{orange.500}",
               hoverBorderColor: "{orange.600}",
               activeBorderColor: "{orange.700}",
-              color: "#ffffff",
-              hoverColor: "#ffffff",
-              activeColor: "#ffffff",
+              color: "{surface.0}",
+              hoverColor: "{surface.0}",
+              activeColor: "{surface.0}",
               focusRing: {
                 color: "{orange.500}",
                 shadow: "none"
@@ -1178,9 +1197,9 @@ export const AuraPreset = definePreset(Aura, {
               borderColor: "{purple.500}",
               hoverBorderColor: "{purple.600}",
               activeBorderColor: "{purple.700}",
-              color: "#ffffff",
-              hoverColor: "#ffffff",
-              activeColor: "#ffffff",
+              color: "{surface.0}",
+              hoverColor: "{surface.0}",
+              activeColor: "{surface.0}",
               focusRing: {
                 color: "{purple.500}",
                 shadow: "none"
@@ -1193,9 +1212,9 @@ export const AuraPreset = definePreset(Aura, {
               borderColor: "{red.500}",
               hoverBorderColor: "{red.600}",
               activeBorderColor: "{red.700}",
-              color: "#ffffff",
-              hoverColor: "#ffffff",
-              activeColor: "#ffffff",
+              color: "{surface.0}",
+              hoverColor: "{surface.0}",
+              activeColor: "{surface.0}",
               focusRing: {
                 color: "{red.500}",
                 shadow: "none"

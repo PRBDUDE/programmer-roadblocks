@@ -63,6 +63,19 @@ export const MaterialPreset = definePreset(Material, {
       900: "#B71C1C",
       950: "#5c0e0e"
     },
+    brown: {
+      50: '#FBF7F4',
+      100: '#EDD8CC',
+      200: '#DEB8A3',
+      300: '#CF997A',
+      400: '#C17A52',
+      500: '#B25B29',
+      600: '#974D23',
+      700: '#7D401D',
+      800: '#623217',
+      900: '#472410',
+      950: '#2D170A'
+    },
     orange: {
       50: "#FFF3E0",
       100: "#FFE0B2",
