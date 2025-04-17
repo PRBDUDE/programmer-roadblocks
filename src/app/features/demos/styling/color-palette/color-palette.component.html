@@ -1,24 +1,42 @@
+<h2>Selected Colors</h2>
+<div class="prb-color-palette-group">
+  <div class="prb-color-palettes-list">
+    <prb-palette-generator [colorName]="'Primary'" [baseColor]="primaryColor()"/>
+  </div>
+  <div class="prb-color-palettes-list">
+    @if (isDarkMode()) {
+      <prb-palette-generator [colorName]="'Dark Surface'" [baseColor]="surfaceColor().dark.value"/>
+    } @else {
+      <prb-palette-generator [colorName]="'Light Surface'" [baseColor]="surfaceColor().light.value"/>
+    }
+  </div>
+</div>
+<h2>Colors</h2>
 <div class="prb-color-palettes-list">
-  <prb-palette-generator [colorName]="'Primary'" [baseColor]="primaryColor"/>
-  <prb-palette-generator [colorName]="'Emerald'" [baseColor]="emeraldColor"/>
-  <prb-palette-generator [colorName]="'Green'" [baseColor]="greenColor"/>
-  <prb-palette-generator [colorName]="'Lime'" [baseColor]="limeColor"/>
-  <prb-palette-generator [colorName]="'Red'" [baseColor]="redColor"/>
-  <prb-palette-generator [colorName]="'Orange'" [baseColor]="orangeColor"/>
-  <prb-palette-generator [colorName]="'Amber'" [baseColor]="amberColor"/>
-  <prb-palette-generator [colorName]="'Yellow'" [baseColor]="yellowColor"/>
-  <prb-palette-generator [colorName]="'Teal'" [baseColor]="tealColor"/>
-  <prb-palette-generator [colorName]="'Cyan'" [baseColor]="cyanColor"/>
-  <prb-palette-generator [colorName]="'Sky'" [baseColor]="skyColor"/>
-  <prb-palette-generator [colorName]="'Blue'" [baseColor]="blueColor"/>
-  <prb-palette-generator [colorName]="'Indigo'" [baseColor]="indigoColor"/>
-  <prb-palette-generator [colorName]="'Violet'" [baseColor]="violetColor"/>
-  <prb-palette-generator [colorName]="'Purple'" [baseColor]="purpleColor"/>
-  <prb-palette-generator [colorName]="'Fuchsia'" [baseColor]="fuchsiaColor"/>
-  <prb-palette-generator [colorName]="'Pink'" [baseColor]="pinkColor"/>
-  <prb-palette-generator [colorName]="'Slate'" [baseColor]="slateColor"/>
-  <prb-palette-generator [colorName]="'Gray'" [baseColor]="grayColor"/>
-  <prb-palette-generator [colorName]="'Zinc'" [baseColor]="zincColor"/>
-  <prb-palette-generator [colorName]="'Neutral'" [baseColor]="neutralColor"/>
-  <prb-palette-generator [colorName]="'Stone'" [baseColor]="stoneColor"/>
+  <prb-palette-generator [colorName]="'Emerald'" [baseColor]="emeraldColor()"/>
+  <prb-palette-generator [colorName]="'Green'" [baseColor]="greenColor()"/>
+  <prb-palette-generator [colorName]="'Lime'" [baseColor]="limeColor()"/>
+  <prb-palette-generator [colorName]="'Red'" [baseColor]="redColor()"/>
+  <prb-palette-generator [colorName]="'Brown'" [baseColor]="brownColor()"/>
+  <prb-palette-generator [colorName]="'Orange'" [baseColor]="orangeColor()"/>
+  <prb-palette-generator [colorName]="'Amber'" [baseColor]="amberColor()"/>
+  <prb-palette-generator [colorName]="'Yellow'" [baseColor]="yellowColor()"/>
+  <prb-palette-generator [colorName]="'Teal'" [baseColor]="tealColor()"/>
+  <prb-palette-generator [colorName]="'Cyan'" [baseColor]="cyanColor()"/>
+  <prb-palette-generator [colorName]="'Sky'" [baseColor]="skyColor()"/>
+  <prb-palette-generator [colorName]="'Blue'" [baseColor]="blueColor()"/>
+  <prb-palette-generator [colorName]="'Indigo'" [baseColor]="indigoColor()"/>
+  <prb-palette-generator [colorName]="'Violet'" [baseColor]="violetColor()"/>
+  <prb-palette-generator [colorName]="'Purple'" [baseColor]="purpleColor()"/>
+  <prb-palette-generator [colorName]="'Fuchsia'" [baseColor]="fuchsiaColor()"/>
+  <prb-palette-generator [colorName]="'Pink'" [baseColor]="pinkColor()"/>
+  <prb-palette-generator [colorName]="'Slate'" [baseColor]="slateColor()"/>
+  <prb-palette-generator [colorName]="'Gray'" [baseColor]="grayColor()"/>
+  <prb-palette-generator [colorName]="'Zinc'" [baseColor]="zincColor()"/>
+  <prb-palette-generator [colorName]="'Neutral'" [baseColor]="neutralColor()"/>
+  <prb-palette-generator [colorName]="'Stone'" [baseColor]="stoneColor()"/>
+  <prb-palette-generator [colorName]="'Soho'" [baseColor]="sohoColor()"/>
+  <prb-palette-generator [colorName]="'Viva'" [baseColor]="vivaColor()"/>
+  <prb-palette-generator [colorName]="'Ocean'" [baseColor]="oceanColor()"/>
+  <prb-palette-generator [colorName]="'Beach'" [baseColor]="beachColor()"/>
 </div>
