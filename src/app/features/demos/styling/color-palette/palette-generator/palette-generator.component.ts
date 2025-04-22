@@ -47,5 +47,11 @@ export class PaletteGeneratorComponent {
     if (this.colorValues) {
       this.shades = Object.keys(this.colorValues);
     }
+
+    const colorNameKey = this.colorName.toLowerCase();
+    const nestedColorValues = {
+      [colorNameKey]: this.colorValues
+    };
+    console.log(nestedColorValues);
   }
 }
