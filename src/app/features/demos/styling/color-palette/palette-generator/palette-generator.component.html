@@ -1,6 +1,6 @@
 <div class="prb-palette-generator-container">
   <div class="prb-input-group">
-    <label for="color-palette-input">Color Name: <span class="prb-color-name">{{ colorName }}</span></label>
+    <label for="color-palette-input">Color Name: <span class="prb-color-name">{{ colorName() }}</span></label>
     <input type="color" [(ngModel)]="baseColor"/>
     <input
       type="text"

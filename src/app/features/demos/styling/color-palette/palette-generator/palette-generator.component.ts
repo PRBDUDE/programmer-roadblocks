@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, input, Input} from '@angular/core';
 import {palette} from "@primeng/themes";
 import {InputText} from "primeng/inputtext";
 import {FormsModule} from "@angular/forms";
@@ -17,7 +17,8 @@ export type PaletteShades = { [p: string]: string };
   styleUrl: './palette-generator.component.scss'
 })
 export class PaletteGeneratorComponent {
-  @Input() colorName: string = '';
+  colorName = input<string>('');
+  isSurfaceColor = input<boolean>(false);
 
   _baseColor: string = '#14b8a6';
 
@@ -43,12 +44,19 @@ export class PaletteGeneratorComponent {
   }
 
   generatePalette() {
-    this.colorValues = palette(this.baseColor);
+    if (this.isSurfaceColor()) {
+      this.colorValues = {
+        0: "#ffffff",
+        ...palette(this.baseColor)
+      };
+    } else {
+      this.colorValues = palette(this.baseColor);
+    }
     if (this.colorValues) {
       this.shades = Object.keys(this.colorValues);
     }
 
-    const colorNameKey = this.colorName.toLowerCase();
+    const colorNameKey = this.colorName().toLowerCase();
     const nestedColorValues = {
       [colorNameKey]: this.colorValues
     };

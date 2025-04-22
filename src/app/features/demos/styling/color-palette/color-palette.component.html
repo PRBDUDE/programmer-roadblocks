@@ -5,9 +5,9 @@
   </div>
   <div class="prb-color-palettes-list">
     @if (isDarkMode()) {
-      <prb-palette-generator [colorName]="'Dark Surface'" [baseColor]="surfaceColor().dark.value"/>
+      <prb-palette-generator [colorName]="'Dark Surface'" [isSurfaceColor]=true [baseColor]="surfaceColor().dark.value"/>
     } @else {
-      <prb-palette-generator [colorName]="'Light Surface'" [baseColor]="surfaceColor().light.value"/>
+      <prb-palette-generator [colorName]="'Light Surface'" [isSurfaceColor]=true [baseColor]="surfaceColor().light.value"/>
     }
   </div>
 </div>
@@ -30,13 +30,13 @@
   <prb-palette-generator [colorName]="'Purple'" [baseColor]="purpleColor()"/>
   <prb-palette-generator [colorName]="'Fuchsia'" [baseColor]="fuchsiaColor()"/>
   <prb-palette-generator [colorName]="'Pink'" [baseColor]="pinkColor()"/>
-  <prb-palette-generator [colorName]="'Slate'" [baseColor]="slateColor()"/>
-  <prb-palette-generator [colorName]="'Gray'" [baseColor]="grayColor()"/>
-  <prb-palette-generator [colorName]="'Zinc'" [baseColor]="zincColor()"/>
-  <prb-palette-generator [colorName]="'Neutral'" [baseColor]="neutralColor()"/>
-  <prb-palette-generator [colorName]="'Stone'" [baseColor]="stoneColor()"/>
-  <prb-palette-generator [colorName]="'Soho'" [baseColor]="sohoColor()"/>
-  <prb-palette-generator [colorName]="'Viva'" [baseColor]="vivaColor()"/>
-  <prb-palette-generator [colorName]="'Ocean'" [baseColor]="oceanColor()"/>
-  <prb-palette-generator [colorName]="'Beach'" [baseColor]="beachColor()"/>
+  <prb-palette-generator [colorName]="'Slate'" [isSurfaceColor]=true [baseColor]="slateColor()"/>
+  <prb-palette-generator [colorName]="'Gray'" [isSurfaceColor]=true [baseColor]="grayColor()"/>
+  <prb-palette-generator [colorName]="'Zinc'" [isSurfaceColor]=true [baseColor]="zincColor()"/>
+  <prb-palette-generator [colorName]="'Neutral'" [isSurfaceColor]=true [baseColor]="neutralColor()"/>
+  <prb-palette-generator [colorName]="'Stone'" [isSurfaceColor]=true [baseColor]="stoneColor()"/>
+  <prb-palette-generator [colorName]="'Soho'" [isSurfaceColor]=true [baseColor]="sohoColor()"/>
+  <prb-palette-generator [colorName]="'Viva'" [isSurfaceColor]=true [baseColor]="vivaColor()"/>
+  <prb-palette-generator [colorName]="'Ocean'" [isSurfaceColor]=true [baseColor]="oceanColor()"/>
+  <prb-palette-generator [colorName]="'Beach'" [isSurfaceColor]=true [baseColor]="beachColor()"/>
 </div>
