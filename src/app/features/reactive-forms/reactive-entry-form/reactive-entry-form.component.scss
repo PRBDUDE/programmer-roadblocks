@@ -13,6 +13,11 @@
       grid-template-columns: 98px 250px;
       margin-bottom: 1rem;
 
+      span.prb-form-group-label {
+        text-align: right;
+        margin: 0.5em 1em 0 0;
+      }
+
       .prb-form-group-label {
         grid-area: label;
 
