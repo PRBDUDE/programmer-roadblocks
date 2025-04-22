@@ -41,6 +41,9 @@
       ],
       "@environments/*": [
         "./src/environments/*"
+      ],
+      "@model/*": [
+        "./src/app/core/model/*"
       ]
     }
   },
