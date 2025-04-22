@@ -1,4 +1,4 @@
-import {ColorDefinition} from "../../model/color-definition";
+import {ColorDefinition} from "@model/color-definition";
 import {palette} from "@primeng/themes";
 
 export function generateColorPalettes(colorDefinitions: ColorDefinition[]) {
