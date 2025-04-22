@@ -1,12 +1,13 @@
 import {Component, signal} from '@angular/core';
 import {Tooltip} from "primeng/tooltip";
-import {Button} from "primeng/button";
+import {Button, ButtonLabel} from "primeng/button";
 
 @Component({
   selector: 'prb-tooltip',
   imports: [
     Tooltip,
-    Button
+    Button,
+    ButtonLabel
   ],
   templateUrl: './tooltip.component.html',
   styleUrl: './tooltip.component.scss'

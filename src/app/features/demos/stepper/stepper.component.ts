@@ -1,6 +1,6 @@
 import {Component, signal} from '@angular/core';
 import {Step, StepList, StepPanel, StepPanels, Stepper} from "primeng/stepper";
-import {Button} from "primeng/button";
+import {Button, ButtonLabel} from "primeng/button";
 import {StepperFourComponent} from "./stepper-four/stepper-four.component";
 import {StepperThreeComponent} from "./stepper-three/stepper-three.component";
 import {StepperTwoComponent} from "./stepper-two/stepper-two.component";
@@ -27,7 +27,8 @@ import {provideAnimations} from "@angular/platform-browser/animations";
     StepperFourComponent,
     FormsModule,
     ToggleSwitch,
-    DebugOutputCardComponent
+    DebugOutputCardComponent,
+    ButtonLabel
   ],
   templateUrl: './stepper.component.html',
   styleUrl: './stepper.component.scss',

@@ -1,15 +1,16 @@
 import { Component } from '@angular/core';
-import {Button} from "primeng/button";
+import {Button, ButtonLabel} from "primeng/button";
 import {ToggleSwitch} from "primeng/toggleswitch";
 import {FormsModule} from "@angular/forms";
 
 @Component({
     selector: 'prb-button-demo',
-    imports: [
-        Button,
-        ToggleSwitch,
-        FormsModule
-    ],
+  imports: [
+    Button,
+    ToggleSwitch,
+    FormsModule,
+    ButtonLabel
+  ],
     templateUrl: './button-demo.component.html',
     styleUrl: './button-demo.component.scss'
 })

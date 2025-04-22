@@ -3,7 +3,7 @@ import {FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators} fr
 import {DebugOutputCardComponent} from "@utility/debug-output-card.component";
 import {isDebugMode} from "@utility/is-debug-mode";
 import {NgClass} from "@angular/common";
-import {Button} from "primeng/button";
+import {Button, ButtonLabel} from "primeng/button";
 import {InputMask} from "primeng/inputmask";
 import {InputText} from "primeng/inputtext";
 import {DatePicker} from "primeng/datepicker";
@@ -21,7 +21,8 @@ import {ReactivePatterns} from "../../../core/reactive-forms/reactive-patterns";
     InputMask,
     InputText,
     DatePicker,
-    ReactiveErrorComponent
+    ReactiveErrorComponent,
+    ButtonLabel
   ],
   templateUrl: './reactive-entry-form.component.html',
   styleUrl: './reactive-entry-form.component.scss'
