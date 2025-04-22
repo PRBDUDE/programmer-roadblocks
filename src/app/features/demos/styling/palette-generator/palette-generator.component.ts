@@ -7,7 +7,7 @@ import {TableModule} from 'primeng/table';
 import {CardModule} from 'primeng/card';
 import {InputNumberInputEvent, InputNumberModule} from 'primeng/inputnumber';
 import {ColorDefinition} from '@model/color-definition';
-import {generateColorPalets} from '@utility/generate-color-palets';
+import {generateColorPalettes} from '@utility/generate-color-palettes';
 
 @Component({
   selector: 'prb-palette-generator',
@@ -73,7 +73,7 @@ export class PaletteGeneratorComponent implements OnInit {
   generatePalettes(): void {
     if (this.colorForm.valid) {
       const colorDefinitions: ColorDefinition[] = this.colorsArray.value;
-      this.generatedPalettes = generateColorPalets(colorDefinitions);
+      this.generatedPalettes = generateColorPalettes(colorDefinitions);
       this.paletteKeys = Object.keys(this.generatedPalettes);
 
       if (this.paletteKeys.length > 0) {
@@ -96,7 +96,6 @@ export class PaletteGeneratorComponent implements OnInit {
 
   onColorTextChange(event: Event, index: number): void {
     let colorValue = (event.target as HTMLInputElement).value;
-    const control = this.colorsArray.at(index).get('baseColor');
     const textInput = event.target as HTMLInputElement;
 
     if (!colorValue) {
