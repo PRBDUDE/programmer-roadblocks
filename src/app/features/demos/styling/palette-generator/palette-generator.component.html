@@ -1,0 +1,120 @@
+<div class="prb-palette-generator-container">
+  <div class="prb-palette-generator">
+    <p-card header="Color Palette Generator">
+      <div class="prb-color-count-section">
+        <label for="colorCount">Number of Colors:</label>
+        <p-inputNumber
+          id="colorCount"
+          [(ngModel)]="colorCount"
+          [min]="1"
+          [max]="30"
+          (onInput)="updateColorCount($event)"
+        ></p-inputNumber>
+      </div>
+
+      <form [formGroup]="colorForm" (ngSubmit)="generatePalettes()">
+        <div [formArrayName]="'colors'">
+          <div *ngFor="let colorGroup of colorsArray.controls; let i = index" [formGroupName]="i"
+               class="prb-color-input-row">
+            <div class="prb-color-name-input">
+              <label [for]="'colorName' + i">Color Name:</label>
+              <input
+                [id]="'colorName' + i"
+                type="text"
+                pInputText
+                [formControlName]="'name'"
+                placeholder="Enter color name"
+              />
+              @if (colorGroup.get('name')?.invalid && colorGroup.get('name')?.touched) {
+                <div class="prb-error-message">
+                  Color name is required
+                </div>
+              }
+            </div>
+
+            <div class="prb-color-hex-input">
+              <label [for]="'colorHex' + i">Hex Code:</label>
+              <div class="prb-color-input-group">
+                <input
+                  type="color"
+                  [id]="'colorPicker' + i"
+                  [formControlName]="'baseColor'"
+                  (input)="onColorPickerChange($event, i)"
+                />
+                <input
+                  [id]="'colorHex' + i"
+                  type="text"
+                  pInputText
+                  [formControlName]="'baseColor'"
+                  placeholder="#RRGGBB"
+                  (blur)="onColorTextChange($event, i)"
+                />
+              </div>
+              @if (colorGroup.get('baseColor')?.invalid && colorGroup.get('baseColor')?.touched) {
+                <div class="prb-error-message">
+                  Valid hex color code required (#RRGGBB)
+                </div>
+              }
+            </div>
+          </div>
+        </div>
+
+        <div class="prb-button-section">
+          <p-button type="submit" label="Generate Palettes" [disabled]="colorForm.invalid"/>
+        </div>
+      </form>
+
+      @if (paletteKeys.length > 0) {
+        <div class="prb-palettes-section">
+          <h3>Generated Color Palettes</h3>
+
+          @for (paletteName of paletteKeys; track paletteName) {
+            <div class="prb-palette-card">
+              <h4>{{ paletteName }}</h4>
+              <div class="prb-color-swatches">
+                @for (shade of shadeKeys; track shade) {
+                  <div class="prb-color-swatch">
+                    <div
+                      class="prb-swatch"
+                      [style.background-color]="getColorValue(paletteName, shade)"
+                      [title]="getColorValue(paletteName, shade)"
+                    ></div>
+                    <div class="prb-swatch-info">
+                      <span class="prb-shade-name">{{ shade }}</span>
+                      <span class="prb-hex-value">{{ getColorValue(paletteName, shade).toUpperCase() }}</span>
+                    </div>
+                  </div>
+                }
+              </div>
+            </div>
+          }
+        </div>
+      }
+    </p-card>
+  </div>
+
+  @if (paletteKeys.length > 0) {
+    <div class="prb-palette-output">
+      <p-card header="Theme Content">
+        <div class="prb-theme-content">
+          @for (paletteName of paletteKeys; track paletteName) {
+            <div class="prb-palette-card">
+              {{ paletteName }}:&nbsp;&lbrace;
+              <div class="prb-color-swatches">
+                @for (shade of shadeKeys; track shade) {
+                  <div class="prb-color-swatch">
+                    <div class="prb-swatch-info prb-indent">
+                      <span class="prb-shade-name">{{ shade }}</span>:&nbsp;
+                      &quot;<span class="prb-hex-value">{{ getColorValue(paletteName, shade).toUpperCase() }}</span>&quot;&comma;
+                    </div>
+                  </div>
+                }
+              </div>
+              &rbrace;&comma;
+            </div>
+          }
+        </div>
+      </p-card>
+    </div>
+  }
+</div>

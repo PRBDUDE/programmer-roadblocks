@@ -1,47 +1,53 @@
 .prb-header-banner {
   display: flex;
+  justify-content: space-between;
   gap: 25px;
-  padding: 5px 10px;
+  padding: var(--prb-header-banner-padding);
   background-color: var(--prb-header-background-color);
-  height: 65px;
+  height: var(--prb-header-banner-height);
   box-shadow: 0 0 10px var(--prb-header-drop-shadow-color);
 
-  .prb-header-text {
+  .prb-header-logo-menu {
     display: flex;
     align-items: center;
-    font-family: "Comic Sans MS", serif;
-    font-size: 2.2em;
-    color: var(--prb-title-color);
-    filter: drop-shadow(0 0 5px var(--prb-header-text-drop-shadow-color));
+    gap: 10px;
 
-    .prb-roadblocks-logo {
-      position: relative;
-      height: 2.3rem;
-      width: 2.3rem;
-      filter: drop-shadow(0 0 5px var(--prb-title-color));
-      animation-name: shadow;
-      animation-duration: 4s;
-      animation-iteration-count: infinite;
-      margin: 0 10px;
-    }
-
-    .prb-roadblocks-text {
+    .prb-header-text {
+      display: flex;
+      align-items: center;
       font-family: "Comic Sans MS", serif;
-      font-size: 1.2em;
+      font-size: 2.2em;
       color: var(--prb-title-color);
-      letter-spacing: 0.1rem;
-    }
-  }
+      filter: drop-shadow(0 0 5px var(--prb-header-text-drop-shadow-color));
 
-  .prb-header-menu {
-    display: flex;
-    align-items: center;
+      .prb-roadblocks-logo {
+        position: relative;
+        height: var(--prb-hearder-logo-height);
+        width: var(--prb-header-logo-width);
+        filter: drop-shadow(0 0 5px var(--prb-title-color));
+        animation-name: shadow;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        margin: var(--prb-header-logo-margin);
+      }
+
+      .prb-roadblocks-text {
+        font-family: "Comic Sans MS", serif;
+        font-size: 1.2em;
+        color: var(--prb-title-color);
+        letter-spacing: var(--prb-header-letter-spacing);
+      }
+    }
+
+    .prb-header-menu {
+      display: flex;
+      align-items: center;
+    }
   }
 
   .prb-header-options {
     display: flex;
     gap: 10px;
-    margin-left: auto;
     align-items: center;
   }
 }
@@ -53,18 +59,19 @@
   }
   50% {
     filter: drop-shadow(0 0 2px var(--prb-header-logo-shadow-color-50));
-    scale: 1;
+    scale: 0.9;
   }
 }
 
 @media screen and (max-width: 1064px) {
   .prb-header-text {
     .prb-roadblocks-text {
-      font-size: 1em !important;
+      font-size: 0.8em !important;
     }
+
     .prb-roadblocks-logo {
-      height: 1.6rem !important;
-      width: 1.6rem !important;
+      height: 0.8em !important;
+      width: 0.8em !important;
     }
   }
 }
@@ -72,11 +79,12 @@
 @media screen and (max-width: 968px) {
   .prb-header-text {
     .prb-roadblocks-text {
-      font-size: 0.9rem !important;
+      font-size: 0.7em !important;
     }
+
     .prb-roadblocks-logo {
-      height: 1rem !important;
-      width: 1rem !important;
+      height: 0.7em !important;
+      width: 0.7em !important;
     }
   }
 }

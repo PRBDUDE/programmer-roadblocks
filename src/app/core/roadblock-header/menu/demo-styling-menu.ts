@@ -8,6 +8,11 @@ export function demoStylingMenu() {
                 route: '/demo/color-palette'
             },
             {
+                label: 'Color Palette Generator',
+                subtext: 'Generate Color palettes',
+                route: '/demo/color-palette-generator'
+            },
+            {
                 label: 'Button Styles',
                 subtext: 'Primary, Secondary and Tertiary buttons',
                 route: '/demo/button-demo'

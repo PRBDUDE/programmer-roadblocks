@@ -3,12 +3,11 @@
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-  background-color: var(--p-surface-400);
-  color: var(--p-surface-0);
-  padding: 10px 10px;
+  background-color: var(--prb-footer-background-color);
+  padding: 10px 20px;
 
   .prb-roadblock-footer-text {
     font-size: 1em;
-    color: var(--p-surface-0);
+    color: var(--prb-footer-text-color);
   }
 }

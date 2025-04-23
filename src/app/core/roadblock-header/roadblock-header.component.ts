@@ -10,6 +10,8 @@ import {NgOptimizedImage} from "@angular/common";
 import {reactiveFormsMenu} from "@rootComponents/menu/reactive-forms-menu";
 import {demosMenu} from "@rootComponents/menu/demos-menu";
 import {documentationMenu} from "@rootComponents/menu/documentation-menu";
+import {ColorPaletteComponent} from "@rootComponents/color-palette/color-palette.component";
+import {isDarkMode} from "@utility/is-dark-mode";
 
 @Component({
   selector: 'prb-roadblock-header',
@@ -18,7 +20,8 @@ import {documentationMenu} from "@rootComponents/menu/documentation-menu";
     RouterLink,
     Button,
     Tooltip,
-    NgOptimizedImage
+    NgOptimizedImage,
+    ColorPaletteComponent
   ],
   templateUrl: './roadblock-header.component.html',
   styleUrl: './roadblock-header.component.scss'
@@ -42,13 +45,15 @@ export class RoadblockHeaderComponent implements OnInit {
     element?.classList.toggle('prb-dark-theme');
   }
 
-  isDarkMode() {
-    const element = document.querySelector('html');
-    return element?.classList.contains('prb-dark-theme');
-  }
-
   toggleDebugMode() {
     const element = document.querySelector('html');
     element?.classList.toggle('prb-debug-mode');
   }
+
+  toggleColorPicker() {
+    const element = document.querySelector('.prb-color-palette-panel');
+    element?.classList.toggle('prb-show');
+  }
+
+  protected readonly isDarkMode = isDarkMode;
 }

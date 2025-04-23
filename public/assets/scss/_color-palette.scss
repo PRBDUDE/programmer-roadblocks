@@ -1,0 +1,25 @@
+:root {
+  --prb-color-palette-panel-background-color: var(--p-surface-200);
+  --prb-color-palette-panel-title-color: var(--p-surface-600);
+  --prb-color-palette-panel-title-font-size: 1.3rem;
+  --prb-color-palette-panel-title-font-weight: 700;
+  --prb-color-palette-panel-title-margin-bottom: 1em;
+  --prb-color-palette-items-margin-bottom: 2em;
+  --prb-color-palette-margin-bottom: 1em;
+  --prb-color-palette-panel-border: 2px solid var(--p-surface-700);
+  --prb-color-palette-panel-width: 385px;
+  --prb-color-palette-panel-radius: 10px;
+  --prb-color-palette-panel-top: 67px;
+  --prb-color-palette-panel-right: 116px;
+  --prb-color-palette-panel-padding: 1rem;
+  --prb-color-palette-panel-z-index: 1000;
+  --prb-color-palette-item-width: 1.5em;
+  --prb-color-palette-item-height: 1.5em;
+  --prb-color-palette-item-border: 1px solid var(--p-surface-0);
+}
+
+:root[class*="prb-dark-theme"] {
+  --prb-color-palette-panel-background-color: var(--p-surface-700);
+  --prb-color-palette-panel-title-color: var(--p-surface-100);
+  --prb-color-palette-panel-border: 2px solid var(--p-surface-300);
+}

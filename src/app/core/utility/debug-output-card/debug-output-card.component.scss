@@ -4,18 +4,18 @@
   //right: 500px;
   width: fit-content;
   min-width: 200px;
-  line-height: var(--debug-line-height);
+  line-height: var(--prb-debug-line-height);
   background: var(--prb-debug-background-color);
   border: 1px solid var(--prb-debug-border-color);
 
   &:not(.flat) {
-    border-radius: var(--debug-border-radius);
-    box-shadow: var(--debug-box-shadow);
+    border-radius: var(--prb-debug-border-radius);
+    box-shadow: var(--prb-debug-box-shadow);
   }
 
   .prb-debug-header {
     font-size: 1.2em;
-    padding: var(--debug-header-padding);
+    padding: var(--prb-debug-header-padding);
     text-align: center;
     background-color: var(--prb-debug-header-background-color);
     border-top-left-radius: inherit;
@@ -24,7 +24,7 @@
   }
 
   .prb-debug-variable-name-container {
-    padding: var(--debug-variable-padding);
+    padding: var(--prb-debug-variable-padding);
     border-bottom: 1px solid var(--prb-debug-border-color);
     font-size: 0.6em;
     background-color: var(--prb-debug-variable-background-color);
@@ -43,9 +43,9 @@
   }
 
   .prb-debug-content {
-    padding: var(--debug-content-padding);
+    padding: var(--prb-debug-content-padding);
     overflow-y: auto;
-    letter-spacing: var(--debug-letter-spacing);
+    letter-spacing: var(--prb-debug-letter-spacing);
     margin: var(--prb-debug-content-margin);
 
     pre,

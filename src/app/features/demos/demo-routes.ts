@@ -32,6 +32,12 @@ export const demo_routes: Routes = [
     title: 'Color Palette'
   },
   {
+    path: 'color-palette-generator',
+    loadComponent: () => import('./styling/palette-generator/palette-generator.component')
+      .then(m => m.PaletteGeneratorComponent),
+    title: 'Color Palette Generator'
+  },
+  {
     path: 'vertical-timeline',
     loadComponent: () => import('./timeline/vertical-timeline/vertical-timeline.component')
       .then(m => m.VerticalTimelineComponent),

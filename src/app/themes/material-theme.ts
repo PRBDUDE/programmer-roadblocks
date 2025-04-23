@@ -1,7 +1,7 @@
-import Lara from "@primeng/themes/lara";
+import Material from "@primeng/themes/material";
 import {definePreset} from "@primeng/themes";
 
-export const CyanLaraPreset = definePreset(Lara, {
+export const MaterialPreset = definePreset(Material, {
   primitive: {
     borderRadius: {
       none: "0",
@@ -12,227 +12,241 @@ export const CyanLaraPreset = definePreset(Lara, {
       xl: "12px"
     },
     emerald: {
-      50: "#ecfdf5",
-      100: "#d1fae5",
-      200: "#a7f3d0",
-      300: "#6ee7b7",
-      400: "#34d399",
-      500: "#10b981",
-      600: "#059669",
-      700: "#047857",
-      800: "#065f46",
-      900: "#064e3b",
-      950: "#022c22"
+      50: "#E8F6F1",
+      100: "#C5EBE1",
+      200: "#9EDFCF",
+      300: "#76D3BD",
+      400: "#58C9AF",
+      500: "#3BBFA1",
+      600: "#35AF94",
+      700: "#2D9B83",
+      800: "#268873",
+      900: "#1A6657",
+      950: "#0d3329"
     },
     green: {
-      50: "#f0fdf4",
-      100: "#dcfce7",
-      200: "#bbf7d0",
-      300: "#86efac",
-      400: "#4ade80",
-      500: "#22c55e",
-      600: "#16a34a",
-      700: "#15803d",
-      800: "#166534",
-      900: "#14532d",
-      950: "#052e16"
+      50: "#E8F5E9",
+      100: "#C8E6C9",
+      200: "#A5D6A7",
+      300: "#81C784",
+      400: "#66BB6A",
+      500: "#4CAF50",
+      600: "#43A047",
+      700: "#388E3C",
+      800: "#2E7D32",
+      900: "#1B5E20",
+      950: "#0e2f10"
     },
     lime: {
-      50: "#f7fee7",
-      100: "#ecfccb",
-      200: "#d9f99d",
-      300: "#bef264",
-      400: "#a3e635",
-      500: "#84cc16",
-      600: "#65a30d",
-      700: "#4d7c0f",
-      800: "#3f6212",
-      900: "#365314",
-      950: "#1a2e05"
+      50: "#F9FBE7",
+      100: "#F0F4C3",
+      200: "#E6EE9C",
+      300: "#DCE775",
+      400: "#D4E157",
+      500: "#CDDC39",
+      600: "#C0CA33",
+      700: "#AFB42B",
+      800: "#9E9D24",
+      900: "#827717",
+      950: "#413c0c"
     },
     red: {
-      50: "#fef2f2",
-      100: "#fee2e2",
-      200: "#fecaca",
-      300: "#fca5a5",
-      400: "#f87171",
-      500: "#ef4444",
-      600: "#dc2626",
-      700: "#b91c1c",
-      800: "#991b1b",
-      900: "#7f1d1d",
-      950: "#450a0a"
+      50: "#FFEBEE",
+      100: "#FFCDD2",
+      200: "#EF9A9A",
+      300: "#E57373",
+      400: "#EF5350",
+      500: "#F44336",
+      600: "#E53935",
+      700: "#D32F2F",
+      800: "#C62828",
+      900: "#B71C1C",
+      950: "#5c0e0e"
+    },
+    brown: {
+      50: '#FBF7F4',
+      100: '#EDD8CC',
+      200: '#DEB8A3',
+      300: '#CF997A',
+      400: '#C17A52',
+      500: '#B25B29',
+      600: '#974D23',
+      700: '#7D401D',
+      800: '#623217',
+      900: '#472410',
+      950: '#2D170A'
     },
     orange: {
-      50: "#fff7ed",
-      100: "#ffedd5",
-      200: "#fed7aa",
-      300: "#fdba74",
-      400: "#fb923c",
-      500: "#f97316",
-      600: "#ea580c",
-      700: "#c2410c",
-      800: "#9a3412",
-      900: "#7c2d12",
-      950: "#431407"
+      50: "#FFF3E0",
+      100: "#FFE0B2",
+      200: "#FFCC80",
+      300: "#FFB74D",
+      400: "#FFA726",
+      500: "#FF9800",
+      600: "#FB8C00",
+      700: "#F57C00",
+      800: "#EF6C00",
+      900: "#E65100",
+      950: "#732900"
     },
     amber: {
-      50: "#fffbeb",
-      100: "#fef3c7",
-      200: "#fde68a",
-      300: "#fcd34d",
-      400: "#fbbf24",
-      500: "#f59e0b",
-      600: "#d97706",
-      700: "#b45309",
-      800: "#92400e",
-      900: "#78350f",
-      950: "#451a03"
+      50: "#FFF8E1",
+      100: "#FFECB3",
+      200: "#FFE082",
+      300: "#FFD54F",
+      400: "#FFCA28",
+      500: "#FFC107",
+      600: "#FFB300",
+      700: "#FFA000",
+      800: "#FF8F00",
+      900: "#FF6F00",
+      950: "#803800"
     },
     yellow: {
-      50: "#fefce8",
-      100: "#fef9c3",
-      200: "#fef08a",
-      300: "#fde047",
-      400: "#facc15",
-      500: "#eab308",
-      600: "#ca8a04",
-      700: "#a16207",
-      800: "#854d0e",
-      900: "#713f12",
-      950: "#422006"
+      50: "#FFFDE7",
+      100: "#FFF9C4",
+      200: "#FFF59D",
+      300: "#FFF176",
+      400: "#FFEE58",
+      500: "#FFEB3B",
+      600: "#FDD835",
+      700: "#FBC02D",
+      800: "#F9A825",
+      900: "#F57F17",
+      950: "#7b400c"
     },
     teal: {
-      50: "#f0fdfa",
-      100: "#ccfbf1",
-      200: "#99f6e4",
-      300: "#5eead4",
-      400: "#2dd4bf",
-      500: "#14b8a6",
-      600: "#0d9488",
-      700: "#0f766e",
-      800: "#115e59",
-      900: "#134e4a",
-      950: "#042f2e"
+      50: "#E0F2F1",
+      100: "#B2DFDB",
+      200: "#80CBC4",
+      300: "#4DB6AC",
+      400: "#26A69A",
+      500: "#009688",
+      600: "#00897B",
+      700: "#00796B",
+      800: "#00695C",
+      900: "#004D40",
+      950: "#002720"
     },
     cyan: {
-      50: "#ecfeff",
-      100: "#cffafe",
-      200: "#a5f3fc",
-      300: "#67e8f9",
-      400: "#22d3ee",
-      500: "#06b6d4",
-      600: "#0891b2",
-      700: "#0e7490",
-      800: "#155e75",
-      900: "#164e63",
-      950: "#083344"
+      50: "#E0F7FA",
+      100: "#B2EBF2",
+      200: "#80DEEA",
+      300: "#4DD0E1",
+      400: "#26C6DA",
+      500: "#00BCD4",
+      600: "#00ACC1",
+      700: "#0097A7",
+      800: "#00838F",
+      900: "#006064",
+      950: "#003032"
     },
     sky: {
-      50: "#f0f9ff",
-      100: "#e0f2fe",
-      200: "#bae6fd",
-      300: "#7dd3fc",
-      400: "#38bdf8",
-      500: "#0ea5e9",
-      600: "#0284c7",
-      700: "#0369a1",
-      800: "#075985",
-      900: "#0c4a6e",
-      950: "#082f49"
+      50: "#E1F5FE",
+      100: "#B3E5FC",
+      200: "#81D4FA",
+      300: "#4FC3F7",
+      400: "#29B6F6",
+      500: "#03A9F4",
+      600: "#039BE5",
+      700: "#0288D1",
+      800: "#0277BD",
+      900: "#01579B",
+      950: "#012c4e"
     },
     blue: {
-      50: "#eff6ff",
-      100: "#dbeafe",
-      200: "#bfdbfe",
-      300: "#93c5fd",
-      400: "#60a5fa",
-      500: "#3b82f6",
-      600: "#2563eb",
-      700: "#1d4ed8",
-      800: "#1e40af",
-      900: "#1e3a8a",
-      950: "#172554"
+      50: "#E3F2FD",
+      100: "#BBDEFB",
+      200: "#90CAF9",
+      300: "#64B5F6",
+      400: "#42A5F5",
+      500: "#2196F3",
+      600: "#1E88E5",
+      700: "#1976D2",
+      800: "#1565C0",
+      900: "#0D47A1",
+      950: "#072451"
     },
     indigo: {
-      50: "#eef2ff",
-      100: "#e0e7ff",
-      200: "#c7d2fe",
-      300: "#a5b4fc",
-      400: "#818cf8",
-      500: "#6366f1",
-      600: "#4f46e5",
-      700: "#4338ca",
-      800: "#3730a3",
-      900: "#312e81",
-      950: "#1e1b4b"
+      50: "#E8EAF6",
+      100: "#C5CAE9",
+      200: "#9FA8DA",
+      300: "#7986CB",
+      400: "#5C6BC0",
+      500: "#3F51B5",
+      600: "#3949AB",
+      700: "#303F9F",
+      800: "#283593",
+      900: "#1A237E",
+      950: "#0d123f"
     },
     violet: {
-      50: "#f5f3ff",
-      100: "#ede9fe",
-      200: "#ddd6fe",
-      300: "#c4b5fd",
-      400: "#a78bfa",
-      500: "#8b5cf6",
-      600: "#7c3aed",
-      700: "#6d28d9",
-      800: "#5b21b6",
-      900: "#4c1d95",
-      950: "#2e1065"
+      50: "#EDE7F6",
+      100: "#D1C4E9",
+      200: "#B39DDB",
+      300: "#9575CD",
+      400: "#7E57C2",
+      500: "#673AB7",
+      600: "#5E35B1",
+      700: "#512DA8",
+      800: "#4527A0",
+      900: "#311B92",
+      950: "#190e49"
     },
     purple: {
-      50: "#faf5ff",
-      100: "#f3e8ff",
-      200: "#e9d5ff",
-      300: "#d8b4fe",
-      400: "#c084fc",
-      500: "#a855f7",
-      600: "#9333ea",
-      700: "#7e22ce",
-      800: "#6b21a8",
-      900: "#581c87",
-      950: "#3b0764"
+      50: "#F3E5F5",
+      100: "#E1BEE7",
+      200: "#CE93D8",
+      300: "#BA68C8",
+      400: "#AB47BC",
+      500: "#9C27B0",
+      600: "#8E24AA",
+      700: "#7B1FA2",
+      800: "#6A1B9A",
+      900: "#4A148C",
+      950: "#250a46"
     },
     fuchsia: {
-      50: "#fdf4ff",
-      100: "#fae8ff",
-      200: "#f5d0fe",
-      300: "#f0abfc",
-      400: "#e879f9",
-      500: "#d946ef",
-      600: "#c026d3",
-      700: "#a21caf",
-      800: "#86198f",
-      900: "#701a75",
-      950: "#4a044e"
+      50: "#FDE6F3",
+      100: "#FBC1E3",
+      200: "#F897D1",
+      300: "#F56DBF",
+      400: "#F34DB2",
+      500: "#F12DA5",
+      600: "#E0289D",
+      700: "#CC2392",
+      800: "#B81E88",
+      900: "#951777",
+      950: "#4b0c3c"
     },
     pink: {
-      50: "#fdf2f8",
-      100: "#fce7f3",
-      200: "#fbcfe8",
-      300: "#f9a8d4",
-      400: "#f472b6",
-      500: "#ec4899",
-      600: "#db2777",
-      700: "#be185d",
-      800: "#9d174d",
-      900: "#831843",
-      950: "#500724"
+      50: "#FCE4EC",
+      100: "#F8BBD0",
+      200: "#F48FB1",
+      300: "#F06292",
+      400: "#EC407A",
+      500: "#E91E63",
+      600: "#D81B60",
+      700: "#C2185B",
+      800: "#AD1457",
+      900: "#880E4F",
+      950: "#440728"
     },
     rose: {
-      50: "#fff1f2",
-      100: "#ffe4e6",
-      200: "#fecdd3",
-      300: "#fda4af",
-      400: "#fb7185",
-      500: "#f43f5e",
-      600: "#e11d48",
-      700: "#be123c",
-      800: "#9f1239",
-      900: "#881337",
-      950: "#4c0519"
+      50: "#FFF0F0",
+      100: "#FFD9D9",
+      200: "#FFC0C0",
+      300: "#FFA7A7",
+      400: "#FF8E8E",
+      500: "#FF7575",
+      600: "#FF5252",
+      700: "#FF3838",
+      800: "#F71C1C",
+      900: "#D50000",
+      950: "#3E0000"
     },
     slate: {
+      0: '#ffffff',
       50: "#f8fafc",
       100: "#f1f5f9",
       200: "#e2e8f0",
@@ -246,6 +260,7 @@ export const CyanLaraPreset = definePreset(Lara, {
       950: "#020617"
     },
     gray: {
+      0: '#ffffff',
       50: "#f9fafb",
       100: "#f3f4f6",
       200: "#e5e7eb",
@@ -259,6 +274,7 @@ export const CyanLaraPreset = definePreset(Lara, {
       950: "#030712"
     },
     zinc: {
+      0: '#ffffff',
       50: "#fafafa",
       100: "#f4f4f5",
       200: "#e4e4e7",
@@ -272,6 +288,7 @@ export const CyanLaraPreset = definePreset(Lara, {
       950: "#09090b"
     },
     neutral: {
+      0: '#ffffff',
       50: "#fafafa",
       100: "#f5f5f5",
       200: "#e5e5e5",
@@ -285,6 +302,7 @@ export const CyanLaraPreset = definePreset(Lara, {
       950: "#0a0a0a"
     },
     stone: {
+      0: '#ffffff',
       50: "#fafaf9",
       100: "#f5f5f4",
       200: "#e7e5e4",
@@ -296,6 +314,62 @@ export const CyanLaraPreset = definePreset(Lara, {
       800: "#292524",
       900: "#1c1917",
       950: "#0c0a09"
+    },
+    soho: {
+      0: '#ffffff',
+      50: '#ececec',
+      100: '#dedfdf',
+      200: '#c4c4c6',
+      300: '#adaeb0',
+      400: '#97979b',
+      500: '#7f8084',
+      600: '#6a6b70',
+      700: '#55565b',
+      800: '#3f4046',
+      900: '#2c2c34',
+      950: '#16161d',
+    },
+    viva: {
+      0: '#ffffff',
+      50: '#f3f3f3',
+      100: '#e7e7e8',
+      200: '#cfd0d0',
+      300: '#b7b8b9',
+      400: '#9fa1a1',
+      500: '#87898a',
+      600: '#6e7173',
+      700: '#565a5b',
+      800: '#3e4244',
+      900: '#262b2c',
+      950: '#0e1315',
+    },
+    ocean: {
+      0: '#ffffff',
+      50: '#fbfcfc',
+      100: '#F7F9F8',
+      200: '#EFF3F2',
+      300: '#DADEDD',
+      400: '#B1B7B6',
+      500: '#828787',
+      600: '#5F7274',
+      700: '#415B61',
+      800: '#29444E',
+      900: '#183240',
+      950: '#0c1920',
+    },
+    beach: {
+      0: '#ffffff',
+      50: '#fafbfb',
+      100: '#e5eaea',
+      200: '#d1d9da',
+      300: '#bdc8c9',
+      400: '#a8b8b9',
+      500: '#94a7a8',
+      600: '#7e8e8f',
+      700: '#687576',
+      800: '#515c5c',
+      900: '#3b4343',
+      950: '#252a2a',
     }
   },
   semantic: {
@@ -303,45 +377,45 @@ export const CyanLaraPreset = definePreset(Lara, {
     focusRing: {
       width: "0",
       style: "none",
-      color: "transparent",
+      color: "unset",
       offset: "0"
     },
-    disabledOpacity: "0.6",
+    disabledOpacity: "0.38",
     iconSize: "1rem",
-    anchorGutter: "2px",
+    anchorGutter: "0",
     primary: {
-      50: "#ecfeff",
-      100: "#cffafe",
-      200: "#a5f3fc",
-      300: "#67e8f9",
-      400: "#22d3ee",
-      500: "#06b6d4",
-      600: "#0891b2",
-      700: "#0e7490",
-      800: "#155e75",
-      900: "#164e63",
-      950: "#083344"
+      50: "#E0F7FA",
+      100: "#B2EBF2",
+      200: "#80DEEA",
+      300: "#4DD0E1",
+      400: "#26C6DA",
+      500: "#00BCD4",
+      600: "#00ACC1",
+      700: "#0097A7",
+      800: "#00838F",
+      900: "#006064",
+      950: "#003032"
     },
     formField: {
       paddingX: "0.75rem",
-      paddingY: "0.625rem",
+      paddingY: "0.75rem",
       sm: {
         fontSize: "0.875rem",
         paddingX: "0.625rem",
-        paddingY: "0.5rem"
+        paddingY: "0.625rem"
       },
       lg: {
         fontSize: "1.125rem",
-        paddingX: "0.875rem",
-        paddingY: "0.75rem"
+        paddingX: "0.825rem",
+        paddingY: "0.825rem"
       },
-      borderRadius: "{border.radius.md}",
+      borderRadius: "{border.radius.sm}",
       focusRing: {
-        width: "{focus.ring.width}",
-        style: "{focus.ring.style}",
-        color: "{focus.ring.color}",
-        offset: "{focus.ring.offset}",
-        shadow: "{focus.ring.shadow}"
+        width: "2px",
+        style: "solid",
+        color: "{primary.color}",
+        offset: "-2px",
+        shadow: "none"
       },
       transitionDuration: "{transition.duration}"
     },
@@ -349,19 +423,19 @@ export const CyanLaraPreset = definePreset(Lara, {
       padding: "0.5rem 0",
       gap: "0",
       header: {
-        padding: "0.625rem 1rem 0 1rem"
+        padding: "0.75rem 1rem"
       },
       option: {
-        padding: "0.625rem 1rem",
-        borderRadius: "0"
+        padding: "0.75rem 1rem",
+        borderRadius: "{border.radius.none}"
       },
       optionGroup: {
-        padding: "0.625rem 1rem",
-        fontWeight: "600"
+        padding: "0.75rem 1rem",
+        fontWeight: "700"
       }
     },
     content: {
-      borderRadius: "{border.radius.md}"
+      borderRadius: "{border.radius.sm}"
     },
     mask: {
       transitionDuration: "0.15s"
@@ -371,17 +445,17 @@ export const CyanLaraPreset = definePreset(Lara, {
         padding: "0.5rem 0",
         extend: {
           // gap: "0"
-          gap: "10px"
+          gap: "8px"
         }
       },
       item: {
-        padding: "0.625rem 1rem",
-        borderRadius: "0",
+        padding: "0.75rem 1rem",
+        borderRadius: "{border.radius.none}",
         gap: "0.5rem"
       },
       submenuLabel: {
-        padding: "0.625rem 1rem",
-        fontWeight: "600"
+        padding: "0.75rem 1rem",
+        fontWeight: "700"
       },
       submenuIcon: {
         size: "0.875rem"
@@ -389,25 +463,28 @@ export const CyanLaraPreset = definePreset(Lara, {
     },
     overlay: {
       select: {
-        borderRadius: "{border.radius.md}",
-        shadow: "0 2px 12px 0 rgba(0, 0, 0, 0.1)"
+        borderRadius: "{border.radius.sm}",
+        shadow: "0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12)"
       },
       popover: {
-        borderRadius: "{border.radius.md}",
+        borderRadius: "{border.radius.sm}",
         padding: "1rem",
-        shadow: "0 1px 3px rgba(0, 0, 0, 0.1)"
+        shadow: "0 11px 15px -7px rgba(0,0,0,.2), 0 24px 38px 3px rgba(0,0,0,.14), 0 9px 46px 8px rgba(0,0,0,.12)"
       },
       modal: {
-        borderRadius: "{border.radius.xl}",
+        borderRadius: "{border.radius.sm}",
         padding: "1.5rem",
-        shadow: "0 1px 3px rgba(0, 0, 0, 0.3)"
+        shadow: "0 11px 15px -7px rgba(0,0,0,.2), 0 24px 38px 3px rgba(0,0,0,.14), 0 9px 46px 8px rgba(0,0,0,.12)"
       },
       navigation: {
-        shadow: "0 2px 12px 0 rgba(0, 0, 0, 0.1)"
+        shadow: "0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12)"
       }
     },
     colorScheme: {
       light: {
+        focusRing: {
+          shadow: "0 0 1px 4px {surface.200}"
+        },
         surface: {
           0: "#ffffff",
           50: "#f8fafc",
@@ -425,70 +502,67 @@ export const CyanLaraPreset = definePreset(Lara, {
         primary: {
           color: "{primary.500}",
           contrastColor: "#ffffff",
-          hoverColor: "{primary.600}",
-          activeColor: "{primary.700}"
+          hoverColor: "{primary.400}",
+          activeColor: "{primary.300}"
         },
         highlight: {
-          background: "{primary.50}",
-          focusBackground: "{primary.100}",
+          background: "color-mix(in srgb, {primary.color}, transparent 88%)",
+          focusBackground: "color-mix(in srgb, {primary.color}, transparent 76%)",
           color: "{primary.700}",
           focusColor: "{primary.800}"
         },
-        focusRing: {
-          shadow: "0 0 0 0.2rem {primary.200}"
-        },
         mask: {
-          background: "rgba(0,0,0,0.4)",
+          background: "rgba(0,0,0,0.32)",
           color: "{surface.200}"
         },
         formField: {
           background: "{surface.0}",
-          disabledBackground: "{surface.200}",
-          filledBackground: "{surface.50}",
-          filledHoverBackground: "{surface.50}",
-          filledFocusBackground: "{surface.0}",
-          borderColor: "{surface.300}",
-          hoverBorderColor: "{primary.color}",
+          disabledBackground: "{surface.300}",
+          filledBackground: "{surface.100}",
+          filledHoverBackground: "{surface.200}",
+          filledFocusBackground: "{surface.100}",
+          borderColor: "{surface.400}",
+          hoverBorderColor: "{surface.900}",
           focusBorderColor: "{primary.color}",
-          invalidBorderColor: "{red.400}",
-          color: "{surface.700}",
-          disabledColor: "{surface.500}",
-          placeholderColor: "{surface.500}",
-          invalidPlaceholderColor: "{red.600}",
-          floatLabelColor: "{surface.500}",
+          invalidBorderColor: "{red.800}",
+          color: "{surface.900}",
+          disabledColor: "{surface.600}",
+          placeholderColor: "{surface.600}",
+          invalidPlaceholderColor: "{red.800}",
+          floatLabelColor: "{surface.600}",
           floatLabelFocusColor: "{primary.600}",
-          floatLabelActiveColor: "{surface.500}",
+          floatLabelActiveColor: "{surface.600}",
           floatLabelInvalidColor: "{form.field.invalid.placeholder.color}",
-          iconColor: "{surface.500}",
+          iconColor: "{surface.600}",
           shadow: "none"
         },
         text: {
-          color: "{surface.700}",
-          hoverColor: "{surface.800}",
-          mutedColor: "{surface.500}",
+          color: "{surface.900}",
+          hoverColor: "{surface.900}",
+          mutedColor: "{surface.600}",
           hoverMutedColor: "{surface.600}"
         },
         content: {
           background: "{surface.0}",
           hoverBackground: "{surface.100}",
-          borderColor: "{surface.200}",
+          borderColor: "{surface.300}",
           color: "{text.color}",
           hoverColor: "{text.hover.color}"
         },
         overlay: {
           select: {
             background: "{surface.0}",
-            borderColor: "{surface.200}",
+            borderColor: "{surface.0}",
             color: "{text.color}"
           },
           popover: {
             background: "{surface.0}",
-            borderColor: "{surface.200}",
+            borderColor: "{surface.0}",
             color: "{text.color}"
           },
           modal: {
             background: "{surface.0}",
-            borderColor: "{surface.200}",
+            borderColor: "{surface.0}",
             color: "{text.color}"
           }
         },
@@ -502,8 +576,8 @@ export const CyanLaraPreset = definePreset(Lara, {
             selectedColor: "{highlight.color}",
             selectedFocusColor: "{highlight.focus.color}",
             icon: {
-              color: "{surface.400}",
-              focusColor: "{surface.500}"
+              color: "{surface.600}",
+              focusColor: "{surface.600}"
             }
           },
           optionGroup: {
@@ -517,14 +591,14 @@ export const CyanLaraPreset = definePreset(Lara, {
               // focusBackground: "{surface.100}",
               focusBackground: "{surface.200}",
             },
-            activeBackground: "{surface.100}",
+            activeBackground: "{surface.200}",
             color: "{text.color}",
             focusColor: "{text.hover.color}",
             activeColor: "{text.hover.color}",
             icon: {
-              color: "{surface.400}",
-              focusColor: "{surface.500}",
-              activeColor: "{surface.500}"
+              color: "{surface.600}",
+              focusColor: "{surface.600}",
+              activeColor: "{surface.600}"
             }
           },
           submenuLabel: {
@@ -535,13 +609,16 @@ export const CyanLaraPreset = definePreset(Lara, {
             color: "{text.color}"
           },
           submenuIcon: {
-            color: "{surface.400}",
-            focusColor: "{surface.500}",
-            activeColor: "{surface.500}"
+            color: "{surface.600}",
+            focusColor: "{surface.600}",
+            activeColor: "{surface.600}"
           }
         }
       },
       dark: {
+        focusRing: {
+          shadow: "0 0 1px 4px {surface.700}"
+        },
         surface: {
           0: "#ffffff",
           50: "#fafafa",
@@ -568,9 +645,6 @@ export const CyanLaraPreset = definePreset(Lara, {
           color: "rgba(255,255,255,.87)",
           focusColor: "rgba(255,255,255,.87)"
         },
-        focusRing: {
-          shadow: "0 0 0 0.2rem color-mix(in srgb, {primary.color}, transparent 80%)"
-        },
         mask: {
           background: "rgba(0,0,0,0.6)",
           color: "{surface.200}"
@@ -579,16 +653,16 @@ export const CyanLaraPreset = definePreset(Lara, {
           background: "{surface.950}",
           disabledBackground: "{surface.700}",
           filledBackground: "{surface.800}",
-          filledHoverBackground: "{surface.800}",
-          filledFocusBackground: "{surface.950}",
+          filledHoverBackground: "{surface.700}",
+          filledFocusBackground: "{surface.800}",
           borderColor: "{surface.600}",
-          hoverBorderColor: "{primary.color}",
+          hoverBorderColor: "{surface.400}",
           focusBorderColor: "{primary.color}",
           invalidBorderColor: "{red.300}",
           color: "{surface.0}",
           disabledColor: "{surface.400}",
           placeholderColor: "{surface.400}",
-          invalidPlaceholderColor: "{red.400}",
+          invalidPlaceholderColor: "{red.300}",
           floatLabelColor: "{surface.400}",
           floatLabelFocusColor: "{primary.color}",
           floatLabelActiveColor: "{surface.400}",
@@ -600,7 +674,7 @@ export const CyanLaraPreset = definePreset(Lara, {
           color: "{surface.0}",
           hoverColor: "{surface.0}",
           mutedColor: "{surface.400}",
-          hoverMutedColor: "{surface.300}"
+          hoverMutedColor: "{surface.400}"
         },
         content: {
           background: "{surface.900}",
@@ -612,17 +686,17 @@ export const CyanLaraPreset = definePreset(Lara, {
         overlay: {
           select: {
             background: "{surface.900}",
-            borderColor: "{surface.700}",
+            borderColor: "{surface.900}",
             color: "{text.color}"
           },
           popover: {
             background: "{surface.900}",
-            borderColor: "{surface.700}",
+            borderColor: "{surface.900}",
             color: "{text.color}"
           },
           modal: {
             background: "{surface.900}",
-            borderColor: "{surface.700}",
+            borderColor: "{surface.900}",
             color: "{text.color}"
           }
         },
@@ -636,34 +710,40 @@ export const CyanLaraPreset = definePreset(Lara, {
             selectedColor: "{highlight.color}",
             selectedFocusColor: "{highlight.focus.color}",
             icon: {
-              color: "{surface.500}",
+              color: "{surface.400}",
               focusColor: "{surface.400}"
             }
           },
           optionGroup: {
             background: "transparent",
-            color: "{text.color}"
+            color: "{text.muted.color}"
           }
         },
         navigation: {
           item: {
-            focusBackground: "{surface.800}",
-            activeBackground: "{surface.800}",
+            extend: {
+              // focusBackground: "{surface.800}",
+              focusBackground: "{surface.600}",
+            },
+            activeBackground: "{surface.700}",
             color: "{text.color}",
             focusColor: "{text.hover.color}",
             activeColor: "{text.hover.color}",
             icon: {
-              color: "{surface.500}",
+              color: "{surface.400}",
               focusColor: "{surface.400}",
               activeColor: "{surface.400}"
             }
           },
           submenuLabel: {
-            background: "transparent",
-            color: "{text.color}"
+            extend: {
+              // background: "transparent",
+              background: "{surface.500}"
+            },
+            color: "{text.muted.color}"
           },
           submenuIcon: {
-            color: "{surface.500}",
+            color: "{surface.400}",
             focusColor: "{surface.400}",
             activeColor: "{surface.400}"
           }
@@ -681,30 +761,34 @@ export const CyanLaraPreset = definePreset(Lara, {
         borderColor: "{content.border.color}"
       },
       header: {
-        color: "{text.muted.color}",
+        color: "{text.color}",
         hoverColor: "{text.color}",
         activeColor: "{text.color}",
-        padding: "1.125rem",
-        fontWeight: "700",
+        padding: "1.25rem",
+        fontWeight: "600",
         borderRadius: "0",
-        borderWidth: "0 1px 1px 1px",
+        borderWidth: "0",
         borderColor: "{content.border.color}",
+        background: "{content.background}",
+        hoverBackground: "{content.hover.background}",
+        activeBackground: "{content.background}",
+        activeHoverBackground: "{content.background}",
         focusRing: {
-          width: "{focus.ring.width}",
-          style: "{focus.ring.style}",
-          color: "{focus.ring.color}",
-          offset: "{focus.ring.offset}",
-          shadow: "inset {focus.ring.shadow}"
+          width: "0",
+          style: "none",
+          color: "unset",
+          offset: "0",
+          shadow: "none"
         },
         toggleIcon: {
           color: "{text.muted.color}",
-          hoverColor: "{text.color}",
-          activeColor: "{text.color}",
-          activeHoverColor: "{text.color}"
+          hoverColor: "{text.muted.color}",
+          activeColor: "{text.muted.color}",
+          activeHoverColor: "{text.muted.color}"
         },
         first: {
           topBorderRadius: "{content.border.radius}",
-          borderWidth: "1px"
+          borderWidth: "0"
         },
         last: {
           bottomBorderRadius: "{content.border.radius}",
@@ -712,29 +796,11 @@ export const CyanLaraPreset = definePreset(Lara, {
         }
       },
       content: {
-        borderWidth: "0 1px 1px 1px",
+        borderWidth: "0",
         borderColor: "{content.border.color}",
         background: "{content.background}",
         color: "{text.color}",
-        padding: "1.125rem"
-      },
-      colorScheme: {
-        light: {
-          header: {
-            background: "{surface.50}",
-            hoverBackground: "{surface.100}",
-            activeBackground: "{surface.50}",
-            activeHoverBackground: "{surface.100}"
-          }
-        },
-        dark: {
-          header: {
-            background: "{surface.800}",
-            hoverBackground: "{surface.700}",
-            activeBackground: "{surface.800}",
-            activeHoverBackground: "{surface.700}"
-          }
-        }
+        padding: "0 1.25rem 1.25rem 1.25rem"
       }
     },
     autocomplete: {
@@ -793,23 +859,23 @@ export const CyanLaraPreset = definePreset(Lara, {
         padding: "{list.option.group.padding}"
       },
       dropdown: {
-        width: "2.5rem",
+        width: "3rem",
         sm: {
-          width: "2rem"
+          width: "2.5rem"
         },
         lg: {
-          width: "3rem"
+          width: "3.5rem"
         },
         borderColor: "{form.field.border.color}",
         hoverBorderColor: "{form.field.border.color}",
         activeBorderColor: "{form.field.border.color}",
         borderRadius: "{form.field.border.radius}",
         focusRing: {
-          width: "{form.field.focus.ring.width}",
-          style: "{form.field.focus.ring.style}",
-          color: "{form.field.focus.ring.color}",
-          offset: "{form.field.focus.ring.offset}",
-          shadow: "{form.field.focus.ring.shadow}"
+          width: "0",
+          style: "none",
+          color: "unset",
+          offset: "0",
+          shadow: "none"
         }
       },
       chip: {
@@ -821,13 +887,13 @@ export const CyanLaraPreset = definePreset(Lara, {
       colorScheme: {
         light: {
           chip: {
-            focusBackground: "{surface.200}",
-            focusColor: "{surface.800}"
+            focusBackground: "{surface.300}",
+            focusColor: "{surface.950}"
           },
           dropdown: {
-            background: "{surface.50}",
-            hoverBackground: "{surface.100}",
-            activeBackground: "{surface.200}",
+            background: "{surface.100}",
+            hoverBackground: "{surface.200}",
+            activeBackground: "{surface.300}",
             color: "{surface.600}",
             hoverColor: "{surface.700}",
             activeColor: "{surface.800}"
@@ -835,7 +901,7 @@ export const CyanLaraPreset = definePreset(Lara, {
         },
         dark: {
           chip: {
-            focusBackground: "{surface.700}",
+            focusBackground: "{surface.600}",
             focusColor: "{surface.0}"
           },
           dropdown: {
@@ -882,6 +948,9 @@ export const CyanLaraPreset = definePreset(Lara, {
         fontSize: "2rem",
         icon: {
           size: "2rem"
+        },
+        group: {
+          offset: "-1.5rem"
         }
       }
     },
@@ -982,7 +1051,7 @@ export const CyanLaraPreset = definePreset(Lara, {
     },
     breadcrumb: {
       root: {
-        padding: "1.25rem",
+        padding: "1rem",
         background: "{content.background}",
         gap: "0.5rem",
         transitionDuration: "{transition.duration}"
@@ -1014,8 +1083,8 @@ export const CyanLaraPreset = definePreset(Lara, {
         roundedBorderRadius: "2rem",
         gap: "0.5rem",
         paddingX: "1rem",
-        paddingY: "{form.field.padding.y}",
-        iconOnlyWidth: "2.75rem",
+        paddingY: "0.625rem",
+        iconOnlyWidth: "3rem",
         sm: {
           fontSize: "{form.field.sm.font.size}",
           paddingX: "{form.field.sm.padding.x}",
@@ -1027,13 +1096,13 @@ export const CyanLaraPreset = definePreset(Lara, {
           paddingY: "{form.field.lg.padding.y}"
         },
         label: {
-          fontWeight: "600"
+          fontWeight: "500"
         },
-        raisedShadow: "0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12)",
+        raisedShadow: "0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12)",
         focusRing: {
-          width: "{form.field.focus.ring.width}",
-          style: "{form.field.focus.ring.style}",
-          offset: "{form.field.focus.ring.offset}"
+          width: "{focus.ring.width}",
+          style: "{focus.ring.style}",
+          offset: "{focus.ring.offset}"
         },
         badgeSize: "1rem",
         transitionDuration: "{form.field.transition.duration}"
@@ -1052,8 +1121,8 @@ export const CyanLaraPreset = definePreset(Lara, {
               hoverColor: "{primary.contrast.color}",
               activeColor: "{primary.contrast.color}",
               focusRing: {
-                color: "transparent",
-                shadow: "0 0 0 0.2rem {primary.200}"
+                color: "{primary.color}",
+                shadow: "none"
               }
             },
             secondary: {
@@ -1075,98 +1144,98 @@ export const CyanLaraPreset = definePreset(Lara, {
               hoverColor: "{surface.700}",
               activeColor: "{surface.800}",
               focusRing: {
-                color: "transparent",
-                shadow: "0 0 0 0.2rem {surface.200}"
+                color: "{surface.600}",
+                shadow: "none"
               }
             },
             info: {
               background: "{sky.500}",
-              hoverBackground: "{sky.600}",
-              activeBackground: "{sky.700}",
+              hoverBackground: "{sky.400}",
+              activeBackground: "{sky.300}",
               borderColor: "{sky.500}",
-              hoverBorderColor: "{sky.600}",
-              activeBorderColor: "{sky.700}",
+              hoverBorderColor: "{sky.400}",
+              activeBorderColor: "{sky.300}",
               color: "#ffffff",
               hoverColor: "#ffffff",
               activeColor: "#ffffff",
               focusRing: {
-                color: "transparent",
-                shadow: "0 0 0 0.2rem {sky.200}"
+                color: "{sky.500}",
+                shadow: "none"
               }
             },
             success: {
               background: "{green.500}",
-              hoverBackground: "{green.600}",
-              activeBackground: "{green.700}",
+              hoverBackground: "{green.400}",
+              activeBackground: "{green.300}",
               borderColor: "{green.500}",
-              hoverBorderColor: "{green.600}",
-              activeBorderColor: "{green.700}",
+              hoverBorderColor: "{green.400}",
+              activeBorderColor: "{green.300}",
               color: "#ffffff",
               hoverColor: "#ffffff",
               activeColor: "#ffffff",
               focusRing: {
-                color: "transparent",
-                shadow: "0 0 0 0.2rem {green.200}"
+                color: "{green.500}",
+                shadow: "none"
               }
             },
             warn: {
               background: "{orange.500}",
-              hoverBackground: "{orange.600}",
-              activeBackground: "{orange.700}",
+              hoverBackground: "{orange.400}",
+              activeBackground: "{orange.300}",
               borderColor: "{orange.500}",
-              hoverBorderColor: "{orange.600}",
-              activeBorderColor: "{orange.700}",
+              hoverBorderColor: "{orange.400}",
+              activeBorderColor: "{orange.300}",
               color: "#ffffff",
               hoverColor: "#ffffff",
               activeColor: "#ffffff",
               focusRing: {
-                color: "transparent",
-                shadow: "0 0 0 0.2rem {orange.200}"
+                color: "{orange.500}",
+                shadow: "none"
               }
             },
             help: {
               background: "{purple.500}",
-              hoverBackground: "{purple.600}",
-              activeBackground: "{purple.700}",
+              hoverBackground: "{purple.400}",
+              activeBackground: "{purple.300}",
               borderColor: "{purple.500}",
-              hoverBorderColor: "{purple.600}",
-              activeBorderColor: "{purple.700}",
+              hoverBorderColor: "{purple.400}",
+              activeBorderColor: "{purple.300}",
               color: "#ffffff",
               hoverColor: "#ffffff",
               activeColor: "#ffffff",
               focusRing: {
-                color: "transparent",
-                shadow: "0 0 0 0.2rem {purple.200}"
+                color: "{purple.500}",
+                shadow: "none"
               }
             },
             danger: {
               background: "{red.500}",
-              hoverBackground: "{red.600}",
-              activeBackground: "{red.700}",
+              hoverBackground: "{red.400}",
+              activeBackground: "{red.300}",
               borderColor: "{red.500}",
-              hoverBorderColor: "{red.600}",
-              activeBorderColor: "{red.700}",
+              hoverBorderColor: "{red.400}",
+              activeBorderColor: "{red.300}",
               color: "#ffffff",
               hoverColor: "#ffffff",
               activeColor: "#ffffff",
               focusRing: {
-                color: "transparent",
-                shadow: "0 0 0 0.2rem {red.200}"
+                color: "{red.500}",
+                shadow: "none"
               }
             },
             contrast: {
               background: "{surface.950}",
-              hoverBackground: "{surface.900}",
-              activeBackground: "{surface.800}",
+              hoverBackground: "{surface.800}",
+              activeBackground: "{surface.700}",
               borderColor: "{surface.950}",
-              hoverBorderColor: "{surface.900}",
-              activeBorderColor: "{surface.800}",
+              hoverBorderColor: "{surface.800}",
+              activeBorderColor: "{surface.700}",
               color: "{surface.0}",
               hoverColor: "{surface.0}",
               activeColor: "{surface.0}",
               focusRing: {
-                color: "transparent",
-                shadow: "0 0 0 0.2rem {surface.400}"
+                color: "{surface.950}",
+                shadow: "none"
               }
             }
           },
@@ -1174,56 +1243,56 @@ export const CyanLaraPreset = definePreset(Lara, {
             primary: {
               hoverBackground: "{primary.50}",
               activeBackground: "{primary.100}",
-              borderColor: "{primary.200}",
+              borderColor: "{primary.color}",
               color: "{primary.color}"
             },
             secondary: {
               hoverBackground: "{surface.50}",
               activeBackground: "{surface.100}",
-              borderColor: "{surface.200}",
-              color: "{surface.500}"
+              borderColor: "{surface.600}",
+              color: "{surface.600}"
             },
             success: {
               hoverBackground: "{green.50}",
               activeBackground: "{green.100}",
-              borderColor: "{green.200}",
+              borderColor: "{green.500}",
               color: "{green.500}"
             },
             info: {
               hoverBackground: "{sky.50}",
               activeBackground: "{sky.100}",
-              borderColor: "{sky.200}",
+              borderColor: "{sky.500}",
               color: "{sky.500}"
             },
             warn: {
               hoverBackground: "{orange.50}",
               activeBackground: "{orange.100}",
-              borderColor: "{orange.200}",
+              borderColor: "{orange.500}",
               color: "{orange.500}"
             },
             help: {
               hoverBackground: "{purple.50}",
               activeBackground: "{purple.100}",
-              borderColor: "{purple.200}",
+              borderColor: "{purple.500}",
               color: "{purple.500}"
             },
             danger: {
               hoverBackground: "{red.50}",
               activeBackground: "{red.100}",
-              borderColor: "{red.200}",
+              borderColor: "{red.500}",
               color: "{red.500}"
             },
             contrast: {
               hoverBackground: "{surface.50}",
               activeBackground: "{surface.100}",
-              borderColor: "{surface.700}",
+              borderColor: "{surface.950}",
               color: "{surface.950}"
             },
             plain: {
               hoverBackground: "{surface.50}",
               activeBackground: "{surface.100}",
-              borderColor: "{surface.200}",
-              color: "{surface.700}"
+              borderColor: "{surface.900}",
+              color: "{surface.900}"
             }
           },
           text: {
@@ -1233,8 +1302,8 @@ export const CyanLaraPreset = definePreset(Lara, {
               color: "{primary.color}"
             },
             secondary: {
-              hoverBackground: "{surface.100}",
-              activeBackground: "{surface.200}",
+              hoverBackground: "{surface.50}",
+              activeBackground: "{surface.100}",
               color: "{surface.600}"
             },
             success: {
@@ -1270,7 +1339,7 @@ export const CyanLaraPreset = definePreset(Lara, {
             plain: {
               hoverBackground: "{surface.50}",
               activeBackground: "{surface.100}",
-              color: "{surface.700}"
+              color: "{surface.900}"
             }
           },
           link: {
@@ -1292,8 +1361,8 @@ export const CyanLaraPreset = definePreset(Lara, {
               hoverColor: "{primary.contrast.color}",
               activeColor: "{primary.contrast.color}",
               focusRing: {
-                color: "transparent",
-                shadow: "0 0 0 0.2rem color-mix(in srgb, {primary.color}, transparent 80%)"
+                color: "{primary.color}",
+                shadow: "none"
               }
             },
             secondary: {
@@ -1307,8 +1376,8 @@ export const CyanLaraPreset = definePreset(Lara, {
               hoverColor: "{surface.200}",
               activeColor: "{surface.100}",
               focusRing: {
-                color: "transparent",
-                shadow: "0 0 0 0.2rem color-mix(in srgb, {surface.300}, transparent 80%)"
+                color: "{surface.300}",
+                shadow: "none"
               }
             },
             info: {
@@ -1322,8 +1391,8 @@ export const CyanLaraPreset = definePreset(Lara, {
               hoverColor: "{sky.950}",
               activeColor: "{sky.950}",
               focusRing: {
-                color: "transparent",
-                shadow: "0 0 0 0.2rem color-mix(in srgb, {sky.400}, transparent 80%)"
+                color: "{sky.400}",
+                shadow: "none"
               }
             },
             success: {
@@ -1337,8 +1406,8 @@ export const CyanLaraPreset = definePreset(Lara, {
               hoverColor: "{green.950}",
               activeColor: "{green.950}",
               focusRing: {
-                color: "transparent",
-                shadow: "0 0 0 0.2rem color-mix(in srgb, {green.400}, transparent 80%)"
+                color: "{green.400}",
+                shadow: "none"
               }
             },
             warn: {
@@ -1352,8 +1421,8 @@ export const CyanLaraPreset = definePreset(Lara, {
               hoverColor: "{orange.950}",
               activeColor: "{orange.950}",
               focusRing: {
-                color: "transparent",
-                shadow: "0 0 0 0.2rem color-mix(in srgb, {orange.400}, transparent 80%)"
+                color: "{orange.400}",
+                shadow: "none"
               }
             },
             help: {
@@ -1367,8 +1436,8 @@ export const CyanLaraPreset = definePreset(Lara, {
               hoverColor: "{purple.950}",
               activeColor: "{purple.950}",
               focusRing: {
-                color: "transparent",
-                shadow: "0 0 0 0.2rem color-mix(in srgb, {purple.400}, transparent 80%)"
+                color: "{purple.400}",
+                shadow: "none"
               }
             },
             danger: {
@@ -1382,8 +1451,8 @@ export const CyanLaraPreset = definePreset(Lara, {
               hoverColor: "{red.950}",
               activeColor: "{red.950}",
               focusRing: {
-                color: "transparent",
-                shadow: "0 0 0 0.2rem color-mix(in srgb, {red.400}, transparent 80%)"
+                color: "{red.400}",
+                shadow: "none"
               }
             },
             contrast: {
@@ -1397,8 +1466,8 @@ export const CyanLaraPreset = definePreset(Lara, {
               hoverColor: "{surface.950}",
               activeColor: "{surface.950}",
               focusRing: {
-                color: "transparent",
-                shadow: "0 0 0 0.2rem color-mix(in srgb, {surface.0}, transparent 80%)"
+                color: "{surface.0}",
+                shadow: "none"
               }
             }
           },
@@ -1434,14 +1503,14 @@ export const CyanLaraPreset = definePreset(Lara, {
               color: "{orange.400}"
             },
             help: {
-              hoverBackground: "color-mix(in srgb, {help.400}, transparent 96%)",
-              activeBackground: "color-mix(in srgb, {help.400}, transparent 84%)",
+              hoverBackground: "color-mix(in srgb, {purple.400}, transparent 96%)",
+              activeBackground: "color-mix(in srgb, {purple.400}, transparent 84%)",
               borderColor: "{purple.700}",
               color: "{purple.400}"
             },
             danger: {
-              hoverBackground: "color-mix(in srgb, {danger.400}, transparent 96%)",
-              activeBackground: "color-mix(in srgb, {danger.400}, transparent 84%)",
+              hoverBackground: "color-mix(in srgb, {red.400}, transparent 96%)",
+              activeBackground: "color-mix(in srgb, {red.400}, transparent 84%)",
               borderColor: "{red.700}",
               color: "{red.400}"
             },
@@ -1465,9 +1534,9 @@ export const CyanLaraPreset = definePreset(Lara, {
               color: "{primary.color}"
             },
             secondary: {
-              hoverBackground: "{surface.700}",
-              activeBackground: "{surface.600}",
-              color: "{surface.300}"
+              hoverBackground: "{surface.800}",
+              activeBackground: "{surface.700}",
+              color: "{surface.400}"
             },
             success: {
               hoverBackground: "color-mix(in srgb, {green.400}, transparent 96%)",
@@ -1523,36 +1592,36 @@ export const CyanLaraPreset = definePreset(Lara, {
         color: "{content.color}",
         borderRadius: "{content.border.radius}",
         shadow: "{overlay.popover.shadow}",
-        padding: "{overlay.popover.padding}"
+        padding: "0.5rem"
       },
       header: {
         background: "{content.background}",
         borderColor: "{content.border.color}",
         color: "{content.color}",
-        padding: "0 0 0.75rem 0"
+        padding: "0 0 0.5rem 0"
       },
       title: {
         gap: "0.5rem",
         fontWeight: "700"
       },
       dropdown: {
-        width: "2.5rem",
+        width: "3rem",
         sm: {
-          width: "2rem"
+          width: "2.5rem"
         },
         lg: {
-          width: "3rem"
+          width: "3.5rem"
         },
         borderColor: "{form.field.border.color}",
         hoverBorderColor: "{form.field.border.color}",
         activeBorderColor: "{form.field.border.color}",
         borderRadius: "{form.field.border.radius}",
         focusRing: {
-          width: "{form.field.focus.ring.width}",
-          style: "{form.field.focus.ring.style}",
-          color: "{form.field.focus.ring.color}",
-          offset: "{form.field.focus.ring.offset}",
-          shadow: "{form.field.focus.ring.shadow}"
+          width: "0",
+          style: "none",
+          color: "unset",
+          offset: "0",
+          shadow: "nıne"
         }
       },
       inputIcon: {
@@ -1562,14 +1631,14 @@ export const CyanLaraPreset = definePreset(Lara, {
         hoverBackground: "{content.hover.background}",
         color: "{content.color}",
         hoverColor: "{content.hover.color}",
-        padding: "0.375rem 0.625rem",
+        padding: "0.5rem 0.75rem",
         borderRadius: "{content.border.radius}"
       },
       selectYear: {
         hoverBackground: "{content.hover.background}",
         color: "{content.color}",
         hoverColor: "{content.hover.color}",
-        padding: "0.375rem 0.625rem",
+        padding: "0.5rem 0.75rem",
         borderRadius: "{content.border.radius}"
       },
       group: {
@@ -1577,10 +1646,10 @@ export const CyanLaraPreset = definePreset(Lara, {
         gap: "{overlay.popover.padding}"
       },
       dayView: {
-        margin: "0.75rem 0 0 0"
+        margin: "0.5rem 0 0 0"
       },
       weekDay: {
-        padding: "0.375rem",
+        padding: "0.5rem",
         fontWeight: "700",
         color: "{content.color}"
       },
@@ -1595,35 +1664,35 @@ export const CyanLaraPreset = definePreset(Lara, {
         width: "2.5rem",
         height: "2.5rem",
         borderRadius: "50%",
-        padding: "0.375rem",
+        padding: "0.125rem",
         focusRing: {
-          width: "{form.field.focus.ring.width}",
-          style: "{form.field.focus.ring.style}",
-          color: "{form.field.focus.ring.color}",
-          offset: "{form.field.focus.ring.offset}",
-          shadow: "{form.field.focus.ring.shadow}"
+          width: "{focus.ring.width}",
+          style: "{focus.ring.style}",
+          color: "{focus.ring.color}",
+          offset: "{focus.ring.offset}",
+          shadow: "{focus.ring.shadow}"
         }
       },
       monthView: {
-        margin: "0.75rem 0 0 0"
+        margin: "0.5rem 0 0 0"
       },
       month: {
-        padding: "0.5rem",
+        padding: "0.625rem",
         borderRadius: "{content.border.radius}"
       },
       yearView: {
-        margin: "0.75rem 0 0 0"
+        margin: "0.5rem 0 0 0"
       },
       year: {
-        padding: "0.5rem",
+        padding: "0.625rem",
         borderRadius: "{content.border.radius}"
       },
       buttonbar: {
-        padding: "0.75rem 0 0 0",
+        padding: "0.5rem 0 0 0",
         borderColor: "{content.border.color}"
       },
       timePicker: {
-        padding: "0.75rem 0 0 0",
+        padding: "0.5rem 0 0 0",
         borderColor: "{content.border.color}",
         gap: "0.5rem",
         buttonGap: "0.25rem"
@@ -1631,9 +1700,9 @@ export const CyanLaraPreset = definePreset(Lara, {
       colorScheme: {
         light: {
           dropdown: {
-            background: "{surface.50}",
-            hoverBackground: "{surface.100}",
-            activeBackground: "{surface.200}",
+            background: "{surface.100}",
+            hoverBackground: "{surface.200}",
+            activeBackground: "{surface.300}",
             color: "{surface.600}",
             hoverColor: "{surface.700}",
             activeColor: "{surface.800}"
@@ -1662,9 +1731,9 @@ export const CyanLaraPreset = definePreset(Lara, {
     card: {
       root: {
         background: "{content.background}",
-        borderRadius: "{border.radius.lg}",
+        borderRadius: "{content.border.radius}",
         color: "{content.color}",
-        shadow: "0 .125rem .25rem rgba(0,0,0,.075)"
+        shadow: "0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12)"
       },
       body: {
         padding: "1.5rem",
@@ -1675,7 +1744,7 @@ export const CyanLaraPreset = definePreset(Lara, {
       },
       title: {
         fontSize: "1.25rem",
-        fontWeight: "700"
+        fontWeight: "500"
       },
       subtitle: {
         color: "{text.muted.color}"
@@ -1690,18 +1759,18 @@ export const CyanLaraPreset = definePreset(Lara, {
       },
       indicatorList: {
         padding: "1rem",
-        gap: "0.5rem"
+        gap: "1rem"
       },
       indicator: {
-        width: "1rem",
-        height: "1rem",
-        borderRadius: "50",
+        width: "1.25rem",
+        height: "1.25rem",
+        borderRadius: "50%",
         focusRing: {
-          width: "{focus.ring.width}",
-          style: "{focus.ring.style}",
-          color: "{focus.ring.color}",
-          offset: "{focus.ring.offset}",
-          shadow: "{focus.ring.shadow}"
+          width: "0",
+          style: "none",
+          color: "unset",
+          offset: "0",
+          shadow: "none"
         }
       },
       colorScheme: {
@@ -1773,7 +1842,7 @@ export const CyanLaraPreset = definePreset(Lara, {
       list: {
         padding: "{list.padding}",
         gap: "{list.gap}",
-        mobileIndent: "1.25rem"
+        mobileIndent: "1rem"
       },
       option: {
         focusBackground: "{list.option.focus.background}",
@@ -1797,42 +1866,42 @@ export const CyanLaraPreset = definePreset(Lara, {
     },
     checkbox: {
       root: {
-        borderRadius: "{border.radius.sm}",
-        width: "1.5rem",
-        height: "1.5rem",
+        borderRadius: "{border.radius.xs}",
+        width: "18px",
+        height: "18px",
         background: "{form.field.background}",
         checkedBackground: "{primary.color}",
-        checkedHoverBackground: "{primary.hover.color}",
+        checkedHoverBackground: "{primary.color}",
         disabledBackground: "{form.field.disabled.background}",
         filledBackground: "{form.field.filled.background}",
         borderColor: "{form.field.border.color}",
         hoverBorderColor: "{form.field.hover.border.color}",
         focusBorderColor: "{form.field.focus.border.color}",
         checkedBorderColor: "{primary.color}",
-        checkedHoverBorderColor: "{primary.hover.color}",
+        checkedHoverBorderColor: "{primary.color}",
         checkedFocusBorderColor: "{primary.color}",
         checkedDisabledBorderColor: "{form.field.border.color}",
         invalidBorderColor: "{form.field.invalid.border.color}",
         shadow: "{form.field.shadow}",
         focusRing: {
-          width: "{form.field.focus.ring.width}",
-          style: "{form.field.focus.ring.style}",
-          color: "{form.field.focus.ring.color}",
-          offset: "{form.field.focus.ring.offset}",
-          shadow: "{form.field.focus.ring.shadow}"
+          width: "0",
+          style: "none",
+          color: "unset",
+          offset: "0",
+          shadow: "none"
         },
         transitionDuration: "{form.field.transition.duration}",
         sm: {
-          width: "1.25rem",
-          height: "1.25rem"
+          width: "14px",
+          height: "14px"
         },
         lg: {
-          width: "1.75rem",
-          height: "1.75rem"
+          width: "22px",
+          height: "22px"
         }
       },
       icon: {
-        size: "1rem",
+        size: "0.875rem",
         color: "{form.field.color}",
         checkedColor: "{primary.contrast.color}",
         checkedHoverColor: "{primary.contrast.color}",
@@ -1841,21 +1910,21 @@ export const CyanLaraPreset = definePreset(Lara, {
           size: "0.75rem"
         },
         lg: {
-          size: "1.25rem"
+          size: "1rem"
         }
       }
     },
     chip: {
       root: {
-        borderRadius: "16px",
-        paddingX: "0.875rem",
-        paddingY: "0.625rem",
+        borderRadius: "2rem",
+        paddingX: "0.75rem",
+        paddingY: "0.75rem",
         gap: "0.5rem",
         transitionDuration: "{transition.duration}"
       },
       image: {
-        width: "2rem",
-        height: "2rem"
+        width: "2.25rem",
+        height: "2.25rem"
       },
       icon: {
         size: "1rem"
@@ -1866,33 +1935,38 @@ export const CyanLaraPreset = definePreset(Lara, {
           width: "{focus.ring.width}",
           style: "{focus.ring.style}",
           color: "{focus.ring.color}",
-          offset: "{focus.ring.offset}",
-          shadow: "{focus.ring.shadow}"
+          offset: "{focus.ring.offset}"
         }
       },
       colorScheme: {
         light: {
           root: {
-            background: "{surface.100}",
-            color: "{surface.800}"
+            background: "{surface.200}",
+            color: "{surface.900}"
           },
           icon: {
-            color: "{surface.800}"
+            color: "{surface.600}"
           },
           removeIcon: {
-            color: "{surface.800}"
+            color: "{surface.600}",
+            focusRing: {
+              shadow: "0 0 1px 4px {surface.300}"
+            }
           }
         },
         dark: {
           root: {
-            background: "{surface.800}",
+            background: "{surface.700}",
             color: "{surface.0}"
           },
           icon: {
             color: "{surface.0}"
           },
           removeIcon: {
-            color: "{surface.0}"
+            color: "{surface.0}",
+            focusRing: {
+              shadow: "0 0 1px 4px {surface.600}"
+            }
           }
         }
       }
@@ -1902,15 +1976,15 @@ export const CyanLaraPreset = definePreset(Lara, {
         transitionDuration: "{transition.duration}"
       },
       preview: {
-        width: "1.75rem",
-        height: "1.75rem",
+        width: "2rem",
+        height: "2rem",
         borderRadius: "{form.field.border.radius}",
         focusRing: {
-          width: "{form.field.focus.ring.width}",
-          style: "{form.field.focus.ring.style}",
-          color: "{form.field.focus.ring.color}",
-          offset: "{form.field.focus.ring.offset}",
-          shadow: "{form.field.focus.ring.shadow}"
+          width: "{focus.ring.width}",
+          style: "{focus.ring.style}",
+          color: "{focus.ring.color}",
+          offset: "{focus.ring.offset}",
+          shadow: "{focus.ring.shadow}"
         }
       },
       panel: {
@@ -1973,7 +2047,7 @@ export const CyanLaraPreset = definePreset(Lara, {
     contextmenu: {
       root: {
         background: "{content.background}",
-        borderColor: "{content.border.color}",
+        borderColor: "transparent",
         color: "{content.color}",
         borderRadius: "{content.border.radius}",
         shadow: "{overlay.navigation.shadow}",
@@ -1999,16 +2073,7 @@ export const CyanLaraPreset = definePreset(Lara, {
         }
       },
       submenu: {
-        mobileIndent: "1.25rem"
-      },
-      submenuLabel: {
-        padding: "{navigation.submenu.label.padding}",
-        fontWeight: "{navigation.submenu.label.font.weight}",
-        extend: {
-          // background: "{navigation.submenu.label.background.}",
-          background: "{navigation.submenu.label.background}",
-        },
-        color: "{navigation.submenu.label.color}"
+        mobileIndent: "1rem"
       },
       submenuIcon: {
         size: "{navigation.submenu.icon.size}",
@@ -2022,16 +2087,18 @@ export const CyanLaraPreset = definePreset(Lara, {
     },
     dataview: {
       root: {
-        borderColor: "{content.border.color}",
-        borderWidth: "1px",
-        borderRadius: "4px",
+        borderColor: "transparent",
+        borderWidth: "0",
+        borderRadius: "0",
         padding: "0"
       },
       header: {
+        background: "{content.background}",
+        color: "{content.color}",
         borderColor: "{content.border.color}",
         borderWidth: "0 0 1px 0",
-        padding: "0.875rem 1.125rem",
-        borderRadius: "5px 5px 0 0"
+        padding: "0.75rem 1rem",
+        borderRadius: "0"
       },
       content: {
         background: "{content.background}",
@@ -2039,15 +2106,15 @@ export const CyanLaraPreset = definePreset(Lara, {
         borderColor: "transparent",
         borderWidth: "0",
         padding: "0",
-        borderRadius: "5px"
+        borderRadius: "0"
       },
       footer: {
         background: "{content.background}",
         color: "{content.color}",
         borderColor: "{content.border.color}",
         borderWidth: "1px 0 0 0",
-        padding: "0.875rem 1.125rem",
-        borderRadius: "0 0 5px 5px"
+        padding: "0.75rem 1rem",
+        borderRadius: "0"
       },
       paginatorTop: {
         borderColor: "{content.border.color}",
@@ -2056,20 +2123,6 @@ export const CyanLaraPreset = definePreset(Lara, {
       paginatorBottom: {
         borderColor: "{content.border.color}",
         borderWidth: "1px 0 0 0"
-      },
-      colorScheme: {
-        light: {
-          header: {
-            background: "{surface.50}",
-            color: "{text.color}"
-          }
-        },
-        dark: {
-          header: {
-            background: "{surface.800}",
-            color: "{text.color}"
-          }
-        }
       }
     },
     datatable: {
@@ -2077,13 +2130,18 @@ export const CyanLaraPreset = definePreset(Lara, {
         transitionDuration: "{transition.duration}"
       },
       header: {
+        background: "{content.background}",
         borderColor: "{datatable.border.color}",
-        borderWidth: "1px 0 1px 0",
+        color: "{content.color}",
+        borderWidth: "0 0 1px 0",
         padding: "0.75rem 1rem"
       },
       headerCell: {
+        background: "{content.background}",
+        hoverBackground: "{content.hover.background}",
         selectedBackground: "{highlight.background}",
         borderColor: "{datatable.border.color}",
+        color: "{content.color}",
         hoverColor: "{content.hover.color}",
         selectedColor: "{highlight.color}",
         gap: "0.5rem",
@@ -2092,12 +2150,12 @@ export const CyanLaraPreset = definePreset(Lara, {
           width: "{focus.ring.width}",
           style: "{focus.ring.style}",
           color: "{focus.ring.color}",
-          offset: "{focus.ring.offset}",
-          shadow: "inset {focus.ring.shadow}"
+          offset: "-1px",
+          shadow: "{focus.ring.shadow}"
         }
       },
       columnTitle: {
-        fontWeight: "700"
+        fontWeight: "600"
       },
       row: {
         background: "{content.background}",
@@ -2110,8 +2168,8 @@ export const CyanLaraPreset = definePreset(Lara, {
           width: "{focus.ring.width}",
           style: "{focus.ring.style}",
           color: "{focus.ring.color}",
-          offset: "{focus.ring.offset}",
-          shadow: "inset {focus.ring.shadow}"
+          offset: "-1px",
+          shadow: "{focus.ring.shadow}"
         }
       },
       bodyCell: {
@@ -2119,14 +2177,18 @@ export const CyanLaraPreset = definePreset(Lara, {
         padding: "0.75rem 1rem"
       },
       footerCell: {
+        background: "{content.background}",
         borderColor: "{datatable.border.color}",
+        color: "{content.color}",
         padding: "0.75rem 1rem"
       },
       columnFooter: {
-        fontWeight: "700"
+        fontWeight: "600"
       },
       footer: {
+        background: "{content.background}",
         borderColor: "{datatable.border.color}",
+        color: "{content.color}",
         borderWidth: "0 0 1px 0",
         padding: "0.75rem 1rem"
       },
@@ -2215,23 +2277,6 @@ export const CyanLaraPreset = definePreset(Lara, {
           root: {
             borderColor: "{content.border.color}"
           },
-          header: {
-            background: "{surface.50}",
-            color: "{text.color}"
-          },
-          headerCell: {
-            background: "{surface.50}",
-            hoverBackground: "{surface.100}",
-            color: "{text.color}"
-          },
-          footer: {
-            background: "{surface.50}",
-            color: "{text.color}"
-          },
-          footerCell: {
-            background: "{surface.50}",
-            color: "{text.color}"
-          },
           row: {
             stripedBackground: "{surface.50}"
           },
@@ -2242,23 +2287,6 @@ export const CyanLaraPreset = definePreset(Lara, {
         dark: {
           root: {
             borderColor: "{surface.800}"
-          },
-          header: {
-            background: "{surface.800}",
-            color: "{text.color}"
-          },
-          headerCell: {
-            background: "{surface.800}",
-            hoverBackground: "{surface.700}",
-            color: "{text.color}"
-          },
-          footer: {
-            background: "{surface.800}",
-            color: "{text.color}"
-          },
-          footerCell: {
-            background: "{surface.800}",
-            color: "{text.color}"
           },
           row: {
             stripedBackground: "{surface.950}"
@@ -2302,17 +2330,17 @@ export const CyanLaraPreset = definePreset(Lara, {
         color: "{text.color}"
       },
       horizontal: {
-        margin: "1.125rem 0",
-        padding: "0 1.125rem",
+        margin: "1rem 0",
+        padding: "0 1rem",
         content: {
-          padding: "0 0.625rem"
+          padding: "0 0.5rem"
         }
       },
       vertical: {
-        margin: "0 1.125rem",
-        padding: "1.125rem 0",
+        margin: "0 1rem",
+        padding: "0.5rem 0",
         content: {
-          padding: "0.625rem 0"
+          padding: "0.5rem 0"
         }
       }
     },
@@ -2321,7 +2349,7 @@ export const CyanLaraPreset = definePreset(Lara, {
         background: "rgba(255, 255, 255, 0.1)",
         borderColor: "rgba(255, 255, 255, 0.2)",
         padding: "0.5rem",
-        borderRadius: "{border.radius.lg}"
+        borderRadius: "{border.radius.xl}"
       },
       item: {
         borderRadius: "{content.border.radius}",
@@ -2359,6 +2387,7 @@ export const CyanLaraPreset = definePreset(Lara, {
     },
     editor: {
       toolbar: {
+        background: "{content.background}",
         borderColor: "{content.border.color}",
         borderRadius: "{content.border.radius}"
       },
@@ -2387,18 +2416,6 @@ export const CyanLaraPreset = definePreset(Lara, {
         borderColor: "{content.border.color}",
         color: "{content.color}",
         borderRadius: "{content.border.radius}"
-      },
-      colorScheme: {
-        light: {
-          toolbar: {
-            background: "{surface.50}"
-          }
-        },
-        dark: {
-          toolbar: {
-            background: "{surface.800}"
-          }
-        }
       }
     },
     fieldset: {
@@ -2407,22 +2424,26 @@ export const CyanLaraPreset = definePreset(Lara, {
         borderColor: "{content.border.color}",
         borderRadius: "{content.border.radius}",
         color: "{content.color}",
-        padding: "0.75rem 1.125rem 1.125rem 1.125rem",
+        padding: "0 1.25rem 1.25rem 1.25rem",
         transitionDuration: "{transition.duration}"
       },
       legend: {
+        background: "{content.background}",
+        hoverBackground: "{content.hover.background}",
+        color: "{content.color}",
+        hoverColor: "{content.hover.color}",
         borderRadius: "{content.border.radius}",
         borderWidth: "1px",
-        borderColor: "{content.border.color}",
-        padding: "0.625rem 0.875rem",
+        borderColor: "transparent",
+        padding: "0.75rem 1rem",
         gap: "0.5rem",
-        fontWeight: "700",
+        fontWeight: "600",
         focusRing: {
-          width: "{focus.ring.width}",
-          style: "{focus.ring.style}",
-          color: "{focus.ring.color}",
-          offset: "{focus.ring.offset}",
-          shadow: "{focus.ring.shadow}"
+          width: "0",
+          style: "none",
+          color: "unset",
+          offset: "0",
+          shadow: "none"
         }
       },
       toggleIcon: {
@@ -2431,24 +2452,6 @@ export const CyanLaraPreset = definePreset(Lara, {
       },
       content: {
         padding: "0"
-      },
-      colorScheme: {
-        light: {
-          legend: {
-            background: "{surface.50}",
-            hoverBackground: "{surface.100}",
-            color: "{text.color}",
-            hoverColor: "{text.hover.color}"
-          }
-        },
-        dark: {
-          legend: {
-            background: "{surface.800}",
-            hoverBackground: "{surface.700}",
-            color: "{text.color}",
-            hoverColor: "{text.hover.color}"
-          }
-        }
       }
     },
     fileupload: {
@@ -2460,15 +2463,17 @@ export const CyanLaraPreset = definePreset(Lara, {
         transitionDuration: "{transition.duration}"
       },
       header: {
-        borderWidth: "0 0 1px 0",
-        borderColor: "{content.border.color}",
-        padding: "1.125rem",
-        borderRadius: "5px 5px 0 0",
+        background: "transparent",
+        color: "{text.color}",
+        padding: "1.25rem",
+        borderColor: "unset",
+        borderWidth: "0",
+        borderRadius: "0",
         gap: "0.5rem"
       },
       content: {
         highlightBorderColor: "{primary.color}",
-        padding: "1.125rem",
+        padding: "0 1.25rem 1.25rem 1.25rem",
         gap: "1rem"
       },
       file: {
@@ -2487,20 +2492,6 @@ export const CyanLaraPreset = definePreset(Lara, {
       },
       basic: {
         gap: "0.5rem"
-      },
-      colorScheme: {
-        light: {
-          header: {
-            background: "{surface.50}",
-            color: "{text.color}"
-          }
-        },
-        dark: {
-          header: {
-            background: "{surface.800}",
-            color: "{text.color}"
-          }
-        }
       }
     },
     iftalabel: {
@@ -2510,13 +2501,13 @@ export const CyanLaraPreset = definePreset(Lara, {
         invalidColor: "{form.field.float.label.invalid.color}",
         transitionDuration: "0.2s",
         positionX: "{form.field.padding.x}",
-        top: "{form.field.padding.y}",
+        top: "0.5rem",
         fontSize: "0.75rem",
         fontWeight: "400"
       },
       input: {
-        paddingTop: "1.875rem",
-        paddingBottom: "{form.field.padding.y}"
+        paddingTop: "1.5rem",
+        paddingBottom: "0.5rem"
       }
     },
     floatlabel: {
@@ -2536,16 +2527,16 @@ export const CyanLaraPreset = definePreset(Lara, {
       },
       over: {
         active: {
-          top: "-1.375rem"
+          top: "-1.25rem"
         }
       },
       in: {
         input: {
-          paddingTop: "1.875rem",
-          paddingBottom: "{form.field.padding.y}"
+          paddingTop: "1.5rem",
+          paddingBottom: "0.5rem"
         },
         active: {
-          top: "{form.field.padding.y}"
+          top: "0.5rem"
         }
       },
       on: {
@@ -2569,12 +2560,12 @@ export const CyanLaraPreset = definePreset(Lara, {
         color: "{surface.100}",
         hoverColor: "{surface.0}",
         size: "3rem",
-        gutter: "0",
+        gutter: "0.5rem",
         prev: {
-          borderRadius: "0 12px 12px 0"
+          borderRadius: "50%"
         },
         next: {
-          borderRadius: "12px 0 0 12px"
+          borderRadius: "50%"
         },
         focusRing: {
           width: "{focus.ring.width}",
@@ -2588,11 +2579,12 @@ export const CyanLaraPreset = definePreset(Lara, {
         size: "1.5rem"
       },
       thumbnailsContent: {
+        background: "{content.background}",
         padding: "1rem 0.25rem"
       },
       thumbnailNavButton: {
         size: "2rem",
-        borderRadius: "{content.border.radius}",
+        borderRadius: "50%",
         gutter: "0.5rem",
         focusRing: {
           width: "{focus.ring.width}",
@@ -2656,9 +2648,6 @@ export const CyanLaraPreset = definePreset(Lara, {
       },
       colorScheme: {
         light: {
-          thumbnailsContent: {
-            background: "{surface.50}"
-          },
           thumbnailNavButton: {
             hoverBackground: "{surface.100}",
             color: "{surface.600}",
@@ -2670,9 +2659,6 @@ export const CyanLaraPreset = definePreset(Lara, {
           }
         },
         dark: {
-          thumbnailsContent: {
-            background: "{surface.800}"
-          },
           thumbnailNavButton: {
             hoverBackground: "{surface.700}",
             color: "{surface.400}",
@@ -2714,7 +2700,7 @@ export const CyanLaraPreset = definePreset(Lara, {
         background: "rgba(255,255,255,0.1)",
         borderColor: "rgba(255,255,255,0.2)",
         borderWidth: "1px",
-        borderRadius: "{content.border.radius}",
+        borderRadius: "30px",
         padding: ".5rem",
         gap: "0.5rem"
       },
@@ -2724,7 +2710,7 @@ export const CyanLaraPreset = definePreset(Lara, {
         hoverColor: "{surface.0}",
         size: "3rem",
         iconSize: "1.5rem",
-        borderRadius: "{content.border.radius}",
+        borderRadius: "50%",
         focusRing: {
           width: "{focus.ring.width}",
           style: "{focus.ring.style}",
@@ -2736,13 +2722,13 @@ export const CyanLaraPreset = definePreset(Lara, {
     },
     imagecompare: {
       handle: {
-        size: "15px",
-        hoverSize: "30px",
-        background: "rgba(255,255,255,0.3)",
-        hoverBackground: "rgba(255,255,255,0.3)",
-        borderColor: "rgba(255,255,255,0.3)",
-        hoverBorderColor: "rgba(255,255,255,0.3)",
-        borderWidth: "3px",
+        size: "20px",
+        hoverSize: "40px",
+        background: "rgba(255,255,255,0.4)",
+        hoverBackground: "rgba(255,255,255,0.6)",
+        borderColor: "unset",
+        hoverBorderColor: "unset",
+        borderWidth: "0",
         borderRadius: "50%",
         transitionDuration: "{transition.duration}",
         focusRing: {
@@ -2764,83 +2750,83 @@ export const CyanLaraPreset = definePreset(Lara, {
         fontWeight: "500"
       },
       icon: {
-        size: "1.125rem"
+        size: "1rem"
       },
       colorScheme: {
         light: {
           info: {
             background: "color-mix(in srgb, {blue.50}, transparent 5%)",
-            borderColor: "color-mix(in srgb, {blue.50}, transparent 5%)",
+            borderColor: "{blue.200}",
             color: "{blue.600}",
-            shadow: "none"
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {blue.500}, transparent 96%)"
           },
           success: {
             background: "color-mix(in srgb, {green.50}, transparent 5%)",
-            borderColor: "color-mix(in srgb, {green.50}, transparent 5%)",
+            borderColor: "{green.200}",
             color: "{green.600}",
-            shadow: "none"
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {green.500}, transparent 96%)"
           },
           warn: {
             background: "color-mix(in srgb,{yellow.50}, transparent 5%)",
-            borderColor: "color-mix(in srgb,{yellow.50}, transparent 5%)",
+            borderColor: "{yellow.200}",
             color: "{yellow.600}",
-            shadow: "none"
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {yellow.500}, transparent 96%)"
           },
           error: {
             background: "color-mix(in srgb, {red.50}, transparent 5%)",
-            borderColor: "color-mix(in srgb, {red.50}, transparent 5%)",
+            borderColor: "{red.200}",
             color: "{red.600}",
-            shadow: "none"
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {red.500}, transparent 96%)"
           },
           secondary: {
             background: "{surface.100}",
-            borderColor: "{surface.100}",
+            borderColor: "{surface.200}",
             color: "{surface.600}",
-            shadow: "none"
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {surface.500}, transparent 96%)"
           },
           contrast: {
             background: "{surface.900}",
-            borderColor: "{surface.900}",
+            borderColor: "{surface.950}",
             color: "{surface.50}",
-            shadow: "none"
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {surface.950}, transparent 96%)"
           }
         },
         dark: {
           info: {
             background: "color-mix(in srgb, {blue.500}, transparent 84%)",
-            borderColor: "color-mix(in srgb, {blue.500}, transparent 84%)",
+            borderColor: "color-mix(in srgb, {blue.700}, transparent 64%)",
             color: "{blue.500}",
-            shadow: "none"
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {blue.500}, transparent 96%)"
           },
           success: {
             background: "color-mix(in srgb, {green.500}, transparent 84%)",
-            borderColor: "color-mix(in srgb, {green.500}, transparent 84%)",
+            borderColor: "color-mix(in srgb, {green.700}, transparent 64%)",
             color: "{green.500}",
-            shadow: "none"
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {green.500}, transparent 96%)"
           },
           warn: {
             background: "color-mix(in srgb, {yellow.500}, transparent 84%)",
-            borderColor: "color-mix(in srgb, {yellow.500}, transparent 84%)",
+            borderColor: "color-mix(in srgb, {yellow.700}, transparent 64%)",
             color: "{yellow.500}",
-            shadow: "none"
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {yellow.500}, transparent 96%)"
           },
           error: {
             background: "color-mix(in srgb, {red.500}, transparent 84%)",
-            borderColor: "color-mix(in srgb, {red.500}, transparent 84%)",
+            borderColor: "color-mix(in srgb, {red.700}, transparent 64%)",
             color: "{red.500}",
-            shadow: "none"
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {red.500}, transparent 96%)"
           },
           secondary: {
             background: "{surface.800}",
-            borderColor: "{surface.800}",
+            borderColor: "{surface.700}",
             color: "{surface.300}",
-            shadow: "none"
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {surface.500}, transparent 96%)"
           },
           contrast: {
             background: "{surface.0}",
-            borderColor: "{surface.0}",
+            borderColor: "{surface.100}",
             color: "{surface.950}",
-            shadow: "none"
+            shadow: "0px 4px 8px 0px color-mix(in srgb, {surface.950}, transparent 96%)"
           }
         }
       }
@@ -2909,25 +2895,12 @@ export const CyanLaraPreset = definePreset(Lara, {
     },
     inputgroup: {
       addon: {
+        background: "{form.field.background}",
+        borderColor: "{form.field.border.color}",
+        color: "{form.field.icon.color}",
         borderRadius: "{form.field.border.radius}",
-        padding: "0.625rem 0.5rem",
-        minWidth: "2.75rem"
-      },
-      colorScheme: {
-        light: {
-          addon: {
-            background: "{surface.50}",
-            borderColor: "{form.field.border.color}",
-            color: "{text.muted.color}"
-          }
-        },
-        dark: {
-          addon: {
-            background: "{surface.800}",
-            borderColor: "{form.field.border.color}",
-            color: "{text.muted.color}"
-          }
-        }
+        padding: "0.75rem",
+        minWidth: "3rem"
       }
     },
     inputnumber: {
@@ -2935,35 +2908,35 @@ export const CyanLaraPreset = definePreset(Lara, {
         transitionDuration: "{transition.duration}"
       },
       button: {
-        width: "2.5rem",
+        width: "3rem",
         borderRadius: "{form.field.border.radius}",
         verticalPadding: "{form.field.padding.y}"
       },
       colorScheme: {
         light: {
           button: {
-            background: "{surface.100}",
-            hoverBackground: "{surface.200}",
-            activeBackground: "{surface.300}",
+            background: "transparent",
+            hoverBackground: "{surface.100}",
+            activeBackground: "{surface.200}",
             borderColor: "{form.field.border.color}",
             hoverBorderColor: "{form.field.border.color}",
             activeBorderColor: "{form.field.border.color}",
-            color: "{surface.600}",
-            hoverColor: "{surface.700}",
-            activeColor: "{surface.800}"
+            color: "{surface.400}",
+            hoverColor: "{surface.500}",
+            activeColor: "{surface.600}"
           }
         },
         dark: {
           button: {
-            background: "{surface.800}",
-            hoverBackground: "{surface.700}",
-            activeBackground: "{surface.500}",
+            background: "transparent",
+            hoverBackground: "{surface.800}",
+            activeBackground: "{surface.700}",
             borderColor: "{form.field.border.color}",
             hoverBorderColor: "{form.field.border.color}",
             activeBorderColor: "{form.field.border.color}",
-            color: "{surface.300}",
-            hoverColor: "{surface.200}",
-            activeColor: "{surface.100}"
+            color: "{surface.400}",
+            hoverColor: "{surface.300}",
+            activeColor: "{surface.200}"
           }
         }
       }
@@ -2973,12 +2946,12 @@ export const CyanLaraPreset = definePreset(Lara, {
         gap: "0.5rem"
       },
       input: {
-        width: "2.5rem",
+        width: "3rem",
         sm: {
-          width: "2rem"
+          width: "2.5rem"
         },
         lg: {
-          width: "3rem"
+          width: "3.5rem"
         }
       }
     },
@@ -3080,8 +3053,8 @@ export const CyanLaraPreset = definePreset(Lara, {
       },
       checkmark: {
         color: "{list.option.color}",
-        gutterStart: "-0.5rem",
-        gutterEnd: "0.5rem"
+        gutterStart: "-0.375rem",
+        gutterEnd: "0.375rem"
       },
       emptyMessage: {
         padding: "{list.option.padding}"
@@ -3101,7 +3074,8 @@ export const CyanLaraPreset = definePreset(Lara, {
     },
     megamenu: {
       root: {
-        borderColor: "transparent",
+        background: "{content.background}",
+        borderColor: "{content.border.color}",
         borderRadius: "{content.border.radius}",
         color: "{content.color}",
         gap: "0.5rem",
@@ -3110,7 +3084,7 @@ export const CyanLaraPreset = definePreset(Lara, {
           gap: "{navigation.list.gap}"
         },
         horizontalOrientation: {
-          padding: "0.75rem 1rem",
+          padding: "0.5rem 0.75rem",
           extend: {
             // gap: "0.5rem"
             gap: "1.5rem"
@@ -3120,7 +3094,7 @@ export const CyanLaraPreset = definePreset(Lara, {
       },
       baseItem: {
         borderRadius: "{content.border.radius}",
-        padding: "0.75rem 1rem"
+        padding: "{navigation.item.padding}"
       },
       item: {
         focusBackground: "{navigation.item.focus.background}",
@@ -3140,7 +3114,7 @@ export const CyanLaraPreset = definePreset(Lara, {
       overlay: {
         padding: "0",
         background: "{content.background}",
-        borderColor: "{content.border.color}",
+        borderColor: "transparent",
         borderRadius: "{content.border.radius}",
         color: "{content.color}",
         shadow: "{overlay.navigation.shadow}",
@@ -3170,28 +3144,16 @@ export const CyanLaraPreset = definePreset(Lara, {
       },
       mobileButton: {
         borderRadius: "50%",
-        size: "2rem",
+        size: "2.5rem",
         color: "{text.muted.color}",
         hoverColor: "{text.hover.muted.color}",
         hoverBackground: "{content.hover.background}",
         focusRing: {
-          width: "{focus.ring.width}",
-          style: "{focus.ring.style}",
-          color: "{focus.ring.color}",
-          offset: "{focus.ring.offset}",
-          shadow: "{focus.ring.shadow}"
-        }
-      },
-      colorScheme: {
-        light: {
-          root: {
-            background: "{surface.50}"
-          }
-        },
-        dark: {
-          root: {
-            background: "{surface.800}"
-          }
+          width: "0",
+          style: "none",
+          color: "unset",
+          offset: "0",
+          shadow: "none"
         }
       }
     },
@@ -3223,10 +3185,7 @@ export const CyanLaraPreset = definePreset(Lara, {
       submenuLabel: {
         padding: "{navigation.submenu.label.padding}",
         fontWeight: "{navigation.submenu.label.font.weight}",
-        extend: {
-          // background: "{navigation.submenu.label.background.}",
-          background: "{navigation.submenu.label.background}",
-        },
+        background: "{navigation.submenu.label.background}",
         color: "{navigation.submenu.label.color}"
       },
       separator: {
@@ -3235,16 +3194,17 @@ export const CyanLaraPreset = definePreset(Lara, {
     },
     menubar: {
       root: {
-        borderColor: "transparent",
+        background: "{content.background}",
+        borderColor: "{content.border.color}",
         borderRadius: "{content.border.radius}",
         color: "{content.color}",
         gap: "0.5rem",
-        padding: "0.75rem 1rem",
+        padding: "0.5rem 0.75rem",
         transitionDuration: "{transition.duration}"
       },
       baseItem: {
         borderRadius: "{content.border.radius}",
-        padding: "0.75rem 1rem"
+        padding: "{navigation.item.padding}"
       },
       item: {
         focusBackground: "{navigation.item.focus.background}",
@@ -3265,10 +3225,10 @@ export const CyanLaraPreset = definePreset(Lara, {
         padding: "{navigation.list.padding}",
         gap: "{navigation.list.gap}",
         background: "{content.background}",
-        borderColor: "{content.border.color}",
+        borderColor: "transparent",
         borderRadius: "{content.border.radius}",
         shadow: "{overlay.navigation.shadow}",
-        mobileIndent: "1.25rem",
+        mobileIndent: "1rem",
         icon: {
           size: "{navigation.submenu.icon.size}",
           color: "{navigation.submenu.icon.color}",
@@ -3281,45 +3241,33 @@ export const CyanLaraPreset = definePreset(Lara, {
       },
       mobileButton: {
         borderRadius: "50%",
-        size: "2rem",
+        size: "2.5rem",
         color: "{text.muted.color}",
         hoverColor: "{text.hover.muted.color}",
         hoverBackground: "{content.hover.background}",
         focusRing: {
-          width: "{focus.ring.width}",
-          style: "{focus.ring.style}",
-          color: "{focus.ring.color}",
-          offset: "{focus.ring.offset}",
-          shadow: "{focus.ring.shadow}"
-        }
-      },
-      colorScheme: {
-        light: {
-          root: {
-            background: "{surface.50}"
-          }
-        },
-        dark: {
-          root: {
-            background: "{surface.800}"
-          }
+          width: "0",
+          style: "none",
+          color: "unset",
+          offset: "0",
+          shadow: "none"
         }
       }
     },
     message: {
       root: {
         borderRadius: "{content.border.radius}",
-        borderWidth: "1px",
+        borderWidth: "0",
         transitionDuration: "{transition.duration}"
       },
       content: {
-        padding: "0.75rem 1rem",
+        padding: "1rem 1.25rem",
         gap: "0.5rem",
         sm: {
-          padding: "0.5rem 0.625rem"
+          padding: "0.625rem 0.625rem"
         },
         lg: {
-          padding: "0.75rem 0.875rem"
+          padding: "0.825rem 0.825rem"
         }
       },
       text: {
@@ -3374,14 +3322,14 @@ export const CyanLaraPreset = definePreset(Lara, {
         light: {
           info: {
             background: "color-mix(in srgb, {blue.50}, transparent 5%)",
-            borderColor: "transparent",
+            borderColor: "{blue.200}",
             color: "{blue.600}",
             shadow: "none",
             closeButton: {
               hoverBackground: "{blue.100}",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem {blue.200}"
+                color: "{blue.600}",
+                shadow: "none"
               }
             },
             outlined: {
@@ -3394,14 +3342,14 @@ export const CyanLaraPreset = definePreset(Lara, {
           },
           success: {
             background: "color-mix(in srgb, {green.50}, transparent 5%)",
-            borderColor: "transparent",
+            borderColor: "{green.200}",
             color: "{green.600}",
             shadow: "none",
             closeButton: {
               hoverBackground: "{green.100}",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem {green.200}"
+                color: "{green.600}",
+                shadow: "none"
               }
             },
             outlined: {
@@ -3414,34 +3362,34 @@ export const CyanLaraPreset = definePreset(Lara, {
           },
           warn: {
             background: "color-mix(in srgb,{yellow.50}, transparent 5%)",
-            borderColor: "transparent",
-            color: "{yellow.600}",
+            borderColor: "{yellow.200}",
+            color: "{yellow.900}",
             shadow: "none",
             closeButton: {
               hoverBackground: "{yellow.100}",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem {yellow.200}"
+                color: "{yellow.600}",
+                shadow: "none"
               }
             },
             outlined: {
-              color: "{yellow.600}",
-              borderColor: "{yellow.600}"
+              color: "{yellow.900}",
+              borderColor: "{yellow.900}"
             },
             simple: {
-              color: "{yellow.600}"
+              color: "{yellow.900}"
             }
           },
           error: {
             background: "color-mix(in srgb, {red.50}, transparent 5%)",
-            borderColor: "transparent",
+            borderColor: "{red.200}",
             color: "{red.600}",
             shadow: "none",
             closeButton: {
               hoverBackground: "{red.100}",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem {red.200}"
+                color: "{red.600}",
+                shadow: "none"
               }
             },
             outlined: {
@@ -3454,56 +3402,56 @@ export const CyanLaraPreset = definePreset(Lara, {
           },
           secondary: {
             background: "{surface.100}",
-            borderColor: "transparent",
+            borderColor: "{surface.200}",
             color: "{surface.600}",
             shadow: "none",
             closeButton: {
               hoverBackground: "{surface.200}",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem {surface.200}"
+                color: "{surface.600}",
+                shadow: "none"
               }
             },
             outlined: {
-              color: "{surface.500}",
-              borderColor: "{surface.500}"
+              color: "{surface.600}",
+              borderColor: "{surface.600}"
             },
             simple: {
-              color: "{surface.500}"
+              color: "{surface.600}"
             }
           },
           contrast: {
             background: "{surface.900}",
-            borderColor: "transparent",
+            borderColor: "{surface.950}",
             color: "{surface.50}",
             shadow: "none",
             closeButton: {
               hoverBackground: "{surface.800}",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem {surface.400}"
+                color: "{surface.50}",
+                shadow: "none"
               }
             },
             outlined: {
-              color: "{surface.900}",
-              borderColor: "{surface.900}"
+              color: "{surface.950}",
+              borderColor: "{surface.950}"
             },
             simple: {
-              color: "{surface.900}"
+              color: "{surface.950}"
             }
           }
         },
         dark: {
           info: {
             background: "color-mix(in srgb, {blue.500}, transparent 84%)",
-            borderColor: "transparent",
+            borderColor: "color-mix(in srgb, {blue.700}, transparent 64%)",
             color: "{blue.500}",
             shadow: "none",
             closeButton: {
               hoverBackground: "rgba(255, 255, 255, 0.05)",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem color-mix(in srgb, {blue.500}, transparent 80%)"
+                color: "{blue.500}",
+                shadow: "none"
               }
             },
             outlined: {
@@ -3516,14 +3464,14 @@ export const CyanLaraPreset = definePreset(Lara, {
           },
           success: {
             background: "color-mix(in srgb, {green.500}, transparent 84%)",
-            borderColor: "transparent",
+            borderColor: "color-mix(in srgb, {green.700}, transparent 64%)",
             color: "{green.500}",
             shadow: "none",
             closeButton: {
               hoverBackground: "rgba(255, 255, 255, 0.05)",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem color-mix(in srgb, {green.500}, transparent 80%)"
+                color: "{green.500}",
+                shadow: "none"
               }
             },
             outlined: {
@@ -3536,14 +3484,14 @@ export const CyanLaraPreset = definePreset(Lara, {
           },
           warn: {
             background: "color-mix(in srgb, {yellow.500}, transparent 84%)",
-            borderColor: "transparent",
+            borderColor: "color-mix(in srgb, {yellow.700}, transparent 64%)",
             color: "{yellow.500}",
             shadow: "none",
             closeButton: {
               hoverBackground: "rgba(255, 255, 255, 0.05)",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem color-mix(in srgb, {yellow.500}, transparent 80%)"
+                color: "{yellow.500}",
+                shadow: "none"
               }
             },
             outlined: {
@@ -3556,14 +3504,14 @@ export const CyanLaraPreset = definePreset(Lara, {
           },
           error: {
             background: "color-mix(in srgb, {red.500}, transparent 84%)",
-            borderColor: "transparent",
+            borderColor: "color-mix(in srgb, {red.700}, transparent 64%)",
             color: "{red.500}",
             shadow: "none",
             closeButton: {
               hoverBackground: "rgba(255, 255, 255, 0.05)",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem color-mix(in srgb, {red.500}, transparent 80%)"
+                color: "{red.500}",
+                shadow: "none"
               }
             },
             outlined: {
@@ -3576,14 +3524,14 @@ export const CyanLaraPreset = definePreset(Lara, {
           },
           secondary: {
             background: "{surface.800}",
-            borderColor: "transparent",
+            borderColor: "{surface.700}",
             color: "{surface.300}",
             shadow: "none",
             closeButton: {
               hoverBackground: "{surface.700}",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem color-mix(in srgb, {surface.300}, transparent 80%)"
+                color: "{surface.300}",
+                shadow: "none"
               }
             },
             outlined: {
@@ -3596,14 +3544,14 @@ export const CyanLaraPreset = definePreset(Lara, {
           },
           contrast: {
             background: "{surface.0}",
-            borderColor: "transparent",
+            borderColor: "{surface.100}",
             color: "{surface.950}",
             shadow: "none",
             closeButton: {
               hoverBackground: "{surface.100}",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem color-mix(in srgb, {surface.950}, transparent 80%)"
+                color: "{surface.950}",
+                shadow: "none"
               }
             },
             outlined: {
@@ -3624,7 +3572,7 @@ export const CyanLaraPreset = definePreset(Lara, {
       },
       meters: {
         background: "{content.border.color}",
-        size: "0.625rem"
+        size: "0.5rem"
       },
       label: {
         gap: "0.5rem"
@@ -3706,7 +3654,7 @@ export const CyanLaraPreset = definePreset(Lara, {
         selectedFocusColor: "{list.option.selected.focus.color}",
         padding: "{list.option.padding}",
         borderRadius: "{list.option.border.radius}",
-        gap: "0.5rem"
+        gap: "0.75rem"
       },
       optionGroup: {
         background: "{list.option.group.background}",
@@ -3714,11 +3662,11 @@ export const CyanLaraPreset = definePreset(Lara, {
         fontWeight: "{list.option.group.font.weight}",
         padding: "{list.option.group.padding}"
       },
-      clearIcon: {
-        color: "{form.field.icon.color}"
-      },
       chip: {
         borderRadius: "{border.radius.sm}"
+      },
+      clearIcon: {
+        color: "{form.field.icon.color}"
       },
       emptyMessage: {
         padding: "{list.option.padding}"
@@ -3845,7 +3793,7 @@ export const CyanLaraPreset = definePreset(Lara, {
         shadow: "{overlay.popover.shadow}"
       },
       content: {
-        gap: "0.75rem"
+        gap: "0.5rem"
       },
       colorScheme: {
         light: {
@@ -3866,40 +3814,30 @@ export const CyanLaraPreset = definePreset(Lara, {
     },
     panel: {
       root: {
+        background: "{content.background}",
         borderColor: "{content.border.color}",
+        color: "{content.color}",
         borderRadius: "{content.border.radius}"
       },
       header: {
-        borderWidth: "0 0 1px 0",
+        background: "transparent",
+        color: "{text.color}",
+        padding: "1.25rem",
         borderColor: "{content.border.color}",
-        padding: "1.125rem",
-        borderRadius: "5px 5px 0 0"
+        borderWidth: "0",
+        borderRadius: "0"
       },
       toggleableHeader: {
-        padding: "0.25rem 1.125rem"
+        padding: "0.5rem 1.25rem"
       },
       title: {
-        fontWeight: "700"
+        fontWeight: "600"
       },
       content: {
-        padding: "1.125rem"
+        padding: "0 1.25rem 1.25rem 1.25rem"
       },
       footer: {
-        padding: "1.125rem"
-      },
-      colorScheme: {
-        light: {
-          header: {
-            background: "{surface.50}",
-            color: "{text.color}"
-          }
-        },
-        dark: {
-          header: {
-            background: "{surface.800}",
-            color: "{text.color}"
-          }
-        }
+        padding: "0 1.25rem 1.25rem 1.25rem"
       }
     },
     panelmenu: {
@@ -3910,16 +3848,16 @@ export const CyanLaraPreset = definePreset(Lara, {
       panel: {
         background: "{content.background}",
         borderColor: "{content.border.color}",
-        borderWidth: "1px",
+        borderWidth: "0",
         color: "{content.color}",
-        padding: "0.25rem 0.25rem",
+        padding: "0",
         borderRadius: "0",
         first: {
-          borderWidth: "1px 1px 0 1px",
+          borderWidth: "0",
           topBorderRadius: "{content.border.radius}"
         },
         last: {
-          borderWidth: "0 1px 1px 1px",
+          borderWidth: "0",
           bottomBorderRadius: "{content.border.radius}"
         }
       },
@@ -3955,14 +3893,14 @@ export const CyanLaraPreset = definePreset(Lara, {
       root: {
         background: "{content.border.color}",
         borderRadius: "{content.border.radius}",
-        height: "1.5rem"
+        height: "1rem"
       },
       value: {
         background: "{primary.color}"
       },
       label: {
         color: "{primary.contrast.color}",
-        fontSize: "0.875rem",
+        fontSize: "0.75rem",
         fontWeight: "600"
       }
     },
@@ -3970,84 +3908,84 @@ export const CyanLaraPreset = definePreset(Lara, {
       colorScheme: {
         light: {
           root: {
-            "color.1": "{pink.500}",
-            "color.2": "{sky.500}",
-            "color.3": "{emerald.500}",
-            "color.4": "{amber.500}"
+            "color.1": "{red.500}",
+            "color.2": "{blue.500}",
+            "color.3": "{green.500}",
+            "color.4": "{yellow.500}"
           }
         },
         dark: {
           root: {
-            "color.1": "{pink.400}",
-            "color.2": "{sky.400}",
-            "color.3": "{emerald.400}",
-            "color.4": "{amber.400}"
+            "color.1": "{red.400}",
+            "color.2": "{blue.400}",
+            "color.3": "{green.400}",
+            "color.4": "{yellow.400}"
           }
         }
       }
     },
     radiobutton: {
       root: {
-        width: "1.5rem",
-        height: "1.5rem",
+        width: "20px",
+        height: "20px",
         background: "{form.field.background}",
-        checkedBackground: "{primary.color}",
-        checkedHoverBackground: "{primary.hover.color}",
+        checkedBackground: "{primary.contrast.color}",
+        checkedHoverBackground: "{primary.contrast.color}",
         disabledBackground: "{form.field.disabled.background}",
         filledBackground: "{form.field.filled.background}",
         borderColor: "{form.field.border.color}",
         hoverBorderColor: "{form.field.hover.border.color}",
         focusBorderColor: "{form.field.focus.border.color}",
         checkedBorderColor: "{primary.color}",
-        checkedHoverBorderColor: "{primary.hover.color}",
+        checkedHoverBorderColor: "{primary.color}",
         checkedFocusBorderColor: "{primary.color}",
         checkedDisabledBorderColor: "{form.field.border.color}",
         invalidBorderColor: "{form.field.invalid.border.color}",
         shadow: "{form.field.shadow}",
         focusRing: {
-          width: "{form.field.focus.ring.width}",
-          style: "{form.field.focus.ring.style}",
-          color: "{form.field.focus.ring.color}",
-          offset: "{form.field.focus.ring.offset}",
-          shadow: "{form.field.focus.ring.shadow}"
+          width: "0",
+          style: "none",
+          color: "unset",
+          offset: "0",
+          shadow: "none"
         },
         transitionDuration: "{form.field.transition.duration}",
         sm: {
-          width: "1.25rem",
-          height: "1.25rem"
+          width: "16px",
+          height: "16px"
         },
         lg: {
-          width: "1.75rem",
-          height: "1.75rem"
+          width: "24px",
+          height: "24px"
         }
       },
       icon: {
-        size: "1rem",
-        checkedColor: "{primary.contrast.color}",
-        checkedHoverColor: "{primary.contrast.color}",
+        size: "10px",
+        checkedColor: "{primary.color}",
+        checkedHoverColor: "{primary.color}",
         disabledColor: "{form.field.disabled.color}",
         sm: {
-          size: "0.75rem"
+          size: "8px"
         },
         lg: {
-          size: "1.25rem"
+          size: "12px"
         }
       }
     },
     rating: {
       root: {
-        gap: "0.25rem",
+        gap: "0.5rem",
         transitionDuration: "{transition.duration}",
         focusRing: {
-          width: "{focus.ring.width}",
-          style: "{focus.ring.style}",
-          color: "{focus.ring.color}",
-          offset: "{focus.ring.offset}",
-          shadow: "{focus.ring.shadow}"
+          width: "0",
+          style: "none",
+          color: "unset",
+          offset: "0",
+          shadow: "none"
         }
       },
       icon: {
-        size: "1.25rem",
+        size: "1.125rem",
         color: "{text.muted.color}",
         hoverColor: "{primary.color}",
         activeColor: "{primary.color}"
@@ -4159,8 +4097,8 @@ export const CyanLaraPreset = definePreset(Lara, {
       },
       checkmark: {
         color: "{list.option.color}",
-        gutterStart: "-0.5rem",
-        gutterEnd: "0.5rem"
+        gutterStart: "-0.375rem",
+        gutterEnd: "0.375rem"
       },
       emptyMessage: {
         padding: "{list.option.padding}"
@@ -4208,43 +4146,32 @@ export const CyanLaraPreset = definePreset(Lara, {
       },
       track: {
         background: "{content.border.color}",
-        borderRadius: "{content.border.radius}",
-        size: "3px"
+        borderRadius: "{border.radius.xs}",
+        size: "2px"
       },
       range: {
         background: "{primary.color}"
       },
       handle: {
-        width: "16px",
-        height: "16px",
+        width: "18px",
+        height: "18px",
         borderRadius: "50%",
         background: "{primary.color}",
         hoverBackground: "{primary.color}",
         content: {
           borderRadius: "50%",
+          contentBackground: "{primary.color}",
           hoverBackground: "{primary.color}",
-          width: "12px",
-          height: "12px",
-          shadow: "none"
+          width: "18px",
+          height: "18px",
+          shadow: "0px 2px 1px -1px rgba(0, 0, 0, .2), 0px 1px 1px 0px rgba(0, 0, 0, .14), 0px 1px 3px 0px rgba(0, 0, 0, .12)"
         },
         focusRing: {
-          width: "{form.field.focus.ring.width}",
-          style: "{form.field.focus.ring.style}",
-          color: "{form.field.focus.ring.color}",
-          offset: "{form.field.focus.ring.offset}",
-          shadow: "{form.field.focus.ring.shadow}"
-        }
-      },
-      colorScheme: {
-        light: {
-          handle: {
-            contentBackground: "{surface.0}"
-          }
-        },
-        dark: {
-          handle: {
-            contentBackground: "{surface.950}"
-          }
+          width: "0",
+          style: "none",
+          color: "unset",
+          offset: "0",
+          shadow: "none"
         }
       }
     },
@@ -4266,6 +4193,7 @@ export const CyanLaraPreset = definePreset(Lara, {
       },
       handle: {
         size: "24px",
+        background: "transparent",
         borderRadius: "{content.border.radius}",
         focusRing: {
           width: "{focus.ring.width}",
@@ -4273,18 +4201,6 @@ export const CyanLaraPreset = definePreset(Lara, {
           color: "{focus.ring.color}",
           offset: "{focus.ring.offset}",
           shadow: "{focus.ring.shadow}"
-        }
-      },
-      colorScheme: {
-        light: {
-          handle: {
-            background: "{surface.400}"
-          }
-        },
-        dark: {
-          handle: {
-            background: "{surface.600}"
-          }
         }
       }
     },
@@ -4310,31 +4226,28 @@ export const CyanLaraPreset = definePreset(Lara, {
         gap: "1rem"
       },
       stepHeader: {
-        padding: "0",
+        padding: "0.75rem 1rem",
         borderRadius: "{content.border.radius}",
         focusRing: {
-          width: "{focus.ring.width}",
-          style: "{focus.ring.style}",
-          color: "{focus.ring.color}",
-          offset: "{focus.ring.offset}",
-          shadow: "{focus.ring.shadow}"
+          width: "0",
+          style: "none",
+          color: "unset",
+          offset: "0",
+          shadow: "none"
         },
         gap: "0.5rem"
       },
       stepTitle: {
         color: "{text.muted.color}",
-        activeColor: "{primary.color}",
+        activeColor: "{text.color}",
         fontWeight: "500"
       },
       stepNumber: {
-        background: "{content.background}",
         activeBackground: "{primary.color}",
-        borderColor: "{content.border.color}",
         activeBorderColor: "{primary.color}",
-        color: "{text.muted.color}",
         activeColor: "{primary.contrast.color}",
-        size: "2.25rem",
-        fontSize: "1.125rem",
+        size: "2rem",
+        fontSize: "1.143rem",
         fontWeight: "500",
         borderRadius: "50%",
         shadow: "none"
@@ -4347,6 +4260,22 @@ export const CyanLaraPreset = definePreset(Lara, {
         color: "{content.color}",
         padding: "0",
         indent: "1rem"
+      },
+      colorScheme: {
+        light: {
+          stepNumber: {
+            background: "{surface.400}",
+            borderColor: "{surface.400}",
+            color: "{surface.0}"
+          }
+        },
+        dark: {
+          stepNumber: {
+            background: "{surface.200}",
+            borderColor: "{surface.200}",
+            color: "{surface.900}"
+          }
+        }
       }
     },
     steps: {
@@ -4374,16 +4303,16 @@ export const CyanLaraPreset = definePreset(Lara, {
       },
       itemNumber: {
         background: "{content.background}",
-        activeBackground: "{primary.color}",
+        activeBackground: "{content.background}",
         borderColor: "{content.border.color}",
-        activeBorderColor: "{primary.color}",
+        activeBorderColor: "{content.border.color}",
         color: "{text.muted.color}",
-        activeColor: "{primary.contrast.color}",
-        size: "2.25rem",
-        fontSize: "1.125rem",
+        activeColor: "{primary.color}",
+        size: "2rem",
+        fontSize: "1.143rem",
         fontWeight: "500",
         borderRadius: "50%",
-        shadow: "none"
+        shadow: "0px 0.5px 0px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12)"
       }
     },
     tabmenu: {
@@ -4391,21 +4320,24 @@ export const CyanLaraPreset = definePreset(Lara, {
         transitionDuration: "{transition.duration}"
       },
       tablist: {
-        borderWidth: "0",
+        borderWidth: "0 0 1px 0",
         background: "{content.background}",
         borderColor: "{content.border.color}"
       },
       item: {
-        borderWidth: "2px 0 0 0",
-        borderColor: "transparent",
-        hoverBorderColor: "transparent",
+        background: "transparent",
+        hoverBackground: "transparent",
+        activeBackground: "transparent",
+        borderWidth: "0 0 1px 0",
+        borderColor: "{content.border.color}",
+        hoverBorderColor: "{content.border.color}",
         activeBorderColor: "{primary.color}",
         color: "{text.muted.color}",
         hoverColor: "{text.color}",
         activeColor: "{primary.color}",
-        padding: "1rem 1.25rem",
+        padding: "1rem 1.125rem",
         fontWeight: "600",
-        margin: "0",
+        margin: "0 0 -1px 0",
         gap: "0.5rem",
         focusRing: {
           width: "{focus.ring.width}",
@@ -4421,25 +4353,9 @@ export const CyanLaraPreset = definePreset(Lara, {
         activeColor: "{primary.color}"
       },
       activeBar: {
-        height: "0",
-        bottom: "0",
-        background: "transparent"
-      },
-      colorScheme: {
-        light: {
-          item: {
-            background: "{surface.50}",
-            hoverBackground: "{surface.100}",
-            activeBackground: "{surface.0}"
-          }
-        },
-        dark: {
-          item: {
-            background: "{surface.800}",
-            hoverBackground: "{surface.700}",
-            activeBackground: "{surface.900}"
-          }
-        }
+        height: "1px",
+        bottom: "-1px",
+        background: "{primary.color}"
       }
     },
     tabs: {
@@ -4447,80 +4363,63 @@ export const CyanLaraPreset = definePreset(Lara, {
         transitionDuration: "{transition.duration}"
       },
       tablist: {
-        borderWidth: "0",
+        borderWidth: "0 0 1px 0",
         background: "{content.background}",
         borderColor: "{content.border.color}"
       },
       tab: {
-        borderWidth: "2px 0 0 0",
-        borderColor: "transparent",
-        hoverBorderColor: "transparent",
+        background: "transparent",
+        hoverBackground: "{content.hover.background}",
+        activeBackground: "transparent",
+        borderWidth: "0 0 1px 0",
+        borderColor: "{content.border.color}",
+        hoverBorderColor: "{content.border.color}",
         activeBorderColor: "{primary.color}",
-        color: "{text.muted.color}",
+        color: "{text.color}",
         hoverColor: "{text.color}",
         activeColor: "{primary.color}",
         padding: "1rem 1.25rem",
-        fontWeight: "700",
-        margin: "0",
+        fontWeight: "600",
+        margin: "0 0 -1px 0",
+        gap: "0.5rem",
         focusRing: {
-          width: "{focus.ring.width}",
-          style: "{focus.ring.style}",
-          color: "{focus.ring.color}",
-          offset: "{focus.ring.offset}",
-          shadow: "inset {focus.ring.shadow}"
+          width: "0",
+          style: "none",
+          color: "unset",
+          offset: "0",
+          shadow: "none"
         }
       },
       tabpanel: {
         background: "{content.background}",
         color: "{content.color}",
-        padding: "0.875rem 1.125rem 1.125rem 1.125rem",
+        padding: "1.25rem 1.25rem 1.25rem 1.25rem",
         focusRing: {
-          width: "{focus.ring.width}",
-          style: "{focus.ring.style}",
-          color: "{focus.ring.color}",
-          offset: "{focus.ring.offset}",
-          shadow: "inset {focus.ring.shadow}"
+          width: "0",
+          style: "none",
+          color: "unset",
+          offset: "0",
+          shadow: "none"
         }
       },
       navButton: {
         background: "{content.background}",
         color: "{text.muted.color}",
         hoverColor: "{text.color}",
-        width: "2.5rem",
+        width: "3rem",
+        shadow: "none",
         focusRing: {
-          width: "{focus.ring.width}",
-          style: "{focus.ring.style}",
-          color: "{focus.ring.color}",
-          offset: "{focus.ring.offset}",
-          shadow: "inset {focus.ring.shadow}"
+          width: "0",
+          style: "none",
+          color: "unset",
+          offset: "0",
+          shadow: "none"
         }
       },
       activeBar: {
-        height: "0",
-        bottom: "0",
-        background: "transparent"
-      },
-      colorScheme: {
-        light: {
-          navButton: {
-            shadow: "0px 0px 10px 50px rgba(255, 255, 255, 0.6)"
-          },
-          tab: {
-            background: "{surface.50}",
-            hoverBackground: "{surface.100}",
-            activeBackground: "{surface.0}"
-          }
-        },
-        dark: {
-          navButton: {
-            shadow: "0px 0px 10px 50px color-mix(in srgb, {content.background}, transparent 50%)"
-          },
-          tab: {
-            background: "{surface.800}",
-            hoverBackground: "{surface.700}",
-            activeBackground: "{surface.900}"
-          }
-        }
+        height: "2px",
+        bottom: "-1px",
+        background: "{primary.color}"
       }
     },
     tabview: {
@@ -4565,6 +4464,7 @@ export const CyanLaraPreset = definePreset(Lara, {
         background: "{form.field.background}",
         disabledBackground: "{form.field.disabled.background}",
         filledBackground: "{form.field.filled.background}",
+        filledHoverBackground: "{form.field.filled.hover.background}",
         filledFocusBackground: "{form.field.filled.focus.background}",
         borderColor: "{form.field.border.color}",
         hoverBorderColor: "{form.field.hover.border.color}",
@@ -4627,7 +4527,7 @@ export const CyanLaraPreset = definePreset(Lara, {
         }
       },
       submenu: {
-        mobileIndent: "1.25rem"
+        mobileIndent: "1rem"
       },
       submenuIcon: {
         size: "{navigation.submenu.icon.size}",
@@ -4745,61 +4645,71 @@ export const CyanLaraPreset = definePreset(Lara, {
         }
       },
       eventMarker: {
-        size: "1.125rem",
+        size: "1.5rem",
         borderRadius: "50%",
         borderWidth: "2px",
-        background: "{content.background}",
-        borderColor: "{primary.color}",
+        background: "{primary.color}",
         content: {
           borderRadius: "50%",
-          size: "0.375rem",
-          background: "transparent",
+          size: "0",
+          background: "{primary.color}",
           insetShadow: "none"
         }
       },
       eventConnector: {
         color: "{content.border.color}",
         size: "2px"
+      },
+      colorScheme: {
+        light: {
+          eventMarker: {
+            borderColor: "{surface.0}"
+          }
+        },
+        dark: {
+          eventMarker: {
+            borderColor: "{surface.900}"
+          }
+        }
       }
     },
     togglebutton: {
       root: {
-        padding: "0.625rem 1rem",
-        borderRadius: "{content.border.radius}",
+        padding: "0.75rem 1rem",
+        borderRadius: "{form.field.border.radius}",
         gap: "0.5rem",
         fontWeight: "500",
         background: "{form.field.background}",
         borderColor: "{form.field.border.color}",
         color: "{form.field.color}",
         hoverColor: "{form.field.color}",
-        checkedBackground: "{highlight.background}",
-        checkedColor: "{highlight.color}",
+        checkedColor: "{form.field.color}",
         checkedBorderColor: "{form.field.border.color}",
         disabledBackground: "{form.field.disabled.background}",
         disabledBorderColor: "{form.field.disabled.background}",
         disabledColor: "{form.field.disabled.color}",
         invalidBorderColor: "{form.field.invalid.border.color}",
         focusRing: {
-          width: "{form.field.focus.ring.width}",
-          style: "{form.field.focus.ring.style}",
-          color: "{form.field.focus.ring.color}",
-          offset: "{form.field.focus.ring.offset}",
-          shadow: "{form.field.focus.ring.shadow}"
+          width: "0",
+          style: "none",
+          offset: "0",
+          color: "unset",
+          shadow: "none"
         },
         transitionDuration: "{form.field.transition.duration}",
         sm: {
           fontSize: "{form.field.sm.font.size}",
-          padding: "0.5rem 0.75rem"
+          padding: "0.625rem 0.75rem"
         },
         lg: {
           fontSize: "{form.field.lg.font.size}",
-          padding: "0.75rem 1.25rem"
+          padding: "0.875rem 1.25rem"
         }
       },
       icon: {
         color: "{text.muted.color}",
         hoverColor: "{text.muted.color}",
-        checkedColor: "{highlight.color}",
+        checkedColor: "{text.muted.color}",
         disabledColor: "{form.field.disabled.color}"
       },
       content: {
@@ -4811,29 +4721,31 @@ export const CyanLaraPreset = definePreset(Lara, {
       colorScheme: {
         light: {
           root: {
-            hoverBackground: "{surface.100}"
+            hoverBackground: "{surface.100}",
+            checkedBackground: "{surface.200}"
           }
         },
         dark: {
           root: {
-            hoverBackground: "{surface.800}"
+            hoverBackground: "{surface.800}",
+            checkedBackground: "{surface.700}"
           }
         }
       }
     },
     toggleswitch: {
       root: {
-        width: "3rem",
-        height: "1.75rem",
+        width: "2.75rem",
+        height: "1rem",
         borderRadius: "30px",
-        gap: "0.25rem",
-        shadow: "{form.field.shadow}",
+        gap: "0px",
+        shadow: "none",
         focusRing: {
-          width: "{form.field.focus.ring.width}",
-          style: "{form.field.focus.ring.style}",
-          color: "{form.field.focus.ring.color}",
-          offset: "{form.field.focus.ring.offset}",
-          shadow: "{form.field.focus.ring.shadow}"
+          width: "0",
+          style: "none",
+          color: "unset",
+          offset: "0",
+          shadow: "none"
         },
         borderWidth: "1px",
         borderColor: "transparent",
@@ -4846,47 +4758,47 @@ export const CyanLaraPreset = definePreset(Lara, {
       },
       handle: {
         borderRadius: "50%",
-        size: "1.25rem"
+        size: "1.5rem"
       },
       colorScheme: {
         light: {
           root: {
             background: "{surface.300}",
-            disabledBackground: "{form.field.disabled.background}",
-            hoverBackground: "{surface.400}",
-            checkedBackground: "{primary.color}",
-            checkedHoverBackground: "{primary.hover.color}"
+            disabledBackground: "{surface.400}",
+            hoverBackground: "{surface.300}",
+            checkedBackground: "{primary.200}",
+            checkedHoverBackground: "{primary.200}"
           },
           handle: {
             background: "{surface.0}",
-            disabledBackground: "{form.field.disabled.color}",
+            disabledBackground: "{surface.200}",
             hoverBackground: "{surface.0}",
-            checkedBackground: "{surface.0}",
-            checkedHoverBackground: "{surface.0}",
+            checkedBackground: "{primary.color}",
+            checkedHoverBackground: "{primary.color}",
             color: "{text.muted.color}",
             hoverColor: "{text.color}",
-            checkedColor: "{primary.color}",
-            checkedHoverColor: "{primary.hover.color}"
+            checkedColor: "{primary.contrast.color}",
+            checkedHoverColor: "{primary.contrast.color}"
           }
         },
         dark: {
           root: {
             background: "{surface.700}",
             disabledBackground: "{surface.600}",
-            hoverBackground: "{surface.600}",
+            hoverBackground: "{surface.700}",
             checkedBackground: "{primary.color}",
-            checkedHoverBackground: "{primary.hover.color}"
+            checkedHoverBackground: "{primary.color}"
           },
           handle: {
             background: "{surface.400}",
-            disabledBackground: "{surface.900}",
+            disabledBackground: "{surface.500}",
             hoverBackground: "{surface.300}",
-            checkedBackground: "{surface.900}",
-            checkedHoverBackground: "{surface.900}",
-            color: "{surface.900}",
-            hoverColor: "{surface.800}",
-            checkedColor: "{primary.color}",
-            checkedHoverColor: "{primary.hover.color}"
+            checkedBackground: "{primary.200}",
+            checkedHoverBackground: "{primary.200}",
+            color: "{surface.800}",
+            hoverColor: "{surface.900}",
+            checkedColor: "{primary.contrast.color}",
+            checkedHoverColor: "{primary.contrast.color}"
           }
         }
       }
@@ -4897,12 +4809,12 @@ export const CyanLaraPreset = definePreset(Lara, {
         color: "{content.color}",
         padding: "1rem",
         gap: "2px",
-        indent: "1rem",
+        indent: "2rem",
         transitionDuration: "{transition.duration}"
       },
       node: {
-        padding: "0.375rem 0.625rem",
-        borderRadius: "{content.border.radius}",
+        padding: "0.5rem 0.75rem",
+        borderRadius: "{border.radius.xs}",
         hoverBackground: "{content.hover.background}",
         selectedBackground: "{highlight.background}",
         color: "{text.color}",
@@ -4912,10 +4824,10 @@ export const CyanLaraPreset = definePreset(Lara, {
           width: "{focus.ring.width}",
           style: "{focus.ring.style}",
           color: "{focus.ring.color}",
-          offset: "{focus.ring.offset}",
-          shadow: "inset {focus.ring.shadow}"
+          offset: "-1px",
+          shadow: "{focus.ring.shadow}"
         },
-        gap: "0.25rem"
+        gap: "0.5rem"
       },
       nodeIcon: {
         color: "{text.muted.color}",
@@ -4924,7 +4836,7 @@ export const CyanLaraPreset = definePreset(Lara, {
       },
       nodeToggleButton: {
         borderRadius: "50%",
-        size: "1.75rem",
+        size: "2rem",
         hoverBackground: "{content.hover.background}",
         selectedHoverBackground: "{content.background}",
         color: "{text.muted.color}",
@@ -4942,7 +4854,7 @@ export const CyanLaraPreset = definePreset(Lara, {
         size: "2rem"
       },
       filter: {
-        margin: "0 0 0.5rem 0"
+        margin: "0 0 0.75rem 0"
       }
     },
     treeselect: {
@@ -4997,14 +4909,14 @@ export const CyanLaraPreset = definePreset(Lara, {
       tree: {
         padding: "{list.padding}"
       },
-      clearIcon: {
-        color: "{form.field.icon.color}"
-      },
       emptyMessage: {
         padding: "{list.option.padding}"
       },
       chip: {
         borderRadius: "{border.radius.sm}"
+      },
+      clearIcon: {
+        color: "{form.field.icon.color}"
       }
     },
     treetable: {
@@ -5012,13 +4924,18 @@ export const CyanLaraPreset = definePreset(Lara, {
         transitionDuration: "{transition.duration}"
       },
       header: {
+        background: "{content.background}",
         borderColor: "{treetable.border.color}",
-        borderWidth: "1px 0 1px 0",
+        color: "{content.color}",
+        borderWidth: "0 0 1px 0",
         padding: "0.75rem 1rem"
       },
       headerCell: {
+        background: "{content.background}",
+        hoverBackground: "{content.hover.background}",
         selectedBackground: "{highlight.background}",
         borderColor: "{treetable.border.color}",
+        color: "{content.color}",
         hoverColor: "{content.hover.color}",
         selectedColor: "{highlight.color}",
         gap: "0.5rem",
@@ -5027,26 +4944,26 @@ export const CyanLaraPreset = definePreset(Lara, {
           width: "{focus.ring.width}",
           style: "{focus.ring.style}",
           color: "{focus.ring.color}",
-          offset: "{focus.ring.offset}",
-          shadow: "inset {focus.ring.shadow}"
+          offset: "-1px",
+          shadow: "{focus.ring.shadow}"
         }
       },
       columnTitle: {
-        fontWeight: "700"
+        fontWeight: "600"
       },
       row: {
         background: "{content.background}",
         hoverBackground: "{content.hover.background}",
         selectedBackground: "{highlight.background}",
         color: "{content.color}",
-        hoverColor: "{sr.hover.color}",
+        hoverColor: "{content.hover.color}",
         selectedColor: "{highlight.color}",
         focusRing: {
           width: "{focus.ring.width}",
           style: "{focus.ring.style}",
           color: "{focus.ring.color}",
-          offset: "{focus.ring.offset}",
-          shadow: "inset {focus.ring.shadow}"
+          offset: "-1px",
+          shadow: "{focus.ring.shadow}"
         }
       },
       bodyCell: {
@@ -5055,14 +4972,18 @@ export const CyanLaraPreset = definePreset(Lara, {
         gap: "0.5rem"
       },
       footerCell: {
+        background: "{content.background}",
         borderColor: "{treetable.border.color}",
+        color: "{content.color}",
         padding: "0.75rem 1rem"
       },
       columnFooter: {
-        fontWeight: "700"
+        fontWeight: "600"
       },
       footer: {
+        background: "{content.background}",
         borderColor: "{treetable.border.color}",
+        color: "{content.color}",
         borderWidth: "0 0 1px 0",
         padding: "0.75rem 1rem"
       },
@@ -5108,23 +5029,6 @@ export const CyanLaraPreset = definePreset(Lara, {
           root: {
             borderColor: "{content.border.color}"
           },
-          header: {
-            background: "{surface.50}",
-            color: "{text.color}"
-          },
-          headerCell: {
-            background: "{surface.50}",
-            hoverBackground: "{surface.100}",
-            color: "{text.color}"
-          },
-          footer: {
-            background: "{surface.50}",
-            color: "{text.color}"
-          },
-          footerCell: {
-            background: "{surface.50}",
-            color: "{text.color}"
-          },
           bodyCell: {
             selectedBorderColor: "{primary.100}"
           }
@@ -5132,23 +5036,6 @@ export const CyanLaraPreset = definePreset(Lara, {
         dark: {
           root: {
             borderColor: "{surface.800}"
-          },
-          header: {
-            background: "{surface.800}",
-            color: "{text.color}"
-          },
-          headerCell: {
-            background: "{surface.800}",
-            hoverBackground: "{surface.700}",
-            color: "{text.color}"
-          },
-          footer: {
-            background: "{surface.800}",
-            color: "{text.color}"
-          },
-          footerCell: {
-            background: "{surface.800}",
-            color: "{text.color}"
           },
           bodyCell: {
             selectedBorderColor: "{primary.900}"
@@ -5160,7 +5047,7 @@ export const CyanLaraPreset = definePreset(Lara, {
       root: {
         width: "25rem",
         borderRadius: "{content.border.radius}",
-        borderWidth: "0 0 0 6px",
+        borderWidth: "0",
         transitionDuration: "{transition.duration}"
       },
       icon: {
@@ -5196,88 +5083,88 @@ export const CyanLaraPreset = definePreset(Lara, {
       },
       colorScheme: {
         light: {
-          blur: "1.5px",
+          blur: "0",
           info: {
-            background: "color-mix(in srgb, {blue.50}, transparent 5%)",
-            borderColor: "{blue.500}",
+            background: "{blue.50}",
+            borderColor: "{blue.200}",
             color: "{blue.600}",
             detailColor: "{surface.700}",
-            shadow: "{overlay.popover.shadow}",
+            shadow: "0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12)",
             closeButton: {
               hoverBackground: "{blue.100}",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem {blue.200}"
+                color: "{blue.600}",
+                shadow: "none"
               }
             }
           },
           success: {
-            background: "color-mix(in srgb, {green.50}, transparent 5%)",
-            borderColor: "{green.500}",
+            background: "{green.50}",
+            borderColor: "{green.200}",
             color: "{green.600}",
             detailColor: "{surface.700}",
-            shadow: "{overlay.popover.shadow}",
+            shadow: "0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12)",
             closeButton: {
               hoverBackground: "{green.100}",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem {green.200}"
+                color: "{green.600}",
+                shadow: "none"
               }
             }
           },
           warn: {
-            background: "color-mix(in srgb,{yellow.50}, transparent 5%)",
-            borderColor: "{yellow.500}",
-            color: "{yellow.600}",
+            background: "{yellow.50}",
+            borderColor: "{yellow.200}",
+            color: "{yellow.900}",
             detailColor: "{surface.700}",
-            shadow: "{overlay.popover.shadow}",
+            shadow: "0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12)",
             closeButton: {
               hoverBackground: "{yellow.100}",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem {yellow.200}"
+                color: "{yellow.600}",
+                shadow: "none"
               }
             }
           },
           error: {
-            background: "color-mix(in srgb, {red.50}, transparent 5%)",
-            borderColor: "{red.500}",
+            background: "{red.50}",
+            borderColor: "{red.200}",
             color: "{red.600}",
             detailColor: "{surface.700}",
-            shadow: "{overlay.popover.shadow}",
+            shadow: "0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12)",
             closeButton: {
               hoverBackground: "{red.100}",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem {red.200}"
+                color: "{red.600}",
+                shadow: "none"
               }
             }
           },
           secondary: {
             background: "{surface.100}",
-            borderColor: "{surface.500}",
+            borderColor: "{surface.200}",
             color: "{surface.600}",
             detailColor: "{surface.700}",
-            shadow: "{overlay.popover.shadow}",
+            shadow: "0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12)",
             closeButton: {
               hoverBackground: "{surface.200}",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem {surface.200}"
+                color: "{surface.600}",
+                shadow: "none"
               }
             }
           },
           contrast: {
             background: "{surface.900}",
-            borderColor: "{primary.color}",
+            borderColor: "{surface.950}",
             color: "{surface.50}",
             detailColor: "{surface.0}",
-            shadow: "{overlay.popover.shadow}",
+            shadow: "0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12)",
             closeButton: {
               hoverBackground: "{surface.800}",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem {surface.400}"
+                color: "{surface.50}",
+                shadow: "none"
               }
             }
           }
@@ -5285,58 +5172,58 @@ export const CyanLaraPreset = definePreset(Lara, {
         dark: {
           blur: "10px",
           info: {
-            background: "color-mix(in srgb, {blue.500}, transparent 84%)",
+            background: "color-mix(in srgb, {blue.500}, transparent 36%)",
             borderColor: "color-mix(in srgb, {blue.700}, transparent 64%)",
-            color: "{blue.500}",
-            detailColor: "{surface.0}",
-            shadow: "{overlay.popover.shadow}",
+            color: "{surface.0}",
+            detailColor: "{blue.100}",
+            shadow: "0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12)",
             closeButton: {
               hoverBackground: "rgba(255, 255, 255, 0.05)",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem color-mix(in srgb, {blue.500}, transparent 80%)"
+                color: "{blue.500}",
+                shadow: "none"
               }
             }
           },
           success: {
-            background: "color-mix(in srgb, {green.500}, transparent 84%)",
+            background: "color-mix(in srgb, {green.500}, transparent 36%)",
             borderColor: "color-mix(in srgb, {green.700}, transparent 64%)",
-            color: "{green.500}",
-            detailColor: "{surface.0}",
-            shadow: "{overlay.popover.shadow}",
+            color: "{surface.0}",
+            detailColor: "{green.100}",
+            shadow: "0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12)",
             closeButton: {
               hoverBackground: "rgba(255, 255, 255, 0.05)",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem color-mix(in srgb, {green.500}, transparent 80%)"
+                color: "{green.500}",
+                shadow: "none"
               }
             }
           },
           warn: {
-            background: "color-mix(in srgb, {yellow.500}, transparent 84%)",
+            background: "color-mix(in srgb, {yellow.500}, transparent 36%)",
             borderColor: "color-mix(in srgb, {yellow.700}, transparent 64%)",
-            color: "{yellow.500}",
-            detailColor: "{surface.0}",
-            shadow: "{overlay.popover.shadow}",
+            color: "{surface.0}",
+            detailColor: "{yellow.50}",
+            shadow: "0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12)",
             closeButton: {
               hoverBackground: "rgba(255, 255, 255, 0.05)",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem color-mix(in srgb, {yellow.500}, transparent 80%)"
+                color: "{yellow.500}",
+                shadow: "none"
               }
             }
           },
           error: {
-            background: "color-mix(in srgb, {red.500}, transparent 84%)",
+            background: "color-mix(in srgb, {red.500}, transparent 36%)",
             borderColor: "color-mix(in srgb, {red.700}, transparent 64%)",
-            color: "{red.500}",
-            detailColor: "{surface.0}",
-            shadow: "{overlay.popover.shadow}",
+            color: "{surface.0}",
+            detailColor: "{red.100}",
+            shadow: "0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12)",
             closeButton: {
               hoverBackground: "rgba(255, 255, 255, 0.05)",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem color-mix(in srgb, {red.500}, transparent 80%)"
+                color: "{red.500}",
+                shadow: "none"
               }
             }
           },
@@ -5345,12 +5232,12 @@ export const CyanLaraPreset = definePreset(Lara, {
             borderColor: "{surface.700}",
             color: "{surface.300}",
             detailColor: "{surface.0}",
-            shadow: "{overlay.popover.shadow}",
+            shadow: "0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12)",
             closeButton: {
               hoverBackground: "{surface.700}",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem color-mix(in srgb, {surface.300}, transparent 80%)"
+                color: "{surface.300}",
+                shadow: "none"
               }
             }
           },
@@ -5359,12 +5246,12 @@ export const CyanLaraPreset = definePreset(Lara, {
             borderColor: "{surface.100}",
             color: "{surface.950}",
             detailColor: "{surface.950}",
-            shadow: "{overlay.popover.shadow}",
+            shadow: "0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12)",
             closeButton: {
               hoverBackground: "{surface.100}",
               focusRing: {
-                color: "{focus.ring.color}",
-                shadow: "0 0 0 0.2rem color-mix(in srgb, {surface.950}, transparent 80%)"
+                color: "{surface.950}",
+                shadow: "none"
               }
             }
           }
@@ -5373,24 +5260,22 @@ export const CyanLaraPreset = definePreset(Lara, {
     },
     toolbar: {
       root: {
-        background: "{content.background}",
-        borderColor: "{content.border.color}",
-        borderRadius: "{content.border.radius}",
         color: "{content.color}",
+        borderRadius: "{content.border.radius}",
         gap: "0.5rem",
-        padding: "0.75rem"
+        padding: "1rem"
       },
       colorScheme: {
         light: {
           root: {
-            background: "{surface.50}",
-            color: "{content.color}"
+            background: "{surface.100}",
+            borderColor: "{surface.100}"
           }
         },
         dark: {
           root: {
             background: "{surface.800}",
-            color: "{content.color}"
+            borderColor: "{surface.800}"
           }
         }
       }
@@ -5408,25 +5293,13 @@ export const CyanLaraPreset = definePreset(Lara, {
     },
     tooltip: {
       root: {
+        background: "{surface.600}",
+        color: "{surface.0}",
         maxWidth: "12.5rem",
         gutter: "0.25rem",
         shadow: "{overlay.popover.shadow}",
-        padding: "0.625rem 0.75rem",
+        padding: "0.5rem 0.75rem",
         borderRadius: "{overlay.popover.border.radius}"
-      },
-      colorScheme: {
-        light: {
-          root: {
-            background: "{surface.700}",
-            color: "{surface.0}"
-          }
-        },
-        dark: {
-          root: {
-            background: "{surface.700}",
-            color: "{surface.0}"
-          }
-        }
       }
     },
     ripple: {

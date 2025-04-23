@@ -10,7 +10,6 @@ import {DebugOutputCardComponent} from "@utility/debug-output-card.component";
 import {isDebugMode} from "@utility/is-debug-mode";
 import {StepperOneComponent} from "./stepper-one/stepper-one.component";
 import {animate, state, style, transition, trigger} from "@angular/animations";
-import {provideAnimations} from "@angular/platform-browser/animations";
 
 @Component({
   selector: 'prb-stepper',

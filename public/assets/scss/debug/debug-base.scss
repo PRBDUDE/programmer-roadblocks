@@ -1,17 +1,17 @@
 @forward "debug/color";
 
 :root {
-  --debug-border-radius: 10px;
-  --debug-header-padding: 0.4em;
-  --debug-variable-padding: 0.1em 1em;
-  --debug-content-padding: 0 1em;
-  --debug-line-height: 1.3em;
-  --debug-letter-spacing: 0.09em;
-  --debug-box-shadow: var(--p-yellow-100) 0 0 10px, var(--p-orange-300) 0 0 10px, var(--p-red-400) 0 0 10px;
+  --prb-debug-border-radius: 10px;
+  --prb-debug-header-padding: 0.4em;
+  --prb-debug-variable-padding: 0.1em 1em;
+  --prb-debug-content-padding: 0 1em;
+  --prb-debug-line-height: 1.3em;
+  --prb-debug-letter-spacing: 0.09em;
+  --prb-debug-box-shadow: var(--p-yellow-100) 0 0 10px, var(--p-orange-300) 0 0 10px, var(--p-red-400) 0 0 10px;
 }
 
 :root[class*="prb-dark-theme"] {
-  --debug-box-shadow: var(--p-yellow-200) 0 0 10px, var(--p-orange-400) 0 0 10px, var(--p-red-500) 0 0 10px;
+  --prb-debug-box-shadow: var(--p-yellow-200) 0 0 10px, var(--p-orange-400) 0 0 10px, var(--p-red-500) 0 0 10px;
 }
 
 .prb-debug-container-group {
