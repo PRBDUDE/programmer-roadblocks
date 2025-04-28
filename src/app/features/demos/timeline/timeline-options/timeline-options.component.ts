@@ -1,4 +1,4 @@
-import {Component, input, Input, model} from '@angular/core';
+import {Component, input, model} from '@angular/core';
 import {Checkbox} from "primeng/checkbox";
 import {DropdownModule} from "primeng/dropdown";
 import {FormsModule} from "@angular/forms";
