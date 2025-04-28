@@ -3,6 +3,7 @@ import {Checkbox} from "primeng/checkbox";
 import {DropdownModule} from "primeng/dropdown";
 import {FormsModule} from "@angular/forms";
 import {TimelineAlignmentItem} from "../module/timeline-alignment-item";
+import {Select} from "primeng/select";
 
 @Component({
   selector: 'prb-timeline-options',
@@ -10,6 +11,7 @@ import {TimelineAlignmentItem} from "../module/timeline-alignment-item";
     Checkbox,
     DropdownModule,
     FormsModule,
+    Select,
   ],
   templateUrl: './timeline-options.component.html',
   styleUrl: './timeline-options.component.scss'
