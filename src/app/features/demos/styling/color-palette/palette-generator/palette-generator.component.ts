@@ -56,10 +56,11 @@ export class PaletteGeneratorComponent {
       this.shades = Object.keys(this.colorValues);
     }
 
-    const colorNameKey = this.colorName().toLowerCase();
-    const nestedColorValues = {
-      [colorNameKey]: this.colorValues
-    };
-    console.log(nestedColorValues);
+    // Uncomment this to log the colors to the console
+    // const colorNameKey = this.colorName().toLowerCase();
+    // const nestedColorValues = {
+    //   [colorNameKey]: this.colorValues
+    // };
+    // console.log(nestedColorValues);
   }
 }
