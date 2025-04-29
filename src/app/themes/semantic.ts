@@ -1,8 +1,6 @@
 import {Sky} from "./colors/sky";
 import {Neutral} from "./colors/neutral";
 import {Beach} from "./colors/beach";
-import { Yellow } from "./colors/yellow";
-import { Teal } from "./colors/teal";
 
 export const Semantic = {
   semantic: {
