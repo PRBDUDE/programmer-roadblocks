@@ -83,7 +83,7 @@
 
     <div class="prb-button-container">
       <p-button label="Submit" type="submit" class="btn btn-primary" [size]="'small'" [disabled]="isFormValid()"/>
-      <p-button label="Reset" (onClick)="entryForm.reset()" class="btn btn-secondary" [size]="'small'" [disabled]="isFormTouched()"/>
+      <p-button label="Reset" severity="secondary" (onClick)="entryForm.reset()" class="btn btn-secondary" [size]="'small'" [disabled]="isFormTouched()"/>
     </div>
   </form>
 </div>
