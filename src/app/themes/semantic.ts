@@ -1,4 +1,8 @@
 import {Sky} from "./colors/sky";
+import {Neutral} from "./colors/neutral";
+import {Beach} from "./colors/beach";
+import { Yellow } from "./colors/yellow";
+import { Teal } from "./colors/teal";
 
 export const Semantic = {
   semantic: {
@@ -17,7 +21,8 @@ export const Semantic = {
           submenuLabel: {
             background: "{surface.200}",
           }
-        }
+        },
+        surface: Beach
       },
       dark: {
         navigation: {
@@ -28,7 +33,8 @@ export const Semantic = {
             background: "{surface.500}",
             color: "{text.color}"
           }
-        }
+        },
+        surface: Neutral
       }
     }
   }
