@@ -1,0 +1,35 @@
+.prb-options-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-height: 3em;
+  width: fit-content;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 10px;
+  background-color: var(--p-surface-300);
+
+  &.prb-options-center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .prb-options-label {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--prb-options-label-color);
+
+    .prb-options-label-text {
+      margin-right: 0.5em;
+    }
+
+    .prb-options-inline-mode {
+      margin-left: 0.5em;
+      font-size: 0.8em;
+      font-weight: normal;
+    }
+  }
+}

@@ -1,34 +1,68 @@
-<div class="prb-button-container">
-  Toggle switch to change the raised state of the buttons.
-  <p-toggle-switch [(ngModel)]="raised"></p-toggle-switch>
+<div class="prb-options-container">
+  <div class="prb-options-label">
+    <label for="raised" class="prb-options-label-text">Raised</label>
+    <p-toggle-switch id="raised" [(ngModel)]="raised"/>
+  </div>
+  <div class="prb-options-label">
+    <label for="raised" class="prb-options-label-text">Disabled</label>
+    <p-toggle-switch id="raised" [(ngModel)]="disabled"/>
+  </div>
 </div>
 <div class="prb-button-container">
-  <p-button label="Primary" [raised]="raised" size="small"/>
-  Primary button should only occur once on a page. It is the primary call-to-action on the page.
+  <p-button label="Primary" [raised]="raised" [size]="'small'" [disabled]="disabled"/>
+  <span class="prb-comment">Primary button should only occur once on a page. It is the primary call-to-action on the page.</span>
 </div>
 <div class="prb-button-container">
-  <p-button label="Secondary" severity="secondary" [raised]="raised" size="small"/>
-  Secondary button can occur multiple times on a page.
+  <p-button [label]="'Secondary'" severity="secondary" [raised]="raised" [size]="'small'" [disabled]="disabled"/>
+  <span class="prb-comment">Secondary button can occur multiple times on a page.</span>
 </div>
 <div class="prb-button-container">
-  <p-button label="Tertiary" [link]="true" [raised]="raised" size="small"/>
-  Tertiary button should only be used for settings or actions.
+  <p-button [label]="'Tertiary'" [link]="true" [raised]="raised" [size]="'small'" [disabled]="disabled"/>
+  <span class="prb-comment">Tertiary button should only be used for settings or actions.</span>
 </div>
 <div class="prb-button-container">
-  <p-button label="Danger" severity="danger" icon="pi pi-shield" [raised]="raised" badge="3" size="small"/>
+  <p-button [label]="'Danger'" [severity]="'danger'" [icon]="'pi pi-exclamation-circle'" [raised]="raised" badge="3"
+            [badgeSeverity]="'info'" [size]="'small'" [disabled]="disabled"/>
 </div>
 <div class="prb-button-container">
-  <p-button label="Success" severity="success" icon="pi pi-check" [raised]="raised" size="small"/>
+  <p-button [label]="'Danger'" [severity]="'danger'" [icon]="'pi pi-shield'" [raised]="raised" badge="7"
+            [badgeSeverity]="'contrast'" [size]="'large'" [disabled]="disabled"/>
 </div>
 <div class="prb-button-container">
-  <p-button label="Information" severity="info" icon="pi pi-info-circle" [raised]="raised" badge="2" size="small"/>
+  <p-button [label]="'Success'" [severity]="'success'" [icon]="'pi pi-check'" [raised]="raised" [size]="'small'"
+            [disabled]="disabled"/>
 </div>
 <div class="prb-button-container">
-  <p-button label="Warning" severity="warn" icon="pi pi-exclamation-triangle" [raised]="raised" size="small"/>
+  <p-button [label]="'Success'" [severity]="'success'" [icon]="'pi pi-thumbs-up-fill'" [raised]="raised"
+            [size]="'large'" [disabled]="disabled"/>
 </div>
 <div class="prb-button-container">
-  <p-button label="Contrast" severity="contrast" [raised]="raised" badge="1" size="small"/>
+  <p-button [label]="'Information'" [severity]="'info'" [icon]="'pi pi-info-circle'" [raised]="raised" badge="2"
+            [size]="'small'" [disabled]="disabled"/>
 </div>
 <div class="prb-button-container">
-  <p-button label="Plain" [raised]="raised" size="small"/>
+  <p-button [label]="'Information'" [severity]="'info'" [icon]="'pi pi-info-circle'" [raised]="raised" badge="14"
+            [size]="'large'" [disabled]="disabled"/>
+</div>
+<div class="prb-button-container">
+  <p-button [label]="'Warning'" [severity]="'warn'" [icon]="'pi pi-exclamation-triangle'" [raised]="raised"
+            [size]="'small'" [disabled]="disabled"/>
+</div>
+<div class="prb-button-container">
+  <p-button [label]="'Warning'" [severity]="'warn'" [icon]="'pi pi-exclamation-triangle'" [raised]="raised" badge="234"
+            [size]="'large'" [disabled]="disabled"/>
+</div>
+<div class="prb-button-container">
+  <p-button [label]="'Contrast'" [severity]="'contrast'" [raised]="raised" badge="1" [size]="'small'"
+            [disabled]="disabled"/>
+</div>
+<div class="prb-button-container">
+  <p-button [label]="'Contrast'" [severity]="'contrast'" [icon]="'pi pi-info-circle'" [raised]="raised" [size]="'large'"
+            [disabled]="disabled"/>
+</div>
+<div class="prb-button-container">
+  <p-button [label]="'Plain'" [raised]="raised" [size]="'small'" [disabled]="disabled"/>
+</div>
+<div class="prb-button-container">
+  <p-button [label]="'Plain'" [raised]="raised" [size]="'large'" [disabled]="disabled"/>
 </div>

@@ -15,4 +15,5 @@ import {FormsModule} from "@angular/forms";
 })
 export class ButtonDemoComponent {
   raised: boolean = false;
+  disabled: boolean = false;
 }
