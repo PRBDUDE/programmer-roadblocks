@@ -1,8 +1,55 @@
-.prb-button-container {
-  font-size: 1em;
-  margin-bottom: 10px;
+.prb-button-main-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
 
-  .prb-comment {
-    margin-left: 0.5em;
+.prb-button-group {
+  display: grid;
+  grid-template-columns: 13em 13em 4em;
+  grid-template-areas:
+    "large small control"
+    "comment comment comment";
+  margin-bottom: 0.5em;
+  border-radius: 10px;
+  border: 1px solid var(--prb-option-color-border);
+  box-shadow: 0 0 8px 8px rgba(0,0,0,0.2);
+  //box-shadow: 0 0 10px 10px var(--prb-option-color-border);
+  max-width: fit-content;
+  background-color: var(--p-surface-700);
+
+  .prb-button-container {
+    font-size: 1em;
+    margin-bottom: 3px;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+
+    &.prb-button-small,
+    &.prb-button-large {
+      padding: 1em;
+    }
+
+    &.prb-button-small {
+      grid-area: small;
+    }
+
+    &.prb-button-large {
+      grid-area: large;
+    }
+
+    &.prb-button-control {
+      grid-area: control;
+      font-size: 20pt;
+      padding: 0.2em;
+    }
+  }
+
+  .prb-button-comment {
+    padding: 10px;
+    grid-area: comment;
+    border-radius: 0 0 10px 10px;
+    background-color: var(--prb-comment-color-background);
+    color: var(--prb-comment-text-color);
   }
 }

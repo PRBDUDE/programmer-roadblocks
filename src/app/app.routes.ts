@@ -8,7 +8,8 @@ export const routes: Routes = [
   },
   {
     path: 'demo',
-    loadChildren: () => import('./features/demos/demo-routes').then(m => m.demo_routes),
+    loadChildren: () => import('./features/demos/demo-routes')
+      .then(m => m.demo_routes),
   },
   {
     path: 'reactive-forms/entry-form',
