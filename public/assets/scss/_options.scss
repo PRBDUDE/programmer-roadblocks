@@ -1,3 +1,13 @@
+:root {
+  --prb-option-color-background: var(--p-surface-500);
+  --prb-option-color-border: #333333;
+}
+
+:root[class*="prb-dark-theme"] {
+  --prb-option-color-background: var(--p-surface-400);
+  --prb-option-color-border: #cccccc;
+}
+
 .prb-options-container {
   display: flex;
   flex-wrap: wrap;
@@ -8,7 +18,8 @@
   margin: 1em;
   padding: 1em;
   border-radius: 10px;
-  background-color: var(--p-surface-300);
+  background-color: var(--prb-option-color-background);
+  border: 2px solid var(--prb-option-color-border);
 
   &.prb-options-center {
     margin-left: auto;

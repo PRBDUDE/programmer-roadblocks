@@ -3,6 +3,11 @@ import {RouterOutlet} from '@angular/router';
 import {RoadblockHeaderComponent} from "@rootComponents/roadblock-header.component";
 import {PrimeNG} from "primeng/config";
 import {RoadblockFooterComponent} from "@rootComponents/roadblock-footer.component";
+import {AuraPreset} from "./themes/aura-theme";
+import Aura from "@primeng/themes/aura";
+import Lara from "@primeng/themes/lara";
+import Material from "@primeng/themes/material";
+import Nora from "@primeng/themes/nora";
 
 @Component({
   selector: 'prb-root',
@@ -34,5 +39,24 @@ export class AppComponent implements OnInit {
       numeric: ['equals', 'notequals', 'lt', 'lte', 'gt', 'gte', 'in', 'notin'],
       date: ['equals', 'notequals', 'before', 'after', 'between', 'notbetween']
     };
+
+    console.log('Unmodified Theme - Aura: ',
+      Aura);
+    console.log('Unmodified Theme - Lara: ',
+      Lara);
+    console.log('Unmodified Theme - Material: ',
+      Material);
+    console.log('Unmodified Theme - Nora: ',
+      Nora);
+    console.log('Theme - Primitive: ',
+      AuraPreset.primitive);
+    console.log('Theme - Semantic: ',
+      AuraPreset.semantic);
+    console.log('Theme - Components: ',
+      AuraPreset.components);
+    console.log('components\nbutton: ' +
+      JSON.stringify(
+        AuraPreset.components.button,
+        undefined, 2));
   }
 }
