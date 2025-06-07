@@ -1,11 +1,9 @@
 :root {
-  --prb-comment-color-background: var(--p-surface-500);
-  --prb-comment-text-color: var(--p-surface-100);
-  --prb-comment-color-border: #333333;
+  --prb-comment-color-background: var(--p-surface-600);
+  --prb-comment-text-color: var(--p-surface-50);
 }
 
 :root[class*="prb-dark-theme"] {
   --prb-comment-color-background: var(--p-surface-400);
   --prb-comment-text-color: var(--p-surface-50);
-  --prb-comment-color-border: #cccccc;
 }
