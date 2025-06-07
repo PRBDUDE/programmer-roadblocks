@@ -12,12 +12,11 @@
     "large small control"
     "comment comment comment";
   margin-bottom: 0.5em;
-  border-radius: 10px;
-  border: 1px solid var(--prb-option-color-border);
-  box-shadow: 0 0 8px 8px rgba(0,0,0,0.2);
-  //box-shadow: 0 0 10px 10px var(--prb-option-color-border);
+  border-radius: var(--prb-button-demo-border-radius);
+  border: 1px solid var(--prb-card-color-border);
+  box-shadow: 3px 3px 6px 3px var(--prb-button-demo-shadow-color);
   max-width: fit-content;
-  background-color: var(--p-surface-700);
+  background-color: var(--prb-card-color-background);
 
   .prb-button-container {
     font-size: 1em;
@@ -48,7 +47,7 @@
   .prb-button-comment {
     padding: 10px;
     grid-area: comment;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 var(--prb-button-demo-border-radius) var(--prb-button-demo-border-radius);
     background-color: var(--prb-comment-color-background);
     color: var(--prb-comment-text-color);
   }
