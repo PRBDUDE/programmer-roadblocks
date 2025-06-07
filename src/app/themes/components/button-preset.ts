@@ -9,6 +9,7 @@ export const ButtonPreset = {
           borderColor: "{surface.300}",
           hoverBorderColor: "{surface.400}",
           activeBorderColor: "{surface.500}",
+          color: "{surface.950}",
         }
       }
     },
