@@ -13,11 +13,10 @@
     "comment comment comment";
   margin-bottom: 0.5em;
   border-radius: 10px;
-  border: 1px solid var(--prb-option-color-border);
+  border: 1px solid var(--prb-card-color-border);
   box-shadow: 0 0 8px 8px rgba(0,0,0,0.2);
-  //box-shadow: 0 0 10px 10px var(--prb-option-color-border);
   max-width: fit-content;
-  background-color: var(--p-surface-700);
+  background-color: var(--prb-card-color-background);
 
   .prb-button-container {
     font-size: 1em;

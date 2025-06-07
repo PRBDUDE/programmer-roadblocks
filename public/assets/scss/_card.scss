@@ -1,0 +1,12 @@
+:root {
+  --prb-card-color-background: var(--p-surface-100);
+  --prb-card-text-color: var(--p-surface-100);
+  --prb-card-color-border: #333333;
+}
+
+:root[class*="prb-dark-theme"] {
+  --prb-card-color-background: var(--p-surface-700);
+  --prb-card-text-color: var(--p-surface-50);
+  --prb-card-color-border: var(--p-surface-700);
+}
+
