@@ -1,12 +1,1 @@
 @use "../timeline-base";
-
-.prb-options-container {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 1em;
-  gap: 1em;
-
-  .prb-prompt-container {
-    padding: 5px 0;
-  }
-}

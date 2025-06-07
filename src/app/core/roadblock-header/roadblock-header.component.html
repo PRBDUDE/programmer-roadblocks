@@ -5,6 +5,7 @@
       <img ngSrc="/assets/images/roadblocks-logo.png"
            alt="Roadblocks Logo"
            class="prb-roadblocks-logo"
+           priority
            height="45"
            width="43"/>
       <span class="prb-roadblocks-text">Roadblocks</span>
@@ -31,6 +32,7 @@
               (click)="toggleColorPicker()"
               [rounded]="true"
               [pTooltip]="colorPicker"
+              [size]="'small'"
               showDelay="1000"
               tooltipPosition="left"/>
     <ng-template #colorPicker>
@@ -43,7 +45,7 @@
                   (click)="toggleDebugMode()"
                   class="btn btn-outline-secondary"
                   severity="secondary"
-                  size="small"
+                  [size]="'small'"
                   [rounded]="true"
                   [pTooltip]="toDebugMode"
                   showDelay="1000"
@@ -56,7 +58,7 @@
                   (click)="toggleDebugMode()"
                   class="btn btn-outline-primary"
                   severity="primary"
-                  size="small"
+                  [size]="'small'"
                   [rounded]="true"
                   [pTooltip]="toNormalMode"
                   showDelay="1000"
@@ -71,7 +73,7 @@
                 (click)="toggleDarkMode()"
                 class="btn btn-outline-secondary"
                 severity="secondary"
-                size="small"
+                [size]="'small'"
                 [rounded]="true"
                 [pTooltip]="'<i>Click icon</i> to switch to Dark Mode'"
                 showDelay="1000"
@@ -82,7 +84,7 @@
                 (click)="toggleDarkMode()"
                 class="btn btn-outline-secondary"
                 severity="secondary"
-                size="small"
+                [size]="'small'"
                 [rounded]="true"
                 [pTooltip]="'<i>Click icon</i> to switch to Light Mode'"
                 showDelay="1000"

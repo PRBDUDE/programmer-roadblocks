@@ -1,0 +1,34 @@
+<div class="prb-button-group">
+  <div class="prb-button-container prb-button-small">
+    <p-button [label]="label()"
+              [severity]="severity()"
+              [link]="link()"
+              [icon]="icon()"
+              [iconPos]="iconPos()"
+              [badge]="badge()"
+              [badgeSeverity]="badgeSeverity()"
+              [rounded]="rounded()"
+              [raised]="raised()"
+              [size]="'small'"
+              [disabled]="disabled()"/>
+  </div>
+  <div class="prb-button-container prb-button-large">
+    <p-button [label]="label()"
+              [severity]="severity()"
+              [link]="link()"
+              [icon]="icon()"
+              [iconPos]="iconPos()"
+              [badge]="badge()"
+              [badgeSeverity]="badgeSeverity()"
+              [rounded]="rounded()"
+              [raised]="raised()"
+              [size]="'large'"
+              [disabled]="disabled()"/>
+  </div>
+  <div class="prb-button-comment">
+    <ng-container [ngTemplateOutlet]="comment() || defaultComment"></ng-container>
+    <ng-template #defaultComment>
+      Comment goes here...
+    </ng-template>
+  </div>
+</div>
