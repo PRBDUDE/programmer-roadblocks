@@ -1,6 +1,15 @@
+.prb-page-alignment {
+  width: fit-content;
+  margin: 0 auto;
+
+  h1 {
+    text-align: center;
+  }
+}
+
 .prb-entry-container {
   width: fit-content;
-  margin-right: 4rem;
+  //margin-right: 4rem;
 
   form {
     margin-left: 1em;

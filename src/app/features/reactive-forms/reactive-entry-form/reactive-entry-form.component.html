@@ -1,103 +1,106 @@
-<h1>Reactive Entry Form</h1>
-<div class="prb-entry-container">
-  <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
-    <div [formGroupName]="'name'">
-      <div class="prb-form-group">
-        <input id="firstname" type="text" pInputText class="prb-form-input" [formControlName]="'first'"
-               placeholder="enter first name"/>
-        <label for="firstname" class="prb-form-group-label"
-               [ngClass]="{'required': firstNameControl.hasValidator(Validators.required)}">First Name</label>
-        <prb-reactive-error [formControl]="firstNameControl" class="prb-validation-feedback"/>
+<div class="prb-page-alignment">
+  <h1>Reactive Entry Form</h1>
+  <div class="prb-entry-container">
+    <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+      <div [formGroupName]="'name'">
+        <div class="prb-form-group">
+          <input id="firstname" type="text" pInputText class="prb-form-input" [formControlName]="'first'"
+                 placeholder="enter first name"/>
+          <label for="firstname" class="prb-form-group-label"
+                 [ngClass]="{'required': firstNameControl.hasValidator(Validators.required)}">First Name</label>
+          <prb-reactive-error [formControl]="firstNameControl" class="prb-validation-feedback"/>
+        </div>
+
+        <div class="prb-form-group">
+          <input id="lastname" type="text" pInputText class="prb-form-input" [formControlName]="'last'"
+                 placeholder="enter last name"/>
+          <label for="lastname" class="prb-form-group-label"
+                 [ngClass]="{'required': lastNameControl.hasValidator(Validators.required)}">Last Name</label>
+          <prb-reactive-error [formControl]="lastNameControl" class="prb-validation-feedback"/>
+        </div>
       </div>
 
-      <div class="prb-form-group">
-        <input id="lastname" type="text" pInputText class="prb-form-input" [formControlName]="'last'"
-               placeholder="enter last name"/>
-        <label for="lastname" class="prb-form-group-label"
-               [ngClass]="{'required': lastNameControl.hasValidator(Validators.required)}">Last Name</label>
-        <prb-reactive-error [formControl]="lastNameControl" class="prb-validation-feedback"/>
-      </div>
-    </div>
-
-    <div [formGroupName]="'personal'">
-      <div class="prb-form-group">
-        <p-datePicker id="dob" type="date" class="prb-form-input" [formControlName]="'birthdate'"
-                      placeholder="enter date of birth"/>
-        <label for="dob" class="prb-form-group-label"
-               [ngClass]="{'required': birthdateControl.hasValidator(Validators.required)}">Date of Birth</label>
-      </div>
-    </div>
-
-    <div [formGroupName]="'address'">
-      <div class="prb-form-group">
-        <input id="street" type="text" pInputText class="prb-form-input" [formControlName]="'street'"
-               placeholder="enter street address"/>
-        <label for="street" class="prb-form-group-label"
-               [ngClass]="{'required': streetControl.hasValidator(Validators.required)}">Street</label>
-        <prb-reactive-error [formControl]="streetControl" class="prb-validation-feedback"/>
+      <div [formGroupName]="'personal'">
+        <div class="prb-form-group">
+          <p-datePicker id="dob" type="date" class="prb-form-input" [formControlName]="'birthdate'"
+                        placeholder="enter date of birth"/>
+          <label for="dob" class="prb-form-group-label"
+                 [ngClass]="{'required': birthdateControl.hasValidator(Validators.required)}">Date of Birth</label>
+        </div>
       </div>
 
-      <div class="prb-form-group">
-        <input id="city" type="text" pInputText class="prb-form-input" [formControlName]="'city'"
-               placeholder="enter city name"/>
-        <label for="city" class="prb-form-group-label"
-               [ngClass]="{'required': cityControl.hasValidator(Validators.required)}">City</label>
-        <prb-reactive-error [formControl]="cityControl" class="prb-validation-feedback"/>
-      </div>
+      <div [formGroupName]="'address'">
+        <div class="prb-form-group">
+          <input id="street" type="text" pInputText class="prb-form-input" [formControlName]="'street'"
+                 placeholder="enter street address"/>
+          <label for="street" class="prb-form-group-label"
+                 [ngClass]="{'required': streetControl.hasValidator(Validators.required)}">Street</label>
+          <prb-reactive-error [formControl]="streetControl" class="prb-validation-feedback"/>
+        </div>
 
-      <div class="prb-form-group">
-        <input id="state" type="text" pInputText class="prb-form-input"
-               [ngClass]="{'uppercase': stateControl.value?.length > 0}" [formControlName]="'state'"
-               placeholder="enter state code"/>
-        <label for="state" class="prb-form-group-label"
-               [ngClass]="{'required': stateControl.hasValidator(Validators.required)}">State Code</label>
-        <prb-reactive-error [formControl]="stateControl" class="prb-validation-feedback"/>
-      </div>
+        <div class="prb-form-group">
+          <input id="city" type="text" pInputText class="prb-form-input" [formControlName]="'city'"
+                 placeholder="enter city name"/>
+          <label for="city" class="prb-form-group-label"
+                 [ngClass]="{'required': cityControl.hasValidator(Validators.required)}">City</label>
+          <prb-reactive-error [formControl]="cityControl" class="prb-validation-feedback"/>
+        </div>
 
-      <div class="prb-form-group">
+        <div class="prb-form-group">
+          <input id="state" type="text" pInputText class="prb-form-input"
+                 [ngClass]="{'uppercase': stateControl.value?.length > 0}" [formControlName]="'state'"
+                 placeholder="enter state code"/>
+          <label for="state" class="prb-form-group-label"
+                 [ngClass]="{'required': stateControl.hasValidator(Validators.required)}">State Code</label>
+          <prb-reactive-error [formControl]="stateControl" class="prb-validation-feedback"/>
+        </div>
+
+        <div class="prb-form-group">
         <span class="prb-form-group-label"
-               [ngClass]="{'required': zipControl.hasValidator(Validators.required)}">Zip</span>
-        <p-inputmask type="text" class="prb-form-input" [formControlName]="'zip'" autoClear="false"
-                     placeholder="enter ZIP code" mask="99999?-9999"></p-inputmask>
-        <prb-reactive-error [formControl]="zipControl" class="prb-validation-feedback"/>
-      </div>
-    </div>
-
-    <div [formGroupName]="'contact'">
-      <div class="prb-form-group">
-        <input id="email" type="email" pInputText class="prb-form-input" [formControlName]="'email'"
-               placeholder="some.name@example.com"/>
-        <label for="email" class="prb-form-group-label"
-               [ngClass]="{'required': emailControl.hasValidator(Validators.required)}">Email</label>
-        <prb-reactive-error [formControl]="emailControl" class="prb-validation-feedback"/>
+              [ngClass]="{'required': zipControl.hasValidator(Validators.required)}">Zip</span>
+          <p-inputmask type="text" class="prb-form-input" [formControlName]="'zip'" autoClear="false"
+                       placeholder="enter ZIP code" mask="99999?-9999"></p-inputmask>
+          <prb-reactive-error [formControl]="zipControl" class="prb-validation-feedback"/>
+        </div>
       </div>
 
-      <div class="prb-form-group">
+      <div [formGroupName]="'contact'">
+        <div class="prb-form-group">
+          <input id="email" type="email" pInputText class="prb-form-input" [formControlName]="'email'"
+                 placeholder="some.name@example.com"/>
+          <label for="email" class="prb-form-group-label"
+                 [ngClass]="{'required': emailControl.hasValidator(Validators.required)}">Email</label>
+          <prb-reactive-error [formControl]="emailControl" class="prb-validation-feedback"/>
+        </div>
+
+        <div class="prb-form-group">
         <span class="prb-form-group-label"
               [ngClass]="{'required': phoneControl.hasValidator(Validators.required)}">Phone</span>
-        <p-inputmask type="phone" class="prb-form-input prb-form-group-input" [formControlName]="'phone'"
-                     autoClear="false" placeholder="(999) 999-9999" mask="(999) 999-9999"></p-inputmask>
-        <prb-reactive-error [formControl]="phoneControl" class="prb-validation-feedback"/>
+          <p-inputmask type="phone" class="prb-form-input prb-form-group-input" [formControlName]="'phone'"
+                       autoClear="false" placeholder="(999) 999-9999" mask="(999) 999-9999"></p-inputmask>
+          <prb-reactive-error [formControl]="phoneControl" class="prb-validation-feedback"/>
+        </div>
       </div>
-    </div>
 
-    <div class="prb-button-container">
-      <p-button label="Submit" type="submit" class="btn btn-primary" [size]="'small'" [disabled]="isFormValid()"/>
-      <p-button label="Reset" severity="secondary" (onClick)="entryForm.reset()" class="btn btn-secondary" [size]="'small'" [disabled]="isFormTouched()"/>
-    </div>
-  </form>
-</div>
-
-@if (isDebugMode()) {
-  <div class="prb-reactive-debug-output-container">
-    <prb-debug-output-card
-      [title]="'Debug Output'"
-      [flat]="true"
-      [variableName]="'entryForm.value'"
-      [json]="entryForm.value"/>
-    <prb-debug-output-card
-      [flat]="true"
-      [variableName]="'phoneControl'"
-      [json]="phoneControl.value"/>
+      <div class="prb-button-container">
+        <p-button label="Submit" type="submit" class="btn btn-primary" [size]="'small'" [disabled]="isFormValid()"/>
+        <p-button label="Reset" severity="secondary" (onClick)="entryForm.reset()" class="btn btn-secondary"
+                  [size]="'small'" [disabled]="isFormTouched()"/>
+      </div>
+    </form>
   </div>
-}
+
+  @if (isDebugMode()) {
+    <div class="prb-reactive-debug-output-container">
+      <prb-debug-output-card
+        [title]="'Debug Output'"
+        [flat]="true"
+        [variableName]="'entryForm.value'"
+        [json]="entryForm.value"/>
+      <prb-debug-output-card
+        [flat]="true"
+        [variableName]="'phoneControl'"
+        [json]="phoneControl.value"/>
+    </div>
+  }
+</div>
