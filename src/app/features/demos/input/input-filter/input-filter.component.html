@@ -1,76 +1,78 @@
-<div class="prb-input-group">
-  <span class="prb-input-label">Phone Number:</span>
-  <p-inputMask
-    [(ngModel)]="phoneNumber.phoneNumber"
-    name="phone"
-    (focusin)="phoneNumber.hasFocus()"
-    (focusout)="phoneNumber.lostFocus()"
-    autoClear="false"
-    mask="(999) 999-9999"
-    placeholder="(123) 456-7890"></p-inputMask>
-  <prb-input-error [title]="'Phone Number'"
-                   [filterType]="phoneNumber"/>
-</div>
-
-<div class="prb-input-group">
-  <span class="prb-input-label">SSN:</span>
-  <p-inputMask
-    [(ngModel)]="ssn"
-    name="ssn"
-    (focusin)="ssn.hasFocus()"
-    (focusout)="ssn.lostFocus()"
-    placeholder="123-45-6789"
-    mask="999-99-9999"></p-inputMask>
-  <prb-input-error [filterType]="ssn"></prb-input-error>
-</div>
-
-<div class="prb-input-group">
-  <label for="vin" class="prb-input-label">VIN: </label>
-  <input type="text"
-         pInputText
-         [(ngModel)]="vin.vin"
-         id="vin"
-         name="vin"
-         maxlength="17"
-         (focusin)="vin.hasFocus()"
-         (focusout)="vin.lostFocus()"
-         placeholder="Enter VIN here"
-         pattern="[A-HJ-NPR-Z0-9]{17}">
-  <prb-input-error [filterType]="vin"></prb-input-error>
-</div>
-
-<div class="prb-input-group">
-  <label for="email" class="prb-input-label">Email: </label>
-  <input type="text"
-         pInputText
-         [(ngModel)]="email.email"
-         id="email"
-         name="email"
-         maxlength="30"
-         (focusin)="email.hasFocus()"
-         (focusout)="email.lostFocus()"
-         placeholder="Enter Email here"
-         pattern="[A-Za-z\d\.\-_]*@[A-za-z\d\.\-_]*\.[A-Za-z]{3}">
-  <prb-input-error [filterType]="email"></prb-input-error>
-</div>
-
-@if (isDebugMode()) {
-  <div class="prb-filter-debug-output-container">
-    <prb-debug-output-card
-      [variableName]="'phoneNumber'"
-      [flat]="true"
-      [json]="phoneNumber"/>
-    <prb-debug-output-card
-      [variableName]="'SSN'"
-      [flat]="true"
-      [json]="ssn"/>
-    <prb-debug-output-card
-      [variableName]="'VIN'"
-      [flat]="true"
-      [json]="vin"/>
-    <prb-debug-output-card
-      [variableName]="'email'"
-      [flat]="true"
-      [json]="email"/>
+<div class="prb-page-alignment">
+  <div class="prb-input-group">
+    <span class="prb-input-label">Phone Number:</span>
+    <p-inputMask
+      [(ngModel)]="phoneNumber.phoneNumber"
+      name="phone"
+      (focusin)="phoneNumber.hasFocus()"
+      (focusout)="phoneNumber.lostFocus()"
+      autoClear="false"
+      mask="(999) 999-9999"
+      placeholder="(123) 456-7890"></p-inputMask>
+    <prb-input-error [title]="'Phone Number'"
+                     [filterType]="phoneNumber"/>
   </div>
-}
+
+  <div class="prb-input-group">
+    <span class="prb-input-label">SSN:</span>
+    <p-inputMask
+      [(ngModel)]="ssn"
+      name="ssn"
+      (focusin)="ssn.hasFocus()"
+      (focusout)="ssn.lostFocus()"
+      placeholder="123-45-6789"
+      mask="999-99-9999"></p-inputMask>
+    <prb-input-error [filterType]="ssn"></prb-input-error>
+  </div>
+
+  <div class="prb-input-group">
+    <label for="vin" class="prb-input-label">VIN: </label>
+    <input type="text"
+           pInputText
+           [(ngModel)]="vin.vin"
+           id="vin"
+           name="vin"
+           maxlength="17"
+           (focusin)="vin.hasFocus()"
+           (focusout)="vin.lostFocus()"
+           placeholder="Enter VIN here"
+           pattern="[A-HJ-NPR-Z0-9]{17}">
+    <prb-input-error [filterType]="vin"></prb-input-error>
+  </div>
+
+  <div class="prb-input-group">
+    <label for="email" class="prb-input-label">Email: </label>
+    <input type="text"
+           pInputText
+           [(ngModel)]="email.email"
+           id="email"
+           name="email"
+           maxlength="30"
+           (focusin)="email.hasFocus()"
+           (focusout)="email.lostFocus()"
+           placeholder="Enter Email here"
+           pattern="[A-Za-z\d\.\-_]*@[A-za-z\d\.\-_]*\.[A-Za-z]{3}">
+    <prb-input-error [filterType]="email"></prb-input-error>
+  </div>
+
+  @if (isDebugMode()) {
+    <div class="prb-filter-debug-output-container">
+      <prb-debug-output-card
+        [variableName]="'phoneNumber'"
+        [flat]="true"
+        [json]="phoneNumber"/>
+      <prb-debug-output-card
+        [variableName]="'SSN'"
+        [flat]="true"
+        [json]="ssn"/>
+      <prb-debug-output-card
+        [variableName]="'VIN'"
+        [flat]="true"
+        [json]="vin"/>
+      <prb-debug-output-card
+        [variableName]="'email'"
+        [flat]="true"
+        [json]="email"/>
+    </div>
+  }
+</div>
