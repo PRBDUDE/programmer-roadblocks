@@ -29,9 +29,11 @@ export class ColorPaletteComponent {
 
   isSurfaceColor(color: string) {
     const colorValue = $dt(color + '.500').value;
-    let surfaceValue = $dt('surface.500').value.light.value;
+    let surfaceValue;
     if (isDarkMode()) {
       surfaceValue = $dt('surface.500').value.dark.value;
+    } else {
+      surfaceValue = $dt('surface.500').value?.light.value;
     }
     return colorValue === surfaceValue;
   }
