@@ -5,9 +5,9 @@
   </div>
   <div class="prb-color-palettes-list">
     @if (isDarkMode()) {
-      <prb-color-palette-generator [colorName]="'Dark Surface'" [isSurfaceColor]=true [baseColor]="surfaceColor().dark.value"/>
+      <prb-color-palette-generator [colorName]="'Dark Surface'" [isSurfaceColor]=true [baseColor]="surfaceColor()?.dark?.value"/>
     } @else {
-      <prb-color-palette-generator [colorName]="'Light Surface'" [isSurfaceColor]=true [baseColor]="surfaceColor().light.value"/>
+      <prb-color-palette-generator [colorName]="'Light Surface'" [isSurfaceColor]=true [baseColor]="surfaceColor()?.light?.value"/>
     }
   </div>
 </div>
