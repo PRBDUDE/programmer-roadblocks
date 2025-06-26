@@ -14,10 +14,10 @@ import {isDarkMode} from "@utility/is-dark-mode";
     Tooltip,
     NgClass
   ],
-  templateUrl: './color-palette.component.html',
-  styleUrl: './color-palette.component.scss'
+  templateUrl: './color-palette-picker.component.html',
+  styleUrl: './color-palette-picker.component.scss'
 })
-export class ColorPaletteComponent {
+export class ColorPalettePickerComponent {
   protected readonly setPrimaryColor = setPrimaryColor;
   protected readonly setSurfaceColor = setSurfaceColor;
 

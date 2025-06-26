@@ -10,7 +10,7 @@ import {NgOptimizedImage} from "@angular/common";
 import {reactiveFormsMenu} from "@rootComponents/menu/reactive-forms-menu";
 import {demosMenu} from "@rootComponents/menu/demos-menu";
 import {documentationMenu} from "@rootComponents/menu/documentation-menu";
-import {ColorPaletteComponent} from "@rootComponents/color-palette/color-palette.component";
+import {ColorPalettePickerComponent} from "@rootComponents/color-palette-picker/color-palette-picker.component";
 import {isDarkMode} from "@utility/is-dark-mode";
 
 @Component({
@@ -21,7 +21,7 @@ import {isDarkMode} from "@utility/is-dark-mode";
     Button,
     Tooltip,
     NgOptimizedImage,
-    ColorPaletteComponent
+    ColorPalettePickerComponent
   ],
   templateUrl: './roadblock-header.component.html',
   styleUrl: './roadblock-header.component.scss'
