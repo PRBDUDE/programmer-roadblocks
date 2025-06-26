@@ -1,4 +1,4 @@
-import {Component, DoCheck, OnInit, signal} from '@angular/core';
+import {Component, DoCheck, signal} from '@angular/core';
 import {$dt} from "@primeng/themes";
 import {ColorPaletteGeneratorComponent} from "./color-palette-generator/color-palette-generator.component";
 import {isDarkMode} from "@utility/is-dark-mode";
