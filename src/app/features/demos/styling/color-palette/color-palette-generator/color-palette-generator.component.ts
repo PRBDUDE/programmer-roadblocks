@@ -7,16 +7,16 @@ import {TableModule} from "primeng/table";
 export type PaletteShades = { [p: string]: string };
 
 @Component({
-  selector: 'prb-palette-generator',
+  selector: 'prb-color-palette-generator',
   imports: [
     InputText,
     FormsModule,
     TableModule
   ],
-  templateUrl: './palette-generator.component.html',
-  styleUrl: './palette-generator.component.scss'
+  templateUrl: './color-palette-generator.component.html',
+  styleUrl: './color-palette-generator.component.scss'
 })
-export class PaletteGeneratorComponent {
+export class ColorPaletteGeneratorComponent {
   colorName = input<string>('');
   isSurfaceColor = input<boolean>(false);
 

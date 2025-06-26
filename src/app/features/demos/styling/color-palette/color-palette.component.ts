@@ -1,12 +1,12 @@
 import {Component, DoCheck, OnInit, signal} from '@angular/core';
 import {$dt} from "@primeng/themes";
-import {PaletteGeneratorComponent} from "./palette-generator/palette-generator.component";
+import {ColorPaletteGeneratorComponent} from "./color-palette-generator/color-palette-generator.component";
 import {isDarkMode} from "@utility/is-dark-mode";
 
 @Component({
   selector: 'prb-color-palette',
   imports: [
-    PaletteGeneratorComponent
+    ColorPaletteGeneratorComponent
   ],
   templateUrl: './color-palette.component.html',
   styleUrl: './color-palette.component.scss'

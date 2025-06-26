@@ -1,17 +1,17 @@
 import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import {PaletteGeneratorComponent} from './palette-generator.component';
+import {ColorPaletteGeneratorComponent} from './color-palette-generator.component';
 
 describe('PalateGeneratorComponent', () => {
-  let component: PaletteGeneratorComponent;
-  let fixture: ComponentFixture<PaletteGeneratorComponent>;
+  let component: ColorPaletteGeneratorComponent;
+  let fixture: ComponentFixture<ColorPaletteGeneratorComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [PaletteGeneratorComponent]
+      imports: [ColorPaletteGeneratorComponent]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(PaletteGeneratorComponent);
+    fixture = TestBed.createComponent(ColorPaletteGeneratorComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
