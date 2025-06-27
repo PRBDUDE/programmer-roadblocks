@@ -1,7 +1,7 @@
 <div class="prb-form-group">
   <label
     for="{{_rfInputId}}"
-    class="prb-form-group-label">{{ label }}</label>
+    class="prb-form-group-label">{{ label() }}</label>
 <!--  <label-->
 <!--    for="{{_rfInputId}}"-->
 <!--    class="prb-form-group-label"-->
@@ -9,8 +9,8 @@
   <input
     id="{{_rfInputId}}"
     class="prb-form-input"
-    [type]="type"
-    [formControlName]="name"
+    [type]="type()"
+    [formControlName]="name()"
     [disabled]="disabled"
-    [placeholder]="placeholder"/>
+    [placeholder]="placeholder()"/>
 </div>

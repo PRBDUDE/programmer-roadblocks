@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, input, OnInit} from '@angular/core';
 import {CssProperty} from "./model/css-property";
 import {CssPropertyNameComponent} from "./css-property-name/css-property-name.component";
 import {CssPropertyValueComponent} from "./css-property-value/css-property-value.component";
@@ -13,8 +13,8 @@ import {CssPropertyValueComponent} from "./css-property-value/css-property-value
   styleUrl: './css-rule.component.scss'
 })
 export class CssRuleComponent implements OnInit {
-  @Input() selectors: string[] = [];
-  @Input() properties: CssProperty[] = [];
+  selectors = input<string[]>([]);
+  properties = input<CssProperty[]>([]);
 
   ngOnInit() {
     console.log(this.selectors);
