@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, input} from '@angular/core';
 import {BaseFilterType} from "@filters/base-filter-type";
 
 @Component({
@@ -11,9 +11,9 @@ export class InputErrorComponent {
   /**
    * Title of the box.
    */
-  @Input() title!: string;
+  title = input<string>();
   /**
    * Filter type to display error message for.
    */
-  @Input() filterType?: BaseFilterType;
+  filterType = input<BaseFilterType>();
 }

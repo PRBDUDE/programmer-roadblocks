@@ -1,13 +1,13 @@
-@if (filterType?.isInvalid()) {
+@if (filterType()?.isInvalid()) {
   <div class="prb-invalid-message">
-    @if (title) {
+    @if (title()) {
       <div class="prb-invalid-title">
-        {{ title }}
+        {{ title() }}
       </div>
     }
     <div class="prb-invalid-description">
       <ul>
-        @for (message of filterType?.getErrorMessages(); track message) {
+        @for (message of filterType()?.getErrorMessages(); track message) {
           <li>
             {{ message }}
           </li>
