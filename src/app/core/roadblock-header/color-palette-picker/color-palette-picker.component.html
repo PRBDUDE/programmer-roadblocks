@@ -1,4 +1,5 @@
-<div class="prb-color-palette-panel">
+<div class="prb-color-palette-panel"
+     [ngClass]="{'prb-show': isMode(prbModes.colorPicker)}">
   <div class="prb-color-palette">
     <div class="prb-color-palette-label">Primary</div>
     <div class="prb-color-palette-items">

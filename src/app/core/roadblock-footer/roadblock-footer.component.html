@@ -1,7 +1,30 @@
-<div class="prb-roadblock-footer">
-  <div class="prb-roadblock-footer-content">
-    <div class="prb-roadblock-footer-text">
-      Programmer Roadblocks &copy; {{ year }}
+<div class="prb-roadblock-footer"
+     [ngClass]="{'prb-tall':!isMode(prbModes.fixedFooter)}">
+  <div class="prb-roadblock-footer-copyright">
+    <prb-copyright/>
+  </div>
+  <div class="prb-roadblock-social-media-links">
+    <prb-social-media-links
+      [links]="socialMediaLinks"
+      [size]="'small'"
+      [column]="!isMode(prbModes.fixedFooter)"/>
+  </div>
+  <div class="prb-roadblock-info">
+    <h2>About</h2>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Iste iusto libero quidem reiciendis sapiente. Enim esse
+      fugiat molestias non officia porro quia, sunt!
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Iste iusto libero quidem reiciendis sapiente.
+    </div>
+    <h2>Contact Information</h2>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Iste iusto libero quidem reiciendis sapiente. Enim esse
+      fugiat molestias non officia porro quia, sunt!
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Iste iusto libero quidem reiciendis sapiente.
     </div>
   </div>
 </div>

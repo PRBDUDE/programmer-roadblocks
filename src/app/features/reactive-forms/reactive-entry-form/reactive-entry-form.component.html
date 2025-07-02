@@ -90,7 +90,7 @@
     </form>
   </div>
 
-  @if (isDebugMode()) {
+  @if (isMode(prbModes.debug)) {
     <div class="prb-reactive-debug-output-container">
       <prb-debug-output-card
         [title]="'Debug Output'"
