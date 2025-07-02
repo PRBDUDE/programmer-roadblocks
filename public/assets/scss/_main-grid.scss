@@ -1,29 +1,51 @@
+:root {
+  --prb-footer-height: 3.5em;
+
+  &[class*="prb-fixed-footer"] {
+    --prb-footer-height: 111px;
+  }
+}
+
 .prb-main-grid-container {
   position: fixed;
   width: 100%;
   display: grid;
   grid-template-areas:
-    "header"
     "content"
     "footer";
   gap: 4px;
   background-color: var(--p-surface-100);
-
-  .prb-main-grid-header {
-    grid-area: header;
-  }
+  max-height: calc(100vh - var(--prb-footer-height));
+  height: 100vh;
+  overflow-y: auto;
 
   .prb-main-grid-content {
     grid-area: content;
-    overflow-y: auto;
     padding: 10px;
-    max-height: calc(100vh - 111px);
-    height: 100vh;
     background-color: var(--p-surface-100);
   }
 
   .prb-main-grid-footer {
+    min-height: var(--prb-footer-height);
     grid-area: footer;
+  }
+}
+
+:root[class*="prb-fixed-footer"] {
+  .prb-main-grid-container {
+    max-height: unset;
+    height: unset;
+    overflow-y: unset;
+
+    .prb-main-grid-content {
+      overflow-y: auto;
+      max-height: calc(100vh - var(--prb-footer-height));
+      height: 100vh;
+    }
+
+    .prb-main-grid-footer {
+      min-height: var(--prb-footer-height);
+    }
   }
 }
 
