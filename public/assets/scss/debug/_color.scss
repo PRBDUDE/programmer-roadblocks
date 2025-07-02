@@ -11,14 +11,14 @@
   --prb-debug-content-margin: 0.5em 0;
   --prb-debug-variable-name-label-color: var(--p-surface-900);
   --prb-debug-variable-name-label-font-weight: 900;
-}
 
-:root[class*="prb-dark-theme"] {
-  --prb-debug-background-color: var(--p-surface-700);
-  --prb-debug-text-color: var(--p-surface-100);
-  --prb-debug-border-color: var(--p-surface-100);
-  --prb-debug-header-background-color: var(--p-surface-800);
-  --prb-debug-variable-background-color: var(--p-surface-900);
-  --prb-debug-type-color: var(--p-primary-400);
-  --prb-debug-variable-name-label-color: var(--p-surface-300);
+  &[class*="prb-dark-theme"] {
+    --prb-debug-background-color: var(--p-surface-700);
+    --prb-debug-text-color: var(--p-surface-100);
+    --prb-debug-border-color: var(--p-surface-100);
+    --prb-debug-header-background-color: var(--p-surface-800);
+    --prb-debug-variable-background-color: var(--p-surface-900);
+    --prb-debug-type-color: var(--p-primary-400);
+    --prb-debug-variable-name-label-color: var(--p-surface-300);
+  }
 }

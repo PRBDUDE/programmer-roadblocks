@@ -8,10 +8,10 @@
   --prb-debug-line-height: 1.3em;
   --prb-debug-letter-spacing: 0.09em;
   --prb-debug-box-shadow: var(--p-yellow-100) 0 0 10px, var(--p-orange-300) 0 0 10px, var(--p-red-400) 0 0 10px;
-}
 
-:root[class*="prb-dark-theme"] {
-  --prb-debug-box-shadow: var(--p-yellow-200) 0 0 10px, var(--p-orange-400) 0 0 10px, var(--p-red-500) 0 0 10px;
+  &[class*="prb-dark-theme"] {
+    --prb-debug-box-shadow: var(--p-yellow-200) 0 0 10px, var(--p-orange-400) 0 0 10px, var(--p-red-500) 0 0 10px;
+  }
 }
 
 .prb-debug-container-group {

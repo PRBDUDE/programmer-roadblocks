@@ -1,8 +1,8 @@
 :root {
   --prb-button-demo-border-radius: 12px;
-  --prb-button-demo-shadow-color: rgba(0,0,0,0.1);
-}
+  --prb-button-demo-shadow-color: rgba(0, 0, 0, 0.1);
 
-:root[class*="prb-dark-theme"] {
-  --prb-button-demo-shadow-color: rgba(255,255,255,0.2);
+  &[class*="prb-dark-theme"] {
+    --prb-button-demo-shadow-color: rgba(255, 255, 255, 0.2);
+  }
 }

@@ -1,9 +1,9 @@
 :root {
   --prb-footer-background-color: var(--p-surface-300);
   --prb-footer-text-color: var(--p-text-color);
-}
 
-:root[class*="prb-dark-theme"] {
-  --prb-footer-background-color: var(--p-surface-700);
-  --prb-footer-text-color: var(--p-text-color-inverse);
+  &[class*="prb-dark-theme"] {
+    --prb-footer-background-color: var(--p-surface-700);
+    --prb-footer-text-color: var(--p-text-color-inverse);
+  }
 }

@@ -8,8 +8,8 @@
   --prb-page-not-found-border-radius: 10px;
   --prb-page-not-found-font-size: 1.2rem;
   --prb-page-not-found-shadow: var(--p-orange-300) 0 0 10px, var(--p-red-400) 0 0 10px;
-}
 
-:root[class*="prb-dark-theme"] {
-  --prb-page-not-found-shadow: var(--p-orange-400) 0 0 10px, var(--p-red-500) 0 0 10px;
+  &[class*="prb-dark-theme"] {
+    --prb-page-not-found-shadow: var(--p-orange-400) 0 0 10px, var(--p-red-500) 0 0 10px;
+  }
 }

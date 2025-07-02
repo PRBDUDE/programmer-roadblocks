@@ -44,52 +44,52 @@
   --prb-color-information-background-color: var(--p-surface-300);
   --prb-color-information-box-shadow: var(--p-surface-500);
   --prb-color-code-background-color: var(--p-surface-800);
-}
 
-:root[class*="prb-dark-theme"] {
-  --prb-color-css-ampersand-selector: var(--p-amber-600);
-  --prb-color-css-at-keyword: var(--p-amber-600);
-  --prb-color-css-attribute-name: var(--p-amber-600);
-  --prb-color-css-bad-character: var(--p-red-600);
-  --prb-color-css-braces: var(--p-surface-100);
-  --prb-color-css-brackets: var(--p-surface-100);
-  --prb-color-css-class-name: var(--p-amber-600);
-  --prb-color-css-colon: var(--p-surface-200);
-  --prb-color-css-comma: var(--p-amber-600);
-  --prb-color-css-comment: var(--p-cyan-200);
-  --prb-color-css-dot: var(--p-surface-200);
-  --prb-color-css-function: var(--p-amber-600);
-  --prb-color-css-hex: var(--p-sky-400);
-  --prb-color-css-id-selector: var(--p-amber-600);
-  --prb-color-css-identifier: var(--p-amber-600);
-  --prb-color-css-important: var(--p-amber-700);
-  --prb-color-css-number: var(--p-cyan-300);
-  --prb-color-css-operation-sign: var(--p-surface-200);
-  --prb-color-css-parenthesis: var(--p-surface-200);
-  --prb-color-css-property-name: var(--p-surface-100);
-  --prb-color-css-property-value: var(--p-green-500);
-  --prb-color-css-pseudo-selector: var(--p-amber-600);
-  --prb-color-css-semicolon: var(--p-amber-600);
-  --prb-color-css-string: var(--p-green-500);
-  --prb-color-css-tag-name: var(--p-amber-600);
-  --prb-color-css-unicode-range: var(--p-amber-600);
-  --prb-color-css-unit: var(--p-green-500);
-  --prb-color-css-url: var(--p-green-500);
-  --prb-color-css-variable: var(--p-sky-400);
+  &[class*="prb-dark-theme"] {
+    --prb-color-css-ampersand-selector: var(--p-amber-600);
+    --prb-color-css-at-keyword: var(--p-amber-600);
+    --prb-color-css-attribute-name: var(--p-amber-600);
+    --prb-color-css-bad-character: var(--p-red-600);
+    --prb-color-css-braces: var(--p-surface-100);
+    --prb-color-css-brackets: var(--p-surface-100);
+    --prb-color-css-class-name: var(--p-amber-600);
+    --prb-color-css-colon: var(--p-surface-200);
+    --prb-color-css-comma: var(--p-amber-600);
+    --prb-color-css-comment: var(--p-cyan-200);
+    --prb-color-css-dot: var(--p-surface-200);
+    --prb-color-css-function: var(--p-amber-600);
+    --prb-color-css-hex: var(--p-sky-400);
+    --prb-color-css-id-selector: var(--p-amber-600);
+    --prb-color-css-identifier: var(--p-amber-600);
+    --prb-color-css-important: var(--p-amber-700);
+    --prb-color-css-number: var(--p-cyan-300);
+    --prb-color-css-operation-sign: var(--p-surface-200);
+    --prb-color-css-parenthesis: var(--p-surface-200);
+    --prb-color-css-property-name: var(--p-surface-100);
+    --prb-color-css-property-value: var(--p-green-500);
+    --prb-color-css-pseudo-selector: var(--p-amber-600);
+    --prb-color-css-semicolon: var(--p-amber-600);
+    --prb-color-css-string: var(--p-green-500);
+    --prb-color-css-tag-name: var(--p-amber-600);
+    --prb-color-css-unicode-range: var(--p-amber-600);
+    --prb-color-css-unit: var(--p-green-500);
+    --prb-color-css-url: var(--p-green-500);
+    --prb-color-css-variable: var(--p-sky-400);
 
-  --prb-color-html-attribute-name: var(--p-surface-100);
-  --prb-color-html-attribute-value: var(--p-green-500);
-  --prb-color-html-comment: var(--p-cyan-200);
-  --prb-color-html-custom-tag-name: var(--p-teal-400);
-  --prb-color-html-entity-reference: var(--p-sky-400);
-  --prb-color-html-code: var(--p-surface-200);
-  --prb-color-html-injected-language-fragment: var(--p-green-950);
-  --prb-color-html-tag: var(--p-amber-600);
-  --prb-color-html-tag-tree: var(--p-amber-600);
-  --prb-color-html-inner-text: var(--p-surface-100);
-  --prb-color-html-link-text: var(--p-surface-100);
+    --prb-color-html-attribute-name: var(--p-surface-100);
+    --prb-color-html-attribute-value: var(--p-green-500);
+    --prb-color-html-comment: var(--p-cyan-200);
+    --prb-color-html-custom-tag-name: var(--p-teal-400);
+    --prb-color-html-entity-reference: var(--p-sky-400);
+    --prb-color-html-code: var(--p-surface-200);
+    --prb-color-html-injected-language-fragment: var(--p-green-950);
+    --prb-color-html-tag: var(--p-amber-600);
+    --prb-color-html-tag-tree: var(--p-amber-600);
+    --prb-color-html-inner-text: var(--p-surface-100);
+    --prb-color-html-link-text: var(--p-surface-100);
 
-  --prb-color-information-background-color: var(--p-surface-800);
-  --prb-color-information-box-shadow: var(--p-surface-300);
-  --prb-color-code-background-color: var(--p-surface-700);
+    --prb-color-information-background-color: var(--p-surface-800);
+    --prb-color-information-box-shadow: var(--p-surface-300);
+    --prb-color-code-background-color: var(--p-surface-700);
+  }
 }
