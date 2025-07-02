@@ -1,30 +1,25 @@
-import {Component, input, Input} from '@angular/core';
+import {Component, input} from '@angular/core';
 import {Button} from "primeng/button";
+import {SocialMediaLink} from "@model/social-media-link";
+import {Tooltip} from "primeng/tooltip";
+import {NgClass} from "@angular/common";
 
 @Component({
   selector: 'prb-social-media-links',
-    imports: [
-        Button
-    ],
+  imports: [
+    Button,
+    Tooltip,
+    NgClass
+  ],
   templateUrl: './social-media-links.component.html',
   styleUrl: './social-media-links.component.scss'
 })
 export class SocialMediaLinksComponent {
+  links = input<SocialMediaLink[]>();
   size = input<'large' | 'small' | undefined>();
+  column = input<boolean>(false);
 
-  onClickTikTok() {
-    console.log("clicked TikTok link")
-  }
-
-  onClickTwitch() {
-    console.log("clicked Twitch link")
-  }
-
-  onClickTwitter() {
-    console.log("clicked Twitter link")
-  }
-
-  onClickYoutube() {
-    console.log("clicked YouTube link")
+  onClick(url: string) {
+    console.log("clicked " + url + " link");
   }
 }
