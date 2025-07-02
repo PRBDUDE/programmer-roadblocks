@@ -10,7 +10,7 @@ import {Button} from "primeng/button";
 import {ToggleSwitch} from "primeng/toggleswitch";
 import {FormsModule} from "@angular/forms";
 import {DebugOutputCardComponent} from "@utility/debug-output-card.component";
-import {isMode, prbModes} from "@utility/is-mode";
+import {isPrbMode, prbModes} from "@utility/is-prb-mode";
 
 @Component({
   selector: 'prb-steps',
@@ -64,6 +64,6 @@ export class StepsComponent {
     this.activeIndex = $event;
   }
 
-  protected readonly isMode = isMode;
+  protected readonly isMode = isPrbMode;
   protected readonly prbModes = prbModes;
 }

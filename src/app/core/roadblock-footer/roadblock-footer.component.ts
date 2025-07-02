@@ -3,7 +3,7 @@ import {SocialMediaLinksComponent} from "../social-media-links/social-media-link
 import {SocialMediaLink} from "@model/social-media-link";
 import {CopyrightComponent} from "@rootComponents/copyright/copyright.component";
 import {NgClass} from "@angular/common";
-import {isMode, prbModes} from "@utility/is-mode";
+import {isPrbMode, prbModes} from "@utility/is-prb-mode";
 
 @Component({
   selector: 'prb-roadblock-footer',
@@ -54,6 +54,6 @@ export class RoadblockFooterComponent {
       message: 'lorem ipsum dolor sit amet'
     }
   ] as SocialMediaLink[];
-  protected readonly isMode = isMode;
+  protected readonly isMode = isPrbMode;
   protected readonly prbModes = prbModes;
 }

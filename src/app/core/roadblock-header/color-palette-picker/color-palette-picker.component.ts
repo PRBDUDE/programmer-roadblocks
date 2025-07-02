@@ -5,7 +5,7 @@ import {$dt} from "@primeng/themes";
 import {setPrimaryColor} from "@utility/set-primary-color";
 import {NgClass} from "@angular/common";
 import {setSurfaceColor} from "@utility/set-surface-color";
-import {isMode, prbModes} from "@utility/is-mode";
+import {isPrbMode, prbModes} from "@utility/is-prb-mode";
 
 @Component({
   selector: 'prb-color-palette',
@@ -30,7 +30,7 @@ export class ColorPalettePickerComponent {
   isSurfaceColor(color: string) {
     const colorValue = $dt(color + '.500').value;
     let surfaceValue;
-    if (isMode(prbModes.dark)) {
+    if (isPrbMode(prbModes.dark)) {
       surfaceValue = $dt('surface.500').value?.dark?.value;
     } else {
       surfaceValue = $dt('surface.500').value?.light?.value;
@@ -39,5 +39,5 @@ export class ColorPalettePickerComponent {
   }
 
   protected readonly prbModes = prbModes;
-  protected readonly isMode = isMode;
+  protected readonly isMode = isPrbMode;
 }

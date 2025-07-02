@@ -10,7 +10,7 @@ import {reactiveFormsMenu} from "@rootComponents/menu/reactive-forms-menu";
 import {demosMenu} from "@rootComponents/menu/demos-menu";
 import {documentationMenu} from "@rootComponents/menu/documentation-menu";
 import {ColorPalettePickerComponent} from "@rootComponents/color-palette-picker/color-palette-picker.component";
-import {isMode, prbModes, toggleMode} from "@utility/is-mode";
+import {isPrbMode, prbModes, toggleMode} from "@utility/is-prb-mode";
 
 @Component({
   selector: 'prb-roadblock-header',
@@ -38,7 +38,7 @@ export class RoadblockHeaderComponent implements OnInit {
     ]
   }
 
-  protected readonly isMode = isMode;
+  protected readonly isMode = isPrbMode;
   protected readonly prbModes = prbModes;
   protected readonly toggleMode = toggleMode;
 }

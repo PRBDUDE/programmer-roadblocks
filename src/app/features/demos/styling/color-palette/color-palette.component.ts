@@ -1,7 +1,7 @@
 import {Component, DoCheck, signal} from '@angular/core';
 import {$dt} from "@primeng/themes";
 import {ColorPaletteGeneratorComponent} from "./color-palette-generator/color-palette-generator.component";
-import {isMode, prbModes} from "@utility/is-mode";
+import {isPrbMode, prbModes} from "@utility/is-prb-mode";
 
 @Component({
   selector: 'prb-color-palette',
@@ -46,6 +46,6 @@ export class ColorPaletteComponent implements DoCheck {
   oceanColor = signal<any>($dt('ocean.500').value);
   beachColor = signal<any>($dt('beach.500').value);
 
-  protected readonly isMode = isMode;
+  protected readonly isMode = isPrbMode;
   protected readonly prbModes = prbModes;
 }

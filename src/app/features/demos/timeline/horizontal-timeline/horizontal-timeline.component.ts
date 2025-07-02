@@ -9,7 +9,7 @@ import {TimelineAlignmentItem} from "../module/timeline-alignment-item";
 import {TimelineCore} from "../timeline-core";
 import {TimelineOptionsComponent} from "../timeline-options/timeline-options.component";
 import {DebugOutputCardComponent} from "@utility/debug-output-card.component";
-import {isMode, prbModes} from "@utility/is-mode";
+import {isPrbMode, prbModes} from "@utility/is-prb-mode";
 
 @Component({
   selector: 'prb-horizontal-timeline',
@@ -37,6 +37,6 @@ export class HorizontalTimelineComponent extends TimelineCore {
     this.timelineItems.set(timelineData());
   }
 
-  protected readonly isMode = isMode;
+  protected readonly isMode = isPrbMode;
   protected readonly prbModes = prbModes;
 }

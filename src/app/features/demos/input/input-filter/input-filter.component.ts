@@ -8,7 +8,7 @@ import {VinFilter} from "@filters/vin-filter";
 import {EmailFilter} from "@filters/email-filter";
 import {InputErrorComponent} from "@errorHandlers/input-error.component";
 import {DebugOutputCardComponent} from "@utility/debug-output-card.component";
-import {isMode, prbModes} from "@utility/is-mode";
+import {isPrbMode, prbModes} from "@utility/is-prb-mode";
 
 @Component({
     selector: 'prb-input-filter',
@@ -28,6 +28,6 @@ export class InputFilterComponent {
   ssn: SsnFilter = new SsnFilter();
   vin: VinFilter = new VinFilter();
   email: EmailFilter = new EmailFilter();
-  protected readonly isMode = isMode;
+  protected readonly isMode = isPrbMode;
   protected readonly prbModes = prbModes;
 }
