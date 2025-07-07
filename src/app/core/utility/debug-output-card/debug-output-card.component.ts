@@ -18,7 +18,6 @@ export class DebugOutputCardComponent {
   protected readonly isProduction = isProduction;
 
   title = input<string>();
-  /* eslint-disable-next-line @angular-eslint/no-input-rename */
   jsonValue = input<object | undefined>(undefined, {alias: 'json'});
   stringValue = input<string | undefined>();
   numberValue = input<number | undefined>();
