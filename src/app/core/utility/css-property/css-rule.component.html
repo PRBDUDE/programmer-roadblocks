@@ -1,15 +1,15 @@
-@for (selector of selectors; track selector; let i = $index) {
+@for (selector of selectors(); track selector; let i = $index) {
   <div class="prb-css-rule-selector">
     {{ selector }}
-    @if (i < selectors.length - 1) {
+    @if (i < selectors().length - 1) {
       <span class="prb-css-rule-comma">,</span>
     }
-    @if (i === selectors.length - 1) {
+    @if (i === selectors().length - 1) {
       <span class="prb-css-rule-open">&nbsp;&#123;</span>
     }
   </div>
 }
-@for (property of properties; track property) {
+@for (property of properties(); track property) {
   <div>&nbsp;&nbsp;
     <prb-css-property-name [property]="property.property"/>
     <prb-css-property-value [value]="property.value"/>

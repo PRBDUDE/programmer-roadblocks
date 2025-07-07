@@ -12,7 +12,7 @@
     align-items: center;
     gap: 10px;
 
-    .prb-header-text {
+    .prb-header-logo-container {
       display: flex;
       align-items: center;
       font-family: "Comic Sans MS", serif;
@@ -64,7 +64,7 @@
 }
 
 @media screen and (max-width: 1064px) {
-  .prb-header-text {
+  .prb-header-logo-container {
     .prb-roadblocks-text {
       font-size: 0.8em !important;
     }
@@ -77,7 +77,7 @@
 }
 
 @media screen and (max-width: 968px) {
-  .prb-header-text {
+  .prb-header-logo-container {
     .prb-roadblocks-text {
       font-size: 0.7em !important;
     }

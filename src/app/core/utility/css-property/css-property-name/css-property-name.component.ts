@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, input} from '@angular/core';
 
 @Component({
     selector: 'prb-css-property-name',
@@ -7,5 +7,5 @@ import {Component, Input} from '@angular/core';
     styleUrl: './css-property-name.component.scss'
 })
 export class CssPropertyNameComponent {
-  @Input() property: string = '';
+  property = input<string>('');
 }

@@ -1,7 +1,6 @@
 import {Component, inject, OnInit} from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators} from "@angular/forms";
 import {DebugOutputCardComponent} from "@utility/debug-output-card.component";
-import {isDebugMode} from "@utility/is-debug-mode";
 import {NgClass} from "@angular/common";
 import {Button} from "primeng/button";
 import {InputMask} from "primeng/inputmask";
@@ -9,6 +8,7 @@ import {InputText} from "primeng/inputtext";
 import {DatePicker} from "primeng/datepicker";
 import {ReactiveErrorComponent} from "../../../core/reactive-forms/reactive-error/reactive-error.component";
 import {ReactivePatterns} from "../../../core/reactive-forms/reactive-patterns";
+import {isPrbMode, prbModes} from "@utility/is-prb-mode";
 
 @Component({
   selector: 'prb-reactive-entry-form',
@@ -27,8 +27,6 @@ import {ReactivePatterns} from "../../../core/reactive-forms/reactive-patterns";
   styleUrl: './reactive-entry-form.component.scss'
 })
 export class ReactiveEntryFormComponent extends ReactivePatterns implements OnInit {
-  protected readonly isDebugMode = isDebugMode;
-
   fb = inject(FormBuilder);
   entryForm!: FormGroup;
 
@@ -103,4 +101,6 @@ export class ReactiveEntryFormComponent extends ReactivePatterns implements OnIn
   }
 
   protected readonly Validators = Validators;
+  protected readonly isMode = isPrbMode;
+  protected readonly prbModes = prbModes;
 }

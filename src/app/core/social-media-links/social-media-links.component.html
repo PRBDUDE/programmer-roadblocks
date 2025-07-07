@@ -1,0 +1,24 @@
+<div class="prb-social-media-icons"
+     [ngClass]="{'prb-column': column()}">
+  @for (link of links(); track $index) {
+    @if ($index > 0) {
+      <span class="prb-social-media-divider"></span>
+    }
+    <div class="prb-social-media-group">
+      <p-button icon={{link.icon}}
+                (onClick)="onClick(link.url)"
+                class="btn btn-outline-secondary"
+                severity="secondary"
+                [size]="size()"
+                [rounded]="true"
+                [pTooltip]=link.tooltip
+                [showDelay]="1000"
+                [tooltipPosition]="'left'"/>
+      @if (column()) {
+        <span>
+          {{ link.message }}
+        </span>
+      }
+    </div>
+  }
+</div>

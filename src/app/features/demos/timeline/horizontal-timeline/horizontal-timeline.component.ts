@@ -9,7 +9,7 @@ import {TimelineAlignmentItem} from "../module/timeline-alignment-item";
 import {TimelineCore} from "../timeline-core";
 import {TimelineOptionsComponent} from "../timeline-options/timeline-options.component";
 import {DebugOutputCardComponent} from "@utility/debug-output-card.component";
-import {isDebugMode} from "@utility/is-debug-mode";
+import {isPrbMode, prbModes} from "@utility/is-prb-mode";
 
 @Component({
   selector: 'prb-horizontal-timeline',
@@ -27,9 +27,6 @@ import {isDebugMode} from "@utility/is-debug-mode";
   styleUrl: './horizontal-timeline.component.scss'
 })
 export class HorizontalTimelineComponent extends TimelineCore {
-
-  protected readonly isDebugMode = isDebugMode;
-
   constructor() {
     super();
     this.selectedAlignmentItem.set('top');
@@ -39,4 +36,7 @@ export class HorizontalTimelineComponent extends TimelineCore {
       {label: 'Bottom Alignment', value: 'bottom'}] as TimelineAlignmentItem[]);
     this.timelineItems.set(timelineData());
   }
+
+  protected readonly isMode = isPrbMode;
+  protected readonly prbModes = prbModes;
 }

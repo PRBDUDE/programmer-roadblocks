@@ -7,9 +7,9 @@ import {StepperTwoComponent} from "./stepper-two/stepper-two.component";
 import {FormsModule} from "@angular/forms";
 import {ToggleSwitch} from "primeng/toggleswitch";
 import {DebugOutputCardComponent} from "@utility/debug-output-card.component";
-import {isDebugMode} from "@utility/is-debug-mode";
 import {StepperOneComponent} from "./stepper-one/stepper-one.component";
 import {animate, state, style, transition, trigger} from "@angular/animations";
+import {isPrbMode, prbModes} from "@utility/is-prb-mode";
 
 @Component({
   selector: 'prb-stepper',
@@ -40,7 +40,7 @@ import {animate, state, style, transition, trigger} from "@angular/animations";
   ]
 })
 export class StepperComponent {
-  protected readonly isDebugMode = isDebugMode;
-
   inline = signal<boolean>(false);
+  protected readonly isMode = isPrbMode;
+  protected readonly prbModes = prbModes;
 }

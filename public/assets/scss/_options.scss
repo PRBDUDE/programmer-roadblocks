@@ -1,11 +1,11 @@
 :root {
   --prb-option-color-background: var(--p-surface-500);
   --prb-option-color-border: #333333;
-}
 
-:root[class*="prb-dark-theme"] {
-  --prb-option-color-background: var(--p-surface-400);
-  --prb-option-color-border: #a5a5a5;
+  &[class*="prb-dark-theme"] {
+    --prb-option-color-background: var(--p-surface-400);
+    --prb-option-color-border: #a5a5a5;
+  }
 }
 
 .prb-options-container {

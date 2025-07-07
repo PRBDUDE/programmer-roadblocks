@@ -1,7 +1,7 @@
 import {Component, DoCheck, signal} from '@angular/core';
 import {$dt} from "@primeng/themes";
 import {ColorPaletteGeneratorComponent} from "./color-palette-generator/color-palette-generator.component";
-import {isDarkMode} from "@utility/is-dark-mode";
+import {isPrbMode, prbModes} from "@utility/is-prb-mode";
 
 @Component({
   selector: 'prb-color-palette',
@@ -12,8 +12,6 @@ import {isDarkMode} from "@utility/is-dark-mode";
   styleUrl: './color-palette.component.scss'
 })
 export class ColorPaletteComponent implements DoCheck {
-  protected readonly isDarkMode = isDarkMode;
-
   ngDoCheck() {
     this.primaryColor.update(() => $dt('primary.500').value);
     this.surfaceColor.update(() => $dt('surface.500').value);
@@ -47,4 +45,7 @@ export class ColorPaletteComponent implements DoCheck {
   vivaColor = signal<any>($dt('viva.500').value);
   oceanColor = signal<any>($dt('ocean.500').value);
   beachColor = signal<any>($dt('beach.500').value);
+
+  protected readonly isMode = isPrbMode;
+  protected readonly prbModes = prbModes;
 }

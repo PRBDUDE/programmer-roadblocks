@@ -9,7 +9,7 @@ import {TimelineAlignmentItem} from "../module/timeline-alignment-item";
 import {TimelineCore} from "../timeline-core";
 import {TimelineOptionsComponent} from "../timeline-options/timeline-options.component";
 import {DebugOutputCardComponent} from "@utility/debug-output-card.component";
-import {isDebugMode} from "@utility/is-debug-mode";
+import {isPrbMode, prbModes} from "@utility/is-prb-mode";
 
 @Component({
   selector: 'prb-vertical-timeline',
@@ -27,9 +27,6 @@ import {isDebugMode} from "@utility/is-debug-mode";
   styleUrl: './vertical-timeline.component.scss'
 })
 export class VerticalTimelineComponent extends TimelineCore {
-
-  protected readonly isDebugMode = isDebugMode;
-
   constructor() {
     super();
     this.selectedAlignmentItem.set('left');
@@ -39,4 +36,7 @@ export class VerticalTimelineComponent extends TimelineCore {
       {label: 'Right Alignment', value: 'right'}] as TimelineAlignmentItem[]);
     this.timelineItems.set(timelineData());
   }
+
+  protected readonly isMode = isPrbMode;
+  protected readonly prbModes = prbModes;
 }

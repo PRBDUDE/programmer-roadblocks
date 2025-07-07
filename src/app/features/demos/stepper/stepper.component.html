@@ -122,7 +122,7 @@
   </p-stepper>
 </div>
 
-@if (isDebugMode()) {
+@if (isMode(prbModes.debug)) {
   <div class="prb-filter-debug-output-container">
     <prb-debug-output-card
       [variableName]="'inline'"

@@ -1,4 +1,4 @@
-import {ChangeDetectorRef, Component, ElementRef, forwardRef, inject, Input, Renderer2} from '@angular/core';
+import {ChangeDetectorRef, Component, ElementRef, forwardRef, inject, input, Renderer2} from '@angular/core';
 import {ControlValueAccessor, NG_VALUE_ACCESSOR, ReactiveFormsModule, Validators} from "@angular/forms";
 
 let uniqueId = 0;
@@ -30,19 +30,18 @@ export class ReactiveInputComponent implements ControlValueAccessor {
    * @group Props
    * The type of the input element.
    */
-  @Input() type: string = 'text';
+  type = input<string>('text');
   /**
    * @Input required: boolean = false
    * @group Props
    * Whether the input is required.
    */
-  @Input() placeholder: string | undefined;
-  @Input() label: string | undefined;
-  @Input() name!: string;
-  @Input() tabindex: string | undefined;
+  placeholder = input<string | undefined>();
+  label = input<string | undefined>();
+  name = input.required<string>();
+  tabindex = input<string | undefined>();
 
   model = '';
-  focused: boolean = false;
   disabled: boolean = false;
   onModelChange: () => void = () => {};
   onModelTouched: () => void = () => {};

@@ -4,7 +4,7 @@
     <prb-color-palette-generator [colorName]="'Primary'" [baseColor]="primaryColor()"/>
   </div>
   <div class="prb-color-palettes-list">
-    @if (isDarkMode()) {
+    @if (isMode(prbModes.dark)) {
       <prb-color-palette-generator [colorName]="'Dark Surface'" [isSurfaceColor]=true [baseColor]="surfaceColor()?.dark?.value"/>
     } @else {
       <prb-color-palette-generator [colorName]="'Light Surface'" [isSurfaceColor]=true [baseColor]="surfaceColor()?.light?.value"/>

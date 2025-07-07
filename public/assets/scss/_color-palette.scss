@@ -16,10 +16,14 @@
   --prb-color-palette-item-width: 1.5em;
   --prb-color-palette-item-height: 1.5em;
   --prb-color-palette-item-border: 1px solid var(--p-surface-0);
-}
+  --prb-divider-color: var(--p-surface-700);
+  --prb-media-background-color: var(--p-surface-100);
 
-:root[class*="prb-dark-theme"] {
-  --prb-color-palette-panel-background-color: var(--p-surface-700);
-  --prb-color-palette-panel-title-color: var(--p-surface-100);
-  --prb-color-palette-panel-border: 2px solid var(--p-surface-300);
+  &[class*="prb-dark-theme"] {
+    --prb-color-palette-panel-background-color: var(--p-surface-700);
+    --prb-color-palette-panel-title-color: var(--p-surface-100);
+    --prb-color-palette-panel-border: 2px solid var(--p-surface-300);
+    --prb-divider-color: var(--p-surface-300);
+    --prb-media-background-color: var(--p-surface-600);
+  }
 }
