@@ -1,7 +1,7 @@
 <div class="prb-options-container prb-options-center">
   <div class="prb-options-label">
     <span class="prb-options-label-text">Toggle switch to change the inline mode:</span>
-    <p-toggle-switch [(ngModel)]="inline"></p-toggle-switch>
+    <p-toggle-switch [(ngModel)]="inline" [name]="'in-line-mode-selector'"></p-toggle-switch>
     @if (inline()) {
       <span class="prb-options-inline-mode">(Inline)</span>
     } @else {
