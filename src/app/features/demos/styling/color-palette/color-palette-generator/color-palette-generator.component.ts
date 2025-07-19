@@ -1,10 +1,12 @@
-import {Component, input, Input} from '@angular/core';
+import {Component, forwardRef, input, Input} from '@angular/core';
 import {palette} from "@primeng/themes";
 import {InputText} from "primeng/inputtext";
-import {FormsModule} from "@angular/forms";
+import {FormsModule, NG_VALUE_ACCESSOR} from "@angular/forms";
 import {TableModule} from "primeng/table";
 
 export type PaletteShades = { [p: string]: string };
+
+let uniqueId = 0;
 
 @Component({
   selector: 'prb-color-palette-generator',
@@ -13,10 +15,16 @@ export type PaletteShades = { [p: string]: string };
     FormsModule,
     TableModule
   ],
-  templateUrl: './color-palette-generator.component.html',
+  providers: [
+    {provide: NG_VALUE_ACCESSOR,
+      multi: true,
+      useExisting: forwardRef(() => ColorPaletteGeneratorComponent)}
+  ],  templateUrl: './color-palette-generator.component.html',
   styleUrl: './color-palette-generator.component.scss'
 })
 export class ColorPaletteGeneratorComponent {
+  protected _rfInputId = `color-palette-input_${uniqueId++}`;
+
   colorName = input<string>('');
   isSurfaceColor = input<boolean>(false);
 
