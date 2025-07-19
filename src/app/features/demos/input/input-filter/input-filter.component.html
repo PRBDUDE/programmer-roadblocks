@@ -7,6 +7,7 @@
       (focusin)="phoneNumber.hasFocus()"
       (focusout)="phoneNumber.lostFocus()"
       autoClear="false"
+      autocomplete="off"
       mask="(999) 999-9999"
       placeholder="(123) 456-7890"></p-inputMask>
     <prb-input-error [title]="'Phone Number'"
@@ -48,6 +49,7 @@
            id="email"
            name="email"
            maxlength="30"
+           autocomplete="off"
            (focusin)="email.hasFocus()"
            (focusout)="email.lostFocus()"
            placeholder="Enter Email here"
