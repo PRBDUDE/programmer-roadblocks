@@ -22,7 +22,7 @@
 
       <div [formGroupName]="'personal'">
         <div class="prb-form-group">
-          <p-datePicker id="dob" type="date" class="prb-form-input" [formControlName]="'birthdate'"
+          <p-datePicker inputId="dob" type="date" class="prb-form-input" [formControlName]="'birthdate'"
                         placeholder="enter date of birth"/>
           <label for="dob" class="prb-form-group-label"
                  [ngClass]="{'required': birthdateControl.hasValidator(Validators.required)}">Date of Birth</label>
@@ -56,10 +56,10 @@
         </div>
 
         <div class="prb-form-group">
-        <span class="prb-form-group-label"
-              [ngClass]="{'required': zipControl.hasValidator(Validators.required)}">Zip</span>
           <p-inputmask type="text" class="prb-form-input" [formControlName]="'zip'" autoClear="false"
-                       placeholder="enter ZIP code" mask="99999?-9999"></p-inputmask>
+                       placeholder="enter ZIP code" mask="99999?-9999" inputId="zip_code"></p-inputmask>
+          <label for="zip_code" class="prb-form-group-label"
+                 [ngClass]="{'required': zipControl.hasValidator(Validators.required)}">Zip</label>
           <prb-reactive-error [formControl]="zipControl" class="prb-validation-feedback"/>
         </div>
       </div>
@@ -67,17 +67,18 @@
       <div [formGroupName]="'contact'">
         <div class="prb-form-group">
           <input id="email" type="email" pInputText class="prb-form-input" [formControlName]="'email'"
-                 placeholder="some.name@example.com"/>
+                 placeholder="some.name@example.com" autocomplete="off"/>
           <label for="email" class="prb-form-group-label"
                  [ngClass]="{'required': emailControl.hasValidator(Validators.required)}">Email</label>
           <prb-reactive-error [formControl]="emailControl" class="prb-validation-feedback"/>
         </div>
 
         <div class="prb-form-group">
-        <span class="prb-form-group-label"
-              [ngClass]="{'required': phoneControl.hasValidator(Validators.required)}">Phone</span>
           <p-inputmask type="phone" class="prb-form-input prb-form-group-input" [formControlName]="'phone'"
-                       autoClear="false" placeholder="(999) 999-9999" mask="(999) 999-9999"></p-inputmask>
+                       autoClear="false" placeholder="(999) 999-9999" mask="(999) 999-9999"
+                       inputId="phone_number"></p-inputmask>
+          <label for="phone_number" class="prb-form-group-label"
+                 [ngClass]="{'required': phoneControl.hasValidator(Validators.required)}">Phone</label>
           <prb-reactive-error [formControl]="phoneControl" class="prb-validation-feedback"/>
         </div>
       </div>
