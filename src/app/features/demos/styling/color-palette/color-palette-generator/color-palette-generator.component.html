@@ -12,20 +12,22 @@
       placeholder="Enter a color code"/>
   </div>
 
-  <p-table [value]="shades" [dt]="tableData">
-    <ng-template #header>
-      <tr>
-        <th>Shade</th>
-        <th>Swatch</th>
-        <th>Hex Value</th>
-      </tr>
-    </ng-template>
-    <ng-template #body let-shade>
-      <tr>
-        <td class="prb-center-cell">{{ shade }}</td>
-        <td [style.background-color]="colorValues[shade]"></td>
-        <td class="prb-center-cell">{{ colorValues[shade].toUpperCase() }}</td>
-      </tr>
-    </ng-template>
-  </p-table>
+  @if (baseColor !== undefined && baseColor !== null && baseColor !== '') {
+    <p-table [value]="shades" [dt]="tableData">
+      <ng-template #header>
+        <tr>
+          <th>Shade</th>
+          <th>Swatch</th>
+          <th>Hex Value</th>
+        </tr>
+      </ng-template>
+      <ng-template #body let-shade>
+        <tr>
+          <td class="prb-center-cell">{{ shade }}</td>
+          <td [style.background-color]="colorValues[shade]"></td>
+          <td class="prb-center-cell">{{ colorValues[shade].toUpperCase() }}</td>
+        </tr>
+      </ng-template>
+    </p-table>
+  }
 </div>
