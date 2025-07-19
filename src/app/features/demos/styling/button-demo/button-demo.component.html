@@ -1,7 +1,7 @@
 <div class="prb-options-container prb-options-column">
   <div class="prb-options-label">
     <label for="raised" class="prb-options-label-text">Raised</label>
-    <p-toggle-switch id="raised" [(ngModel)]="raised">
+    <p-toggle-switch inputId="raised" [(ngModel)]="raised">
       <ng-template #handle let-checked="checked">
         <i [ngClass]="['pi', checked ? 'pi-check' : 'pi-times']"></i>
       </ng-template>
@@ -9,15 +9,15 @@
   </div>
   <div class="prb-options-label">
     <label for="rounded" class="prb-options-label-text">Rounded</label>
-    <p-toggle-switch id="rounded" [(ngModel)]="rounded">
+    <p-toggle-switch inputId="rounded" [(ngModel)]="rounded">
       <ng-template #handle let-checked="checked">
         <i [ngClass]="['pi', checked ? 'pi-check' : '']"></i>
       </ng-template>
     </p-toggle-switch>
   </div>
   <div class="prb-options-label">
-    <label for="raised" class="prb-options-label-text">Disabled</label>
-    <p-toggle-switch id="raised" [(ngModel)]="disabled"/>
+    <label for="disabled" class="prb-options-label-text">Disabled</label>
+    <p-toggle-switch inputId="disabled" [(ngModel)]="disabled"/>
   </div>
 </div>
 <div class="prb-button-main-container">
