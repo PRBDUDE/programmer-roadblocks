@@ -24,7 +24,7 @@ export class EmailFilter extends BaseFilterType {
    */
   getErrorMessages(): string[] {
     const errors: string[] = [];
-    if (!this.email) {
+    if (!this.isInvalid()) {
       return errors;
     }
     const atSymb = this.email.indexOf('@');
@@ -56,6 +56,7 @@ export class EmailFilter extends BaseFilterType {
     if (!this.email || !this._isActive) {
       return false;
     }
-    return !/^[A-Za-z\d\\.\-_]*@[A-Za-z\d\\.\-_]*\.[A-Za-z]{3}$/.test(this.email);
+    const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+    return !emailRegex.test(this.email);
   }
 }

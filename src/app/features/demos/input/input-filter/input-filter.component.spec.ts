@@ -123,9 +123,7 @@ describe('InputFilterComponent', () => {
       });
 
       it('should return empty error message array', () => {
-        const errors = component.email.getErrorMessages();
-        console.log('errors: ', errors);
-        expect(component.email.getErrorMessages().length).toEqual(1);
+        expect(component.email.getErrorMessages().length).toEqual(0);
       });
     });
 
@@ -140,7 +138,6 @@ describe('InputFilterComponent', () => {
 
       it('should return error messages', () => {
         const errors = component.email.getErrorMessages();
-        console.log('errors: ', errors);
         expect(errors.length).toEqual(2);
         expect(errors[0]).toEqual('must contain \'@\'');
         expect(errors[1]).toEqual('must contain \'.\' in domain');
