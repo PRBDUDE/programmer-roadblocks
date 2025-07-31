@@ -1,5 +1,4 @@
 export const Stone = {
-  0: "#ffffff",
   50: "#f8f8f8",
   100: "#dfdddc",
   200: "#c5c2c0",

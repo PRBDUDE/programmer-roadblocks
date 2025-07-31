@@ -1,5 +1,4 @@
 export const Slate = {
-  0: "#ffffff",
   50: "#f7f8f9",
   100: "#dadee3",
   200: "#bcc3cd",

@@ -1,5 +1,4 @@
 export const Beach = {
-  0: "#ffffff",
   50: "#fafbfb",
   100: "#e5eaea",
   200: "#d1d9da",

@@ -1,5 +1,4 @@
 export const Soho = {
-  0: "#ffffff",
   50: "#f9f9f9",
   100: "#e0e1e1",
   200: "#c8c8ca",

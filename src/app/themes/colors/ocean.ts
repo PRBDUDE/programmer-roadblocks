@@ -1,5 +1,4 @@
 export const Ocean = {
-  0: "#ffffff",
   50: "#f9f9f9",
   100: "#e1e2e2",
   200: "#c9cbcb",

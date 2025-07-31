@@ -1,5 +1,4 @@
 export const Zinc = {
-  0: "#ffffff",
   50: "#f8f8f8",
   100: "#dddddf",
   200: "#c2c2c6",

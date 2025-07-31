@@ -1,5 +1,4 @@
 export const Viva = {
-  0: "#ffffff",
   50: "#f9f9f9",
   100: "#e2e3e3",
   200: "#cbcccd",
