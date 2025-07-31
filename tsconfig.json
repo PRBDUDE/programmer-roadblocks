@@ -27,7 +27,8 @@
       "@utility/*": [
         "./src/app/core/utility/css-property/*",
         "./src/app/core/utility/debug-output-card/*",
-        "./src/app/core/utility/functions/*"
+        "./src/app/core/utility/functions/*",
+        "./src/app/core/utility/primeng-config/*"
       ],
       "@rootComponents/*": [
         "./src/app/core/roadblock-header/*",

@@ -1,6 +1,7 @@
 import {ComponentFixture, TestBed, waitForAsync} from '@angular/core/testing';
 import {AppComponent} from './app.component';
 import {provideRouter} from "@angular/router";
+import {PRIME_NG_CONFIG} from 'primeng/config';
 
 describe('AppComponent', () => {
   let component: AppComponent;
@@ -12,7 +13,25 @@ describe('AppComponent', () => {
         AppComponent
       ],
       providers: [
-        provideRouter([])
+        provideRouter([]),
+        {
+          provide: PRIME_NG_CONFIG,
+          useValue: {
+            ripple: false,
+            theme: {
+              preset: {
+                primitive: {},
+                semantic: {
+                  colorScheme: {
+                    dark: { surface: {} },
+                    light: { surface: {} }
+                  },
+                  primary: {}
+                }
+              }
+            }
+          }
+        }
       ]
     }).compileComponents();
     fixture = TestBed.createComponent(AppComponent);

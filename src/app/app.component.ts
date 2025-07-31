@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, inject, OnInit} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
 import {RoadblockHeaderComponent} from "@rootComponents/roadblock-header.component";
 import {PrimeNG} from "primeng/config";
@@ -8,6 +8,7 @@ import Aura from "@primeng/themes/aura";
 import Lara from "@primeng/themes/lara";
 import Material from "@primeng/themes/material";
 import Nora from "@primeng/themes/nora";
+import {PrimengConfigService} from "@utility/primeng-config.service";
 
 @Component({
   selector: 'prb-root',
@@ -22,9 +23,8 @@ import Nora from "@primeng/themes/nora";
 })
 export class AppComponent implements OnInit {
   title = 'programmer-roadblocks';
-
-  constructor(private primeng: PrimeNG) {
-  }
+  primeng = inject(PrimeNG);
+  primengConfig = inject(PrimengConfigService);
 
   ngOnInit(): void {
     this.primeng.ripple.set(true);
@@ -40,23 +40,25 @@ export class AppComponent implements OnInit {
       date: ['equals', 'notequals', 'before', 'after', 'between', 'notbetween']
     };
 
-    console.log('Unmodified Theme - Aura: ',
-      Aura);
-    console.log('Unmodified Theme - Lara: ',
-      Lara);
-    console.log('Unmodified Theme - Material: ',
-      Material);
-    console.log('Unmodified Theme - Nora: ',
-      Nora);
-    console.log('Theme - Primitive: ',
-      AuraPreset.primitive);
+    // console.log('Unmodified Theme - Aura: ',
+    //   Aura);
+    // console.log('Unmodified Theme - Lara: ',
+    //   Lara);
+    // console.log('Unmodified Theme - Material: ',
+    //   Material);
+    // console.log('Unmodified Theme - Nora: ',
+    //   Nora);
+    console.log('Theme - Color Palette: ',
+      this.primengConfig.getPalette());
+    console.log('Theme - Primary Color: ',
+      this.primengConfig.getPrimaryColor());
     console.log('Theme - Semantic: ',
       AuraPreset.semantic);
     console.log('Theme - Components: ',
       AuraPreset.components);
-    console.log('components\nbutton: ' +
-      JSON.stringify(
-        AuraPreset.components.button,
-        undefined, 2));
+    // console.log('components\nbutton: ' +
+    //   JSON.stringify(
+    //     AuraPreset.components.button,
+    //     undefined, 2));
   }
 }
