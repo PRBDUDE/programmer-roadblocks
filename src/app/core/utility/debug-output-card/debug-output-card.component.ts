@@ -1,4 +1,4 @@
-import {Component, input, Input} from '@angular/core';
+import {Component, input} from '@angular/core';
 import {JsonPipe, NgClass} from "@angular/common";
 import {isProduction} from "@utility/is-production";
 
