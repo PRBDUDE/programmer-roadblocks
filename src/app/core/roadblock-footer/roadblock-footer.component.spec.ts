@@ -1,17 +1,20 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed, waitForAsync} from '@angular/core/testing';
 
-import { RoadblockFooterComponent } from './roadblock-footer.component';
+import {RoadblockFooterComponent} from './roadblock-footer.component';
 
 describe('RoadblockFooterComponent', () => {
   let component: RoadblockFooterComponent;
   let fixture: ComponentFixture<RoadblockFooterComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [RoadblockFooterComponent]
-    })
-    .compileComponents();
-    
+  beforeEach(waitForAsync(() => {
+    TestBed.configureTestingModule({
+      imports: [
+        RoadblockFooterComponent
+      ]
+    }).compileComponents();
+  }));
+
+  beforeEach(() => {
     fixture = TestBed.createComponent(RoadblockFooterComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

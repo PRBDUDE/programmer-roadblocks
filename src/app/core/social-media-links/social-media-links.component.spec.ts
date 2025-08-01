@@ -1,17 +1,20 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed, waitForAsync} from '@angular/core/testing';
 
-import { SocialMediaLinksComponent } from './social-media-links.component';
+import {SocialMediaLinksComponent} from './social-media-links.component';
 
 describe('SocialMediaLinksComponent', () => {
   let component: SocialMediaLinksComponent;
   let fixture: ComponentFixture<SocialMediaLinksComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [SocialMediaLinksComponent]
-    })
-    .compileComponents();
+  beforeEach(waitForAsync(() => {
+    TestBed.configureTestingModule({
+      imports: [
+        SocialMediaLinksComponent
+      ]
+    }).compileComponents();
+  }));
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(SocialMediaLinksComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

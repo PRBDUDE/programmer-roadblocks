@@ -1,4 +1,4 @@
-import {ComponentFixture, TestBed} from '@angular/core/testing';
+import {ComponentFixture, TestBed, waitForAsync} from '@angular/core/testing';
 
 import {StepsComponent} from './steps.component';
 import {ActivatedRoute, convertToParamMap} from "@angular/router";
@@ -7,8 +7,8 @@ describe('StepsComponent', () => {
   let component: StepsComponent;
   let fixture: ComponentFixture<StepsComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
+  beforeEach(waitForAsync(() => {
+    TestBed.configureTestingModule({
       imports: [
         StepsComponent
       ],
@@ -23,7 +23,7 @@ describe('StepsComponent', () => {
         }
       ]
     }).compileComponents();
-  });
+  }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(StepsComponent);

@@ -1,17 +1,20 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed, waitForAsync} from '@angular/core/testing';
 
-import { TimelineOptionsComponent } from './timeline-options.component';
+import {TimelineOptionsComponent} from './timeline-options.component';
 
 describe('TimelineOptionsComponent', () => {
   let component: TimelineOptionsComponent;
   let fixture: ComponentFixture<TimelineOptionsComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [TimelineOptionsComponent]
-    })
-    .compileComponents();
+  beforeEach(waitForAsync(() => {
+    TestBed.configureTestingModule({
+      imports: [
+        TimelineOptionsComponent
+      ]
+    }).compileComponents();
+  }));
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(TimelineOptionsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

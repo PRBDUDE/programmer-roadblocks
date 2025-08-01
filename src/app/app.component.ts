@@ -4,10 +4,6 @@ import {RoadblockHeaderComponent} from "@rootComponents/roadblock-header.compone
 import {PrimeNG} from "primeng/config";
 import {RoadblockFooterComponent} from "@rootComponents/roadblock-footer.component";
 import {AuraPreset} from "./themes/aura-theme";
-import Aura from "@primeng/themes/aura";
-import Lara from "@primeng/themes/lara";
-import Material from "@primeng/themes/material";
-import Nora from "@primeng/themes/nora";
 import {PrimengConfigService} from "@utility/primeng-config.service";
 
 @Component({

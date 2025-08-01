@@ -2,10 +2,10 @@ import {Component, input} from '@angular/core';
 import {BaseFilterType} from "@filters/base-filter-type";
 
 @Component({
-    selector: 'prb-input-error',
+  selector: 'prb-input-error',
   imports: [],
-    templateUrl: './input-error.component.html',
-    styleUrl: './input-error.component.scss'
+  templateUrl: './input-error.component.html',
+  styleUrl: './input-error.component.scss'
 })
 export class InputErrorComponent {
   /**

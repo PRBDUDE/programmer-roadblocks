@@ -11,7 +11,7 @@ import {DebugOutputCardComponent} from "@utility/debug-output-card.component";
 import {isPrbMode, prbModes} from "@utility/is-prb-mode";
 
 @Component({
-    selector: 'prb-input-filter',
+  selector: 'prb-input-filter',
   imports: [
     InputTextModule,
     FormsModule,
@@ -20,8 +20,8 @@ import {isPrbMode, prbModes} from "@utility/is-prb-mode";
     InputErrorComponent,
     DebugOutputCardComponent
   ],
-    templateUrl: './input-filter.component.html',
-    styleUrl: './input-filter.component.scss'
+  templateUrl: './input-filter.component.html',
+  styleUrl: './input-filter.component.scss'
 })
 export class InputFilterComponent {
   phoneNumber: PhoneNumberFilter = new PhoneNumberFilter();

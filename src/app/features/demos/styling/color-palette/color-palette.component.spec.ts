@@ -1,4 +1,4 @@
-import {ComponentFixture, TestBed} from '@angular/core/testing';
+import {ComponentFixture, TestBed, waitForAsync} from '@angular/core/testing';
 
 import {ColorPaletteComponent} from './color-palette.component';
 import {ColorPaletteGeneratorComponent} from "./color-palette-generator/color-palette-generator.component";
@@ -10,8 +10,8 @@ describe('ColorPaletteComponent', () => {
   let component: ColorPaletteComponent;
   let fixture: ComponentFixture<ColorPaletteComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
+  beforeEach(waitForAsync(() => {
+    TestBed.configureTestingModule({
       imports: [
         ColorPaletteComponent,
         ColorPaletteGeneratorComponent,
@@ -20,7 +20,9 @@ describe('ColorPaletteComponent', () => {
         NgForOf
       ]
     }).compileComponents();
+  }));
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(ColorPaletteComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

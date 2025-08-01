@@ -1,17 +1,20 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed, waitForAsync} from '@angular/core/testing';
 
-import { ReactiveEntryFormComponent } from './reactive-entry-form.component';
+import {ReactiveEntryFormComponent} from './reactive-entry-form.component';
 
 describe('ReactiveEntryFormComponent', () => {
   let component: ReactiveEntryFormComponent;
   let fixture: ComponentFixture<ReactiveEntryFormComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [ReactiveEntryFormComponent]
-    })
-    .compileComponents();
+  beforeEach(waitForAsync(() => {
+    TestBed.configureTestingModule({
+      imports: [
+        ReactiveEntryFormComponent
+      ]
+    }).compileComponents();
+  }));
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(ReactiveEntryFormComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

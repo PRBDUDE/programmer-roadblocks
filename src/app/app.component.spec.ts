@@ -23,8 +23,8 @@ describe('AppComponent', () => {
                 primitive: {},
                 semantic: {
                   colorScheme: {
-                    dark: { surface: {} },
-                    light: { surface: {} }
+                    dark: {surface: {}},
+                    light: {surface: {}}
                   },
                   primary: {}
                 }
@@ -34,10 +34,13 @@ describe('AppComponent', () => {
         }
       ]
     }).compileComponents();
+  }));
+
+  beforeEach(() => {
     fixture = TestBed.createComponent(AppComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
-  }));
+  });
 
   it('should create the app', () => {
     expect(component).toBeTruthy();
