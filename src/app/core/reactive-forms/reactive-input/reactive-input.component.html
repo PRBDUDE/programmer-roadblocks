@@ -2,15 +2,13 @@
   <label
     for="{{_rfInputId}}"
     class="prb-form-group-label">{{ label() }}</label>
-<!--  <label-->
-<!--    for="{{_rfInputId}}"-->
-<!--    class="prb-form-group-label"-->
-<!--    [ngClass]="{'required': formControl.get(name).hasValidator(Validators.required)}">{{ label }}</label>-->
   <input
     id="{{_rfInputId}}"
     class="prb-form-input"
     [type]="type()"
-    [formControlName]="name()"
+    [(ngModel)]="model"
+    (ngModelChange)="onModelChange()"
+    (blur)="onModelTouched()"
     [disabled]="disabled"
     [placeholder]="placeholder()"/>
 </div>

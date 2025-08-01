@@ -1,13 +1,15 @@
 import {ComponentFixture, TestBed, waitForAsync} from '@angular/core/testing';
-
 import {ReactiveErrorComponent} from './reactive-error.component';
 import {FormControl, ReactiveFormsModule} from "@angular/forms";
 
 describe('ReactiveErrorComponent', () => {
   let component: ReactiveErrorComponent;
   let fixture: ComponentFixture<ReactiveErrorComponent>;
+  let formControl: FormControl;
 
   beforeEach(waitForAsync(() => {
+    formControl = new FormControl('');
+
     TestBed.configureTestingModule({
       imports: [
         ReactiveErrorComponent,
@@ -19,7 +21,7 @@ describe('ReactiveErrorComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(ReactiveErrorComponent);
     component = fixture.componentInstance;
-    component.formControl = new FormControl('');
+    component.formControl = formControl;
     fixture.detectChanges();
   });
 

@@ -1,12 +1,13 @@
 import {ChangeDetectorRef, Component, ElementRef, forwardRef, inject, input, Renderer2} from '@angular/core';
-import {ControlValueAccessor, NG_VALUE_ACCESSOR, ReactiveFormsModule, Validators} from "@angular/forms";
+import {ControlValueAccessor, FormsModule, NG_VALUE_ACCESSOR, ReactiveFormsModule, Validators} from "@angular/forms";
 
 let uniqueId = 0;
 
 @Component({
   selector: 'prb-reactive-input',
   imports: [
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [
     {provide: 'uniqueId',
@@ -38,7 +39,7 @@ export class ReactiveInputComponent implements ControlValueAccessor {
    */
   placeholder = input<string | undefined>();
   label = input<string | undefined>();
-  name = input.required<string>();
+  name = input<string>();
   tabindex = input<string | undefined>();
 
   model = '';
