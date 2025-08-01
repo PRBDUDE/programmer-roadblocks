@@ -1,5 +1,5 @@
 import {ChangeDetectorRef, Component, ElementRef, forwardRef, inject, input, Renderer2} from '@angular/core';
-import {ControlValueAccessor, FormsModule, NG_VALUE_ACCESSOR, ReactiveFormsModule, Validators} from "@angular/forms";
+import {ControlValueAccessor, FormsModule, NG_VALUE_ACCESSOR, ReactiveFormsModule} from "@angular/forms";
 
 let uniqueId = 0;
 
@@ -10,11 +10,15 @@ let uniqueId = 0;
     FormsModule
   ],
   providers: [
-    {provide: 'uniqueId',
-      useValue: uniqueId++},
-    {provide: NG_VALUE_ACCESSOR,
+    {
+      provide: 'uniqueId',
+      useValue: uniqueId++
+    },
+    {
+      provide: NG_VALUE_ACCESSOR,
       multi: true,
-      useExisting: forwardRef(() => ReactiveInputComponent)}
+      useExisting: forwardRef(() => ReactiveInputComponent)
+    }
   ],
   templateUrl: './reactive-input.component.html',
   styleUrl: './reactive-input.component.scss'
@@ -43,8 +47,10 @@ export class ReactiveInputComponent implements ControlValueAccessor {
 
   model = '';
   disabled: boolean = false;
-  onModelChange: () => void = () => {};
-  onModelTouched: () => void = () => {};
+  onModelChange: () => void = () => {
+  };
+  onModelTouched: () => void = () => {
+  };
 
   writeValue(value: string): void {
     this._renderer2.setProperty(this._elementRef.nativeElement, 'value', value);
