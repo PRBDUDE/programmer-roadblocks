@@ -20,7 +20,6 @@ let uniqueId = 0;
   styleUrl: './reactive-input.component.scss'
 })
 export class ReactiveInputComponent implements ControlValueAccessor {
-  protected readonly Validators = Validators;
   private readonly cd: ChangeDetectorRef = inject(ChangeDetectorRef);
   private _renderer2 = inject(Renderer2);
   private _elementRef = inject(ElementRef);
@@ -64,6 +63,4 @@ export class ReactiveInputComponent implements ControlValueAccessor {
     this._renderer2.setProperty(this._elementRef.nativeElement, 'disabled', isDisabled);
     this.cd.markForCheck();
   }
-
-  protected readonly NG_VALUE_ACCESSOR = NG_VALUE_ACCESSOR;
 }
