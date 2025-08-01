@@ -155,7 +155,6 @@ describe('InputFilterComponent', () => {
 
       it('should return error message', () => {
         const errors = component.email.getErrorMessages();
-        console.log('errors: ', errors);
         expect(errors.length).toEqual(2);
         expect(errors[0]).toEqual('must contain top level domain');
       });
