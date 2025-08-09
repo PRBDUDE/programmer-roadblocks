@@ -1,7 +1,6 @@
 import {Component} from '@angular/core';
 import {Timeline} from 'primeng/timeline';
 import {DatePipe, NgClass} from '@angular/common';
-import {DropdownModule} from "primeng/dropdown";
 import {FormsModule} from "@angular/forms";
 import {Card} from "primeng/card";
 import {timelineData} from "../timeline-data";
@@ -16,7 +15,6 @@ import {isPrbMode, prbModes} from "@utility/is-prb-mode";
   imports: [
     Timeline,
     DatePipe,
-    DropdownModule,
     FormsModule,
     Card,
     NgClass,
