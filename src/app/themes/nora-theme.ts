@@ -1,5 +1,5 @@
-import Nora from "@primeng/themes/nora";
-import {definePreset} from "@primeng/themes";
+import Nora from "@primeuix/themes/nora";
+import {definePreset} from "@primeuix/themes";
 
 const NoraPreset = definePreset(Nora, {
   primitive: {

@@ -1,4 +1,4 @@
-import {updatePrimaryPalette} from "@primeng/themes";
+import {updatePrimaryPalette} from "@primeuix/themes";
 
 /**
  * Sets the primary color of the application.

@@ -1,4 +1,4 @@
-import {updateSurfacePalette} from "@primeng/themes";
+import {updateSurfacePalette} from "@primeuix/themes";
 
 /**
  * Sets the surface color of the application.

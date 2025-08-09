@@ -1,5 +1,5 @@
-import Material from "@primeng/themes/material";
-import {definePreset} from "@primeng/themes";
+import Material from "@primeuix/themes/material";
+import {definePreset} from "@primeuix/themes";
 
 export const MaterialPreset = definePreset(Material, {
   primitive: {

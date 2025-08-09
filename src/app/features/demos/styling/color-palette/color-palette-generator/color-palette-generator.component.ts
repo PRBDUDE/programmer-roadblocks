@@ -1,5 +1,5 @@
 import {Component, forwardRef, input, Input} from '@angular/core';
-import {palette} from "@primeng/themes";
+import {palette} from "@primeuix/themes";
 import {InputText} from "primeng/inputtext";
 import {FormsModule, NG_VALUE_ACCESSOR} from "@angular/forms";
 import {TableModule} from "primeng/table";

@@ -1,5 +1,5 @@
 import {ColorDefinition} from "@model/color-definition";
-import {palette} from "@primeng/themes";
+import {palette} from "@primeuix/themes";
 
 export function generateColorPalettes(colorDefinitions: ColorDefinition[]) {
   const result: Record<string, Record<string, string>> = {};
