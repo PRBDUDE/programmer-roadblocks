@@ -44,14 +44,14 @@ export class AppComponent implements OnInit {
     //   Material);
     // console.log('Unmodified Theme - Nora: ',
     //   Nora);
-    console.log('Theme - Color Palette: ',
-      this.primengConfig.getPalette());
-    console.log('Theme - Primary Color: ',
-      this.primengConfig.getPrimaryColor());
-    console.log('Theme - Semantic: ',
-      AuraPreset.semantic);
-    console.log('Theme - Components: ',
-      AuraPreset.components);
+    // console.log('Theme - Color Palette: ',
+    //   this.primengConfig.getPalette());
+    // console.log('Theme - Primary Color: ',
+    //   this.primengConfig.getPrimaryColor());
+    // console.log('Theme - Semantic: ',
+    //   AuraPreset.semantic);
+    // console.log('Theme - Components: ',
+    //   AuraPreset.components);
     // console.log('components\nbutton: ' +
     //   JSON.stringify(
     //     AuraPreset.components.button,
