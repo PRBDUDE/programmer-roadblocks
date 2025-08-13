@@ -55,10 +55,10 @@ export class ColorPaletteGeneratorComponent {
     if (this.isSurfaceColor()) {
       this.colorValues = {
         0: "#ffffff",
-        ...palette(this.baseColor)
+        ...palette(this.baseColor) as PaletteShades,
       };
     } else {
-      this.colorValues = palette(this.baseColor);
+      this.colorValues = palette(this.baseColor) as PaletteShades;
     }
     if (this.colorValues) {
       this.shades = Object.keys(this.colorValues);
