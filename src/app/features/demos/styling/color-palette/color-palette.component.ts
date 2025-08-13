@@ -1,5 +1,5 @@
 import {Component, DoCheck, signal} from '@angular/core';
-import {$dt} from "@primeuix/themes";
+import {$dt} from "@primeuix/styled";
 import {ColorPaletteGeneratorComponent} from "./color-palette-generator/color-palette-generator.component";
 import {isPrbMode, prbModes} from "@utility/is-prb-mode";
 
