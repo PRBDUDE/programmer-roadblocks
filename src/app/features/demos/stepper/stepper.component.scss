@@ -5,6 +5,8 @@
   .prb-stepper-content {
     width: var(--prb-stepper-content-width);
     min-height: var(--prb-stepper-content-min-height);
+    font-size: var(--prb-stepper-content-text-font-size);
+    color: var(--prb-stepper-content-text-color);
     border: var(--prb-stepper-content-border);
     background-color: var(--prb-stepper-content-background-color);
     border-radius: var(--prb-stepper-content-border-radius);
@@ -13,7 +15,6 @@
 
     .prb-stepper-label-tag {
       position: relative;
-      margin: var(--prb-stepper-label-margin);
       top: var(--prb-stepper-label-top);
       width: fit-content;
       padding: var(--prb-stepper-label-padding);

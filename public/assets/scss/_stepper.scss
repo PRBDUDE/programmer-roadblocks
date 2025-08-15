@@ -7,8 +7,10 @@
   --prb-stepper-content-margin: 0 0 20px 0;
   --prb-stepper-content-min-height: 200px;
   --prb-stepper-content-border-color: var(--p-surface-700);
+  --prb-stepper-content-text-color: var(--p-surface-800);
   --prb-stepper-content-border: 1px solid var(--prb-stepper-content-border-color);
   --prb-stepper-content-background-color: var(--p-surface-100);
+  --prb-stepper-content-text-font-size: 10pt;
 
   --prb-stepper-label-background-color: var(--p-surface-100);
   --prb-stepper-label-margin: 0;
@@ -25,6 +27,7 @@
   &[class*="prb-dark-theme"] {
     --prb-stepper-content-border-color: var(--p-surface-400);
     --prb-stepper-content-background-color: var(--p-surface-700);
+    --prb-step-content-text-color: var(--p-surface-100);
 
     --prb-stepper-label-background-color: var(--p-surface-700);
   }
