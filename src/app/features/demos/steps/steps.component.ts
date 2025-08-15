@@ -1,7 +1,6 @@
 import {Component, signal} from '@angular/core';
 import {Steps} from "primeng/steps";
 import {MenuItem} from "primeng/api";
-import {NgIf} from "@angular/common";
 import {StepsOneComponent} from "./steps-one/steps-one.component";
 import {StepsTwoComponent} from "./steps-two/steps-two.component";
 import {StepsThreeComponent} from "./steps-three/steps-three.component";
@@ -16,7 +15,6 @@ import {isPrbMode, prbModes} from "@utility/is-prb-mode";
   selector: 'prb-steps',
   imports: [
     Steps,
-    NgIf,
     StepsOneComponent,
     StepsTwoComponent,
     StepsThreeComponent,

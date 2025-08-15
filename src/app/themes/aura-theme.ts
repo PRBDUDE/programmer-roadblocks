@@ -1,5 +1,5 @@
-import Aura from "@primeng/themes/aura";
-import {definePreset} from "@primeng/themes";
+import Aura from "@primeuix/themes/aura";
+import {definePreset} from "@primeuix/themes";
 import {Primitive} from "./primitive";
 import {Semantic} from "./semantic";
 import {ButtonPreset} from "./components/button-preset";

@@ -1,6 +1,5 @@
 import {Component, input, model} from '@angular/core';
 import {Checkbox} from "primeng/checkbox";
-import {DropdownModule} from "primeng/dropdown";
 import {FormsModule} from "@angular/forms";
 import {TimelineAlignmentItem} from "../module/timeline-alignment-item";
 import {Select} from "primeng/select";
@@ -9,7 +8,6 @@ import {Select} from "primeng/select";
   selector: 'prb-timeline-options',
   imports: [
     Checkbox,
-    DropdownModule,
     FormsModule,
     Select,
   ],
