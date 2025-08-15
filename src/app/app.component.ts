@@ -3,7 +3,6 @@ import {RouterOutlet} from '@angular/router';
 import {RoadblockHeaderComponent} from "@rootComponents/roadblock-header.component";
 import {PrimeNG} from "primeng/config";
 import {RoadblockFooterComponent} from "@rootComponents/roadblock-footer.component";
-import {AuraPreset} from "./themes/aura-theme";
 import {PrimengConfigService} from "@utility/primeng-config.service";
 
 @Component({

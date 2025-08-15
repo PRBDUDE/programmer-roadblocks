@@ -1,6 +1,6 @@
 import Aura from "@primeuix/themes/aura";
 import {definePreset} from "@primeuix/themes";
-import {Primitive} from "./primitive";
+import {Primitive} from "../primitive";
 import {Semantic} from "./semantic";
 import {ButtonPreset} from "./components/button-preset";
 import {DatatablePreset} from "./components/datatable-preset";
