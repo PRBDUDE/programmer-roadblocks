@@ -14,49 +14,50 @@
 
       <form [formGroup]="colorForm" (ngSubmit)="generatePalettes()">
         <div [formArrayName]="'colors'">
-          <div *ngFor="let colorGroup of colorsArray.controls; let i = index" [formGroupName]="i"
-               class="prb-color-input-row">
-            <div class="prb-color-name-input">
-              <label [for]="'colorName' + i">Color Name:</label>
-              <input
-                [id]="'colorName' + i"
-                type="text"
-                pInputText
-                [formControlName]="'name'"
-                placeholder="Enter color name"
-              />
-              @if (colorGroup.get('name')?.invalid && colorGroup.get('name')?.touched) {
-                <div class="prb-error-message">
-                  Color name is required
-                </div>
-              }
-            </div>
-
-            <div class="prb-color-hex-input">
-              <label [for]="'colorHex' + i">Hex Code:</label>
-              <div class="prb-color-input-group">
+          @for (colorGroup of colorsArray.controls; track colorGroup; let i = $index) {
+            <div class="prb-color-input-row">
+              <div class="prb-color-name-input">
+                <label [for]="'colorName' + i">Color Name:</label>
                 <input
-                  type="color"
-                  [id]="'colorPicker' + i"
-                  [formControlName]="'baseColor'"
-                  (input)="onColorPickerChange($event, i)"
-                />
-                <input
-                  [id]="'colorHex' + i"
+                  [id]="'colorName' + i"
                   type="text"
                   pInputText
-                  [formControlName]="'baseColor'"
-                  placeholder="#RRGGBB"
-                  (blur)="onColorTextChange($event, i)"
+                  [formControlName]="'name'"
+                  placeholder="Enter color name"
                 />
+                @if (colorGroup.get('name')?.invalid && colorGroup.get('name')?.touched) {
+                  <div class="prb-error-message">
+                    Color name is required
+                  </div>
+                }
               </div>
-              @if (colorGroup.get('baseColor')?.invalid && colorGroup.get('baseColor')?.touched) {
-                <div class="prb-error-message">
-                  Valid hex color code required (#RRGGBB)
+
+              <div class="prb-color-hex-input">
+                <label [for]="'colorHex' + i">Hex Code:</label>
+                <div class="prb-color-input-group">
+                  <input
+                    type="color"
+                    [id]="'colorPicker' + i"
+                    [formControlName]="'baseColor'"
+                    (input)="onColorPickerChange($event, i)"
+                  />
+                  <input
+                    [id]="'colorHex' + i"
+                    type="text"
+                    pInputText
+                    [formControlName]="'baseColor'"
+                    placeholder="#RRGGBB"
+                    (blur)="onColorTextChange($event, i)"
+                  />
                 </div>
-              }
+                @if (colorGroup.get('baseColor')?.invalid && colorGroup.get('baseColor')?.touched) {
+                  <div class="prb-error-message">
+                    Valid hex color code required (#RRGGBB)
+                  </div>
+                }
+              </div>
             </div>
-          </div>
+          }
         </div>
 
         <div class="prb-button-section">
