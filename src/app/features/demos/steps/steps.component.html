@@ -16,7 +16,7 @@
            [activeIndex]="activeIndex"
            (activeIndexChange)="onActiveIndexChange($event)"/>
   <div class="prb-step-content">
-    <ng-container *ngIf="activeIndex === 0">
+    @if (activeIndex === 0) {
       @if (!inline()) {
         <prb-steps-one/>
       } @else {
@@ -27,8 +27,8 @@
           lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, sapien vel tincidunt bibendum,
         </div>
       }
-    </ng-container>
-    <ng-container *ngIf="activeIndex === 1">
+    }
+    @if (activeIndex === 1) {
       @if (!inline()) {
         <prb-steps-two/>
       } @else {
@@ -39,8 +39,8 @@
           lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, sapien vel tincidunt bibendum,
         </div>
       }
-    </ng-container>
-    <ng-container *ngIf="activeIndex === 2">
+    }
+    @if (activeIndex === 2) {
       @if (!inline()) {
         <prb-steps-three/>
       } @else {
@@ -51,8 +51,8 @@
           lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, sapien vel tincidunt bibendum,
         </div>
       }
-    </ng-container>
-    <ng-container *ngIf="activeIndex === 3">
+    }
+    @if (activeIndex === 3) {
       @if (!inline()) {
         <prb-steps-four/>
       } @else {
@@ -63,7 +63,7 @@
           lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, sapien vel tincidunt bibendum,
         </div>
       }
-    </ng-container>
+    }
   </div>
   <div class="prb-button-container">
     <div class="prb-prev-button">
