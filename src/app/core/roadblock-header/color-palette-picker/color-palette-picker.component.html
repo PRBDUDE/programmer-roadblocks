@@ -193,4 +193,15 @@
         tooltipPosition="bottom"></button>
     </div>
   </div>
+
+  <div class="prb-color-palette">
+    <div class="prb-color-palette-label">
+      Ripple Effect
+    </div>
+    <p-toggleswitch
+      [size]="'small'"
+      [ngModel]="isRippleEffect()"
+      (onChange)="setRippleEffect($event.checked)">
+    </p-toggleswitch>
+  </div>
 </div>
