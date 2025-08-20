@@ -2,6 +2,12 @@ import {Routes} from "@angular/router";
 
 export const demo_routes: Routes = [
   {
+    path: 'accordion',
+    loadComponent: () => import('./accordion/accordion.component')
+      .then(m => m.AccordionComponent),
+    title: 'Input Filter'
+  },
+  {
     path: 'input-filter',
     loadComponent: () => import('./input/input-filter/input-filter.component')
       .then(m => m.InputFilterComponent),

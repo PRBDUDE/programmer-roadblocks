@@ -5,6 +5,7 @@ import {demoTimelineMenu} from "@rootComponents/menu/demo-timeline-menu";
 import {demoTooltipMenu} from "@rootComponents/menu/demo-tooltip";
 import {demoStepperMenu} from "@rootComponents/menu/demo-stepper-menu";
 import {demoStepsMenu} from "@rootComponents/menu/demo-steps-menu";
+import {demoAccordionMenu} from "@rootComponents/menu/demo-accordion-menu";
 
 export function demosMenu() {
   return {
@@ -12,6 +13,7 @@ export function demosMenu() {
     root: true,
     items: [
       [
+        demoAccordionMenu(),
         demoInputMenu(),
         demoScrollingMenu(),
         demoStylingMenu()
