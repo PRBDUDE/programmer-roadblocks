@@ -4,6 +4,7 @@ import {RoadblockHeaderComponent} from "@rootComponents/roadblock-header.compone
 import {PrimeNG} from "primeng/config";
 import {RoadblockFooterComponent} from "@rootComponents/roadblock-footer.component";
 import {PrimengConfigService} from "@utility/primeng-config.service";
+import {AuraPreset} from "./themes/aura/theme";
 
 @Component({
   selector: 'prb-root',
@@ -51,6 +52,8 @@ export class AppComponent implements OnInit {
     //   AuraPreset.semantic);
     // console.log('Theme - Components: ',
     //   AuraPreset.components);
+    console.log('components\naccordion: ',
+      AuraPreset?.components?.accordion);
     // console.log('components\nbutton: ' +
     //   JSON.stringify(
     //     AuraPreset.components.button,

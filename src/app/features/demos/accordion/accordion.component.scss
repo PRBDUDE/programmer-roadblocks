@@ -1,4 +1,4 @@
-.card {
+.prb-card {
   background: var(--prb-card-color-background);
   border: 1px solid var(--prb-card-color-border);
   padding: 2rem;
@@ -6,15 +6,97 @@
   border-radius: 10px;
 }
 
-.flex {
+.prb-flex {
   display: flex;
   flex-direction: column;
 }
 
-.justify-center {
+.prb-justify-center {
   justify-content: center;
 }
 
-.margin-0 {
+.prb-margin-0 {
   margin: 0;
+}
+
+.prb-accordion-examples {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.prb-header-container {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+}
+
+.prb-date-container {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 2fr;
+}
+
+.prb-status {
+  margin-bottom: 0.5rem;
+
+  .prb-error,
+  .prb-cleanup,
+  .prb-step {
+    width: fit-content;
+    margin-top: 0.5rem;
+    padding: 3px;
+    border-radius: 5px;
+  }
+
+  .prb-error {
+    color: var(--prb-color-error-text);
+    background-color: var(--prb-color-error-background);
+  }
+
+  .prb-cleanup {
+    color: var(--prb-color-cleanup-text);
+    background-color: var(--prb-color-cleanup-background);
+  }
+
+  .prb-step {
+    color: var(--prb-color-step-text);
+    background-color: var(--prb-color-step-background);
+  }
+}
+
+.prb-progress {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+
+  .prb-complete {
+    color: var(--p-green-500);
+    font-weight: 900;
+  }
+
+  .prb-working {
+    color: var(--p-orange-500);
+    animation-name: turn;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+
+  .prb-cleanup {
+    color: var(--p-blue-400);
+  }
+
+  .prb-error {
+    color: var(--p-red-500);
+  }
+}
+
+@keyframes turn {
+  0%, 30% {
+    transform: rotate(0deg);
+  }
+  60%, 100% {
+    transform: rotate(180deg);
+  }
 }

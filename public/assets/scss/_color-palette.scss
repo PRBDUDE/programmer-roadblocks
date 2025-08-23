@@ -18,6 +18,12 @@
   --prb-color-palette-item-border: 1px solid var(--p-surface-0);
   --prb-divider-color: var(--p-surface-700);
   --prb-media-background-color: var(--p-surface-100);
+  --prb-color-error-text: var(--p-red-50);
+  --prb-color-error-background: var(--p-red-600);
+  --prb-color-cleanup-text: var(--p-blue-50);
+  --prb-color-cleanup-background: var(--p-blue-400);
+  --prb-color-step-text: var(--p-surface-900);
+  --prb-color-step-background: var(--p-surface-100);
 
   &[class*="prb-dark-theme"] {
     --prb-color-palette-panel-background-color: var(--p-surface-700);
@@ -25,5 +31,11 @@
     --prb-color-palette-panel-border: 2px solid var(--p-surface-300);
     --prb-divider-color: var(--p-surface-300);
     --prb-media-background-color: var(--p-surface-600);
+    --prb-color-error-text: var(--p-red-600);
+    --prb-color-error-background: var(--p-red-50);
+    --prb-color-cleanup-text: var(--p-blue-600);
+    --prb-color-cleanup-background: var(--p-blue-50);
+    --prb-color-step-text: var(--p-surface-100);
+    --prb-color-step-background: var(--p-surface-600);
   }
 }
