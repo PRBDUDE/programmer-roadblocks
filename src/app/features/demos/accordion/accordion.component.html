@@ -1,19 +1,16 @@
 <div class="prb-accordion-examples">
   <div class="prb-accordion-example-container">
+    <prb-accordion-options
+      [(multiple)]="multiple">
+    </prb-accordion-options>
+
     <h1>
       Fixed Accordion Example
     </h1>
 
-    <prb-accordion-options
-      [(multiple)]="multiple"
-      [(disableOne)]="disableOne"
-      [(disableTwo)]="disableTwo"
-      [(disableThree)]="disableThree">
-    </prb-accordion-options>
-
     <div class="prb-card prb-flex prb-justify-center">
       <p-accordion [value]="['0']" [multiple]="multiple()">
-        <p-accordion-panel value="0" [disabled]="disableOne()">
+        <p-accordion-panel value="0">
           <p-accordion-header>
             Header I
           </p-accordion-header>
@@ -32,7 +29,7 @@
           </p-accordion-content>
         </p-accordion-panel>
 
-        <p-accordion-panel value="1" [disabled]="disableTwo()">
+        <p-accordion-panel value="1">
           <p-accordion-header>Header II</p-accordion-header>
           <p-accordion-content>
             <p class="prb-margin-0">
@@ -48,7 +45,7 @@
           </p-accordion-content>
         </p-accordion-panel>
 
-        <p-accordion-panel value="2" [disabled]="disableThree()">
+        <p-accordion-panel value="2">
           <p-accordion-header>Header III</p-accordion-header>
           <p-accordion-content>
             <p class="prb-margin-0">
@@ -70,7 +67,7 @@
     </h1>
 
     <div class="prb-card prb-flex prb-justify-center">
-      <p-accordion [value]="['0']" [multiple]="false">
+      <p-accordion [value]="['0']" [multiple]="multiple()">
         @for (panel of panels; track panel.job.id) {
           <p-accordion-panel [value]="panel.index" [disabled]="panel.disabled">
             <p-accordion-header>

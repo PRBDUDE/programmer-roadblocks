@@ -13,7 +13,7 @@ import {FormsModule} from "@angular/forms";
 })
 export class AccordionOptionsComponent {
   multiple = model<boolean>(false);
-  disableOne = model<boolean>(false);
-  disableTwo = model<boolean>(false);
-  disableThree = model<boolean>(false);
+  // disableOne = model<boolean>(false);
+  // disableTwo = model<boolean>(false);
+  // disableThree = model<boolean>(false);
 }
