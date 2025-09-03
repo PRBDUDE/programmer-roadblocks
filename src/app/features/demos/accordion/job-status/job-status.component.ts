@@ -11,7 +11,5 @@ import {JobStatus} from "@model/job-status";
   styleUrl: '../accordion.component.scss'
 })
 export class JobStatusComponent {
-  status = input<string>('');
-  message = input<string>('');
   job = input<JobStatus>()
 }
