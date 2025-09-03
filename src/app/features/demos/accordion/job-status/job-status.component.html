@@ -1,0 +1,14 @@
+<div class="prb-status">
+  @if (job()?.status === 'error') {
+    <p-tag [value]="job()?.status" severity="danger"/>
+    <p class="prb-margin-0 prb-error"><strong>Error:</strong> {{ job()?.message }}</p>
+  } @else if (job()?.status === 'completed') {
+    <p-tag [value]="job()?.status" severity="success"/>
+  } @else if (job()?.status === 'cleanup') {
+    <p-tag [value]="job()?.status" severity="info"/>
+    <p class="prb-margin-0 prb-cleanup"><strong>Cleanup:</strong> {{ job()?.message }}</p>
+  } @else {
+    <p-tag [value]="job()?.status" severity="warn"/>
+    <p class="prb-margin-0 prb-step"><strong>Step:</strong> {{ job()?.message }}</p>
+  }
+</div>
