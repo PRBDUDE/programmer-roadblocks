@@ -1,0 +1,115 @@
+{
+  "jobs": [
+    {
+      "id": 0,
+      "disabled": false,
+      "job": {
+        "name": "X34900",
+        "percentage": 100,
+        "status": "completed",
+        "message": "Success",
+        "start": "Tue, 15 Apr 2025 23:45:05 GMT",
+        "end": "Tue, 15 Apr 2025 23:46:06 GMT"
+      }
+    },
+    {
+      "id": 1,
+      "disabled": false,
+      "job": {
+        "name": "X34907",
+        "percentage": 100,
+        "status": "completed",
+        "message": "Success",
+        "start": "Tue, 15 Apr 2025 23:45:05 GMT",
+        "end": "Wed, 16 Apr 2025 00:01:01 GMT"
+      }
+    },
+    {
+      "id": 2,
+      "disabled": false,
+      "job": {
+        "name": "X34912",
+        "percentage": 95,
+        "status": "error",
+        "message": "Unable to connect to database",
+        "start": "Wed, 16 Apr 2025 00:01:01 GMT",
+        "end": "Wed, 16 Apr 2025 00:30:01 GMT"
+      }
+    },
+    {
+      "id": 3,
+      "disabled": false,
+      "job": {
+        "name": "X34913",
+        "percentage": 100,
+        "status": "completed",
+        "message": "Success",
+        "start": "Wed, 16 Apr 2025 00:30:01 GMT",
+        "end": "Wed, 16 Apr 2025 00:59:09 GMT"
+      }
+    },
+    {
+      "id": 4,
+      "disabled": false,
+      "job": {
+        "name": "X34915",
+        "percentage": 92,
+        "status": "cleanup",
+        "message": "Closing database connection",
+        "start": "Wed, 16 Apr 2025 00:59:09 GMT"
+      }
+    },
+    {
+      "id": 5,
+      "disabled": false,
+      "job": {
+        "name": "X34921",
+        "percentage": 47,
+        "status": "working",
+        "message": "Retrieving data from the server",
+        "start": "Wed, 16 Apr 2025 01:02:06 GMT"
+      }
+    },
+    {
+      "id": 6,
+      "disabled": false,
+      "job": {
+        "name": "X34925",
+        "percentage": 63,
+        "status": "working",
+        "message": "Reconciling data",
+        "start": "Wed, 16 Apr 2025 01:29:01 GMT"
+      }
+    },
+    {
+      "id": 7,
+      "disabled": false,
+      "job": {
+        "name": "X34927",
+        "percentage": 58,
+        "status": "working",
+        "message": "Updating database",
+        "start": "Thu, 17 Apr 2025 00:25:05 GMT"
+      }
+    },
+    {
+      "id": 8,
+      "disabled": false,
+      "job": {
+        "name": "X34931",
+        "percentage": 87,
+        "status": "cleanup",
+        "message": "Deleting old data",
+        "start": "Thu, 17 Apr 2025 00:25:05 GMT"
+      }
+    }
+  ],
+  "profile": {
+    "primary": "sky",
+    "surface": "neutral",
+    "ripple": "true",
+    "footer": "sticky",
+    "debug": "true",
+    "theme": "dark"
+  }
+}
