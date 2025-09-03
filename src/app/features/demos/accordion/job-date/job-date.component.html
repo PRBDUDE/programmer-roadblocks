@@ -1,0 +1,9 @@
+<p class="prb-margin-0">
+  <span class="prb-date-container">
+    <span><strong>{{ dateType() }}:</strong></span>
+    @if (date() !== undefined) {
+      <span>{{ date() | date:'yyyyMMdd' }}</span>
+      <span>at {{ date() | date:'shortTime' }}</span>
+    }
+  </span>
+</p>
