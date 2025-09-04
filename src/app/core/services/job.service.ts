@@ -1,6 +1,7 @@
 import {Injectable} from '@angular/core';
 import {DataService} from "./data.service";
 import {JobStatusRecord} from "@model/job-status";
+import {environment} from "@environments/environment";
 
 @Injectable({
   providedIn: 'root'
@@ -8,6 +9,6 @@ import {JobStatusRecord} from "@model/job-status";
 export class JobService extends DataService<JobStatusRecord>{
 
   constructor() {
-    super('http://localhost:3000/jobs');
+    super(environment.jobStatusUrl);
   }
 }

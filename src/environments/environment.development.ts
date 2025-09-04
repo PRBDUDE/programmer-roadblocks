@@ -1,4 +1,6 @@
 export const environment = {
   production: false,
-  envPrefix: 'dev'
+  envPrefix: 'dev',
+  userProfileUrl: "https://your-server-dev:5600/profile",
+  jobStatusUrl: "https://your-server-dev:5600/jobs"
 };
