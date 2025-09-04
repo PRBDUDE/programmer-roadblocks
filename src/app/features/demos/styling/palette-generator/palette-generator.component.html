@@ -15,7 +15,7 @@
       <form [formGroup]="colorForm" (ngSubmit)="generatePalettes()">
         <div [formArrayName]="'colors'">
           @for (colorGroup of colorsArray.controls; track colorGroup; let i = $index) {
-            <div class="prb-color-input-row">
+            <div [formGroupName]="i" class="prb-color-input-row">
               <div class="prb-color-name-input">
                 <label [for]="'colorName' + i">Color Name:</label>
                 <input
