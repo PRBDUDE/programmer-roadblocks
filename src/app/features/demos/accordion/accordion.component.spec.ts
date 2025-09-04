@@ -8,6 +8,7 @@ import {AccordionOptionsComponent} from "./accordion-options/accordion-options.c
 import {JobHeaderComponent} from "./job-header/job-header.component";
 import {JobStatusComponent} from "./job-status/job-status.component";
 import {JobDateComponent} from "./job-date/job-date.component";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 describe('AccordionComponent', () => {
   let component: AccordionComponent;
@@ -20,7 +21,8 @@ describe('AccordionComponent', () => {
         AccordionOptionsComponent,
         JobHeaderComponent,
         JobStatusComponent,
-        JobDateComponent
+        JobDateComponent,
+        BrowserAnimationsModule
       ],
       providers: [
         provideHttpClient(),
