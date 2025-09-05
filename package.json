@@ -9,7 +9,7 @@
     "start:stage": "ng serve --configuration stage",
     "start:production": "ng serve --configuration production",
     "local:data:development": "json-server --watch data/db.json",
-    "local:development": "ng serve --configuration local-development",
+    "local:development": "ng serve --configuration local-development --proxy-config proxy.conf.json",
     "build": "ng build",
     "build:development": "ng build --configuration development",
     "build:sit": "ng build --configuration sit",
