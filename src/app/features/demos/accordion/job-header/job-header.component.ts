@@ -1,4 +1,4 @@
-import {Component, input} from '@angular/core';
+import {Component, input, output} from '@angular/core';
 import {ProgressBar} from "primeng/progressbar";
 import {JobStatus} from "@model/job-status";
 
@@ -12,4 +12,11 @@ import {JobStatus} from "@model/job-status";
 })
 export class JobHeaderComponent {
   job = input<JobStatus>();
+  removed = output<void>();
+
+  delete($event: MouseEvent) {
+    $event.stopPropagation();
+    console.log('delete: ', $event)
+    this.removed.emit();
+  }
 }
