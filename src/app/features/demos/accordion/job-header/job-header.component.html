@@ -13,6 +13,8 @@
     } @else if (job()?.status === 'error') {
       <i class="pi pi-thumbs-down prb-error"></i>
     }
-    <i class="pi pi-trash prb-cancel" (click)="delete($event)"></i>
+    <i class="pi pi-trash prb-cancel"
+       [class.prb-disabled]="job()?.end === undefined"
+       (click)="delete($event)"></i>
   </div>
 </div>

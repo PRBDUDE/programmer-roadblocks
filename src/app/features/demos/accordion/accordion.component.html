@@ -71,7 +71,7 @@
         @for (panel of panels; track panel.job.name) {
           <p-accordion-panel [value]="panel.id" [disabled]="panel.disabled">
             <p-accordion-header>
-              <prb-job-header [job]="panel.job"/>
+              <prb-job-header [job]="panel.job" (removed)="removeJob(panel.id)"/>
             </p-accordion-header>
             <p-accordion-content>
               <prb-job-status [job]="panel.job"/>

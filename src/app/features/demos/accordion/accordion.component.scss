@@ -72,6 +72,7 @@
   flex-direction: row;
   align-items: center;
   gap: 1rem;
+  padding-right: 1rem;
 
   .prb-complete {
     color: var(--p-green-500);
@@ -91,6 +92,17 @@
 
   .prb-error {
     color: var(--p-red-500);
+    scale: 1.2;
+  }
+
+  .prb-cancel {
+    color: var(--p-red-500);
+  }
+
+  .prb-disabled {
+    color: var(--p-gray-400);
+    cursor: not-allowed;
+    font-weight: unset;
   }
 }
 

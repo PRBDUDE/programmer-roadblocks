@@ -15,8 +15,11 @@ export class JobHeaderComponent {
   removed = output<void>();
 
   delete($event: MouseEvent) {
+    // Prevent the click event from propagating to the parent
     $event.stopPropagation();
-    console.log('delete: ', $event)
-    this.removed.emit();
+    // Emit only if the job is complete
+    if (this.job()?.end) {
+      this.removed.emit();
+    }
   }
 }

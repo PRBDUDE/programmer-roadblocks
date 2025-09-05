@@ -35,4 +35,12 @@ export class AccordionComponent implements OnInit {
       this.panels.push(...jobs);
     })
   }
+
+  removeJob(id: number) {
+    this.jobService.delete(id).subscribe(
+      () => {
+        this.panels = this.panels.filter(job => job.id !== id);
+      }
+    )
+  }
 }
