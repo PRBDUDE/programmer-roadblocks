@@ -117,6 +117,7 @@
     }
   ],
   "profile": {
+    "id": 1,
     "primary": "sky",
     "surface": "neutral",
     "ripple": "true",
