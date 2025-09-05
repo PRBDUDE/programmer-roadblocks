@@ -4,7 +4,9 @@ import {RoadblockHeaderComponent} from "@rootComponents/roadblock-header.compone
 import {PrimeNG} from "primeng/config";
 import {RoadblockFooterComponent} from "@rootComponents/roadblock-footer.component";
 import {PrimengConfigService} from "@utility/primeng-config.service";
-import {AuraPreset} from "./themes/aura/theme";
+import {ProfileService} from "@services/profile.service";
+import {setPrimaryColor} from "@utility/set-primary-color";
+import {setSurfaceColor} from "@utility/set-surface-color";
 
 @Component({
   selector: 'prb-root',
@@ -22,8 +24,15 @@ export class AppComponent implements OnInit {
   primeng = inject(PrimeNG);
   primengConfig = inject(PrimengConfigService);
 
+  constructor(private profileService: ProfileService) {
+  }
+
   ngOnInit(): void {
-    this.primeng.ripple.set(true);
+    this.profileService.getProfile().subscribe(profile => {
+      setPrimaryColor(profile.primary);
+      setSurfaceColor(profile.surface);
+      this.primeng.ripple.set(profile.ripple === 'true');
+    })
     this.primeng.zIndex = {
       modal: 10000,
       overlay: 10000,
@@ -52,8 +61,8 @@ export class AppComponent implements OnInit {
     //   AuraPreset.semantic);
     // console.log('Theme - Components: ',
     //   AuraPreset.components);
-    console.log('components\naccordion: ',
-      AuraPreset?.components?.accordion);
+    // console.log('components\naccordion: ',
+    //   AuraPreset?.components?.accordion);
     // console.log('components\nbutton: ' +
     //   JSON.stringify(
     //     AuraPreset.components.button,
