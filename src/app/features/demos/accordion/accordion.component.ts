@@ -1,7 +1,7 @@
 import {Component, OnInit, signal} from '@angular/core';
 import {AccordionModule} from "primeng/accordion";
 import {AccordionOptionsComponent} from "./accordion-options/accordion-options.component";
-import {JobService} from "../../../core/services/job.service";
+import {JobService} from "@services/job.service";
 import {JobStatusRecord} from "@model/job-status";
 import {JobHeaderComponent} from "./job-header/job-header.component";
 import {JobStatusComponent} from "./job-status/job-status.component";
