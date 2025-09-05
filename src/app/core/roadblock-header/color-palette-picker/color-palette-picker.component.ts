@@ -27,6 +27,7 @@ export class ColorPalettePickerComponent implements OnInit {
   protected readonly isMode = isPrbMode;
 
   profile: UserProfile = {
+    id: 1,
     primary: 'sky',
     surface: 'neutral',
     ripple: 'true',

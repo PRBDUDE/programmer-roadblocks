@@ -10,6 +10,7 @@ import { Observable, map, switchMap, take } from "rxjs";
 export class ProfileService extends DataService<UserProfile> {
 
   private readonly DEFAULT_PROFILE: UserProfile = {
+    id: 1,
     primary: 'sky',
     surface: 'neutral',
     ripple: 'true',
@@ -26,16 +27,12 @@ export class ProfileService extends DataService<UserProfile> {
     return this.httpClient.get<UserProfile>(this.apiUrl);
   }
 
-  updateProfile(item: UserProfile): Observable<UserProfile> {
-    return this.httpClient.put<UserProfile>(this.apiUrl, item);
-  }
-
   // Apply a partial update by merging current profile with defaults and the patch.
   private updatePartial(patch: Partial<UserProfile>): Observable<UserProfile> {
     return this.getProfile().pipe(
       take(1),
       map(current => ({ ...this.DEFAULT_PROFILE, ...current, ...patch })),
-      switchMap(updated => this.updateProfile(updated))
+      switchMap(updated => this.update(1, updated))
     );
   }
 
@@ -60,6 +57,6 @@ export class ProfileService extends DataService<UserProfile> {
   }
 
   resetProfile(): Observable<UserProfile> {
-    return this.updateProfile(this.DEFAULT_PROFILE);
+    return this.update(1, this.DEFAULT_PROFILE);
   }
 }

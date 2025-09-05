@@ -34,6 +34,7 @@ describe('ProfileService', () => {
   describe('getProfile', () => {
     it('should return a profile', () => {
       const mockProfile: UserProfile = {
+        id: 1,
         primary: 'sky',
         surface: 'stone',
         ripple: false,
@@ -60,6 +61,7 @@ describe('ProfileService', () => {
     // New tests for updating primary color to "teal"
     it('should update profile with primary color "teal"', () => {
       const currentProfile: UserProfile = {
+        id: 1,
         primary: 'sky',
         surface: 'neutral',
         ripple: 'true',
@@ -98,6 +100,7 @@ describe('ProfileService', () => {
     // New tests for updating surface color to "ocean"
     it('should update profile with surface color "ocean"', () => {
       const currentProfile: UserProfile = {
+        id: 1,
         primary: 'sky',
         surface: 'neutral',
         ripple: 'true',
@@ -136,6 +139,7 @@ describe('ProfileService', () => {
     // New tests for updating Ripple Effect with "false"
     it('should update profile with Ripple Effect with "false"', () => {
       const currentProfile: UserProfile = {
+        id: 1,
         primary: 'sky',
         surface: 'neutral',
         ripple: 'true',
@@ -175,6 +179,7 @@ describe('ProfileService', () => {
   describe('setFooter', () => {
     it('should update profile with footer "float"', () => {
       const currentProfile: UserProfile = {
+        id: 1,
         primary: 'sky',
         surface: 'neutral',
         ripple: 'true',
@@ -210,6 +215,7 @@ describe('ProfileService', () => {
   describe('setDebug', () => {
     it('should update profile with debug "true"', () => {
       const currentProfile: UserProfile = {
+        id: 1,
         primary: 'sky',
         surface: 'neutral',
         ripple: 'true',
@@ -245,6 +251,7 @@ describe('ProfileService', () => {
   describe('setTheme', () => {
     it('should update profile with theme "light"', () => {
       const currentProfile: UserProfile = {
+        id: 1,
         primary: 'sky',
         surface: 'neutral',
         ripple: 'true',
