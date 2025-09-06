@@ -9,7 +9,7 @@ import {Button} from "primeng/button";
 import {ToggleSwitch} from "primeng/toggleswitch";
 import {FormsModule} from "@angular/forms";
 import {DebugOutputCardComponent} from "@utility/debug-output-card.component";
-import {isPrbMode, prbModes} from "@utility/is-prb-mode";
+import {isPrbMode, prbModes} from "@utility/prb-mode";
 
 @Component({
   selector: 'prb-steps',

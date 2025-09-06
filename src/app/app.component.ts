@@ -7,6 +7,7 @@ import {PrimengConfigService} from "@utility/primeng-config.service";
 import {ProfileService} from "@services/profile.service";
 import {setPrimaryColor} from "@utility/set-primary-color";
 import {setSurfaceColor} from "@utility/set-surface-color";
+import {setDarkTheme, setDebugMode, setFixedFooter} from "@utility/prb-mode";
 
 @Component({
   selector: 'prb-root',
@@ -31,7 +32,10 @@ export class AppComponent implements OnInit {
     this.profileService.getProfile().subscribe(profile => {
       setPrimaryColor(profile.primary);
       setSurfaceColor(profile.surface);
-      this.primeng.ripple.set(profile.ripple === 'true');
+      this.primeng.ripple.set(profile.ripple);
+      setFixedFooter(profile.fixedFooter);
+      setDarkTheme(profile.darkTheme);
+      setDebugMode(profile.debug);
     })
     this.primeng.zIndex = {
       modal: 10000,

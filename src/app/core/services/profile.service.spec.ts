@@ -38,9 +38,9 @@ describe('ProfileService', () => {
         primary: 'sky',
         surface: 'stone',
         ripple: false,
-        footer: 'sticky',
+        fixedFooter: false,
         debug: true,
-        theme: 'dark'
+        darkTheme: true
       };
 
       let received: UserProfile | undefined;
@@ -64,10 +64,10 @@ describe('ProfileService', () => {
         id: 1,
         primary: 'sky',
         surface: 'neutral',
-        ripple: 'true',
-        footer: 'sticky',
-        debug: 'false',
-        theme: 'dark'
+        ripple: true,
+        fixedFooter: true,
+        debug: false,
+        darkTheme: true
       };
 
       // Act: request to set primary to "teal"
@@ -87,7 +87,7 @@ describe('ProfileService', () => {
       expect(sentBody.primary).toBe('teal');
       expect(sentBody.surface).toBe('neutral');
       // Service converts boolean to string
-      expect(sentBody.ripple).toBe('true');
+      expect(sentBody.ripple).toBeTrue();
 
       // Complete the request by echoing back what server would return
       putReq.flush(sentBody);
@@ -103,10 +103,10 @@ describe('ProfileService', () => {
         id: 1,
         primary: 'sky',
         surface: 'neutral',
-        ripple: 'true',
-        footer: 'sticky',
-        debug: 'false',
-        theme: 'dark'
+        ripple: true,
+        fixedFooter: true,
+        debug: false,
+        darkTheme: true
       };
 
       // Act: request to set surface to "ocean"
@@ -126,7 +126,7 @@ describe('ProfileService', () => {
       expect(sentBody.primary).toBe('sky');
       expect(sentBody.surface).toBe('ocean');
       // Service converts boolean to string
-      expect(sentBody.ripple).toBe('true');
+      expect(sentBody.ripple).toBeTrue();
 
       // Complete the request by echoing back what server would return
       putReq.flush(sentBody);
@@ -142,10 +142,10 @@ describe('ProfileService', () => {
         id: 1,
         primary: 'sky',
         surface: 'neutral',
-        ripple: 'true',
-        footer: 'sticky',
-        debug: 'false',
-        theme: 'dark'
+        ripple: true,
+        fixedFooter: true,
+        debug: false,
+        darkTheme: false
       };
 
       // Act: request to set surface to "ocean"
@@ -165,14 +165,14 @@ describe('ProfileService', () => {
       expect(sentBody.primary).toBe('sky');
       expect(sentBody.surface).toBe('neutral');
       // Service converts boolean to string
-      expect(sentBody.ripple).toBe('false');
+      expect(sentBody.ripple).toBeFalse();
 
       // Complete the request by echoing back what server would return
       putReq.flush(sentBody);
 
       // Assert the observable emits the updated profile
       expect(response).toBeTruthy();
-      expect(response?.ripple).toBe('false');
+      expect(response?.ripple).toBeFalse();
     });
   });
 
@@ -182,14 +182,14 @@ describe('ProfileService', () => {
         id: 1,
         primary: 'sky',
         surface: 'neutral',
-        ripple: 'true',
-        footer: 'sticky',
-        debug: 'false',
-        theme: 'dark'
+        ripple: true,
+        fixedFooter: true,
+        debug: false,
+        darkTheme: true
       };
 
       let response: UserProfile | undefined;
-      service.setFooter('float').subscribe(res => (response = res));
+      service.setFixedFooter(false).subscribe(res => (response = res));
 
       // First the service fetches current profile
       const getReq = httpMock.expectOne(req => req.method === 'GET');
@@ -201,14 +201,14 @@ describe('ProfileService', () => {
       expect(putReq.request.method).toBe('PUT');
 
       const sentBody = putReq.request.body as UserProfile;
-      expect(sentBody.footer).toBe('float');
+      expect(sentBody.fixedFooter).toBeFalse();
 
       // Echo back the updated body as server response
       putReq.flush(sentBody);
 
       // Ensure observable emitted the updated profile
       expect(response).toBeTruthy();
-      expect(response?.footer).toBe('float');
+      expect(response?.fixedFooter).toBeFalse();
     });
   });
 
@@ -218,10 +218,10 @@ describe('ProfileService', () => {
         id: 1,
         primary: 'sky',
         surface: 'neutral',
-        ripple: 'true',
-        footer: 'sticky',
-        debug: 'false',
-        theme: 'dark'
+        ripple: true,
+        fixedFooter: true,
+        debug: false,
+        darkTheme: true
       };
 
       let response: UserProfile | undefined;
@@ -237,14 +237,14 @@ describe('ProfileService', () => {
       expect(putReq.request.method).toBe('PUT');
 
       const sentBody = putReq.request.body as UserProfile;
-      expect(sentBody.debug).toBe('true');
+      expect(sentBody.debug).toBeTrue();
 
       // Echo back the updated body as the server response
       putReq.flush(sentBody);
 
       // Ensure observable emitted the updated profile
       expect(response).toBeTruthy();
-      expect(response?.debug).toBe('true');
+      expect(response?.debug).toBeTrue();
     });
   });
 
@@ -254,14 +254,14 @@ describe('ProfileService', () => {
         id: 1,
         primary: 'sky',
         surface: 'neutral',
-        ripple: 'true',
-        footer: 'sticky',
-        debug: 'false',
-        theme: 'dark'
+        ripple: true,
+        fixedFooter: true,
+        debug: false,
+        darkTheme: false
       };
 
       let response: UserProfile | undefined;
-      service.setTheme('light').subscribe(res => (response = res));
+      service.setDarkTheme(false).subscribe(res => (response = res));
 
       // First, service fetches the current profile
       const getReq = httpMock.expectOne(req => req.method === 'GET');
@@ -273,14 +273,14 @@ describe('ProfileService', () => {
       expect(putReq.request.method).toBe('PUT');
 
       const sentBody = putReq.request.body as UserProfile;
-      expect(sentBody.theme).toBe('light');
+      expect(sentBody.darkTheme).toBeFalse();
 
       // Echo back the updated body as server response
       putReq.flush(sentBody);
 
       // Ensure observable emitted the updated profile
       expect(response).toBeTruthy();
-      expect(response?.theme).toBe('light');
+      expect(response?.darkTheme).toBeFalse();
     });
   });
 });

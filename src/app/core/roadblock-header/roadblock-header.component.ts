@@ -10,7 +10,7 @@ import {reactiveFormsMenu} from "@rootComponents/menu/reactive-forms-menu";
 import {demosMenu} from "@rootComponents/menu/demos-menu";
 import {documentationMenu} from "@rootComponents/menu/documentation-menu";
 import {ColorPalettePickerComponent} from "@rootComponents/color-palette-picker/color-palette-picker.component";
-import {isPrbMode, prbModes, toggleMode} from "@utility/is-prb-mode";
+import {isPrbMode, prbModes, setDarkTheme, setDebugMode, toggleMode} from "@utility/prb-mode";
 
 @Component({
   selector: 'prb-roadblock-header',
@@ -27,6 +27,11 @@ import {isPrbMode, prbModes, toggleMode} from "@utility/is-prb-mode";
 })
 export class RoadblockHeaderComponent implements OnInit {
   protected readonly isProduction = isProduction;
+  protected readonly isMode = isPrbMode;
+  protected readonly prbModes = prbModes;
+  protected readonly toggleMode = toggleMode;
+  protected readonly setDebugMode = setDebugMode;
+  protected readonly setDarkTheme = setDarkTheme;
 
   menuItems: MegaMenuItem[] | undefined;
 
@@ -37,8 +42,4 @@ export class RoadblockHeaderComponent implements OnInit {
       documentationMenu(),
     ]
   }
-
-  protected readonly isMode = isPrbMode;
-  protected readonly prbModes = prbModes;
-  protected readonly toggleMode = toggleMode;
 }

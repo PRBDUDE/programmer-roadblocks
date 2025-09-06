@@ -65,17 +65,17 @@
                 severity="secondary"
                 [size]="'small'"
                 [rounded]="true"
-                [pTooltip]="fixedFooter"
+                [pTooltip]="floatingFooter"
                 showDelay="1000"
                 tooltipPosition="left"/>
-      <ng-template #fixedFooter>
+      <ng-template #floatingFooter>
         <i>Click icon</i> to toggle set floating footer
       </ng-template>
     }
     @if (!isProduction()) {
       @if (!isMode(prbModes.debug)) {
         <p-button icon="fa fa-bug"
-                  (click)="toggleMode(prbModes.debug)"
+                  (click)="setDebugMode(true)"
                   class="btn btn-outline-secondary"
                   severity="secondary"
                   [size]="'small'"
@@ -88,7 +88,7 @@
         </ng-template>
       } @else {
         <p-button icon="fa fa-bug fa-rotate-270"
-                  (click)="toggleMode(prbModes.debug)"
+                  (click)="setDebugMode(false)"
                   class="btn btn-outline-primary"
                   severity="primary"
                   [size]="'small'"
@@ -103,7 +103,7 @@
     }
     @if (!isMode(prbModes.dark)) {
       <p-button icon="pi pi-sun"
-                (click)="toggleMode(prbModes.dark)"
+                (click)="setDarkTheme(true)"
                 class="btn btn-outline-secondary"
                 severity="secondary"
                 [size]="'small'"
@@ -114,7 +114,7 @@
                 tooltipPosition="left"/>
     } @else {
       <p-button icon="pi pi-moon"
-                (click)="toggleMode(prbModes.dark)"
+                (click)="setDarkTheme(false)"
                 class="btn btn-outline-secondary"
                 severity="secondary"
                 [size]="'small'"

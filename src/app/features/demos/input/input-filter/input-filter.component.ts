@@ -8,7 +8,7 @@ import {VinFilter} from "@filters/vin-filter";
 import {EmailFilter} from "@filters/email-filter";
 import {InputErrorComponent} from "@errorHandlers/input-error.component";
 import {DebugOutputCardComponent} from "@utility/debug-output-card.component";
-import {isPrbMode, prbModes} from "@utility/is-prb-mode";
+import {isPrbMode, prbModes} from "@utility/prb-mode";
 
 @Component({
   selector: 'prb-input-filter',

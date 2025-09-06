@@ -8,7 +8,7 @@ import {InputText} from "primeng/inputtext";
 import {DatePicker} from "primeng/datepicker";
 import {ReactiveErrorComponent} from "../../../core/reactive-forms/reactive-error/reactive-error.component";
 import {ReactivePatterns} from "../../../core/reactive-forms/reactive-patterns";
-import {isPrbMode, prbModes} from "@utility/is-prb-mode";
+import {isPrbMode, prbModes} from "@utility/prb-mode";
 
 @Component({
   selector: 'prb-reactive-entry-form',

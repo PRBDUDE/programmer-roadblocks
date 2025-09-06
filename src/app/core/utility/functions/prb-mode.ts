@@ -20,3 +20,21 @@ export function isPrbMode(mode: PrbModes): boolean {
   }
   return element.classList.contains(mode);
 }
+
+export function setDarkTheme(on: boolean) {
+  if (on !== isPrbMode(prbModes.dark)) {
+    toggleMode(prbModes.dark);
+  }
+}
+
+export function setDebugMode(on: boolean) {
+  if (on !== isPrbMode(prbModes.debug)) {
+    toggleMode(prbModes.debug);
+  }
+}
+
+export function setFixedFooter(on: boolean) {
+  if (on !== isPrbMode(prbModes.fixedFooter)) {
+    toggleMode(prbModes.fixedFooter);
+  }
+}

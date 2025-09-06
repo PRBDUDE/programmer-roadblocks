@@ -201,7 +201,16 @@
     <p-toggleswitch
       [size]="'small'"
       [ngModel]="isRippleEffect()"
-      (onChange)="setRippleEffect($event.checked)">
-    </p-toggleswitch>
+      (onChange)="setRippleEffect($event.checked)"/>
+  </div>
+
+  <div class="prb-color-palette">
+    <div class="prb-color-palette-label">
+      Profile
+    </div>
+    <p-button
+      label="Reset"
+      [size]="'small'"
+      (click)="resetAll()"/>
   </div>
 </div>

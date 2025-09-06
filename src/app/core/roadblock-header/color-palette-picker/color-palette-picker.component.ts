@@ -1,15 +1,16 @@
 import {Component, inject, OnInit} from '@angular/core';
 import {FormsModule} from "@angular/forms";
 import {Tooltip} from "primeng/tooltip";
-import {$dt, updatePrimaryPalette, updateSurfacePalette} from "@primeuix/themes";
+import {$dt} from "@primeuix/themes";
 import {NgClass} from "@angular/common";
-import {isPrbMode, prbModes} from "@utility/is-prb-mode";
+import {isPrbMode, prbModes} from "@utility/prb-mode";
 import {ToggleSwitch} from "primeng/toggleswitch";
 import {PrimeNG} from "primeng/config";
 import {ProfileService} from "@services/profile.service";
 import {UserProfile} from "@model/user-profile";
 import {setPrimaryColor} from "@utility/set-primary-color";
 import {setSurfaceColor} from "@utility/set-surface-color";
+import {Button} from "primeng/button";
 
 @Component({
   selector: 'prb-color-palette',
@@ -17,7 +18,8 @@ import {setSurfaceColor} from "@utility/set-surface-color";
     FormsModule,
     Tooltip,
     NgClass,
-    ToggleSwitch
+    ToggleSwitch,
+    Button
   ],
   templateUrl: './color-palette-picker.component.html',
   styleUrl: './color-palette-picker.component.scss'
@@ -30,10 +32,10 @@ export class ColorPalettePickerComponent implements OnInit {
     id: 1,
     primary: 'sky',
     surface: 'neutral',
-    ripple: 'true',
-    footer: 'sticky',
-    debug: 'true',
-    theme: 'dark'
+    ripple: true,
+    fixedFooter: true,
+    debug: true,
+    darkTheme: true
   };
 
   primeng = inject(PrimeNG);
@@ -85,7 +87,7 @@ export class ColorPalettePickerComponent implements OnInit {
   }
 
   updatePalette() {
-    this.profileService.setPalette(this.profile.primary, this.profile.surface, this.profile.ripple === 'true');
+    this.profileService.setPalette(this.profile.primary, this.profile.surface, this.profile.ripple);
     console.log('Updated palette to: ',
       this.profile
     );
@@ -105,11 +107,15 @@ export class ColorPalettePickerComponent implements OnInit {
 
   setRippleEffect(rippleState: boolean) {
     this.primeng.ripple.set(rippleState);
-    this.profile.ripple = rippleState.toString();
+    this.profile.ripple = rippleState;
     this.updatePalette();
   }
 
   isRippleEffect() {
     return this.primeng.ripple();
+  }
+
+  resetAll() {
+    this.profileService.resetProfile();
   }
 }
