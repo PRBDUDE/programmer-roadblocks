@@ -121,7 +121,7 @@
     "primary": "sky",
     "surface": "neutral",
     "ripple": true,
-    "fixedFooter": false,
+    "fixedFooter": true,
     "debug": false,
     "darkTheme": true
   }
