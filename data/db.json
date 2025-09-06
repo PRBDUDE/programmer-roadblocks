@@ -120,9 +120,9 @@
     "id": 1,
     "primary": "sky",
     "surface": "neutral",
-    "ripple": "true",
-    "footer": "sticky",
-    "debug": "true",
-    "theme": "dark"
+    "ripple": true,
+    "fixedFooter": false,
+    "debug": false,
+    "darkTheme": true
   }
 }
