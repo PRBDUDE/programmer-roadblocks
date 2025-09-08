@@ -2,6 +2,7 @@ import {Component, DoCheck, signal} from '@angular/core';
 import {$dt} from "@primeuix/themes";
 import {ColorPaletteGeneratorComponent} from "./color-palette-generator/color-palette-generator.component";
 import {isPrbMode, prbModes} from "@utility/prb-mode";
+import {Accordion, AccordionContent, AccordionHeader, AccordionPanel} from "primeng/accordion";
 
 interface ColorPalette {
   name: string;
@@ -12,7 +13,11 @@ interface ColorPalette {
 @Component({
   selector: 'prb-color-palette',
   imports: [
-    ColorPaletteGeneratorComponent
+    ColorPaletteGeneratorComponent,
+    Accordion,
+    AccordionHeader,
+    AccordionPanel,
+    AccordionContent
   ],
   templateUrl: './color-palette.component.html',
   styleUrl: './color-palette.component.scss'

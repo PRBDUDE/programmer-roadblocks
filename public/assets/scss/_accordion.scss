@@ -1,3 +1,18 @@
 :root {
+  --prb-accordion-content-background-color: var(--p-surface-200);
+  --prb-accordion-content-padding: 1.125rem;
+  --prb-accordion-content-border: 1px solid var(--p-surface-300);
 
+  &[class*="prb-dark-theme"] {
+    --prb-accordion-content-background-color: var(--p-surface-600);
+    --prb-accordion-content-border: 1px solid var(--p-surface-950);
+  }
+}
+
+.p-accordionpanel {
+  .p-accordioncontent-content {
+    background-color: var(--prb-accordion-content-background-color);
+    padding: var(--prb-accordion-content-padding);
+    border: var(--prb-accordion-content-border);
+  }
 }

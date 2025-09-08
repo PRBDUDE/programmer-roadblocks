@@ -1,44 +1,54 @@
-<h2>Selected Colors</h2>
-<div class="prb-color-palette-group">
-  <div class="prb-color-palettes-list">
-    <prb-color-palette-generator
-      [colorName]="'Primary'"
-      [isSurfaceColor]=false
-      [baseColor]="primaryColor()"/>
-  </div>
-  <div class="prb-color-palettes-list">
-    @if (isMode(prbModes.dark)) {
-      <prb-color-palette-generator
-        [colorName]="'Dark Surface'"
-        [isSurfaceColor]=true
-        [baseColor]="surfaceColor()?.dark?.value"/>
-    } @else {
-      <prb-color-palette-generator
-        [colorName]="'Light Surface'"
-        [isSurfaceColor]=true
-        [baseColor]="surfaceColor()?.light?.value"/>
-    }
-  </div>
-</div>
-<h2>Colors</h2>
-<div class="prb-color-palettes-list">
-  @for (color of colorPaletteColors; track color.name) {
-    @if (!color.isSurface) {
-    <prb-color-palette-generator
-      [colorName]="color.name"
-      [isSurfaceColor]=false
-      [baseColor]="color.base"/>
-    }
-  }
-</div>
-<h2>Surface</h2>
-<div class="prb-color-palettes-list">
-  @for (color of colorPaletteColors; track color.name) {
-    @if (color.isSurface) {
-    <prb-color-palette-generator
-      [colorName]="color.name"
-      [isSurfaceColor]=true
-      [baseColor]="color.base"/>
-    }
-  }
-</div>
+<p-accordion value="0" multiple="true">
+  <p-accordion-panel value="0">
+    <p-accordion-header>Selected Colors</p-accordion-header>
+    <p-accordion-content>
+      <div class="prb-color-palettes-list">
+        <prb-color-palette-generator
+          [colorName]="'Primary'"
+          [isSurfaceColor]=false
+          [baseColor]="primaryColor()"/>
+        @if (isMode(prbModes.dark)) {
+          <prb-color-palette-generator
+            [colorName]="'Dark Surface'"
+            [isSurfaceColor]=true
+            [baseColor]="surfaceColor()?.dark?.value"/>
+        } @else {
+          <prb-color-palette-generator
+            [colorName]="'Light Surface'"
+            [isSurfaceColor]=true
+            [baseColor]="surfaceColor()?.light?.value"/>
+        }
+      </div>
+    </p-accordion-content>
+  </p-accordion-panel>
+  <p-accordion-panel value="1">
+    <p-accordion-header>Colors</p-accordion-header>
+    <p-accordion-content>
+      <div class="prb-color-palettes-list">
+        @for (color of colorPaletteColors; track color.name) {
+          @if (!color.isSurface) {
+            <prb-color-palette-generator
+              [colorName]="color.name"
+              [isSurfaceColor]=false
+              [baseColor]="color.base"/>
+          }
+        }
+      </div>
+    </p-accordion-content>
+  </p-accordion-panel>
+  <p-accordion-panel value="2">
+    <p-accordion-header>Surface</p-accordion-header>
+    <p-accordion-content>
+      <div class="prb-color-palettes-list">
+        @for (color of colorPaletteColors; track color.name) {
+          @if (color.isSurface) {
+            <prb-color-palette-generator
+              [colorName]="color.name"
+              [isSurfaceColor]=true
+              [baseColor]="color.base"/>
+          }
+        }
+      </div>
+    </p-accordion-content>
+  </p-accordion-panel>
+</p-accordion>
