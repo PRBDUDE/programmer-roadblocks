@@ -1,6 +1,10 @@
 .prb-palette-generator-container {
-  padding: 0.2em;
+  padding: 0.8em;
   font-size: 0.9em;
+  border: var(--prb-color-palette-generator-border);
+  border-radius: var(--prb-color-palette-generator-radius);
+  background-color: var(--prb-color-palette-generator-background-color);
+  min-width: var(--prb-color-palette-generator-min-width);
 
   :hover {
     font-size: 1.1em;
@@ -21,6 +25,7 @@
 
       .prb-color-name {
         font-family: "Book Antiqua", serif;
+        font-size: 1.4em;
       }
     }
 

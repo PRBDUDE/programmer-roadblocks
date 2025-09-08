@@ -1,42 +1,44 @@
 <h2>Selected Colors</h2>
 <div class="prb-color-palette-group">
   <div class="prb-color-palettes-list">
-    <prb-color-palette-generator [colorName]="'Primary'" [baseColor]="primaryColor()"/>
+    <prb-color-palette-generator
+      [colorName]="'Primary'"
+      [isSurfaceColor]=false
+      [baseColor]="primaryColor()"/>
   </div>
   <div class="prb-color-palettes-list">
     @if (isMode(prbModes.dark)) {
-      <prb-color-palette-generator [colorName]="'Dark Surface'" [isSurfaceColor]=true [baseColor]="surfaceColor()?.dark?.value"/>
+      <prb-color-palette-generator
+        [colorName]="'Dark Surface'"
+        [isSurfaceColor]=true
+        [baseColor]="surfaceColor()?.dark?.value"/>
     } @else {
-      <prb-color-palette-generator [colorName]="'Light Surface'" [isSurfaceColor]=true [baseColor]="surfaceColor()?.light?.value"/>
+      <prb-color-palette-generator
+        [colorName]="'Light Surface'"
+        [isSurfaceColor]=true
+        [baseColor]="surfaceColor()?.light?.value"/>
     }
   </div>
 </div>
 <h2>Colors</h2>
 <div class="prb-color-palettes-list">
-  <prb-color-palette-generator [colorName]="'Emerald'" [baseColor]="emeraldColor()"/>
-  <prb-color-palette-generator [colorName]="'Green'" [baseColor]="greenColor()"/>
-  <prb-color-palette-generator [colorName]="'Lime'" [baseColor]="limeColor()"/>
-  <prb-color-palette-generator [colorName]="'Red'" [baseColor]="redColor()"/>
-  <prb-color-palette-generator [colorName]="'Brown'" [baseColor]="brownColor()"/>
-  <prb-color-palette-generator [colorName]="'Orange'" [baseColor]="orangeColor()"/>
-  <prb-color-palette-generator [colorName]="'Amber'" [baseColor]="amberColor()"/>
-  <prb-color-palette-generator [colorName]="'Yellow'" [baseColor]="yellowColor()"/>
-  <prb-color-palette-generator [colorName]="'Teal'" [baseColor]="tealColor()"/>
-  <prb-color-palette-generator [colorName]="'Cyan'" [baseColor]="cyanColor()"/>
-  <prb-color-palette-generator [colorName]="'Sky'" [baseColor]="skyColor()"/>
-  <prb-color-palette-generator [colorName]="'Blue'" [baseColor]="blueColor()"/>
-  <prb-color-palette-generator [colorName]="'Indigo'" [baseColor]="indigoColor()"/>
-  <prb-color-palette-generator [colorName]="'Violet'" [baseColor]="violetColor()"/>
-  <prb-color-palette-generator [colorName]="'Purple'" [baseColor]="purpleColor()"/>
-  <prb-color-palette-generator [colorName]="'Fuchsia'" [baseColor]="fuchsiaColor()"/>
-  <prb-color-palette-generator [colorName]="'Pink'" [baseColor]="pinkColor()"/>
-  <prb-color-palette-generator [colorName]="'Slate'" [isSurfaceColor]=true [baseColor]="slateColor()"/>
-  <prb-color-palette-generator [colorName]="'Gray'" [isSurfaceColor]=true [baseColor]="grayColor()"/>
-  <prb-color-palette-generator [colorName]="'Zinc'" [isSurfaceColor]=true [baseColor]="zincColor()"/>
-  <prb-color-palette-generator [colorName]="'Neutral'" [isSurfaceColor]=true [baseColor]="neutralColor()"/>
-  <prb-color-palette-generator [colorName]="'Stone'" [isSurfaceColor]=true [baseColor]="stoneColor()"/>
-  <prb-color-palette-generator [colorName]="'Soho'" [isSurfaceColor]=true [baseColor]="sohoColor()"/>
-  <prb-color-palette-generator [colorName]="'Viva'" [isSurfaceColor]=true [baseColor]="vivaColor()"/>
-  <prb-color-palette-generator [colorName]="'Ocean'" [isSurfaceColor]=true [baseColor]="oceanColor()"/>
-  <prb-color-palette-generator [colorName]="'Beach'" [isSurfaceColor]=true [baseColor]="beachColor()"/>
+  @for (color of colorPaletteColors; track color.name) {
+    @if (!color.isSurface) {
+    <prb-color-palette-generator
+      [colorName]="color.name"
+      [isSurfaceColor]=false
+      [baseColor]="color.base"/>
+    }
+  }
+</div>
+<h2>Surface</h2>
+<div class="prb-color-palettes-list">
+  @for (color of colorPaletteColors; track color.name) {
+    @if (color.isSurface) {
+    <prb-color-palette-generator
+      [colorName]="color.name"
+      [isSurfaceColor]=true
+      [baseColor]="color.base"/>
+    }
+  }
 </div>

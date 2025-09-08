@@ -6,6 +6,9 @@
   --prb-color-palette-panel-title-margin-bottom: 1em;
   --prb-color-palette-items-margin-bottom: 2em;
   --prb-color-palette-margin-bottom: 1em;
+  --prb-color-palette-generator-border: 2px solid var(--p-surface-700);
+  --prb-color-palette-generator-min-width: 18em;
+  --prb-color-palette-generator-radius: 10px;
   --prb-color-palette-panel-border: 2px solid var(--p-surface-700);
   --prb-color-palette-panel-width: 385px;
   --prb-color-palette-panel-radius: 10px;
@@ -26,6 +29,8 @@
   --prb-color-step-background: var(--p-surface-100);
 
   &[class*="prb-dark-theme"] {
+    --prb-color-palette-generator-background-color: var(--p-surface-700);
+    --prb-color-palette-generator-border: 2px solid var(--p-surface-400);
     --prb-color-palette-panel-background-color: var(--p-surface-700);
     --prb-color-palette-panel-title-color: var(--p-surface-100);
     --prb-color-palette-panel-border: 2px solid var(--p-surface-300);
