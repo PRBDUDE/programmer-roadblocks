@@ -1,6 +1,8 @@
 import {ComponentFixture, TestBed, waitForAsync} from '@angular/core/testing';
 
 import {ColorPalettePickerComponent} from './color-palette-picker.component';
+import {provideHttpClientTesting} from "@angular/common/http/testing";
+import {provideHttpClient} from "@angular/common/http";
 
 describe('ColorPalettePickerComponent', () => {
   let component: ColorPalettePickerComponent;
@@ -10,6 +12,10 @@ describe('ColorPalettePickerComponent', () => {
     TestBed.configureTestingModule({
       imports: [
         ColorPalettePickerComponent
+      ],
+      providers: [
+        provideHttpClient(),
+        provideHttpClientTesting()
       ]
     }).compileComponents();
   }));
