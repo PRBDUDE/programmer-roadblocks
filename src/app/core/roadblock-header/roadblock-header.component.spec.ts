@@ -16,6 +16,7 @@ describe('RoadblockHeaderComponent', () => {
       ],
       providers: [
         provideRouter([]),
+        provideHttpClient(),
         provideHttpClientTesting()
       ]
     }).compileComponents();
