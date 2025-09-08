@@ -53,13 +53,11 @@ export class ColorPaletteGeneratorComponent {
 
   generatePalette() {
     if (this.isSurfaceColor()) {
-      console.log('SURFACE...')
       this.colorValues = {
         0: "#ffffff",
         ...palette(this.baseColor) as PaletteShades,
       };
     } else {
-      console.log('BASE...')
       this.colorValues = palette(this.baseColor) as PaletteShades;
     }
     if (this.colorValues) {
