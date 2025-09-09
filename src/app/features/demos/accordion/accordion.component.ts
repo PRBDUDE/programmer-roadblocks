@@ -6,6 +6,7 @@ import {JobStatusRecord} from "@model/job-status";
 import {JobHeaderComponent} from "./job-header/job-header.component";
 import {JobStatusComponent} from "./job-status/job-status.component";
 import {JobDateComponent} from "./job-date/job-date.component";
+import {StaticAccordionComponent} from "./static-accordion/static-accordion.component";
 
 @Component({
   selector: 'prb-accordion',
@@ -14,7 +15,8 @@ import {JobDateComponent} from "./job-date/job-date.component";
     AccordionOptionsComponent,
     JobHeaderComponent,
     JobStatusComponent,
-    JobDateComponent
+    JobDateComponent,
+    StaticAccordionComponent
   ],
   templateUrl: './accordion.component.html',
   styleUrl: './accordion.component.scss'
