@@ -1,0 +1,20 @@
+<div class="prb-header-container">
+  Job: {{ job()?.name }}
+  <div class="prb-progress">
+    <p-progressBar [value]="job()?.percentage"
+                   [style]="{'width': '100px', 'height': '14px'}">
+    </p-progressBar>
+    @if (job()?.status === 'completed') {
+      <i class="pi pi-check prb-complete"></i>
+    } @else if (job()?.status === 'working') {
+      <i class="pi pi-hourglass prb-working"></i>
+    } @else if (job()?.status === 'cleanup') {
+      <i class="pi pi-check-square prb-cleanup"></i>
+    } @else if (job()?.status === 'error') {
+      <i class="pi pi-thumbs-down prb-error"></i>
+    }
+    <i class="pi pi-trash prb-cancel"
+       [class.prb-disabled]="job()?.end === undefined"
+       (click)="delete($event)"></i>
+  </div>
+</div>

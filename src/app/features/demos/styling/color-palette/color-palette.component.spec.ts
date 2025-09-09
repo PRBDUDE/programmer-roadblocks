@@ -4,6 +4,9 @@ import {ColorPaletteComponent} from './color-palette.component';
 import {ColorPaletteGeneratorComponent} from "./color-palette-generator/color-palette-generator.component";
 import {InputText} from "primeng/inputtext";
 import {FormsModule} from "@angular/forms";
+import {AccordionModule} from "primeng/accordion";
+import {AccordionOptionsComponent} from "../../accordion/accordion-options/accordion-options.component";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 describe('ColorPaletteComponent', () => {
   let component: ColorPaletteComponent;
@@ -12,10 +15,12 @@ describe('ColorPaletteComponent', () => {
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [
+        AccordionModule,
         ColorPaletteComponent,
         ColorPaletteGeneratorComponent,
         InputText,
-        FormsModule
+        FormsModule,
+        BrowserAnimationsModule
       ]
     }).compileComponents();
   }));

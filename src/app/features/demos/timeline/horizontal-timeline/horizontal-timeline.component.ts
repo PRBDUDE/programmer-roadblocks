@@ -8,7 +8,7 @@ import {TimelineAlignmentItem} from "../module/timeline-alignment-item";
 import {TimelineCore} from "../timeline-core";
 import {TimelineOptionsComponent} from "../timeline-options/timeline-options.component";
 import {DebugOutputCardComponent} from "@utility/debug-output-card.component";
-import {isPrbMode, prbModes} from "@utility/is-prb-mode";
+import {isPrbMode, prbModes} from "@utility/prb-mode";
 
 @Component({
   selector: 'prb-horizontal-timeline',

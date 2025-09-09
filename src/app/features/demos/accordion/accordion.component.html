@@ -68,58 +68,15 @@
 
     <div class="prb-card prb-flex prb-justify-center">
       <p-accordion [value]="['0']" [multiple]="multiple()">
-        @for (panel of panels; track panel.job.id) {
-          <p-accordion-panel [value]="panel.index" [disabled]="panel.disabled">
+        @for (panel of panels; track panel.job.name) {
+          <p-accordion-panel [value]="panel.id" [disabled]="panel.disabled">
             <p-accordion-header>
-              <div class="prb-header-container">
-                Job: {{ panel.job.id }}
-                <div class="prb-progress">
-                  <p-progressBar [value]="panel.job.percentage"
-                                 [style]="{'width': '100px', 'height': '14px'}">
-                  </p-progressBar>
-                  @if (panel.job.status === 'completed') {
-                    <i class="pi pi-check prb-complete"></i>
-                  } @else if (panel.job.status === 'working') {
-                    <i class="pi pi-hourglass prb-working"></i>
-                  } @else if (panel.job.status === 'cleanup') {
-                    <i class="pi pi-check-square prb-cleanup"></i>
-                  } @else if (panel.job.status === 'error') {
-                    <i class="pi pi-thumbs-down prb-error"></i>
-                  }
-                </div>
-              </div>
+              <prb-job-header [job]="panel.job" (removed)="removeJob(panel.id)"/>
             </p-accordion-header>
             <p-accordion-content>
-              <div class="prb-status">
-                @if (panel.job.status === 'error') {
-                  <p-tag [value]="panel.job.status" severity="danger"/>
-                  <p class="prb-margin-0 prb-error"><strong>Error:</strong> {{ panel.job.error }}</p>
-                } @else if (panel.job.status === 'completed') {
-                  <p-tag [value]="panel.job.status" severity="success"/>
-                } @else if (panel.job.status === 'cleanup') {
-                  <p-tag [value]="panel.job.status" severity="info"/>
-                  <p class="prb-margin-0 prb-cleanup"><strong>Cleanup:</strong> {{ panel.job.cleanup }}</p>
-                } @else {
-                  <p-tag [value]="panel.job.status" severity="warn"/>
-                  <p class="prb-margin-0 prb-step"><strong>Step:</strong> {{ panel.job.step }}</p>
-                }
-              </div>
-              <p class="prb-margin-0">
-                <span class="prb-date-container">
-                  <span><strong>Start:</strong></span>
-                  <span>{{ panel.job.start | date:'yyyyMMdd' }}</span>
-                  <span>at {{ panel.job.start | date:'shortTime' }}</span>
-                </span>
-              </p>
-              <p class="prb-margin-0">
-                <span class="prb-date-container">
-                  <span><strong>End:</strong></span>
-                  @if (panel.job.end !== undefined) {
-                    <span>{{ panel.job.end | date:'yyyyMMdd' }}</span>
-                    <span>at {{ panel.job.end | date:'shortTime' }}</span>
-                  }
-                </span>
-              </p>
+              <prb-job-status [job]="panel.job"/>
+              <prb-job-date [dateType]="'Start'" [date]="panel.job.start"/>
+              <prb-job-date [dateType]="'End'" [date]="panel.job.end"/>
             </p-accordion-content>
           </p-accordion-panel>
         }

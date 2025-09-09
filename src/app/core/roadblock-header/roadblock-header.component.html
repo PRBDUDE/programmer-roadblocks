@@ -35,7 +35,7 @@
   </div>
   <div class="prb-header-options">
     <p-button icon="pi pi-palette"
-              (click)="toggleMode(prbModes.colorPicker)"
+              (click)="toggleColorPicker()"
               [rounded]="true"
               [pTooltip]="colorPicker"
               [size]="'small'"
@@ -45,9 +45,9 @@
       <i>Click icon</i> to select color scheme
     </ng-template>
     <prb-color-palette/>
-    @if (!isMode(prbModes.fixedFooter)) {
+    @if (!isFixedFooter()) {
       <p-button icon="pi pi-caret-down"
-                (click)="toggleMode(prbModes.fixedFooter)"
+                (click)="fixed()"
                 class="btn btn-outline-secondary"
                 severity="secondary"
                 [size]="'small'"
@@ -60,22 +60,22 @@
       </ng-template>
     } @else {
       <p-button icon="pi pi-caret-up"
-                (click)="toggleMode(prbModes.fixedFooter)"
+                (click)="floatng()"
                 class="btn btn-outline-secondary"
                 severity="secondary"
                 [size]="'small'"
                 [rounded]="true"
-                [pTooltip]="fixedFooter"
+                [pTooltip]="floatingFooter"
                 showDelay="1000"
                 tooltipPosition="left"/>
-      <ng-template #fixedFooter>
+      <ng-template #floatingFooter>
         <i>Click icon</i> to toggle set floating footer
       </ng-template>
     }
-    @if (!isProduction()) {
-      @if (!isMode(prbModes.debug)) {
+    @if (!isProductionEnvironment()) {
+      @if (!isDebug()) {
         <p-button icon="fa fa-bug"
-                  (click)="toggleMode(prbModes.debug)"
+                  (click)="setDebug(true)"
                   class="btn btn-outline-secondary"
                   severity="secondary"
                   [size]="'small'"
@@ -88,7 +88,7 @@
         </ng-template>
       } @else {
         <p-button icon="fa fa-bug fa-rotate-270"
-                  (click)="toggleMode(prbModes.debug)"
+                  (click)="setDebug(false)"
                   class="btn btn-outline-primary"
                   severity="primary"
                   [size]="'small'"
@@ -101,9 +101,9 @@
         </ng-template>
       }
     }
-    @if (!isMode(prbModes.dark)) {
+    @if (!isDarkTheme()) {
       <p-button icon="pi pi-sun"
-                (click)="toggleMode(prbModes.dark)"
+                (click)="darkTheme()"
                 class="btn btn-outline-secondary"
                 severity="secondary"
                 [size]="'small'"
@@ -114,7 +114,7 @@
                 tooltipPosition="left"/>
     } @else {
       <p-button icon="pi pi-moon"
-                (click)="toggleMode(prbModes.dark)"
+                (click)="lightTheme()"
                 class="btn btn-outline-secondary"
                 severity="secondary"
                 [size]="'small'"

@@ -35,6 +35,7 @@
   width: fit-content;
   display: grid;
   grid-template-columns: 1.5fr 2fr 2fr;
+  font-size: 0.8em;
 }
 
 .prb-status {
@@ -45,8 +46,9 @@
   .prb-step {
     width: fit-content;
     margin-top: 0.5rem;
-    padding: 3px;
+    padding: 2px 3px;
     border-radius: 5px;
+    font-size: 0.8em;
   }
 
   .prb-error {
@@ -70,6 +72,7 @@
   flex-direction: row;
   align-items: center;
   gap: 1rem;
+  padding-right: 1rem;
 
   .prb-complete {
     color: var(--p-green-500);
@@ -89,6 +92,17 @@
 
   .prb-error {
     color: var(--p-red-500);
+    scale: 1.2;
+  }
+
+  .prb-cancel {
+    color: var(--p-red-500);
+  }
+
+  .prb-disabled {
+    color: var(--p-gray-400);
+    cursor: not-allowed;
+    font-weight: unset;
   }
 }
 

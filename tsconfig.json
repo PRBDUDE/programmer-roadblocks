@@ -45,6 +45,9 @@
       ],
       "@model/*": [
         "./src/app/core/model/*"
+      ],
+      "@services/*": [
+        "./src/app/core/services/*"
       ]
     }
   },

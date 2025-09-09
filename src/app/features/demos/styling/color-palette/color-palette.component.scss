@@ -1,13 +1,7 @@
 .prb-color-palettes-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.prb-color-palette-group {
-  display: flex;
-  flex-direction: row;
-  gap: 0.5rem;
+  gap: 2rem;
 }
 
 .prb-color-palette-title {
@@ -32,4 +26,8 @@
 
 .prb-color-palette-swatch:hover {
   border-color: #000;
+}
+
+.p-accordionheader {
+  font-size: 1.8rem;
 }

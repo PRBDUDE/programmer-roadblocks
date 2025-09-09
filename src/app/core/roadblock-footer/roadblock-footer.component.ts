@@ -3,7 +3,7 @@ import {SocialMediaLinksComponent} from "../social-media-links/social-media-link
 import {SocialMediaLink} from "@model/social-media-link";
 import {CopyrightComponent} from "@rootComponents/copyright/copyright.component";
 import {NgClass} from "@angular/common";
-import {isPrbMode, prbModes} from "@utility/is-prb-mode";
+import {isPrbMode, prbModes} from "@utility/prb-mode";
 
 @Component({
   selector: 'prb-roadblock-footer',
