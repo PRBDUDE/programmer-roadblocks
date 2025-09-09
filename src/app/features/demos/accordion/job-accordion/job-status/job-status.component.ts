@@ -8,7 +8,7 @@ import {JobStatus} from "@model/job-status";
     Tag
   ],
   templateUrl: './job-status.component.html',
-  styleUrl: '../accordion.component.scss'
+  styleUrl: '../../accordion.component.scss'
 })
 export class JobStatusComponent {
   job = input<JobStatus>()

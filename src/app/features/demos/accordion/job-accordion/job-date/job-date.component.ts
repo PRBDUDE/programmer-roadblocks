@@ -7,7 +7,7 @@ import {DatePipe} from "@angular/common";
     DatePipe
   ],
   templateUrl: './job-date.component.html',
-  styleUrl: '../accordion.component.scss'
+  styleUrl: '../../accordion.component.scss'
 })
 export class JobDateComponent {
   dateType = input<string>('')

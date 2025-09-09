@@ -8,7 +8,7 @@ import {JobStatus} from "@model/job-status";
     ProgressBar
   ],
   templateUrl: './job-header.component.html',
-  styleUrl: '../accordion.component.scss'
+  styleUrl: '../../accordion.component.scss'
 })
 export class JobHeaderComponent {
   job = input<JobStatus>();
