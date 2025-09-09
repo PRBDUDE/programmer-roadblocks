@@ -2,25 +2,25 @@ import {inject, Injectable} from '@angular/core';
 import {DataService} from "./data.service";
 import {UserProfile} from "@model/user-profile";
 import {environment} from "@environments/environment";
-import {catchError, map, Observable, of, switchMap, take, tap} from "rxjs";
+import {map, Observable, switchMap, take} from "rxjs";
 import {setPrimaryColor} from "@utility/set-primary-color";
 import {setSurfaceColor} from "@utility/set-surface-color";
 import {PrimeNG} from "primeng/config";
 import {setDarkTheme, setDebugMode, setFixedFooter} from "@utility/prb-mode";
 
+export const DEFAULT_PROFILE: Readonly<UserProfile> = {
+  primary: 'sky',
+  surface: 'neutral',
+  ripple: true,
+  fixedFooter: true,
+  debug: false,
+  darkTheme: true
+};
+
 @Injectable({
   providedIn: 'root'
 })
 export class ProfileService extends DataService<UserProfile> {
-
-  private readonly DEFAULT_PROFILE: UserProfile = {
-    primary: 'sky',
-    surface: 'neutral',
-    ripple: true,
-    fixedFooter: true,
-    debug: false,
-    darkTheme: true
-  };
 
   primeng = inject(PrimeNG);
 
@@ -41,8 +41,7 @@ export class ProfileService extends DataService<UserProfile> {
   private updatePartial(patch: Partial<UserProfile>): Observable<UserProfile> {
     return this.getProfile().pipe(
       take(1),
-      map(current => ({...this.DEFAULT_PROFILE, ...current, ...patch})),
-      tap(updated => console.log('Updated profile: ', updated)),
+      map(current => ({...DEFAULT_PROFILE, ...current, ...patch})),
       switchMap(updated => this.updateUserProfile(updated))
     );
   }
@@ -55,25 +54,35 @@ export class ProfileService extends DataService<UserProfile> {
     });
   }
 
-  setFixedFooter(footer: boolean): Observable<UserProfile> {
+  setFixedFooterProfile(footer: boolean): Observable<UserProfile> {
     return this.updatePartial({fixedFooter: footer});
   }
 
-  setDarkTheme(theme: boolean): Observable<UserProfile> {
+  setDarkThemeProfile(theme: boolean): Observable<UserProfile> {
     return this.updatePartial({darkTheme: theme});
   }
 
-  setDebug(debug: boolean): Observable<UserProfile> {
+  setDebugProfile(debug: boolean): Observable<UserProfile> {
     return this.updatePartial({debug: debug});
   }
 
+  isChanged(): Observable<boolean> {
+    return this.getProfile().pipe(
+      map(current => {
+        const currentProfile = {...DEFAULT_PROFILE, ...current};
+        const defaultProfile = {...DEFAULT_PROFILE};
+        return JSON.stringify(currentProfile) !== JSON.stringify(defaultProfile);
+      })
+    );
+  }
+
   resetProfile(): Observable<UserProfile> {
-    setPrimaryColor(this.DEFAULT_PROFILE.primary);
-    setSurfaceColor(this.DEFAULT_PROFILE.surface);
-    this.primeng.ripple.set(this.DEFAULT_PROFILE.ripple);
-    setFixedFooter(this.DEFAULT_PROFILE.fixedFooter);
-    setDarkTheme(this.DEFAULT_PROFILE.darkTheme);
-    setDebugMode(this.DEFAULT_PROFILE.debug);
-    return this.update(1, this.DEFAULT_PROFILE);
+    setPrimaryColor(DEFAULT_PROFILE.primary);
+    setSurfaceColor(DEFAULT_PROFILE.surface);
+    this.primeng.ripple.set(DEFAULT_PROFILE.ripple);
+    setFixedFooter(DEFAULT_PROFILE.fixedFooter);
+    setDarkTheme(DEFAULT_PROFILE.darkTheme);
+    setDebugMode(DEFAULT_PROFILE.debug);
+    return this.updateUserProfile({ ...DEFAULT_PROFILE });
   }
 }
