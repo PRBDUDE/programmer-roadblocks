@@ -1,5 +1,4 @@
 export interface UserProfile {
-  id: number;
   primary: string;
   surface: string;
   ripple: boolean;

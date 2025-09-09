@@ -2,7 +2,7 @@ import {inject, Injectable} from '@angular/core';
 import {DataService} from "./data.service";
 import {UserProfile} from "@model/user-profile";
 import {environment} from "@environments/environment";
-import {map, Observable, switchMap, take} from "rxjs";
+import {catchError, map, Observable, of, switchMap, take, tap} from "rxjs";
 import {setPrimaryColor} from "@utility/set-primary-color";
 import {setSurfaceColor} from "@utility/set-surface-color";
 import {PrimeNG} from "primeng/config";
@@ -14,7 +14,6 @@ import {setDarkTheme, setDebugMode, setFixedFooter} from "@utility/prb-mode";
 export class ProfileService extends DataService<UserProfile> {
 
   private readonly DEFAULT_PROFILE: UserProfile = {
-    id: 1,
     primary: 'sky',
     surface: 'neutral',
     ripple: true,
@@ -33,12 +32,18 @@ export class ProfileService extends DataService<UserProfile> {
     return this.httpClient.get<UserProfile>(this.apiUrl);
   }
 
+  updateUserProfile(profile: UserProfile): Observable<UserProfile> {
+    console.log('Updating profile: ', profile);
+    return this.httpClient.put<UserProfile>(this.apiUrl, profile);
+  }
+
   // Apply a partial update by merging current profile with defaults and the patch.
   private updatePartial(patch: Partial<UserProfile>): Observable<UserProfile> {
     return this.getProfile().pipe(
       take(1),
       map(current => ({...this.DEFAULT_PROFILE, ...current, ...patch})),
-      switchMap(updated => this.update(1, updated))
+      tap(updated => console.log('Updated profile: ', updated)),
+      switchMap(updated => this.updateUserProfile(updated))
     );
   }
 

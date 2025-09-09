@@ -29,7 +29,6 @@ export class ColorPalettePickerComponent implements OnInit {
   protected readonly isMode = isPrbMode;
 
   profile: UserProfile = {
-    id: 1,
     primary: 'sky',
     surface: 'neutral',
     ripple: true,
@@ -40,7 +39,8 @@ export class ColorPalettePickerComponent implements OnInit {
 
   primeng = inject(PrimeNG);
 
-  constructor(private profileService: ProfileService) {}
+  constructor(private profileService: ProfileService) {
+  }
 
   ngOnInit() {
     this.profileService.getProfile().subscribe(profile => {
@@ -87,10 +87,12 @@ export class ColorPalettePickerComponent implements OnInit {
   }
 
   updatePalette() {
-    this.profileService.setPalette(this.profile.primary, this.profile.surface, this.profile.ripple);
-    console.log('Updated palette to: ',
-      this.profile
-    );
+    this.profileService.setPalette(
+      this.profile.primary,
+      this.profile.surface,
+      this.profile.ripple).subscribe(result => {
+      console.log('Updated palette to: ', result)
+    });
   }
 
   setPrimaryPalette(color: string): void {
