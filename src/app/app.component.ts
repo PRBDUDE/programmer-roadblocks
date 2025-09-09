@@ -23,10 +23,8 @@ import {setDarkTheme, setDebugMode, setFixedFooter} from "@utility/prb-mode";
 export class AppComponent implements OnInit {
   title = 'programmer-roadblocks';
   primeng = inject(PrimeNG);
+  private profileService = inject(ProfileService);
   primengConfig = inject(PrimengConfigService);
-
-  constructor(private profileService: ProfileService) {
-  }
 
   ngOnInit(): void {
     this.profileService.getProfile().subscribe(profile => {

@@ -1,4 +1,4 @@
-import {Component, OnInit, signal} from '@angular/core';
+import {Component, inject, OnInit, signal} from '@angular/core';
 import {AccordionModule} from "primeng/accordion";
 import {AccordionOptionsComponent} from "./accordion-options/accordion-options.component";
 import {JobService} from "@services/job.service";
@@ -20,13 +20,11 @@ import {JobDateComponent} from "./job-date/job-date.component";
   styleUrl: './accordion.component.scss'
 })
 export class AccordionComponent implements OnInit {
+  private jobService = inject(JobService);
   multiple = signal<boolean>(false);
   disableOne = signal<boolean>(false);
   disableTwo = signal<boolean>(false);
   disableThree = signal<boolean>(false);
-
-  constructor(private jobService: JobService) {
-  }
 
   panels: JobStatusRecord[] = [];
 
