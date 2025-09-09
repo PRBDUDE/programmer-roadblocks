@@ -1,5 +1,5 @@
 <div class="prb-color-palette-panel"
-     [ngClass]="{'prb-show': isMode(prbModes.colorPicker)}">
+     [ngClass]="{'prb-show': isShowColorPalette()}">
   <div class="prb-color-palette">
     <div class="prb-color-palette-label">Primary</div>
     <div class="prb-color-palette-items">
@@ -209,8 +209,9 @@
       Profile
     </div>
     <p-button
-      label="Reset"
+      label="Default"
       [size]="'small'"
+      [disabled]="!isProfileChanged()"
       (click)="resetAll()"/>
   </div>
 </div>

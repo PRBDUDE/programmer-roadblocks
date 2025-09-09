@@ -1,4 +1,4 @@
-import {Component, inject, OnInit} from '@angular/core';
+import {Component, inject, OnDestroy, OnInit} from '@angular/core';
 import {FormsModule} from "@angular/forms";
 import {Tooltip} from "primeng/tooltip";
 import {$dt} from "@primeuix/themes";
@@ -8,9 +8,10 @@ import {ToggleSwitch} from "primeng/toggleswitch";
 import {PrimeNG} from "primeng/config";
 import {ProfileService} from "@services/profile.service";
 import {UserProfile} from "@model/user-profile";
-import {setPrimaryColor} from "@utility/set-primary-color";
 import {setSurfaceColor} from "@utility/set-surface-color";
 import {Button} from "primeng/button";
+import {take} from "rxjs";
+import {setPrimaryColor} from "@utility/set-primary-color";
 
 @Component({
   selector: 'prb-color-palette',
@@ -24,10 +25,7 @@ import {Button} from "primeng/button";
   templateUrl: './color-palette-picker.component.html',
   styleUrl: './color-palette-picker.component.scss'
 })
-export class ColorPalettePickerComponent implements OnInit {
-  protected readonly prbModes = prbModes;
-  protected readonly isMode = isPrbMode;
-
+export class ColorPalettePickerComponent implements OnInit, OnDestroy {
   profile: UserProfile = {
     primary: 'sky',
     surface: 'neutral',
@@ -38,9 +36,11 @@ export class ColorPalettePickerComponent implements OnInit {
   };
 
   primeng = inject(PrimeNG);
+  private profileService = inject(ProfileService)
+  private isChangedFlag = false;
+  private refreshIntervalId?: number;
+  private readonly intervalTime = 5000;
 
-  constructor(private profileService: ProfileService) {
-  }
 
   ngOnInit() {
     this.profileService.getProfile().subscribe(profile => {
@@ -49,7 +49,17 @@ export class ColorPalettePickerComponent implements OnInit {
       this.profile.ripple = profile.ripple;
       console.log('Loaded profile: ',
         this.profile)
-    })
+    });
+    this.refreshIsChanged();
+    this.refreshIntervalId = window.setInterval(() => this.refreshIsChanged(), this.intervalTime);
+  }
+
+  ngOnDestroy(): void {
+    if (this.refreshIntervalId != null
+    ) {
+      window.clearInterval(this.refreshIntervalId);
+      this.refreshIntervalId = undefined;
+    }
   }
 
   private getColorValue(color: string) {
@@ -61,6 +71,10 @@ export class ColorPalettePickerComponent implements OnInit {
       return undefined;
     }
     return colorValue;
+  }
+
+  isShowColorPalette(): boolean {
+    return isPrbMode(prbModes.colorPicker);
   }
 
   isPrimaryColor(color: string) {
@@ -92,6 +106,7 @@ export class ColorPalettePickerComponent implements OnInit {
       this.profile.surface,
       this.profile.ripple).subscribe(result => {
       console.log('Updated palette to: ', result)
+      this.refreshIsChanged();
     });
   }
 
@@ -118,6 +133,17 @@ export class ColorPalettePickerComponent implements OnInit {
   }
 
   resetAll() {
-    this.profileService.resetProfile();
+    this.profileService.resetProfile().subscribe(result => {
+      console.log('Reset to default profile: ', result);
+      this.refreshIsChanged();
+    });
+  }
+
+  private refreshIsChanged(): void {
+    this.profileService.isChanged().pipe(take(1)).subscribe(v => this.isChangedFlag = v);
+  }
+
+  isProfileChanged(): boolean {
+    return this.isChangedFlag;
   }
 }

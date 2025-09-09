@@ -184,7 +184,7 @@ describe('ProfileService', () => {
       };
 
       let response: UserProfile | undefined;
-      service.setFixedFooter(false).subscribe(res => (response = res));
+      service.setFixedFooterProfile(false).subscribe(res => (response = res));
 
       // First the service fetches current profile
       const getReq = httpMock.expectOne(req => req.method === 'GET');
@@ -219,7 +219,7 @@ describe('ProfileService', () => {
       };
 
       let response: UserProfile | undefined;
-      service.setDebug(true).subscribe(res => (response = res));
+      service.setDebugProfile(true).subscribe(res => (response = res));
 
       // First, service fetches the current profile
       const getReq = httpMock.expectOne(req => req.method === 'GET');
@@ -254,7 +254,7 @@ describe('ProfileService', () => {
       };
 
       let response: UserProfile | undefined;
-      service.setDarkTheme(false).subscribe(res => (response = res));
+      service.setDarkThemeProfile(false).subscribe(res => (response = res));
 
       // First, service fetches the current profile
       const getReq = httpMock.expectOne(req => req.method === 'GET');
