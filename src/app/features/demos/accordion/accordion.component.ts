@@ -30,7 +30,9 @@ export class AccordionComponent implements OnInit {
 
   ngOnInit(): void {
     this.jobService.getAll().subscribe(jobs => {
-      this.panels.push(...jobs);
+      this.panels = [...jobs].sort((a, b) =>
+        a.job.name.localeCompare(b.job.name, undefined, { numeric: true, sensitivity: 'base' })
+      );
     })
   }
 
