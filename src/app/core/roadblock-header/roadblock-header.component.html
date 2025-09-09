@@ -34,6 +34,9 @@
     </div>
   </div>
   <div class="prb-header-options">
+    @if (isShowColorPalette()) {
+      <prb-color-palette/>
+    }
     <p-button icon="pi pi-palette"
               (click)="toggleColorPicker()"
               [rounded]="true"
@@ -44,7 +47,6 @@
     <ng-template #colorPicker>
       <i>Click icon</i> to select color scheme
     </ng-template>
-    <prb-color-palette/>
     @if (!isFixedFooter()) {
       <p-button icon="pi pi-caret-down"
                 (click)="fixed()"

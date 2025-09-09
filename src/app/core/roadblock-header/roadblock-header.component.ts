@@ -43,6 +43,10 @@ export class RoadblockHeaderComponent implements OnInit {
     return isProduction();
   }
 
+  isShowColorPalette(): boolean {
+    return isPrbMode(prbModes.colorPicker);
+  }
+
   toggleColorPicker() {
     toggleMode(prbModes.colorPicker);
     console.log('Color picker clicked');
