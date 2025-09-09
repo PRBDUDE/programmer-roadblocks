@@ -22,9 +22,6 @@ import {JobDateComponent} from "./job-date/job-date.component";
 export class AccordionComponent implements OnInit {
   private jobService = inject(JobService);
   multiple = signal<boolean>(false);
-  disableOne = signal<boolean>(false);
-  disableTwo = signal<boolean>(false);
-  disableThree = signal<boolean>(false);
 
   panels: JobStatusRecord[] = [];
 
