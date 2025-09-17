@@ -13,11 +13,13 @@
   --prb-color-css-function: var(--p-amber-500);
   --prb-color-css-hex: var(--p-sky-300);
   --prb-color-css-id-selector: var(--p-amber-500);
+  --prb-color-css-selector-prefix: var(--p-surface-0);
   --prb-color-css-identifier: var(--p-amber-500);
   --prb-color-css-important: var(--p-amber-600);
   --prb-color-css-number: var(--p-cyan-200);
   --prb-color-css-operation-sign: var(--p-surface-100);
   --prb-color-css-parenthesis: var(--p-surface-100);
+  --prb-color-css-percent: var(--p-surface-50);
   --prb-color-css-property-name: var(--p-surface-0);
   --prb-color-css-property-value: var(--p-green-400);
   --prb-color-css-pseudo-selector: var(--p-amber-500);
@@ -30,8 +32,10 @@
   --prb-color-css-variable: var(--p-sky-300);
 
   --prb-color-html-attribute-name: var(--p-surface-0);
-  --prb-color-html-attribute-value: var(--p-green-400);
+  --prb-color-html-attribute-value: var(--p-amber-500);
+  --prb-color-html-attribute-quote: var(--p-green-400);
   --prb-color-html-comment: var(--p-cyan-100);
+  --prb-color-html-content: var(--p-surface-0);
   --prb-color-html-custom-tag-name: var(--p-teal-300);
   --prb-color-html-entity-reference: var(--p-sky-300);
   --prb-color-html-code: var(--p-surface-100);
@@ -77,7 +81,6 @@
     --prb-color-css-variable: var(--p-sky-400);
 
     --prb-color-html-attribute-name: var(--p-surface-100);
-    --prb-color-html-attribute-value: var(--p-green-500);
     --prb-color-html-comment: var(--p-cyan-200);
     --prb-color-html-custom-tag-name: var(--p-teal-400);
     --prb-color-html-entity-reference: var(--p-sky-400);

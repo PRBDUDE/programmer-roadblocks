@@ -1,3 +1,43 @@
 .prb-css-property-value {
   color: var(--prb-color-css-property-value);
+
+  &-hex {
+    color: var(--prb-color-css-hex);
+  }
+
+  &-percent {
+    color: var(--prb-color-css-percent);
+  }
+
+  &-unit {
+    color: var(--prb-color-css-unit);
+  }
+
+  &-number {
+    color: var(--prb-color-css-number);
+  }
+
+  &-hex-number {
+    color: var(--prb-color-css-number);
+  }
+
+  &-calc {
+    color: var(--prb-color-css-function);
+
+    &-paren {
+      color: var(--prb-color-css-parenthesis);
+    }
+
+    &-operator {
+      color: var(--prb-color-css-operation-sign);
+    }
+
+    &-number {
+      color: var(--prb-color-css-number);
+    }
+
+    &-unit {
+      color: var(--prb-color-css-unit);
+    }
+  }
 }

@@ -1,9 +1,8 @@
 <div class="prb-information">
-<!--  <div class="code-block">-->
-<!--  <prb-css-rule [selectors]="['.prb-main-grid-container','.prb-main-grid-header','.prb-main-grid-content','.prb-main-grid-footer']"-->
-<!--                [properties]="[{'property': 'display', 'value': 'grid'},-->
-<!--                {'property': 'grid-gap', 'value': '5px'}]"/>-->
-<!--  </div>-->
+  <div class="code-block">
+    <code>
+    </code>
+  </div>
   <div class="prb-header">This page demonstrates the scroll region</div>
   <div class="prb-description">
     Notice that the header is fixed at the top of the page and the footer is fixed at the bottom of the page, while
@@ -13,56 +12,65 @@
   </div>
   <div class="prb-code-block">
     <code>
-      <span class="prb-html-tag">&lt;div&nbsp;<span class="prb-html-attribute-name">class</span><span class="prb-html-attribute-value">="grid-container"</span><span class="prb-html-tag">&gt;</span></span><br/>
-      &nbsp;&nbsp;&nbsp;<span class="prb-html-tag">&lt;div&nbsp;<span class="prb-html-attribute-name">class</span><span class="prb-html-attribute-value">="header"</span><span class="prb-html-tag">&gt;<span class="prb-html-inner-text">Header</span>&lt;/div&gt;</span></span><br/>
-      &nbsp;&nbsp;&nbsp;<span class="prb-html-tag">&lt;div&nbsp;<span class="prb-html-attribute-name">class</span><span class="prb-html-attribute-value">="content"</span><span class="prb-html-tag">&gt;<span class="prb-html-inner-text">Content</span>&lt;/div&gt;</span></span><br/>
-      &nbsp;&nbsp;&nbsp;<span class="prb-html-tag">&lt;div&nbsp;<span class="prb-html-attribute-name">class</span><span class="prb-html-attribute-value">="footer"</span><span class="prb-html-tag">&gt;<span class="prb-html-inner-text">Footer</span>&lt;/div&gt;</span></span><br/>
-      &nbsp;<span class="prb-html-tag">&lt;/div&gt;</span>
+      <prb-html-tag
+        [tag]="'div'"
+        [attributes]="[
+          {'name': 'class', 'value': 'prb-main-grid-container'}
+        ]">
+        <prb-html-tag
+          [level]="1"
+          [tag]="'div'"
+          [attributes]="[{'name': 'class', 'value': 'prb-main-grid-header'}]"
+          [content]="'Header'">
+        </prb-html-tag>
+        <prb-html-tag
+          [level]="1"
+          [tag]="'div'"
+          [attributes]="[{'name': 'class', 'value': 'prb-main-grid-content'}]"
+          [content]="'Content'">
+        </prb-html-tag>
+        <prb-html-tag
+          [level]="1"
+          [tag]="'div'"
+          [attributes]="[{'name': 'class', 'value': 'prb-main-grid-footer'}]"
+          [content]="'Footer'">
+        </prb-html-tag>
+      </prb-html-tag>
     </code>
   </div>
   <div class="prb-code-block">
     <code>
-      <span class="prb-dot">.</span><span class="prb-class-name">prb-main-grid-container</span>&nbsp;<span class="prb-parenthesis">&#123;</span><br/>
-      &nbsp;&nbsp;&nbsp;<span class="prb-property-name">position:</span>
-      &nbsp;<span class="prb-property-value">fixed</span><span class="prb-semicolon">;</span>
-      <br/>
-      &nbsp;&nbsp;&nbsp;<span class="prb-property-name">top:</span>&nbsp;<span class="prb-property-number">0</span><span class="prb-semicolon">;</span><br/>
-      &nbsp;&nbsp;&nbsp;<span class="prb-property-name">left:</span>&nbsp;<span class="prb-property-number">0</span><span class="prb-semicolon">;</span><br/>
-      &nbsp;&nbsp;&nbsp;<span class="prb-property-name">width:</span>&nbsp;<span class="prb-property-number">100</span><span class="prb-operation-sign">%</span><span class="prb-semicolon">;</span><br/>
-      &nbsp;&nbsp;&nbsp;<span class="prb-property-name">display:</span>&nbsp;<span class="prb-property-value">grid</span><span class="prb-semicolon">;</span><br/>
-      &nbsp;&nbsp;&nbsp;<span class="prb-property-name">grid-template-areas:</span><br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="prb-property-value">"header"</span><br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="prb-property-value">"content"</span><br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="prb-property-value">"footer"</span><span class="prb-semicolon">;</span>
-      <br/>
-      &nbsp;&nbsp;&nbsp;<span class="prb-property-name">gap:</span>&nbsp;<span class="prb-property-number">5</span><span class="prb-property-unit">px</span><span class="prb-semicolon">;</span><br/>
-      <br/>
-      &nbsp;&nbsp;&nbsp;<span class="prb-dot">.</span><span class="prb-class-name">prb-main-grid-header</span>&nbsp;<span class="prb-parenthesis">&#123;</span><br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="prb-property-name">grid-area:</span>&nbsp;<span class="prb-property-value">header</span><span class="prb-semicolon">;</span><br/>
-      &nbsp;&nbsp;&nbsp;<span class="prb-parenthesis">&#125;</span><br/>
-      <br/>
-      &nbsp;&nbsp;&nbsp;<span class="prb-dot">.</span><span class="prb-class-name">prb-main-grid-content</span>&nbsp;<span class="prb-parenthesis">&#123;</span><br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="prb-property-name">grid-area:</span>&nbsp;<span class="prb-property-value">content</span><span class="prb-semicolon">;</span><br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="prb-property-name">overflow-y:</span>&nbsp;<span class="prb-property-value">auto</span><span class="prb-semicolon">;</span><br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="prb-property-name">padding:</span>&nbsp;<span class="prb-property-number">10</span><span class="prb-property-unit">px</span><span class="prb-semicolon">;</span><br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="prb-property-name">max-height:</span>
-      &nbsp;<span class="prb-css-function">calc</span>
-      <span class="prb-parenthesis">(</span>
-      <span class="prb-property-number">100</span>
-      <span class="prb-property-unit">vh</span>
-      &nbsp;<span class="prb-operation-sign">-</span>
-      &nbsp;<span class="prb-property-number">113</span>
-      <span class="prb-property-unit">px</span>
-      <span class="prb-parenthesis">)</span>
-      <span class="prb-semicolon">;</span><br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="prb-property-name">height:</span>&nbsp;<span class="prb-property-number">100</span><span class="prb-property-unit">vh</span><span class="prb-semicolon">;</span><br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="prb-property-name">background-color:</span>&nbsp;<span class="prb-property-value-hex">#f5f5f5</span><span class="prb-semicolon">;</span><br/>
-      &nbsp;&nbsp;&nbsp;<span class="prb-parenthesis">&#125;</span><br/>
-      <br/>
-      &nbsp;&nbsp;&nbsp;<span class="prb-dot">.</span><span class="prb-class-name">prb-main-grid-footer</span>&nbsp;<span class="prb-parenthesis">&#123;</span><br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="prb-property-name">grid-area:</span>&nbsp;<span class="prb-property-value">footer</span><span class="prb-semicolon">;</span><br/>
-      &nbsp;&nbsp;&nbsp;<span class="prb-parenthesis">&#125;</span><br/>
-      &nbsp;<span class="prb-parenthesis">&#125;</span>
+      <prb-css-rule
+        [level]="0"
+        [selectors]="['.prb-main-grid-container']"
+        [properties]="[{'property': 'position', 'value': 'fixed'},
+                  {'property': 'top', 'value': '0'},
+                  {'property': 'left', 'value': '0'},
+                  {'property': 'width', 'value': '100%'},
+                  {'property': 'display', 'value': 'grid'},
+                  {'property': 'grid-template-areas', 'values': ['header', 'content', 'footer']},
+                  {'property': 'gap', 'value': '5px'}]">
+        <prb-css-rule
+          [level]="1"
+          [selectors]="['.prb-main-grid-header']"
+          [properties]="[{'property': 'grid-area', 'value': 'header'}]">
+        </prb-css-rule>
+        <prb-css-rule
+          [level]="1"
+          [selectors]="['.prb-main-grid-content']"
+          [properties]="[{'property': 'grid-area', 'value': 'content'},
+                  {'property': 'overflow-y', 'value': 'auto'},
+                  {'property': 'padding', 'value': '10px'},
+                  {'property': 'max-height', 'value': 'calc(100vh  -  113px)'},
+                  {'property': 'height', 'value': '100vh'},
+                  {'property': 'background-color', 'value': '#F5F5F5'}]">
+        </prb-css-rule>
+        <prb-css-rule
+          [level]="1"
+          [selectors]="['.prb-main-grid-footer']"
+          [properties]="[{'property': 'grid-area', 'value': 'footer'}]">
+        </prb-css-rule>
+      </prb-css-rule>
     </code>
   </div>
 </div>

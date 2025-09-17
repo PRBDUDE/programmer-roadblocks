@@ -1,1 +1,25 @@
-<span class="prb-css-property-value">{{ value }}</span>
+<span class="prb-css-property-value">
+  @if (isHexNumber()) {
+    <span class="prb-css-property-value-hex">#</span>
+    <span class="prb-css-property-value-hex-number">{{ getHexNumber() }}</span>
+  } @else if (isCalcValue()) {
+    <span class="prb-css-property-value-calc">calc</span>
+    <span class="prb-css-property-value-calc-paren">(</span>
+    <span class="prb-css-property-value-calc-number">{{ getCalcFirstValue() }}</span>
+    <span class="prb-css-property-value-calc-unit">{{ getCalcFirstUnit() }}</span>
+    <span class="prb-css-property-value-calc-operator"> {{ getCalcOperator() }} </span>
+    <span class="prb-css-property-value-calc-number">{{ getCalcSecondValue() }}</span>
+    <span class="prb-css-property-value-calc-unit">{{ getCalcSecondUnit() }}</span>
+    <span class="prb-css-property-value-calc-paren">)</span>
+  } @else if (isPercentage()) {
+    <span class="prb-css-property-value-number">{{ getNumber() }}</span>
+    <span class="prb-css-property-value-percent">%</span>
+  } @else if (isNumberUnit()) {
+    <span class="prb-css-property-value-number">{{ getNumber() }}</span>
+    <span class="prb-css-property-value-unit">{{ getUnit() }}</span>
+  } @else if (isNumber()) {
+    <span class="prb-css-property-value-number">{{ getNumber() }}</span>
+  } @else {
+    <span>{{ value() }}</span>
+  }
+</span>
