@@ -1,5 +1,6 @@
 import {Component, input} from '@angular/core';
 import {Attribute} from "./model/attribute";
+import {Indentation} from "@utility/indentation";
 
 @Component({
   selector: 'prb-html-tag',
@@ -14,8 +15,7 @@ export class HtmlTagComponent {
   content = input<string>('');
 
   getIndentation(extra: number = 0) {
-    const count = this.level() + extra;
-    return '\u00A0'.repeat(count * 4);
+    return Indentation.get(this.level(), extra);
   }
 
   hasContent() {
