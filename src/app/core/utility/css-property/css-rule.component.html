@@ -17,7 +17,7 @@
       @if (prop.value) {
         <prb-css-property-value [value]="prop.value"/>
       }
-      @if (prop.values) {
+      @else if (prop.values) {
         <prb-css-property-value-array [level]="level()" [values]="prop.values"/>
       }
       <span class="prb-css-rule-semicolon">;</span>
