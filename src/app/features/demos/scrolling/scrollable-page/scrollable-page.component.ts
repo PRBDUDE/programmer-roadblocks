@@ -2,10 +2,13 @@ import {Component, OnInit} from '@angular/core';
 import {parse} from '@adobe/css-tools'
 import {cssPropertyValue} from "@utility/css-property-value";
 import {cssPropertyName} from "@utility/css-property-name";
+import {CssRuleComponent} from "@utility/css-rule.component";
 
 @Component({
   selector: 'prb-scrollable-page',
-  imports: [],
+  imports: [
+    CssRuleComponent
+  ],
   templateUrl: './scrollable-page.component.html',
   styleUrl: './scrollable-page.component.scss'
 })
@@ -45,7 +48,7 @@ export class ScrollablePageComponent implements OnInit {
         this.cssCode.push('');
       }
     })
-    console.log('AST: ', ast.stylesheet);
+    // console.log('AST: ', ast.stylesheet);
     // const css = stringify(ast);
     // console.log(css);
   }

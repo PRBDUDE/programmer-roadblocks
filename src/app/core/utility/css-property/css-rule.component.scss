@@ -1,5 +1,8 @@
 .prb-css-rule {
+  font-family: "Book Antiqua", serif;
+  font-size: 0.7rem;
   color: var(--p-orange-200);
+  line-height: 1.125rem;
 
   &-selector {
     color: var(--prb-color-css-identifier);
