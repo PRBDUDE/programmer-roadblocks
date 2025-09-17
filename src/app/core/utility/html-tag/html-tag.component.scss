@@ -1,0 +1,22 @@
+.prb-html-tag {
+  font-family: "Book Antiqua", serif;
+  font-size: 0.7rem;
+  line-height: 1.125rem;
+  color: var(--prb-color-html-tag);
+
+  &-attribute {
+    color: var(--prb-color-html-attribute-name);
+
+    &-value {
+      color: var(--prb-color-html-attribute-value);
+    }
+
+    &-quote {
+      color: var(--prb-color-html-attribute-quote);
+    }
+  }
+
+  &-content {
+    color: var(--prb-color-html-content);
+  }
+}

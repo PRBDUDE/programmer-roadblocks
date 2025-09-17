@@ -3,11 +3,13 @@ import {parse} from '@adobe/css-tools'
 import {cssPropertyValue} from "@utility/css-property-value";
 import {cssPropertyName} from "@utility/css-property-name";
 import {CssRuleComponent} from "@utility/css-rule.component";
+import {HtmlTagComponent} from "../../../../core/utility/html-tag/html-tag.component";
 
 @Component({
   selector: 'prb-scrollable-page',
   imports: [
-    CssRuleComponent
+    CssRuleComponent,
+    HtmlTagComponent
   ],
   templateUrl: './scrollable-page.component.html',
   styleUrl: './scrollable-page.component.scss'

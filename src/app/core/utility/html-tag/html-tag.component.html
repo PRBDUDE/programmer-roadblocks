@@ -1,0 +1,21 @@
+<div class="prb-html-tag">
+  <div class="prb-html-tag-open">{{ getIndentation() }}&lt;{{ tag() }}
+    @if (attributes().length > 0) {
+      @if (attributes().length === 1) {
+        <span class="prb-html-tag-attribute">{{ attributes()[0].name }}</span>
+        <span class="prb-html-tag-attribute-quote">="<span class="prb-html-tag-attribute-value">{{ attributes()[0].value }}</span>"</span>
+      } @else {
+        <br/>
+        @for (attr of attributes(); track attr) {
+          {{ getIndentation(2) }}<span class="prb-html-tag-attribute">{{ attr.name }}</span>
+          <span class="prb-html-tag-attribute-value">="{{ attr.value }}"</span><br/>
+        }
+      }
+    }&gt;
+    @if (hasContent()) {
+      <br/>{{ getIndentation(2) }}<span class="prb-html-tag-content">{{ content() }}</span>
+    }
+  </div>
+  <ng-content select="prb-html-tag"></ng-content>
+  <div class="prb-html-tag-close">{{ getIndentation() }}&lt;&sol;{{ tag() }}&gt;</div>
+</div>

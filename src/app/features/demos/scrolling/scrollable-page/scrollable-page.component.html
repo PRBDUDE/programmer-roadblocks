@@ -1,37 +1,6 @@
 <div class="prb-information">
   <div class="code-block">
     <code>
-      <prb-css-rule
-        [level]="0"
-        [selectors]="['.prb-main-grid-container']"
-        [properties]="[{'property': 'position', 'value': 'fixed'},
-                  {'property': 'top', 'value': '0'},
-                  {'property': 'left', 'value': '0'},
-                  {'property': 'width', 'value': '100%'},
-                  {'property': 'display', 'value': 'grid'},
-                  {'property': 'grid-template-areas', 'values': ['header', 'content', 'footer']},
-                  {'property': 'gap', 'value': '5px'}]">
-        <prb-css-rule
-          [level]="1"
-          [selectors]="['.prb-main-grid-header']"
-          [properties]="[{'property': 'grid-area', 'value': 'header'}]">
-        </prb-css-rule>
-        <prb-css-rule
-          [level]="1"
-          [selectors]="['.prb-main-grid-content']"
-          [properties]="[{'property': 'grid-area', 'value': 'content'},
-                  {'property': 'overflow-y', 'value': 'auto'},
-                  {'property': 'padding', 'value': '10px'},
-                  {'property': 'max-height', 'value': 'calc(100vh  -  113px)'},
-                  {'property': 'height', 'value': '100vh'},
-                  {'property': 'background-color', 'value': '#F5F5F5'}]">
-        </prb-css-rule>
-        <prb-css-rule
-          [level]="1"
-          [selectors]="['.prb-main-grid-footer']"
-          [properties]="[{'property': 'grid-area', 'value': 'footer'}]">
-        </prb-css-rule>
-      </prb-css-rule>
     </code>
   </div>
   <div class="prb-header">This page demonstrates the scroll region</div>
@@ -43,19 +12,30 @@
   </div>
   <div class="prb-code-block">
     <code>
-      <span class="prb-html-tag">
-        &lt;div&nbsp;<span class="prb-html-attribute-name">class</span><span class="prb-html-attribute-value">="prb-main-grid-container"</span><span
-        class="prb-html-tag">&gt;</span></span><br/>
-      &nbsp;&nbsp;&nbsp;<span class="prb-html-tag">&lt;div&nbsp;<span class="prb-html-attribute-name">class</span><span
-      class="prb-html-attribute-value">="prb-main-grid-header"</span><span class="prb-html-tag">&gt;<span
-      class="prb-html-inner-text">Header</span>&lt;/div&gt;</span></span><br/>
-      &nbsp;&nbsp;&nbsp;<span class="prb-html-tag">&lt;div&nbsp;<span class="prb-html-attribute-name">class</span><span
-      class="prb-html-attribute-value">="prb-main-grid-content"</span><span class="prb-html-tag">&gt;<span
-      class="prb-html-inner-text">Content</span>&lt;/div&gt;</span></span><br/>
-      &nbsp;&nbsp;&nbsp;<span class="prb-html-tag">&lt;div&nbsp;<span class="prb-html-attribute-name">class</span><span
-      class="prb-html-attribute-value">="prb-main-grid-footer"</span><span class="prb-html-tag">&gt;<span
-      class="prb-html-inner-text">Footer</span>&lt;/div&gt;</span></span><br/>
-      &nbsp;<span class="prb-html-tag">&lt;/div&gt;</span>
+      <prb-html-tag
+        [tag]="'div'"
+        [attributes]="[
+          {'name': 'class', 'value': 'prb-main-grid-container'}
+        ]">
+        <prb-html-tag
+          [level]="1"
+          [tag]="'div'"
+          [attributes]="[{'name': 'class', 'value': 'prb-main-grid-header'}]"
+          [content]="'Header'">
+        </prb-html-tag>
+        <prb-html-tag
+          [level]="1"
+          [tag]="'div'"
+          [attributes]="[{'name': 'class', 'value': 'prb-main-grid-content'}]"
+          [content]="'Content'">
+        </prb-html-tag>
+        <prb-html-tag
+          [level]="1"
+          [tag]="'div'"
+          [attributes]="[{'name': 'class', 'value': 'prb-main-grid-footer'}]"
+          [content]="'Footer'">
+        </prb-html-tag>
+      </prb-html-tag>
     </code>
   </div>
   <div class="prb-code-block">
