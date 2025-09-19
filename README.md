@@ -1,6 +1,47 @@
-# Programmer Roadblocks
+<style>
+  h1 {
+    color: #6fbfbf;
+    text-align: center;
+    background-color: #222222;
+    padding: 2rem;
+  }
+  h2 {
+    color: #6fbfbf;
+    border-bottom: 1px solid #6fbfbf;
+  }
+  p {
+    margin-left: 20px;
+  }
+</style>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 19.1.4.
+# ![PRBDUDE](/public/favicon.ico) Programmer Roadblocks
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 20.2.4.
+
+## Angular Environment Setup
+
+1. Download and install Node.js
+
+    Download the installer from here: [node.js](https://nodejs.org/en/download/)
+
+
+2. Install Angular CLI globally on your machine
+
+
+    npm install -g @angular/cli
+
+3. Install Angular CLI and packages for the project
+
+    Run this command from the project directory (where you downloaded the project files to):
+
+
+    npm install
+
+4. Run Project from command line:
+
+
+    npm run start:local:development
+
 
 ## Development server
 
@@ -8,7 +49,23 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `ng generate component component-name` to generate a new component.
+
+Run `ng generate directive` to generate a new directive.
+
+Run `ng generate pipe` to generate a new pipe.
+
+Run `ng generate service` to generate a new service.
+
+Run `ng generate class` to generate a new class.
+
+Run `ng generate guard` to generate a new guard.
+
+Run `ng generate interface` to generate a new interface.
+
+Run `ng generate enum` to generate a new enum.
+
+Run `ng generate module` to generate a new module.
 
 ## Build
 
@@ -17,10 +74,6 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
 ## Further help
 
