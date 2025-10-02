@@ -2,6 +2,7 @@ import {ComponentFixture, TestBed, waitForAsync} from '@angular/core/testing';
 
 import {JobAccordionComponent} from './job-accordion.component';
 import {provideHttpClientTesting} from "@angular/common/http/testing";
+import {provideHttpClient} from "@angular/common/http";
 
 describe('JobAccordionComponent', () => {
   let component: JobAccordionComponent;
@@ -13,7 +14,8 @@ describe('JobAccordionComponent', () => {
         JobAccordionComponent
       ],
       providers: [
-        provideHttpClientTesting()
+        provideHttpClientTesting(),
+        provideHttpClient()
       ]
     }).compileComponents();
   }));
