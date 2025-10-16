@@ -6,10 +6,10 @@ import {Button} from "primeng/button";
 import {Tooltip} from "primeng/tooltip";
 import {isProduction} from "@utility/is-production";
 import {NgOptimizedImage} from "@angular/common";
-import {reactiveFormsMenu} from "@rootComponents/menu/reactive-forms-menu";
-import {demosMenu} from "@rootComponents/menu/demos-menu";
-import {documentationMenu} from "@rootComponents/menu/documentation-menu";
-import {ColorPalettePickerComponent} from "@rootComponents/color-palette-picker/color-palette-picker.component";
+import {reactiveFormsMenu} from "./menu/reactive-forms-menu";
+import {demosMenu} from "./menu/demos-menu";
+import {documentationMenu} from "./menu/documentation-menu";
+import {ColorPalettePickerComponent} from "./color-palette-picker/color-palette-picker.component";
 import {isPrbMode, prbModes, setDarkTheme, setDebugMode, setFixedFooter, toggleMode} from "@utility/prb-mode";
 import {ProfileService} from "@services/profile.service";
 

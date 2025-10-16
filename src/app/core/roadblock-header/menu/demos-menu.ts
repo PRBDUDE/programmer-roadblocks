@@ -1,11 +1,11 @@
-import {demoInputMenu} from "@rootComponents/menu/demo-input-menu";
-import {demoScrollingMenu} from "@rootComponents/menu/demo-scrolling-menu";
-import {demoStylingMenu} from "@rootComponents/menu/demo-styling-menu";
-import {demoTimelineMenu} from "@rootComponents/menu/demo-timeline-menu";
-import {demoTooltipMenu} from "@rootComponents/menu/demo-tooltip";
-import {demoStepperMenu} from "@rootComponents/menu/demo-stepper-menu";
-import {demoStepsMenu} from "@rootComponents/menu/demo-steps-menu";
-import {demoAccordionMenu} from "@rootComponents/menu/demo-accordion-menu";
+import {demoInputMenu} from "./demo-input-menu";
+import {demoScrollingMenu} from "./demo-scrolling-menu";
+import {demoStylingMenu} from "./demo-styling-menu";
+import {demoTimelineMenu} from "./demo-timeline-menu";
+import {demoTooltipMenu} from "./demo-tooltip";
+import {demoStepperMenu} from "./demo-stepper-menu";
+import {demoStepsMenu} from "./demo-steps-menu";
+import {demoAccordionMenu} from "./demo-accordion-menu";
 
 export function demosMenu() {
   return {

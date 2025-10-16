@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {SocialMediaLinksComponent} from "../social-media-links/social-media-links.component";
 import {SocialMediaLink} from "@model/social-media-link";
-import {CopyrightComponent} from "@rootComponents/copyright/copyright.component";
+import {CopyrightComponent} from "./copyright/copyright.component";
 import {NgClass} from "@angular/common";
 import {isPrbMode, prbModes} from "@utility/prb-mode";
 
