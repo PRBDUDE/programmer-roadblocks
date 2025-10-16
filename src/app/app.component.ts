@@ -1,8 +1,8 @@
 import {Component, inject, OnInit} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
-import {RoadblockHeaderComponent} from "@rootComponents/roadblock-header.component";
+import {RoadblockHeaderComponent} from "@header/roadblock-header.component";
 import {PrimeNG} from "primeng/config";
-import {RoadblockFooterComponent} from "@rootComponents/roadblock-footer.component";
+import {RoadblockFooterComponent} from "@footer/roadblock-footer.component";
 import {PrimengConfigService} from "@utility/primeng-config.service";
 import {ProfileService} from "@services/profile.service";
 import {setPrimaryColor} from "@utility/set-primary-color";
