@@ -62,7 +62,7 @@
             "scripts": []
           },
           "configurations": {
-            "production": {
+            "prd": {
               "budgets": [
                 {
                   "type": "initial",
@@ -79,11 +79,11 @@
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.production.ts"
+                  "with": "src/environments/environment.prd.ts"
                 }
               ]
             },
-            "stage": {
+            "stg": {
               "budgets": [
                 {
                   "type": "initial",
@@ -100,7 +100,7 @@
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.stage.ts"
+                  "with": "src/environments/environment.stg.ts"
                 }
               ]
 
@@ -127,39 +127,39 @@
                 }
               ]
             },
-            "development": {
+            "dev": {
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true,
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.development.ts"
+                  "with": "src/environments/environment.dev.ts"
                 }
               ]
             },
-            "local-development": {
+            "loc-dev": {
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true,
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.local.development.ts"
+                  "with": "src/environments/environment.loc.dev.ts"
                 }
               ]
             }
           },
-          "defaultConfiguration": "production"
+          "defaultConfiguration": "prd"
         },
         "serve": {
           "builder": "@angular/build:dev-server",
           "configurations": {
-            "production": {
-              "buildTarget": "programmer-roadblocks:build:production"
+            "prd": {
+              "buildTarget": "programmer-roadblocks:build:prd"
             },
-            "stage": {
-              "buildTarget": "programmer-roadblocks:build:stage"
+            "stg": {
+              "buildTarget": "programmer-roadblocks:build:stg"
             },
             "qat": {
               "buildTarget": "programmer-roadblocks:build:qat"
@@ -167,14 +167,14 @@
             "sit": {
               "buildTarget": "programmer-roadblocks:build:sit"
             },
-            "development": {
-              "buildTarget": "programmer-roadblocks:build:development"
+            "dev": {
+              "buildTarget": "programmer-roadblocks:build:dev"
             },
-            "local-development": {
-              "buildTarget": "programmer-roadblocks:build:local-development"
+            "loc-dev": {
+              "buildTarget": "programmer-roadblocks:build:loc-dev"
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "dev"
         },
         "extract-i18n": {
           "builder": "@angular/build:extract-i18n",
