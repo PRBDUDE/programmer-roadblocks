@@ -5,20 +5,21 @@
   margin: 1em 0 2em 0;
   gap: 1em;
   flex-flow: column wrap;
+}
 
-  .prb-horizontal-timeline-item {
-    h2 {
-      @include base.tl-group-header();
-    }
+h2 {
+  @include base.tl-group-header();
+}
 
-    @include base.tl-group-body();
-    min-height: 150px;
-    max-width: 100%;
+.prb-horizontal-timeline-item {
 
-    .prb-horizontal-timeline-content {
-      max-width: 100vw;
-      overflow-x: auto;
-    }
+  @include base.tl-group-body();
+  min-height: 150px;
+  max-width: 100%;
+
+  .prb-horizontal-timeline-content {
+    max-width: 100vw;
+    overflow-x: auto;
   }
 }
 

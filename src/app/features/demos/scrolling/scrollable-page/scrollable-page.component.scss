@@ -21,85 +21,85 @@
     padding: 10px;
     margin: 10px;
     max-width: 400px;
+  }
+}
 
-    code {
-      padding: 2px 5px;
-      border-radius: 3px;
-      font-size: 0.7em;
-      font-family: monospace;
+code {
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-size: 0.7em;
+  font-family: monospace;
 
-      .prb-class-name {
-        color: var(--prb-color-css-class-name);
-      }
+  .prb-class-name {
+    color: var(--prb-color-css-class-name);
+  }
 
-      .prb-dot {
-        color: var(--prb-color-css-dot);
-      }
+  .prb-dot {
+    color: var(--prb-color-css-dot);
+  }
 
-      .prb-attribute-name {
-        color: var(--prb-color-css-attribute-name);
-      }
+  .prb-attribute-name {
+    color: var(--prb-color-css-attribute-name);
+  }
 
-      .prb-parenthesis {
-        color: var(--prb-color-css-parenthesis);
-      }
+  .prb-parenthesis {
+    color: var(--prb-color-css-parenthesis);
+  }
 
-      .prb-property-name {
-        color: var(--prb-color-css-property-name);
-      }
+  .prb-property-name {
+    color: var(--prb-color-css-property-name);
+  }
 
-      .prb-property-value {
-        color: var(--prb-color-css-property-value);
-      }
+  .prb-property-value {
+    color: var(--prb-color-css-property-value);
+  }
 
-      .prb-semicolon {
-        color: var(--prb-color-css-semicolon);
-      }
+  .prb-semicolon {
+    color: var(--prb-color-css-semicolon);
+  }
 
-      .prb-property-number {
-        color: var(--prb-color-css-number);
-      }
+  .prb-property-number {
+    color: var(--prb-color-css-number);
+  }
 
-      .prb-property-unit {
-        color: var(--prb-color-css-unit);
-      }
+  .prb-property-unit {
+    color: var(--prb-color-css-unit);
+  }
 
-      .prb-property-value-hex {
-        color: var(--prb-color-css-hex);
-      }
+  .prb-property-value-hex {
+    color: var(--prb-color-css-hex);
+  }
 
-      .prb-css-function {
-        color: var(--prb-color-css-function);
-      }
+  .prb-css-function {
+    color: var(--prb-color-css-function);
+  }
 
-      .prb-operation-sign {
-        color: var(--prb-color-css-operation-sign);
-      }
+  .prb-operation-sign {
+    color: var(--prb-color-css-operation-sign);
+  }
 
-      .prb-html-tag {
-        color: var(--prb-color-html-tag);
-      }
+  .prb-html-tag {
+    color: var(--prb-color-html-tag);
+  }
 
-      .prb-html-attribute-name {
-        color: var(--prb-color-html-attribute-name);
-      }
+  .prb-html-attribute-name {
+    color: var(--prb-color-html-attribute-name);
+  }
 
-      .prb-html-attribute-value {
-        color: var(--prb-color-html-attribute-value);
-      }
+  .prb-html-attribute-value {
+    color: var(--prb-color-html-attribute-value);
+  }
 
-      .prb-html-comment {
-        color: var(--prb-color-html-comment);
-      }
+  .prb-html-comment {
+    color: var(--prb-color-html-comment);
+  }
 
-      .prb-html-entity-reference {
-        color: var(--prb-color-html-entity-reference);
-      }
+  .prb-html-entity-reference {
+    color: var(--prb-color-html-entity-reference);
+  }
 
-      .prb-html-inner-text {
-        color: var(--prb-color-html-inner-text);
-      }
-    }
+  .prb-html-inner-text {
+    color: var(--prb-color-html-inner-text);
   }
 }
 
