@@ -13,7 +13,7 @@
       <h2>Show Minimal</h2>
       <div class="prb-horizontal-timeline-content">
         <p-timeline [value]="timelineItems()" layout="horizontal" align="{{selectedAlignmentItem()}}">
-          <ng-template #content let-event>
+          <ng-template let-event>
             <span class="prb-tl-content">{{ event.status }}</span>
           </ng-template>
         </p-timeline>
@@ -25,13 +25,13 @@
       <h2>Show Icon</h2>
       <div class="prb-horizontal-timeline-content">
         <p-timeline [value]="timelineItems()" layout="horizontal" align="{{selectedAlignmentItem()}}">
-          <ng-template #marker let-event>
+          <ng-template let-event>
             <div class="prb-tl-marker"
                  [ngClass]="getEventClass(event)">
               <i class="{{getIcon(event)}}"></i>
             </div>
           </ng-template>
-          <ng-template #content let-event>
+          <ng-template let-event>
             <span class="prb-tl-content">{{ event.status }}</span>
           </ng-template>
         </p-timeline>
@@ -43,16 +43,16 @@
       <h2>Show Date/Time</h2>
       <div class="prb-horizontal-timeline-content">
         <p-timeline [value]="timelineItems()" layout="horizontal" align="{{selectedAlignmentItem()}}">
-          <ng-template #marker let-event>
+          <ng-template let-event>
             <div class="prb-tl-marker"
                  [ngClass]="getEventClass(event)">
               <i class="{{getIcon(event)}}"></i>
             </div>
           </ng-template>
-          <ng-template #content let-event>
+          <ng-template let-event>
             <span class="prb-tl-content">{{ event.status }}</span>
           </ng-template>
-          <ng-template #opposite let-event>
+          <ng-template let-event>
             <div class="prb-tl-date">
               {{ event.date | date:'longDate' }}
             </div>
@@ -69,15 +69,15 @@
       <h2>Show Card with Description</h2>
       <div class="prb-horizontal-timeline-content">
         <p-timeline [value]="timelineItems()" layout="horizontal" align="{{selectedAlignmentItem()}}">
-          <ng-template #marker let-event>
+          <ng-template let-event>
             <div class="prb-tl-marker"
                  [ngClass]="getEventClass(event)">
               <i class="{{getIcon(event)}}"></i>
             </div>
           </ng-template>
-          <ng-template #content let-event>
+          <ng-template let-event>
             <p-card>
-              <ng-template #header>
+              <ng-template>
                 <div class="prb-card-top" [ngClass]="getEventClass(event)">
                   {{ event.status }}
                 </div>
@@ -87,7 +87,7 @@
               </div>
             </p-card>
           </ng-template>
-          <ng-template #opposite let-event>
+          <ng-template let-event>
             <div class="prb-tl-date">
               {{ event.date | date:'longDate' }}
             </div>
