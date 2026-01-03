@@ -56,12 +56,16 @@
   }
 }
 
+p-datepicker.ng-touched,
+p-inputmask.ng-touched,
 input.ng-touched {
   &.ng-invalid {
+    width: fit-content;
     border: 1px solid var(--p-red-500);
   }
 
   &.ng-valid {
+    width: fit-content;
     border: 1px solid var(--p-green-500);
   }
 }

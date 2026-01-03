@@ -26,6 +26,7 @@
                         placeholder="enter date of birth"/>
           <label for="dob" class="prb-form-group-label"
                  [ngClass]="{'required': birthdateControl.hasValidator(Validators.required)}">Date of Birth</label>
+          <prb-reactive-error [formControl]="birthdateControl" class="prb-validation-feedback"/>
         </div>
       </div>
 
