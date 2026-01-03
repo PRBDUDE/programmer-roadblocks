@@ -37,7 +37,7 @@ export class ReactiveEntryFormComponent extends ReactivePatterns implements OnIn
         last: ['', Validators.required]
       }),
       personal: this.fb.group({
-        birthdate: [''],
+        birthdate: ['', Validators.required],
       }),
       address: this.fb.group({
         street: ['', Validators.required],
