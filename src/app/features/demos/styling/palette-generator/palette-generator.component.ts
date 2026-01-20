@@ -1,6 +1,6 @@
 import {Component, inject, OnInit} from '@angular/core';
 import {FormArray, FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators} from '@angular/forms';
-import {CommonModule} from '@angular/common';
+
 import {InputTextModule} from 'primeng/inputtext';
 import {ButtonModule} from 'primeng/button';
 import {TableModule} from 'primeng/table';
@@ -13,7 +13,6 @@ import {generateColorPalettes} from '@utility/generate-color-palettes';
   selector: 'prb-palette-generator',
   standalone: true,
   imports: [
-    CommonModule,
     FormsModule,
     ReactiveFormsModule,
     InputTextModule,
@@ -21,7 +20,7 @@ import {generateColorPalettes} from '@utility/generate-color-palettes';
     TableModule,
     CardModule,
     InputNumberModule
-  ],
+],
   templateUrl: './palette-generator.component.html',
   styleUrl: './palette-generator.component.scss'
 })
