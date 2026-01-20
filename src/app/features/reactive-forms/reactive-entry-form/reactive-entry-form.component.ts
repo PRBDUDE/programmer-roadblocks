@@ -1,7 +1,7 @@
 import {Component, inject, OnInit} from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators} from "@angular/forms";
 import {DebugOutputCardComponent} from "@utility/debug-output-card.component";
-import {NgClass} from "@angular/common";
+
 import {Button} from "primeng/button";
 import {InputMask} from "primeng/inputmask";
 import {InputText} from "primeng/inputtext";
@@ -16,13 +16,12 @@ import {isPrbMode, prbModes} from "@utility/prb-mode";
     ReactiveFormsModule,
     DebugOutputCardComponent,
     DebugOutputCardComponent,
-    NgClass,
     Button,
     InputMask,
     InputText,
     DatePicker,
     ReactiveErrorComponent
-  ],
+],
   templateUrl: './reactive-entry-form.component.html',
   styleUrl: './reactive-entry-form.component.scss'
 })

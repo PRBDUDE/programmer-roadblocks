@@ -1,6 +1,6 @@
 @if (!isProduction()) {
   <div [attr.id]="debugOutputId"
-       [ngClass]="{'flat': flat()}"
+       [class.flat]="flat()"
        class="prb-debug-output-container">
     @if (title()) {
       <div class="prb-debug-header">{{ title() }}</div>

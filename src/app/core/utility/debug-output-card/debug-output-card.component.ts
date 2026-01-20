@@ -1,5 +1,5 @@
 import {Component, input} from '@angular/core';
-import {JsonPipe, NgClass} from "@angular/common";
+import {JsonPipe} from "@angular/common";
 import {isProduction} from "@utility/is-production";
 
 let uniqueId = 0;
@@ -7,9 +7,8 @@ let uniqueId = 0;
 @Component({
   selector: 'prb-debug-output-card',
   imports: [
-    JsonPipe,
-    NgClass
-  ],
+    JsonPipe
+],
   templateUrl: './debug-output-card.component.html',
   styleUrl: './debug-output-card.component.scss'
 })

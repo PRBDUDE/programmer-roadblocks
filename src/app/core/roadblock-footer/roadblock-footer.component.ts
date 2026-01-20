@@ -2,16 +2,15 @@ import {Component} from '@angular/core';
 import {SocialMediaLinksComponent} from "../social-media-links/social-media-links.component";
 import {SocialMediaLink} from "@model/social-media-link";
 import {CopyrightComponent} from "./copyright/copyright.component";
-import {NgClass} from "@angular/common";
+
 import {isPrbMode, prbModes} from "@utility/prb-mode";
 
 @Component({
   selector: 'prb-roadblock-footer',
   imports: [
     SocialMediaLinksComponent,
-    CopyrightComponent,
-    NgClass
-  ],
+    CopyrightComponent
+],
   templateUrl: './roadblock-footer.component.html',
   styleUrl: './roadblock-footer.component.scss'
 })

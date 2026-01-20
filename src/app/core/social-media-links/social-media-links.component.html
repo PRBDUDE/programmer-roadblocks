@@ -1,5 +1,5 @@
 <div class="prb-social-media-icons"
-     [ngClass]="{'prb-column': column()}">
+     [class.prb-column]="column()">
   @for (link of links(); track $index) {
     @if ($index > 0) {
       <span class="prb-social-media-divider"></span>
