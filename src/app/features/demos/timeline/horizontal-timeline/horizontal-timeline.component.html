@@ -94,14 +94,6 @@
           <ng-template #opposite let-event>
             <prb-card [eventItem]="event"/>
           </ng-template>
-          <ng-template let-event>
-            <div class="prb-tl-date">
-              {{ event.date | date:'longDate' }}
-            </div>
-            <div class="tl-time">
-              {{ event.date | date:'hh:mm:ss.SSS a' }}
-            </div>
-          </ng-template>
         </p-timeline>
       </div>
     </div>
