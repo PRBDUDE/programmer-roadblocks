@@ -1,0 +1,10 @@
+<div class="prb-card-top"
+     [class.prb-tl-initiate]="status() === 'Initiate Transmission'"
+     [class.prb-tl-transmitting]="status() === 'Transmitting Packets'"
+     [class.prb-tl-checksum]="status() === 'Verify Checksum'"
+     [class.prb-tl-complete]="status() === 'End Transmission'"
+     [class.prb-tl-warning]="status() === 'Warning'"
+     [class.prb-tl-error]="status() === 'Error'"
+     [class.prb-tl-unknown]="status() === 'Unknown'">
+  {{ status() }}
+</div>
