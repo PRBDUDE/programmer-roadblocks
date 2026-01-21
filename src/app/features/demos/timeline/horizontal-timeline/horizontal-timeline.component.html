@@ -27,7 +27,13 @@
         <p-timeline [value]="timelineItems()" layout="horizontal" align="{{selectedAlignmentItem()}}">
           <ng-template #content let-event>
             <div class="prb-tl-marker"
-                 [ngClass]="getEventClass(event)">
+                 [class.prb-tl-initiate]="event.status === 'Initiate Transmission'"
+                 [class.prb-tl-transmitting]="event.status === 'Transmitting Packets'"
+                 [class.prb-tl-checksum]="event.status === 'Verify Checksum'"
+                 [class.prb-tl-complete]="event.status === 'End Transmission'"
+                 [class.prb-tl-warning]="event.status === 'Warning'"
+                 [class.prb-tl-error]="event.status === 'Error'"
+                 [class.prb-tl-unknown]="event.status === 'Unknown'">
               <i class="{{getIcon(event)}}"></i>
             </div>
           </ng-template>
@@ -45,7 +51,13 @@
         <p-timeline [value]="timelineItems()" layout="horizontal" align="{{selectedAlignmentItem()}}">
           <ng-template #content let-event>
             <div class="prb-tl-marker"
-                 [ngClass]="getEventClass(event)">
+                 [class.prb-tl-initiate]="event.status === 'Initiate Transmission'"
+                 [class.prb-tl-transmitting]="event.status === 'Transmitting Packets'"
+                 [class.prb-tl-checksum]="event.status === 'Verify Checksum'"
+                 [class.prb-tl-complete]="event.status === 'End Transmission'"
+                 [class.prb-tl-warning]="event.status === 'Warning'"
+                 [class.prb-tl-error]="event.status === 'Error'"
+                 [class.prb-tl-unknown]="event.status === 'Unknown'">
               <i class="{{getIcon(event)}}"></i>
             </div>
           </ng-template>
@@ -69,7 +81,13 @@
         <p-timeline [value]="timelineItems()" layout="horizontal" align="{{selectedAlignmentItem()}}">
           <ng-template #content let-event>
             <div class="prb-tl-marker"
-                 [ngClass]="getEventClass(event)">
+                 [class.prb-tl-initiate]="event.status === 'Initiate Transmission'"
+                 [class.prb-tl-transmitting]="event.status === 'Transmitting Packets'"
+                 [class.prb-tl-checksum]="event.status === 'Verify Checksum'"
+                 [class.prb-tl-complete]="event.status === 'End Transmission'"
+                 [class.prb-tl-warning]="event.status === 'Warning'"
+                 [class.prb-tl-error]="event.status === 'Error'"
+                 [class.prb-tl-unknown]="event.status === 'Unknown'">
               <i class="{{getIcon(event)}}"></i>
             </div>
           </ng-template>
