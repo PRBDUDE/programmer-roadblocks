@@ -71,3 +71,24 @@
   background-color: var(--prb-timeline-background-color-unknown);
   color: var(--prb-timeline-color-unknown);
 }
+
+.prb-card-contents {
+  padding: var(--p-card-body-padding);
+}
+
+.prb-tl-description {
+  font-size: 0.8em;
+  width: 170px;
+  margin-bottom: 0.5em;
+}
+
+.prb-tl-date {
+  font-size: 0.75em;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+  min-width: 150px;
+}
+
+.prb-tl-time {
+  font-size: 0.7em;
+}

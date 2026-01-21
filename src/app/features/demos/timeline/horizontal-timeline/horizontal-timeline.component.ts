@@ -8,7 +8,7 @@ import {TimelineCore} from "../timeline-core";
 import {TimelineOptionsComponent} from "../timeline-options/timeline-options.component";
 import {DebugOutputCardComponent} from "@utility/debug-output-card.component";
 import {isPrbMode, prbModes} from "@utility/prb-mode";
-import {CardComponent} from "./card/card.component";
+import {CardComponent} from "../card/card.component";
 
 @Component({
   selector: 'prb-horizontal-timeline',
