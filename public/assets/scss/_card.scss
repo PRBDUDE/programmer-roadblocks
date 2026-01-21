@@ -10,6 +10,8 @@
   }
 }
 
-.p-card-body {
-  padding: unset !important;
+@layer primeng {
+  .p-card-body {
+    padding: unset !important;
+  }
 }
