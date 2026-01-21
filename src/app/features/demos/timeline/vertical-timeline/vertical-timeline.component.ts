@@ -1,8 +1,7 @@
 import {Component} from '@angular/core';
 import {Timeline} from 'primeng/timeline';
-import {DatePipe, NgClass} from '@angular/common';
+import {DatePipe} from '@angular/common';
 import {FormsModule} from "@angular/forms";
-import {Card} from "primeng/card";
 import {timelineData} from "../timeline-data";
 import {TimelineAlignmentItem} from "../module/timeline-alignment-item";
 import {TimelineCore} from "../timeline-core";
@@ -17,8 +16,6 @@ import {CardComponent} from "./card/card.component";
     Timeline,
     DatePipe,
     FormsModule,
-    Card,
-    NgClass,
     TimelineOptionsComponent,
     DebugOutputCardComponent,
     CardComponent
