@@ -1,0 +1,9 @@
+<div>
+  <div class="prb-tl-description">{{ data().description }}</div>
+</div>
+<div class="prb-tl-date">
+  {{ data().date | date:'longDate' }}
+</div>
+<div class="prb-tl-time">
+  {{ data().date | date:'hh:mm:ss.SSS a' }}
+</div>

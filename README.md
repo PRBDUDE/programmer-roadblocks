@@ -25,16 +25,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
     Download the installer from here: [node.js](https://nodejs.org/en/download/)
 
-
 2. Install Angular CLI globally on your machine
-
 
     npm install -g @angular/cli
 
 3. Install Angular CLI and packages for the project
 
     Run this command from the project directory (where you downloaded the project files to):
-
 
     npm install
 

@@ -2,7 +2,7 @@ import {Component, inject, OnDestroy, OnInit} from '@angular/core';
 import {FormsModule} from "@angular/forms";
 import {Tooltip} from "primeng/tooltip";
 import {$dt} from "@primeuix/themes";
-import {NgClass} from "@angular/common";
+
 import {isPrbMode, prbModes} from "@utility/prb-mode";
 import {ToggleSwitch} from "primeng/toggleswitch";
 import {PrimeNG} from "primeng/config";
@@ -18,10 +18,9 @@ import {setPrimaryColor} from "@utility/set-primary-color";
   imports: [
     FormsModule,
     Tooltip,
-    NgClass,
     ToggleSwitch,
     Button
-  ],
+],
   templateUrl: './color-palette-picker.component.html',
   styleUrl: './color-palette-picker.component.scss'
 })

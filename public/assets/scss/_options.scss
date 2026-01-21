@@ -1,10 +1,10 @@
 :root {
-  --prb-option-color-background: var(--p-surface-500);
+  --prb-option-color-background: var(--p-surface-300);
   --prb-option-color-border: #333333;
 
   &[class*="prb-dark-theme"] {
-    --prb-option-color-background: var(--p-surface-400);
-    --prb-option-color-border: #a5a5a5;
+    --prb-option-color-background: var(--p-surface-500);
+    --prb-option-color-border: #a2a2a2;
   }
 }
 

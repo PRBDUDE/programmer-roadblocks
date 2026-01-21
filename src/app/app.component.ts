@@ -3,7 +3,6 @@ import {RouterOutlet} from '@angular/router';
 import {RoadblockHeaderComponent} from "@header/roadblock-header.component";
 import {PrimeNG} from "primeng/config";
 import {RoadblockFooterComponent} from "@footer/roadblock-footer.component";
-import {PrimengConfigService} from "@utility/primeng-config.service";
 import {ProfileService} from "@services/profile.service";
 import {setPrimaryColor} from "@utility/set-primary-color";
 import {setSurfaceColor} from "@utility/set-surface-color";
@@ -24,7 +23,8 @@ export class AppComponent implements OnInit {
   title = 'programmer-roadblocks';
   primeng = inject(PrimeNG);
   private profileService = inject(ProfileService);
-  primengConfig = inject(PrimengConfigService);
+
+  // primengConfig = inject(PrimengConfigService);
 
   ngOnInit(): void {
     this.profileService.getProfile().subscribe(profile => {

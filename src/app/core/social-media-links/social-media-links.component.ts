@@ -2,15 +2,14 @@ import {Component, input} from '@angular/core';
 import {Button} from "primeng/button";
 import {SocialMediaLink} from "@model/social-media-link";
 import {Tooltip} from "primeng/tooltip";
-import {NgClass} from "@angular/common";
+
 
 @Component({
   selector: 'prb-social-media-links',
   imports: [
     Button,
-    Tooltip,
-    NgClass
-  ],
+    Tooltip
+],
   templateUrl: './social-media-links.component.html',
   styleUrl: './social-media-links.component.scss'
 })

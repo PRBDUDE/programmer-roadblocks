@@ -13,7 +13,7 @@
       <h2>Show Minimal</h2>
       <div class="prb-vertical-timeline-content">
         <p-timeline [value]="timelineItems()" align="{{selectedAlignmentItem()}}">
-          <ng-template let-event>
+          <ng-template #content let-event>
             {{ event.status }}
           </ng-template>
         </p-timeline>
@@ -25,13 +25,19 @@
       <h2>Show Icon</h2>
       <div class="prb-vertical-timeline-content">
         <p-timeline [value]="timelineItems()" align="{{selectedAlignmentItem()}}">
-          <ng-template let-event>
+          <ng-template #content let-event>
             <div class="prb-tl-marker"
-                 [ngClass]="getEventClass(event)">
+                 [class.prb-tl-initiate]="event.status === 'Initiate Transmission'"
+                 [class.prb-tl-transmitting]="event.status === 'Transmitting Packets'"
+                 [class.prb-tl-checksum]="event.status === 'Verify Checksum'"
+                 [class.prb-tl-complete]="event.status === 'End Transmission'"
+                 [class.prb-tl-warning]="event.status === 'Warning'"
+                 [class.prb-tl-error]="event.status === 'Error'"
+                 [class.prb-tl-unknown]="event.status === 'Unknown'">
               <i class="{{getIcon(event)}}"></i>
             </div>
           </ng-template>
-          <ng-template let-event>
+          <ng-template #opposite let-event>
             {{ event.status }}
           </ng-template>
         </p-timeline>
@@ -43,16 +49,20 @@
       <h2>Show Date/Time</h2>
       <div class="prb-vertical-timeline-content">
         <p-timeline [value]="timelineItems()" align="{{selectedAlignmentItem()}}">
-          <ng-template let-event>
+          <ng-template #content let-event>
             <div class="prb-tl-marker"
-                 [ngClass]="getEventClass(event)">
+                 [class.prb-tl-initiate]="event.status === 'Initiate Transmission'"
+                 [class.prb-tl-transmitting]="event.status === 'Transmitting Packets'"
+                 [class.prb-tl-checksum]="event.status === 'Verify Checksum'"
+                 [class.prb-tl-complete]="event.status === 'End Transmission'"
+                 [class.prb-tl-warning]="event.status === 'Warning'"
+                 [class.prb-tl-error]="event.status === 'Error'"
+                 [class.prb-tl-unknown]="event.status === 'Unknown'">
               <i class="{{getIcon(event)}}"></i>
             </div>
           </ng-template>
-          <ng-template let-event>
+          <ng-template #opposite let-event>
             {{ event.status }}
-          </ng-template>
-          <ng-template let-event>
             <div class="prb-tl-date">
               {{ event.date | date:'longDate' }}
             </div>
@@ -69,31 +79,20 @@
       <h2>Show Card with Description</h2>
       <div class="prb-vertical-timeline-content">
         <p-timeline [value]="timelineItems()" align="{{selectedAlignmentItem()}}">
-          <ng-template let-event>
+          <ng-template #content let-event>
             <div class="prb-tl-marker"
-                 [ngClass]="getEventClass(event)">
+                 [class.prb-tl-initiate]="event.status === 'Initiate Transmission'"
+                 [class.prb-tl-transmitting]="event.status === 'Transmitting Packets'"
+                 [class.prb-tl-checksum]="event.status === 'Verify Checksum'"
+                 [class.prb-tl-complete]="event.status === 'End Transmission'"
+                 [class.prb-tl-warning]="event.status === 'Warning'"
+                 [class.prb-tl-error]="event.status === 'Error'"
+                 [class.prb-tl-unknown]="event.status === 'Unknown'">
               <i class="{{getIcon(event)}}"></i>
             </div>
           </ng-template>
-          <ng-template let-event>
-            <p-card>
-              <ng-template>
-                <div class="prb-card-top" [ngClass]="getEventClass(event)">
-                  {{ event.status }}
-                </div>
-              </ng-template>
-              <div>
-                <p class="tl-description">{{ event.description }}</p>
-              </div>
-            </p-card>
-          </ng-template>
-          <ng-template let-event>
-            <div class="prb-tl-date">
-              {{ event.date | date:'longDate' }}
-            </div>
-            <div class="prb-tl-time">
-              {{ event.date | date:'hh:mm:ss.SSS a' }}
-            </div>
+          <ng-template #opposite let-event>
+            <prb-card [eventItem]="event"/>
           </ng-template>
         </p-timeline>
       </div>

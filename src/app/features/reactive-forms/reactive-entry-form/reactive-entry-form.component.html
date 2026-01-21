@@ -7,7 +7,7 @@
           <input id="firstname" type="text" pInputText class="prb-form-input" [formControlName]="'first'"
                  placeholder="enter first name"/>
           <label for="firstname" class="prb-form-group-label"
-                 [ngClass]="{'required': firstNameControl.hasValidator(Validators.required)}">First Name</label>
+                 [class.required]="firstNameControl.hasValidator(Validators.required)">First Name</label>
           <prb-reactive-error [formControl]="firstNameControl" class="prb-validation-feedback"/>
         </div>
 
@@ -15,7 +15,7 @@
           <input id="lastname" type="text" pInputText class="prb-form-input" [formControlName]="'last'"
                  placeholder="enter last name"/>
           <label for="lastname" class="prb-form-group-label"
-                 [ngClass]="{'required': lastNameControl.hasValidator(Validators.required)}">Last Name</label>
+                 [class.required]="lastNameControl.hasValidator(Validators.required)">Last Name</label>
           <prb-reactive-error [formControl]="lastNameControl" class="prb-validation-feedback"/>
         </div>
       </div>
@@ -25,7 +25,7 @@
           <p-datePicker inputId="dob" type="date" class="prb-form-input" [formControlName]="'birthdate'"
                         placeholder="enter date of birth"/>
           <label for="dob" class="prb-form-group-label"
-                 [ngClass]="{'required': birthdateControl.hasValidator(Validators.required)}">Date of Birth</label>
+                 [class.required]="birthdateControl.hasValidator(Validators.required)">Date of Birth</label>
           <prb-reactive-error [formControl]="birthdateControl" class="prb-validation-feedback"/>
         </div>
       </div>
@@ -35,7 +35,7 @@
           <input id="street" type="text" pInputText class="prb-form-input" [formControlName]="'street'"
                  placeholder="enter street address"/>
           <label for="street" class="prb-form-group-label"
-                 [ngClass]="{'required': streetControl.hasValidator(Validators.required)}">Street</label>
+                 [class.required]="streetControl.hasValidator(Validators.required)">Street</label>
           <prb-reactive-error [formControl]="streetControl" class="prb-validation-feedback"/>
         </div>
 
@@ -43,16 +43,16 @@
           <input id="city" type="text" pInputText class="prb-form-input" [formControlName]="'city'"
                  placeholder="enter city name"/>
           <label for="city" class="prb-form-group-label"
-                 [ngClass]="{'required': cityControl.hasValidator(Validators.required)}">City</label>
+                 [class.required]="cityControl.hasValidator(Validators.required)">City</label>
           <prb-reactive-error [formControl]="cityControl" class="prb-validation-feedback"/>
         </div>
 
         <div class="prb-form-group">
           <input id="state" type="text" pInputText class="prb-form-input"
-                 [ngClass]="{'uppercase': stateControl.value?.length > 0}" [formControlName]="'state'"
+                 [class.uppercase]="stateControl.value?.length > 0" [formControlName]="'state'"
                  placeholder="enter state code"/>
           <label for="state" class="prb-form-group-label"
-                 [ngClass]="{'required': stateControl.hasValidator(Validators.required)}">State Code</label>
+                 [class.required]="stateControl.hasValidator(Validators.required)">State Code</label>
           <prb-reactive-error [formControl]="stateControl" class="prb-validation-feedback"/>
         </div>
 
@@ -60,7 +60,7 @@
           <p-inputmask type="text" class="prb-form-input" [formControlName]="'zip'" autoClear="false"
                        placeholder="enter ZIP code" mask="99999?-9999" inputId="zip_code"></p-inputmask>
           <label for="zip_code" class="prb-form-group-label"
-                 [ngClass]="{'required': zipControl.hasValidator(Validators.required)}">Zip</label>
+                 [class.required]="zipControl.hasValidator(Validators.required)">Zip</label>
           <prb-reactive-error [formControl]="zipControl" class="prb-validation-feedback"/>
         </div>
       </div>
@@ -70,7 +70,7 @@
           <input id="email" type="email" pInputText class="prb-form-input" [formControlName]="'email'"
                  placeholder="some.name@example.com" autocomplete="off"/>
           <label for="email" class="prb-form-group-label"
-                 [ngClass]="{'required': emailControl.hasValidator(Validators.required)}">Email</label>
+                 [class.required]="emailControl.hasValidator(Validators.required)">Email</label>
           <prb-reactive-error [formControl]="emailControl" class="prb-validation-feedback"/>
         </div>
 
@@ -79,7 +79,7 @@
                        autoClear="false" placeholder="(999) 999-9999" mask="(999) 999-9999"
                        inputId="phone_number"></p-inputmask>
           <label for="phone_number" class="prb-form-group-label"
-                 [ngClass]="{'required': phoneControl.hasValidator(Validators.required)}">Phone</label>
+                 [class.required]="phoneControl.hasValidator(Validators.required)">Phone</label>
           <prb-reactive-error [formControl]="phoneControl" class="prb-validation-feedback"/>
         </div>
       </div>

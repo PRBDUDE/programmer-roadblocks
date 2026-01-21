@@ -5,7 +5,6 @@ import {ColorPaletteGeneratorComponent} from "./color-palette-generator/color-pa
 import {InputText} from "primeng/inputtext";
 import {FormsModule} from "@angular/forms";
 import {AccordionModule} from "primeng/accordion";
-import {AccordionOptionsComponent} from "../../accordion/accordion-options/accordion-options.component";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 describe('ColorPaletteComponent', () => {
