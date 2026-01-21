@@ -15,7 +15,4 @@ import {TimelineEventItem} from "../../module/timeline-event-item";
 })
 export class CardComponent {
   eventItem = input<TimelineEventItem>();
-  status = input();
-  description = input();
-  date = input();
 }
