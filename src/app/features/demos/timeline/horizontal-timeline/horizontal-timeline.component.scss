@@ -44,8 +44,15 @@ h2 {
   min-width: 140px;
 }
 
+.prb-tl-card {
+  min-height: 9rem;
+}
+
 .prb-tl-description {
   font-size: 0.8em;
   width: 170px;
-  min-height: 3rem;
+}
+
+.prb-card-contents {
+  padding: var(--p-card-body-padding);
 }

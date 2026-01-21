@@ -9,6 +9,7 @@ import {TimelineCore} from "../timeline-core";
 import {TimelineOptionsComponent} from "../timeline-options/timeline-options.component";
 import {DebugOutputCardComponent} from "@utility/debug-output-card.component";
 import {isPrbMode, prbModes} from "@utility/prb-mode";
+import {CardComponent} from "./card/card.component";
 
 @Component({
   selector: 'prb-horizontal-timeline',
@@ -19,7 +20,8 @@ import {isPrbMode, prbModes} from "@utility/prb-mode";
     Card,
     NgClass,
     TimelineOptionsComponent,
-    DebugOutputCardComponent
+    DebugOutputCardComponent,
+    CardComponent
   ],
   templateUrl: './horizontal-timeline.component.html',
   styleUrl: './horizontal-timeline.component.scss'

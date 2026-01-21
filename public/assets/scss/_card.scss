@@ -9,3 +9,7 @@
     --prb-card-color-border: var(--p-surface-900);
   }
 }
+
+.p-card-body {
+  padding: unset !important;
+}

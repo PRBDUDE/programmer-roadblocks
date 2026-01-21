@@ -74,18 +74,9 @@
             </div>
           </ng-template>
           <ng-template #opposite let-event>
-            <p-card>
-              <ng-template #content>
-                <div class="prb-card-top" [ngClass]="getEventClass(event)">
-                  {{ event.status }}
-                </div>
-              </ng-template>
-              <div>
-                <p class="prb-tl-description">{{ event.description }}</p>
-              </div>
-            </p-card>
+            <prb-card [eventItem]="event"/>
           </ng-template>
-          <ng-template #content let-event>
+          <ng-template let-event>
             <div class="prb-tl-date">
               {{ event.date | date:'longDate' }}
             </div>
