@@ -1,25 +1,16 @@
 <div class="prb-tl-card">
   <p-card>
     <ng-template #content>
-      <div class="prb-card-top"
-           [class.prb-tl-initiate]="eventItem()?.status === 'Initiate Transmission'"
-           [class.prb-tl-transmitting]="eventItem()?.status === 'Transmitting Packets'"
-           [class.prb-tl-checksum]="eventItem()?.status === 'Verify Checksum'"
-           [class.prb-tl-complete]="eventItem()?.status === 'End Transmission'"
-           [class.prb-tl-warning]="eventItem()?.status === 'Warning'"
-           [class.prb-tl-error]="eventItem()?.status === 'Error'"
-           [class.prb-tl-unknown]="eventItem()?.status === 'Unknown'">
-        {{ eventItem()?.status }}
-      </div>
+      <prb-card-header [status]="eventItem().status"/>
       <div class="prb-card-contents">
         <div>
-          <div class="prb-tl-description">{{ eventItem()?.description }}</div>
+          <div class="prb-tl-description">{{ eventItem().description }}</div>
         </div>
         <div class="prb-tl-date">
-          {{ eventItem()?.date | date:'longDate' }}
+          {{ eventItem().date | date:'longDate' }}
         </div>
         <div class="prb-tl-time">
-          {{ eventItem()?.date | date:'hh:mm:ss.SSS a' }}
+          {{ eventItem().date | date:'hh:mm:ss.SSS a' }}
         </div>
       </div>
     </ng-template>
