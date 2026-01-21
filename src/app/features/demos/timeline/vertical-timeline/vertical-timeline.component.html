@@ -26,16 +26,7 @@
       <div class="prb-vertical-timeline-content">
         <p-timeline [value]="timelineItems()" align="{{selectedAlignmentItem()}}">
           <ng-template #content let-event>
-            <div class="prb-tl-marker"
-                 [class.prb-tl-initiate]="event.status === 'Initiate Transmission'"
-                 [class.prb-tl-transmitting]="event.status === 'Transmitting Packets'"
-                 [class.prb-tl-checksum]="event.status === 'Verify Checksum'"
-                 [class.prb-tl-complete]="event.status === 'End Transmission'"
-                 [class.prb-tl-warning]="event.status === 'Warning'"
-                 [class.prb-tl-error]="event.status === 'Error'"
-                 [class.prb-tl-unknown]="event.status === 'Unknown'">
-              <i class="{{getIcon(event)}}"></i>
-            </div>
+            <prb-event-icon [event]="event"/>
           </ng-template>
           <ng-template #opposite let-event>
             {{ event.status }}
@@ -50,16 +41,7 @@
       <div class="prb-vertical-timeline-content">
         <p-timeline [value]="timelineItems()" align="{{selectedAlignmentItem()}}">
           <ng-template #content let-event>
-            <div class="prb-tl-marker"
-                 [class.prb-tl-initiate]="event.status === 'Initiate Transmission'"
-                 [class.prb-tl-transmitting]="event.status === 'Transmitting Packets'"
-                 [class.prb-tl-checksum]="event.status === 'Verify Checksum'"
-                 [class.prb-tl-complete]="event.status === 'End Transmission'"
-                 [class.prb-tl-warning]="event.status === 'Warning'"
-                 [class.prb-tl-error]="event.status === 'Error'"
-                 [class.prb-tl-unknown]="event.status === 'Unknown'">
-              <i class="{{getIcon(event)}}"></i>
-            </div>
+            <prb-event-icon [event]="event"/>
           </ng-template>
           <ng-template #opposite let-event>
             {{ event.status }}
@@ -80,16 +62,7 @@
       <div class="prb-vertical-timeline-content">
         <p-timeline [value]="timelineItems()" align="{{selectedAlignmentItem()}}">
           <ng-template #content let-event>
-            <div class="prb-tl-marker"
-                 [class.prb-tl-initiate]="event.status === 'Initiate Transmission'"
-                 [class.prb-tl-transmitting]="event.status === 'Transmitting Packets'"
-                 [class.prb-tl-checksum]="event.status === 'Verify Checksum'"
-                 [class.prb-tl-complete]="event.status === 'End Transmission'"
-                 [class.prb-tl-warning]="event.status === 'Warning'"
-                 [class.prb-tl-error]="event.status === 'Error'"
-                 [class.prb-tl-unknown]="event.status === 'Unknown'">
-              <i class="{{getIcon(event)}}"></i>
-            </div>
+            <prb-event-icon [event]="event"/>
           </ng-template>
           <ng-template #opposite let-event>
             <prb-card [eventItem]="event"/>
