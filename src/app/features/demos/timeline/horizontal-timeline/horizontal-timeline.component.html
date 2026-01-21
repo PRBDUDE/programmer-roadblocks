@@ -2,8 +2,8 @@
   [alignmentItems]="alignmentItems()"
   [(selectedAlignmentItem)]="selectedAlignmentItem"
   [(showMinimal)]="showMinimal"
-  [(showAddIcon)]="showAddIcon"
-  [(showAddDateTime)]="showAddDateTime"
+  [(showAddIcon)]="showIcon"
+  [(showAddDateTime)]="showDateTime"
   [(showCardWithDetails)]="showCardWithDetails">
 </prb-timeline-options>
 
@@ -20,7 +20,7 @@
       </div>
     </div>
   }
-  @if (showAddIcon()) {
+  @if (showIcon()) {
     <div class="prb-horizontal-timeline-item">
       <h2>Show Icon</h2>
       <div class="prb-horizontal-timeline-content">
@@ -35,7 +35,7 @@
       </div>
     </div>
   }
-  @if (showAddDateTime()) {
+  @if (showDateTime()) {
     <div class="prb-horizontal-timeline-item">
       <h2>Show Date/Time</h2>
       <div class="prb-horizontal-timeline-content">
@@ -87,11 +87,11 @@
       <prb-debug-output-card
         [variableName]="'Show Icon'"
         [flat]="true"
-        [booleanValue]="this.showAddIcon()"/>
+        [booleanValue]="this.showIcon()"/>
       <prb-debug-output-card
         [variableName]="'Show Date/Time'"
         [flat]="true"
-        [booleanValue]="this.showAddDateTime()"/>
+        [booleanValue]="this.showDateTime()"/>
       <prb-debug-output-card
         [variableName]="'Show Card with Details'"
         [flat]="true"

@@ -7,7 +7,7 @@ export class TimelineCore {
   selectedAlignmentItem = signal<string>('');
   alignmentItems = signal<TimelineAlignmentItem[]>([]);
   showMinimal = signal<boolean>(true);
-  showAddIcon = signal<boolean>(true);
-  showAddDateTime = signal<boolean>(true);
+  showIcon = signal<boolean>(true);
+  showDateTime = signal<boolean>(true);
   showCardWithDetails = signal<boolean>(true);
 }
