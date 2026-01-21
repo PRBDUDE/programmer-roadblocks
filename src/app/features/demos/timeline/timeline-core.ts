@@ -11,23 +11,6 @@ export class TimelineCore {
   showAddDateTime = signal<boolean>(true);
   showCardWithDetails = signal<boolean>(true);
 
-  getEventClass(event: TimelineEventItem): string {
-    if (event.status === 'Initiate Transmission') {
-      return 'prb-tl-initiate';
-    } else if (event.status === 'Transmitting Packets') {
-      return 'prb-tl-transmitting';
-    } else if (event.status === 'Verify Checksum') {
-      return 'prb-tl-checksum';
-    } else if (event.status === 'End Transmission') {
-      return 'prb-tl-complete';
-    } else if (event.status === 'Warning') {
-      return 'prb-tl-warning';
-    } else if (event.status === 'Error') {
-      return 'prb-tl-error';
-    }
-    return 'prb-tl-unknown';
-  }
-
   getIcon(event: TimelineEventItem): string {
     if (event.status === 'Initiate Transmission') {
       return 'pi pi-info';
