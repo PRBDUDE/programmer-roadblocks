@@ -9,6 +9,7 @@ import {TimelineOptionsComponent} from "../timeline-options/timeline-options.com
 import {DebugOutputCardComponent} from "@utility/debug-output-card.component";
 import {isPrbMode, prbModes} from "@utility/prb-mode";
 import {CardComponent} from "../card/card.component";
+import {EventIconComponent} from "../event-icon/event-icon.component";
 
 @Component({
   selector: 'prb-horizontal-timeline',
@@ -18,7 +19,8 @@ import {CardComponent} from "../card/card.component";
     FormsModule,
     TimelineOptionsComponent,
     DebugOutputCardComponent,
-    CardComponent
+    CardComponent,
+    EventIconComponent
   ],
   templateUrl: './horizontal-timeline.component.html',
   styleUrl: './horizontal-timeline.component.scss'
