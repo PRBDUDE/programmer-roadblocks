@@ -21,11 +21,11 @@
     "baseUrl": "./",
     "paths": {
       "@utility/*": [
-        "./src/app/core/utility/css-property/*",
-        "./src/app/core/utility/css-property/css-property-name/*",
-        "./src/app/core/utility/css-property/css-property-value/*",
-        "./src/app/core/utility/css-property/css-property-value-array/*",
-        "./src/app/core/utility/css-property/css-selector/*",
+        "./src/app/core/utility/css-rule/*",
+        "./src/app/core/utility/css-rule/css-property-name/*",
+        "./src/app/core/utility/css-rule/css-property-value/*",
+        "./src/app/core/utility/css-rule/css-property-value-array/*",
+        "./src/app/core/utility/css-rule/css-selector/*",
         "./src/app/core/utility/debug-output-card/*",
         "./src/app/core/utility/functions/*",
         "./src/app/core/utility/primeng-config/*",
