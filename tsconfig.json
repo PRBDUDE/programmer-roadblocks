@@ -51,6 +51,9 @@
       ],
       "@services/*": [
         "./src/app/core/services/*"
+      ],
+      "@reactive-forms/*": [
+        "./src/app/core/reactive-forms/*"
       ]
     }
   },

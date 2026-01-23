@@ -6,8 +6,8 @@ import {Button} from "primeng/button";
 import {InputMask} from "primeng/inputmask";
 import {InputText} from "primeng/inputtext";
 import {DatePicker} from "primeng/datepicker";
-import {ReactiveErrorComponent} from "../../../core/reactive-forms/reactive-error/reactive-error.component";
-import {ReactivePatterns} from "../../../core/reactive-forms/reactive-patterns";
+import {ReactiveErrorComponent} from "@reactive-forms/reactive-error/reactive-error.component";
+import {ReactivePatterns} from "@reactive-forms/reactive-patterns";
 import {isPrbMode, prbModes} from "@utility/prb-mode";
 
 @Component({
@@ -21,7 +21,7 @@ import {isPrbMode, prbModes} from "@utility/prb-mode";
     InputText,
     DatePicker,
     ReactiveErrorComponent
-],
+  ],
   templateUrl: './reactive-entry-form.component.html',
   styleUrl: './reactive-entry-form.component.scss'
 })
