@@ -19,7 +19,8 @@ let uniqueId = 0;
     {provide: NG_VALUE_ACCESSOR,
       multi: true,
       useExisting: forwardRef(() => ColorPaletteGeneratorComponent)}
-  ],  templateUrl: './color-palette-generator.component.html',
+  ],
+  templateUrl: './color-palette-generator.component.html',
   styleUrl: './color-palette-generator.component.scss'
 })
 export class ColorPaletteGeneratorComponent {
