@@ -57,7 +57,7 @@ Remove Karma and Jasmine from package.json
 ### Step 2
 
 Add VITEST and JSDOM to package.json
-> npm install vite@4.0.18 jsdom@27.1.0 --save-dev
+> npm install vitest@4.0.18 jsdom@27.1.0 --save-dev
 
 ### Step 3
 
