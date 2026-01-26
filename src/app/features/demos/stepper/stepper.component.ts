@@ -41,6 +41,7 @@ import {isPrbMode, prbModes} from "@utility/prb-mode";
 })
 export class StepperComponent {
   inline = signal<boolean>(false);
+  step = signal<number>(1);
   protected readonly isMode = isPrbMode;
   protected readonly prbModes = prbModes;
 }
