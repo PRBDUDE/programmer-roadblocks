@@ -9,7 +9,7 @@ describe('RoadblockFooterComponent', () => {
   let fixture: ComponentFixture<RoadblockFooterComponent>;
 
   beforeEach(async () => {
-    TestBed.configureTestingModule({
+    await TestBed.configureTestingModule({
       imports: [
         RoadblockFooterComponent
       ],

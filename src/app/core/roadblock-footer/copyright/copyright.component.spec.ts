@@ -9,7 +9,7 @@ describe('CopyrightComponent', () => {
   let fixture: ComponentFixture<CopyrightComponent>;
 
   beforeEach(async () => {
-    TestBed.configureTestingModule({
+    await TestBed.configureTestingModule({
       imports: [
         CopyrightComponent
       ],

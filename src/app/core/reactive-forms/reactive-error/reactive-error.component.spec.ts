@@ -12,7 +12,7 @@ describe('ReactiveErrorComponent', () => {
   beforeEach(async () => {
     formControl = new FormControl('');
 
-    TestBed.configureTestingModule({
+    await TestBed.configureTestingModule({
       imports: [
         ReactiveErrorComponent,
         ReactiveFormsModule

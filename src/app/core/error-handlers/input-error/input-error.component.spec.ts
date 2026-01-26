@@ -9,7 +9,7 @@ describe('InputErrorComponent', () => {
   let fixture: ComponentFixture<InputErrorComponent>;
 
   beforeEach(async () => {
-    TestBed.configureTestingModule({
+    await TestBed.configureTestingModule({
       imports: [
         InputErrorComponent
       ],

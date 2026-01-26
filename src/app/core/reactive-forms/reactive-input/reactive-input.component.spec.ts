@@ -9,7 +9,7 @@ describe('ReactiveInputComponent', () => {
   let fixture: ComponentFixture<ReactiveInputComponent>;
 
   beforeEach(async () => {
-    TestBed.configureTestingModule({
+    await TestBed.configureTestingModule({
       imports: [
         ReactiveInputComponent
       ],
