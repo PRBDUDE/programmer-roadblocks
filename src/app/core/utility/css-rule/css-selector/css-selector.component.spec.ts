@@ -1,6 +1,8 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { CssSelectorComponent } from './css-selector.component';
+import {CssSelectorComponent} from './css-selector.component';
+import {provideHttpClient} from "@angular/common/http";
+import {provideHttpClientTesting} from "@angular/common/http/testing";
 
 describe('CssSelectorComponent', () => {
   let component: CssSelectorComponent;
@@ -8,13 +10,18 @@ describe('CssSelectorComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CssSelectorComponent]
-    })
-    .compileComponents();
+      imports: [
+        CssSelectorComponent
+      ],
+      providers: [
+        provideHttpClient(),
+        provideHttpClientTesting()
+      ]
+    }).compileComponents();
 
     fixture = TestBed.createComponent(CssSelectorComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
+    await fixture.whenStable();
   });
 
   it('should create', () => {

@@ -1,23 +1,27 @@
-import {ComponentFixture, TestBed, waitForAsync} from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {ColorPaletteGeneratorComponent} from './color-palette-generator.component';
+import {provideHttpClient} from "@angular/common/http";
+import {provideHttpClientTesting} from "@angular/common/http/testing";
 
 describe('PalateGeneratorComponent', () => {
   let component: ColorPaletteGeneratorComponent;
   let fixture: ComponentFixture<ColorPaletteGeneratorComponent>;
 
-  beforeEach(waitForAsync(() => {
-    TestBed.configureTestingModule({
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
       imports: [
         ColorPaletteGeneratorComponent
+      ],
+      providers: [
+        provideHttpClient(),
+        provideHttpClientTesting()
       ]
     }).compileComponents();
-  }));
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(ColorPaletteGeneratorComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
+    await fixture.whenStable();
   });
 
   it('should create', () => {

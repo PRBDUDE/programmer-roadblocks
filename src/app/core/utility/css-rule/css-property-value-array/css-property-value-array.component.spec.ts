@@ -1,6 +1,8 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { CssPropertyValueArrayComponent } from './css-property-value-array.component';
+import {CssPropertyValueArrayComponent} from './css-property-value-array.component';
+import {provideHttpClient} from "@angular/common/http";
+import {provideHttpClientTesting} from "@angular/common/http/testing";
 
 describe('CssPropertyValueArrayComponent', () => {
   let component: CssPropertyValueArrayComponent;
@@ -8,13 +10,18 @@ describe('CssPropertyValueArrayComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CssPropertyValueArrayComponent]
-    })
-    .compileComponents();
+      imports: [
+        CssPropertyValueArrayComponent
+      ],
+      providers: [
+        provideHttpClient(),
+        provideHttpClientTesting()
+      ]
+    }).compileComponents();
 
     fixture = TestBed.createComponent(CssPropertyValueArrayComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
+    await fixture.whenStable();
   });
 
   it('should create', () => {

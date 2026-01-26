@@ -1,23 +1,27 @@
-import {ComponentFixture, TestBed, waitForAsync} from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {StepsOneComponent} from './steps-one.component';
+import {provideHttpClient} from "@angular/common/http";
+import {provideHttpClientTesting} from "@angular/common/http/testing";
 
 describe('StepOneComponent', () => {
   let component: StepsOneComponent;
   let fixture: ComponentFixture<StepsOneComponent>;
 
-  beforeEach(waitForAsync(() => {
-    TestBed.configureTestingModule({
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
       imports: [
         StepsOneComponent
+      ],
+      providers: [
+        provideHttpClient(),
+        provideHttpClientTesting()
       ]
     }).compileComponents();
-  }));
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(StepsOneComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
+    await fixture.whenStable()
   });
 
   it('should create', () => {

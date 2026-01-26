@@ -1,4 +1,4 @@
-import {ComponentFixture, TestBed, waitForAsync} from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {InputFilterComponent} from './input-filter.component';
 
@@ -6,18 +6,16 @@ describe('InputFilterComponent', () => {
   let component: InputFilterComponent;
   let fixture: ComponentFixture<InputFilterComponent>;
 
-  beforeEach(waitForAsync(() => {
-    TestBed.configureTestingModule({
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
       imports: [
         InputFilterComponent
       ]
     }).compileComponents();
-  }));
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(InputFilterComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
+    await fixture.whenStable();
   });
 
   it('should create', () => {
@@ -35,7 +33,7 @@ describe('InputFilterComponent', () => {
       });
 
       it('should return false', () => {
-        expect(component.vin.isInvalid()).toBeFalse();
+        expect(component.vin.isInvalid()).toEqual(false);
       });
 
       it('should return no error messages', () => {
@@ -48,7 +46,7 @@ describe('InputFilterComponent', () => {
       });
 
       it('should return false when VIN is valid', () => {
-        expect(component.vin.isInvalid()).toBeFalse();
+        expect(component.vin.isInvalid()).toEqual(false);
       });
 
       it('should return empty error array', () => {
@@ -62,7 +60,7 @@ describe('InputFilterComponent', () => {
       });
 
       it('should return true when VIN is invalid', () => {
-        expect(component.vin.isInvalid()).toBeTrue();
+        expect(component.vin.isInvalid()).toEqual(true);
       });
 
       it('should return 3 error messages', () => {
@@ -80,7 +78,7 @@ describe('InputFilterComponent', () => {
       });
 
       it('should return true when VIN is invalid', () => {
-        expect(component.vin.isInvalid()).toBeTrue();
+        expect(component.vin.isInvalid()).toEqual(true);
       });
 
       it('should return 6 error messages', () => {
@@ -107,7 +105,7 @@ describe('InputFilterComponent', () => {
       });
 
       it('should return false when Email is empty', () => {
-        expect(component.email.isInvalid()).toBeFalse();
+        expect(component.email.isInvalid()).toEqual(false);
       });
 
       it('should return empty error message array', () => {
@@ -121,7 +119,7 @@ describe('InputFilterComponent', () => {
       });
 
       it('should return false when Email is valid', () => {
-        expect(component.email.isInvalid()).toBeFalse();
+        expect(component.email.isInvalid()).toEqual(false);
       });
 
       it('should return empty error message array', () => {
@@ -135,7 +133,7 @@ describe('InputFilterComponent', () => {
       });
 
       it('should return true for invalid email', () => {
-        expect(component.email.isInvalid()).toBeTrue();
+        expect(component.email.isInvalid()).toEqual(true);
       });
 
       it('should return error messages', () => {
@@ -152,7 +150,7 @@ describe('InputFilterComponent', () => {
       });
 
       it('should return true for invalid email', () => {
-        expect(component.email.isInvalid()).toBeTrue();
+        expect(component.email.isInvalid()).toEqual(true);
       });
 
       it('should return error message', () => {
@@ -168,7 +166,7 @@ describe('InputFilterComponent', () => {
       });
 
       it('should return true for invalid email', () => {
-        expect(component.email.isInvalid()).toBeTrue();
+        expect(component.email.isInvalid()).toEqual(true);
       });
 
       it('should return error messages', () => {

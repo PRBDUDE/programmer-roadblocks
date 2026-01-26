@@ -1,6 +1,6 @@
 import {TestBed} from '@angular/core/testing';
 import {Preset, PrimengConfigService} from './primeng-config.service';
-import {PRIME_NG_CONFIG} from "primeng/config";
+import {PRIME_NG_CONFIG} from 'primeng/config';
 
 describe('PrimengConfigService', () => {
   let service: PrimengConfigService;

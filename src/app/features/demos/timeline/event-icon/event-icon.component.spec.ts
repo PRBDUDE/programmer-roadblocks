@@ -1,6 +1,8 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { EventIconComponent } from './event-icon.component';
+import {EventIconComponent} from './event-icon.component';
+import {provideHttpClient} from "@angular/common/http";
+import {provideHttpClientTesting} from "@angular/common/http/testing";
 
 describe('EventIconComponent', () => {
   let component: EventIconComponent;
@@ -8,13 +10,24 @@ describe('EventIconComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [EventIconComponent]
-    })
-    .compileComponents();
+      imports: [
+        EventIconComponent
+      ],
+      providers: [
+        provideHttpClient(),
+        provideHttpClientTesting()
+      ]
+    }).compileComponents();
 
     fixture = TestBed.createComponent(EventIconComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
+    const eventData = {
+      "status": "OK",
+      "date":  new Date(),
+      "description": "Completed"
+    }
+    fixture.componentRef.setInput('event', eventData);
+    await fixture.whenStable();
   });
 
   it('should create', () => {

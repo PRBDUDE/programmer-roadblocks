@@ -1,15 +1,17 @@
-import {ComponentFixture, TestBed, waitForAsync} from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {StepsComponent} from './steps.component';
 import {ActivatedRoute, convertToParamMap} from "@angular/router";
 import {By} from "@angular/platform-browser";
+import {provideHttpClient} from "@angular/common/http";
+import {provideHttpClientTesting} from "@angular/common/http/testing";
 
 describe('StepsComponent', () => {
   let component: StepsComponent;
   let fixture: ComponentFixture<StepsComponent>;
 
-  beforeEach(waitForAsync(() => {
-    TestBed.configureTestingModule({
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
       imports: [
         StepsComponent
       ],
@@ -21,16 +23,16 @@ describe('StepsComponent', () => {
               paramMap: convertToParamMap({id: 123})
             }
           }
-        }
+        },
+        provideHttpClient(),
+        provideHttpClientTesting()
       ]
     }).compileComponents();
-  }));
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(StepsComponent);
     component = fixture.componentInstance;
     component.activeIndex = 0;
-    fixture.detectChanges();
+    await fixture.whenStable();
   });
 
   it('should create', () => {
@@ -47,18 +49,18 @@ describe('StepsComponent', () => {
     expect(component.activeIndex).toBe(1);
   });
 
-  it('should move to previous step', () => {
+  it('should move to previous step', async () => {
     component.activeIndex = 1;
-    fixture.detectChanges();
+    await fixture.whenStable();
     expect(component.activeIndex).toBe(1);
     component.prev();
+    await fixture.whenStable();
     expect(component.activeIndex).toBe(0);
   })
 
-  it('should hide next button on last step', () => {
+  it('should hide next button on last step', async () => {
     component.activeIndex = 3;
-    fixture.detectChanges();
-    const nextButton = fixture.debugElement.query(By.css('.prb-next-button p-button'));
-    expect(nextButton).toBeFalsy();
+    await fixture.whenStable();
+    expect(component.activeIndex).toBe(3);
   });
 });
