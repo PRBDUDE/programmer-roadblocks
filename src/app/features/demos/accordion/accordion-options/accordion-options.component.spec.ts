@@ -1,6 +1,8 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { AccordionOptionsComponent } from './accordion-options.component';
+import {AccordionOptionsComponent} from './accordion-options.component';
+import {provideHttpClient} from "@angular/common/http";
+import {provideHttpClientTesting} from "@angular/common/http/testing";
 
 describe('AccordionOptionsComponent', () => {
   let component: AccordionOptionsComponent;
@@ -8,13 +10,18 @@ describe('AccordionOptionsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AccordionOptionsComponent]
-    })
-    .compileComponents();
+      imports: [
+        AccordionOptionsComponent
+      ],
+      providers: [
+        provideHttpClient(),
+        provideHttpClientTesting()
+      ]
+    }).compileComponents();
 
     fixture = TestBed.createComponent(AccordionOptionsComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
+    await fixture.whenStable()
   });
 
   it('should create', () => {

@@ -1,6 +1,8 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { CardComponent } from './card.component';
+import {CardComponent} from './card.component';
+import {provideHttpClient} from "@angular/common/http";
+import {provideHttpClientTesting} from "@angular/common/http/testing";
 
 describe('CardComponent', () => {
   let component: CardComponent;
@@ -8,13 +10,24 @@ describe('CardComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CardComponent]
-    })
-    .compileComponents();
+      imports: [
+        CardComponent
+      ],
+      providers: [
+        provideHttpClient(),
+        provideHttpClientTesting()
+      ]
+    }).compileComponents();
 
     fixture = TestBed.createComponent(CardComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
+    const eventData = {
+      "status": "OK",
+      "date": new Date(),
+      "description": "Completed"
+    }
+    fixture.componentRef.setInput('eventItem', eventData);
+    await fixture.whenStable()
   });
 
   it('should create', () => {

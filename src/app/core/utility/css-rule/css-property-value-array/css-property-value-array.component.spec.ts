@@ -1,17 +1,17 @@
 import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import {ButtonDemoComponent} from './button-demo.component';
+import {CssPropertyValueArrayComponent} from './css-property-value-array.component';
 import {provideHttpClient} from "@angular/common/http";
 import {provideHttpClientTesting} from "@angular/common/http/testing";
 
-describe('ButtonDemoComponent', () => {
-  let component: ButtonDemoComponent;
-  let fixture: ComponentFixture<ButtonDemoComponent>;
+describe('CssPropertyValueArrayComponent', () => {
+  let component: CssPropertyValueArrayComponent;
+  let fixture: ComponentFixture<CssPropertyValueArrayComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
-        ButtonDemoComponent
+        CssPropertyValueArrayComponent
       ],
       providers: [
         provideHttpClient(),
@@ -19,7 +19,7 @@ describe('ButtonDemoComponent', () => {
       ]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(ButtonDemoComponent);
+    fixture = TestBed.createComponent(CssPropertyValueArrayComponent);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

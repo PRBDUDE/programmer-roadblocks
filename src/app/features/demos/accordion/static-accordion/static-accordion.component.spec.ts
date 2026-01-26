@@ -1,27 +1,29 @@
-import {ComponentFixture, TestBed, waitForAsync} from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 import {provideNoopAnimations} from '@angular/platform-browser/animations';
 
 import {StaticAccordionComponent} from './static-accordion.component';
+import {provideHttpClient} from "@angular/common/http";
+import {provideHttpClientTesting} from "@angular/common/http/testing";
 
 describe('StaticAccordionComponent', () => {
   let component: StaticAccordionComponent;
   let fixture: ComponentFixture<StaticAccordionComponent>;
 
-  beforeEach(waitForAsync(() => {
-    TestBed.configureTestingModule({
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
       imports: [
         StaticAccordionComponent
       ],
       providers: [
-        provideNoopAnimations()
+        provideNoopAnimations(),
+        provideHttpClient(),
+        provideHttpClientTesting()
       ]
     }).compileComponents();
-  }));
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(StaticAccordionComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
+    await fixture.whenStable()
   });
 
   it('should create', () => {

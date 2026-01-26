@@ -1,23 +1,27 @@
-import {ComponentFixture, TestBed, waitForAsync} from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {DebugOutputCardComponent} from './debug-output-card.component';
+import {provideHttpClient} from "@angular/common/http";
+import {provideHttpClientTesting} from "@angular/common/http/testing";
 
 describe('DebugOutputCardComponent', () => {
   let component: DebugOutputCardComponent;
   let fixture: ComponentFixture<DebugOutputCardComponent>;
 
-  beforeEach(waitForAsync(() => {
-    TestBed.configureTestingModule({
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
       imports: [
         DebugOutputCardComponent
+      ],
+      providers: [
+        provideHttpClient(),
+        provideHttpClientTesting()
       ]
     }).compileComponents();
-  }));
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(DebugOutputCardComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
+    await fixture.whenStable();
   });
 
   it('should create', () => {

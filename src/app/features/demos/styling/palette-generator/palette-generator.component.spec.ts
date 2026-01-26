@@ -1,4 +1,4 @@
-import {ComponentFixture, TestBed, waitForAsync} from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {PaletteGeneratorComponent} from './palette-generator.component';
 import {CommonModule} from "@angular/common";
@@ -8,13 +8,15 @@ import {ButtonModule} from "primeng/button";
 import {TableModule} from "primeng/table";
 import {CardModule} from "primeng/card";
 import {InputNumberModule} from "primeng/inputnumber";
+import {provideHttpClient} from "@angular/common/http";
+import {provideHttpClientTesting} from "@angular/common/http/testing";
 
 describe('PaletteGeneratorComponent', () => {
   let component: PaletteGeneratorComponent;
   let fixture: ComponentFixture<PaletteGeneratorComponent>;
 
-  beforeEach(waitForAsync(() => {
-    TestBed.configureTestingModule({
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
       imports: [
         PaletteGeneratorComponent,
         CommonModule,
@@ -25,14 +27,16 @@ describe('PaletteGeneratorComponent', () => {
         TableModule,
         CardModule,
         InputNumberModule
+      ],
+      providers: [
+        provideHttpClient(),
+        provideHttpClientTesting()
       ]
     }).compileComponents();
-  }));
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(PaletteGeneratorComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
+    await fixture.whenStable();
   });
 
   it('should create', () => {

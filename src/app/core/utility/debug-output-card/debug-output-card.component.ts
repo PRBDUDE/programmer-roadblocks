@@ -8,7 +8,7 @@ let uniqueId = 0;
   selector: 'prb-debug-output-card',
   imports: [
     JsonPipe
-],
+  ],
   templateUrl: './debug-output-card.component.html',
   styleUrl: './debug-output-card.component.scss'
 })

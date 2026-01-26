@@ -1,4 +1,4 @@
-import {TestBed, waitForAsync} from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
 
 import {ProfileService} from './profile.service';
 import {provideHttpClient} from "@angular/common/http";
@@ -9,16 +9,14 @@ describe('ProfileService', () => {
   let service: ProfileService;
   let httpMock: HttpTestingController;
 
-  beforeEach(waitForAsync(() => {
-    TestBed.configureTestingModule({
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
       providers: [
         provideHttpClient(),
         provideHttpClientTesting()
       ]
     }).compileComponents();
-  }));
 
-  beforeEach(() => {
     service = TestBed.inject(ProfileService);
     httpMock = TestBed.inject(HttpTestingController);
   });
@@ -85,7 +83,7 @@ describe('ProfileService', () => {
       expect(sentBody.primary).toBe('teal');
       expect(sentBody.surface).toBe('neutral');
       // Service converts boolean to string
-      expect(sentBody.ripple).toBeTrue();
+      expect(sentBody.ripple).toEqual(true);
 
       // Complete the request by echoing back what server would return
       putReq.flush(sentBody);
@@ -123,7 +121,7 @@ describe('ProfileService', () => {
       expect(sentBody.primary).toBe('sky');
       expect(sentBody.surface).toBe('ocean');
       // Service converts boolean to string
-      expect(sentBody.ripple).toBeTrue();
+      expect(sentBody.ripple).toEqual(true);
 
       // Complete the request by echoing back what server would return
       putReq.flush(sentBody);
@@ -161,14 +159,14 @@ describe('ProfileService', () => {
       expect(sentBody.primary).toBe('sky');
       expect(sentBody.surface).toBe('neutral');
       // Service converts boolean to string
-      expect(sentBody.ripple).toBeFalse();
+      expect(sentBody.ripple).toEqual(false);
 
       // Complete the request by echoing back what server would return
       putReq.flush(sentBody);
 
       // Assert the observable emits the updated profile
       expect(response).toBeTruthy();
-      expect(response?.ripple).toBeFalse();
+      expect(response?.ripple).toEqual(false);
     });
   });
 
@@ -196,14 +194,14 @@ describe('ProfileService', () => {
       expect(putReq.request.method).toBe('PUT');
 
       const sentBody = putReq.request.body as UserProfile;
-      expect(sentBody.fixedFooter).toBeFalse();
+      expect(sentBody.fixedFooter).toEqual(false);
 
       // Echo back the updated body as server response
       putReq.flush(sentBody);
 
       // Ensure observable emitted the updated profile
       expect(response).toBeTruthy();
-      expect(response?.fixedFooter).toBeFalse();
+      expect(response?.fixedFooter).toEqual(false);
     });
   });
 
@@ -231,14 +229,14 @@ describe('ProfileService', () => {
       expect(putReq.request.method).toBe('PUT');
 
       const sentBody = putReq.request.body as UserProfile;
-      expect(sentBody.debug).toBeTrue();
+      expect(sentBody.debug).toEqual(true);
 
       // Echo back the updated body as the server response
       putReq.flush(sentBody);
 
       // Ensure observable emitted the updated profile
       expect(response).toBeTruthy();
-      expect(response?.debug).toBeTrue();
+      expect(response?.debug).toEqual(true);
     });
   });
 
@@ -266,14 +264,14 @@ describe('ProfileService', () => {
       expect(putReq.request.method).toBe('PUT');
 
       const sentBody = putReq.request.body as UserProfile;
-      expect(sentBody.darkTheme).toBeFalse();
+      expect(sentBody.darkTheme).toEqual(false);
 
       // Echo back the updated body as server response
       putReq.flush(sentBody);
 
       // Ensure observable emitted the updated profile
       expect(response).toBeTruthy();
-      expect(response?.darkTheme).toBeFalse();
+      expect(response?.darkTheme).toEqual(false);
     });
   });
 });
