@@ -3,6 +3,7 @@ import {ComponentFixture, TestBed} from '@angular/core/testing';
 import {ColorPalettePickerComponent} from './color-palette-picker.component';
 import {provideHttpClientTesting} from "@angular/common/http/testing";
 import {provideHttpClient} from "@angular/common/http";
+import {provideZonelessChangeDetection} from "@angular/core";
 
 describe('ColorPalettePickerComponent', () => {
   let component: ColorPalettePickerComponent;
@@ -15,7 +16,8 @@ describe('ColorPalettePickerComponent', () => {
       ],
       providers: [
         provideHttpClient(),
-        provideHttpClientTesting()
+        provideHttpClientTesting(),
+        provideZonelessChangeDetection()
       ]
     }).compileComponents();
 

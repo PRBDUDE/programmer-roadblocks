@@ -4,6 +4,7 @@ import {RoadblockHeaderComponent} from './roadblock-header.component';
 import {provideRouter} from "@angular/router";
 import {provideHttpClient} from "@angular/common/http";
 import {provideHttpClientTesting} from "@angular/common/http/testing";
+import {provideZonelessChangeDetection} from "@angular/core";
 
 describe('RoadblockHeaderComponent', () => {
   let component: RoadblockHeaderComponent;
@@ -17,7 +18,8 @@ describe('RoadblockHeaderComponent', () => {
       providers: [
         provideRouter([]),
         provideHttpClient(),
-        provideHttpClientTesting()
+        provideHttpClientTesting(),
+        provideZonelessChangeDetection()
       ]
     }).compileComponents();
 

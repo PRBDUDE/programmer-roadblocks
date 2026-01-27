@@ -8,6 +8,7 @@ import {AccordionModule} from "primeng/accordion";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {provideHttpClient} from "@angular/common/http";
 import {provideHttpClientTesting} from "@angular/common/http/testing";
+import {provideZonelessChangeDetection} from "@angular/core";
 
 describe('ColorPaletteComponent', () => {
   let component: ColorPaletteComponent;
@@ -25,7 +26,8 @@ describe('ColorPaletteComponent', () => {
       ],
       providers: [
         provideHttpClient(),
-        provideHttpClientTesting()
+        provideHttpClientTesting(),
+        provideZonelessChangeDetection()
       ]
     }).compileComponents();
 

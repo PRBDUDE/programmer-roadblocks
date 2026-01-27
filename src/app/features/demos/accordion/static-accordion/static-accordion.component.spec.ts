@@ -4,6 +4,7 @@ import {provideNoopAnimations} from '@angular/platform-browser/animations';
 import {StaticAccordionComponent} from './static-accordion.component';
 import {provideHttpClient} from "@angular/common/http";
 import {provideHttpClientTesting} from "@angular/common/http/testing";
+import {provideZonelessChangeDetection} from "@angular/core";
 
 describe('StaticAccordionComponent', () => {
   let component: StaticAccordionComponent;
@@ -17,7 +18,8 @@ describe('StaticAccordionComponent', () => {
       providers: [
         provideNoopAnimations(),
         provideHttpClient(),
-        provideHttpClientTesting()
+        provideHttpClientTesting(),
+        provideZonelessChangeDetection()
       ]
     }).compileComponents();
 

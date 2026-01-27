@@ -1,6 +1,9 @@
 import {ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {InputFilterComponent} from './input-filter.component';
+import {provideHttpClient} from "@angular/common/http";
+import {provideHttpClientTesting} from "@angular/common/http/testing";
+import {provideZonelessChangeDetection} from "@angular/core";
 
 describe('InputFilterComponent', () => {
   let component: InputFilterComponent;
@@ -10,6 +13,11 @@ describe('InputFilterComponent', () => {
     await TestBed.configureTestingModule({
       imports: [
         InputFilterComponent
+      ],
+      providers: [
+        provideHttpClient(),
+        provideHttpClientTesting(),
+        provideZonelessChangeDetection()
       ]
     }).compileComponents();
 

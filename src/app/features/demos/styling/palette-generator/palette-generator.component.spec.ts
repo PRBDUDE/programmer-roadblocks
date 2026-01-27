@@ -10,6 +10,7 @@ import {CardModule} from "primeng/card";
 import {InputNumberModule} from "primeng/inputnumber";
 import {provideHttpClient} from "@angular/common/http";
 import {provideHttpClientTesting} from "@angular/common/http/testing";
+import {provideZonelessChangeDetection} from "@angular/core";
 
 describe('PaletteGeneratorComponent', () => {
   let component: PaletteGeneratorComponent;
@@ -30,7 +31,8 @@ describe('PaletteGeneratorComponent', () => {
       ],
       providers: [
         provideHttpClient(),
-        provideHttpClientTesting()
+        provideHttpClientTesting(),
+        provideZonelessChangeDetection()
       ]
     }).compileComponents();
 

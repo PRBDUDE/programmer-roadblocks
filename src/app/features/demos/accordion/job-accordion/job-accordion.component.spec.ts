@@ -3,6 +3,7 @@ import {ComponentFixture, TestBed} from '@angular/core/testing';
 import {JobAccordionComponent} from './job-accordion.component';
 import {provideHttpClientTesting} from "@angular/common/http/testing";
 import {provideHttpClient} from "@angular/common/http";
+import {provideZonelessChangeDetection} from "@angular/core";
 
 describe('JobAccordionComponent', () => {
   let component: JobAccordionComponent;
@@ -15,7 +16,8 @@ describe('JobAccordionComponent', () => {
       ],
       providers: [
         provideHttpClientTesting(),
-        provideHttpClient()
+        provideHttpClient(),
+        provideZonelessChangeDetection()
       ]
     }).compileComponents();
 

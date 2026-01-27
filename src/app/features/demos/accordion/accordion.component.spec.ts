@@ -9,6 +9,7 @@ import {JobHeaderComponent} from "./job-accordion/job-header/job-header.componen
 import {JobStatusComponent} from "./job-accordion/job-status/job-status.component";
 import {JobDateComponent} from "./job-accordion/job-date/job-date.component";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {provideZonelessChangeDetection} from "@angular/core";
 
 describe('AccordionComponent', () => {
   let component: AccordionComponent;
@@ -26,7 +27,8 @@ describe('AccordionComponent', () => {
       ],
       providers: [
         provideHttpClient(),
-        provideHttpClientTesting()
+        provideHttpClientTesting(),
+        provideZonelessChangeDetection()
       ],
     }).compileComponents();
 
