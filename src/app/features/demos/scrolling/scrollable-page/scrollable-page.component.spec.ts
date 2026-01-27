@@ -3,6 +3,7 @@ import {ComponentFixture, TestBed} from '@angular/core/testing';
 import {ScrollablePageComponent} from './scrollable-page.component';
 import {provideHttpClient} from "@angular/common/http";
 import {provideHttpClientTesting} from "@angular/common/http/testing";
+import {provideZonelessChangeDetection} from "@angular/core";
 
 describe('ScrollablePageComponent', () => {
   let component: ScrollablePageComponent;
@@ -15,13 +16,14 @@ describe('ScrollablePageComponent', () => {
       ],
       providers: [
         provideHttpClient(),
-        provideHttpClientTesting()
+        provideHttpClientTesting(),
+        provideZonelessChangeDetection()
       ]
     }).compileComponents();
 
     fixture = TestBed.createComponent(ScrollablePageComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
+    await fixture.whenStable();
   });
 
   it('should create', () => {

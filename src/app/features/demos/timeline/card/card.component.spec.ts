@@ -3,6 +3,7 @@ import {ComponentFixture, TestBed} from '@angular/core/testing';
 import {CardComponent} from './card.component';
 import {provideHttpClient} from "@angular/common/http";
 import {provideHttpClientTesting} from "@angular/common/http/testing";
+import {provideZonelessChangeDetection} from "@angular/core";
 
 describe('CardComponent', () => {
   let component: CardComponent;
@@ -15,7 +16,8 @@ describe('CardComponent', () => {
       ],
       providers: [
         provideHttpClient(),
-        provideHttpClientTesting()
+        provideHttpClientTesting(),
+        provideZonelessChangeDetection()
       ]
     }).compileComponents();
 

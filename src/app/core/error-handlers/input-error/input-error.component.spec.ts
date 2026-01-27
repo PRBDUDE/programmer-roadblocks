@@ -3,6 +3,7 @@ import {ComponentFixture, TestBed} from '@angular/core/testing';
 import {InputErrorComponent} from './input-error.component';
 import {provideHttpClient} from "@angular/common/http";
 import {provideHttpClientTesting} from "@angular/common/http/testing";
+import {provideZonelessChangeDetection} from "@angular/core";
 
 describe('InputErrorComponent', () => {
   let component: InputErrorComponent;
@@ -15,7 +16,8 @@ describe('InputErrorComponent', () => {
       ],
       providers: [
         provideHttpClient(),
-        provideHttpClientTesting()
+        provideHttpClientTesting(),
+        provideZonelessChangeDetection()
       ]
     }).compileComponents();
 

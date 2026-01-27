@@ -3,6 +3,7 @@ import {ComponentFixture, TestBed} from '@angular/core/testing';
 import {VerticalTimelineComponent} from './vertical-timeline.component';
 import {provideHttpClient} from "@angular/common/http";
 import {provideHttpClientTesting} from "@angular/common/http/testing";
+import {provideZonelessChangeDetection} from "@angular/core";
 
 describe('VerticalTimelineComponent', () => {
   let component: VerticalTimelineComponent;
@@ -15,7 +16,8 @@ describe('VerticalTimelineComponent', () => {
       ],
       providers: [
         provideHttpClient(),
-        provideHttpClientTesting()
+        provideHttpClientTesting(),
+        provideZonelessChangeDetection()
       ]
     }).compileComponents();
 

@@ -5,6 +5,7 @@ import {ActivatedRoute, convertToParamMap} from "@angular/router";
 import {By} from "@angular/platform-browser";
 import {provideHttpClient} from "@angular/common/http";
 import {provideHttpClientTesting} from "@angular/common/http/testing";
+import {provideZonelessChangeDetection} from "@angular/core";
 
 describe('StepsComponent', () => {
   let component: StepsComponent;
@@ -25,7 +26,8 @@ describe('StepsComponent', () => {
           }
         },
         provideHttpClient(),
-        provideHttpClientTesting()
+        provideHttpClientTesting(),
+        provideZonelessChangeDetection()
       ]
     }).compileComponents();
 

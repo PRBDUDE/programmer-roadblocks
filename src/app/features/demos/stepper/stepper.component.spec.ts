@@ -5,6 +5,7 @@ import {provideAnimations} from "@angular/platform-browser/animations";
 import {By} from "@angular/platform-browser";
 import {provideHttpClient} from "@angular/common/http";
 import {provideHttpClientTesting} from "@angular/common/http/testing";
+import {provideZonelessChangeDetection} from "@angular/core";
 
 function getStepNumber(fixture: ComponentFixture<StepperComponent>): string {
   const stepNumberEl = fixture.debugElement.query(By.css('.p-step-active .p-step-number'));
@@ -23,7 +24,8 @@ describe('StepperComponent', () => {
       providers: [
         provideAnimations(),
         provideHttpClient(),
-        provideHttpClientTesting()
+        provideHttpClientTesting(),
+        provideZonelessChangeDetection()
       ]
     }).compileComponents();
 
@@ -37,9 +39,9 @@ describe('StepperComponent', () => {
   });
 
   describe('when the first step is active', () => {
-    beforeEach(() => {
+    beforeEach(async () => {
       component.step.set(1);
-      fixture.detectChanges();
+      await fixture.whenStable();
     });
 
     it('should have previous button falsy at initial state', () => {
@@ -59,9 +61,9 @@ describe('StepperComponent', () => {
   });
 
   describe('when the second step is active', () => {
-    beforeEach(() => {
+    beforeEach(async () => {
       component.step.set(2);
-      fixture.detectChanges();
+      await fixture.whenStable();
     });
 
     it('should have previous button truthy at initial state', () => {
@@ -81,9 +83,9 @@ describe('StepperComponent', () => {
   });
 
   describe('when the third step is active', () => {
-    beforeEach(() => {
+    beforeEach(async () => {
       component.step.set(3);
-      fixture.detectChanges();
+      await fixture.whenStable();
     });
 
     it('should have previous button truthy at initial state', () => {
@@ -103,9 +105,9 @@ describe('StepperComponent', () => {
   });
 
   describe('when the fourth step is active', () => {
-    beforeEach(() => {
+    beforeEach(async () => {
       component.step.set(4);
-      fixture.detectChanges();
+      await fixture.whenStable();
     });
 
     it('should have previous button truthy at initial state', () => {

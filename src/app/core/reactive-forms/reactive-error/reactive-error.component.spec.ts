@@ -3,6 +3,7 @@ import {ReactiveErrorComponent} from './reactive-error.component';
 import {FormControl, ReactiveFormsModule} from "@angular/forms";
 import {provideHttpClient} from "@angular/common/http";
 import {provideHttpClientTesting} from "@angular/common/http/testing";
+import {provideZonelessChangeDetection} from "@angular/core";
 
 describe('ReactiveErrorComponent', () => {
   let component: ReactiveErrorComponent;
@@ -19,7 +20,8 @@ describe('ReactiveErrorComponent', () => {
       ],
       providers: [
         provideHttpClient(),
-        provideHttpClientTesting()
+        provideHttpClientTesting(),
+        provideZonelessChangeDetection()
       ]
     }).compileComponents();
 

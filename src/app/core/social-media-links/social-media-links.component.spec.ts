@@ -1,6 +1,9 @@
 import {ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {SocialMediaLinksComponent} from './social-media-links.component';
+import {provideHttpClient} from "@angular/common/http";
+import {provideHttpClientTesting} from "@angular/common/http/testing";
+import {provideZonelessChangeDetection} from "@angular/core";
 
 describe('SocialMediaLinksComponent', () => {
   let component: SocialMediaLinksComponent;
@@ -10,6 +13,11 @@ describe('SocialMediaLinksComponent', () => {
     await TestBed.configureTestingModule({
       imports: [
         SocialMediaLinksComponent
+      ],
+      providers: [
+        provideHttpClient(),
+        provideHttpClientTesting(),
+        provideZonelessChangeDetection()
       ]
     }).compileComponents();
 
