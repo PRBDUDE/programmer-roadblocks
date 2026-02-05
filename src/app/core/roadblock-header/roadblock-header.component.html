@@ -13,7 +13,7 @@
     <div class="prb-header-menu">
       <p-megaMenu [model]="menuItems" orientation="horizontal"
                   class="prb-mega-menu">
-        <ng-template pTemplate="item" let-item>
+        <ng-template #item let-item>
           @if (item.root) {
             <div>{{ item.label }}</div>
           } @else {
