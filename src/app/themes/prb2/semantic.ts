@@ -1,5 +1,11 @@
+import {Brown} from "@themes/colors/brown";
+
 export const Semantic = {
   semantic: {
+    content: {
+      borderRadius: "{border.radius.xl}"
+    },
+    primary: Brown,
     navigation: {
       list: {
         gap: "10px"
