@@ -1,4 +1,4 @@
-import {Component, inject, OnInit} from '@angular/core';
+import {AfterViewInit, ChangeDetectorRef, Component, inject, OnInit} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
 import {RoadblockHeaderComponent} from "@header/roadblock-header.component";
 import {PrimeNG} from "primeng/config";
@@ -7,6 +7,8 @@ import {ProfileService} from "@services/profile.service";
 import {setPrimaryColor} from "@utility/set-primary-color";
 import {setSurfaceColor} from "@utility/set-surface-color";
 import {setDarkTheme, setDebugMode, setFixedFooter} from "@utility/prb-mode";
+import {PrimengConfigService} from "@utility/primeng-config.service";
+import {AuraPreset} from "./themes/aura/theme";
 
 @Component({
   selector: 'prb-root',
@@ -19,12 +21,14 @@ import {setDarkTheme, setDebugMode, setFixedFooter} from "@utility/prb-mode";
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, AfterViewInit {
   title = 'programmer-roadblocks';
   primeng = inject(PrimeNG);
   private profileService = inject(ProfileService);
 
-  // primengConfig = inject(PrimengConfigService);
+  primengConfig = inject(PrimengConfigService);
+
+  cdr = inject(ChangeDetectorRef);
 
   ngOnInit(): void {
     this.profileService.getProfile().subscribe(profile => {
@@ -59,15 +63,26 @@ export class AppComponent implements OnInit {
     //   this.primengConfig.getPalette());
     // console.log('Theme - Primary Color: ',
     //   this.primengConfig.getPrimaryColor());
-    // console.log('Theme - Semantic: ',
-    //   AuraPreset.semantic);
-    // console.log('Theme - Components: ',
-    //   AuraPreset.components);
+    // console.log('Theme - Surface Color (dark): ',
+    //   this.primengConfig.getSurfaceColor('dark'));
+    console.log('Theme - Primitive: ',
+      AuraPreset.primitive);
+    console.log('Theme - Semantic: ',
+      AuraPreset.semantic);
+    // console.log('Theme - css: ',
+    //   AuraPreset.css);
+    console.log('Theme - Components: ',
+      AuraPreset.components);
     // console.log('components\naccordion: ',
-    //   AuraPreset?.components?.accordion);
+    //   JSON.stringify(AuraPreset?.components?.accordion,
+    //     undefined, 2));
     // console.log('components\nbutton: ' +
     //   JSON.stringify(
-    //     AuraPreset.components.button,
+    //     AuraPreset?.components?.button,
     //     undefined, 2));
+  }
+
+  ngAfterViewInit(): void {
+    this.cdr.detectChanges();
   }
 }
