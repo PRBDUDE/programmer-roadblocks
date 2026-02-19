@@ -12,6 +12,9 @@ export const Semantic = {
     },
     colorScheme: {
       light: {
+        content: {
+          background: "{surface.300}"
+        },
         navigation: {
           item: {
             focusBackground: "{surface.200}",
@@ -23,6 +26,9 @@ export const Semantic = {
         surface: Beach
       },
       dark: {
+        content: {
+          background: "{surface.600}"
+        },
         navigation: {
           item: {
             focusBackground: "{surface.600}",
