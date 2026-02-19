@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   gap: 2rem;
   margin: 0 auto;
-  max-width: 910px;
+  max-width: 1300px;
 
   .prb-palettes-section {
     margin-top: 30px;
@@ -28,8 +28,8 @@
 }
 
 .prb-palette-generator {
-  max-width: 710px;
-  //margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 20px;
 }
 
@@ -60,6 +60,10 @@
     padding: 15px;
     border-radius: var(--p-border-radius-lg);
     background-color: var(--p-surface-50);
+  }
+
+  &-input-section {
+    max-width: 330px;
   }
 }
 
