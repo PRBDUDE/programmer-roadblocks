@@ -33,7 +33,6 @@ export class ProfileService extends DataService<UserProfile> {
   }
 
   updateUserProfile(profile: UserProfile): Observable<UserProfile> {
-    console.log('Updating profile: ', profile);
     return this.httpClient.put<UserProfile>(this.apiUrl, profile);
   }
 
