@@ -8,9 +8,11 @@ import {MegamenuPreset} from "./components/megamenu-preset";
 import {MessagePreset} from "./components/message-preset";
 import {TimelinePreset} from "./components/timeline-preset";
 import {TooltipPreset} from "./components/tooltip-preset";
+import {AccordionPreset} from "./components/accordion-preset";
 
 export const AuraPreset = definePreset(Aura, Primitive, Semantic, {
   components: {
+    accordion: AccordionPreset,
     button: ButtonPreset,
     datatable: DatatablePreset,
     megamenu: MegamenuPreset,
