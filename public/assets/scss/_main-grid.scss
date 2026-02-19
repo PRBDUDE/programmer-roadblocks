@@ -1,8 +1,31 @@
 :root {
+  --prb-main-grid-container-background-color: var(--p-surface-100);
+  --prb-main-grid-content-background-color: var(--p-surface-200);
   --prb-footer-height: 3.5em;
 
   &[class*="prb-fixed-footer"] {
     --prb-footer-height: 111px;
+
+    .prb-main-grid-container {
+      max-height: unset;
+      height: unset;
+      overflow-y: unset;
+
+      .prb-main-grid-content {
+        overflow-y: auto;
+        max-height: calc(100vh - var(--prb-footer-height));
+        height: 100vh;
+      }
+
+      .prb-main-grid-footer {
+        min-height: var(--prb-footer-height);
+      }
+    }
+  }
+
+  &[class*="prb-dark-theme"] {
+    --prb-main-grid-container-background-color: var(--p-surface-400);
+    --prb-main-grid-content-background-color: var(--p-surface-500);
   }
 }
 
@@ -31,30 +54,10 @@
   }
 }
 
-:root[class*="prb-fixed-footer"] {
-  .prb-main-grid-container {
-    max-height: unset;
-    height: unset;
-    overflow-y: unset;
+.prb-main-grid-container {
+  background-color: var(--prb-main-grid-container-background-color);
 
-    .prb-main-grid-content {
-      overflow-y: auto;
-      max-height: calc(100vh - var(--prb-footer-height));
-      height: 100vh;
-    }
-
-    .prb-main-grid-footer {
-      min-height: var(--prb-footer-height);
-    }
-  }
-}
-
-:root[class*="prb-dark-theme"] {
-  .prb-main-grid-container {
-    background-color: var(--p-surface-600);
-
-    .prb-main-grid-content {
-      background-color: var(--p-surface-600);
-    }
+  .prb-main-grid-content {
+    background-color: var(--prb-main-grid-content-background-color);
   }
 }
