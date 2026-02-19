@@ -149,3 +149,16 @@
     background-color: var(--p-zinc-500);
   }
 }
+
+.prb-preset-item-container {
+  border-radius: var(--p-border-radius-lg);
+  background-color: var(--p-surface-400);
+
+  .prb-preset-items {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0.5rem;
+    width: 350px;
+  }
+}

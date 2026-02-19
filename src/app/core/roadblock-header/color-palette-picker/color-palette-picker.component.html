@@ -195,6 +195,40 @@
 
   <div class="prb-color-palette">
     <div class="prb-color-palette-label">
+      Presets
+    </div>
+    <div class="prb-preset-item-container">
+      <div class="prb-preset-items">
+        <p-button
+          label="PRB 0"
+          (click)="setPreset('prb0')"
+          [rounded]="true"
+          [size]="'small'"
+          [pTooltip]="'Aura'"
+          showDelay="1000"
+          tooltipPosition="top"/>
+        <p-button
+          label="PRB 1"
+          (click)="setPreset('prb1')"
+          [rounded]="true"
+          [size]="'small'"
+          [pTooltip]="'PRB 1'"
+          showDelay="1000"
+          tooltipPosition="top"/>
+        <p-button
+          label="PRB 2"
+          (click)="setPreset('prb2')"
+          [rounded]="true"
+          [size]="'small'"
+          [pTooltip]="'PRB 2'"
+          showDelay="1000"
+          tooltipPosition="top"/>
+      </div>
+    </div>
+  </div>
+
+  <div class="prb-color-palette">
+    <div class="prb-color-palette-label">
       Ripple Effect
     </div>
     <p-toggleswitch
