@@ -1,4 +1,4 @@
-import {Component, inject, OnDestroy, OnInit} from '@angular/core';
+import {ChangeDetectorRef, Component, inject, OnDestroy, OnInit} from '@angular/core';
 import {FormsModule} from "@angular/forms";
 import {Tooltip} from "primeng/tooltip";
 import {$dt} from "@primeuix/themes";
@@ -35,7 +35,8 @@ export class ColorPalettePickerComponent implements OnInit, OnDestroy {
   };
 
   primeng = inject(PrimeNG);
-  private profileService = inject(ProfileService)
+  private profileService = inject(ProfileService);
+  private cdr = inject(ChangeDetectorRef);
   private isChangedFlag = false;
   private refreshIntervalId?: number;
   private readonly intervalTime = 5000;
@@ -70,10 +71,6 @@ export class ColorPalettePickerComponent implements OnInit, OnDestroy {
       return undefined;
     }
     return colorValue;
-  }
-
-  isShowColorPalette(): boolean {
-    return isPrbMode(prbModes.colorPicker);
   }
 
   isPrimaryColor(color: string) {
