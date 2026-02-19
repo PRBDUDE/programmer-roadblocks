@@ -54,6 +54,9 @@
       ],
       "@reactive-forms/*": [
         "./src/app/core/reactive-forms/*"
+      ],
+      "@themes/*": [
+        "./src/app/themes/*"
       ]
     }
   },
