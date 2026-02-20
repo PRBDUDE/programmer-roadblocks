@@ -1,4 +1,4 @@
-import {Component, inject, OnInit} from '@angular/core';
+import {ChangeDetectorRef, Component, inject, OnInit} from '@angular/core';
 import {MegaMenuModule} from "primeng/megamenu";
 import {MegaMenuItem} from "primeng/api";
 import {RouterLink} from "@angular/router";
@@ -29,6 +29,7 @@ import {ProfileService} from "@services/profile.service";
 export class RoadblockHeaderComponent implements OnInit {
 
   private profileService = inject(ProfileService);
+  private cdr = inject(ChangeDetectorRef);
   menuItems: MegaMenuItem[] | undefined;
 
   ngOnInit() {
@@ -49,6 +50,7 @@ export class RoadblockHeaderComponent implements OnInit {
 
   toggleColorPicker() {
     toggleMode(prbModes.colorPicker);
+    this.cdr.detectChanges();
     console.log('Color picker clicked');
   }
 
@@ -61,6 +63,7 @@ export class RoadblockHeaderComponent implements OnInit {
       result => console.log('Dark theme set to: ', result)
     );
     setDarkTheme(true);
+    this.cdr.detectChanges();
   }
 
   lightTheme() {
@@ -68,6 +71,7 @@ export class RoadblockHeaderComponent implements OnInit {
       result => console.log('Light theme set to: ', result)
     );
     setDarkTheme(false);
+    this.cdr.detectChanges();
   }
 
   isDebug(): boolean {
@@ -79,6 +83,7 @@ export class RoadblockHeaderComponent implements OnInit {
       result => console.log('Debug mode set to: ', result)
     );
     setDebugMode(on);
+    this.cdr.detectChanges();
   }
 
   isFixedFooter(): boolean {
@@ -90,12 +95,14 @@ export class RoadblockHeaderComponent implements OnInit {
       result => console.log('Fixed footer set to: ', result)
     );
     setFixedFooter(true);
+    this.cdr.detectChanges();
   }
 
-  floatng() {
+  floating() {
     this.profileService.setFixedFooterProfile(false).subscribe(
       result => console.log('Floating footer set to: ', result)
     );
     setFixedFooter(false);
+    this.cdr.detectChanges();
   }
 }

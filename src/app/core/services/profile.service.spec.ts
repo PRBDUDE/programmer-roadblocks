@@ -1,15 +1,21 @@
 import {TestBed} from '@angular/core/testing';
 
 import {ProfileService} from './profile.service';
-import {HttpTestingController} from "@angular/common/http/testing";
+import {HttpTestingController, provideHttpClientTesting} from "@angular/common/http/testing";
 import {UserProfile} from "@model/user-profile";
+import {provideHttpClient} from "@angular/common/http";
 
 describe('ProfileService', () => {
   let service: ProfileService;
   let httpMock: HttpTestingController;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({}).compileComponents();
+    TestBed.configureTestingModule({
+      providers: [
+        provideHttpClient(),
+        provideHttpClientTesting()
+      ]
+    }).compileComponents();
 
     service = TestBed.inject(ProfileService);
     httpMock = TestBed.inject(HttpTestingController);

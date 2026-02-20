@@ -54,6 +54,7 @@ export class PaletteGeneratorComponent implements OnInit {
     if (!$event.value) {
       return;
     }
+    this.paletteKeys = [];
     const count = $event.value as number;
     this.colorCount = count;
     const currentLength = this.colorsArray.length;

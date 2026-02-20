@@ -52,6 +52,13 @@
         showDelay="1000"
         tooltipPosition="top"></button>
       <button
+        class="prb-color-palette-item prb-color-palette-gold"
+        [class.prb-color-palette-selected]="isPrimaryColor('gold')"
+        (click)="setPrimaryPalette('gold')"
+        [pTooltip]="'gold'"
+        showDelay="1000"
+        tooltipPosition="top"></button>
+      <button
         class="prb-color-palette-item prb-color-palette-yellow"
         [class.prb-color-palette-selected]="isPrimaryColor('yellow')"
         (click)="setPrimaryPalette('yellow')"
@@ -190,6 +197,47 @@
         [pTooltip]="'beach'"
         showDelay="1000"
         tooltipPosition="top"></button>
+      <button
+        class="prb-color-palette-item prb-color-palette-silver"
+        [class.prb-surface-color-palette-selected]="isSurfaceColor('silver')"
+        (click)="setSurfacePalette('silver')"
+        [pTooltip]="'silver'"
+        showDelay="1000"
+        tooltipPosition="top"></button>
+    </div>
+  </div>
+
+  <div class="prb-color-palette">
+    <div class="prb-color-palette-label">
+      Presets
+    </div>
+    <div class="prb-preset-item-container">
+      <div class="prb-preset-items">
+        <p-button
+          label="PRB 0"
+          (click)="setPreset('prb0')"
+          [rounded]="true"
+          [size]="'small'"
+          [pTooltip]="'PRB 0'"
+          showDelay="1000"
+          tooltipPosition="top"/>
+        <p-button
+          label="PRB 1"
+          (click)="setPreset('prb1')"
+          [rounded]="true"
+          [size]="'small'"
+          [pTooltip]="'PRB 1'"
+          showDelay="1000"
+          tooltipPosition="top"/>
+        <p-button
+          label="PRB 2"
+          (click)="setPreset('prb2')"
+          [rounded]="true"
+          [size]="'small'"
+          [pTooltip]="'PRB 2'"
+          showDelay="1000"
+          tooltipPosition="top"/>
+      </div>
     </div>
   </div>
 

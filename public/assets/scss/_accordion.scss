@@ -1,18 +1,10 @@
-:root {
-  --prb-accordion-content-background-color: var(--p-surface-200);
-  --prb-accordion-content-padding: 1.125rem;
-  --prb-accordion-content-border: 1px solid var(--p-surface-300);
+@layer primeng {
+  .p-accordionpanel:not(.p-disabled).p-accordionpanel-active > .p-accordionheader {
+    background: var(--p-silver-400) !important;
+    color: var(--p-surface-900) !important;
 
-  &[class*="prb-dark-theme"] {
-    --prb-accordion-content-background-color: var(--p-surface-600);
-    --prb-accordion-content-border: 1px solid var(--p-surface-950);
-  }
-}
-
-.p-accordionpanel {
-  .p-accordion-content {
-    background-color: var(--prb-accordion-content-background-color);
-    padding: var(--prb-accordion-content-padding);
-    border: var(--prb-accordion-content-border);
+    .p-icon {
+      color: var(--p-surface-900) !important;
+    }
   }
 }

@@ -1,10 +1,10 @@
-import {Sky} from "../colors/sky";
-import {Neutral} from "../colors/neutral";
-import {Beach} from "../colors/beach";
+import {Teal} from "@themes/colors/teal";
+import {Beach} from "@themes/colors/beach";
+import {Stone} from "@themes/colors/stone";
 
 export const Semantic = {
   semantic: {
-    primary: Sky,
+    primary: Teal,
     navigation: {
       list: {
         gap: "10px"
@@ -13,9 +13,6 @@ export const Semantic = {
     colorScheme: {
       light: {
         navigation: {
-          item: {
-            focusBackground: "{surface.200}",
-          },
           submenuLabel: {
             background: "{surface.200}",
           }
@@ -24,15 +21,11 @@ export const Semantic = {
       },
       dark: {
         navigation: {
-          item: {
-            focusBackground: "{surface.600}",
-          },
           submenuLabel: {
-            background: "{surface.500}",
-            color: "{text.color}"
+            background: "{surface.500}"
           }
         },
-        surface: Neutral
+        surface: Stone
       }
     }
   }

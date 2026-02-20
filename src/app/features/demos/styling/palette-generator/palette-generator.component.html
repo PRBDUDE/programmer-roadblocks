@@ -12,58 +12,60 @@
         ></p-inputNumber>
       </div>
 
-      <form [formGroup]="colorForm" (ngSubmit)="generatePalettes()">
-        <div [formArrayName]="'colors'">
-          @for (colorGroup of colorsArray.controls; track colorGroup; let i = $index) {
-            <div [formGroupName]="i" class="prb-color-input-row">
-              <div class="prb-color-name-input">
-                <label [for]="'colorName' + i">Color Name:</label>
-                <input
-                  [id]="'colorName' + i"
-                  type="text"
-                  pInputText
-                  [formControlName]="'name'"
-                  placeholder="Enter color name"
-                />
-                @if (colorGroup.get('name')?.invalid && colorGroup.get('name')?.touched) {
-                  <div class="prb-error-message">
-                    Color name is required
-                  </div>
-                }
-              </div>
-
-              <div class="prb-color-hex-input">
-                <label [for]="'colorHex' + i">Hex Code:</label>
-                <div class="prb-color-input-group">
+      <div class="prb-color-input-section">
+        <form [formGroup]="colorForm" (ngSubmit)="generatePalettes()">
+          <div [formArrayName]="'colors'">
+            @for (colorGroup of colorsArray.controls; track colorGroup; let i = $index) {
+              <div [formGroupName]="i" class="prb-color-input-row">
+                <div class="prb-color-name-input">
+                  <label [for]="'colorName' + i">Color Name:</label>
                   <input
-                    type="color"
-                    [id]="'colorPicker' + i"
-                    [formControlName]="'baseColor'"
-                    (input)="onColorPickerChange($event, i)"
-                  />
-                  <input
-                    [id]="'colorHex' + i"
+                    [id]="'colorName' + i"
                     type="text"
                     pInputText
-                    [formControlName]="'baseColor'"
-                    placeholder="#RRGGBB"
-                    (blur)="onColorTextChange($event, i)"
+                    [formControlName]="'name'"
+                    placeholder="Enter color name"
                   />
+                  @if (colorGroup.get('name')?.invalid && colorGroup.get('name')?.touched) {
+                    <div class="prb-error-message">
+                      Color name is required
+                    </div>
+                  }
                 </div>
-                @if (colorGroup.get('baseColor')?.invalid && colorGroup.get('baseColor')?.touched) {
-                  <div class="prb-error-message">
-                    Valid hex color code required (#RRGGBB)
-                  </div>
-                }
-              </div>
-            </div>
-          }
-        </div>
 
-        <div class="prb-button-section">
-          <p-button type="submit" label="Generate Palettes" [disabled]="colorForm.invalid"/>
-        </div>
-      </form>
+                <div class="prb-color-hex-input">
+                  <label [for]="'colorHex' + i">Hex Code:</label>
+                  <div class="prb-color-input-group">
+                    <input
+                      type="color"
+                      [id]="'colorPicker' + i"
+                      [formControlName]="'baseColor'"
+                      (input)="onColorPickerChange($event, i)"
+                    />
+                    <input
+                      [id]="'colorHex' + i"
+                      type="text"
+                      pInputText
+                      [formControlName]="'baseColor'"
+                      placeholder="#RRGGBB"
+                      (blur)="onColorTextChange($event, i)"
+                    />
+                  </div>
+                  @if (colorGroup.get('baseColor')?.invalid && colorGroup.get('baseColor')?.touched) {
+                    <div class="prb-error-message">
+                      Valid hex color code required (#RRGGBB)
+                    </div>
+                  }
+                </div>
+              </div>
+            }
+          </div>
+
+          <div class="prb-button-section">
+            <p-button type="submit" label="Generate Palettes" [disabled]="colorForm.invalid"/>
+          </div>
+        </form>
+      </div>
 
       @if (paletteKeys.length > 0) {
         <div class="prb-palettes-section">
@@ -81,7 +83,7 @@
                       [title]="getColorValue(paletteName, shade)"
                     ></div>
                     <div class="prb-swatch-info">
-                      <span class="prb-shade-name">{{ shade }}</span>
+                      <span class="prb-shade-name">{{ shade }}</span>&nbsp;
                       <span class="prb-hex-value">{{ getColorValue(paletteName, shade).toUpperCase() }}</span>
                     </div>
                   </div>
@@ -99,19 +101,17 @@
       <p-card header="Theme Content">
         <div class="prb-theme-content">
           @for (paletteName of paletteKeys; track paletteName) {
-            <div class="prb-palette-card">
-              {{ paletteName }}:&nbsp;&lbrace;
-              <div class="prb-color-swatches">
+            <div class="prb-palette-export">
+              export const {{ paletteName }} = &lbrace;
+              <div>
                 @for (shade of shadeKeys; track shade) {
-                  <div class="prb-color-swatch">
-                    <div class="prb-swatch-info prb-indent">
-                      <span class="prb-shade-name">{{ shade }}</span>:&nbsp;
-                      &quot;<span class="prb-hex-value">{{ getColorValue(paletteName, shade).toUpperCase() }}</span>&quot;&comma;
-                    </div>
+                  <div>
+                    &nbsp;&nbsp;{{ shade }}:
+                    "{{ getColorValue(paletteName, shade).toUpperCase() }}",
                   </div>
                 }
               </div>
-              &rbrace;&comma;
+              &rbrace;
             </div>
           }
         </div>

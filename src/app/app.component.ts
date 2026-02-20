@@ -1,12 +1,14 @@
-import {Component, inject, OnInit} from '@angular/core';
+import {AfterViewInit, ChangeDetectorRef, Component, inject, OnInit} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
 import {RoadblockHeaderComponent} from "@header/roadblock-header.component";
 import {PrimeNG} from "primeng/config";
 import {RoadblockFooterComponent} from "@footer/roadblock-footer.component";
 import {ProfileService} from "@services/profile.service";
-import {setPrimaryColor} from "@utility/set-primary-color";
-import {setSurfaceColor} from "@utility/set-surface-color";
 import {setDarkTheme, setDebugMode, setFixedFooter} from "@utility/prb-mode";
+import {PrimengConfigService} from "@utility/primeng-config.service";
+import {Prb0Preset} from "@themes/prb0/theme";
+import {Prb1Preset} from "@themes/prb1/theme";
+import Aura from "@primeuix/themes/aura";
 
 @Component({
   selector: 'prb-root',
@@ -19,17 +21,19 @@ import {setDarkTheme, setDebugMode, setFixedFooter} from "@utility/prb-mode";
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, AfterViewInit {
   title = 'programmer-roadblocks';
   primeng = inject(PrimeNG);
   private profileService = inject(ProfileService);
 
-  // primengConfig = inject(PrimengConfigService);
+  primengConfig = inject(PrimengConfigService);
+
+  cdr = inject(ChangeDetectorRef);
 
   ngOnInit(): void {
     this.profileService.getProfile().subscribe(profile => {
-      setPrimaryColor(profile.primary);
-      setSurfaceColor(profile.surface);
+      // setPrimaryColor(profile.primary);
+      // setSurfaceColor(profile.surface);
       this.primeng.ripple.set(profile.ripple);
       setFixedFooter(profile.fixedFooter);
       setDarkTheme(profile.darkTheme);
@@ -47,27 +51,36 @@ export class AppComponent implements OnInit {
       date: ['equals', 'notequals', 'before', 'after', 'between', 'notbetween']
     };
 
-    // console.log('Unmodified Theme - Aura: ',
-    //   Aura);
-    // console.log('Unmodified Theme - Lara: ',
-    //   Lara);
-    // console.log('Unmodified Theme - Material: ',
-    //   Material);
-    // console.log('Unmodified Theme - Nora: ',
-    //   Nora);
+    // console.log('Unmodified Theme - Aura: ', Aura);
+    // console.log('Unmodified Theme - Lara: ', Lara);
+    // console.log('Unmodified Theme - Nora: ', Nora);
     // console.log('Theme - Color Palette: ',
     //   this.primengConfig.getPalette());
     // console.log('Theme - Primary Color: ',
     //   this.primengConfig.getPrimaryColor());
+    // console.log('Theme - Surface Color (dark): ',
+    //   this.primengConfig.getSurfaceColor('dark'));
+    // console.log('Theme - Primitive: ',
+    //   Prb0Preset.primitive);
     // console.log('Theme - Semantic: ',
-    //   AuraPreset.semantic);
+    //   Prb0Preset.semantic);
+    // console.log('Theme - css: ',
+    //   Prb0Preset.css);
     // console.log('Theme - Components: ',
-    //   AuraPreset.components);
+    //   Prb0Preset.components);
     // console.log('components\naccordion: ',
-    //   AuraPreset?.components?.accordion);
+    //   JSON.stringify(Prb0Preset?.components?.accordion,
+    //     undefined, 2));
+    console.log('PRB1:components\naccordion: ',
+      JSON.stringify(Prb1Preset?.components?.accordion,
+        undefined, 2));
     // console.log('components\nbutton: ' +
     //   JSON.stringify(
-    //     AuraPreset.components.button,
+    //     Prb0Preset?.components?.button,
     //     undefined, 2));
+  }
+
+  ngAfterViewInit(): void {
+    this.cdr.detectChanges();
   }
 }

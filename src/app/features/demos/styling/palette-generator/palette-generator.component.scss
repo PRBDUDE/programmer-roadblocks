@@ -4,14 +4,14 @@
   flex-wrap: wrap;
   gap: 2rem;
   margin: 0 auto;
-  max-width: 910px;
+  max-width: 1300px;
 
   .prb-palettes-section {
     margin-top: 30px;
   }
 
   .prb-palette-output {
-    margin-top: 20px;
+    margin: auto;
   }
 }
 
@@ -20,16 +20,29 @@
 }
 
 .prb-theme-content {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  flex-wrap: wrap;
   border-radius: var(--p-border-radius-lg);
   padding: 15px;
   background-color: var(--p-surface-50);
   color: var(--p-surface-900);
   font-size: 0.8em;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  min-width: 300px;
+  width: fit-content;
+
+  .prb-palette-export {
+    min-width: 120px;
+    width: fit-content;
+  }
 }
 
 .prb-palette-generator {
-  max-width: 710px;
-  //margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 20px;
 }
 
@@ -61,13 +74,20 @@
     border-radius: var(--p-border-radius-lg);
     background-color: var(--p-surface-50);
   }
+
+  &-input-section {
+    max-width: 330px;
+  }
 }
 
 .prb-palette-card {
-  margin-bottom: 25px;
   padding: 15px;
   border-radius: 8px;
   background-color: #f8f9fa;
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
 
   h4 {
     margin-top: 0;
@@ -111,7 +131,7 @@
 
 .prb-swatch-info {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   font-size: 0.8rem;
   color: var(--p-surface-950);

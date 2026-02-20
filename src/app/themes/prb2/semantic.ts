@@ -1,8 +1,11 @@
-import {Sky} from "../colors/sky";
+import {Brown} from "@themes/colors/brown";
 
 export const Semantic = {
   semantic: {
-    primary: Sky,
+    content: {
+      borderRadius: "{border.radius.xl}"
+    },
+    primary: Brown,
     navigation: {
       list: {
         gap: "10px"
@@ -11,9 +14,6 @@ export const Semantic = {
     colorScheme: {
       light: {
         navigation: {
-          item: {
-            focusBackground: "{surface.200}",
-          },
           submenuLabel: {
             background: "{surface.200}",
           }
@@ -21,12 +21,8 @@ export const Semantic = {
       },
       dark: {
         navigation: {
-          item: {
-            focusBackground: "{surface.600}",
-          },
           submenuLabel: {
-            background: "{surface.500}",
-            color: "{text.color}"
+            background: "{surface.500}"
           }
         }
       }
