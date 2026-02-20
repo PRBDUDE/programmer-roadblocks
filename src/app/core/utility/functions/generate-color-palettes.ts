@@ -4,7 +4,7 @@ import {palette} from "@primeuix/themes";
 export function generateColorPalettes(colorDefinitions: ColorDefinition[]) {
   const result: Record<string, Record<number, string>> = {};
   colorDefinitions.forEach(colorDefinition => {
-    result[colorDefinition.name.toLowerCase()] =
+    result[colorDefinition.name.charAt(0).toUpperCase() + colorDefinition.name.substring(1).toLowerCase()] =
       palette(colorDefinition.baseColor) as Record<number, string>;
   });
   return result;

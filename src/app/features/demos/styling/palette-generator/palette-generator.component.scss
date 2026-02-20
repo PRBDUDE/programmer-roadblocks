@@ -11,7 +11,7 @@
   }
 
   .prb-palette-output {
-    margin-top: 20px;
+    margin: 20px auto;
   }
 }
 
@@ -20,11 +20,24 @@
 }
 
 .prb-theme-content {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  flex-wrap: wrap;
   border-radius: var(--p-border-radius-lg);
   padding: 15px;
   background-color: var(--p-surface-50);
   color: var(--p-surface-900);
   font-size: 0.8em;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  min-width: 300px;
+  width: fit-content;
+
+  .prb-palette-export {
+    min-width: 120px;
+    width: fit-content;
+  }
 }
 
 .prb-palette-generator {
