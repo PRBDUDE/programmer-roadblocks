@@ -52,6 +52,13 @@
         showDelay="1000"
         tooltipPosition="top"></button>
       <button
+        class="prb-color-palette-item prb-color-palette-gold"
+        [class.prb-color-palette-selected]="isPrimaryColor('gold')"
+        (click)="setPrimaryPalette('gold')"
+        [pTooltip]="'gold'"
+        showDelay="1000"
+        tooltipPosition="top"></button>
+      <button
         class="prb-color-palette-item prb-color-palette-yellow"
         [class.prb-color-palette-selected]="isPrimaryColor('yellow')"
         (click)="setPrimaryPalette('yellow')"
