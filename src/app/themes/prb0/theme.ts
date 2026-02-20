@@ -10,7 +10,7 @@ import {TimelinePreset} from "./components/timeline-preset";
 import {TooltipPreset} from "./components/tooltip-preset";
 import {AccordionPreset} from "./components/accordion-preset";
 
-export const AuraPreset = definePreset(Aura, Primitive, Semantic, {
+export const Prb0Preset = definePreset(Aura, Primitive, Semantic, {
   components: {
     accordion: AccordionPreset,
     button: ButtonPreset,

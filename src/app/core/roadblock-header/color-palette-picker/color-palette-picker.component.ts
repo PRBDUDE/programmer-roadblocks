@@ -12,7 +12,7 @@ import {setSurfaceColor} from "@utility/set-surface-color";
 import {Button} from "primeng/button";
 import {take} from "rxjs";
 import {setPrimaryColor} from "@utility/set-primary-color";
-import {AuraPreset} from "@themes/aura/theme";
+import {Prb0Preset} from "@themes/prb0/theme";
 import {Prb1Preset} from "@themes/prb1/theme";
 import {Prb2Preset} from "@themes/prb2/theme";
 
@@ -144,7 +144,7 @@ export class ColorPalettePickerComponent implements OnInit, OnDestroy {
 
   protected setPreset(preset: string) {
     if (preset === 'prb0') {
-      usePreset(AuraPreset);
+      usePreset(Prb0Preset);
     } else if (preset === 'prb1') {
       usePreset(Prb1Preset);
     } else if (preset === 'prb2') {

@@ -4,11 +4,9 @@ import {RoadblockHeaderComponent} from "@header/roadblock-header.component";
 import {PrimeNG} from "primeng/config";
 import {RoadblockFooterComponent} from "@footer/roadblock-footer.component";
 import {ProfileService} from "@services/profile.service";
-import {setPrimaryColor} from "@utility/set-primary-color";
-import {setSurfaceColor} from "@utility/set-surface-color";
 import {setDarkTheme, setDebugMode, setFixedFooter} from "@utility/prb-mode";
 import {PrimengConfigService} from "@utility/primeng-config.service";
-import {AuraPreset} from "./themes/aura/theme";
+import {Prb0Preset} from "@themes/prb0/theme";
 
 @Component({
   selector: 'prb-root',
@@ -32,8 +30,8 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   ngOnInit(): void {
     this.profileService.getProfile().subscribe(profile => {
-      setPrimaryColor(profile.primary);
-      setSurfaceColor(profile.surface);
+      // setPrimaryColor(profile.primary);
+      // setSurfaceColor(profile.surface);
       this.primeng.ripple.set(profile.ripple);
       setFixedFooter(profile.fixedFooter);
       setDarkTheme(profile.darkTheme);
@@ -55,8 +53,6 @@ export class AppComponent implements OnInit, AfterViewInit {
     //   Aura);
     // console.log('Unmodified Theme - Lara: ',
     //   Lara);
-    // console.log('Unmodified Theme - Material: ',
-    //   Material);
     // console.log('Unmodified Theme - Nora: ',
     //   Nora);
     // console.log('Theme - Color Palette: ',
@@ -66,19 +62,22 @@ export class AppComponent implements OnInit, AfterViewInit {
     // console.log('Theme - Surface Color (dark): ',
     //   this.primengConfig.getSurfaceColor('dark'));
     console.log('Theme - Primitive: ',
-      AuraPreset.primitive);
+      Prb0Preset.primitive);
     console.log('Theme - Semantic: ',
-      AuraPreset.semantic);
+      Prb0Preset.semantic);
     // console.log('Theme - css: ',
-    //   AuraPreset.css);
+    //   Prb0Preset.css);
     console.log('Theme - Components: ',
-      AuraPreset.components);
+      Prb0Preset.components);
     // console.log('components\naccordion: ',
-    //   JSON.stringify(AuraPreset?.components?.accordion,
+    //   JSON.stringify(Prb0Preset?.components?.accordion,
     //     undefined, 2));
+    console.log('components\ncard: ',
+      JSON.stringify(Prb0Preset?.components?.card,
+        undefined, 2));
     // console.log('components\nbutton: ' +
     //   JSON.stringify(
-    //     AuraPreset?.components?.button,
+    //     Prb0Preset?.components?.button,
     //     undefined, 2));
   }
 
