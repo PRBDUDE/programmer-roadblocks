@@ -60,6 +60,7 @@ export class ColorPaletteComponent implements DoCheck {
   oceanColor = signal<any>($dt('ocean.500').value);
   beachColor = signal<any>($dt('beach.500').value);
   silverColor = signal<any>($dt('silver.500').value);
+  goldColor = signal<any>($dt('gold.500').value);
 
   colorPaletteColors = [
     {name: 'Emerald', base: this.emeraldColor(), isSurface: false},
@@ -69,6 +70,7 @@ export class ColorPaletteComponent implements DoCheck {
     {name: 'Brown', base: this.brownColor(), isSurface: false},
     {name: 'Orange', base: this.orangeColor(), isSurface: false},
     {name: 'Amber', base: this.amberColor(), isSurface: false},
+    {name: 'Gold', base: this.goldColor(), isSurface: false},
     {name: 'Yellow', base: this.yellowColor(), isSurface: false},
     {name: 'Teal', base: this.tealColor(), isSurface: false},
     {name: 'Cyan', base: this.cyanColor(), isSurface: false},
