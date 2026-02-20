@@ -45,113 +45,119 @@
     outline: 4px solid var(--p-primary-color);
   }
 
-  &.prb-color-palette-amber {
-    background-color: var(--p-amber-500);
-  }
+  &.prb-color-palette {
+    &-amber {
+      background-color: var(--p-amber-500);
+    }
 
-  &.prb-color-palette-beach {
-    background-color: var(--p-beach-500);
-  }
+    &-beach {
+      background-color: var(--p-beach-500);
+    }
 
-  &.prb-color-palette-blue {
-    background-color: var(--p-blue-500);
-  }
+    &-blue {
+      background-color: var(--p-blue-500);
+    }
 
-  &.prb-color-palette-brown {
-    background-color: var(--p-brown-500);
-  }
+    &-brown {
+      background-color: var(--p-brown-500);
+    }
 
-  &.prb-color-palette-cyan {
-    background-color: var(--p-cyan-500);
-  }
+    &-cyan {
+      background-color: var(--p-cyan-500);
+    }
 
-  &.prb-color-palette-emerald {
-    background-color: var(--p-emerald-500);
-  }
+    &-emerald {
+      background-color: var(--p-emerald-500);
+    }
 
-  &.prb-color-palette-fuchsia {
-    background-color: var(--p-fuchsia-500);
-  }
+    &-fuchsia {
+      background-color: var(--p-fuchsia-500);
+    }
 
-  &.prb-color-palette-gray {
-    background-color: var(--p-gray-500);
-  }
+    &-gray {
+      background-color: var(--p-gray-500);
+    }
 
-  &.prb-color-palette-green {
-    background-color: var(--p-green-500);
-  }
+    &-green {
+      background-color: var(--p-green-500);
+    }
 
-  &.prb-color-palette-indigo {
-    background-color: var(--p-indigo-500);
-  }
+    &-indigo {
+      background-color: var(--p-indigo-500);
+    }
 
-  &.prb-color-palette-lime {
-    background-color: var(--p-lime-500);
-  }
+    &-lime {
+      background-color: var(--p-lime-500);
+    }
 
-  &.prb-color-palette-neutral {
-    background-color: var(--p-neutral-500);
-  }
+    &-neutral {
+      background-color: var(--p-neutral-500);
+    }
 
-  &.prb-color-palette-ocean {
-    background-color: var(--p-ocean-500);
-  }
+    &-ocean {
+      background-color: var(--p-ocean-500);
+    }
 
-  &.prb-color-palette-orange {
-    background-color: var(--p-orange-500);
-  }
+    &-orange {
+      background-color: var(--p-orange-500);
+    }
 
-  &.prb-color-palette-pink {
-    background-color: var(--p-pink-500);
-  }
+    &-pink {
+      background-color: var(--p-pink-500);
+    }
 
-  &.prb-color-palette-purple {
-    background-color: var(--p-purple-500);
-  }
+    &-purple {
+      background-color: var(--p-purple-500);
+    }
 
-  &.prb-color-palette-red {
-    background-color: var(--p-red-500);
-  }
+    &-red {
+      background-color: var(--p-red-500);
+    }
 
-  &.prb-color-palette-sky {
-    background-color: var(--p-sky-500);
-  }
+    &-sky {
+      background-color: var(--p-sky-500);
+    }
 
-  &.prb-color-palette-slate {
-    background-color: var(--p-slate-500);
-  }
+    &-silver {
+      background-color: var(--p-silver-500);
+    }
 
-  &.prb-color-palette-soho {
-    background-color: var(--p-soho-500);
-  }
+    &-slate {
+      background-color: var(--p-slate-500);
+    }
 
-  &.prb-color-palette-stone {
-    background-color: var(--p-stone-500);
-  }
+    &-soho {
+      background-color: var(--p-soho-500);
+    }
 
-  &.prb-color-palette-teal {
-    background-color: var(--p-teal-500);
-  }
+    &-stone {
+      background-color: var(--p-stone-500);
+    }
 
-  &.prb-color-palette-violet {
-    background-color: var(--p-violet-500);
-  }
+    &-teal {
+      background-color: var(--p-teal-500);
+    }
 
-  &.prb-color-palette-viva {
-    background-color: var(--p-viva-500);
-  }
+    &-violet {
+      background-color: var(--p-violet-500);
+    }
 
-  &.prb-color-palette-yellow {
-    background-color: var(--p-yellow-500);
-  }
+    &-viva {
+      background-color: var(--p-viva-500);
+    }
 
-  &.prb-color-palette-zinc {
-    background-color: var(--p-zinc-500);
+    &-yellow {
+      background-color: var(--p-yellow-500);
+    }
+
+    &-zinc {
+      background-color: var(--p-zinc-500);
+    }
   }
 }
 
 .prb-preset-item-container {
-  border-radius: var(--p-border-radius-lg);
+  border-radius: var(--p-border-radius-xl);
   background-color: var(--p-surface-400);
 
   .prb-preset-items {
