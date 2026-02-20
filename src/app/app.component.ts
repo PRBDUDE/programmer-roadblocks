@@ -8,6 +8,7 @@ import {setDarkTheme, setDebugMode, setFixedFooter} from "@utility/prb-mode";
 import {PrimengConfigService} from "@utility/primeng-config.service";
 import {Prb0Preset} from "@themes/prb0/theme";
 import {Prb1Preset} from "@themes/prb1/theme";
+import Aura from "@primeuix/themes/aura";
 
 @Component({
   selector: 'prb-root',
@@ -50,26 +51,23 @@ export class AppComponent implements OnInit, AfterViewInit {
       date: ['equals', 'notequals', 'before', 'after', 'between', 'notbetween']
     };
 
-    // console.log('Unmodified Theme - Aura: ',
-    //   Aura);
-    // console.log('Unmodified Theme - Lara: ',
-    //   Lara);
-    // console.log('Unmodified Theme - Nora: ',
-    //   Nora);
+    // console.log('Unmodified Theme - Aura: ', Aura);
+    // console.log('Unmodified Theme - Lara: ', Lara);
+    // console.log('Unmodified Theme - Nora: ', Nora);
     // console.log('Theme - Color Palette: ',
     //   this.primengConfig.getPalette());
     // console.log('Theme - Primary Color: ',
     //   this.primengConfig.getPrimaryColor());
     // console.log('Theme - Surface Color (dark): ',
     //   this.primengConfig.getSurfaceColor('dark'));
-    console.log('Theme - Primitive: ',
-      Prb0Preset.primitive);
-    console.log('Theme - Semantic: ',
-      Prb0Preset.semantic);
+    // console.log('Theme - Primitive: ',
+    //   Prb0Preset.primitive);
+    // console.log('Theme - Semantic: ',
+    //   Prb0Preset.semantic);
     // console.log('Theme - css: ',
     //   Prb0Preset.css);
-    console.log('Theme - Components: ',
-      Prb0Preset.components);
+    // console.log('Theme - Components: ',
+    //   Prb0Preset.components);
     // console.log('components\naccordion: ',
     //   JSON.stringify(Prb0Preset?.components?.accordion,
     //     undefined, 2));
