@@ -11,7 +11,7 @@
   }
 
   .prb-palette-output {
-    margin: 20px auto;
+    margin: auto;
   }
 }
 
@@ -81,10 +81,13 @@
 }
 
 .prb-palette-card {
-  margin-bottom: 25px;
   padding: 15px;
   border-radius: 8px;
   background-color: #f8f9fa;
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
 
   h4 {
     margin-top: 0;
