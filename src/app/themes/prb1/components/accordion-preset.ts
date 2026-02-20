@@ -1,6 +1,6 @@
 export const AccordionPreset = {
   header: {
-    background: "{silver.500}",
+    background: "{silver-300}",
     color: "{surface-900}"
   },
   content: {
