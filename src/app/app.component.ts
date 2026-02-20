@@ -7,6 +7,7 @@ import {ProfileService} from "@services/profile.service";
 import {setDarkTheme, setDebugMode, setFixedFooter} from "@utility/prb-mode";
 import {PrimengConfigService} from "@utility/primeng-config.service";
 import {Prb0Preset} from "@themes/prb0/theme";
+import {Prb1Preset} from "@themes/prb1/theme";
 
 @Component({
   selector: 'prb-root',
@@ -72,8 +73,8 @@ export class AppComponent implements OnInit, AfterViewInit {
     // console.log('components\naccordion: ',
     //   JSON.stringify(Prb0Preset?.components?.accordion,
     //     undefined, 2));
-    console.log('components\ncard: ',
-      JSON.stringify(Prb0Preset?.components?.card,
+    console.log('PRB1:components\naccordion: ',
+      JSON.stringify(Prb1Preset?.components?.accordion,
         undefined, 2));
     // console.log('components\nbutton: ' +
     //   JSON.stringify(

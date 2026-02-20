@@ -1,0 +1,10 @@
+@layer primeng {
+  .p-accordionpanel:not(.p-disabled).p-accordionpanel-active > .p-accordionheader {
+    background: var(--p-silver-400) !important;
+    color: var(--p-surface-900) !important;
+
+    .p-icon {
+      color: var(--p-surface-900) !important;
+    }
+  }
+}
