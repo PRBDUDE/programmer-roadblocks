@@ -60,10 +60,10 @@ export class AppComponent implements OnInit, AfterViewInit {
     //   this.primengConfig.getPrimaryColor());
     // console.log('Theme - Surface Color (dark): ',
     //   this.primengConfig.getSurfaceColor('dark'));
-    // console.log('Theme - Primitive: ',
-    //   Prb0Preset.primitive);
-    // console.log('Theme - Semantic: ',
-    //   Prb0Preset.semantic);
+    console.log('Theme - Primitive: ',
+      Prb0Preset.primitive);
+    console.log('Theme - Semantic: ',
+      Prb0Preset.semantic);
     // console.log('Theme - css: ',
     //   Prb0Preset.css);
     // console.log('Theme - Components: ',
@@ -71,9 +71,9 @@ export class AppComponent implements OnInit, AfterViewInit {
     // console.log('components\naccordion: ',
     //   JSON.stringify(Prb0Preset?.components?.accordion,
     //     undefined, 2));
-    console.log('PRB1:components\naccordion: ',
-      JSON.stringify(Prb1Preset?.components?.accordion,
-        undefined, 2));
+    // console.log('PRB1:components\naccordion: ',
+    //   JSON.stringify(Prb1Preset?.components?.accordion,
+    //     undefined, 2));
     // console.log('components\nbutton: ' +
     //   JSON.stringify(
     //     Prb0Preset?.components?.button,

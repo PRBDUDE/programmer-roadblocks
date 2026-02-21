@@ -11,3 +11,17 @@ export const Brown = {
   900: "#442818",
   950: "#2b190f"
 }
+
+export const BrownSemantic = {
+  50: "{brown-50}",
+  100: "{brown-100}",
+  200: "{brown-200}",
+  300: "{brown-300}",
+  400: "{brown-400}",
+  500: "{brown-500}",
+  600: "{brown-600}",
+  700: "{brown-700}",
+  800: "{brown-800}",
+  900: "{brown-900}",
+  950: "{brown-950}"
+}
