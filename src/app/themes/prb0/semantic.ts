@@ -1,13 +1,13 @@
-import {Sky} from "@themes/colors/sky";
-import {Neutral} from "@themes/colors/neutral";
-import {Beach} from "@themes/colors/beach";
+import {SkySemantic} from "@themes/colors/sky";
+import {NeutralSemantic} from "@themes/colors/neutral";
+import {BeachSemantic} from "@themes/colors/beach";
 
 export const Semantic = {
   semantic: {
     content: {
       borderRadius: "{border.radius.lg}"
     },
-    primary: Sky,
+    primary: SkySemantic,
     navigation: {
       list: {
         gap: "10px"
@@ -26,7 +26,7 @@ export const Semantic = {
             background: "{surface.200}",
           }
         },
-        surface: Beach
+        surface: BeachSemantic
       },
       dark: {
         content: {
@@ -41,7 +41,7 @@ export const Semantic = {
             color: "{text.color}"
           }
         },
-        surface: Neutral
+        surface: NeutralSemantic
       }
     }
   }
