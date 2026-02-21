@@ -145,10 +145,19 @@ export class ColorPalettePickerComponent implements OnInit, OnDestroy {
   protected setPreset(preset: string) {
     if (preset === 'prb0') {
       usePreset(Prb0Preset);
+      console.log('Prb0Preset')
+      console.log('Primitive: ', Prb0Preset.primitive);
+      console.log('Semantic: ', Prb0Preset.semantic);
     } else if (preset === 'prb1') {
       usePreset(Prb1Preset);
+      console.log('Prb1Preset')
+      console.log('Primitive: ', Prb1Preset.primitive);
+      console.log('Semantic: ', Prb1Preset.semantic);
     } else if (preset === 'prb2') {
       usePreset(Prb2Preset);
+      console.log('Prb2Preset')
+      console.log('Primitive: ', Prb2Preset.primitive);
+      console.log('Semantic: ', Prb2Preset.semantic);
     }
     this.cdr.detectChanges();
   }

@@ -13,15 +13,15 @@ export const Silver = {
 }
 
 export const SilverSemantic = {
-  50: "{silver-50}",
-  100: "{silver-100}",
-  200: "{silver-200}",
-  300: "{silver-300}",
-  400: "{silver-400}",
-  500: "{silver-500}",
-  600: "{silver-600}",
-  700: "{silver-700}",
-  800: "{silver-800}",
-  900: "{silver-900}",
-  950: "{silver-950}",
+  50: "{silver.50}",
+  100: "{silver.100}",
+  200: "{silver.200}",
+  300: "{silver.300}",
+  400: "{silver.400}",
+  500: "{silver.500}",
+  600: "{silver.600}",
+  700: "{silver.700}",
+  800: "{silver.800}",
+  900: "{silver.900}",
+  950: "{silver.950}",
 }
