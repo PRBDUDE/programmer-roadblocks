@@ -4,15 +4,20 @@
   border-radius: 5px;
   box-shadow: 3px 3px 10px var(--prb-color-information-box-shadow);
   margin-bottom: 10px;
+  max-width: 600px;
 
   .prb-header {
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: bold;
     margin-bottom: 10px;
+    letter-spacing: 0.02em;
   }
 
   .prb-description {
     font-size: 1em;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    max-width: 600px;
   }
 
   .prb-code-block {
@@ -107,4 +112,5 @@ code {
   font-family: 'Brush Script MT', cursive;
   font-size: 1.7em;
   margin-bottom: 10px;
+  width: max(80%, 400px);
 }
