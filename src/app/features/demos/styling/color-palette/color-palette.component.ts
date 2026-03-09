@@ -31,6 +31,13 @@ export class ColorPaletteComponent implements DoCheck {
     this.surfaceColor.update(() => $dt('surface.500').value);
   }
 
+  getSurfaceColor() {
+    if (isPrbMode(prbModes.dark)){
+      return this.surfaceColor()?.dark?.value;
+    }
+    return this.surfaceColor()?.light?.value;
+  }
+
   primaryColor = signal<any>($dt('primary.500').value);
   surfaceColor = signal<any>($dt('surface.500').value);
   emeraldColor = signal<any>($dt('emerald.500').value);

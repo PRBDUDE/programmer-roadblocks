@@ -7,17 +7,10 @@
           [colorName]="'Primary'"
           [isSurfaceColor]=false
           [baseColor]="primaryColor()"/>
-        @if (isMode(prbModes.dark)) {
-          <prb-color-palette-generator
-            [colorName]="'Dark Surface'"
-            [isSurfaceColor]=true
-            [baseColor]="surfaceColor()?.dark?.value"/>
-        } @else {
-          <prb-color-palette-generator
-            [colorName]="'Light Surface'"
-            [isSurfaceColor]=true
-            [baseColor]="surfaceColor()?.light?.value"/>
-        }
+        <prb-color-palette-generator
+          [colorName]="'Dark Surface'"
+          [isSurfaceColor]=true
+          [baseColor]="getSurfaceColor()"/>
       </div>
     </p-accordion-content>
   </p-accordion-panel>
