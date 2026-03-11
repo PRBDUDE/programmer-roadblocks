@@ -11,6 +11,11 @@ export const ButtonPreset = {
           activeBorderColor: "{surface.500}",
           color: "{surface.950}",
         }
+      },
+      link: {
+        color: "{surface.800}",
+        hoverColor: "{surface.800}",
+        activeColor: "{surface.800}"
       }
     },
     dark: {
@@ -19,6 +24,11 @@ export const ButtonPreset = {
         secondary: {
           color: "{surface.50}"
         }
+      },
+      link: {
+        color: "{surface.50}",
+        hoverColor: "{surface.50}",
+        activeColor: "{surface.50}"
       }
     }
   }
