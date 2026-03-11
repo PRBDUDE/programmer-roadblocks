@@ -74,10 +74,10 @@ export class AppComponent implements OnInit, AfterViewInit {
     // console.log('PRB1:components\naccordion: ',
     //   JSON.stringify(Prb1Preset?.components?.accordion,
     //     undefined, 2));
-    // console.log('components\nbutton: ' +
-    //   JSON.stringify(
-    //     Prb0Preset?.components?.button,
-    //     undefined, 2));
+    console.log('components\nbutton.colorScheme: ',
+      JSON.stringify(
+        Prb0Preset?.components?.button?.colorScheme,
+        undefined, 2));
   }
 
   ngAfterViewInit(): void {
