@@ -55,6 +55,9 @@
       "@reactive-forms/*": [
         "./src/app/core/reactive-forms/*"
       ],
+      "@buttons/*": [
+        "./src/app/core/buttons/*"
+      ],
       "@themes/*": [
         "./src/app/themes/*"
       ]

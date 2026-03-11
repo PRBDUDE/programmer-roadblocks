@@ -9,7 +9,7 @@ import {NgTemplateOutlet} from "@angular/common";
     NgTemplateOutlet
   ],
   templateUrl: './button-card.component.html',
-  styleUrl: '../button-demo.component.scss'
+  styleUrl: '../../../features/demos/styling/button-demo/button-demo.component.scss'
 })
 export class ButtonCardComponent {
   comment = input<TemplateRef<any>>();

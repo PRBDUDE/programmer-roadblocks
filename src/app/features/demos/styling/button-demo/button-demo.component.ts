@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {ToggleSwitch} from "primeng/toggleswitch";
 import {FormsModule} from "@angular/forms";
-import {ButtonCardComponent} from "./button-card/button-card.component";
+import {ButtonCardComponent} from "@buttons/button-card/button-card.component";
 
 @Component({
   selector: 'prb-button-demo',
