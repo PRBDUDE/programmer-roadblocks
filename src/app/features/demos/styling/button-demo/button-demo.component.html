@@ -13,111 +13,237 @@
   </div>
 </div>
 <div class="prb-button-main-container">
-  <prb-button-card [label]="'Primary'"
-                   [comment]="primaryComment"
-                   [rounded]="rounded"
-                   [raised]="raised"
-                   [disabled]="disabled"/>
+  <prb-button-card [large]="primaryLarge"
+                   [small]="primarySmall"
+                   [comment]="primaryComment"/>
+  <ng-template #primaryLarge>
+    <prb-primary-button [label]="'Primary'"
+                        [rounded]="rounded"
+                        [raised]="raised"
+                        [disabled]="disabled"/>
+  </ng-template>
+  <ng-template #primarySmall>
+    <prb-primary-button [label]="'Primary'"
+                        [size]="'small'"
+                        [rounded]="rounded"
+                        [raised]="raised"
+                        [disabled]="disabled"/>
+  </ng-template>
   <ng-template #primaryComment>
     Primary button should only occur once on a page. It is the primary call-to-action on the page.
   </ng-template>
-  <prb-button-card [label]="'Secondary'"
-                   [comment]="secondaryComment"
-                   [severity]="'secondary'"
-                   [rounded]="rounded"
-                   [raised]="raised"
-                   [disabled]="disabled"/>
+
+  <prb-button-card [large]="secondaryLarge"
+                   [small]="secondarySmall"
+                   [comment]="secondaryComment"/>
+  <ng-template #secondaryLarge>
+    <prb-secondary-button [label]="'Secondary'"
+                          [rounded]="rounded"
+                          [raised]="raised"
+                          [disabled]="disabled"/>
+  </ng-template>
+  <ng-template #secondarySmall>
+    <prb-secondary-button [label]="'Secondary'"
+                          [size]="'small'"
+                          [rounded]="rounded"
+                          [raised]="raised"
+                          [disabled]="disabled"/>
+  </ng-template>
   <ng-template #secondaryComment>
     Secondary button can occur multiple times on a page.
   </ng-template>
-  <prb-button-card [label]="'Tertiary'"
-                   [comment]="tertiaryComment"
-                   [link]="true"
-                   [rounded]="rounded"
-                   [raised]="raised"
-                   [disabled]="disabled"/>
+
+  <prb-button-card [large]="tertiaryLarge"
+                   [small]="tertiarySmall"
+                   [comment]="tertiaryComment"/>
+  <ng-template #tertiaryLarge>
+    <prb-tertiary-button [label]="'Tertiary'"
+                         [rounded]="rounded"
+                         [raised]="raised"
+                         [disabled]="disabled"/>
+  </ng-template>
+  <ng-template #tertiarySmall>
+    <prb-tertiary-button [label]="'Tertiary'"
+                         [rounded]="rounded"
+                         [raised]="raised"
+                         [disabled]="disabled"/>
+  </ng-template>
   <ng-template #tertiaryComment>
     Tertiary button should only be used for settings or actions.
   </ng-template>
-  <prb-button-card [label]="'Danger'"
-                   [comment]="dangerComment"
-                   [severity]="'danger'"
-                   [icon]="'pi pi-exclamation-circle'"
-                   [iconPos]="'right'"
-                   [rounded]="rounded"
-                   [raised]="raised"
-                   [disabled]="disabled"/>
+
+  <prb-button-card [large]="dangerLarge"
+                   [small]="dangerSmall"
+                   [comment]="dangerComment"/>
+  <ng-template #dangerLarge>
+    <prb-danger-button [label]="'Danger'"
+                       [icon]="'pi pi-exclamation-circle'"
+                       [iconPos]="'right'"
+                       [rounded]="rounded"
+                       [raised]="raised"
+                       [disabled]="disabled"/>
+  </ng-template>
+  <ng-template #dangerSmall>
+    <prb-danger-button [label]="'Danger'"
+                       [size]="'small'"
+                       [icon]="'pi pi-exclamation-circle'"
+                       [iconPos]="'right'"
+                       [rounded]="rounded"
+                       [raised]="raised"
+                       [disabled]="disabled"/>
+  </ng-template>
   <ng-template #dangerComment>
     Danger button should be used when there is a dangerous action about to be taken.
     <br><br>Note that the background color of the badge can be changed by setting the badgeSeverity.
   </ng-template>
-  <prb-button-card [label]="'Success'"
-                   [comment]="successComment"
-                   [severity]="'success'"
-                   [icon]="'pi pi-thumbs-up-fill'"
-                   [iconPos]="'right'"
-                   [rounded]="rounded"
-                   [raised]="raised"
-                   [disabled]="disabled"/>
+
+  <prb-button-card [large]="successLarge"
+                   [small]="successSmall"
+                   [comment]="successComment"/>
+  <ng-template #successLarge>
+    <prb-success-button [label]="'Success'"
+                        [icon]="'pi pi-thumbs-up-fill'"
+                        [iconPos]="'right'"
+                        [rounded]="rounded"
+                        [raised]="raised"
+                        [disabled]="disabled"/>
+  </ng-template>
+  <ng-template #successSmall>
+    <prb-success-button [label]="'Success'"
+                        [size]="'small'"
+                        [icon]="'pi pi-thumbs-up-fill'"
+                        [iconPos]="'right'"
+                        [rounded]="rounded"
+                        [raised]="raised"
+                        [disabled]="disabled"/>
+  </ng-template>
   <ng-template #successComment>
     Success button should be used when the previous action was successful and you are telling the user that they can
     continue.
   </ng-template>
-  <prb-button-card [label]="'Information'"
-                   [comment]="informationComment"
-                   [severity]="'info'"
-                   [icon]="'pi pi-info-circle'"
-                   [iconPos]="'left'"
-                   [rounded]="rounded"
-                   [raised]="raised"
-                   [disabled]="disabled"/>
+
+  <prb-button-card [large]="informationLarge"
+                   [small]="informationSmall"
+                   [comment]="informationComment"/>
+  <ng-template #informationLarge>
+    <prb-information-button [label]="'Information'"
+                            [icon]="'pi pi-info-circle'"
+                            [iconPos]="'left'"
+                            [rounded]="rounded"
+                            [raised]="raised"
+                            [disabled]="disabled"/>
+  </ng-template>
+  <ng-template #informationSmall>
+    <prb-information-button [label]="'Information'"
+                            [size]="'small'"
+                            [icon]="'pi pi-info-circle'"
+                            [iconPos]="'left'"
+                            [rounded]="rounded"
+                            [raised]="raised"
+                            [disabled]="disabled"/>
+  </ng-template>
   <ng-template #informationComment>
     Information button should be used to let the user know that there are some informative notes that they should
     review.
   </ng-template>
-  <prb-button-card [label]="'Warning'"
-                   [comment]="warningComment"
-                   [severity]="'warn'"
-                   [icon]="'pi pi-exclamation-triangle'"
-                   [iconPos]="'left'"
-                   [badge]="'234'"
-                   [badgeSeverity]="'contrast'"
-                   [rounded]="rounded"
-                   [raised]="raised"
-                   [disabled]="disabled"/>
+
+  <prb-button-card [large]="warningLarge"
+                   [small]="warningSmall"
+                   [comment]="warningComment"/>
+  <ng-template #warningLarge>
+    <prb-warning-button [label]="'Warning'"
+                        [icon]="'pi pi-exclamation-triangle'"
+                        [iconPos]="'left'"
+                        [badge]="'234'"
+                        [badgeSeverity]="'contrast'"
+                        [rounded]="rounded"
+                        [raised]="raised"
+                        [disabled]="disabled"/>
+  </ng-template>
+  <ng-template #warningSmall>
+    <prb-warning-button [label]="'Warning'"
+                        [size]="'small'"
+                        [icon]="'pi pi-exclamation-triangle'"
+                        [iconPos]="'left'"
+                        [badge]="'234'"
+                        [badgeSeverity]="'contrast'"
+                        [rounded]="rounded"
+                        [raised]="raised"
+                        [disabled]="disabled"/>
+  </ng-template>
   <ng-template #warningComment>
     Warning button is used to tell the user that there are warnings that should be reviewed before continuing.
     <br><br>Note that you can also note the number of warnings by using the badge.
   </ng-template>
-  <prb-button-card [label]="'Help'"
-                   [comment]="helpComment"
-                   [severity]="'help'"
-                   [icon]="'pi pi-question-circle'"
-                   [iconPos]="'right'"
-                   [rounded]="rounded"
-                   [raised]="raised"
-                   [disabled]="disabled"/>
+
+  <prb-button-card [large]="helpLarge"
+                   [small]="helpSmall"
+                   [comment]="helpComment"/>
+  <ng-template #helpLarge>
+    <prb-help-button [label]="'Help'"
+                     [icon]="'pi pi-question-circle'"
+                     [iconPos]="'left'"
+                     [rounded]="rounded"
+                     [raised]="raised"
+                     [disabled]="disabled"/>
+  </ng-template>
+  <ng-template #helpSmall>
+    <prb-help-button [label]="'Help'"
+                     [size]="'small'"
+                     [icon]="'pi pi-question-circle'"
+                     [iconPos]="'left'"
+                     [rounded]="rounded"
+                     [raised]="raised"
+                     [disabled]="disabled"/>
+  </ng-template>
   <ng-template #helpComment>
     Help button is used to provide helpful information to the user.
   </ng-template>
-  <prb-button-card [label]="'Contrast'"
-                   [comment]="contrastComment"
-                   [severity]="'contrast'"
-                   [icon]="'pi pi-info-circle'"
-                   [iconPos]="'left'"
-                   [badge]="'3'"
-                   [badgeSeverity]="'danger'"
-                   [rounded]="rounded"
-                   [raised]="raised"
-                   [disabled]="disabled"/>
+
+  <prb-button-card [large]="contrastLarge"
+                   [small]="contrastSmall"
+                   [comment]="contrastComment"/>
+  <ng-template #contrastLarge>
+    <prb-contrast-button [label]="'Contrast'"
+                         [icon]="'pi pi-info-circle'"
+                         [iconPos]="'left'"
+                         [badge]="'3'"
+                         [badgeSeverity]="'danger'"
+                         [rounded]="rounded"
+                         [raised]="raised"
+                         [disabled]="disabled"/>
+  </ng-template>
+  <ng-template #contrastSmall>
+    <prb-contrast-button [label]="'Contrast'"
+                         [size]="'small'"
+                         [icon]="'pi pi-info-circle'"
+                         [iconPos]="'left'"
+                         [badge]="'3'"
+                         [badgeSeverity]="'danger'"
+                         [rounded]="rounded"
+                         [raised]="raised"
+                         [disabled]="disabled"/>
+  </ng-template>
   <ng-template #contrastComment>
     Contrasting button to use how ever you want.
   </ng-template>
-  <prb-button-card [label]="'Plain'"
-                   [comment]="plainComment"
-                   [rounded]="rounded"
-                   [raised]="raised"
-                   [disabled]="disabled"/>
+
+  <prb-button-card [large]="plainLarge"
+                   [small]="plainSmall"
+                   [comment]="plainComment"/>
+  <ng-template #plainLarge>
+    <prb-plain-button [label]="'Plain'"
+                      [rounded]="rounded"
+                      [raised]="raised"
+                      [disabled]="disabled"/>
+  </ng-template>
+  <ng-template #plainSmall>
+    <prb-plain-button [label]="'Plain'"
+                      [size]="'small'"
+                      [rounded]="rounded"
+                      [raised]="raised"
+                      [disabled]="disabled"/>
+  </ng-template>
   <ng-template #plainComment>
     Plain button to use how ever you want.
   </ng-template>
