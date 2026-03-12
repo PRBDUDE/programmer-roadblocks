@@ -1,0 +1,20 @@
+<div class="prb-button-group">
+  <div class="prb-button-container prb-button-large">
+    <ng-container [ngTemplateOutlet]="large() || defaultLarge"></ng-container>
+    <ng-template #defaultLarge>
+      Large button goes here...
+    </ng-template>
+  </div>
+  <div class="prb-button-container prb-button-small">
+    <ng-container [ngTemplateOutlet]="small() || defaultSmall"></ng-container>
+    <ng-template #defaultSmall>
+      Small button goes here...
+    </ng-template>
+  </div>
+  <div class="prb-button-comment">
+    <ng-container [ngTemplateOutlet]="comment() || defaultComment"></ng-container>
+    <ng-template #defaultComment>
+      Comment goes here...
+    </ng-template>
+  </div>
+</div>
