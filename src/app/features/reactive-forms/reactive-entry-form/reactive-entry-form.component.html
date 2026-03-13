@@ -57,7 +57,7 @@
         </div>
 
         <div class="prb-form-group">
-          <p-inputmask type="text" class="prb-form-input" [formControlName]="'zip'" autoClear="false"
+          <p-inputmask type="text" [formControlName]="'zip'" autoClear="false"
                        placeholder="enter ZIP code" mask="99999?-9999" inputId="zip_code"></p-inputmask>
           <label for="zip_code" class="prb-form-group-label"
                  [class.required]="zipControl.hasValidator(Validators.required)">Zip</label>
@@ -75,7 +75,7 @@
         </div>
 
         <div class="prb-form-group">
-          <p-inputmask type="phone" class="prb-form-input prb-form-group-input" [formControlName]="'phone'"
+          <p-inputmask type="phone" [formControlName]="'phone'"
                        autoClear="false" placeholder="(999) 999-9999" mask="(999) 999-9999"
                        inputId="phone_number"></p-inputmask>
           <label for="phone_number" class="prb-form-group-label"
@@ -85,9 +85,9 @@
       </div>
 
       <div class="prb-button-container">
-        <p-button label="Submit" type="submit" class="btn btn-primary" [size]="'small'" [disabled]="isFormValid()"/>
-        <p-button label="Reset" severity="secondary" (onClick)="entryForm.reset()" class="btn btn-secondary"
-                  [size]="'small'" [disabled]="isFormTouched()"/>
+        <prb-primary-button label="Submit" type="submit" [size]="'small'" [disabled]="isFormValid()"/>
+        <prb-secondary-button label="Reset" (onClick)="entryForm.reset()" [size]="'small'"
+                              [disabled]="isFormTouched()"/>
       </div>
     </form>
   </div>
