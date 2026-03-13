@@ -7,4 +7,7 @@
           [rounded]="rounded()"
           [raised]="raised()"
           [size]="size()"
-          [disabled]="disabled()"/>
+          [disabled]="disabled()"
+          (onClick)="onClick.emit($event)"
+          (onFocus)="onFocus.emit($event)"
+          (onBlur)="onBlur.emit($event)"/>

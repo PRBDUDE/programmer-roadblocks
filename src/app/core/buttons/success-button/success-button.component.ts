@@ -1,5 +1,5 @@
-import {Component, input} from '@angular/core';
-import {ButtonSize} from "@buttons/button-type";
+import {Component, EventEmitter, input, Output} from '@angular/core';
+import {ButtonSize, Tabindex} from "@buttons/button-type";
 import {Button, ButtonIconPosition, ButtonSeverity} from "primeng/button";
 
 @Component({
@@ -10,7 +10,8 @@ import {Button, ButtonIconPosition, ButtonSeverity} from "primeng/button";
   templateUrl: './success-button.component.html',
   styleUrl: './success-button.component.scss',
   host: {
-    '[attr.data-button-type]': '"success"'
+    '[attr.data-button-type]': '"success"',
+    '[attr.tabindex]': '"0"'
   }
 })
 export class SuccessButtonComponent {
@@ -23,4 +24,9 @@ export class SuccessButtonComponent {
   iconPos = input<ButtonIconPosition>('left');
   badge = input<string | undefined>();
   badgeSeverity = input<ButtonSeverity>();
+  tabindex = input<Tabindex>();
+
+  @Output() onClick: EventEmitter<MouseEvent> = new EventEmitter();
+  @Output() onFocus: EventEmitter<FocusEvent> = new EventEmitter<FocusEvent>();
+  @Output() onBlur: EventEmitter<FocusEvent> = new EventEmitter<FocusEvent>();
 }

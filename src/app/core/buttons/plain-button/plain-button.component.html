@@ -3,4 +3,7 @@
           [raised]="raised()"
           [size]="size()"
           [disabled]="disabled()"
-          [dt]="plainButton"/>
+          [dt]="plainButton"
+          (onClick)="onClick.emit($event)"
+          (onFocus)="onFocus.emit($event)"
+          (onBlur)="onBlur.emit($event)"/>
