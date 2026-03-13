@@ -1,6 +1,6 @@
-import {Component, input} from '@angular/core';
+import {Component, EventEmitter, input, Output} from '@angular/core';
 import {Button} from "primeng/button";
-import {ButtonSize} from "@buttons/button-type";
+import {ButtonSize, Tabindex} from "@buttons/button-type";
 
 @Component({
   selector: 'prb-plain-button',
@@ -10,7 +10,8 @@ import {ButtonSize} from "@buttons/button-type";
   templateUrl: './plain-button.component.html',
   styleUrl: './plain-button.component.scss',
   host: {
-    '[attr.data-button-type]': '"plain"'
+    '[attr.data-button-type]': '"plain"',
+    '[attr.tabindex]': '"0"'
   }
 })
 export class PlainButtonComponent {
@@ -19,6 +20,12 @@ export class PlainButtonComponent {
   rounded = input<boolean>(false);
   raised = input<boolean>(false);
   disabled = input<boolean>(false);
+  tabindex = input<Tabindex>();
+  type = input<string>('button');
+
+  @Output() onClick: EventEmitter<MouseEvent> = new EventEmitter();
+  @Output() onFocus: EventEmitter<FocusEvent> = new EventEmitter<FocusEvent>();
+  @Output() onBlur: EventEmitter<FocusEvent> = new EventEmitter<FocusEvent>();
 
   plainButton = {
     colorScheme: {

@@ -1,6 +1,5 @@
 import {Component, signal} from '@angular/core';
 import {Step, StepList, StepPanel, StepPanels, Stepper} from "primeng/stepper";
-import {Button} from "primeng/button";
 import {StepperFourComponent} from "./stepper-four/stepper-four.component";
 import {StepperThreeComponent} from "./stepper-three/stepper-three.component";
 import {StepperTwoComponent} from "./stepper-two/stepper-two.component";
@@ -10,6 +9,8 @@ import {DebugOutputCardComponent} from "@utility/debug-output-card.component";
 import {StepperOneComponent} from "./stepper-one/stepper-one.component";
 import {animate, state, style, transition, trigger} from "@angular/animations";
 import {isPrbMode, prbModes} from "@utility/prb-mode";
+import {PrimaryButtonComponent} from "@buttons/primary-button/primary-button.component";
+import {SecondaryButtonComponent} from "@buttons/secondary-button/secondary-button.component";
 
 @Component({
   selector: 'prb-stepper',
@@ -19,14 +20,15 @@ import {isPrbMode, prbModes} from "@utility/prb-mode";
     Step,
     StepPanels,
     StepPanel,
-    Button,
     StepperOneComponent,
     StepperTwoComponent,
     StepperThreeComponent,
     StepperFourComponent,
     FormsModule,
     ToggleSwitch,
-    DebugOutputCardComponent
+    DebugOutputCardComponent,
+    PrimaryButtonComponent,
+    SecondaryButtonComponent
   ],
   templateUrl: './stepper.component.html',
   styleUrl: './stepper.component.scss',

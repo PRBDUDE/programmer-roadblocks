@@ -1,3 +1,4 @@
 type ButtonSize = 'large' | 'small';
+type Tabindex = number | undefined;
 
-export type {ButtonSize}
+export type {ButtonSize, Tabindex}

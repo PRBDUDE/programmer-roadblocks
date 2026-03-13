@@ -1,6 +1,6 @@
-import {Component, input} from '@angular/core';
+import {Component, EventEmitter, input, Output} from '@angular/core';
 import {Button, ButtonIconPosition, ButtonSeverity} from "primeng/button";
-import {ButtonSize} from "@buttons/button-type";
+import {ButtonSize, Tabindex} from "@buttons/button-type";
 
 @Component({
   selector: 'prb-warning-button',
@@ -10,7 +10,8 @@ import {ButtonSize} from "@buttons/button-type";
   templateUrl: './warning-button.component.html',
   styleUrl: './warning-button.component.scss',
   host: {
-    '[attr.data-button-type]': '"warning"'
+    '[attr.data-button-type]': '"warning"',
+    '[attr.tabindex]': '"0"'
   }
 })
 export class WarningButtonComponent {
@@ -23,4 +24,10 @@ export class WarningButtonComponent {
   iconPos = input<ButtonIconPosition>('right');
   badge = input<string | undefined>();
   badgeSeverity = input<ButtonSeverity>();
+  tabindex = input<Tabindex>();
+  type = input<string>('button');
+
+  @Output() onClick: EventEmitter<MouseEvent> = new EventEmitter();
+  @Output() onFocus: EventEmitter<FocusEvent> = new EventEmitter<FocusEvent>();
+  @Output() onBlur: EventEmitter<FocusEvent> = new EventEmitter<FocusEvent>();
 }

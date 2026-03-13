@@ -1,16 +1,17 @@
-import {Component, input} from '@angular/core';
+import {Component, EventEmitter, input, Output} from '@angular/core';
 import {Button, ButtonIconPosition, ButtonSeverity} from "primeng/button";
-import {ButtonSize} from "@buttons/button-type";
+import {ButtonSize, Tabindex} from "@buttons/button-type";
 
 @Component({
   selector: 'prb-information-button',
-    imports: [
-        Button
-    ],
+  imports: [
+    Button
+  ],
   templateUrl: './information-button.component.html',
   styleUrl: './information-button.component.scss',
   host: {
-    '[attr.data-button-type]': '"information"'
+    '[attr.data-button-type]': '"information"',
+    '[attr.tabindex]': '"0"'
   }
 })
 export class InformationButtonComponent {
@@ -23,4 +24,10 @@ export class InformationButtonComponent {
   iconPos = input<ButtonIconPosition>('left');
   badge = input<string | undefined>();
   badgeSeverity = input<ButtonSeverity>();
+  tabindex = input<Tabindex>();
+  type = input<string | undefined>();
+
+  @Output() onClick: EventEmitter<MouseEvent> = new EventEmitter();
+  @Output() onFocus: EventEmitter<FocusEvent> = new EventEmitter<FocusEvent>();
+  @Output() onBlur: EventEmitter<FocusEvent> = new EventEmitter<FocusEvent>();
 }

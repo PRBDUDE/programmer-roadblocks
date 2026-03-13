@@ -5,11 +5,12 @@ import {StepsOneComponent} from "./steps-one/steps-one.component";
 import {StepsTwoComponent} from "./steps-two/steps-two.component";
 import {StepsThreeComponent} from "./steps-three/steps-three.component";
 import {StepsFourComponent} from "./steps-four/steps-four.component";
-import {Button} from "primeng/button";
 import {ToggleSwitch} from "primeng/toggleswitch";
 import {FormsModule} from "@angular/forms";
 import {DebugOutputCardComponent} from "@utility/debug-output-card.component";
 import {isPrbMode, prbModes} from "@utility/prb-mode";
+import {SecondaryButtonComponent} from "@buttons/secondary-button/secondary-button.component";
+import {PrimaryButtonComponent} from "@buttons/primary-button/primary-button.component";
 
 @Component({
   selector: 'prb-steps',
@@ -19,10 +20,11 @@ import {isPrbMode, prbModes} from "@utility/prb-mode";
     StepsTwoComponent,
     StepsThreeComponent,
     StepsFourComponent,
-    Button,
     ToggleSwitch,
     FormsModule,
-    DebugOutputCardComponent
+    DebugOutputCardComponent,
+    SecondaryButtonComponent,
+    PrimaryButtonComponent
   ],
   templateUrl: './steps.component.html',
   styleUrl: './steps.component.scss'
