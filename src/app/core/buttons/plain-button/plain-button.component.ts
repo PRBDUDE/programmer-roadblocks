@@ -21,6 +21,7 @@ export class PlainButtonComponent {
   raised = input<boolean>(false);
   disabled = input<boolean>(false);
   tabindex = input<Tabindex>();
+  type = input<string>('button');
 
   @Output() onClick: EventEmitter<MouseEvent> = new EventEmitter();
   @Output() onFocus: EventEmitter<FocusEvent> = new EventEmitter<FocusEvent>();

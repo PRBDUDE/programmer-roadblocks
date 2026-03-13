@@ -25,6 +25,7 @@ export class ContrastButtonComponent {
   badge = input<string | undefined>();
   badgeSeverity = input<ButtonSeverity>();
   tabindex = input<Tabindex>();
+  type = input<string>('button');
 
   @Output() onClick: EventEmitter<MouseEvent> = new EventEmitter();
   @Output() onFocus: EventEmitter<FocusEvent> = new EventEmitter<FocusEvent>();

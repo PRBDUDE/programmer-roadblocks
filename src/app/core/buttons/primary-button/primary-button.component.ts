@@ -11,7 +11,7 @@ import {ButtonSize, Tabindex} from "@buttons/button-type";
   styleUrl: './primary-button.component.scss',
   host: {
     '[attr.data-button-type]': '"primary"',
-    '[attr.tabindex]': '"0"'
+    '[attr.tabindex]': 'tabindex()'
   }
 })
 export class PrimaryButtonComponent {
@@ -25,6 +25,7 @@ export class PrimaryButtonComponent {
   badge = input<string | undefined>();
   badgeSeverity = input<ButtonSeverity>();
   tabindex = input<Tabindex>();
+  type = input<string | undefined>();
 
   @Output() onClick: EventEmitter<MouseEvent> = new EventEmitter();
   @Output() onFocus: EventEmitter<FocusEvent> = new EventEmitter<FocusEvent>();

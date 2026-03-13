@@ -25,6 +25,7 @@ export class InformationButtonComponent {
   badge = input<string | undefined>();
   badgeSeverity = input<ButtonSeverity>();
   tabindex = input<Tabindex>();
+  type = input<string | undefined>();
 
   @Output() onClick: EventEmitter<MouseEvent> = new EventEmitter();
   @Output() onFocus: EventEmitter<FocusEvent> = new EventEmitter<FocusEvent>();
