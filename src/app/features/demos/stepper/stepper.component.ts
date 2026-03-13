@@ -1,6 +1,5 @@
 import {Component, signal} from '@angular/core';
 import {Step, StepList, StepPanel, StepPanels, Stepper} from "primeng/stepper";
-import {Button} from "primeng/button";
 import {StepperFourComponent} from "./stepper-four/stepper-four.component";
 import {StepperThreeComponent} from "./stepper-three/stepper-three.component";
 import {StepperTwoComponent} from "./stepper-two/stepper-two.component";
@@ -21,7 +20,6 @@ import {SecondaryButtonComponent} from "@buttons/secondary-button/secondary-butt
     Step,
     StepPanels,
     StepPanel,
-    Button,
     StepperOneComponent,
     StepperTwoComponent,
     StepperThreeComponent,

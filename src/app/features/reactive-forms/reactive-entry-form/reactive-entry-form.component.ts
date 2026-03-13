@@ -1,8 +1,6 @@
 import {Component, inject, OnInit} from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators} from "@angular/forms";
 import {DebugOutputCardComponent} from "@utility/debug-output-card.component";
-
-import {Button} from "primeng/button";
 import {InputMask} from "primeng/inputmask";
 import {InputText} from "primeng/inputtext";
 import {DatePicker} from "primeng/datepicker";
@@ -18,7 +16,6 @@ import {SecondaryButtonComponent} from "@buttons/secondary-button/secondary-butt
     ReactiveFormsModule,
     DebugOutputCardComponent,
     DebugOutputCardComponent,
-    Button,
     InputMask,
     InputText,
     DatePicker,

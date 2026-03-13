@@ -4,9 +4,9 @@ import {ButtonSize, Tabindex} from "@buttons/button-type";
 
 @Component({
   selector: 'prb-primary-button',
-    imports: [
-        Button
-    ],
+  imports: [
+    Button
+  ],
   templateUrl: './primary-button.component.html',
   styleUrl: './primary-button.component.scss',
   host: {
