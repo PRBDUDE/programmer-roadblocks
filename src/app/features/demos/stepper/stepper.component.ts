@@ -10,6 +10,8 @@ import {DebugOutputCardComponent} from "@utility/debug-output-card.component";
 import {StepperOneComponent} from "./stepper-one/stepper-one.component";
 import {animate, state, style, transition, trigger} from "@angular/animations";
 import {isPrbMode, prbModes} from "@utility/prb-mode";
+import {PrimaryButtonComponent} from "@buttons/primary-button/primary-button.component";
+import {SecondaryButtonComponent} from "@buttons/secondary-button/secondary-button.component";
 
 @Component({
   selector: 'prb-stepper',
@@ -26,7 +28,9 @@ import {isPrbMode, prbModes} from "@utility/prb-mode";
     StepperFourComponent,
     FormsModule,
     ToggleSwitch,
-    DebugOutputCardComponent
+    DebugOutputCardComponent,
+    PrimaryButtonComponent,
+    SecondaryButtonComponent
   ],
   templateUrl: './stepper.component.html',
   styleUrl: './stepper.component.scss',
