@@ -10,6 +10,8 @@ import {ToggleSwitch} from "primeng/toggleswitch";
 import {FormsModule} from "@angular/forms";
 import {DebugOutputCardComponent} from "@utility/debug-output-card.component";
 import {isPrbMode, prbModes} from "@utility/prb-mode";
+import {SecondaryButtonComponent} from "@buttons/secondary-button/secondary-button.component";
+import {PrimaryButtonComponent} from "@buttons/primary-button/primary-button.component";
 
 @Component({
   selector: 'prb-steps',
@@ -22,7 +24,9 @@ import {isPrbMode, prbModes} from "@utility/prb-mode";
     Button,
     ToggleSwitch,
     FormsModule,
-    DebugOutputCardComponent
+    DebugOutputCardComponent,
+    SecondaryButtonComponent,
+    PrimaryButtonComponent
   ],
   templateUrl: './steps.component.html',
   styleUrl: './steps.component.scss'
