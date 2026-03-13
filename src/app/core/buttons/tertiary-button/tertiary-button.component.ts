@@ -1,12 +1,12 @@
-import {Component, EventEmitter, input, Output} from '@angular/core';
-import {Button, ButtonIconPosition, ButtonSeverity} from "primeng/button";
-import {ButtonSize, Tabindex} from "@buttons/button-type";
+import {Component} from '@angular/core';
+import {Button} from "primeng/button";
+import {CoreButton} from "@buttons/core-button";
 
 @Component({
   selector: 'prb-tertiary-button',
-    imports: [
-        Button
-    ],
+  imports: [
+    Button
+  ],
   templateUrl: './tertiary-button.component.html',
   styleUrl: './tertiary-button.component.scss',
   host: {
@@ -14,16 +14,6 @@ import {ButtonSize, Tabindex} from "@buttons/button-type";
     '[attr.tabindex]': '"0"'
   }
 })
-export class TertiaryButtonComponent {
-  label = input<string>('Tertiary');
-  size = input<ButtonSize>('large');
-  rounded = input<boolean>(false);
-  raised = input<boolean>(false);
-  disabled = input<boolean>(false);
-  tabindex = input<Tabindex>();
-  type = input<string>('button');
+export class TertiaryButtonComponent extends CoreButton {
 
-  @Output() onClick: EventEmitter<MouseEvent> = new EventEmitter();
-  @Output() onFocus: EventEmitter<FocusEvent> = new EventEmitter<FocusEvent>();
-  @Output() onBlur: EventEmitter<FocusEvent> = new EventEmitter<FocusEvent>();
 }

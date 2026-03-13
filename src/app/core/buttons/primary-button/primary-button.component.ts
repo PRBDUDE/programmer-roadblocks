@@ -1,6 +1,6 @@
-import {Component, EventEmitter, input, Output} from '@angular/core';
-import {Button, ButtonIconPosition, ButtonSeverity} from "primeng/button";
-import {ButtonSize, Tabindex} from "@buttons/button-type";
+import {Component} from '@angular/core';
+import {Button} from "primeng/button";
+import {CoreButton} from "@buttons/core-button";
 
 @Component({
   selector: 'prb-primary-button',
@@ -14,20 +14,6 @@ import {ButtonSize, Tabindex} from "@buttons/button-type";
     '[attr.tabindex]': 'tabindex()'
   }
 })
-export class PrimaryButtonComponent {
-  label = input<string>('Primary');
-  size = input<ButtonSize>('large');
-  rounded = input<boolean>(false);
-  raised = input<boolean>(false);
-  disabled = input<boolean>(false);
-  icon = input<string | undefined>();
-  iconPos = input<ButtonIconPosition>('left');
-  badge = input<string | undefined>();
-  badgeSeverity = input<ButtonSeverity>();
-  tabindex = input<Tabindex>();
-  type = input<string | undefined>();
+export class PrimaryButtonComponent extends CoreButton {
 
-  @Output() onClick: EventEmitter<MouseEvent> = new EventEmitter();
-  @Output() onFocus: EventEmitter<FocusEvent> = new EventEmitter<FocusEvent>();
-  @Output() onBlur: EventEmitter<FocusEvent> = new EventEmitter<FocusEvent>();
 }
