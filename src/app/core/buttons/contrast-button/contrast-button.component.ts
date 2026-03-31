@@ -1,11 +1,13 @@
 import {Component, EventEmitter, input, Output} from '@angular/core';
-import {ButtonSize, Tabindex} from "@buttons/button-type";
+import {ButtonSize, Tabindex, TipPosition} from "@buttons/button-type";
 import {Button, ButtonIconPosition, ButtonSeverity} from "primeng/button";
+import {Tooltip} from "primeng/tooltip";
 
 @Component({
   selector: 'prb-contrast-button',
   imports: [
-    Button
+    Button,
+    Tooltip
   ],
   templateUrl: './contrast-button.component.html',
   styleUrl: './contrast-button.component.scss',
@@ -26,6 +28,9 @@ export class ContrastButtonComponent {
   badgeSeverity = input<ButtonSeverity>();
   tabindex = input<Tabindex>();
   type = input<string>('button');
+  tooltip = input<string | undefined>();
+  showTipDelay = input<number>(0);
+  showTipPosition = input<TipPosition>('top');
 
   @Output() onClick: EventEmitter<MouseEvent> = new EventEmitter();
   @Output() onFocus: EventEmitter<FocusEvent> = new EventEmitter<FocusEvent>();

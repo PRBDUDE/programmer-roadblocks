@@ -4,7 +4,10 @@
           [size]="size()"
           [disabled]="disabled()"
           [dt]="plainButton"
-          type="type()"
+          [pTooltip]="tooltip()"
+          [showDelay]="showTipDelay()"
+          [tooltipPosition]="showTipPosition()"
+          [type]="type()"
           (onClick)="onClick.emit($event)"
           (onFocus)="onFocus.emit($event)"
           (onBlur)="onBlur.emit($event)"/>
