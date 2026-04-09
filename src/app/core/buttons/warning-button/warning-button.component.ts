@@ -1,31 +1,36 @@
 import {Component, EventEmitter, input, Output} from '@angular/core';
 import {Button, ButtonIconPosition, ButtonSeverity} from "primeng/button";
-import {ButtonSize, Tabindex} from "@buttons/button-type";
+import {Tooltip} from "primeng/tooltip";
+import {ButtonSize, Tabindex, TipPosition} from "@buttons/button-type";
 
 @Component({
   selector: 'prb-warning-button',
-    imports: [
-        Button
-    ],
+  imports: [
+    Button,
+    Tooltip
+  ],
   templateUrl: './warning-button.component.html',
   styleUrl: './warning-button.component.scss',
   host: {
     '[attr.data-button-type]': '"warning"',
-    '[attr.tabindex]': '"0"'
+    '[attr.tabindex]': 'tabindex()'
   }
 })
 export class WarningButtonComponent {
-  label = input<string>('Warning');
+  label = input<string>('undefined');
   size = input<ButtonSize>('large');
   rounded = input<boolean>(false);
   raised = input<boolean>(false);
   disabled = input<boolean>(false);
-  icon = input<string | undefined>('pi pi-exclamation-triangle');
-  iconPos = input<ButtonIconPosition>('right');
+  icon = input<string | undefined>();
+  iconPos = input<ButtonIconPosition>('left');
   badge = input<string | undefined>();
   badgeSeverity = input<ButtonSeverity>();
   tabindex = input<Tabindex>();
   type = input<string>('button');
+  tooltip = input<string | undefined>();
+  showTipDelay = input<number>(0);
+  showTipPosition = input<TipPosition>('top');
 
   @Output() onClick: EventEmitter<MouseEvent> = new EventEmitter();
   @Output() onFocus: EventEmitter<FocusEvent> = new EventEmitter<FocusEvent>();

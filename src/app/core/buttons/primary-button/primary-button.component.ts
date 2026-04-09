@@ -1,11 +1,13 @@
 import {Component, EventEmitter, input, Output} from '@angular/core';
 import {Button, ButtonIconPosition, ButtonSeverity} from "primeng/button";
-import {ButtonSize, Tabindex} from "@buttons/button-type";
+import {Tooltip} from "primeng/tooltip";
+import {ButtonSize, Tabindex, TipPosition} from "@buttons/button-type";
 
 @Component({
   selector: 'prb-primary-button',
   imports: [
-    Button
+    Button,
+    Tooltip
   ],
   templateUrl: './primary-button.component.html',
   styleUrl: './primary-button.component.scss',
@@ -25,7 +27,10 @@ export class PrimaryButtonComponent {
   badge = input<string | undefined>();
   badgeSeverity = input<ButtonSeverity>();
   tabindex = input<Tabindex>();
-  type = input<string | undefined>();
+  type = input<string>('button');
+  tooltip = input<string | undefined>();
+  showTipDelay = input<number>(0);
+  showTipPosition = input<TipPosition>('top');
 
   @Output() onClick: EventEmitter<MouseEvent> = new EventEmitter();
   @Output() onFocus: EventEmitter<FocusEvent> = new EventEmitter<FocusEvent>();
