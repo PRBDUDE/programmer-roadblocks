@@ -2,15 +2,15 @@
 
 :root {
   --prb-card-color-background: var(--p-surface-100);
-  --prb-card-text-color: var(--p-surface-100);
+  --prb-card-color-text: var(--p-surface-100);
   --prb-card-color-border: #333333;
   --prb-card-border-radius: 10px;
-  --prb-card-shadow-color: var(--p-surface-400);
+  --prb-card-color-shadow: var(--p-surface-400);
 
   &[class*="prb-dark-theme"] {
     --prb-card-color-background: var(--p-surface-600);
-    --prb-card-text-color: var(--p-surface-50);
+    --prb-card-color-text: var(--p-surface-50);
     --prb-card-color-border: var(--p-surface-900);
-    --prb-card-shadow-color: var(--p-surface-500);
+    --prb-card-color-shadow: var(--p-surface-500);
   }
 }

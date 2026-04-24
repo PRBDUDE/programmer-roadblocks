@@ -4,10 +4,11 @@
   width: fit-content;
   margin: 1rem;
   padding: 1rem;
+  color: var(--prb-card-color-text);
   background-color: var(--prb-card-color-background);
   border-radius: var(--prb-card-border-radius);
   border: 1px solid var(--prb-card-color-border);
-  box-shadow: 5px 5px 10px var(--prb-card-color-shadow);
+  box-shadow: 6px 6px 10px var(--prb-card-color-shadow);
 
   .result {
     margin-top: 1rem;
