@@ -16,7 +16,6 @@ export class PrimengDatepickerComponent {
   @Output() outDate = new EventEmitter<Date>();
 
   protected onClose() {
-    console.log('onClose - selectedDate: ', this.selectedDate);
     this.outDate.emit(this.selectedDate);
   }
 }
