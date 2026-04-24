@@ -1,0 +1,12 @@
+// AI Question: how to style disabled select to display cursor not-allowed
+
+p-select.p-disabled {
+  cursor: not-allowed !important;
+  pointer-events: auto !important;
+}
+
+p-select.p-disabled .p-select-label,
+p-select.p-disabled .p-select-dropdown {
+  cursor: not-allowed !important;
+  pointer-events: none;
+}
