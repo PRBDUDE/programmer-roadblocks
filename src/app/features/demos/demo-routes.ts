@@ -72,5 +72,23 @@ export const demo_routes: Routes = [
     loadComponent: () => import('./tooltip/tooltip.component')
       .then(m => m.TooltipComponent),
     title: 'Tooltip'
+  },
+  {
+    path: 'basic-datepicker',
+    loadComponent: () => import('./datepicker/basic-datepicker/basic-datepicker.component')
+      .then(m => m.BasicDatepickerComponent),
+    title: 'Basic Datepicker'
+  },
+  {
+    path: 'primeng-datepicker',
+    loadComponent: () => import('./datepicker/primeng-datepicker/primeng-datepicker.component')
+      .then(m => m.PrimengDatepickerComponent),
+    title: 'PrimeNG Datepicker'
+  },
+  {
+    path: 'datepicker',
+    loadComponent: () => import('./datepicker/datepicker.component')
+      .then(m => m.DatepickerComponent),
+    title: 'Datepicker'
   }
 ]

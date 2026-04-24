@@ -3,7 +3,7 @@
   border: 1px solid var(--prb-card-color-border);
   padding: 2rem;
   max-width: 900px;
-  border-radius: 10px;
+  border-radius: var(--prb-card-border-radius);
 }
 
 .prb-flex {

@@ -6,6 +6,7 @@ import {demoTooltipMenu} from "./demo-tooltip";
 import {demoStepperMenu} from "./demo-stepper-menu";
 import {demoStepsMenu} from "./demo-steps-menu";
 import {demoAccordionMenu} from "./demo-accordion-menu";
+import {demoDatepicker} from "@header/menu/demo-datepicker";
 
 export function demosMenu() {
   return {
@@ -22,7 +23,8 @@ export function demosMenu() {
         demoStepsMenu(),
         demoStepperMenu(),
         demoTimelineMenu(),
-        demoTooltipMenu()
+        demoTooltipMenu(),
+        demoDatepicker()
       ]
     ]
   }
