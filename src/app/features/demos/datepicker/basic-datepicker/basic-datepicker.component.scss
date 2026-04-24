@@ -1,0 +1,19 @@
+.ui-datepicker {
+  width: 180px;
+  display: grid;
+  grid-template-areas:
+    "label input";
+  grid-template-columns: 1fr 2fr;
+  margin-bottom: 1rem;
+}
+
+label {
+  grid-area: label;
+  letter-spacing: 0.05em;
+  margin-right: 10px;
+  padding-top: 0.5em;
+}
+
+.input {
+  grid-area: input;
+}

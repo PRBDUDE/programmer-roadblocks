@@ -1,0 +1,14 @@
+<div class="ui-datepicker">
+  <label>Year</label>
+  <p-select class="input" [options]="years" [(ngModel)]="selectedYear"/>
+</div>
+<div class="ui-datepicker">
+  <label>Month</label>
+  <p-select class="input" [options]="months" [(ngModel)]="selectedMonth" optionLabel="name"
+            (onChange)="onMonthChange($event)"/>
+</div>
+<div class="ui-datepicker">
+  <label>Day</label>
+  <p-select class="input" [options]="days" [(ngModel)]="selectedDay" [disabled]="!selectedMonth"
+  (onChange)="onDayChange($event)"/>
+</div>
