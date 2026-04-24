@@ -44,7 +44,7 @@ export class BasicDatepickerComponent implements OnInit {
     console.log('Month: ', $event.value?.name, ' Code: ', $event.value?.code, '')
     if ($event.value) {
       this.days = [];
-      for (let day = 1; day <= new Date(this.selectedYear, this.selectedMonth.code, 0).getDate(); day++) {
+      for (let day = 1; day <= new Date(this.selectedYear, (this.selectedMonth.code + 1), 0).getDate(); day++) {
         this.days.push(day);
       }
     }
@@ -53,8 +53,13 @@ export class BasicDatepickerComponent implements OnInit {
   protected onDayChange($event: SelectChangeEvent) {
     if (this.selectedMonth && this.selectedYear) {
       const date = new Date(this.selectedYear, this.selectedMonth.code, $event.value);
-      console.log('Day: ', date);
       this.outDate.emit(date);
     }
+  }
+
+  protected onYearChange() {
+    this.selectedMonth = undefined;
+    this.selectedDay = undefined;
+    this.outDate.emit(undefined);
   }
 }
