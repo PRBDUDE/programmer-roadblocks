@@ -1,3 +1,7 @@
+:root {
+  --prb-input-focus-ring-color: var(--p-inputtext-focus-border-color);
+}
+
 input {
   font-size: 1em;
   padding: 0.3em;
