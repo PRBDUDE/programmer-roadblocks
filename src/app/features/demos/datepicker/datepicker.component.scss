@@ -41,6 +41,10 @@
     letter-spacing: 0.1rem;
     border: none;
 
+    &::placeholder {
+      opacity: 0.6;
+    }
+
     &:focus {
       outline: 1px solid var(--prb-input-focus-ring-color);
     }

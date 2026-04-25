@@ -14,7 +14,7 @@
     PrimeNG Date Picker
   </div>
   <div class="card-content">
-    <prb-primeng-datepicker (outDate)="onPrimengDateChange($event)"/>
+    <prb-primeng-datepicker id="primeng-date" (outDate)="onPrimengDateChange($event)"/>
     <div class="result">
       PrimeNG Date Result: {{ selectedPrimengDate | date: 'MM/dd/yyyy' }}
     </div>
@@ -25,8 +25,8 @@
     HTML5 Date Picker
   </div>
   <div class="card-content">
-    <label for="html5">Date</label>
-    <input type="date" id="html5" [(ngModel)]="selectedHtmlDate"/>
+    <label for="eff-date">Effective Date</label>
+    <input type="date" id="eff-date" name="eff-date" [(ngModel)]="selectedHtmlDate"/>
     <div class="result">
       HTML5 Date Result: {{ selectedHtmlDate | date: 'MM/dd/yyyy' }}
     </div>

@@ -1,4 +1,8 @@
 <div id="ui-datepicker">
-  <label>Date</label>
-  <p-datePicker [(ngModel)]="selectedDate" (onClose)="onClose()" [showIcon]="true"/>
+  <label for="{{_rfInputId}}">Date</label>
+  <p-datePicker [(ngModel)]="selectedDate"
+                inputId="{{_rfInputId}}"
+                placeholder="mm/dd/yyyy"
+                (onClose)="onClose()"
+                [showIcon]="true"/>
 </div>
