@@ -1,12 +1,34 @@
 <div class="date-card">
-  <prb-basic-datepicker (outDate)="onBasicDateChange($event)"/>
-  <div class="result">
-    Basic Date Result: {{ selectedBasicDate | date: 'MM/dd/yyyy' }}
+  <div class="card-title">
+    Basic Date Picker
+  </div>
+  <div class="card-content">
+    <prb-basic-datepicker (outDate)="onBasicDateChange($event)"/>
+    <div class="result">
+      Basic Date Result: {{ selectedBasicDate | date: 'MM/dd/yyyy' }}
+    </div>
   </div>
 </div>
 <div class="date-card">
-  <prb-primeng-datepicker (outDate)="onPrimengDateChange($event)"/>
-  <div class="result">
-    PrimeNG Date Result: {{ selectedPrimengDate | date: 'MM/dd/yyyy' }}
+  <div class="card-title">
+    PrimeNG Date Picker
+  </div>
+  <div class="card-content">
+    <prb-primeng-datepicker (outDate)="onPrimengDateChange($event)"/>
+    <div class="result">
+      PrimeNG Date Result: {{ selectedPrimengDate | date: 'MM/dd/yyyy' }}
+    </div>
+  </div>
+</div>
+<div class="date-card">
+  <div class="card-title">
+    HTML5 Date Picker
+  </div>
+  <div class="card-content">
+    <label for="html5">Date</label>
+    <input type="date" id="html5" [(ngModel)]="selectedHtmlDate"/>
+    <div class="result">
+      HTML5 Date Result: {{ selectedHtmlDate | date: 'MM/dd/yyyy' }}
+    </div>
   </div>
 </div>
