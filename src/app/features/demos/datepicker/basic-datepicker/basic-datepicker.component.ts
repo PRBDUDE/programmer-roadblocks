@@ -2,17 +2,28 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {Select, SelectChangeEvent} from "primeng/select";
 import {FormsModule} from "@angular/forms";
 
+let uniqueId = 0;
+
 @Component({
   selector: 'prb-basic-datepicker',
   imports: [
     Select,
     FormsModule
   ],
+  providers: [
+    {
+      provide: 'uniqueId',
+      useValue: () => uniqueId++
+    }
+  ],
   templateUrl: './basic-datepicker.component.html',
   styleUrl: './basic-datepicker.component.scss',
 })
 export class BasicDatepickerComponent implements OnInit {
   @Output() outDate = new EventEmitter<Date>();
+  protected _rfInputIdYear = `input_year_${uniqueId++}`;
+  protected _rfInputIdMonth = `input_month_${uniqueId++}`;
+  protected _rfInputIdDay = `input_day_${uniqueId++}`;
   protected months = [
     {name: 'January', code: 0},
     {name: 'February', code: 1},
