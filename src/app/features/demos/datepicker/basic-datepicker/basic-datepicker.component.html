@@ -1,15 +1,29 @@
 <div class="ui-datepicker">
-  <label>Year</label>
-  <p-select class="input" [options]="years" [(ngModel)]="selectedYear"
-            (onChange)="onYearChange()"/>
+  <label for="{{_rfInputIdYear}}">Year</label>
+  <p-select class="input"
+            inputId="{{_rfInputIdYear}}"
+            [options]="years"
+            [(ngModel)]="selectedYear"
+            (onChange)="onYearChange()"
+            [showClear]="true"/>
 </div>
 <div class="ui-datepicker">
-  <label>Month</label>
-  <p-select class="input" [options]="months" [(ngModel)]="selectedMonth" optionLabel="name"
-            (onChange)="onMonthChange($event)"/>
+  <label for="{{_rfInputIdMonth}}">Month</label>
+  <p-select class="input"
+            inputId="{{_rfInputIdMonth}}"
+            [options]="months"
+            [(ngModel)]="selectedMonth"
+            optionLabel="name"
+            (onChange)="onMonthChange($event)"
+            [showClear]="true"/>
 </div>
 <div class="ui-datepicker">
-  <label>Day</label>
-  <p-select class="input" [options]="days" [(ngModel)]="selectedDay" [disabled]="!selectedMonth"
-            (onChange)="onDayChange($event)"/>
+  <label for="{{_rfInputIdDay}}">Day</label>
+  <p-select class="input"
+            inputId="{{_rfInputIdDay}}"
+            [options]="days"
+            [(ngModel)]="selectedDay"
+            [disabled]="!selectedMonth"
+            (onChange)="onDayChange($event)"
+            [showClear]="true"/>
 </div>

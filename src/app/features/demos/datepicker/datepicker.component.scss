@@ -39,10 +39,14 @@
     border-radius: 5px;
     background-color: var(--prb-card-color-input-background);
     letter-spacing: 0.1rem;
-    border: none;
+    border: 1px solid var(--prb-card-color-input-background);
 
     &:focus {
       outline: 1px solid var(--prb-input-focus-ring-color);
+    }
+
+    &:hover {
+      border: 1px solid var(--p-inputtext-hover-border-color);
     }
   }
 }
