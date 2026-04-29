@@ -41,17 +41,12 @@
     letter-spacing: 0.1rem;
     border: 1px solid var(--prb-card-color-input-background);
 
-    &::placeholder {
-      opacity: 0.6;
-    }
-
     &:focus {
       outline: 1px solid var(--prb-input-focus-ring-color);
     }
 
     &:hover {
       border: 1px solid var(--p-inputtext-hover-border-color);
-      //background-color: var(--prb-card-color-input-background-hover);
     }
   }
 }
