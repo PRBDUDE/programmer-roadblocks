@@ -6,9 +6,6 @@ import {RoadblockFooterComponent} from "@footer/roadblock-footer.component";
 import {ProfileService} from "@services/profile.service";
 import {setDarkTheme, setDebugMode, setFixedFooter} from "@utility/prb-mode";
 import {PrimengConfigService} from "@utility/primeng-config.service";
-import {Prb0Preset} from "@themes/prb0/theme";
-import {Prb1Preset} from "@themes/prb1/theme";
-import Aura from "@primeuix/themes/aura";
 
 @Component({
   selector: 'prb-root',
