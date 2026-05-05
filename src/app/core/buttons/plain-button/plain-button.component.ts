@@ -1,4 +1,4 @@
-import {Component, EventEmitter, input, Output} from '@angular/core';
+import {Component, input, output} from '@angular/core';
 import {Button, ButtonIconPosition, ButtonSeverity} from "primeng/button";
 import {ButtonSize, Tabindex, TipPosition} from "@buttons/button-type";
 import {Tooltip} from "primeng/tooltip";
@@ -32,9 +32,9 @@ export class PlainButtonComponent {
   showTipDelay = input<number>(0);
   showTipPosition = input<TipPosition>('top');
 
-  @Output() onClick: EventEmitter<MouseEvent> = new EventEmitter();
-  @Output() onFocus: EventEmitter<FocusEvent> = new EventEmitter<FocusEvent>();
-  @Output() onBlur: EventEmitter<FocusEvent> = new EventEmitter<FocusEvent>();
+  readonly onClick = output<MouseEvent>();
+  readonly onFocus = output<FocusEvent>();
+  readonly onBlur = output<FocusEvent>();
 
   plainButton = {
     colorScheme: {
